@@ -2,7 +2,7 @@ DROP TABLE locations;
 
 CREATE TABLE locations (
     id INT NOT NULL,
-    region_id INT NOT NULL,
+    region_id INT,
     identifier VARCHAR(23) CHARACTER SET utf8 NOT NULL,
     PRIMARY KEY(id)
 );

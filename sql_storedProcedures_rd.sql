@@ -15,7 +15,7 @@ FROM abilities A, pokemon_abilities PA, pokemon P, edited_pokemon_form_generatio
 WHERE A.id = PA.ability_id 
 	AND PA.pokemon_id = P.id 
 	AND P.id = PFG.pokemon_form_id 
-	AND A.identifier = "levitate"
+	AND A.identifier = ab
 GROUP BY PFG.generation_id; ELSE
     (SELECT 'Ability Not Found' AS 'Error Message'; END IF;
 END//
@@ -23,13 +23,24 @@ END//
 delimiter ;
 
 /*CALL ShowAbilitiesbyGeneration("levitate")*/
+/*Should show:
++---------------+------------+-----------+
+| generation_id | identifier | numUnique |
++---------------+------------+-----------+
+|             1 | levitate   |         5 |
+|             2 | levitate   |         2 |
+|             3 | levitate   |        10 |
+|             4 | levitate   |        10 |
+|             5 | levitate   |         5 |
++---------------+------------+-----------+
+*/
 
 /* How does a pokemon evolve, if at all? 
 IMCOMPLETE*/
 
-CREATE PROCEDURE ShowHowToEvolve (IN pokemon VarChar(21))
+CREATE PROCEDURE ShowHowToEvolve (IN temppokes VarChar(21))
 BEGIN IF EXISTS
-	(SELECT P.identifier FROM pokemon P WHERE P.identifier = pokemon) THEN
+	(SELECT P.identifier FROM pokemon P WHERE P.identifier = temppokes) THEN
 SELECT
 FROM pokemon P, pokemon_species PS, pokemon_evolution PE, evolution_triggers ET,
 	items I, genders GEN, locations L, moves MO, types T
@@ -50,4 +61,61 @@ END//
 delimiter ;
 
 /*CALL ShowHowToEvolve("pikachu")*/
+
+/* In which region(s) can I catch a given pokemon? */
+
+CREATE PROCEDURE PokemonRegion (IN temppokes VarChar(21))
+BEGIN IF EXISTS
+	(SELECT P.identifier FROM pokemon P WHERE P.identifier = temppokes) THEN
+SELECT P.identifier, R.identifier
+FROM pokemon P, encounters E, locations L, regions R
+WHERE P.id = E.pokemon_id
+	AND E.location_area_id = L.id 
+	AND L.region_id = R.id
+	AND P.identifier = temppokes
+GROUP BY R.identifier; ELSE
+    (SELECT 'Pokemon Not Found' AS 'Error Message'; END IF;
+END//
+
+delimiter ;
+
+/*CALL PokemonRegion("tentacool")*/
+/* Should show: 
++------------+------------+
+| identifier | identifier |
++------------+------------+
+| tentacool  | hoenn      |
+| tentacool  | johto      |
+| tentacool  | kanto      |
+| tentacool  | sinnoh     |
+| tentacool  | unova      |
++------------+------------+
+*/
+
+/* Which pokemon from a given generation has highest base stats? */
+
+CREATE PROCEDURE BestBaseStatbyGen (IN generationWhat INT)
+BEGIN IF EXISTS
+	(SELECT PFG.generation_id FROM pokemon_form_generation PFG WHERE PFG.generation_id = generationWhat) THEN
+SELECT P.identifier, sum(PS.base_stat) 
+FROM pokemon_form_generations PFG, pokemon_stats PS, pokemon P 
+WHERE PFG.pokemon_form_id = PS.pokemon_id 
+	AND PS.pokemon_id = P.id 
+	AND PFG.generation_id = generationWhat
+GROUP BY PFG.pokemon_form_id 
+ORDER BY SUM(PS.base_stat) DESC LIMIT 1; ELSE
+    (SELECT 'Pokemon Not Found' AS 'Error Message'; END IF;
+END//
+
+delimiter ;
+
+/*CALL BestBaseStatbyGen(1)*/
+/*Should show:
++------------+-------------------+
+| identifier | sum(PS.base_stat) |
++------------+-------------------+
+| mewtwo     |               680 |
++------------+-------------------+
+*/
+
 
