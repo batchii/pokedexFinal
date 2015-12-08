@@ -1,16 +1,17 @@
 CREATE TABLE moves (
-    id INT,
-    identifier VARCHAR(16) CHARACTER SET utf8,
-    generation_id INT,
-    type_id INT,
-    power INT,
-    pp INT,
+    id INT IS NOT NULL,
+    identifier VARCHAR(16) CHARACTER SET utf8 IS NOT NULL,
+    generation_id INT IS NOT NULL,
+    type_id INT IS NOT NULL,
+    strength INT,
+    pp INT is NOT NULL,
     accuracy INT,
-    priority INT,
-    target_id INT,
-    damage_class_id INT,
-    effect_id INT,
-    effect_chance INT
+    priority INT IS NOT NULL,
+    target_id INT IS NOT NULL,
+    damage_class_id INT IS NOT NULL,
+    effect_id INT IS NOT NULL,
+    effect_chance INT,
+    PRIMARY KEY (id)
 );
 INSERT INTO moves VALUES (1,'pound',1,1,40,35,100,0,10,2,1,NULL);
 INSERT INTO moves VALUES (2,'karate-chop',1,2,50,25,100,0,10,2,44,NULL);

@@ -1,6 +1,7 @@
 CREATE TABLE evolution_triggers (
-    id INT,
-    identifier VARCHAR(8) CHARACTER SET utf8
+    id INT IS NOT NULL,
+    identifier VARCHAR(8) CHARACTER SET utf8 IS NOT NULL,
+    PRIMARY KEY ( id)
 );
 INSERT INTO evolution_triggers VALUES (1,'level-up');
 INSERT INTO evolution_triggers VALUES (2,'trade');

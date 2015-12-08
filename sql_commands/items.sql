@@ -1,8 +1,9 @@
 CREATE TABLE items (
-    id INT,
-    identifier VARCHAR(16) CHARACTER SET utf8,
-    category_id INT,
-    cost INT
+    id INT IS NOT NULL,
+    identifier VARCHAR(16) CHARACTER SET utf8 IS NOT NULL,
+    category_id INT IS NOT NULL,
+    cost INT IS NOT NULL,
+    PRIMARY KEY (id)
 );
 INSERT INTO items VALUES (1,'master-ball',34,0);
 INSERT INTO items VALUES (2,'ultra-ball',34,1200);

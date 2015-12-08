@@ -2,7 +2,8 @@ CREATE TABLE abilities (
     id INT IS NOT NULL,
     identifier VARCHAR(14) CHARACTER SET utf8 IS NOT NULL,
     generation_id INT IS NOT NULL,
-    is_main_series INT IS NOT NULL
+    is_main_series INT IS NOT NULL,
+    PRIMARY_KEY(id)
 );
 INSERT INTO abilities VALUES (1,'stench',3,1);
 INSERT INTO abilities VALUES (2,'drizzle',3,1);

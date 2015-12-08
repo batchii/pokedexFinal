@@ -1,7 +1,8 @@
 CREATE TABLE locations (
-    id INT,
-    region_id INT,
-    identifier VARCHAR(23) CHARACTER SET utf8
+    id INT IS NOT NULL,
+    region_id INT IS NOT NULL,
+    identifier VARCHAR(23) CHARACTER SET utf8 IS NOT NULL,
+    PRIMARY KEY(id)
 );
 INSERT INTO locations VALUES (1,4,'canalave-city');
 INSERT INTO locations VALUES (2,4,'eterna-city');

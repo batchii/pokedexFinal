@@ -4,7 +4,8 @@ CREATE TABLE encounters (
     encounter_slot_id INT IS NOT NULL,
     pokemon_id INT IS NOT NULL,
     min_level INT IS NOT NULL,
-    max_level INT IS NOT NULL
+    max_level INT IS NOT NULL,
+    PRIMARY KEY (id)
 );
 INSERT INTO encounters VALUES (1,1,28,72,20,30);
 INSERT INTO encounters VALUES (2,1,29,278,20,30);
