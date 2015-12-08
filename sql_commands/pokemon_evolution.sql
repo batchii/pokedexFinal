@@ -1,3 +1,5 @@
+DROP TABLE pokemon_evolution;
+
 CREATE TABLE pokemon_evolution (
     id INT NOT NULL,
     evolved_species_id INT NOT NULL,

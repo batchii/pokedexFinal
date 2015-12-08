@@ -1,7 +1,9 @@
+DROP TABLE locations;
+
 CREATE TABLE locations (
-    id INT IS NOT NULL,
-    region_id INT IS NOT NULL,
-    identifier VARCHAR(23) CHARACTER SET utf8 IS NOT NULL,
+    id INT NOT NULL,
+    region_id INT NOT NULL,
+    identifier VARCHAR(23) CHARACTER SET utf8 NOT NULL,
     PRIMARY KEY(id)
 );
 INSERT INTO locations VALUES (1,4,'canalave-city');

@@ -1,15 +1,17 @@
+DROP TABLE moves;
+
 CREATE TABLE moves (
-    id INT IS NOT NULL,
-    identifier VARCHAR(16) CHARACTER SET utf8 IS NOT NULL,
-    generation_id INT IS NOT NULL,
-    type_id INT IS NOT NULL,
+    id INT NOT NULL,
+    identifier VARCHAR(16) CHARACTER SET utf8 NOT NULL,
+    generation_id INT NOT NULL,
+    type_id INT NOT NULL,
     strength INT,
-    pp INT is NOT NULL,
+    pp INT NOT NULL,
     accuracy INT,
-    priority INT IS NOT NULL,
-    target_id INT IS NOT NULL,
-    damage_class_id INT IS NOT NULL,
-    effect_id INT IS NOT NULL,
+    priority INT NOT NULL,
+    target_id INT NOT NULL,
+    damage_class_id INT NOT NULL,
+    effect_id INT NOT NULL,
     effect_chance INT,
     PRIMARY KEY (id)
 );

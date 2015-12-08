@@ -1,9 +1,11 @@
+
+DROP TABLE pokemon_stats;
+
 CREATE TABLE pokemon_stats (
     pokemon_id INT NOT NULL,
     stat_id INT NOT NULL,
     base_stat INT NOT NULL,
     effort INT NOT NULL
-    PRIMARY KEY (pokemon_id)
 );
 
 INSERT INTO pokemon_stats VALUES (1,1,45,0);

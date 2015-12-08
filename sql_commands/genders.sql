@@ -1,6 +1,8 @@
+DROP TABLE genders;
+
 CREATE TABLE genders (
-    id INT IS NOT NULL,
-    identifier VARCHAR(10) CHARACTER SET utf8 IS NOT NULL,
+    id INT NOT NULL,
+    identifier VARCHAR(10) CHARACTER SET utf8 NOT NULL,
     PRIMARY KEY (id)
 );
 INSERT INTO genders VALUES (1,'female');

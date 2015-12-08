@@ -1,7 +1,9 @@
+DROP TABLE generations;
+
 CREATE TABLE generations (
-    id INT IS NOT NULL,
-    main_region_id INT IS NOT NULL,
-    identifier VARCHAR(14) CHARACTER SET utf8 IS NOT NULL,
+    id INT NOT NULL,
+    main_region_id INT NOT NULL,
+    identifier VARCHAR(14) CHARACTER SET utf8 NOT NULL,
     PRIMARY KEY (id)
 );
 INSERT INTO generations VALUES (1,1,'generation-i');

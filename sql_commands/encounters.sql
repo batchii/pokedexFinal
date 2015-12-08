@@ -1,10 +1,12 @@
+DROP TABLE encounters;
+
 CREATE TABLE encounters (
-    id INT IS NOT NULL,
-    location_area_id INT IS NOT NULL,
-    encounter_slot_id INT IS NOT NULL,
-    pokemon_id INT IS NOT NULL,
-    min_level INT IS NOT NULL,
-    max_level INT IS NOT NULL,
+    id INT  NOT NULL,
+    location_area_id INT NOT NULL,
+    encounter_slot_id INT  NOT NULL,
+    pokemon_id INT  NOT NULL,
+    min_level INT  NOT NULL,
+    max_level INT  NOT NULL,
     PRIMARY KEY (id)
 );
 INSERT INTO encounters VALUES (1,1,28,72,20,30);

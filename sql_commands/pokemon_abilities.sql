@@ -1,3 +1,5 @@
+DROP TABLE pokemon_abilities;
+
 CREATE TABLE pokemon_abilities (
     pokemon_id INT NOT NULL,
     ability_id INT NOT NULL,

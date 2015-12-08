@@ -1,6 +1,8 @@
+DROP TABLE evolution_triggers;
+
 CREATE TABLE evolution_triggers (
-    id INT IS NOT NULL,
-    identifier VARCHAR(8) CHARACTER SET utf8 IS NOT NULL,
+    id INT NOT NULL,
+    identifier VARCHAR(8) CHARACTER SET utf8 NOT NULL,
     PRIMARY KEY ( id)
 );
 INSERT INTO evolution_triggers VALUES (1,'level-up');

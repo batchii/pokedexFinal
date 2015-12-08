@@ -1,10 +1,212 @@
+DROP TABLE abilities;
+
+CREATE TABLE abilities (
+    id INT NOT NULL,
+    identifier VARCHAR(14) CHARACTER SET utf8 NOT NULL,
+    generation_id INT NOT NULL,
+    is_main_series INT NOT NULL,
+    PRIMARY KEY(id)
+);
+INSERT INTO abilities VALUES (1,'stench',3,1);
+INSERT INTO abilities VALUES (2,'drizzle',3,1);
+INSERT INTO abilities VALUES (3,'speed-boost',3,1);
+INSERT INTO abilities VALUES (4,'battle-armor',3,1);
+INSERT INTO abilities VALUES (5,'sturdy',3,1);
+INSERT INTO abilities VALUES (6,'damp',3,1);
+INSERT INTO abilities VALUES (7,'limber',3,1);
+INSERT INTO abilities VALUES (8,'sand-veil',3,1);
+INSERT INTO abilities VALUES (9,'static',3,1);
+INSERT INTO abilities VALUES (10,'volt-absorb',3,1);
+INSERT INTO abilities VALUES (11,'water-absorb',3,1);
+INSERT INTO abilities VALUES (12,'oblivious',3,1);
+INSERT INTO abilities VALUES (13,'cloud-nine',3,1);
+INSERT INTO abilities VALUES (14,'compound-eyes',3,1);
+INSERT INTO abilities VALUES (15,'insomnia',3,1);
+INSERT INTO abilities VALUES (16,'color-change',3,1);
+INSERT INTO abilities VALUES (17,'immunity',3,1);
+INSERT INTO abilities VALUES (18,'flash-fire',3,1);
+INSERT INTO abilities VALUES (19,'shield-dust',3,1);
+INSERT INTO abilities VALUES (20,'own-tempo',3,1);
+INSERT INTO abilities VALUES (21,'suction-cups',3,1);
+INSERT INTO abilities VALUES (22,'intimidate',3,1);
+INSERT INTO abilities VALUES (23,'shadow-tag',3,1);
+INSERT INTO abilities VALUES (24,'rough-skin',3,1);
+INSERT INTO abilities VALUES (25,'wonder-guard',3,1);
+INSERT INTO abilities VALUES (26,'levitate',3,1);
+INSERT INTO abilities VALUES (27,'effect-spore',3,1);
+INSERT INTO abilities VALUES (28,'synchronize',3,1);
+INSERT INTO abilities VALUES (29,'clear-body',3,1);
+INSERT INTO abilities VALUES (30,'natural-cure',3,1);
+INSERT INTO abilities VALUES (31,'lightning-rod',3,1);
+INSERT INTO abilities VALUES (32,'serene-grace',3,1);
+INSERT INTO abilities VALUES (33,'swift-swim',3,1);
+INSERT INTO abilities VALUES (34,'chlorophyll',3,1);
+INSERT INTO abilities VALUES (35,'illuminate',3,1);
+INSERT INTO abilities VALUES (36,'trace',3,1);
+INSERT INTO abilities VALUES (37,'huge-power',3,1);
+INSERT INTO abilities VALUES (38,'poison-point',3,1);
+INSERT INTO abilities VALUES (39,'inner-focus',3,1);
+INSERT INTO abilities VALUES (40,'magma-armor',3,1);
+INSERT INTO abilities VALUES (41,'water-veil',3,1);
+INSERT INTO abilities VALUES (42,'magnet-pull',3,1);
+INSERT INTO abilities VALUES (43,'soundproof',3,1);
+INSERT INTO abilities VALUES (44,'rain-dish',3,1);
+INSERT INTO abilities VALUES (45,'sand-stream',3,1);
+INSERT INTO abilities VALUES (46,'pressure',3,1);
+INSERT INTO abilities VALUES (47,'thick-fat',3,1);
+INSERT INTO abilities VALUES (48,'early-bird',3,1);
+INSERT INTO abilities VALUES (49,'flame-body',3,1);
+INSERT INTO abilities VALUES (50,'run-away',3,1);
+INSERT INTO abilities VALUES (51,'keen-eye',3,1);
+INSERT INTO abilities VALUES (52,'hyper-cutter',3,1);
+INSERT INTO abilities VALUES (53,'pickup',3,1);
+INSERT INTO abilities VALUES (54,'truant',3,1);
+INSERT INTO abilities VALUES (55,'hustle',3,1);
+INSERT INTO abilities VALUES (56,'cute-charm',3,1);
+INSERT INTO abilities VALUES (57,'plus',3,1);
+INSERT INTO abilities VALUES (58,'minus',3,1);
+INSERT INTO abilities VALUES (59,'forecast',3,1);
+INSERT INTO abilities VALUES (60,'sticky-hold',3,1);
+INSERT INTO abilities VALUES (61,'shed-skin',3,1);
+INSERT INTO abilities VALUES (62,'guts',3,1);
+INSERT INTO abilities VALUES (63,'marvel-scale',3,1);
+INSERT INTO abilities VALUES (64,'liquid-ooze',3,1);
+INSERT INTO abilities VALUES (65,'overgrow',3,1);
+INSERT INTO abilities VALUES (66,'blaze',3,1);
+INSERT INTO abilities VALUES (67,'torrent',3,1);
+INSERT INTO abilities VALUES (68,'swarm',3,1);
+INSERT INTO abilities VALUES (69,'rock-head',3,1);
+INSERT INTO abilities VALUES (70,'drought',3,1);
+INSERT INTO abilities VALUES (71,'arena-trap',3,1);
+INSERT INTO abilities VALUES (72,'vital-spirit',3,1);
+INSERT INTO abilities VALUES (73,'white-smoke',3,1);
+INSERT INTO abilities VALUES (74,'pure-power',3,1);
+INSERT INTO abilities VALUES (75,'shell-armor',3,1);
+INSERT INTO abilities VALUES (76,'air-lock',3,1);
+INSERT INTO abilities VALUES (77,'tangled-feet',4,1);
+INSERT INTO abilities VALUES (78,'motor-drive',4,1);
+INSERT INTO abilities VALUES (79,'rivalry',4,1);
+INSERT INTO abilities VALUES (80,'steadfast',4,1);
+INSERT INTO abilities VALUES (81,'snow-cloak',4,1);
+INSERT INTO abilities VALUES (82,'gluttony',4,1);
+INSERT INTO abilities VALUES (83,'anger-point',4,1);
+INSERT INTO abilities VALUES (84,'unburden',4,1);
+INSERT INTO abilities VALUES (85,'heatproof',4,1);
+INSERT INTO abilities VALUES (86,'simple',4,1);
+INSERT INTO abilities VALUES (87,'dry-skin',4,1);
+INSERT INTO abilities VALUES (88,'download',4,1);
+INSERT INTO abilities VALUES (89,'iron-fist',4,1);
+INSERT INTO abilities VALUES (90,'poison-heal',4,1);
+INSERT INTO abilities VALUES (91,'adaptability',4,1);
+INSERT INTO abilities VALUES (92,'skill-link',4,1);
+INSERT INTO abilities VALUES (93,'hydration',4,1);
+INSERT INTO abilities VALUES (94,'solar-power',4,1);
+INSERT INTO abilities VALUES (95,'quick-feet',4,1);
+INSERT INTO abilities VALUES (96,'normalize',4,1);
+INSERT INTO abilities VALUES (97,'sniper',4,1);
+INSERT INTO abilities VALUES (98,'magic-guard',4,1);
+INSERT INTO abilities VALUES (99,'no-guard',4,1);
+INSERT INTO abilities VALUES (100,'stall',4,1);
+INSERT INTO abilities VALUES (101,'technician',4,1);
+INSERT INTO abilities VALUES (102,'leaf-guard',4,1);
+INSERT INTO abilities VALUES (103,'klutz',4,1);
+INSERT INTO abilities VALUES (104,'mold-breaker',4,1);
+INSERT INTO abilities VALUES (105,'super-luck',4,1);
+INSERT INTO abilities VALUES (106,'aftermath',4,1);
+INSERT INTO abilities VALUES (107,'anticipation',4,1);
+INSERT INTO abilities VALUES (108,'forewarn',4,1);
+INSERT INTO abilities VALUES (109,'unaware',4,1);
+INSERT INTO abilities VALUES (110,'tinted-lens',4,1);
+INSERT INTO abilities VALUES (111,'filter',4,1);
+INSERT INTO abilities VALUES (112,'slow-start',4,1);
+INSERT INTO abilities VALUES (113,'scrappy',4,1);
+INSERT INTO abilities VALUES (114,'storm-drain',4,1);
+INSERT INTO abilities VALUES (115,'ice-body',4,1);
+INSERT INTO abilities VALUES (116,'solid-rock',4,1);
+INSERT INTO abilities VALUES (117,'snow-warning',4,1);
+INSERT INTO abilities VALUES (118,'honey-gather',4,1);
+INSERT INTO abilities VALUES (119,'frisk',4,1);
+INSERT INTO abilities VALUES (120,'reckless',4,1);
+INSERT INTO abilities VALUES (121,'multitype',4,1);
+INSERT INTO abilities VALUES (122,'flower-gift',4,1);
+INSERT INTO abilities VALUES (123,'bad-dreams',4,1);
+INSERT INTO abilities VALUES (124,'pickpocket',5,1);
+INSERT INTO abilities VALUES (125,'sheer-force',5,1);
+INSERT INTO abilities VALUES (126,'contrary',5,1);
+INSERT INTO abilities VALUES (127,'unnerve',5,1);
+INSERT INTO abilities VALUES (128,'defiant',5,1);
+INSERT INTO abilities VALUES (129,'defeatist',5,1);
+INSERT INTO abilities VALUES (130,'cursed-body',5,1);
+INSERT INTO abilities VALUES (131,'healer',5,1);
+INSERT INTO abilities VALUES (132,'friend-guard',5,1);
+INSERT INTO abilities VALUES (133,'weak-armor',5,1);
+INSERT INTO abilities VALUES (134,'heavy-metal',5,1);
+INSERT INTO abilities VALUES (135,'light-metal',5,1);
+INSERT INTO abilities VALUES (136,'multiscale',5,1);
+INSERT INTO abilities VALUES (137,'toxic-boost',5,1);
+INSERT INTO abilities VALUES (138,'flare-boost',5,1);
+INSERT INTO abilities VALUES (139,'harvest',5,1);
+INSERT INTO abilities VALUES (140,'telepathy',5,1);
+INSERT INTO abilities VALUES (141,'moody',5,1);
+INSERT INTO abilities VALUES (142,'overcoat',5,1);
+INSERT INTO abilities VALUES (143,'poison-touch',5,1);
+INSERT INTO abilities VALUES (144,'regenerator',5,1);
+INSERT INTO abilities VALUES (145,'big-pecks',5,1);
+INSERT INTO abilities VALUES (146,'sand-rush',5,1);
+INSERT INTO abilities VALUES (147,'wonder-skin',5,1);
+INSERT INTO abilities VALUES (148,'analytic',5,1);
+INSERT INTO abilities VALUES (149,'illusion',5,1);
+INSERT INTO abilities VALUES (150,'imposter',5,1);
+INSERT INTO abilities VALUES (151,'infiltrator',5,1);
+INSERT INTO abilities VALUES (152,'mummy',5,1);
+INSERT INTO abilities VALUES (153,'moxie',5,1);
+INSERT INTO abilities VALUES (154,'justified',5,1);
+INSERT INTO abilities VALUES (155,'rattled',5,1);
+INSERT INTO abilities VALUES (156,'magic-bounce',5,1);
+INSERT INTO abilities VALUES (157,'sap-sipper',5,1);
+INSERT INTO abilities VALUES (158,'prankster',5,1);
+INSERT INTO abilities VALUES (159,'sand-force',5,1);
+INSERT INTO abilities VALUES (160,'iron-barbs',5,1);
+INSERT INTO abilities VALUES (161,'zen-mode',5,1);
+INSERT INTO abilities VALUES (162,'victory-star',5,1);
+INSERT INTO abilities VALUES (163,'turboblaze',5,1);
+INSERT INTO abilities VALUES (164,'teravolt',5,1);
+INSERT INTO abilities VALUES (165,'aroma-veil',6,1);
+INSERT INTO abilities VALUES (166,'flower-veil',6,1);
+INSERT INTO abilities VALUES (167,'cheek-pouch',6,1);
+INSERT INTO abilities VALUES (168,'protean',6,1);
+INSERT INTO abilities VALUES (169,'fur-coat',6,1);
+INSERT INTO abilities VALUES (170,'magician',6,1);
+INSERT INTO abilities VALUES (171,'bulletproof',6,1);
+INSERT INTO abilities VALUES (172,'competitive',6,1);
+INSERT INTO abilities VALUES (173,'strong-jaw',6,1);
+INSERT INTO abilities VALUES (174,'refrigerate',6,1);
+INSERT INTO abilities VALUES (175,'sweet-veil',6,1);
+INSERT INTO abilities VALUES (176,'stance-change',6,1);
+INSERT INTO abilities VALUES (177,'gale-wings',6,1);
+INSERT INTO abilities VALUES (178,'mega-launcher',6,1);
+INSERT INTO abilities VALUES (179,'grass-pelt',6,1);
+INSERT INTO abilities VALUES (180,'symbiosis',6,1);
+INSERT INTO abilities VALUES (181,'tough-claws',6,1);
+INSERT INTO abilities VALUES (182,'pixilate',6,1);
+INSERT INTO abilities VALUES (183,'gooey',6,1);
+INSERT INTO abilities VALUES (184,'aerilate',6,1);
+INSERT INTO abilities VALUES (185,'parental-bond',6,1);
+INSERT INTO abilities VALUES (186,'dark-aura',6,1);
+INSERT INTO abilities VALUES (187,'fairy-aura',6,1);
+INSERT INTO abilities VALUES (188,'aura-break',6,1);
+INSERT INTO abilities VALUES (189,'primordial-sea',6,1);
+INSERT INTO abilities VALUES (190,'desolate-land',6,1);
+DROP TABLE encounters;
+
 CREATE TABLE encounters (
-    id INT IS NOT NULL,
-    location_area_id INT IS NOT NULL,
-    encounter_slot_id INT IS NOT NULL,
-    pokemon_id INT IS NOT NULL,
-    min_level INT IS NOT NULL,
-    max_level INT IS NOT NULL
+    id INT  NOT NULL,
+    location_area_id INT NOT NULL,
+    encounter_slot_id INT  NOT NULL,
+    pokemon_id INT  NOT NULL,
+    min_level INT  NOT NULL,
+    max_level INT  NOT NULL,
+    PRIMARY KEY (id)
 );
 INSERT INTO encounters VALUES (1,1,28,72,20,30);
 INSERT INTO encounters VALUES (2,1,29,278,20,30);
@@ -46536,3 +46738,22703 @@ INSERT INTO encounters VALUES (50238,760,486,223,25,25);
 INSERT INTO encounters VALUES (50239,760,487,594,35,35);
 INSERT INTO encounters VALUES (50240,760,488,224,35,35);
 INSERT INTO encounters VALUES (50241,760,489,171,35,35);
+DROP TABLE evolution_triggers;
+
+CREATE TABLE evolution_triggers (
+    id INT NOT NULL,
+    identifier VARCHAR(8) CHARACTER SET utf8 NOT NULL,
+    PRIMARY KEY ( id)
+);
+INSERT INTO evolution_triggers VALUES (1,'level-up');
+INSERT INTO evolution_triggers VALUES (2,'trade');
+INSERT INTO evolution_triggers VALUES (3,'use-item');
+INSERT INTO evolution_triggers VALUES (4,'shed');
+DROP TABLE genders;
+
+CREATE TABLE genders (
+    id INT NOT NULL,
+    identifier VARCHAR(10) CHARACTER SET utf8 NOT NULL,
+    PRIMARY KEY (id)
+);
+INSERT INTO genders VALUES (1,'female');
+INSERT INTO genders VALUES (2,'male');
+INSERT INTO genders VALUES (3,'genderless');
+DROP TABLE generations;
+
+CREATE TABLE generations (
+    id INT NOT NULL,
+    main_region_id INT NOT NULL,
+    identifier VARCHAR(14) CHARACTER SET utf8 NOT NULL,
+    PRIMARY KEY (id)
+);
+INSERT INTO generations VALUES (1,1,'generation-i');
+INSERT INTO generations VALUES (2,2,'generation-ii');
+INSERT INTO generations VALUES (3,3,'generation-iii');
+INSERT INTO generations VALUES (4,4,'generation-iv');
+INSERT INTO generations VALUES (5,5,'generation-v');
+INSERT INTO generations VALUES (6,6,'generation-vi');
+DROP TABLE items;
+
+CREATE TABLE items (
+    id INT  NOT NULL,
+    identifier VARCHAR(16) CHARACTER SET utf8  NOT NULL,
+    category_id INT  NOT NULL,
+    cost INT  NOT NULL,
+    PRIMARY KEY (id)
+);
+INSERT INTO items VALUES (1,'master-ball',34,0);
+INSERT INTO items VALUES (2,'ultra-ball',34,1200);
+INSERT INTO items VALUES (3,'great-ball',34,600);
+INSERT INTO items VALUES (4,'poke-ball',34,200);
+INSERT INTO items VALUES (5,'safari-ball',34,0);
+INSERT INTO items VALUES (6,'net-ball',33,1000);
+INSERT INTO items VALUES (7,'dive-ball',33,1000);
+INSERT INTO items VALUES (8,'nest-ball',33,1000);
+INSERT INTO items VALUES (9,'repeat-ball',33,1000);
+INSERT INTO items VALUES (10,'timer-ball',33,1000);
+INSERT INTO items VALUES (11,'luxury-ball',33,1000);
+INSERT INTO items VALUES (12,'premier-ball',33,200);
+INSERT INTO items VALUES (13,'dusk-ball',33,1000);
+INSERT INTO items VALUES (14,'heal-ball',33,300);
+INSERT INTO items VALUES (15,'quick-ball',33,1000);
+INSERT INTO items VALUES (16,'cherh-ball',33,200);
+INSERT INTO items VALUES (17,'potion',27,300);
+INSERT INTO items VALUES (18,'antidote',30,100);
+INSERT INTO items VALUES (19,'burn-heal',30,250);
+INSERT INTO items VALUES (20,'ice-heal',30,250);
+INSERT INTO items VALUES (21,'awakening',30,250);
+INSERT INTO items VALUES (22,'paralyze-heal',30,200);
+INSERT INTO items VALUES (23,'full-restore',27,3000);
+INSERT INTO items VALUES (24,'max-potion',27,2500);
+INSERT INTO items VALUES (25,'hyper-potion',27,1200);
+INSERT INTO items VALUES (26,'super-potion',27,700);
+INSERT INTO items VALUES (27,'full-heal',30,600);
+INSERT INTO items VALUES (28,'revive',29,1500);
+INSERT INTO items VALUES (29,'max-revive',29,4000);
+INSERT INTO items VALUES (30,'fresh-water',27,200);
+INSERT INTO items VALUES (31,'soda-pop',27,300);
+INSERT INTO items VALUES (32,'lemonade',27,350);
+INSERT INTO items VALUES (33,'moomoo-milk',27,500);
+INSERT INTO items VALUES (34,'energy-powder',27,500);
+INSERT INTO items VALUES (35,'energy-root',27,800);
+INSERT INTO items VALUES (36,'heal-powder',30,450);
+INSERT INTO items VALUES (37,'revival-herb',29,2800);
+INSERT INTO items VALUES (38,'ether',28,1200);
+INSERT INTO items VALUES (39,'max-ether',28,2000);
+INSERT INTO items VALUES (40,'elixir',28,3000);
+INSERT INTO items VALUES (41,'max-elixir',28,4500);
+INSERT INTO items VALUES (42,'lava-cookie',30,200);
+INSERT INTO items VALUES (43,'berry-juice',27,100);
+INSERT INTO items VALUES (44,'sacred-ash',29,200);
+INSERT INTO items VALUES (45,'hp-up',26,9800);
+INSERT INTO items VALUES (46,'protein',26,9800);
+INSERT INTO items VALUES (47,'iron',26,9800);
+INSERT INTO items VALUES (48,'carbos',26,9800);
+INSERT INTO items VALUES (49,'calcium',26,9800);
+INSERT INTO items VALUES (50,'rare-candy',26,4800);
+INSERT INTO items VALUES (51,'pp-up',26,9800);
+INSERT INTO items VALUES (52,'zinc',26,9800);
+INSERT INTO items VALUES (53,'pp-max',26,9800);
+INSERT INTO items VALUES (54,'old-gateau',30,200);
+INSERT INTO items VALUES (55,'guard-spec',1,700);
+INSERT INTO items VALUES (56,'dire-hit',1,650);
+INSERT INTO items VALUES (57,'x-attack',1,500);
+INSERT INTO items VALUES (58,'x-defense',1,550);
+INSERT INTO items VALUES (59,'x-speed',1,350);
+INSERT INTO items VALUES (60,'x-accuracy',1,950);
+INSERT INTO items VALUES (61,'x-sp-atk',1,350);
+INSERT INTO items VALUES (62,'x-sp-def',1,350);
+INSERT INTO items VALUES (63,'poke-doll',11,1000);
+INSERT INTO items VALUES (64,'fluffy-tail',11,1000);
+INSERT INTO items VALUES (65,'blue-flute',38,100);
+INSERT INTO items VALUES (66,'yellow-flute',38,200);
+INSERT INTO items VALUES (67,'red-flute',38,300);
+INSERT INTO items VALUES (68,'black-flute',11,400);
+INSERT INTO items VALUES (69,'white-flute',11,500);
+INSERT INTO items VALUES (70,'shoal-salt',9,20);
+INSERT INTO items VALUES (71,'shoal-shell',9,20);
+INSERT INTO items VALUES (72,'red-shard',9,200);
+INSERT INTO items VALUES (73,'blue-shard',9,200);
+INSERT INTO items VALUES (74,'yellow-shard',9,200);
+INSERT INTO items VALUES (75,'green-shard',9,200);
+INSERT INTO items VALUES (76,'super-repel',11,500);
+INSERT INTO items VALUES (77,'max-repel',11,700);
+INSERT INTO items VALUES (78,'escape-rope',11,550);
+INSERT INTO items VALUES (79,'repel',11,350);
+INSERT INTO items VALUES (80,'sun-stone',10,2100);
+INSERT INTO items VALUES (81,'moon-stone',10,2100);
+INSERT INTO items VALUES (82,'fire-stone',10,2100);
+INSERT INTO items VALUES (83,'thunder-stone',10,2100);
+INSERT INTO items VALUES (84,'water-stone',10,2100);
+INSERT INTO items VALUES (85,'leaf-stone',10,2100);
+INSERT INTO items VALUES (86,'tiny-mushroom',24,500);
+INSERT INTO items VALUES (87,'big-mushroom',24,5000);
+INSERT INTO items VALUES (88,'pearl',24,1400);
+INSERT INTO items VALUES (89,'big-pearl',24,7500);
+INSERT INTO items VALUES (90,'stardust',24,2000);
+INSERT INTO items VALUES (91,'star-piece',24,9800);
+INSERT INTO items VALUES (92,'nugget',24,10000);
+INSERT INTO items VALUES (93,'heart-scale',9,100);
+INSERT INTO items VALUES (94,'honey',35,100);
+INSERT INTO items VALUES (95,'growth-mulch',32,200);
+INSERT INTO items VALUES (96,'damp-mulch',32,200);
+INSERT INTO items VALUES (97,'stable-mulch',32,200);
+INSERT INTO items VALUES (98,'gooey-mulch',32,200);
+INSERT INTO items VALUES (99,'root-fossil',35,1000);
+INSERT INTO items VALUES (100,'claw-fossil',35,1000);
+INSERT INTO items VALUES (101,'helix-fossil',35,1000);
+INSERT INTO items VALUES (102,'dome-fossil',35,1000);
+INSERT INTO items VALUES (103,'old-amber',35,1000);
+INSERT INTO items VALUES (104,'armor-fossil',35,1000);
+INSERT INTO items VALUES (105,'skull-fossil',35,1000);
+INSERT INTO items VALUES (106,'rare-bone',24,10000);
+INSERT INTO items VALUES (107,'shiny-stone',10,2100);
+INSERT INTO items VALUES (108,'dusk-stone',10,2100);
+INSERT INTO items VALUES (109,'dawn-stone',10,2100);
+INSERT INTO items VALUES (110,'oval-stone',10,2100);
+INSERT INTO items VALUES (111,'odd-keystone',35,2100);
+INSERT INTO items VALUES (112,'adamant-orb',18,10000);
+INSERT INTO items VALUES (113,'lustrous-orb',18,10000);
+INSERT INTO items VALUES (114,'grass-mail',25,50);
+INSERT INTO items VALUES (115,'flame-mail',25,50);
+INSERT INTO items VALUES (116,'bubble-mail',25,50);
+INSERT INTO items VALUES (117,'bloom-mail',25,50);
+INSERT INTO items VALUES (118,'tunnel-mail',25,50);
+INSERT INTO items VALUES (119,'steel-mail',25,50);
+INSERT INTO items VALUES (120,'heart-mail',25,50);
+INSERT INTO items VALUES (121,'snow-mail',25,50);
+INSERT INTO items VALUES (122,'space-mail',25,50);
+INSERT INTO items VALUES (123,'air-mail',25,50);
+INSERT INTO items VALUES (124,'mosaic-mail',25,50);
+INSERT INTO items VALUES (125,'brick-mail',25,50);
+INSERT INTO items VALUES (126,'cheri-berry',3,20);
+INSERT INTO items VALUES (127,'chesto-berry',3,20);
+INSERT INTO items VALUES (128,'pecha-berry',3,20);
+INSERT INTO items VALUES (129,'rawst-berry',3,20);
+INSERT INTO items VALUES (130,'aspear-berry',3,20);
+INSERT INTO items VALUES (131,'leppa-berry',3,20);
+INSERT INTO items VALUES (132,'oran-berry',3,20);
+INSERT INTO items VALUES (133,'persim-berry',3,20);
+INSERT INTO items VALUES (134,'lum-berry',3,20);
+INSERT INTO items VALUES (135,'sitrus-berry',3,20);
+INSERT INTO items VALUES (136,'figy-berry',6,20);
+INSERT INTO items VALUES (137,'wiki-berry',6,20);
+INSERT INTO items VALUES (138,'mago-berry',6,20);
+INSERT INTO items VALUES (139,'aguav-berry',6,20);
+INSERT INTO items VALUES (140,'iapapa-berry',6,20);
+INSERT INTO items VALUES (141,'razz-berry',8,20);
+INSERT INTO items VALUES (142,'bluk-berry',8,20);
+INSERT INTO items VALUES (143,'nanab-berry',8,20);
+INSERT INTO items VALUES (144,'wepear-berry',8,20);
+INSERT INTO items VALUES (145,'pinap-berry',8,20);
+INSERT INTO items VALUES (146,'pomeg-berry',2,20);
+INSERT INTO items VALUES (147,'kelpsy-berry',2,20);
+INSERT INTO items VALUES (148,'qualot-berry',2,20);
+INSERT INTO items VALUES (149,'hondew-berry',2,20);
+INSERT INTO items VALUES (150,'grepa-berry',2,20);
+INSERT INTO items VALUES (151,'tamato-berry',2,20);
+INSERT INTO items VALUES (152,'cornn-berry',8,20);
+INSERT INTO items VALUES (153,'magost-berry',8,20);
+INSERT INTO items VALUES (154,'rabuta-berry',8,20);
+INSERT INTO items VALUES (155,'nomel-berry',8,20);
+INSERT INTO items VALUES (156,'spelon-berry',8,20);
+INSERT INTO items VALUES (157,'pamtre-berry',8,20);
+INSERT INTO items VALUES (158,'watmel-berry',8,20);
+INSERT INTO items VALUES (159,'durin-berry',8,20);
+INSERT INTO items VALUES (160,'belue-berry',8,20);
+INSERT INTO items VALUES (161,'occa-berry',7,20);
+INSERT INTO items VALUES (162,'passho-berry',7,20);
+INSERT INTO items VALUES (163,'wacan-berry',7,20);
+INSERT INTO items VALUES (164,'rindo-berry',7,20);
+INSERT INTO items VALUES (165,'yache-berry',7,20);
+INSERT INTO items VALUES (166,'chople-berry',7,20);
+INSERT INTO items VALUES (167,'kebia-berry',7,20);
+INSERT INTO items VALUES (168,'shuca-berry',7,20);
+INSERT INTO items VALUES (169,'coba-berry',7,20);
+INSERT INTO items VALUES (170,'payapa-berry',7,20);
+INSERT INTO items VALUES (171,'tanga-berry',7,20);
+INSERT INTO items VALUES (172,'charti-berry',7,20);
+INSERT INTO items VALUES (173,'kasib-berry',7,20);
+INSERT INTO items VALUES (174,'haban-berry',7,20);
+INSERT INTO items VALUES (175,'colbur-berry',7,20);
+INSERT INTO items VALUES (176,'babiri-berry',7,20);
+INSERT INTO items VALUES (177,'chilan-berry',7,20);
+INSERT INTO items VALUES (178,'liechi-berry',5,20);
+INSERT INTO items VALUES (179,'ganlon-berry',5,20);
+INSERT INTO items VALUES (180,'salac-berry',5,20);
+INSERT INTO items VALUES (181,'petaya-berry',5,20);
+INSERT INTO items VALUES (182,'apicot-berry',5,20);
+INSERT INTO items VALUES (183,'lansat-berry',5,20);
+INSERT INTO items VALUES (184,'starf-berry',5,20);
+INSERT INTO items VALUES (185,'enigma-berry',4,20);
+INSERT INTO items VALUES (186,'micle-berry',5,20);
+INSERT INTO items VALUES (187,'custap-berry',5,20);
+INSERT INTO items VALUES (188,'jaboca-berry',4,20);
+INSERT INTO items VALUES (189,'rowap-berry',4,20);
+INSERT INTO items VALUES (190,'bright-powder',12,10);
+INSERT INTO items VALUES (191,'white-herb',12,100);
+INSERT INTO items VALUES (192,'macho-brace',14,3000);
+INSERT INTO items VALUES (193,'exp-share',16,3000);
+INSERT INTO items VALUES (194,'quick-claw',12,100);
+INSERT INTO items VALUES (195,'soothe-bell',16,100);
+INSERT INTO items VALUES (196,'mental-herb',12,100);
+INSERT INTO items VALUES (197,'choice-band',13,100);
+INSERT INTO items VALUES (198,'kings-rock',12,100);
+INSERT INTO items VALUES (199,'silver-powder',19,100);
+INSERT INTO items VALUES (200,'amulet-coin',16,100);
+INSERT INTO items VALUES (201,'cleanse-tag',16,200);
+INSERT INTO items VALUES (202,'soul-dew',18,200);
+INSERT INTO items VALUES (203,'deep-sea-tooth',18,200);
+INSERT INTO items VALUES (204,'deep-sea-scale',18,200);
+INSERT INTO items VALUES (205,'smoke-ball',12,200);
+INSERT INTO items VALUES (206,'everstone',16,200);
+INSERT INTO items VALUES (207,'focus-band',12,200);
+INSERT INTO items VALUES (208,'lucky-egg',16,200);
+INSERT INTO items VALUES (209,'scope-lens',12,200);
+INSERT INTO items VALUES (210,'metal-coat',19,100);
+INSERT INTO items VALUES (211,'leftovers',12,200);
+INSERT INTO items VALUES (212,'dragon-scale',10,2100);
+INSERT INTO items VALUES (213,'light-ball',18,100);
+INSERT INTO items VALUES (214,'soft-sand',19,100);
+INSERT INTO items VALUES (215,'hard-stone',19,100);
+INSERT INTO items VALUES (216,'miracle-seed',19,100);
+INSERT INTO items VALUES (217,'black-glasses',19,100);
+INSERT INTO items VALUES (218,'black-belt',19,100);
+INSERT INTO items VALUES (219,'magnet',19,100);
+INSERT INTO items VALUES (220,'mystic-water',19,100);
+INSERT INTO items VALUES (221,'sharp-beak',19,100);
+INSERT INTO items VALUES (222,'poon-barb',19,100);
+INSERT INTO items VALUES (223,'never-melt-ice',19,100);
+INSERT INTO items VALUES (224,'spell-tag',19,100);
+INSERT INTO items VALUES (225,'twted-spoon',19,100);
+INSERT INTO items VALUES (226,'charcoal',19,9800);
+INSERT INTO items VALUES (227,'dragon-fang',19,100);
+INSERT INTO items VALUES (228,'silk-scarf',19,100);
+INSERT INTO items VALUES (229,'up-grade',10,2100);
+INSERT INTO items VALUES (230,'shell-bell',12,200);
+INSERT INTO items VALUES (231,'sea-incense',19,9600);
+INSERT INTO items VALUES (232,'lax-incense',12,9600);
+INSERT INTO items VALUES (233,'lucky-punch',18,10);
+INSERT INTO items VALUES (234,'metal-powder',18,10);
+INSERT INTO items VALUES (235,'thick-club',18,500);
+INSERT INTO items VALUES (236,'stick',18,200);
+INSERT INTO items VALUES (237,'red-scarf',36,100);
+INSERT INTO items VALUES (238,'blue-scarf',36,100);
+INSERT INTO items VALUES (239,'pink-scarf',36,100);
+INSERT INTO items VALUES (240,'green-scarf',36,100);
+INSERT INTO items VALUES (241,'yellow-scarf',36,100);
+INSERT INTO items VALUES (242,'wide-lens',12,200);
+INSERT INTO items VALUES (243,'muscle-band',12,200);
+INSERT INTO items VALUES (244,'we-glasses',12,200);
+INSERT INTO items VALUES (245,'expert-belt',12,200);
+INSERT INTO items VALUES (246,'light-clay',12,200);
+INSERT INTO items VALUES (247,'life-orb',12,200);
+INSERT INTO items VALUES (248,'power-herb',12,100);
+INSERT INTO items VALUES (249,'toxic-orb',15,100);
+INSERT INTO items VALUES (250,'flame-orb',15,100);
+INSERT INTO items VALUES (251,'quick-powder',18,10);
+INSERT INTO items VALUES (252,'focus-sash',12,200);
+INSERT INTO items VALUES (253,'zoom-lens',12,200);
+INSERT INTO items VALUES (254,'metronome',12,200);
+INSERT INTO items VALUES (255,'iron-ball',15,200);
+INSERT INTO items VALUES (256,'lagging-tail',15,200);
+INSERT INTO items VALUES (257,'destiny-knot',12,200);
+INSERT INTO items VALUES (258,'black-sludge',12,200);
+INSERT INTO items VALUES (259,'icy-rock',12,200);
+INSERT INTO items VALUES (260,'smooth-rock',12,200);
+INSERT INTO items VALUES (261,'heat-rock',12,200);
+INSERT INTO items VALUES (262,'damp-rock',12,200);
+INSERT INTO items VALUES (263,'grip-claw',12,200);
+INSERT INTO items VALUES (264,'choice-scarf',13,200);
+INSERT INTO items VALUES (265,'sticky-barb',15,200);
+INSERT INTO items VALUES (266,'power-bracer',14,3000);
+INSERT INTO items VALUES (267,'power-belt',14,3000);
+INSERT INTO items VALUES (268,'power-lens',14,3000);
+INSERT INTO items VALUES (269,'power-band',14,3000);
+INSERT INTO items VALUES (270,'power-anklet',14,3000);
+INSERT INTO items VALUES (271,'power-weight',14,3000);
+INSERT INTO items VALUES (272,'shed-shell',12,100);
+INSERT INTO items VALUES (273,'big-root',12,200);
+INSERT INTO items VALUES (274,'choice-specs',13,200);
+INSERT INTO items VALUES (275,'flame-plate',17,1000);
+INSERT INTO items VALUES (276,'splash-plate',17,1000);
+INSERT INTO items VALUES (277,'zap-plate',17,1000);
+INSERT INTO items VALUES (278,'meadow-plate',17,1000);
+INSERT INTO items VALUES (279,'icicle-plate',17,1000);
+INSERT INTO items VALUES (280,'ft-plate',17,1000);
+INSERT INTO items VALUES (281,'toxic-plate',17,1000);
+INSERT INTO items VALUES (282,'earth-plate',17,1000);
+INSERT INTO items VALUES (283,'sky-plate',17,1000);
+INSERT INTO items VALUES (284,'mind-plate',17,1000);
+INSERT INTO items VALUES (285,'insect-plate',17,1000);
+INSERT INTO items VALUES (286,'stone-plate',17,1000);
+INSERT INTO items VALUES (287,'spooky-plate',17,1000);
+INSERT INTO items VALUES (288,'draco-plate',17,1000);
+INSERT INTO items VALUES (289,'dread-plate',17,1000);
+INSERT INTO items VALUES (290,'iron-plate',17,1000);
+INSERT INTO items VALUES (291,'odd-incense',19,9600);
+INSERT INTO items VALUES (292,'rock-incense',19,9600);
+INSERT INTO items VALUES (293,'full-incense',15,9600);
+INSERT INTO items VALUES (294,'wave-incense',19,9600);
+INSERT INTO items VALUES (295,'rose-incense',19,9600);
+INSERT INTO items VALUES (296,'luck-incense',16,9600);
+INSERT INTO items VALUES (297,'pure-incense',16,9600);
+INSERT INTO items VALUES (298,'protector',10,2100);
+INSERT INTO items VALUES (299,'electirizer',10,2100);
+INSERT INTO items VALUES (300,'magmarizer',10,2100);
+INSERT INTO items VALUES (301,'dubious-dc',10,2100);
+INSERT INTO items VALUES (302,'reaper-cloth',10,2100);
+INSERT INTO items VALUES (303,'razor-claw',12,2100);
+INSERT INTO items VALUES (304,'razor-fang',12,2100);
+INSERT INTO items VALUES (305,'tm01',37,3000);
+INSERT INTO items VALUES (306,'tm02',37,3000);
+INSERT INTO items VALUES (307,'tm03',37,3000);
+INSERT INTO items VALUES (308,'tm04',37,1500);
+INSERT INTO items VALUES (309,'tm05',37,1000);
+INSERT INTO items VALUES (310,'tm06',37,3000);
+INSERT INTO items VALUES (311,'tm07',37,2000);
+INSERT INTO items VALUES (312,'tm08',37,1500);
+INSERT INTO items VALUES (313,'tm09',37,2000);
+INSERT INTO items VALUES (314,'tm10',37,2000);
+INSERT INTO items VALUES (315,'tm11',37,2000);
+INSERT INTO items VALUES (316,'tm12',37,1500);
+INSERT INTO items VALUES (317,'tm13',37,3000);
+INSERT INTO items VALUES (318,'tm14',37,5500);
+INSERT INTO items VALUES (319,'tm15',37,7500);
+INSERT INTO items VALUES (320,'tm16',37,2000);
+INSERT INTO items VALUES (321,'tm17',37,2000);
+INSERT INTO items VALUES (322,'tm18',37,2000);
+INSERT INTO items VALUES (323,'tm19',37,3000);
+INSERT INTO items VALUES (324,'tm20',37,2000);
+INSERT INTO items VALUES (325,'tm21',37,1000);
+INSERT INTO items VALUES (326,'tm22',37,3000);
+INSERT INTO items VALUES (327,'tm23',37,3000);
+INSERT INTO items VALUES (328,'tm24',37,3000);
+INSERT INTO items VALUES (329,'tm25',37,5500);
+INSERT INTO items VALUES (330,'tm26',37,3000);
+INSERT INTO items VALUES (331,'tm27',37,1000);
+INSERT INTO items VALUES (332,'tm28',37,2000);
+INSERT INTO items VALUES (333,'tm29',37,3000);
+INSERT INTO items VALUES (334,'tm30',37,3000);
+INSERT INTO items VALUES (335,'tm31',37,3000);
+INSERT INTO items VALUES (336,'tm32',37,1000);
+INSERT INTO items VALUES (337,'tm33',37,2000);
+INSERT INTO items VALUES (338,'tm34',37,3000);
+INSERT INTO items VALUES (339,'tm35',37,3000);
+INSERT INTO items VALUES (340,'tm36',37,3000);
+INSERT INTO items VALUES (341,'tm37',37,2000);
+INSERT INTO items VALUES (342,'tm38',37,5500);
+INSERT INTO items VALUES (343,'tm39',37,2000);
+INSERT INTO items VALUES (344,'tm40',37,3000);
+INSERT INTO items VALUES (345,'tm41',37,1500);
+INSERT INTO items VALUES (346,'tm42',37,3000);
+INSERT INTO items VALUES (347,'tm43',37,2000);
+INSERT INTO items VALUES (348,'tm44',37,3000);
+INSERT INTO items VALUES (349,'tm45',37,3000);
+INSERT INTO items VALUES (350,'tm46',37,2000);
+INSERT INTO items VALUES (351,'tm47',37,3000);
+INSERT INTO items VALUES (352,'tm48',37,3000);
+INSERT INTO items VALUES (353,'tm49',37,1500);
+INSERT INTO items VALUES (354,'tm50',37,5500);
+INSERT INTO items VALUES (355,'tm51',37,2000);
+INSERT INTO items VALUES (356,'tm52',37,5500);
+INSERT INTO items VALUES (357,'tm53',37,3000);
+INSERT INTO items VALUES (358,'tm54',37,2000);
+INSERT INTO items VALUES (359,'tm55',37,3000);
+INSERT INTO items VALUES (360,'tm56',37,2000);
+INSERT INTO items VALUES (361,'tm57',37,3000);
+INSERT INTO items VALUES (362,'tm58',37,2000);
+INSERT INTO items VALUES (363,'tm59',37,3000);
+INSERT INTO items VALUES (364,'tm60',37,3000);
+INSERT INTO items VALUES (365,'tm61',37,2000);
+INSERT INTO items VALUES (366,'tm62',37,3000);
+INSERT INTO items VALUES (367,'tm63',37,2000);
+INSERT INTO items VALUES (368,'tm64',37,7500);
+INSERT INTO items VALUES (369,'tm65',37,3000);
+INSERT INTO items VALUES (370,'tm66',37,3000);
+INSERT INTO items VALUES (371,'tm67',37,1000);
+INSERT INTO items VALUES (372,'tm68',37,7500);
+INSERT INTO items VALUES (373,'tm69',37,1500);
+INSERT INTO items VALUES (374,'tm70',37,1000);
+INSERT INTO items VALUES (375,'tm71',37,3000);
+INSERT INTO items VALUES (376,'tm72',37,3000);
+INSERT INTO items VALUES (377,'tm73',37,2000);
+INSERT INTO items VALUES (378,'tm74',37,3000);
+INSERT INTO items VALUES (379,'tm75',37,1500);
+INSERT INTO items VALUES (380,'tm76',37,2000);
+INSERT INTO items VALUES (381,'tm77',37,1500);
+INSERT INTO items VALUES (382,'tm78',37,1500);
+INSERT INTO items VALUES (383,'tm79',37,3000);
+INSERT INTO items VALUES (384,'tm80',37,3000);
+INSERT INTO items VALUES (385,'tm81',37,3000);
+INSERT INTO items VALUES (386,'tm82',37,1000);
+INSERT INTO items VALUES (387,'tm83',37,2000);
+INSERT INTO items VALUES (388,'tm84',37,3000);
+INSERT INTO items VALUES (389,'tm85',37,3000);
+INSERT INTO items VALUES (390,'tm86',37,3000);
+INSERT INTO items VALUES (391,'tm87',37,1500);
+INSERT INTO items VALUES (392,'tm88',37,3000);
+INSERT INTO items VALUES (393,'tm89',37,3000);
+INSERT INTO items VALUES (394,'tm90',37,2000);
+INSERT INTO items VALUES (395,'tm91',37,3000);
+INSERT INTO items VALUES (396,'tm92',37,5500);
+INSERT INTO items VALUES (397,'hm01',37,0);
+INSERT INTO items VALUES (398,'hm02',37,0);
+INSERT INTO items VALUES (399,'hm03',37,0);
+INSERT INTO items VALUES (400,'hm04',37,0);
+INSERT INTO items VALUES (401,'hm05',37,0);
+INSERT INTO items VALUES (402,'hm06',37,0);
+INSERT INTO items VALUES (403,'hm07',37,0);
+INSERT INTO items VALUES (404,'hm08',37,0);
+INSERT INTO items VALUES (405,'explorer-kit',21,0);
+INSERT INTO items VALUES (406,'loot-sack',23,0);
+INSERT INTO items VALUES (407,'rule-book',23,0);
+INSERT INTO items VALUES (408,'poke-radar',21,0);
+INSERT INTO items VALUES (409,'point-card',21,0);
+INSERT INTO items VALUES (410,'journal',21,0);
+INSERT INTO items VALUES (411,'seal-case',21,0);
+INSERT INTO items VALUES (412,'fashion-case',21,0);
+INSERT INTO items VALUES (413,'seal-bag',23,0);
+INSERT INTO items VALUES (414,'pal-pad',21,0);
+INSERT INTO items VALUES (415,'works-key',22,0);
+INSERT INTO items VALUES (416,'old-charm',22,0);
+INSERT INTO items VALUES (417,'galactic-key',22,0);
+INSERT INTO items VALUES (418,'red-chain',23,0);
+INSERT INTO items VALUES (419,'town-map',21,0);
+INSERT INTO items VALUES (420,'vs-seeker',21,0);
+INSERT INTO items VALUES (421,'coin-case',21,0);
+INSERT INTO items VALUES (422,'old-rod',21,0);
+INSERT INTO items VALUES (423,'good-rod',21,0);
+INSERT INTO items VALUES (424,'super-rod',21,0);
+INSERT INTO items VALUES (425,'sprayduck',21,0);
+INSERT INTO items VALUES (426,'poffin-case',21,0);
+INSERT INTO items VALUES (427,'bicycle',21,0);
+INSERT INTO items VALUES (428,'suite-key',20,0);
+INSERT INTO items VALUES (429,'oaks-letter',20,0);
+INSERT INTO items VALUES (430,'lunar-wing',20,0);
+INSERT INTO items VALUES (431,'member-card',20,0);
+INSERT INTO items VALUES (432,'azure-flute',20,0);
+INSERT INTO items VALUES (433,'ss-ticket',22,0);
+INSERT INTO items VALUES (434,'contest-pass',21,0);
+INSERT INTO items VALUES (435,'magma-stone',22,0);
+INSERT INTO items VALUES (436,'parcel',22,0);
+INSERT INTO items VALUES (437,'coupon-1',22,0);
+INSERT INTO items VALUES (438,'coupon-2',22,0);
+INSERT INTO items VALUES (439,'coupon-3',22,0);
+INSERT INTO items VALUES (440,'storage-key',22,0);
+INSERT INTO items VALUES (441,'secret-potion',22,0);
+INSERT INTO items VALUES (442,'greous-orb',18,10000);
+INSERT INTO items VALUES (443,'vs-recorder',21,0);
+INSERT INTO items VALUES (444,'gracidea',20,0);
+INSERT INTO items VALUES (445,'secret-key',20,0);
+INSERT INTO items VALUES (446,'apricorn-box',21,0);
+INSERT INTO items VALUES (447,'berry-pots',21,0);
+INSERT INTO items VALUES (448,'squirt-bottle',22,0);
+INSERT INTO items VALUES (449,'lure-ball',39,300);
+INSERT INTO items VALUES (450,'level-ball',39,300);
+INSERT INTO items VALUES (451,'moon-ball',39,300);
+INSERT INTO items VALUES (452,'heavy-ball',39,300);
+INSERT INTO items VALUES (453,'fast-ball',39,300);
+INSERT INTO items VALUES (454,'friend-ball',39,300);
+INSERT INTO items VALUES (455,'love-ball',39,300);
+INSERT INTO items VALUES (456,'park-ball',34,0);
+INSERT INTO items VALUES (457,'sport-ball',34,0);
+INSERT INTO items VALUES (458,'red-apricorn',40,0);
+INSERT INTO items VALUES (459,'blue-apricorn',40,0);
+INSERT INTO items VALUES (460,'yellow-apricorn',40,0);
+INSERT INTO items VALUES (461,'green-apricorn',40,0);
+INSERT INTO items VALUES (462,'pink-apricorn',40,0);
+INSERT INTO items VALUES (463,'white-apricorn',40,0);
+INSERT INTO items VALUES (464,'black-apricorn',40,0);
+INSERT INTO items VALUES (465,'dowsing-machine',21,0);
+INSERT INTO items VALUES (466,'rage-candy-bar',21,0);
+INSERT INTO items VALUES (467,'red-orb',22,0);
+INSERT INTO items VALUES (468,'blue-orb',22,0);
+INSERT INTO items VALUES (469,'jade-orb',22,0);
+INSERT INTO items VALUES (470,'enigma-stone',20,0);
+INSERT INTO items VALUES (471,'unown-report',21,0);
+INSERT INTO items VALUES (472,'blue-card',21,0);
+INSERT INTO items VALUES (473,'slowpoke-tail',23,0);
+INSERT INTO items VALUES (474,'clear-bell',22,0);
+INSERT INTO items VALUES (475,'card-key',22,0);
+INSERT INTO items VALUES (476,'basement-key',22,0);
+INSERT INTO items VALUES (477,'red-scale',22,0);
+INSERT INTO items VALUES (478,'lost-item',22,0);
+INSERT INTO items VALUES (479,'pass',22,0);
+INSERT INTO items VALUES (480,'machine-part',22,0);
+INSERT INTO items VALUES (481,'silver-wing',22,0);
+INSERT INTO items VALUES (482,'rainbow-wing',22,0);
+INSERT INTO items VALUES (483,'mystery-egg',22,0);
+INSERT INTO items VALUES (484,'gb-sounds',21,0);
+INSERT INTO items VALUES (485,'tidal-bell',22,0);
+INSERT INTO items VALUES (486,'data-card-01',41,0);
+INSERT INTO items VALUES (487,'data-card-02',41,0);
+INSERT INTO items VALUES (488,'data-card-03',41,0);
+INSERT INTO items VALUES (489,'data-card-04',41,0);
+INSERT INTO items VALUES (490,'data-card-05',41,0);
+INSERT INTO items VALUES (491,'data-card-06',41,0);
+INSERT INTO items VALUES (492,'data-card-07',41,0);
+INSERT INTO items VALUES (493,'data-card-08',41,0);
+INSERT INTO items VALUES (494,'data-card-09',41,0);
+INSERT INTO items VALUES (495,'data-card-10',41,0);
+INSERT INTO items VALUES (496,'data-card-11',41,0);
+INSERT INTO items VALUES (497,'data-card-12',41,0);
+INSERT INTO items VALUES (498,'data-card-13',41,0);
+INSERT INTO items VALUES (499,'data-card-14',41,0);
+INSERT INTO items VALUES (500,'data-card-15',41,0);
+INSERT INTO items VALUES (501,'data-card-16',41,0);
+INSERT INTO items VALUES (502,'data-card-17',41,0);
+INSERT INTO items VALUES (503,'data-card-18',41,0);
+INSERT INTO items VALUES (504,'data-card-19',41,0);
+INSERT INTO items VALUES (505,'data-card-20',41,0);
+INSERT INTO items VALUES (506,'data-card-21',41,0);
+INSERT INTO items VALUES (507,'data-card-22',41,0);
+INSERT INTO items VALUES (508,'data-card-23',41,0);
+INSERT INTO items VALUES (509,'data-card-24',41,0);
+INSERT INTO items VALUES (510,'data-card-25',41,0);
+INSERT INTO items VALUES (511,'data-card-26',41,0);
+INSERT INTO items VALUES (512,'data-card-27',41,0);
+INSERT INTO items VALUES (513,'lock-capsule',23,0);
+INSERT INTO items VALUES (514,'photo-album',23,0);
+INSERT INTO items VALUES (515,'orange-mail',25,50);
+INSERT INTO items VALUES (516,'harbor-mail',25,50);
+INSERT INTO items VALUES (517,'glitter-mail',25,50);
+INSERT INTO items VALUES (518,'mech-mail',25,50);
+INSERT INTO items VALUES (519,'wood-mail',25,50);
+INSERT INTO items VALUES (520,'wave-mail',25,50);
+INSERT INTO items VALUES (521,'bead-mail',25,50);
+INSERT INTO items VALUES (522,'shadow-mail',25,50);
+INSERT INTO items VALUES (523,'tropic-mail',25,50);
+INSERT INTO items VALUES (524,'dream-mail',25,50);
+INSERT INTO items VALUES (525,'fab-mail',25,50);
+INSERT INTO items VALUES (526,'retro-mail',25,0);
+INSERT INTO items VALUES (527,'mach-bike',21,0);
+INSERT INTO items VALUES (528,'acro-bike',21,0);
+INSERT INTO items VALUES (529,'wailmer-pail',21,0);
+INSERT INTO items VALUES (530,'devon-goods',22,0);
+INSERT INTO items VALUES (531,'soot-sack',21,0);
+INSERT INTO items VALUES (532,'pokeblock-case',21,0);
+INSERT INTO items VALUES (533,'letter',22,0);
+INSERT INTO items VALUES (534,'eon-ticket',20,0);
+INSERT INTO items VALUES (535,'scanner',22,0);
+INSERT INTO items VALUES (536,'go-goggles',21,0);
+INSERT INTO items VALUES (537,'meteorite',22,0);
+INSERT INTO items VALUES (538,'rm-1-key',22,0);
+INSERT INTO items VALUES (539,'rm-2-key',22,0);
+INSERT INTO items VALUES (540,'rm-4-key',22,0);
+INSERT INTO items VALUES (541,'rm-6-key',22,0);
+INSERT INTO items VALUES (542,'devon-scope',21,0);
+INSERT INTO items VALUES (543,'oaks-parcel',22,0);
+INSERT INTO items VALUES (544,'poke-flute',22,0);
+INSERT INTO items VALUES (545,'bike-voucher',22,0);
+INSERT INTO items VALUES (546,'gold-teeth',22,0);
+INSERT INTO items VALUES (547,'lift-key',22,0);
+INSERT INTO items VALUES (548,'silph-scope',22,0);
+INSERT INTO items VALUES (549,'fame-checker',21,0);
+INSERT INTO items VALUES (550,'tm-case',21,0);
+INSERT INTO items VALUES (551,'berry-pouch',21,0);
+INSERT INTO items VALUES (552,'teachy-tv',21,0);
+INSERT INTO items VALUES (553,'tri-pass',22,0);
+INSERT INTO items VALUES (554,'rainbow-pass',22,0);
+INSERT INTO items VALUES (555,'tea',22,0);
+INSERT INTO items VALUES (556,'mysticticket',20,0);
+INSERT INTO items VALUES (557,'auroraticket',20,0);
+INSERT INTO items VALUES (558,'powder-jar',21,0);
+INSERT INTO items VALUES (559,'ruby',22,0);
+INSERT INTO items VALUES (560,'sapphire',22,0);
+INSERT INTO items VALUES (561,'magma-emblem',22,0);
+INSERT INTO items VALUES (562,'old-sea-map',20,0);
+INSERT INTO items VALUES (563,'douse-drive',18,1000);
+INSERT INTO items VALUES (564,'shock-drive',18,1000);
+INSERT INTO items VALUES (565,'burn-drive',18,1000);
+INSERT INTO items VALUES (566,'chill-drive',18,1000);
+INSERT INTO items VALUES (567,'sweet-heart',27,100);
+INSERT INTO items VALUES (568,'greet-mail',25,50);
+INSERT INTO items VALUES (569,'favored-mail',25,50);
+INSERT INTO items VALUES (570,'rsvp-mail',25,50);
+INSERT INTO items VALUES (571,'thanks-mail',25,50);
+INSERT INTO items VALUES (572,'inquiry-mail',25,50);
+INSERT INTO items VALUES (573,'like-mail',25,50);
+INSERT INTO items VALUES (574,'reply-mail',25,50);
+INSERT INTO items VALUES (575,'bridge-mail-s',25,50);
+INSERT INTO items VALUES (576,'bridge-mail-d',25,50);
+INSERT INTO items VALUES (577,'bridge-mail-t',25,50);
+INSERT INTO items VALUES (578,'bridge-mail-v',25,50);
+INSERT INTO items VALUES (579,'bridge-mail-m',25,50);
+INSERT INTO items VALUES (580,'prm-scale',10,500);
+INSERT INTO items VALUES (581,'eviolite',12,200);
+INSERT INTO items VALUES (582,'float-stone',12,200);
+INSERT INTO items VALUES (583,'rocky-helmet',12,200);
+INSERT INTO items VALUES (584,'air-balloon',12,200);
+INSERT INTO items VALUES (585,'red-card',12,200);
+INSERT INTO items VALUES (586,'ring-target',12,200);
+INSERT INTO items VALUES (587,'binding-band',12,200);
+INSERT INTO items VALUES (588,'absorb-bulb',12,200);
+INSERT INTO items VALUES (589,'cell-battery',12,200);
+INSERT INTO items VALUES (590,'eject-button',12,200);
+INSERT INTO items VALUES (591,'fire-gem',42,200);
+INSERT INTO items VALUES (592,'water-gem',42,200);
+INSERT INTO items VALUES (593,'electric-gem',42,200);
+INSERT INTO items VALUES (594,'grass-gem',42,200);
+INSERT INTO items VALUES (595,'ice-gem',42,200);
+INSERT INTO items VALUES (596,'fighting-gem',42,200);
+INSERT INTO items VALUES (597,'poon-gem',42,200);
+INSERT INTO items VALUES (598,'ground-gem',42,200);
+INSERT INTO items VALUES (599,'flying-gem',42,200);
+INSERT INTO items VALUES (600,'psychic-gem',42,200);
+INSERT INTO items VALUES (601,'bug-gem',42,200);
+INSERT INTO items VALUES (602,'rock-gem',42,200);
+INSERT INTO items VALUES (603,'ghost-gem',42,200);
+INSERT INTO items VALUES (604,'dark-gem',42,200);
+INSERT INTO items VALUES (605,'steel-gem',42,200);
+INSERT INTO items VALUES (606,'health-wing',26,3000);
+INSERT INTO items VALUES (607,'muscle-wing',26,3000);
+INSERT INTO items VALUES (608,'rest-wing',26,3000);
+INSERT INTO items VALUES (609,'genius-wing',26,3000);
+INSERT INTO items VALUES (610,'clever-wing',26,3000);
+INSERT INTO items VALUES (611,'swift-wing',26,3000);
+INSERT INTO items VALUES (612,'pretty-wing',24,200);
+INSERT INTO items VALUES (613,'cover-fossil',35,1000);
+INSERT INTO items VALUES (614,'plume-fossil',35,1000);
+INSERT INTO items VALUES (615,'liberty-pass',20,0);
+INSERT INTO items VALUES (616,'pass-orb',12,200);
+INSERT INTO items VALUES (617,'dream-ball',33,0);
+INSERT INTO items VALUES (618,'poke-toy',11,1000);
+INSERT INTO items VALUES (619,'prop-case',21,0);
+INSERT INTO items VALUES (620,'dragon-skull',22,0);
+INSERT INTO items VALUES (621,'balm-mushroom',24,0);
+INSERT INTO items VALUES (622,'big-nugget',24,0);
+INSERT INTO items VALUES (623,'pearl-string',24,0);
+INSERT INTO items VALUES (624,'comet-shard',24,0);
+INSERT INTO items VALUES (625,'relic-copper',24,0);
+INSERT INTO items VALUES (626,'relic-silver',24,0);
+INSERT INTO items VALUES (627,'relic-gold',24,0);
+INSERT INTO items VALUES (628,'relic-vase',24,0);
+INSERT INTO items VALUES (629,'relic-band',24,0);
+INSERT INTO items VALUES (630,'relic-statue',24,0);
+INSERT INTO items VALUES (631,'relic-crown',24,0);
+INSERT INTO items VALUES (632,'casteliacone',30,100);
+INSERT INTO items VALUES (633,'dire-hit-2',43,0);
+INSERT INTO items VALUES (634,'x-speed-2',43,0);
+INSERT INTO items VALUES (635,'x-sp-atk-2',43,0);
+INSERT INTO items VALUES (636,'x-sp-def-2',43,0);
+INSERT INTO items VALUES (637,'x-defense-2',43,0);
+INSERT INTO items VALUES (638,'x-attack-2',43,0);
+INSERT INTO items VALUES (639,'x-accuracy-2',43,0);
+INSERT INTO items VALUES (640,'x-speed-3',43,0);
+INSERT INTO items VALUES (641,'x-sp-atk-3',43,0);
+INSERT INTO items VALUES (642,'x-sp-def-3',43,0);
+INSERT INTO items VALUES (643,'x-defense-3',43,0);
+INSERT INTO items VALUES (644,'x-attack-3',43,0);
+INSERT INTO items VALUES (645,'x-accuracy-3',43,0);
+INSERT INTO items VALUES (646,'x-speed-6',43,0);
+INSERT INTO items VALUES (647,'x-sp-atk-6',43,0);
+INSERT INTO items VALUES (648,'x-sp-def-6',43,0);
+INSERT INTO items VALUES (649,'x-defense-6',43,0);
+INSERT INTO items VALUES (650,'x-attack-6',43,0);
+INSERT INTO items VALUES (651,'x-accuracy-6',43,0);
+INSERT INTO items VALUES (652,'ability-urge',43,0);
+INSERT INTO items VALUES (653,'item-drop',43,0);
+INSERT INTO items VALUES (654,'item-urge',43,0);
+INSERT INTO items VALUES (655,'reset-urge',43,0);
+INSERT INTO items VALUES (656,'dire-hit-3',43,0);
+INSERT INTO items VALUES (657,'light-stone',22,0);
+INSERT INTO items VALUES (658,'dark-stone',22,0);
+INSERT INTO items VALUES (659,'tm93',37,10000);
+INSERT INTO items VALUES (660,'tm94',37,10000);
+INSERT INTO items VALUES (661,'tm95',37,10000);
+INSERT INTO items VALUES (662,'xtransceiver',21,0);
+INSERT INTO items VALUES (663,'god-stone',23,0);
+INSERT INTO items VALUES (664,'gram-1',22,0);
+INSERT INTO items VALUES (665,'gram-2',22,0);
+INSERT INTO items VALUES (666,'gram-3',22,0);
+INSERT INTO items VALUES (668,'dragon-gem',42,200);
+INSERT INTO items VALUES (669,'normal-gem',42,200);
+INSERT INTO items VALUES (670,'medal-box',21,0);
+INSERT INTO items VALUES (671,'dna-splicers',21,0);
+INSERT INTO items VALUES (673,'permit',21,0);
+INSERT INTO items VALUES (674,'oval-charm',21,0);
+INSERT INTO items VALUES (675,'shiny-charm',21,0);
+INSERT INTO items VALUES (676,'plasma-card',22,0);
+INSERT INTO items VALUES (677,'grubby-hanky',22,0);
+INSERT INTO items VALUES (678,'colress-machine',22,0);
+INSERT INTO items VALUES (679,'dropped-item',22,0);
+INSERT INTO items VALUES (681,'reveal-glass',21,0);
+INSERT INTO items VALUES (682,'weakness-policy',12,0);
+INSERT INTO items VALUES (683,'assault-vest',12,0);
+INSERT INTO items VALUES (684,'pixie-plate',17,0);
+INSERT INTO items VALUES (685,'ability-capsule',26,0);
+INSERT INTO items VALUES (686,'whipped-dream',10,0);
+INSERT INTO items VALUES (687,'sachet',10,0);
+INSERT INTO items VALUES (688,'luminous-moss',12,0);
+INSERT INTO items VALUES (689,'snowball',12,0);
+INSERT INTO items VALUES (690,'safety-goggles',12,0);
+INSERT INTO items VALUES (691,'rich-mulch',32,0);
+INSERT INTO items VALUES (692,'surpre-mulch',32,0);
+INSERT INTO items VALUES (693,'boost-mulch',32,0);
+INSERT INTO items VALUES (694,'amaze-mulch',32,0);
+INSERT INTO items VALUES (695,'gengarite',44,0);
+INSERT INTO items VALUES (696,'gardevoirite',44,0);
+INSERT INTO items VALUES (697,'ampharosite',44,0);
+INSERT INTO items VALUES (698,'venusaurite',44,0);
+INSERT INTO items VALUES (699,'charizardite-x',44,0);
+INSERT INTO items VALUES (700,'blastoinite',44,0);
+INSERT INTO items VALUES (701,'mewtwonite-x',44,0);
+INSERT INTO items VALUES (702,'mewtwonite-y',44,0);
+INSERT INTO items VALUES (703,'blazikenite',44,0);
+INSERT INTO items VALUES (704,'medichamite',44,0);
+INSERT INTO items VALUES (705,'houndoominite',44,0);
+INSERT INTO items VALUES (706,'aggronite',44,0);
+INSERT INTO items VALUES (707,'banettite',44,0);
+INSERT INTO items VALUES (708,'tyranitarite',44,0);
+INSERT INTO items VALUES (709,'scizorite',44,0);
+INSERT INTO items VALUES (710,'pinsirite',44,0);
+INSERT INTO items VALUES (711,'aerodactylite',44,0);
+INSERT INTO items VALUES (712,'lucarionite',44,0);
+INSERT INTO items VALUES (713,'abomasite',44,0);
+INSERT INTO items VALUES (714,'kangaskhanite',44,0);
+INSERT INTO items VALUES (715,'gyaradosite',44,0);
+INSERT INTO items VALUES (716,'absolite',44,0);
+INSERT INTO items VALUES (717,'charizardite-y',44,0);
+INSERT INTO items VALUES (718,'alakazite',44,0);
+INSERT INTO items VALUES (719,'heracronite',44,0);
+INSERT INTO items VALUES (720,'mawilite',44,0);
+INSERT INTO items VALUES (721,'manectite',44,0);
+INSERT INTO items VALUES (722,'garchompite',44,0);
+INSERT INTO items VALUES (723,'roseli-berry',7,0);
+INSERT INTO items VALUES (724,'kee-berry',4,0);
+INSERT INTO items VALUES (725,'maranga-berry',4,0);
+INSERT INTO items VALUES (726,'dcount-coupon',10001,0);
+INSERT INTO items VALUES (727,'strange-souvenir',10001,0);
+INSERT INTO items VALUES (728,'lumiose-galette',30,0);
+INSERT INTO items VALUES (729,'jaw-fossil',35,0);
+INSERT INTO items VALUES (730,'sail-fossil',35,0);
+INSERT INTO items VALUES (731,'fairy-gem',42,0);
+INSERT INTO items VALUES (732,'adventure-rules',21,0);
+INSERT INTO items VALUES (733,'elevator-key',22,0);
+INSERT INTO items VALUES (734,'holo-caster',21,0);
+INSERT INTO items VALUES (735,'honor-of-kalos',22,0);
+INSERT INTO items VALUES (736,'intriguing-stone',22,0);
+INSERT INTO items VALUES (737,'lens-case',21,0);
+INSERT INTO items VALUES (738,'looker-ticket',22,0);
+INSERT INTO items VALUES (739,'mega-ring',21,0);
+INSERT INTO items VALUES (740,'power-plant-pass',22,0);
+INSERT INTO items VALUES (741,'profs-letter',22,0);
+INSERT INTO items VALUES (742,'roller-skates',21,0);
+INSERT INTO items VALUES (743,'sprinklotad',21,0);
+INSERT INTO items VALUES (744,'tmv-pass',21,0);
+INSERT INTO items VALUES (745,'tm96',37,0);
+INSERT INTO items VALUES (746,'tm97',37,0);
+INSERT INTO items VALUES (747,'tm98',37,0);
+INSERT INTO items VALUES (748,'tm99',37,0);
+DROP TABLE locations;
+
+CREATE TABLE locations (
+    id INT NOT NULL,
+    region_id INT NOT NULL,
+    identifier VARCHAR(23) CHARACTER SET utf8 NOT NULL,
+    PRIMARY KEY(id)
+);
+INSERT INTO locations VALUES (1,4,'canalave-city');
+INSERT INTO locations VALUES (2,4,'eterna-city');
+INSERT INTO locations VALUES (3,4,'pastoria-city');
+INSERT INTO locations VALUES (4,4,'sunyshore-city');
+INSERT INTO locations VALUES (5,4,'sinnoh-pokemon-league');
+INSERT INTO locations VALUES (6,4,'oreburgh-mine');
+INSERT INTO locations VALUES (7,4,'valley-windworks');
+INSERT INTO locations VALUES (8,4,'eterna-forest');
+INSERT INTO locations VALUES (9,4,'fuego-ironworks');
+INSERT INTO locations VALUES (10,4,'mt-coronet');
+INSERT INTO locations VALUES (11,4,'great-marsh');
+INSERT INTO locations VALUES (12,4,'solaceon-ruins');
+INSERT INTO locations VALUES (13,4,'sinnoh-victory-road');
+INSERT INTO locations VALUES (14,4,'ravaged-path');
+INSERT INTO locations VALUES (15,4,'oreburgh-gate');
+INSERT INTO locations VALUES (16,4,'stark-mountain');
+INSERT INTO locations VALUES (17,4,'spring-path');
+INSERT INTO locations VALUES (18,4,'turnback-cave');
+INSERT INTO locations VALUES (19,4,'snowpoint-temple');
+INSERT INTO locations VALUES (20,4,'wayward-cave');
+INSERT INTO locations VALUES (22,4,'ruin-maniac-cave');
+INSERT INTO locations VALUES (23,4,'trophy-garden');
+INSERT INTO locations VALUES (24,4,'iron-island');
+INSERT INTO locations VALUES (25,4,'old-chateau');
+INSERT INTO locations VALUES (26,4,'lake-verity');
+INSERT INTO locations VALUES (27,4,'lake-valor');
+INSERT INTO locations VALUES (28,4,'lake-acuity');
+INSERT INTO locations VALUES (29,4,'valor-lakefront');
+INSERT INTO locations VALUES (30,4,'acuity-lakefront');
+INSERT INTO locations VALUES (31,4,'sinnoh-route-201');
+INSERT INTO locations VALUES (32,4,'sinnoh-route-202');
+INSERT INTO locations VALUES (33,4,'sinnoh-route-203');
+INSERT INTO locations VALUES (34,4,'sinnoh-route-204');
+INSERT INTO locations VALUES (35,4,'sinnoh-route-205');
+INSERT INTO locations VALUES (36,4,'sinnoh-route-206');
+INSERT INTO locations VALUES (37,4,'sinnoh-route-207');
+INSERT INTO locations VALUES (38,4,'sinnoh-route-208');
+INSERT INTO locations VALUES (39,4,'sinnoh-route-209');
+INSERT INTO locations VALUES (40,4,'lost-tower');
+INSERT INTO locations VALUES (41,4,'sinnoh-route-210');
+INSERT INTO locations VALUES (42,4,'sinnoh-route-211');
+INSERT INTO locations VALUES (43,4,'sinnoh-route-212');
+INSERT INTO locations VALUES (44,4,'sinnoh-route-213');
+INSERT INTO locations VALUES (45,4,'sinnoh-route-214');
+INSERT INTO locations VALUES (46,4,'sinnoh-route-215');
+INSERT INTO locations VALUES (47,4,'sinnoh-route-216');
+INSERT INTO locations VALUES (48,4,'sinnoh-route-217');
+INSERT INTO locations VALUES (49,4,'sinnoh-route-218');
+INSERT INTO locations VALUES (50,4,'sinnoh-route-219');
+INSERT INTO locations VALUES (51,4,'sinnoh-route-221');
+INSERT INTO locations VALUES (52,4,'sinnoh-route-222');
+INSERT INTO locations VALUES (53,4,'sinnoh-route-224');
+INSERT INTO locations VALUES (54,4,'sinnoh-route-225');
+INSERT INTO locations VALUES (55,4,'sinnoh-route-227');
+INSERT INTO locations VALUES (56,4,'sinnoh-route-228');
+INSERT INTO locations VALUES (57,4,'sinnoh-route-229');
+INSERT INTO locations VALUES (58,4,'twinleaf-town');
+INSERT INTO locations VALUES (59,4,'celestic-town');
+INSERT INTO locations VALUES (60,4,'resort-area');
+INSERT INTO locations VALUES (61,4,'sinnoh-sea-route-220');
+INSERT INTO locations VALUES (62,4,'sinnoh-sea-route-223');
+INSERT INTO locations VALUES (63,4,'sinnoh-sea-route-226');
+INSERT INTO locations VALUES (64,4,'sinnoh-sea-route-230');
+INSERT INTO locations VALUES (65,2,'blackthorn-city');
+INSERT INTO locations VALUES (66,2,'burned-tower');
+INSERT INTO locations VALUES (67,1,'celadon-city');
+INSERT INTO locations VALUES (68,1,'cerulean-city');
+INSERT INTO locations VALUES (69,2,'cherrygrove-city');
+INSERT INTO locations VALUES (70,2,'cianwood-city');
+INSERT INTO locations VALUES (71,1,'cinnabar-island');
+INSERT INTO locations VALUES (72,2,'dark-cave');
+INSERT INTO locations VALUES (73,1,'digletts-cave');
+INSERT INTO locations VALUES (74,2,'dragons-den');
+INSERT INTO locations VALUES (75,2,'ecruteak-city');
+INSERT INTO locations VALUES (76,1,'fuchsia-city');
+INSERT INTO locations VALUES (77,2,'ice-path');
+INSERT INTO locations VALUES (78,2,'ilex-forest');
+INSERT INTO locations VALUES (79,2,'lake-of-rage');
+INSERT INTO locations VALUES (80,1,'mt-moon');
+INSERT INTO locations VALUES (81,2,'mt-mortar');
+INSERT INTO locations VALUES (82,2,'mt-silver');
+INSERT INTO locations VALUES (83,2,'national-park');
+INSERT INTO locations VALUES (84,2,'new-bark-town');
+INSERT INTO locations VALUES (85,2,'olivine-city');
+INSERT INTO locations VALUES (86,1,'pallet-town');
+INSERT INTO locations VALUES (87,1,'rock-tunnel');
+INSERT INTO locations VALUES (88,1,'kanto-route-1');
+INSERT INTO locations VALUES (89,1,'kanto-route-10');
+INSERT INTO locations VALUES (90,1,'kanto-route-11');
+INSERT INTO locations VALUES (91,1,'kanto-route-12');
+INSERT INTO locations VALUES (92,1,'kanto-route-13');
+INSERT INTO locations VALUES (93,1,'kanto-route-14');
+INSERT INTO locations VALUES (94,1,'kanto-route-15');
+INSERT INTO locations VALUES (95,1,'kanto-route-16');
+INSERT INTO locations VALUES (96,1,'kanto-route-17');
+INSERT INTO locations VALUES (97,1,'kanto-route-18');
+INSERT INTO locations VALUES (98,1,'kanto-sea-route-19');
+INSERT INTO locations VALUES (99,1,'kanto-route-2');
+INSERT INTO locations VALUES (100,1,'kanto-sea-route-20');
+INSERT INTO locations VALUES (101,1,'kanto-sea-route-21');
+INSERT INTO locations VALUES (102,1,'kanto-route-22');
+INSERT INTO locations VALUES (103,1,'kanto-route-24');
+INSERT INTO locations VALUES (104,1,'kanto-route-25');
+INSERT INTO locations VALUES (105,1,'kanto-route-26');
+INSERT INTO locations VALUES (106,1,'kanto-route-27');
+INSERT INTO locations VALUES (107,1,'kanto-route-28');
+INSERT INTO locations VALUES (108,2,'johto-route-29');
+INSERT INTO locations VALUES (109,1,'kanto-route-3');
+INSERT INTO locations VALUES (110,2,'johto-route-30');
+INSERT INTO locations VALUES (111,2,'johto-route-31');
+INSERT INTO locations VALUES (112,2,'johto-route-32');
+INSERT INTO locations VALUES (113,2,'johto-route-33');
+INSERT INTO locations VALUES (114,2,'johto-route-34');
+INSERT INTO locations VALUES (115,2,'johto-route-35');
+INSERT INTO locations VALUES (116,2,'johto-route-36');
+INSERT INTO locations VALUES (117,2,'johto-route-37');
+INSERT INTO locations VALUES (118,2,'johto-route-38');
+INSERT INTO locations VALUES (119,2,'johto-route-39');
+INSERT INTO locations VALUES (120,1,'kanto-route-4');
+INSERT INTO locations VALUES (121,2,'johto-sea-route-40');
+INSERT INTO locations VALUES (122,2,'johto-sea-route-41');
+INSERT INTO locations VALUES (123,2,'johto-route-42');
+INSERT INTO locations VALUES (124,2,'johto-route-43');
+INSERT INTO locations VALUES (125,2,'johto-route-44');
+INSERT INTO locations VALUES (126,2,'johto-route-45');
+INSERT INTO locations VALUES (127,2,'johto-route-46');
+INSERT INTO locations VALUES (128,2,'johto-route-47');
+INSERT INTO locations VALUES (129,2,'johto-route-48');
+INSERT INTO locations VALUES (130,1,'kanto-route-5');
+INSERT INTO locations VALUES (131,1,'kanto-route-6');
+INSERT INTO locations VALUES (132,1,'kanto-route-7');
+INSERT INTO locations VALUES (133,1,'kanto-route-8');
+INSERT INTO locations VALUES (134,1,'kanto-route-9');
+INSERT INTO locations VALUES (135,2,'ruins-of-alph');
+INSERT INTO locations VALUES (136,1,'seafoam-islands');
+INSERT INTO locations VALUES (137,2,'slowpoke-well');
+INSERT INTO locations VALUES (138,2,'sprout-tower');
+INSERT INTO locations VALUES (139,2,'bell-tower');
+INSERT INTO locations VALUES (140,2,'tohjo-falls');
+INSERT INTO locations VALUES (141,2,'union-cave');
+INSERT INTO locations VALUES (147,1,'cerulean-cave');
+INSERT INTO locations VALUES (148,2,'unknown-all-poliwag');
+INSERT INTO locations VALUES (149,2,'unknown-all-rattata');
+INSERT INTO locations VALUES (150,2,'unknown-all-bugs');
+INSERT INTO locations VALUES (151,1,'vermilion-city');
+INSERT INTO locations VALUES (152,1,'kanto-victory-road-1');
+INSERT INTO locations VALUES (153,2,'violet-city');
+INSERT INTO locations VALUES (154,1,'viridian-city');
+INSERT INTO locations VALUES (155,1,'viridian-forest');
+INSERT INTO locations VALUES (156,2,'whirl-islands');
+INSERT INTO locations VALUES (157,1,'kanto-route-23');
+INSERT INTO locations VALUES (158,1,'power-plant');
+INSERT INTO locations VALUES (159,1,'kanto-victory-road-2');
+INSERT INTO locations VALUES (160,1,'pokemon-tower');
+INSERT INTO locations VALUES (161,1,'pokemon-mansion');
+INSERT INTO locations VALUES (162,1,'kanto-safari-zone');
+INSERT INTO locations VALUES (163,4,'sandgem-town');
+INSERT INTO locations VALUES (164,4,'floaroma-town');
+INSERT INTO locations VALUES (165,4,'solaceon-town');
+INSERT INTO locations VALUES (167,4,'jubilife-city');
+INSERT INTO locations VALUES (168,4,'oreburgh-city');
+INSERT INTO locations VALUES (169,4,'hearthome-city');
+INSERT INTO locations VALUES (170,4,'veilstone-city');
+INSERT INTO locations VALUES (171,4,'snowpoint-city');
+INSERT INTO locations VALUES (172,4,'spear-pillar');
+INSERT INTO locations VALUES (173,4,'pal-park');
+INSERT INTO locations VALUES (174,4,'amity-square');
+INSERT INTO locations VALUES (175,4,'floaroma-meadow');
+INSERT INTO locations VALUES (177,4,'fullmoon-island');
+INSERT INTO locations VALUES (178,4,'sendoff-spring');
+INSERT INTO locations VALUES (179,4,'flower-paradise');
+INSERT INTO locations VALUES (180,4,'maniac-tunnel');
+INSERT INTO locations VALUES (181,4,'galactic-hq');
+INSERT INTO locations VALUES (182,4,'verity-lakefront');
+INSERT INTO locations VALUES (183,4,'newmoon-island');
+INSERT INTO locations VALUES (184,4,'sinnoh-battle-tower');
+INSERT INTO locations VALUES (185,4,'fight-area');
+INSERT INTO locations VALUES (186,4,'survival-area');
+INSERT INTO locations VALUES (187,4,'seabreak-path');
+INSERT INTO locations VALUES (188,4,'sinnoh-hall-of-origin-1');
+INSERT INTO locations VALUES (189,4,'sinnoh-hall-of-origin-2');
+INSERT INTO locations VALUES (190,4,'verity-cavern');
+INSERT INTO locations VALUES (191,4,'valor-cavern');
+INSERT INTO locations VALUES (192,4,'acuity-cavern');
+INSERT INTO locations VALUES (193,4,'jubilife-tv');
+INSERT INTO locations VALUES (194,4,'poketch-co');
+INSERT INTO locations VALUES (195,4,'gts');
+INSERT INTO locations VALUES (196,4,'trainers-school');
+INSERT INTO locations VALUES (197,4,'mining-museum');
+INSERT INTO locations VALUES (198,4,'sinnoh-flower-shop');
+INSERT INTO locations VALUES (199,4,'sinnoh-cycle-shop');
+INSERT INTO locations VALUES (200,4,'contest-hall');
+INSERT INTO locations VALUES (201,4,'poffin-house');
+INSERT INTO locations VALUES (202,4,'sinnoh-foreign-building');
+INSERT INTO locations VALUES (203,4,'pokemon-day-care');
+INSERT INTO locations VALUES (204,4,'veilstone-store');
+INSERT INTO locations VALUES (205,4,'sinnoh-game-corner');
+INSERT INTO locations VALUES (206,4,'canalave-library');
+INSERT INTO locations VALUES (207,4,'vista-lighthouse');
+INSERT INTO locations VALUES (208,4,'sunyshore-market');
+INSERT INTO locations VALUES (209,4,'footstep-house');
+INSERT INTO locations VALUES (210,4,'sinnoh-cafe');
+INSERT INTO locations VALUES (211,4,'grand-lake');
+INSERT INTO locations VALUES (212,4,'sinnoh-restaurant');
+INSERT INTO locations VALUES (213,4,'battle-park');
+INSERT INTO locations VALUES (214,4,'battle-frontier');
+INSERT INTO locations VALUES (215,4,'battle-factory');
+INSERT INTO locations VALUES (216,4,'battle-castle');
+INSERT INTO locations VALUES (217,4,'battle-arcade');
+INSERT INTO locations VALUES (218,4,'battle-hall');
+INSERT INTO locations VALUES (219,4,'distortion-world');
+INSERT INTO locations VALUES (220,4,'sinnoh-global-terminal');
+INSERT INTO locations VALUES (221,4,'sinnoh-villa');
+INSERT INTO locations VALUES (222,4,'battleground');
+INSERT INTO locations VALUES (223,4,'rotoms-room');
+INSERT INTO locations VALUES (224,4,'tg-eterna-bldg');
+INSERT INTO locations VALUES (225,4,'iron-ruins');
+INSERT INTO locations VALUES (226,4,'iceberg-ruins');
+INSERT INTO locations VALUES (227,4,'rock-peak-ruins');
+INSERT INTO locations VALUES (228,2,'azalea-town');
+INSERT INTO locations VALUES (229,2,'goldenrod-city');
+INSERT INTO locations VALUES (230,2,'mahogany-town');
+INSERT INTO locations VALUES (231,1,'pewter-city');
+INSERT INTO locations VALUES (232,1,'lavender-town');
+INSERT INTO locations VALUES (233,1,'indigo-plateau');
+INSERT INTO locations VALUES (234,1,'saffron-city');
+INSERT INTO locations VALUES (236,2,'johto-lighthouse');
+INSERT INTO locations VALUES (237,2,'team-rocket-hq');
+INSERT INTO locations VALUES (238,2,'goldenrod-tunnel');
+INSERT INTO locations VALUES (239,2,'mt-silver-cave');
+INSERT INTO locations VALUES (241,2,'pokeathlon-dome');
+INSERT INTO locations VALUES (242,2,'ss-aqua');
+INSERT INTO locations VALUES (243,2,'safari-zone-gate');
+INSERT INTO locations VALUES (244,2,'cliff-cave');
+INSERT INTO locations VALUES (245,2,'frontier-access');
+INSERT INTO locations VALUES (246,2,'bellchime-trail');
+INSERT INTO locations VALUES (247,2,'sinjoh-ruins');
+INSERT INTO locations VALUES (248,2,'embedded-tower');
+INSERT INTO locations VALUES (249,2,'pokewalker');
+INSERT INTO locations VALUES (250,2,'cliff-edge-gate');
+INSERT INTO locations VALUES (252,2,'radio-tower');
+INSERT INTO locations VALUES (253,NULL,'day-care-couple');
+INSERT INTO locations VALUES (254,NULL,'link-trade-arrive');
+INSERT INTO locations VALUES (255,NULL,'link-trade-met');
+INSERT INTO locations VALUES (256,NULL,'kanto');
+INSERT INTO locations VALUES (257,NULL,'johto');
+INSERT INTO locations VALUES (258,NULL,'hoenn');
+INSERT INTO locations VALUES (259,NULL,'sinnoh');
+INSERT INTO locations VALUES (260,NULL,'distant-land');
+INSERT INTO locations VALUES (261,NULL,'traveling-man');
+INSERT INTO locations VALUES (262,NULL,'riley');
+INSERT INTO locations VALUES (263,NULL,'cynthia');
+INSERT INTO locations VALUES (264,NULL,'mystery-zone');
+INSERT INTO locations VALUES (265,NULL,'lovely-place');
+INSERT INTO locations VALUES (266,NULL,'pokemon-ranger');
+INSERT INTO locations VALUES (267,NULL,'faraway-place');
+INSERT INTO locations VALUES (268,NULL,'pokemon-movie');
+INSERT INTO locations VALUES (269,NULL,'pokemon-movie-06');
+INSERT INTO locations VALUES (270,NULL,'pokemon-movie-07');
+INSERT INTO locations VALUES (271,NULL,'pokemon-movie-08');
+INSERT INTO locations VALUES (272,NULL,'pokemon-movie-09');
+INSERT INTO locations VALUES (273,NULL,'pokemon-movie-10');
+INSERT INTO locations VALUES (274,NULL,'pokemon-movie-11');
+INSERT INTO locations VALUES (275,NULL,'pokemon-movie-12');
+INSERT INTO locations VALUES (276,NULL,'pokemon-movie-13');
+INSERT INTO locations VALUES (277,NULL,'pokemon-movie-14');
+INSERT INTO locations VALUES (278,NULL,'pokemon-movie-15');
+INSERT INTO locations VALUES (279,NULL,'pokemon-movie-16');
+INSERT INTO locations VALUES (280,NULL,'pokemon-cartoon');
+INSERT INTO locations VALUES (281,NULL,'space-world');
+INSERT INTO locations VALUES (282,NULL,'space-world-06');
+INSERT INTO locations VALUES (283,NULL,'space-world-07');
+INSERT INTO locations VALUES (284,NULL,'space-world-08');
+INSERT INTO locations VALUES (285,NULL,'space-world-09');
+INSERT INTO locations VALUES (286,NULL,'space-world-10');
+INSERT INTO locations VALUES (287,NULL,'space-world-11');
+INSERT INTO locations VALUES (288,NULL,'space-world-12');
+INSERT INTO locations VALUES (289,NULL,'space-world-13');
+INSERT INTO locations VALUES (290,NULL,'space-world-14');
+INSERT INTO locations VALUES (291,NULL,'space-world-15');
+INSERT INTO locations VALUES (292,NULL,'space-world-16');
+INSERT INTO locations VALUES (293,NULL,'pokemon-festa');
+INSERT INTO locations VALUES (294,NULL,'pokemon-festa-06');
+INSERT INTO locations VALUES (295,NULL,'pokemon-festa-07');
+INSERT INTO locations VALUES (296,NULL,'pokemon-festa-08');
+INSERT INTO locations VALUES (297,NULL,'pokemon-festa-09');
+INSERT INTO locations VALUES (298,NULL,'pokemon-festa-10');
+INSERT INTO locations VALUES (299,NULL,'pokemon-festa-11');
+INSERT INTO locations VALUES (300,NULL,'pokemon-festa-12');
+INSERT INTO locations VALUES (301,NULL,'pokemon-festa-13');
+INSERT INTO locations VALUES (302,NULL,'pokemon-festa-14');
+INSERT INTO locations VALUES (303,NULL,'pokemon-festa-15');
+INSERT INTO locations VALUES (304,NULL,'pokemon-festa-16');
+INSERT INTO locations VALUES (305,NULL,'pokepark');
+INSERT INTO locations VALUES (306,NULL,'pokepark-06');
+INSERT INTO locations VALUES (307,NULL,'pokepark-07');
+INSERT INTO locations VALUES (308,NULL,'pokepark-08');
+INSERT INTO locations VALUES (309,NULL,'pokepark-09');
+INSERT INTO locations VALUES (310,NULL,'pokepark-10');
+INSERT INTO locations VALUES (311,NULL,'pokepark-11');
+INSERT INTO locations VALUES (312,NULL,'pokepark-12');
+INSERT INTO locations VALUES (313,NULL,'pokepark-13');
+INSERT INTO locations VALUES (314,NULL,'pokepark-14');
+INSERT INTO locations VALUES (315,NULL,'pokepark-15');
+INSERT INTO locations VALUES (316,NULL,'pokepark-16');
+INSERT INTO locations VALUES (317,NULL,'pokemon-center');
+INSERT INTO locations VALUES (318,NULL,'pc-tokyo');
+INSERT INTO locations VALUES (319,NULL,'pc-osaka');
+INSERT INTO locations VALUES (320,NULL,'pc-fukuoka');
+INSERT INTO locations VALUES (321,NULL,'pc-nagoya');
+INSERT INTO locations VALUES (322,NULL,'pc-sapporo');
+INSERT INTO locations VALUES (323,NULL,'pc-yokohama');
+INSERT INTO locations VALUES (324,NULL,'nintendo-world');
+INSERT INTO locations VALUES (325,NULL,'pokemon-event');
+INSERT INTO locations VALUES (326,NULL,'pokemon-event-06');
+INSERT INTO locations VALUES (327,NULL,'pokemon-event-07');
+INSERT INTO locations VALUES (328,NULL,'pokemon-event-08');
+INSERT INTO locations VALUES (329,NULL,'pokemon-event-09');
+INSERT INTO locations VALUES (330,NULL,'pokemon-event-10');
+INSERT INTO locations VALUES (331,NULL,'pokemon-event-11');
+INSERT INTO locations VALUES (332,NULL,'pokemon-event-12');
+INSERT INTO locations VALUES (333,NULL,'pokemon-event-13');
+INSERT INTO locations VALUES (334,NULL,'pokemon-event-14');
+INSERT INTO locations VALUES (335,NULL,'pokemon-event-15');
+INSERT INTO locations VALUES (336,NULL,'pokemon-event-16');
+INSERT INTO locations VALUES (337,NULL,'wi-fi-event');
+INSERT INTO locations VALUES (338,NULL,'wi-fi-gift');
+INSERT INTO locations VALUES (339,NULL,'pokemon-fan-club');
+INSERT INTO locations VALUES (340,NULL,'event-site');
+INSERT INTO locations VALUES (341,NULL,'concert-event');
+INSERT INTO locations VALUES (342,NULL,'mr-pokemon');
+INSERT INTO locations VALUES (343,NULL,'primo');
+INSERT INTO locations VALUES (344,5,'unova-mystery-zone');
+INSERT INTO locations VALUES (345,5,'unova-faraway-place');
+INSERT INTO locations VALUES (346,5,'nuvema-town');
+INSERT INTO locations VALUES (347,5,'accumula-town');
+INSERT INTO locations VALUES (348,5,'striaton-city');
+INSERT INTO locations VALUES (349,5,'nacrene-city');
+INSERT INTO locations VALUES (350,5,'castelia-city');
+INSERT INTO locations VALUES (351,5,'nimbasa-city');
+INSERT INTO locations VALUES (352,5,'driftveil-city');
+INSERT INTO locations VALUES (353,5,'mistralton-city');
+INSERT INTO locations VALUES (354,5,'icirrus-city');
+INSERT INTO locations VALUES (355,5,'opelucid-city');
+INSERT INTO locations VALUES (356,5,'unova-route-1');
+INSERT INTO locations VALUES (357,5,'unova-route-2');
+INSERT INTO locations VALUES (358,5,'unova-route-3');
+INSERT INTO locations VALUES (359,5,'unova-route-4');
+INSERT INTO locations VALUES (360,5,'unova-route-5');
+INSERT INTO locations VALUES (361,5,'unova-route-6');
+INSERT INTO locations VALUES (362,5,'unova-route-7');
+INSERT INTO locations VALUES (363,5,'unova-route-8');
+INSERT INTO locations VALUES (364,5,'unova-route-9');
+INSERT INTO locations VALUES (365,5,'unova-route-10');
+INSERT INTO locations VALUES (366,5,'unova-route-11');
+INSERT INTO locations VALUES (367,5,'unova-route-12');
+INSERT INTO locations VALUES (368,5,'unova-route-13');
+INSERT INTO locations VALUES (369,5,'unova-route-14');
+INSERT INTO locations VALUES (370,5,'unova-route-15');
+INSERT INTO locations VALUES (371,5,'unova-route-16');
+INSERT INTO locations VALUES (372,5,'unova-route-17');
+INSERT INTO locations VALUES (373,5,'unova-route-18');
+INSERT INTO locations VALUES (374,5,'dreamyard');
+INSERT INTO locations VALUES (375,5,'pinwheel-forest');
+INSERT INTO locations VALUES (376,5,'desert-resort');
+INSERT INTO locations VALUES (377,5,'relic-castle');
+INSERT INTO locations VALUES (378,5,'cold-storage');
+INSERT INTO locations VALUES (379,5,'chargestone-cave');
+INSERT INTO locations VALUES (380,5,'twist-mountain');
+INSERT INTO locations VALUES (381,5,'dragonspiral-tower');
+INSERT INTO locations VALUES (382,5,'unova-victory-road');
+INSERT INTO locations VALUES (383,5,'lacunosa-town');
+INSERT INTO locations VALUES (384,5,'undella-town');
+INSERT INTO locations VALUES (385,5,'anville-town');
+INSERT INTO locations VALUES (386,5,'unova-pokemon-league');
+INSERT INTO locations VALUES (387,5,'ns-castle');
+INSERT INTO locations VALUES (388,5,'royal-unova');
+INSERT INTO locations VALUES (389,5,'gear-station');
+INSERT INTO locations VALUES (390,5,'battle-subway');
+INSERT INTO locations VALUES (391,5,'musical-theater');
+INSERT INTO locations VALUES (392,5,'black-city');
+INSERT INTO locations VALUES (393,5,'white-forest');
+INSERT INTO locations VALUES (394,5,'unity-tower');
+INSERT INTO locations VALUES (395,5,'wellspring-cave');
+INSERT INTO locations VALUES (396,5,'mistralton-cave');
+INSERT INTO locations VALUES (397,5,'rumination-field');
+INSERT INTO locations VALUES (398,5,'celestial-tower');
+INSERT INTO locations VALUES (399,5,'moor-of-icirrus');
+INSERT INTO locations VALUES (400,5,'unova-shopping-mall');
+INSERT INTO locations VALUES (401,5,'challengers-cave');
+INSERT INTO locations VALUES (402,5,'poke-transfer-lab');
+INSERT INTO locations VALUES (403,5,'giant-chasm');
+INSERT INTO locations VALUES (404,5,'liberty-garden');
+INSERT INTO locations VALUES (405,5,'p2-laboratory');
+INSERT INTO locations VALUES (406,5,'skyarrow-bridge');
+INSERT INTO locations VALUES (407,5,'driftveil-drawbridge');
+INSERT INTO locations VALUES (408,5,'tubeline-bridge');
+INSERT INTO locations VALUES (409,5,'village-bridge');
+INSERT INTO locations VALUES (410,5,'marvelous-bridge');
+INSERT INTO locations VALUES (411,5,'entralink');
+INSERT INTO locations VALUES (412,5,'abundant-shrine');
+INSERT INTO locations VALUES (413,5,'undella-bay');
+INSERT INTO locations VALUES (414,5,'lostlorn-forest');
+INSERT INTO locations VALUES (415,5,'trial-chamber');
+INSERT INTO locations VALUES (416,5,'guidance-chamber');
+INSERT INTO locations VALUES (417,5,'entree-forest');
+INSERT INTO locations VALUES (418,5,'accumula-gate');
+INSERT INTO locations VALUES (419,5,'undella-gate');
+INSERT INTO locations VALUES (420,5,'nacrene-gate');
+INSERT INTO locations VALUES (421,5,'castelia-gate');
+INSERT INTO locations VALUES (422,5,'nimbasa-gate');
+INSERT INTO locations VALUES (423,5,'opelucid-gate');
+INSERT INTO locations VALUES (424,5,'black-gate');
+INSERT INTO locations VALUES (425,5,'white-gate');
+INSERT INTO locations VALUES (426,5,'bridge-gate');
+INSERT INTO locations VALUES (427,5,'route-gate');
+INSERT INTO locations VALUES (428,5,'abyssal-ruins');
+INSERT INTO locations VALUES (429,3,'petalburg-city');
+INSERT INTO locations VALUES (430,3,'slateport-city');
+INSERT INTO locations VALUES (431,3,'lilycove-city');
+INSERT INTO locations VALUES (432,3,'mossdeep-city');
+INSERT INTO locations VALUES (433,3,'sootopolis-city');
+INSERT INTO locations VALUES (434,3,'ever-grande-city');
+INSERT INTO locations VALUES (435,3,'meteor-falls');
+INSERT INTO locations VALUES (436,3,'rusturf-tunnel');
+INSERT INTO locations VALUES (437,3,'granite-cave');
+INSERT INTO locations VALUES (438,3,'petalburg-woods');
+INSERT INTO locations VALUES (439,3,'jagged-pass');
+INSERT INTO locations VALUES (440,3,'fiery-path');
+INSERT INTO locations VALUES (441,3,'mt-pyre');
+INSERT INTO locations VALUES (442,3,'seafloor-cavern');
+INSERT INTO locations VALUES (443,3,'cave-of-origin');
+INSERT INTO locations VALUES (444,3,'hoenn-victory-road');
+INSERT INTO locations VALUES (445,3,'shoal-cave');
+INSERT INTO locations VALUES (446,3,'new-mauville');
+INSERT INTO locations VALUES (447,3,'abandoned-ship');
+INSERT INTO locations VALUES (448,3,'sky-pillar');
+INSERT INTO locations VALUES (449,3,'hoenn-route-101');
+INSERT INTO locations VALUES (450,3,'hoenn-route-102');
+INSERT INTO locations VALUES (451,3,'hoenn-route-103');
+INSERT INTO locations VALUES (452,3,'hoenn-route-104');
+INSERT INTO locations VALUES (453,3,'hoenn-route-105');
+INSERT INTO locations VALUES (454,3,'hoenn-route-106');
+INSERT INTO locations VALUES (455,3,'hoenn-route-107');
+INSERT INTO locations VALUES (456,3,'hoenn-route-108');
+INSERT INTO locations VALUES (457,3,'hoenn-route-109');
+INSERT INTO locations VALUES (458,3,'hoenn-route-110');
+INSERT INTO locations VALUES (459,3,'hoenn-route-111');
+INSERT INTO locations VALUES (460,3,'hoenn-route-112');
+INSERT INTO locations VALUES (461,3,'hoenn-route-113');
+INSERT INTO locations VALUES (462,3,'hoenn-route-114');
+INSERT INTO locations VALUES (463,3,'hoenn-route-115');
+INSERT INTO locations VALUES (464,3,'hoenn-route-116');
+INSERT INTO locations VALUES (465,3,'hoenn-route-117');
+INSERT INTO locations VALUES (466,3,'hoenn-route-118');
+INSERT INTO locations VALUES (467,3,'hoenn-route-119');
+INSERT INTO locations VALUES (468,3,'hoenn-route-120');
+INSERT INTO locations VALUES (469,3,'hoenn-route-121');
+INSERT INTO locations VALUES (470,3,'hoenn-route-122');
+INSERT INTO locations VALUES (471,3,'hoenn-route-123');
+INSERT INTO locations VALUES (472,3,'hoenn-route-124');
+INSERT INTO locations VALUES (473,3,'hoenn-route-125');
+INSERT INTO locations VALUES (474,3,'hoenn-route-126');
+INSERT INTO locations VALUES (475,3,'hoenn-route-127');
+INSERT INTO locations VALUES (476,3,'hoenn-route-128');
+INSERT INTO locations VALUES (477,3,'hoenn-route-129');
+INSERT INTO locations VALUES (478,3,'hoenn-route-130');
+INSERT INTO locations VALUES (479,3,'hoenn-route-131');
+INSERT INTO locations VALUES (480,3,'hoenn-route-132');
+INSERT INTO locations VALUES (481,3,'hoenn-route-133');
+INSERT INTO locations VALUES (482,3,'hoenn-route-134');
+INSERT INTO locations VALUES (483,3,'hoenn-safari-zone');
+INSERT INTO locations VALUES (484,3,'dewford-town');
+INSERT INTO locations VALUES (485,3,'pacifidlog-town');
+INSERT INTO locations VALUES (486,3,'magma-hideout');
+INSERT INTO locations VALUES (487,3,'mirage-tower');
+INSERT INTO locations VALUES (488,3,'desert-underpass');
+INSERT INTO locations VALUES (489,3,'artisan-cave');
+INSERT INTO locations VALUES (490,3,'hoenn-altering-cave');
+INSERT INTO locations VALUES (491,1,'monean-chamber');
+INSERT INTO locations VALUES (492,1,'liptoo-chamber');
+INSERT INTO locations VALUES (493,1,'weepth-chamber');
+INSERT INTO locations VALUES (494,1,'dilford-chamber');
+INSERT INTO locations VALUES (495,1,'scufib-chamber');
+INSERT INTO locations VALUES (496,1,'rixy-chamber');
+INSERT INTO locations VALUES (497,1,'viapos-chamber');
+INSERT INTO locations VALUES (498,1,'ss-anne');
+INSERT INTO locations VALUES (499,1,'kanto-victory-road-3');
+INSERT INTO locations VALUES (500,1,'mt-ember');
+INSERT INTO locations VALUES (501,1,'berry-forest');
+INSERT INTO locations VALUES (502,1,'icefall-cave');
+INSERT INTO locations VALUES (503,1,'pattern-bush');
+INSERT INTO locations VALUES (504,1,'lost-cave');
+INSERT INTO locations VALUES (505,1,'kindle-road');
+INSERT INTO locations VALUES (506,1,'treasure-beach');
+INSERT INTO locations VALUES (507,1,'cape-brink');
+INSERT INTO locations VALUES (508,1,'bond-bridge');
+INSERT INTO locations VALUES (509,1,'three-isle-port');
+INSERT INTO locations VALUES (510,1,'resort-gorgeous');
+INSERT INTO locations VALUES (511,1,'water-labyrinth');
+INSERT INTO locations VALUES (512,1,'five-isle-meadow');
+INSERT INTO locations VALUES (513,1,'memorial-pillar');
+INSERT INTO locations VALUES (514,1,'outcast-island');
+INSERT INTO locations VALUES (515,1,'green-path');
+INSERT INTO locations VALUES (516,1,'water-path');
+INSERT INTO locations VALUES (517,1,'ruin-valley');
+INSERT INTO locations VALUES (518,1,'trainer-tower');
+INSERT INTO locations VALUES (519,1,'canyon-entrance');
+INSERT INTO locations VALUES (520,1,'sevault-canyon');
+INSERT INTO locations VALUES (521,1,'tanoby-ruins');
+INSERT INTO locations VALUES (522,1,'kanto-route-19');
+INSERT INTO locations VALUES (523,1,'kanto-route-20');
+INSERT INTO locations VALUES (524,1,'kanto-route-21');
+INSERT INTO locations VALUES (526,1,'one-island');
+INSERT INTO locations VALUES (527,1,'four-island');
+INSERT INTO locations VALUES (528,1,'five-island');
+INSERT INTO locations VALUES (529,1,'kanto-altering-cave');
+INSERT INTO locations VALUES (530,1,'kanto-victory-road-4');
+INSERT INTO locations VALUES (531,5,'aspertia-city');
+INSERT INTO locations VALUES (532,5,'virbank-city');
+INSERT INTO locations VALUES (533,5,'humilau-city');
+INSERT INTO locations VALUES (534,5,'pokestar-studios');
+INSERT INTO locations VALUES (535,5,'join-avenue');
+INSERT INTO locations VALUES (536,5,'floccesy-town');
+INSERT INTO locations VALUES (537,5,'lentimas-town');
+INSERT INTO locations VALUES (538,5,'route-19');
+INSERT INTO locations VALUES (539,5,'route-20');
+INSERT INTO locations VALUES (540,5,'route-21');
+INSERT INTO locations VALUES (541,5,'route-22');
+INSERT INTO locations VALUES (542,5,'route-23');
+INSERT INTO locations VALUES (543,5,'castelia-sewers');
+INSERT INTO locations VALUES (544,5,'floccesy-ranch');
+INSERT INTO locations VALUES (545,5,'virbank-complex');
+INSERT INTO locations VALUES (546,5,'reversal-mountain');
+INSERT INTO locations VALUES (547,5,'strange-house');
+INSERT INTO locations VALUES (548,5,'unova-victory-road-2');
+INSERT INTO locations VALUES (549,5,'plasma-frigate');
+INSERT INTO locations VALUES (550,5,'relic-passage');
+INSERT INTO locations VALUES (551,5,'clay-tunnel');
+INSERT INTO locations VALUES (552,5,'white-treehollow');
+INSERT INTO locations VALUES (553,5,'black-tower');
+INSERT INTO locations VALUES (554,5,'seaside-cave');
+INSERT INTO locations VALUES (555,5,'cave-of-being');
+INSERT INTO locations VALUES (556,5,'hidden-grotto');
+INSERT INTO locations VALUES (557,5,'marine-tube');
+INSERT INTO locations VALUES (558,5,'virbank-gate');
+INSERT INTO locations VALUES (559,5,'aspertia-gate');
+INSERT INTO locations VALUES (560,5,'nature-sanctuary');
+INSERT INTO locations VALUES (561,5,'medal-secretariat');
+INSERT INTO locations VALUES (562,5,'underground-ruins');
+INSERT INTO locations VALUES (563,5,'rocky-mountain-room');
+INSERT INTO locations VALUES (564,5,'glacier-room');
+INSERT INTO locations VALUES (565,5,'iron-room');
+INSERT INTO locations VALUES (566,5,'pledge-grove');
+INSERT INTO locations VALUES (567,3,'littleroot-town');
+INSERT INTO locations VALUES (568,3,'oldale-town');
+INSERT INTO locations VALUES (569,3,'lavaridge-town');
+INSERT INTO locations VALUES (570,3,'fallarbor-town');
+INSERT INTO locations VALUES (571,3,'verdanturf-town');
+INSERT INTO locations VALUES (572,3,'mauville-city');
+INSERT INTO locations VALUES (573,3,'rustboro-city');
+INSERT INTO locations VALUES (574,3,'fortree-city');
+INSERT INTO locations VALUES (575,3,'underwater');
+INSERT INTO locations VALUES (576,3,'mt-chimney');
+INSERT INTO locations VALUES (577,3,'mirage-island');
+INSERT INTO locations VALUES (578,3,'southern-island');
+INSERT INTO locations VALUES (579,3,'sealed-chamber');
+INSERT INTO locations VALUES (580,3,'scorched-slab');
+INSERT INTO locations VALUES (581,3,'island-cave');
+INSERT INTO locations VALUES (582,3,'desert-ruins');
+INSERT INTO locations VALUES (583,3,'ancient-tomb');
+INSERT INTO locations VALUES (584,3,'inside-of-truck');
+INSERT INTO locations VALUES (585,3,'secret-base');
+INSERT INTO locations VALUES (586,3,'hoenn-battle-tower');
+INSERT INTO locations VALUES (587,6,'vaniville-town');
+INSERT INTO locations VALUES (588,6,'kalos-route-1');
+INSERT INTO locations VALUES (589,6,'vaniville-pathway');
+INSERT INTO locations VALUES (590,6,'aquacorde-town');
+INSERT INTO locations VALUES (591,6,'kalos-route-2');
+INSERT INTO locations VALUES (592,6,'avance-trail');
+INSERT INTO locations VALUES (593,6,'santalune-forest');
+INSERT INTO locations VALUES (594,6,'kalos-route-3');
+INSERT INTO locations VALUES (595,6,'ouvert-way');
+INSERT INTO locations VALUES (596,6,'santalune-city');
+INSERT INTO locations VALUES (597,6,'kalos-route-4');
+INSERT INTO locations VALUES (598,6,'parterre-way');
+INSERT INTO locations VALUES (599,6,'lumiose-city');
+INSERT INTO locations VALUES (600,6,'prism-tower');
+INSERT INTO locations VALUES (601,6,'lysandre-labs');
+INSERT INTO locations VALUES (602,6,'kalos-route-5');
+INSERT INTO locations VALUES (603,6,'versant-road');
+INSERT INTO locations VALUES (604,6,'camphrier-town');
+INSERT INTO locations VALUES (605,6,'shabboneau-castle');
+INSERT INTO locations VALUES (606,6,'kalos-route-6');
+INSERT INTO locations VALUES (607,6,'palais-lane');
+INSERT INTO locations VALUES (608,6,'parfum-palace');
+INSERT INTO locations VALUES (609,6,'kalos-route-7');
+INSERT INTO locations VALUES (610,6,'rivière-walk');
+INSERT INTO locations VALUES (611,6,'cyllage-city');
+INSERT INTO locations VALUES (612,6,'kalos-route-8');
+INSERT INTO locations VALUES (613,6,'muraille-coast');
+INSERT INTO locations VALUES (614,6,'ambrette-town');
+INSERT INTO locations VALUES (615,6,'kalos-route-9');
+INSERT INTO locations VALUES (616,6,'spikes-passage');
+INSERT INTO locations VALUES (617,6,'battle-chateau');
+INSERT INTO locations VALUES (618,6,'kalos-route-10');
+INSERT INTO locations VALUES (619,6,'menhir-trail');
+INSERT INTO locations VALUES (620,6,'geosenge-town');
+INSERT INTO locations VALUES (621,6,'kalos-route-11');
+INSERT INTO locations VALUES (622,6,'miroir-way');
+INSERT INTO locations VALUES (623,6,'reflection-cave');
+INSERT INTO locations VALUES (624,6,'shalour-city');
+INSERT INTO locations VALUES (625,6,'tower-of-mastery');
+INSERT INTO locations VALUES (626,6,'kalos-route-12');
+INSERT INTO locations VALUES (627,6,'fourrage-road');
+INSERT INTO locations VALUES (628,6,'coumarine-city');
+INSERT INTO locations VALUES (629,6,'kalos-route-13');
+INSERT INTO locations VALUES (630,6,'lumiose-badlands');
+INSERT INTO locations VALUES (631,6,'kalos-route-14');
+INSERT INTO locations VALUES (632,6,'laverre-nature-trail');
+INSERT INTO locations VALUES (633,6,'laverre-city');
+INSERT INTO locations VALUES (634,6,'poke-ball-factory');
+INSERT INTO locations VALUES (635,6,'kalos-route-15');
+INSERT INTO locations VALUES (636,6,'brun-way');
+INSERT INTO locations VALUES (637,6,'dendemille-town');
+INSERT INTO locations VALUES (638,6,'kalos-route-16');
+INSERT INTO locations VALUES (639,6,'melancolie-path');
+INSERT INTO locations VALUES (640,6,'frost-cavern');
+INSERT INTO locations VALUES (641,6,'kalos-route-17');
+INSERT INTO locations VALUES (642,6,'mamoswine-road');
+INSERT INTO locations VALUES (643,6,'anistar-city');
+INSERT INTO locations VALUES (644,6,'kalos-route-18');
+INSERT INTO locations VALUES (645,6,'vallee-etroite-way');
+INSERT INTO locations VALUES (646,6,'couriway-town');
+INSERT INTO locations VALUES (647,6,'kalos-route-19');
+INSERT INTO locations VALUES (648,6,'grande-vallee-way');
+INSERT INTO locations VALUES (649,6,'snowbelle-city');
+INSERT INTO locations VALUES (650,6,'kalos-route-20');
+INSERT INTO locations VALUES (651,6,'winding-woods');
+INSERT INTO locations VALUES (652,6,'pokemon-village');
+INSERT INTO locations VALUES (653,6,'kalos-route-21');
+INSERT INTO locations VALUES (654,6,'dernière-way');
+INSERT INTO locations VALUES (655,6,'kalos-route-22');
+INSERT INTO locations VALUES (656,6,'detourner-way');
+INSERT INTO locations VALUES (657,6,'victory-road');
+INSERT INTO locations VALUES (658,6,'pokemon-league');
+INSERT INTO locations VALUES (659,6,'kiloude-city');
+INSERT INTO locations VALUES (660,6,'battle-maison');
+INSERT INTO locations VALUES (661,6,'azure-bay');
+INSERT INTO locations VALUES (662,6,'dendemille-gate');
+INSERT INTO locations VALUES (663,6,'couriway-gate');
+INSERT INTO locations VALUES (664,6,'ambrette-gate');
+INSERT INTO locations VALUES (665,6,'lumiose-gate');
+INSERT INTO locations VALUES (666,6,'shalour-gate');
+INSERT INTO locations VALUES (667,6,'coumarine-gate');
+INSERT INTO locations VALUES (668,6,'laverre-gate');
+INSERT INTO locations VALUES (669,6,'anistar-gate');
+INSERT INTO locations VALUES (670,6,'snowbelle-gate');
+INSERT INTO locations VALUES (671,6,'glittering-cave');
+INSERT INTO locations VALUES (672,6,'connecting-cave');
+INSERT INTO locations VALUES (673,6,'zubat-roost');
+INSERT INTO locations VALUES (674,6,'kalos-power-plant');
+INSERT INTO locations VALUES (675,6,'team-flare-secret-hq');
+INSERT INTO locations VALUES (676,6,'terminus-cave');
+INSERT INTO locations VALUES (677,6,'lost-hotel');
+INSERT INTO locations VALUES (678,6,'chamber-of-emptiness');
+INSERT INTO locations VALUES (679,6,'sea-spirits-den');
+INSERT INTO locations VALUES (680,6,'friend-safari');
+INSERT INTO locations VALUES (681,6,'blazing-chamber');
+INSERT INTO locations VALUES (682,6,'flood-chamber');
+INSERT INTO locations VALUES (683,6,'ironworks-chamber');
+INSERT INTO locations VALUES (684,6,'dragonmark-chamber');
+INSERT INTO locations VALUES (685,6,'radiant-chamber');
+INSERT INTO locations VALUES (686,6,'pokemon-league-gate');
+INSERT INTO locations VALUES (687,6,'lumiose-station');
+INSERT INTO locations VALUES (688,6,'kiloude-station');
+INSERT INTO locations VALUES (689,6,'ambrette-aquarium');
+INSERT INTO locations VALUES (690,6,'unknown-dungeon');
+DROP TABLE moves;
+
+CREATE TABLE moves (
+    id INT NOT NULL,
+    identifier VARCHAR(16) CHARACTER SET utf8 NOT NULL,
+    generation_id INT NOT NULL,
+    type_id INT NOT NULL,
+    strength INT,
+    pp INT NOT NULL,
+    accuracy INT,
+    priority INT NOT NULL,
+    target_id INT NOT NULL,
+    damage_class_id INT NOT NULL,
+    effect_id INT NOT NULL,
+    effect_chance INT,
+    PRIMARY KEY (id)
+);
+INSERT INTO moves VALUES (1,'pound',1,1,40,35,100,0,10,2,1,NULL);
+INSERT INTO moves VALUES (2,'karate-chop',1,2,50,25,100,0,10,2,44,NULL);
+INSERT INTO moves VALUES (3,'double-slap',1,1,15,10,85,0,10,2,30,NULL);
+INSERT INTO moves VALUES (4,'comet-punch',1,1,18,15,85,0,10,2,30,NULL);
+INSERT INTO moves VALUES (5,'mega-punch',1,1,80,20,85,0,10,2,1,NULL);
+INSERT INTO moves VALUES (6,'pay-day',1,1,40,20,100,0,10,2,35,NULL);
+INSERT INTO moves VALUES (7,'fire-punch',1,10,75,15,100,0,10,2,5,10);
+INSERT INTO moves VALUES (8,'ice-punch',1,15,75,15,100,0,10,2,6,10);
+INSERT INTO moves VALUES (9,'thunder-punch',1,13,75,15,100,0,10,2,7,10);
+INSERT INTO moves VALUES (10,'scratch',1,1,40,35,100,0,10,2,1,NULL);
+INSERT INTO moves VALUES (11,'vice-grip',1,1,55,30,100,0,10,2,1,NULL);
+INSERT INTO moves VALUES (12,'guillotine',1,1,NULL,5,30,0,10,2,39,NULL);
+INSERT INTO moves VALUES (13,'razor-wind',1,1,80,10,100,0,11,3,40,NULL);
+INSERT INTO moves VALUES (14,'swords-dance',1,1,NULL,20,NULL,0,7,1,51,NULL);
+INSERT INTO moves VALUES (15,'cut',1,1,50,30,95,0,10,2,1,NULL);
+INSERT INTO moves VALUES (16,'gust',1,3,40,35,100,0,10,3,150,NULL);
+INSERT INTO moves VALUES (17,'wing-attack',1,3,60,35,100,0,10,2,1,NULL);
+INSERT INTO moves VALUES (18,'whirlwind',1,1,NULL,20,NULL,-6,10,1,29,NULL);
+INSERT INTO moves VALUES (19,'fly',1,3,90,15,95,0,10,2,156,NULL);
+INSERT INTO moves VALUES (20,'bind',1,1,15,20,85,0,10,2,43,100);
+INSERT INTO moves VALUES (21,'slam',1,1,80,20,75,0,10,2,1,NULL);
+INSERT INTO moves VALUES (22,'vine-whip',1,12,45,25,100,0,10,2,1,NULL);
+INSERT INTO moves VALUES (23,'stomp',1,1,65,20,100,0,10,2,151,30);
+INSERT INTO moves VALUES (24,'double-kick',1,2,30,30,100,0,10,2,45,NULL);
+INSERT INTO moves VALUES (25,'mega-kick',1,1,120,5,75,0,10,2,1,NULL);
+INSERT INTO moves VALUES (26,'jump-kick',1,2,100,10,95,0,10,2,46,NULL);
+INSERT INTO moves VALUES (27,'rolling-kick',1,2,60,15,85,0,10,2,32,30);
+INSERT INTO moves VALUES (28,'sand-attack',1,5,NULL,15,100,0,10,1,24,NULL);
+INSERT INTO moves VALUES (29,'headbutt',1,1,70,15,100,0,10,2,32,30);
+INSERT INTO moves VALUES (30,'horn-attack',1,1,65,25,100,0,10,2,1,NULL);
+INSERT INTO moves VALUES (31,'fury-attack',1,1,15,20,85,0,10,2,30,NULL);
+INSERT INTO moves VALUES (32,'horn-drill',1,1,NULL,5,30,0,10,2,39,NULL);
+INSERT INTO moves VALUES (33,'tackle',1,1,50,35,100,0,10,2,1,NULL);
+INSERT INTO moves VALUES (34,'body-slam',1,1,85,15,100,0,10,2,7,30);
+INSERT INTO moves VALUES (35,'wrap',1,1,15,20,90,0,10,2,43,100);
+INSERT INTO moves VALUES (36,'take-down',1,1,90,20,85,0,10,2,49,NULL);
+INSERT INTO moves VALUES (37,'thrash',1,1,120,10,100,0,8,2,28,NULL);
+INSERT INTO moves VALUES (38,'double-edge',1,1,120,15,100,0,10,2,199,NULL);
+INSERT INTO moves VALUES (39,'tail-whip',1,1,NULL,30,100,0,11,1,20,NULL);
+INSERT INTO moves VALUES (40,'poison-sting',1,4,15,35,100,0,10,2,3,30);
+INSERT INTO moves VALUES (41,'twineedle',1,7,25,20,100,0,10,2,78,20);
+INSERT INTO moves VALUES (42,'pin-missile',1,7,25,20,95,0,10,2,30,NULL);
+INSERT INTO moves VALUES (43,'leer',1,1,NULL,30,100,0,11,1,20,100);
+INSERT INTO moves VALUES (44,'bite',1,17,60,25,100,0,10,2,32,30);
+INSERT INTO moves VALUES (45,'growl',1,1,NULL,40,100,0,11,1,19,NULL);
+INSERT INTO moves VALUES (46,'roar',1,1,NULL,20,NULL,-6,10,1,29,NULL);
+INSERT INTO moves VALUES (47,'sing',1,1,NULL,15,55,0,10,1,2,NULL);
+INSERT INTO moves VALUES (48,'supersonic',1,1,NULL,20,55,0,10,1,50,NULL);
+INSERT INTO moves VALUES (49,'sonic-boom',1,1,NULL,20,90,0,10,3,131,NULL);
+INSERT INTO moves VALUES (50,'disable',1,1,NULL,20,100,0,10,1,87,NULL);
+INSERT INTO moves VALUES (51,'acid',1,4,40,30,100,0,11,3,73,10);
+INSERT INTO moves VALUES (52,'ember',1,10,40,25,100,0,10,3,5,10);
+INSERT INTO moves VALUES (53,'flamethrower',1,10,90,15,100,0,10,3,5,10);
+INSERT INTO moves VALUES (54,'mist',1,15,NULL,30,NULL,0,4,1,47,NULL);
+INSERT INTO moves VALUES (55,'water-gun',1,11,40,25,100,0,10,3,1,NULL);
+INSERT INTO moves VALUES (56,'hydro-pump',1,11,110,5,80,0,10,3,1,NULL);
+INSERT INTO moves VALUES (57,'surf',1,11,90,15,100,0,9,3,258,NULL);
+INSERT INTO moves VALUES (58,'ice-beam',1,15,90,10,100,0,10,3,6,10);
+INSERT INTO moves VALUES (59,'blizzard',1,15,110,5,70,0,11,3,261,10);
+INSERT INTO moves VALUES (60,'psybeam',1,14,65,20,100,0,10,3,77,10);
+INSERT INTO moves VALUES (61,'bubble-beam',1,11,65,20,100,0,10,3,71,10);
+INSERT INTO moves VALUES (62,'aurora-beam',1,15,65,20,100,0,10,3,69,10);
+INSERT INTO moves VALUES (63,'hyper-beam',1,1,150,5,90,0,10,3,81,NULL);
+INSERT INTO moves VALUES (64,'peck',1,3,35,35,100,0,10,2,1,NULL);
+INSERT INTO moves VALUES (65,'drill-peck',1,3,80,20,100,0,10,2,1,NULL);
+INSERT INTO moves VALUES (66,'submission',1,2,80,20,80,0,10,2,49,NULL);
+INSERT INTO moves VALUES (67,'low-kick',1,2,NULL,20,100,0,10,2,197,NULL);
+INSERT INTO moves VALUES (68,'counter',1,2,NULL,20,100,-5,1,2,90,NULL);
+INSERT INTO moves VALUES (69,'seismic-toss',1,2,NULL,20,100,0,10,2,88,NULL);
+INSERT INTO moves VALUES (70,'strength',1,1,80,15,100,0,10,2,1,NULL);
+INSERT INTO moves VALUES (71,'absorb',1,12,20,25,100,0,10,3,4,NULL);
+INSERT INTO moves VALUES (72,'mega-drain',1,12,40,15,100,0,10,3,4,NULL);
+INSERT INTO moves VALUES (73,'leech-seed',1,12,NULL,10,90,0,10,1,85,NULL);
+INSERT INTO moves VALUES (74,'growth',1,1,NULL,20,NULL,0,7,1,317,NULL);
+INSERT INTO moves VALUES (75,'razor-leaf',1,12,55,25,95,0,11,2,44,NULL);
+INSERT INTO moves VALUES (76,'solar-beam',1,12,120,10,100,0,10,3,152,NULL);
+INSERT INTO moves VALUES (77,'poison-powder',1,4,NULL,35,75,0,10,1,67,NULL);
+INSERT INTO moves VALUES (78,'stun-spore',1,12,NULL,30,75,0,10,1,68,NULL);
+INSERT INTO moves VALUES (79,'sleep-powder',1,12,NULL,15,75,0,10,1,2,NULL);
+INSERT INTO moves VALUES (80,'petal-dance',1,12,120,10,100,0,8,3,28,NULL);
+INSERT INTO moves VALUES (81,'string-shot',1,7,NULL,40,95,0,11,1,21,NULL);
+INSERT INTO moves VALUES (82,'dragon-rage',1,16,NULL,10,100,0,10,3,42,NULL);
+INSERT INTO moves VALUES (83,'fire-spin',1,10,35,15,85,0,10,3,43,100);
+INSERT INTO moves VALUES (84,'thunder-shock',1,13,40,30,100,0,10,3,7,10);
+INSERT INTO moves VALUES (85,'thunderbolt',1,13,90,15,100,0,10,3,7,10);
+INSERT INTO moves VALUES (86,'thunder-wave',1,13,NULL,20,100,0,10,1,68,NULL);
+INSERT INTO moves VALUES (87,'thunder',1,13,110,10,70,0,10,3,153,30);
+INSERT INTO moves VALUES (88,'rock-throw',1,6,50,15,90,0,10,2,1,NULL);
+INSERT INTO moves VALUES (89,'earthquake',1,5,100,10,100,0,9,2,148,NULL);
+INSERT INTO moves VALUES (90,'fissure',1,5,NULL,5,30,0,10,2,39,NULL);
+INSERT INTO moves VALUES (91,'dig',1,5,80,10,100,0,10,2,257,NULL);
+INSERT INTO moves VALUES (92,'toxic',1,4,NULL,10,90,0,10,1,34,NULL);
+INSERT INTO moves VALUES (93,'confusion',1,14,50,25,100,0,10,3,77,10);
+INSERT INTO moves VALUES (94,'psychic',1,14,90,10,100,0,10,3,73,10);
+INSERT INTO moves VALUES (95,'hypnosis',1,14,NULL,20,60,0,10,1,2,NULL);
+INSERT INTO moves VALUES (96,'meditate',1,14,NULL,40,NULL,0,7,1,11,NULL);
+INSERT INTO moves VALUES (97,'agility',1,14,NULL,30,NULL,0,7,1,53,NULL);
+INSERT INTO moves VALUES (98,'quick-attack',1,1,40,30,100,1,10,2,104,NULL);
+INSERT INTO moves VALUES (99,'rage',1,1,20,20,100,0,10,2,82,NULL);
+INSERT INTO moves VALUES (100,'teleport',1,14,NULL,20,NULL,0,7,1,154,NULL);
+INSERT INTO moves VALUES (101,'night-shade',1,8,NULL,15,100,0,10,3,88,NULL);
+INSERT INTO moves VALUES (102,'mimic',1,1,NULL,10,NULL,0,10,1,83,NULL);
+INSERT INTO moves VALUES (103,'screech',1,1,NULL,40,85,0,10,1,60,NULL);
+INSERT INTO moves VALUES (104,'double-team',1,1,NULL,15,NULL,0,7,1,17,NULL);
+INSERT INTO moves VALUES (105,'recover',1,1,NULL,10,NULL,0,7,1,33,NULL);
+INSERT INTO moves VALUES (106,'harden',1,1,NULL,30,NULL,0,7,1,12,NULL);
+INSERT INTO moves VALUES (107,'minimize',1,1,NULL,10,NULL,0,7,1,109,NULL);
+INSERT INTO moves VALUES (108,'smokescreen',1,1,NULL,20,100,0,10,1,24,NULL);
+INSERT INTO moves VALUES (109,'confuse-ray',1,8,NULL,10,100,0,10,1,50,NULL);
+INSERT INTO moves VALUES (110,'withdraw',1,11,NULL,40,NULL,0,7,1,12,NULL);
+INSERT INTO moves VALUES (111,'defense-curl',1,1,NULL,40,NULL,0,7,1,157,NULL);
+INSERT INTO moves VALUES (112,'barrier',1,14,NULL,20,NULL,0,7,1,52,NULL);
+INSERT INTO moves VALUES (113,'light-screen',1,14,NULL,30,NULL,0,4,1,36,NULL);
+INSERT INTO moves VALUES (114,'haze',1,15,NULL,30,NULL,0,12,1,26,NULL);
+INSERT INTO moves VALUES (115,'reflect',1,14,NULL,20,NULL,0,4,1,66,NULL);
+INSERT INTO moves VALUES (116,'focus-energy',1,1,NULL,30,NULL,0,7,1,48,NULL);
+INSERT INTO moves VALUES (117,'bide',1,1,NULL,10,NULL,1,7,2,27,NULL);
+INSERT INTO moves VALUES (118,'metronome',1,1,NULL,10,NULL,0,7,1,84,NULL);
+INSERT INTO moves VALUES (119,'mirror-move',1,3,NULL,20,NULL,0,10,1,10,NULL);
+INSERT INTO moves VALUES (120,'self-destruct',1,1,200,5,100,0,9,2,8,NULL);
+INSERT INTO moves VALUES (121,'egg-bomb',1,1,100,10,75,0,10,2,1,NULL);
+INSERT INTO moves VALUES (122,'lick',1,8,30,30,100,0,10,2,7,30);
+INSERT INTO moves VALUES (123,'smog',1,4,30,20,70,0,10,3,3,40);
+INSERT INTO moves VALUES (124,'sludge',1,4,65,20,100,0,10,3,3,30);
+INSERT INTO moves VALUES (125,'bone-club',1,5,65,20,85,0,10,2,32,10);
+INSERT INTO moves VALUES (126,'fire-blast',1,10,110,5,85,0,10,3,5,10);
+INSERT INTO moves VALUES (127,'waterfall',1,11,80,15,100,0,10,2,32,20);
+INSERT INTO moves VALUES (128,'clamp',1,11,35,15,85,0,10,2,43,100);
+INSERT INTO moves VALUES (129,'swift',1,1,60,20,NULL,0,11,3,18,NULL);
+INSERT INTO moves VALUES (130,'skull-bash',1,1,130,10,100,0,10,2,146,100);
+INSERT INTO moves VALUES (131,'spike-cannon',1,1,20,15,100,0,10,2,30,NULL);
+INSERT INTO moves VALUES (132,'constrict',1,1,10,35,100,0,10,2,71,10);
+INSERT INTO moves VALUES (133,'amnesia',1,14,NULL,20,NULL,0,7,1,55,NULL);
+INSERT INTO moves VALUES (134,'kinesis',1,14,NULL,15,80,0,10,1,24,NULL);
+INSERT INTO moves VALUES (135,'soft-boiled',1,1,NULL,10,NULL,0,7,1,33,NULL);
+INSERT INTO moves VALUES (136,'high-jump-kick',1,2,130,10,90,0,10,2,46,NULL);
+INSERT INTO moves VALUES (137,'glare',1,1,NULL,30,100,0,10,1,68,NULL);
+INSERT INTO moves VALUES (138,'dream-eater',1,14,100,15,100,0,10,3,9,NULL);
+INSERT INTO moves VALUES (139,'poison-gas',1,4,NULL,40,90,0,11,1,67,NULL);
+INSERT INTO moves VALUES (140,'barrage',1,1,15,20,85,0,10,2,30,NULL);
+INSERT INTO moves VALUES (141,'leech-life',1,7,20,15,100,0,10,2,4,NULL);
+INSERT INTO moves VALUES (142,'lovely-kiss',1,1,NULL,10,75,0,10,1,2,NULL);
+INSERT INTO moves VALUES (143,'sky-attack',1,3,140,5,90,0,10,2,76,30);
+INSERT INTO moves VALUES (144,'transform',1,1,NULL,10,NULL,0,10,1,58,NULL);
+INSERT INTO moves VALUES (145,'bubble',1,11,40,30,100,0,11,3,71,10);
+INSERT INTO moves VALUES (146,'dizzy-punch',1,1,70,10,100,0,10,2,77,20);
+INSERT INTO moves VALUES (147,'spore',1,12,NULL,15,100,0,10,1,2,NULL);
+INSERT INTO moves VALUES (148,'flash',1,1,NULL,20,100,0,10,1,24,NULL);
+INSERT INTO moves VALUES (149,'psywave',1,14,NULL,15,100,0,10,3,89,NULL);
+INSERT INTO moves VALUES (150,'splash',1,1,NULL,40,NULL,0,7,1,86,NULL);
+INSERT INTO moves VALUES (151,'acid-armor',1,4,NULL,20,NULL,0,7,1,52,NULL);
+INSERT INTO moves VALUES (152,'crabhammer',1,11,100,10,90,0,10,2,44,NULL);
+INSERT INTO moves VALUES (153,'explosion',1,1,250,5,100,0,9,2,8,NULL);
+INSERT INTO moves VALUES (154,'fury-swipes',1,1,18,15,80,0,10,2,30,NULL);
+INSERT INTO moves VALUES (155,'bonemerang',1,5,50,10,90,0,10,2,45,NULL);
+INSERT INTO moves VALUES (156,'rest',1,14,NULL,10,NULL,0,7,1,38,NULL);
+INSERT INTO moves VALUES (157,'rock-slide',1,6,75,10,90,0,11,2,32,30);
+INSERT INTO moves VALUES (158,'hyper-fang',1,1,80,15,90,0,10,2,32,10);
+INSERT INTO moves VALUES (159,'sharpen',1,1,NULL,30,NULL,0,7,1,11,NULL);
+INSERT INTO moves VALUES (160,'conversion',1,1,NULL,30,NULL,0,7,1,31,NULL);
+INSERT INTO moves VALUES (161,'tri-attack',1,1,80,10,100,0,10,3,37,20);
+INSERT INTO moves VALUES (162,'super-fang',1,1,NULL,10,90,0,10,2,41,NULL);
+INSERT INTO moves VALUES (163,'slash',1,1,70,20,100,0,10,2,44,NULL);
+INSERT INTO moves VALUES (164,'substitute',1,1,NULL,10,NULL,0,7,1,80,NULL);
+INSERT INTO moves VALUES (165,'struggle',1,1,50,NULL,NULL,0,8,2,255,NULL);
+INSERT INTO moves VALUES (166,'sketch',2,1,NULL,1,NULL,0,10,1,96,NULL);
+INSERT INTO moves VALUES (167,'triple-kick',2,2,10,10,90,0,10,2,105,NULL);
+INSERT INTO moves VALUES (168,'thief',2,17,60,25,100,0,10,2,106,NULL);
+INSERT INTO moves VALUES (169,'spider-web',2,7,NULL,10,NULL,0,10,1,107,NULL);
+INSERT INTO moves VALUES (170,'mind-reader',2,1,NULL,5,NULL,0,10,1,95,NULL);
+INSERT INTO moves VALUES (171,'nightmare',2,8,NULL,15,100,0,10,1,108,NULL);
+INSERT INTO moves VALUES (172,'flame-wheel',2,10,60,25,100,0,10,2,126,10);
+INSERT INTO moves VALUES (173,'snore',2,1,50,15,100,0,10,3,93,30);
+INSERT INTO moves VALUES (174,'curse',2,8,NULL,10,NULL,0,1,1,110,NULL);
+INSERT INTO moves VALUES (175,'flail',2,1,NULL,15,100,0,10,2,100,NULL);
+INSERT INTO moves VALUES (176,'conversion-2',2,1,NULL,30,NULL,0,10,1,94,NULL);
+INSERT INTO moves VALUES (177,'aeroblast',2,3,100,5,95,0,10,3,44,NULL);
+INSERT INTO moves VALUES (178,'cotton-spore',2,12,NULL,40,100,0,11,1,61,NULL);
+INSERT INTO moves VALUES (179,'reversal',2,2,NULL,15,100,0,10,2,100,NULL);
+INSERT INTO moves VALUES (180,'spite',2,8,NULL,10,100,0,10,1,101,NULL);
+INSERT INTO moves VALUES (181,'powder-snow',2,15,40,25,100,0,11,3,6,10);
+INSERT INTO moves VALUES (182,'protect',2,1,NULL,10,NULL,4,7,1,112,NULL);
+INSERT INTO moves VALUES (183,'mach-punch',2,2,40,30,100,1,10,2,104,NULL);
+INSERT INTO moves VALUES (184,'scary-face',2,1,NULL,10,100,0,10,1,61,NULL);
+INSERT INTO moves VALUES (185,'feint-attack',2,17,60,20,NULL,0,10,2,18,NULL);
+INSERT INTO moves VALUES (186,'sweet-kiss',2,18,NULL,10,75,0,10,1,50,NULL);
+INSERT INTO moves VALUES (187,'belly-drum',2,1,NULL,10,NULL,0,7,1,143,NULL);
+INSERT INTO moves VALUES (188,'sludge-bomb',2,4,90,10,100,0,10,3,3,30);
+INSERT INTO moves VALUES (189,'mud-slap',2,5,20,10,100,0,10,3,74,100);
+INSERT INTO moves VALUES (190,'octazooka',2,11,65,10,85,0,10,3,74,50);
+INSERT INTO moves VALUES (191,'spikes',2,5,NULL,20,NULL,0,6,1,113,NULL);
+INSERT INTO moves VALUES (192,'zap-cannon',2,13,120,5,50,0,10,3,7,100);
+INSERT INTO moves VALUES (193,'foresight',2,1,NULL,40,NULL,0,10,1,114,NULL);
+INSERT INTO moves VALUES (194,'destiny-bond',2,8,NULL,5,NULL,0,7,1,99,NULL);
+INSERT INTO moves VALUES (195,'perish-song',2,1,NULL,5,NULL,0,14,1,115,NULL);
+INSERT INTO moves VALUES (196,'icy-wind',2,15,55,15,95,0,11,3,71,100);
+INSERT INTO moves VALUES (197,'detect',2,2,NULL,5,NULL,4,7,1,112,NULL);
+INSERT INTO moves VALUES (198,'bone-rush',2,5,25,10,90,0,10,2,30,NULL);
+INSERT INTO moves VALUES (199,'lock-on',2,1,NULL,5,NULL,0,10,1,95,NULL);
+INSERT INTO moves VALUES (200,'outrage',2,16,120,10,100,0,8,2,28,NULL);
+INSERT INTO moves VALUES (201,'sandstorm',2,6,NULL,10,NULL,0,12,1,116,NULL);
+INSERT INTO moves VALUES (202,'giga-drain',2,12,75,10,100,0,10,3,4,NULL);
+INSERT INTO moves VALUES (203,'endure',2,1,NULL,10,NULL,4,7,1,117,NULL);
+INSERT INTO moves VALUES (204,'charm',2,18,NULL,20,100,0,10,1,59,NULL);
+INSERT INTO moves VALUES (205,'rollout',2,6,30,20,90,0,10,2,118,NULL);
+INSERT INTO moves VALUES (206,'false-swipe',2,1,40,40,100,0,10,2,102,NULL);
+INSERT INTO moves VALUES (207,'swagger',2,1,NULL,15,90,0,10,1,119,NULL);
+INSERT INTO moves VALUES (208,'milk-drink',2,1,NULL,10,NULL,0,7,1,33,NULL);
+INSERT INTO moves VALUES (209,'spark',2,13,65,20,100,0,10,2,7,30);
+INSERT INTO moves VALUES (210,'fury-cutter',2,7,40,20,95,0,10,2,120,NULL);
+INSERT INTO moves VALUES (211,'steel-wing',2,9,70,25,90,0,10,2,139,10);
+INSERT INTO moves VALUES (212,'mean-look',2,1,NULL,5,NULL,0,10,1,107,NULL);
+INSERT INTO moves VALUES (213,'attract',2,1,NULL,15,100,0,10,1,121,NULL);
+INSERT INTO moves VALUES (214,'sleep-talk',2,1,NULL,10,NULL,0,7,1,98,NULL);
+INSERT INTO moves VALUES (215,'heal-bell',2,1,NULL,5,NULL,0,13,1,103,NULL);
+INSERT INTO moves VALUES (216,'return',2,1,NULL,20,100,0,10,2,122,NULL);
+INSERT INTO moves VALUES (217,'present',2,1,NULL,15,90,0,10,2,123,NULL);
+INSERT INTO moves VALUES (218,'frustration',2,1,NULL,20,100,0,10,2,124,NULL);
+INSERT INTO moves VALUES (219,'safeguard',2,1,NULL,25,NULL,0,4,1,125,NULL);
+INSERT INTO moves VALUES (220,'pain-split',2,1,NULL,20,NULL,0,10,1,92,NULL);
+INSERT INTO moves VALUES (221,'sacred-fire',2,10,100,5,95,0,10,2,126,50);
+INSERT INTO moves VALUES (222,'magnitude',2,5,NULL,30,100,0,9,2,127,NULL);
+INSERT INTO moves VALUES (223,'dynamic-punch',2,2,100,5,50,0,10,2,77,100);
+INSERT INTO moves VALUES (224,'megahorn',2,7,120,10,85,0,10,2,1,NULL);
+INSERT INTO moves VALUES (225,'dragon-breath',2,16,60,20,100,0,10,3,7,30);
+INSERT INTO moves VALUES (226,'baton-pass',2,1,NULL,40,NULL,0,7,1,128,NULL);
+INSERT INTO moves VALUES (227,'encore',2,1,NULL,5,100,0,10,1,91,NULL);
+INSERT INTO moves VALUES (228,'pursuit',2,17,40,20,100,0,10,2,129,NULL);
+INSERT INTO moves VALUES (229,'rapid-spin',2,1,20,40,100,0,10,2,130,NULL);
+INSERT INTO moves VALUES (230,'sweet-scent',2,1,NULL,20,100,0,11,1,25,NULL);
+INSERT INTO moves VALUES (231,'iron-tail',2,9,100,15,75,0,10,2,70,30);
+INSERT INTO moves VALUES (232,'metal-claw',2,9,50,35,95,0,10,2,140,10);
+INSERT INTO moves VALUES (233,'vital-throw',2,2,70,10,NULL,-1,10,2,79,NULL);
+INSERT INTO moves VALUES (234,'morning-sun',2,1,NULL,5,NULL,0,7,1,133,NULL);
+INSERT INTO moves VALUES (235,'synthesis',2,12,NULL,5,NULL,0,7,1,133,NULL);
+INSERT INTO moves VALUES (236,'moonlight',2,18,NULL,5,NULL,0,7,1,133,NULL);
+INSERT INTO moves VALUES (237,'hidden-power',2,1,60,15,100,0,10,3,136,NULL);
+INSERT INTO moves VALUES (238,'cross-chop',2,2,100,5,80,0,10,2,44,NULL);
+INSERT INTO moves VALUES (239,'twister',2,16,40,20,100,0,11,3,147,20);
+INSERT INTO moves VALUES (240,'rain-dance',2,11,NULL,5,NULL,0,12,1,137,NULL);
+INSERT INTO moves VALUES (241,'sunny-day',2,10,NULL,5,NULL,0,12,1,138,NULL);
+INSERT INTO moves VALUES (242,'crunch',2,17,80,15,100,0,10,2,70,20);
+INSERT INTO moves VALUES (243,'mirror-coat',2,14,NULL,20,100,-5,1,3,145,NULL);
+INSERT INTO moves VALUES (244,'psych-up',2,1,NULL,10,NULL,0,10,1,144,NULL);
+INSERT INTO moves VALUES (245,'extreme-speed',2,1,80,5,100,2,10,2,104,NULL);
+INSERT INTO moves VALUES (246,'ancient-power',2,6,60,5,100,0,10,3,141,10);
+INSERT INTO moves VALUES (247,'shadow-ball',2,8,80,15,100,0,10,3,73,20);
+INSERT INTO moves VALUES (248,'future-sight',2,14,120,10,100,0,10,3,149,NULL);
+INSERT INTO moves VALUES (249,'rock-smash',2,2,40,15,100,0,10,2,70,50);
+INSERT INTO moves VALUES (250,'whirlpool',2,11,35,15,85,0,10,3,262,100);
+INSERT INTO moves VALUES (251,'beat-up',2,17,NULL,10,100,0,10,2,155,NULL);
+INSERT INTO moves VALUES (252,'fake-out',3,1,40,10,100,3,10,2,159,100);
+INSERT INTO moves VALUES (253,'uproar',3,1,90,10,100,0,8,3,160,NULL);
+INSERT INTO moves VALUES (254,'stockpile',3,1,NULL,20,NULL,0,7,1,161,NULL);
+INSERT INTO moves VALUES (255,'spit-up',3,1,NULL,10,100,0,10,3,162,NULL);
+INSERT INTO moves VALUES (256,'swallow',3,1,NULL,10,NULL,0,7,1,163,NULL);
+INSERT INTO moves VALUES (257,'heat-wave',3,10,95,10,90,0,11,3,5,10);
+INSERT INTO moves VALUES (258,'hail',3,15,NULL,10,NULL,0,12,1,165,NULL);
+INSERT INTO moves VALUES (259,'torment',3,17,NULL,15,100,0,10,1,166,NULL);
+INSERT INTO moves VALUES (260,'flatter',3,17,NULL,15,100,0,10,1,167,NULL);
+INSERT INTO moves VALUES (261,'will-o-wisp',3,10,NULL,15,85,0,10,1,168,NULL);
+INSERT INTO moves VALUES (262,'memento',3,17,NULL,10,100,0,10,1,169,NULL);
+INSERT INTO moves VALUES (263,'facade',3,1,70,20,100,0,10,2,170,NULL);
+INSERT INTO moves VALUES (264,'focus-punch',3,2,150,20,100,-3,10,2,171,NULL);
+INSERT INTO moves VALUES (265,'smelling-salts',3,1,70,10,100,0,10,2,172,NULL);
+INSERT INTO moves VALUES (266,'follow-me',3,1,NULL,20,NULL,2,7,1,173,NULL);
+INSERT INTO moves VALUES (267,'nature-power',3,1,NULL,20,NULL,0,10,1,174,NULL);
+INSERT INTO moves VALUES (268,'charge',3,13,NULL,20,NULL,0,7,1,175,NULL);
+INSERT INTO moves VALUES (269,'taunt',3,17,NULL,20,100,0,10,1,176,NULL);
+INSERT INTO moves VALUES (270,'helping-hand',3,1,NULL,20,NULL,5,3,1,177,NULL);
+INSERT INTO moves VALUES (271,'trick',3,14,NULL,10,100,0,10,1,178,NULL);
+INSERT INTO moves VALUES (272,'role-play',3,14,NULL,10,NULL,0,10,1,179,NULL);
+INSERT INTO moves VALUES (273,'wish',3,1,NULL,10,NULL,0,7,1,180,NULL);
+INSERT INTO moves VALUES (274,'assist',3,1,NULL,20,NULL,0,7,1,181,NULL);
+INSERT INTO moves VALUES (275,'ingrain',3,12,NULL,20,NULL,0,7,1,182,NULL);
+INSERT INTO moves VALUES (276,'superpower',3,2,120,5,100,0,10,2,183,100);
+INSERT INTO moves VALUES (277,'magic-coat',3,14,NULL,15,NULL,4,7,1,184,NULL);
+INSERT INTO moves VALUES (278,'recycle',3,1,NULL,10,NULL,0,7,1,185,NULL);
+INSERT INTO moves VALUES (279,'revenge',3,2,60,10,100,-4,10,2,186,NULL);
+INSERT INTO moves VALUES (280,'brick-break',3,2,75,15,100,0,10,2,187,NULL);
+INSERT INTO moves VALUES (281,'yawn',3,1,NULL,10,NULL,0,10,1,188,NULL);
+INSERT INTO moves VALUES (282,'knock-off',3,17,65,20,100,0,10,2,189,NULL);
+INSERT INTO moves VALUES (283,'endeavor',3,1,NULL,5,100,0,10,2,190,NULL);
+INSERT INTO moves VALUES (284,'eruption',3,10,150,5,100,0,11,3,191,NULL);
+INSERT INTO moves VALUES (285,'skill-swap',3,14,NULL,10,NULL,0,10,1,192,NULL);
+INSERT INTO moves VALUES (286,'imprison',3,14,NULL,10,NULL,0,7,1,193,NULL);
+INSERT INTO moves VALUES (287,'refresh',3,1,NULL,20,NULL,0,7,1,194,NULL);
+INSERT INTO moves VALUES (288,'grudge',3,8,NULL,5,NULL,0,7,1,195,NULL);
+INSERT INTO moves VALUES (289,'snatch',3,17,NULL,10,NULL,4,7,1,196,NULL);
+INSERT INTO moves VALUES (290,'secret-power',3,1,70,20,100,0,10,2,198,30);
+INSERT INTO moves VALUES (291,'dive',3,11,80,10,100,0,10,2,256,NULL);
+INSERT INTO moves VALUES (292,'arm-thrust',3,2,15,20,100,0,10,2,30,NULL);
+INSERT INTO moves VALUES (293,'camouflage',3,1,NULL,20,NULL,0,7,1,214,NULL);
+INSERT INTO moves VALUES (294,'tail-glow',3,7,NULL,20,NULL,0,7,1,322,NULL);
+INSERT INTO moves VALUES (295,'luster-purge',3,14,70,5,100,0,10,3,73,50);
+INSERT INTO moves VALUES (296,'mist-ball',3,14,70,5,100,0,10,3,72,50);
+INSERT INTO moves VALUES (297,'feather-dance',3,3,NULL,15,100,0,10,1,59,NULL);
+INSERT INTO moves VALUES (298,'teeter-dance',3,1,NULL,20,100,0,9,1,200,NULL);
+INSERT INTO moves VALUES (299,'blaze-kick',3,10,85,10,90,0,10,2,201,10);
+INSERT INTO moves VALUES (300,'mud-sport',3,5,NULL,15,NULL,0,12,1,202,NULL);
+INSERT INTO moves VALUES (301,'ice-ball',3,15,30,20,90,0,10,2,118,NULL);
+INSERT INTO moves VALUES (302,'needle-arm',3,12,60,15,100,0,10,2,32,30);
+INSERT INTO moves VALUES (303,'slack-off',3,1,NULL,10,NULL,0,7,1,33,NULL);
+INSERT INTO moves VALUES (304,'hyper-voice',3,1,90,10,100,0,11,3,1,NULL);
+INSERT INTO moves VALUES (305,'poison-fang',3,4,50,15,100,0,10,2,203,50);
+INSERT INTO moves VALUES (306,'crush-claw',3,1,75,10,95,0,10,2,70,50);
+INSERT INTO moves VALUES (307,'blast-burn',3,10,150,5,90,0,10,3,81,NULL);
+INSERT INTO moves VALUES (308,'hydro-cannon',3,11,150,5,90,0,10,3,81,NULL);
+INSERT INTO moves VALUES (309,'meteor-mash',3,9,90,10,90,0,10,2,140,20);
+INSERT INTO moves VALUES (310,'astonish',3,8,30,15,100,0,10,2,32,30);
+INSERT INTO moves VALUES (311,'weather-ball',3,1,50,10,100,0,10,3,204,NULL);
+INSERT INTO moves VALUES (312,'aromatherapy',3,12,NULL,5,NULL,0,13,1,103,NULL);
+INSERT INTO moves VALUES (313,'fake-tears',3,17,NULL,20,100,0,10,1,63,NULL);
+INSERT INTO moves VALUES (314,'air-cutter',3,3,60,25,95,0,11,3,44,NULL);
+INSERT INTO moves VALUES (315,'overheat',3,10,130,5,90,0,10,3,205,100);
+INSERT INTO moves VALUES (316,'odor-sleuth',3,1,NULL,40,NULL,0,10,1,114,NULL);
+INSERT INTO moves VALUES (317,'rock-tomb',3,6,60,15,95,0,10,2,71,100);
+INSERT INTO moves VALUES (318,'silver-wind',3,7,60,5,100,0,10,3,141,10);
+INSERT INTO moves VALUES (319,'metal-sound',3,9,NULL,40,85,0,10,1,63,NULL);
+INSERT INTO moves VALUES (320,'grass-whistle',3,12,NULL,15,55,0,10,1,2,NULL);
+INSERT INTO moves VALUES (321,'tickle',3,1,NULL,20,100,0,10,1,206,NULL);
+INSERT INTO moves VALUES (322,'cosmic-power',3,14,NULL,20,NULL,0,7,1,207,NULL);
+INSERT INTO moves VALUES (323,'water-spout',3,11,150,5,100,0,11,3,191,NULL);
+INSERT INTO moves VALUES (324,'signal-beam',3,7,75,15,100,0,10,3,77,10);
+INSERT INTO moves VALUES (325,'shadow-punch',3,8,60,20,NULL,0,10,2,18,NULL);
+INSERT INTO moves VALUES (326,'extrasensory',3,14,80,20,100,0,10,3,32,10);
+INSERT INTO moves VALUES (327,'sky-uppercut',3,2,85,15,90,0,10,2,208,NULL);
+INSERT INTO moves VALUES (328,'sand-tomb',3,5,35,15,85,0,10,2,43,100);
+INSERT INTO moves VALUES (329,'sheer-cold',3,15,NULL,5,30,0,10,3,39,NULL);
+INSERT INTO moves VALUES (330,'muddy-water',3,11,90,10,85,0,11,3,74,30);
+INSERT INTO moves VALUES (331,'bullet-seed',3,12,25,30,100,0,10,2,30,NULL);
+INSERT INTO moves VALUES (332,'aerial-ace',3,3,60,20,NULL,0,10,2,18,NULL);
+INSERT INTO moves VALUES (333,'icicle-spear',3,15,25,30,100,0,10,2,30,NULL);
+INSERT INTO moves VALUES (334,'iron-defense',3,9,NULL,15,NULL,0,7,1,52,NULL);
+INSERT INTO moves VALUES (335,'block',3,1,NULL,5,NULL,0,10,1,107,NULL);
+INSERT INTO moves VALUES (336,'howl',3,1,NULL,40,NULL,0,7,1,11,NULL);
+INSERT INTO moves VALUES (337,'dragon-claw',3,16,80,15,100,0,10,2,1,NULL);
+INSERT INTO moves VALUES (338,'frenzy-plant',3,12,150,5,90,0,10,3,81,NULL);
+INSERT INTO moves VALUES (339,'bulk-up',3,2,NULL,20,NULL,0,7,1,209,NULL);
+INSERT INTO moves VALUES (340,'bounce',3,3,85,5,85,0,10,2,264,30);
+INSERT INTO moves VALUES (341,'mud-shot',3,5,55,15,95,0,10,3,71,100);
+INSERT INTO moves VALUES (342,'poison-tail',3,4,50,25,100,0,10,2,210,10);
+INSERT INTO moves VALUES (343,'covet',3,1,60,25,100,0,10,2,106,NULL);
+INSERT INTO moves VALUES (344,'volt-tackle',3,13,120,15,100,0,10,2,263,10);
+INSERT INTO moves VALUES (345,'magical-leaf',3,12,60,20,NULL,0,10,3,18,NULL);
+INSERT INTO moves VALUES (346,'water-sport',3,11,NULL,15,NULL,0,12,1,211,NULL);
+INSERT INTO moves VALUES (347,'calm-mind',3,14,NULL,20,NULL,0,7,1,212,NULL);
+INSERT INTO moves VALUES (348,'leaf-blade',3,12,90,15,100,0,10,2,44,NULL);
+INSERT INTO moves VALUES (349,'dragon-dance',3,16,NULL,20,NULL,0,7,1,213,NULL);
+INSERT INTO moves VALUES (350,'rock-blast',3,6,25,10,90,0,10,2,30,NULL);
+INSERT INTO moves VALUES (351,'shock-wave',3,13,60,20,NULL,0,10,3,18,NULL);
+INSERT INTO moves VALUES (352,'water-pulse',3,11,60,20,100,0,10,3,77,20);
+INSERT INTO moves VALUES (353,'doom-desire',3,9,140,5,100,0,10,3,149,NULL);
+INSERT INTO moves VALUES (354,'psycho-boost',3,14,140,5,90,0,10,3,205,100);
+INSERT INTO moves VALUES (355,'roost',4,3,NULL,10,NULL,0,7,1,215,NULL);
+INSERT INTO moves VALUES (356,'gravity',4,14,NULL,5,NULL,0,12,1,216,NULL);
+INSERT INTO moves VALUES (357,'miracle-eye',4,14,NULL,40,NULL,0,10,1,217,NULL);
+INSERT INTO moves VALUES (358,'wake-up-slap',4,2,70,10,100,0,10,2,218,NULL);
+INSERT INTO moves VALUES (359,'hammer-arm',4,2,100,10,90,0,10,2,219,100);
+INSERT INTO moves VALUES (360,'gyro-ball',4,9,NULL,5,100,0,10,2,220,NULL);
+INSERT INTO moves VALUES (361,'healing-wish',4,14,NULL,10,NULL,0,7,1,221,NULL);
+INSERT INTO moves VALUES (362,'brine',4,11,65,10,100,0,10,3,222,NULL);
+INSERT INTO moves VALUES (363,'natural-gift',4,1,NULL,15,100,0,10,2,223,NULL);
+INSERT INTO moves VALUES (364,'feint',4,1,30,10,100,2,10,2,224,NULL);
+INSERT INTO moves VALUES (365,'pluck',4,3,60,20,100,0,10,2,225,NULL);
+INSERT INTO moves VALUES (366,'tailwind',4,3,NULL,15,NULL,0,4,1,226,NULL);
+INSERT INTO moves VALUES (367,'acupressure',4,1,NULL,30,NULL,0,5,1,227,NULL);
+INSERT INTO moves VALUES (368,'metal-burst',4,9,NULL,10,100,0,1,2,228,NULL);
+INSERT INTO moves VALUES (369,'u-turn',4,7,70,20,100,0,10,2,229,NULL);
+INSERT INTO moves VALUES (370,'close-combat',4,2,120,5,100,0,10,2,230,100);
+INSERT INTO moves VALUES (371,'payback',4,17,50,10,100,0,10,2,231,NULL);
+INSERT INTO moves VALUES (372,'assurance',4,17,60,10,100,0,10,2,232,NULL);
+INSERT INTO moves VALUES (373,'embargo',4,17,NULL,15,100,0,10,1,233,NULL);
+INSERT INTO moves VALUES (374,'fling',4,17,NULL,10,100,0,10,2,234,NULL);
+INSERT INTO moves VALUES (375,'psycho-shift',4,14,NULL,10,100,0,10,1,235,NULL);
+INSERT INTO moves VALUES (376,'trump-card',4,1,NULL,5,NULL,0,10,3,236,NULL);
+INSERT INTO moves VALUES (377,'heal-block',4,14,NULL,15,100,0,11,1,237,NULL);
+INSERT INTO moves VALUES (378,'wring-out',4,1,NULL,5,100,0,10,3,238,NULL);
+INSERT INTO moves VALUES (379,'power-trick',4,14,NULL,10,NULL,0,7,1,239,NULL);
+INSERT INTO moves VALUES (380,'gastro-acid',4,4,NULL,10,100,0,10,1,240,NULL);
+INSERT INTO moves VALUES (381,'lucky-chant',4,1,NULL,30,NULL,0,4,1,241,NULL);
+INSERT INTO moves VALUES (382,'me-first',4,1,NULL,20,NULL,0,2,1,242,NULL);
+INSERT INTO moves VALUES (383,'copycat',4,1,NULL,20,NULL,0,7,1,243,NULL);
+INSERT INTO moves VALUES (384,'power-swap',4,14,NULL,10,NULL,0,10,1,244,NULL);
+INSERT INTO moves VALUES (385,'guard-swap',4,14,NULL,10,NULL,0,10,1,245,NULL);
+INSERT INTO moves VALUES (386,'punishment',4,17,NULL,5,100,0,10,2,246,NULL);
+INSERT INTO moves VALUES (387,'last-resort',4,1,140,5,100,0,10,2,247,NULL);
+INSERT INTO moves VALUES (388,'worry-seed',4,12,NULL,10,100,0,10,1,248,NULL);
+INSERT INTO moves VALUES (389,'sucker-punch',4,17,80,5,100,1,10,2,249,NULL);
+INSERT INTO moves VALUES (390,'toxic-spikes',4,4,NULL,20,NULL,0,6,1,250,NULL);
+INSERT INTO moves VALUES (391,'heart-swap',4,14,NULL,10,NULL,0,10,1,251,NULL);
+INSERT INTO moves VALUES (392,'aqua-ring',4,11,NULL,20,NULL,0,7,1,252,NULL);
+INSERT INTO moves VALUES (393,'magnet-rise',4,13,NULL,10,NULL,0,7,1,253,NULL);
+INSERT INTO moves VALUES (394,'flare-blitz',4,10,120,15,100,0,10,2,254,10);
+INSERT INTO moves VALUES (395,'force-palm',4,2,60,10,100,0,10,2,7,30);
+INSERT INTO moves VALUES (396,'aura-sphere',4,2,80,20,NULL,0,10,3,18,NULL);
+INSERT INTO moves VALUES (397,'rock-polish',4,6,NULL,20,NULL,0,7,1,53,NULL);
+INSERT INTO moves VALUES (398,'poison-jab',4,4,80,20,100,0,10,2,3,30);
+INSERT INTO moves VALUES (399,'dark-pulse',4,17,80,15,100,0,10,3,32,20);
+INSERT INTO moves VALUES (400,'night-slash',4,17,70,15,100,0,10,2,44,NULL);
+INSERT INTO moves VALUES (401,'aqua-tail',4,11,90,10,90,0,10,2,1,NULL);
+INSERT INTO moves VALUES (402,'seed-bomb',4,12,80,15,100,0,10,2,1,NULL);
+INSERT INTO moves VALUES (403,'air-slash',4,3,75,15,95,0,10,3,32,30);
+INSERT INTO moves VALUES (404,'x-scissor',4,7,80,15,100,0,10,2,1,NULL);
+INSERT INTO moves VALUES (405,'bug-buzz',4,7,90,10,100,0,10,3,73,10);
+INSERT INTO moves VALUES (406,'dragon-pulse',4,16,85,10,100,0,10,3,1,NULL);
+INSERT INTO moves VALUES (407,'dragon-rush',4,16,100,10,75,0,10,2,32,20);
+INSERT INTO moves VALUES (408,'power-gem',4,6,80,20,100,0,10,3,1,NULL);
+INSERT INTO moves VALUES (409,'drain-punch',4,2,75,10,100,0,10,2,4,NULL);
+INSERT INTO moves VALUES (410,'vacuum-wave',4,2,40,30,100,1,10,3,104,NULL);
+INSERT INTO moves VALUES (411,'focus-blast',4,2,120,5,70,0,10,3,73,10);
+INSERT INTO moves VALUES (412,'energy-ball',4,12,90,10,100,0,10,3,73,10);
+INSERT INTO moves VALUES (413,'brave-bird',4,3,120,15,100,0,10,2,199,NULL);
+INSERT INTO moves VALUES (414,'earth-power',4,5,90,10,100,0,10,3,73,10);
+INSERT INTO moves VALUES (415,'switcheroo',4,17,NULL,10,100,0,10,1,178,NULL);
+INSERT INTO moves VALUES (416,'giga-impact',4,1,150,5,90,0,10,2,81,NULL);
+INSERT INTO moves VALUES (417,'nasty-plot',4,17,NULL,20,NULL,0,7,1,54,NULL);
+INSERT INTO moves VALUES (418,'bullet-punch',4,9,40,30,100,1,10,2,104,NULL);
+INSERT INTO moves VALUES (419,'avalanche',4,15,60,10,100,-4,10,2,186,NULL);
+INSERT INTO moves VALUES (420,'ice-shard',4,15,40,30,100,1,10,2,104,NULL);
+INSERT INTO moves VALUES (421,'shadow-claw',4,8,70,15,100,0,10,2,44,NULL);
+INSERT INTO moves VALUES (422,'thunder-fang',4,13,65,15,95,0,10,2,276,10);
+INSERT INTO moves VALUES (423,'ice-fang',4,15,65,15,95,0,10,2,275,10);
+INSERT INTO moves VALUES (424,'fire-fang',4,10,65,15,95,0,10,2,274,10);
+INSERT INTO moves VALUES (425,'shadow-sneak',4,8,40,30,100,1,10,2,104,NULL);
+INSERT INTO moves VALUES (426,'mud-bomb',4,5,65,10,85,0,10,3,74,30);
+INSERT INTO moves VALUES (427,'psycho-cut',4,14,70,20,100,0,10,2,44,NULL);
+INSERT INTO moves VALUES (428,'zen-headbutt',4,14,80,15,90,0,10,2,32,20);
+INSERT INTO moves VALUES (429,'mirror-shot',4,9,65,10,85,0,10,3,74,30);
+INSERT INTO moves VALUES (430,'flash-cannon',4,9,80,10,100,0,10,3,73,10);
+INSERT INTO moves VALUES (431,'rock-climb',4,1,90,20,85,0,10,2,77,20);
+INSERT INTO moves VALUES (432,'defog',4,3,NULL,15,NULL,0,10,1,259,NULL);
+INSERT INTO moves VALUES (433,'trick-room',4,14,NULL,5,NULL,-7,12,1,260,NULL);
+INSERT INTO moves VALUES (434,'draco-meteor',4,16,130,5,90,0,10,3,205,100);
+INSERT INTO moves VALUES (435,'discharge',4,13,80,15,100,0,9,3,7,30);
+INSERT INTO moves VALUES (436,'lava-plume',4,10,80,15,100,0,9,3,5,30);
+INSERT INTO moves VALUES (437,'leaf-storm',4,12,130,5,90,0,10,3,205,100);
+INSERT INTO moves VALUES (438,'power-whip',4,12,120,10,85,0,10,2,1,NULL);
+INSERT INTO moves VALUES (439,'rock-wrecker',4,6,150,5,90,0,10,2,81,NULL);
+INSERT INTO moves VALUES (440,'cross-poison',4,4,70,20,100,0,10,2,210,10);
+INSERT INTO moves VALUES (441,'gunk-shot',4,4,120,5,80,0,10,2,3,30);
+INSERT INTO moves VALUES (442,'iron-head',4,9,80,15,100,0,10,2,32,30);
+INSERT INTO moves VALUES (443,'magnet-bomb',4,9,60,20,NULL,0,10,2,18,NULL);
+INSERT INTO moves VALUES (444,'stone-edge',4,6,100,5,80,0,10,2,44,NULL);
+INSERT INTO moves VALUES (445,'captivate',4,1,NULL,20,100,0,11,1,266,NULL);
+INSERT INTO moves VALUES (446,'stealth-rock',4,6,NULL,20,NULL,0,6,1,267,NULL);
+INSERT INTO moves VALUES (447,'grass-knot',4,12,NULL,20,100,0,10,3,197,NULL);
+INSERT INTO moves VALUES (448,'chatter',4,3,65,20,100,0,10,3,268,100);
+INSERT INTO moves VALUES (449,'judgment',4,1,100,10,100,0,10,3,269,NULL);
+INSERT INTO moves VALUES (450,'bug-bite',4,7,60,20,100,0,10,2,225,NULL);
+INSERT INTO moves VALUES (451,'charge-beam',4,13,50,10,90,0,10,3,277,70);
+INSERT INTO moves VALUES (452,'wood-hammer',4,12,120,15,100,0,10,2,199,NULL);
+INSERT INTO moves VALUES (453,'aqua-jet',4,11,40,20,100,1,10,2,104,NULL);
+INSERT INTO moves VALUES (454,'attack-order',4,7,90,15,100,0,10,2,44,NULL);
+INSERT INTO moves VALUES (455,'defend-order',4,7,NULL,10,NULL,0,7,1,207,NULL);
+INSERT INTO moves VALUES (456,'heal-order',4,7,NULL,10,NULL,0,7,1,33,NULL);
+INSERT INTO moves VALUES (457,'head-smash',4,6,150,5,80,0,10,2,270,NULL);
+INSERT INTO moves VALUES (458,'double-hit',4,1,35,10,90,0,10,2,45,NULL);
+INSERT INTO moves VALUES (459,'roar-of-time',4,16,150,5,90,0,10,3,81,NULL);
+INSERT INTO moves VALUES (460,'spacial-rend',4,16,100,5,95,0,10,3,44,NULL);
+INSERT INTO moves VALUES (461,'lunar-dance',4,14,NULL,10,NULL,0,7,1,271,NULL);
+INSERT INTO moves VALUES (462,'crush-grip',4,1,NULL,5,100,0,10,2,238,NULL);
+INSERT INTO moves VALUES (463,'magma-storm',4,10,100,5,75,0,10,3,43,100);
+INSERT INTO moves VALUES (464,'dark-void',4,17,NULL,10,80,0,11,1,2,NULL);
+INSERT INTO moves VALUES (465,'seed-flare',4,12,120,5,85,0,10,3,272,40);
+INSERT INTO moves VALUES (466,'ominous-wind',4,8,60,5,100,0,10,3,141,10);
+INSERT INTO moves VALUES (467,'shadow-force',4,8,120,5,100,0,10,2,273,NULL);
+INSERT INTO moves VALUES (468,'hone-claws',5,17,NULL,15,NULL,0,7,1,278,NULL);
+INSERT INTO moves VALUES (469,'wide-guard',5,6,NULL,10,NULL,3,4,1,279,NULL);
+INSERT INTO moves VALUES (470,'guard-split',5,14,NULL,10,NULL,0,10,1,280,NULL);
+INSERT INTO moves VALUES (471,'power-split',5,14,NULL,10,NULL,0,10,1,281,NULL);
+INSERT INTO moves VALUES (472,'wonder-room',5,14,NULL,10,NULL,0,12,1,282,NULL);
+INSERT INTO moves VALUES (473,'psyshock',5,14,80,10,100,0,10,3,283,NULL);
+INSERT INTO moves VALUES (474,'venoshock',5,4,65,10,100,0,10,3,284,NULL);
+INSERT INTO moves VALUES (475,'autotomize',5,9,NULL,15,NULL,0,7,1,285,NULL);
+INSERT INTO moves VALUES (476,'rage-powder',5,7,NULL,20,NULL,2,7,1,173,NULL);
+INSERT INTO moves VALUES (477,'telekinesis',5,14,NULL,15,NULL,0,10,1,286,NULL);
+INSERT INTO moves VALUES (478,'magic-room',5,14,NULL,10,NULL,0,12,1,287,NULL);
+INSERT INTO moves VALUES (479,'smack-down',5,6,50,15,100,0,10,2,288,100);
+INSERT INTO moves VALUES (480,'storm-throw',5,2,60,10,100,0,10,2,289,NULL);
+INSERT INTO moves VALUES (481,'flame-burst',5,10,70,15,100,0,10,3,290,NULL);
+INSERT INTO moves VALUES (482,'sludge-wave',5,4,95,10,100,0,9,3,3,10);
+INSERT INTO moves VALUES (483,'quiver-dance',5,7,NULL,20,NULL,0,7,1,291,NULL);
+INSERT INTO moves VALUES (484,'heavy-slam',5,9,NULL,10,100,0,10,2,292,NULL);
+INSERT INTO moves VALUES (485,'synchronoise',5,14,120,10,100,0,9,3,293,NULL);
+INSERT INTO moves VALUES (486,'electro-ball',5,13,NULL,10,100,0,10,3,294,NULL);
+INSERT INTO moves VALUES (487,'soak',5,11,NULL,20,100,0,10,1,295,NULL);
+INSERT INTO moves VALUES (488,'flame-charge',5,10,50,20,100,0,10,2,296,100);
+INSERT INTO moves VALUES (489,'coil',5,4,NULL,20,NULL,0,7,1,323,NULL);
+INSERT INTO moves VALUES (490,'low-sweep',5,2,65,20,100,0,10,2,21,100);
+INSERT INTO moves VALUES (491,'acid-spray',5,4,40,20,100,0,10,3,297,100);
+INSERT INTO moves VALUES (492,'foul-play',5,17,95,15,100,0,10,2,298,NULL);
+INSERT INTO moves VALUES (493,'simple-beam',5,1,NULL,15,100,0,10,1,299,NULL);
+INSERT INTO moves VALUES (494,'entrainment',5,1,NULL,15,100,0,10,1,300,NULL);
+INSERT INTO moves VALUES (495,'after-you',5,1,NULL,15,NULL,0,10,1,301,NULL);
+INSERT INTO moves VALUES (496,'round',5,1,60,15,100,0,10,3,302,NULL);
+INSERT INTO moves VALUES (497,'echoed-voice',5,1,40,15,100,0,10,3,303,NULL);
+INSERT INTO moves VALUES (498,'chip-away',5,1,70,20,100,0,10,2,304,NULL);
+INSERT INTO moves VALUES (499,'clear-smog',5,4,50,15,NULL,0,10,3,305,NULL);
+INSERT INTO moves VALUES (500,'stored-power',5,14,20,10,100,0,10,3,306,NULL);
+INSERT INTO moves VALUES (501,'quick-guard',5,2,NULL,15,NULL,3,4,1,307,NULL);
+INSERT INTO moves VALUES (502,'ally-switch',5,14,NULL,15,NULL,1,7,1,308,NULL);
+INSERT INTO moves VALUES (503,'scald',5,11,80,15,100,0,10,3,5,30);
+INSERT INTO moves VALUES (504,'shell-smash',5,1,NULL,15,NULL,0,7,1,309,NULL);
+INSERT INTO moves VALUES (505,'heal-pulse',5,14,NULL,10,NULL,0,10,1,310,NULL);
+INSERT INTO moves VALUES (506,'hex',5,8,65,10,100,0,10,3,311,NULL);
+INSERT INTO moves VALUES (507,'sky-drop',5,3,60,10,100,0,10,2,312,NULL);
+INSERT INTO moves VALUES (508,'shift-gear',5,9,NULL,10,NULL,0,7,1,313,NULL);
+INSERT INTO moves VALUES (509,'circle-throw',5,2,60,10,90,-6,10,2,314,NULL);
+INSERT INTO moves VALUES (510,'incinerate',5,10,60,15,100,0,11,3,315,NULL);
+INSERT INTO moves VALUES (511,'quash',5,17,NULL,15,100,0,10,1,316,NULL);
+INSERT INTO moves VALUES (512,'acrobatics',5,3,55,15,100,0,10,2,318,NULL);
+INSERT INTO moves VALUES (513,'reflect-type',5,1,NULL,15,NULL,0,10,1,319,NULL);
+INSERT INTO moves VALUES (514,'retaliate',5,1,70,5,100,0,10,2,320,NULL);
+INSERT INTO moves VALUES (515,'final-gambit',5,2,NULL,5,100,0,10,3,321,NULL);
+INSERT INTO moves VALUES (516,'bestow',5,1,NULL,15,NULL,0,10,1,324,NULL);
+INSERT INTO moves VALUES (517,'inferno',5,10,100,5,50,0,10,3,5,100);
+INSERT INTO moves VALUES (518,'water-pledge',5,11,80,10,100,0,10,3,325,NULL);
+INSERT INTO moves VALUES (519,'fire-pledge',5,10,80,10,100,0,10,3,326,NULL);
+INSERT INTO moves VALUES (520,'grass-pledge',5,12,80,10,100,0,10,3,327,NULL);
+INSERT INTO moves VALUES (521,'volt-switch',5,13,70,20,100,0,10,3,229,NULL);
+INSERT INTO moves VALUES (522,'struggle-bug',5,7,50,20,100,0,11,3,72,100);
+INSERT INTO moves VALUES (523,'bulldoze',5,5,60,20,100,0,9,2,71,100);
+INSERT INTO moves VALUES (524,'frost-breath',5,15,60,10,90,0,10,3,289,100);
+INSERT INTO moves VALUES (525,'dragon-tail',5,16,60,10,90,-6,10,2,314,NULL);
+INSERT INTO moves VALUES (526,'work-up',5,1,NULL,30,NULL,0,7,1,328,NULL);
+INSERT INTO moves VALUES (527,'electroweb',5,13,55,15,95,0,11,3,21,100);
+INSERT INTO moves VALUES (528,'wild-charge',5,13,90,15,100,0,10,2,49,NULL);
+INSERT INTO moves VALUES (529,'drill-run',5,5,80,10,95,0,10,2,44,NULL);
+INSERT INTO moves VALUES (530,'dual-chop',5,16,40,15,90,0,10,2,45,NULL);
+INSERT INTO moves VALUES (531,'heart-stamp',5,14,60,25,100,0,10,2,32,30);
+INSERT INTO moves VALUES (532,'horn-leech',5,12,75,10,100,0,10,2,4,NULL);
+INSERT INTO moves VALUES (533,'sacred-sword',5,2,90,15,100,0,10,2,304,NULL);
+INSERT INTO moves VALUES (534,'razor-shell',5,11,75,10,95,0,10,2,70,50);
+INSERT INTO moves VALUES (535,'heat-crash',5,10,NULL,10,100,0,10,2,292,NULL);
+INSERT INTO moves VALUES (536,'leaf-tornado',5,12,65,10,90,0,10,3,74,50);
+INSERT INTO moves VALUES (537,'steamroller',5,7,65,20,100,0,10,2,151,30);
+INSERT INTO moves VALUES (538,'cotton-guard',5,12,NULL,10,NULL,0,7,1,329,NULL);
+INSERT INTO moves VALUES (539,'night-daze',5,17,85,10,95,0,10,3,74,40);
+INSERT INTO moves VALUES (540,'psystrike',5,14,100,10,100,0,10,3,283,NULL);
+INSERT INTO moves VALUES (541,'tail-slap',5,1,25,10,85,0,10,2,30,NULL);
+INSERT INTO moves VALUES (542,'hurricane',5,3,110,10,70,0,10,3,338,30);
+INSERT INTO moves VALUES (543,'head-charge',5,1,120,15,100,0,10,2,49,NULL);
+INSERT INTO moves VALUES (544,'gear-grind',5,9,50,15,85,0,10,2,45,NULL);
+INSERT INTO moves VALUES (545,'searing-shot',5,10,100,5,100,0,9,3,5,30);
+INSERT INTO moves VALUES (546,'techno-blast',5,1,120,5,100,0,10,3,269,NULL);
+INSERT INTO moves VALUES (547,'relic-song',5,1,75,10,100,0,11,3,330,10);
+INSERT INTO moves VALUES (548,'secret-sword',5,2,85,10,100,0,10,3,283,NULL);
+INSERT INTO moves VALUES (549,'glaciate',5,15,65,10,95,0,11,3,331,100);
+INSERT INTO moves VALUES (550,'bolt-strike',5,13,130,5,85,0,10,2,7,20);
+INSERT INTO moves VALUES (551,'blue-flare',5,10,130,5,85,0,10,3,5,20);
+INSERT INTO moves VALUES (552,'fiery-dance',5,10,80,10,100,0,10,3,277,50);
+INSERT INTO moves VALUES (553,'freeze-shock',5,15,140,5,90,0,10,2,332,30);
+INSERT INTO moves VALUES (554,'ice-burn',5,15,140,5,90,0,10,3,333,30);
+INSERT INTO moves VALUES (555,'snarl',5,17,55,15,95,0,11,3,72,100);
+INSERT INTO moves VALUES (556,'icicle-crash',5,15,85,10,90,0,10,2,32,30);
+INSERT INTO moves VALUES (557,'v-create',5,10,180,5,95,0,10,2,335,100);
+INSERT INTO moves VALUES (558,'fusion-flare',5,10,100,5,100,0,10,3,336,NULL);
+INSERT INTO moves VALUES (559,'fusion-bolt',5,13,100,5,100,0,10,2,337,NULL);
+INSERT INTO moves VALUES (560,'flying-press',6,2,80,10,95,0,10,2,339,NULL);
+INSERT INTO moves VALUES (561,'mat-block',6,2,NULL,10,NULL,0,4,1,340,NULL);
+INSERT INTO moves VALUES (562,'belch',6,4,120,10,90,0,10,3,341,NULL);
+INSERT INTO moves VALUES (563,'rototiller',6,5,NULL,10,NULL,0,14,1,342,100);
+INSERT INTO moves VALUES (564,'sticky-web',6,7,NULL,20,NULL,0,6,1,343,NULL);
+INSERT INTO moves VALUES (565,'fell-stinger',6,7,30,25,100,0,10,2,344,NULL);
+INSERT INTO moves VALUES (566,'phantom-force',6,8,90,10,100,0,10,2,273,NULL);
+INSERT INTO moves VALUES (567,'trick-or-treat',6,8,NULL,20,100,0,10,1,345,NULL);
+INSERT INTO moves VALUES (568,'noble-roar',6,1,NULL,30,100,0,10,1,346,100);
+INSERT INTO moves VALUES (569,'ion-deluge',6,13,NULL,25,NULL,1,12,1,347,NULL);
+INSERT INTO moves VALUES (570,'parabolic-charge',6,13,50,20,100,0,9,3,348,NULL);
+INSERT INTO moves VALUES (571,'forests-curse',6,12,NULL,20,100,0,10,1,349,NULL);
+INSERT INTO moves VALUES (572,'petal-blizzard',6,12,90,15,100,0,9,2,1,NULL);
+INSERT INTO moves VALUES (573,'freeze-dry',6,15,70,20,100,0,10,3,350,10);
+INSERT INTO moves VALUES (574,'disarming-voice',6,18,40,15,NULL,0,11,3,18,NULL);
+INSERT INTO moves VALUES (575,'parting-shot',6,17,NULL,20,100,0,10,1,351,100);
+INSERT INTO moves VALUES (576,'topsy-turvy',6,17,NULL,20,NULL,0,10,1,352,NULL);
+INSERT INTO moves VALUES (577,'draining-kiss',6,18,50,10,100,0,10,3,353,NULL);
+INSERT INTO moves VALUES (578,'crafty-shield',6,18,NULL,10,NULL,3,4,1,354,NULL);
+INSERT INTO moves VALUES (579,'flower-shield',6,18,NULL,10,NULL,0,14,1,355,100);
+INSERT INTO moves VALUES (580,'grassy-terrain',6,12,NULL,10,NULL,0,12,1,356,NULL);
+INSERT INTO moves VALUES (581,'misty-terrain',6,18,NULL,10,NULL,0,12,1,357,NULL);
+INSERT INTO moves VALUES (582,'electrify',6,13,NULL,20,NULL,0,10,1,358,NULL);
+INSERT INTO moves VALUES (583,'play-rough',6,18,90,10,90,0,10,2,69,10);
+INSERT INTO moves VALUES (584,'fairy-wind',6,18,40,30,100,0,10,3,1,NULL);
+INSERT INTO moves VALUES (585,'moonblast',6,18,95,15,100,0,10,3,72,30);
+INSERT INTO moves VALUES (586,'boomburst',6,1,140,10,100,0,9,3,1,NULL);
+INSERT INTO moves VALUES (587,'fairy-lock',6,18,NULL,10,NULL,0,12,1,359,NULL);
+INSERT INTO moves VALUES (588,'kings-shield',6,9,NULL,10,NULL,4,7,1,360,NULL);
+INSERT INTO moves VALUES (589,'play-nice',6,1,NULL,20,NULL,0,10,1,19,100);
+INSERT INTO moves VALUES (590,'confide',6,1,NULL,20,NULL,0,10,1,361,100);
+INSERT INTO moves VALUES (591,'diamond-storm',6,6,100,5,95,0,11,2,139,50);
+INSERT INTO moves VALUES (592,'steam-eruption',6,11,110,5,95,0,10,3,5,30);
+INSERT INTO moves VALUES (593,'hyperspace-hole',6,14,80,5,NULL,0,10,3,10007,NULL);
+INSERT INTO moves VALUES (594,'water-shuriken',6,11,15,20,100,1,10,2,30,NULL);
+INSERT INTO moves VALUES (595,'mystical-fire',6,10,65,10,100,0,10,3,72,100);
+INSERT INTO moves VALUES (596,'spiky-shield',6,12,NULL,10,NULL,4,7,1,362,NULL);
+INSERT INTO moves VALUES (597,'aromatic-mist',6,18,NULL,20,NULL,0,3,1,363,NULL);
+INSERT INTO moves VALUES (598,'eerie-impulse',6,13,NULL,15,100,0,10,1,369,NULL);
+INSERT INTO moves VALUES (599,'venom-drench',6,4,NULL,20,100,0,11,1,364,100);
+INSERT INTO moves VALUES (600,'powder',6,7,NULL,20,100,1,10,1,365,NULL);
+INSERT INTO moves VALUES (601,'geomancy',6,18,NULL,10,NULL,0,7,1,366,NULL);
+INSERT INTO moves VALUES (602,'magnetic-flux',6,13,NULL,20,NULL,0,13,1,367,NULL);
+INSERT INTO moves VALUES (603,'happy-hour',6,1,NULL,30,NULL,0,4,1,370,NULL);
+INSERT INTO moves VALUES (604,'electric-terrain',6,13,NULL,10,NULL,0,12,1,368,NULL);
+INSERT INTO moves VALUES (605,'dazzling-gleam',6,18,80,10,100,0,11,3,1,NULL);
+INSERT INTO moves VALUES (606,'celebrate',6,1,NULL,40,NULL,0,7,1,10007,NULL);
+INSERT INTO moves VALUES (607,'hold-hands',6,1,NULL,40,NULL,0,3,1,10007,NULL);
+INSERT INTO moves VALUES (608,'baby-doll-eyes',6,18,NULL,30,100,1,10,1,19,NULL);
+INSERT INTO moves VALUES (609,'nuzzle',6,13,20,20,100,0,10,2,7,100);
+INSERT INTO moves VALUES (610,'hold-back',6,1,40,40,100,0,10,2,102,NULL);
+INSERT INTO moves VALUES (611,'infestation',6,7,20,20,100,0,10,3,43,100);
+INSERT INTO moves VALUES (612,'power-up-punch',6,2,40,20,100,0,10,2,140,100);
+INSERT INTO moves VALUES (613,'oblivion-wing',6,3,80,10,100,0,10,3,353,NULL);
+INSERT INTO moves VALUES (614,'thousand-arrows',6,5,90,10,100,0,11,2,10007,100);
+INSERT INTO moves VALUES (615,'thousand-waves',6,5,90,10,100,0,11,2,10007,NULL);
+INSERT INTO moves VALUES (616,'lands-wrath',6,5,90,10,100,0,11,2,1,NULL);
+INSERT INTO moves VALUES (617,'light-of-ruin',6,18,140,5,90,0,10,3,270,NULL);
+INSERT INTO moves VALUES (618,'origin-pulse',6,11,110,10,85,0,11,3,1,NULL);
+INSERT INTO moves VALUES (619,'precipice-blades',6,5,120,10,85,0,11,2,1,NULL);
+INSERT INTO moves VALUES (620,'dragon-ascent',6,3,120,5,100,0,10,2,230,NULL);
+INSERT INTO moves VALUES (621,'hyperspace-fury',6,17,100,5,NULL,0,10,2,360,NULL);
+INSERT INTO moves VALUES (10001,'shadow-rush',3,10002,55,NULL,100,0,10,2,10001,NULL);
+INSERT INTO moves VALUES (10002,'shadow-blast',3,10002,80,NULL,100,0,10,2,44,NULL);
+INSERT INTO moves VALUES (10003,'shadow-blitz',3,10002,40,NULL,100,0,10,2,1,NULL);
+INSERT INTO moves VALUES (10004,'shadow-bolt',3,10002,75,NULL,100,0,10,3,7,10);
+INSERT INTO moves VALUES (10005,'shadow-break',3,10002,75,NULL,100,0,10,2,1,NULL);
+INSERT INTO moves VALUES (10006,'shadow-chill',3,10002,75,NULL,100,0,10,3,6,10);
+INSERT INTO moves VALUES (10007,'shadow-end',3,10002,120,NULL,60,0,10,2,10002,NULL);
+INSERT INTO moves VALUES (10008,'shadow-fire',3,10002,75,NULL,100,0,10,3,5,10);
+INSERT INTO moves VALUES (10009,'shadow-rave',3,10002,70,NULL,100,0,6,3,1,NULL);
+INSERT INTO moves VALUES (10010,'shadow-storm',3,10002,95,NULL,100,0,6,3,1,NULL);
+INSERT INTO moves VALUES (10011,'shadow-wave',3,10002,50,NULL,100,0,6,3,1,NULL);
+INSERT INTO moves VALUES (10012,'shadow-down',3,10002,NULL,NULL,100,0,6,1,60,NULL);
+INSERT INTO moves VALUES (10013,'shadow-half',3,10002,NULL,NULL,100,0,12,3,10003,NULL);
+INSERT INTO moves VALUES (10014,'shadow-hold',3,10002,NULL,NULL,NULL,0,6,1,107,NULL);
+INSERT INTO moves VALUES (10015,'shadow-mist',3,10002,NULL,NULL,100,0,6,1,10004,NULL);
+INSERT INTO moves VALUES (10016,'shadow-panic',3,10002,NULL,NULL,90,0,6,1,50,NULL);
+INSERT INTO moves VALUES (10017,'shadow-shed',3,10002,NULL,NULL,NULL,0,12,1,10005,NULL);
+DROP TABLE pokemon_abilities;
+
+CREATE TABLE pokemon_abilities (
+    pokemon_id INT NOT NULL,
+    ability_id INT NOT NULL,
+    is_hidden INT NOT NULL,
+    PRIMARY KEY (pokemon_id)
+);
+
+INSERT INTO pokemon_abilities VALUES (1,65,0);
+
+INSERT INTO pokemon_abilities VALUES (1,34,1);
+
+INSERT INTO pokemon_abilities VALUES (2,65,0);
+
+INSERT INTO pokemon_abilities VALUES (2,34,1);
+
+INSERT INTO pokemon_abilities VALUES (3,65,0);
+
+INSERT INTO pokemon_abilities VALUES (3,34,1);
+
+INSERT INTO pokemon_abilities VALUES (4,66,0);
+
+INSERT INTO pokemon_abilities VALUES (4,94,1);
+
+INSERT INTO pokemon_abilities VALUES (5,66,0);
+
+INSERT INTO pokemon_abilities VALUES (5,94,1);
+
+INSERT INTO pokemon_abilities VALUES (6,66,0);
+
+INSERT INTO pokemon_abilities VALUES (6,94,1);
+
+INSERT INTO pokemon_abilities VALUES (7,67,0);
+
+INSERT INTO pokemon_abilities VALUES (7,44,1);
+
+INSERT INTO pokemon_abilities VALUES (8,67,0);
+
+INSERT INTO pokemon_abilities VALUES (8,44,1);
+
+INSERT INTO pokemon_abilities VALUES (9,67,0);
+
+INSERT INTO pokemon_abilities VALUES (9,44,1);
+
+INSERT INTO pokemon_abilities VALUES (10,19,0);
+
+INSERT INTO pokemon_abilities VALUES (10,50,1);
+
+INSERT INTO pokemon_abilities VALUES (11,61,0);
+
+INSERT INTO pokemon_abilities VALUES (12,14,0);
+
+INSERT INTO pokemon_abilities VALUES (12,110,1);
+
+INSERT INTO pokemon_abilities VALUES (13,19,0);
+
+INSERT INTO pokemon_abilities VALUES (13,50,1);
+
+INSERT INTO pokemon_abilities VALUES (14,61,0);
+
+INSERT INTO pokemon_abilities VALUES (15,68,0);
+
+INSERT INTO pokemon_abilities VALUES (15,97,1);
+
+INSERT INTO pokemon_abilities VALUES (16,51,0);
+
+INSERT INTO pokemon_abilities VALUES (16,77,0);
+
+INSERT INTO pokemon_abilities VALUES (16,145,1);
+
+INSERT INTO pokemon_abilities VALUES (17,51,0);
+
+INSERT INTO pokemon_abilities VALUES (17,77,0);
+
+INSERT INTO pokemon_abilities VALUES (17,145,1);
+
+INSERT INTO pokemon_abilities VALUES (18,51,0);
+
+INSERT INTO pokemon_abilities VALUES (18,77,0);
+
+INSERT INTO pokemon_abilities VALUES (18,145,1);
+
+INSERT INTO pokemon_abilities VALUES (19,50,0);
+
+INSERT INTO pokemon_abilities VALUES (19,62,0);
+
+INSERT INTO pokemon_abilities VALUES (19,55,1);
+
+INSERT INTO pokemon_abilities VALUES (20,50,0);
+
+INSERT INTO pokemon_abilities VALUES (20,62,0);
+
+INSERT INTO pokemon_abilities VALUES (20,55,1);
+
+INSERT INTO pokemon_abilities VALUES (21,51,0);
+
+INSERT INTO pokemon_abilities VALUES (21,97,1);
+
+INSERT INTO pokemon_abilities VALUES (22,51,0);
+
+INSERT INTO pokemon_abilities VALUES (22,97,1);
+
+INSERT INTO pokemon_abilities VALUES (23,22,0);
+
+INSERT INTO pokemon_abilities VALUES (23,61,0);
+
+INSERT INTO pokemon_abilities VALUES (23,127,1);
+
+INSERT INTO pokemon_abilities VALUES (24,22,0);
+
+INSERT INTO pokemon_abilities VALUES (24,61,0);
+
+INSERT INTO pokemon_abilities VALUES (24,127,1);
+
+INSERT INTO pokemon_abilities VALUES (25,9,0);
+
+INSERT INTO pokemon_abilities VALUES (25,31,1);
+
+INSERT INTO pokemon_abilities VALUES (26,9,0);
+
+INSERT INTO pokemon_abilities VALUES (26,31,1);
+
+INSERT INTO pokemon_abilities VALUES (27,8,0);
+
+INSERT INTO pokemon_abilities VALUES (27,146,1);
+
+INSERT INTO pokemon_abilities VALUES (28,8,0);
+
+INSERT INTO pokemon_abilities VALUES (28,146,1);
+
+INSERT INTO pokemon_abilities VALUES (29,38,0);
+
+INSERT INTO pokemon_abilities VALUES (29,79,0);
+
+INSERT INTO pokemon_abilities VALUES (29,55,1);
+
+INSERT INTO pokemon_abilities VALUES (30,38,0);
+
+INSERT INTO pokemon_abilities VALUES (30,79,0);
+
+INSERT INTO pokemon_abilities VALUES (30,55,1);
+
+INSERT INTO pokemon_abilities VALUES (31,38,0);
+
+INSERT INTO pokemon_abilities VALUES (31,79,0);
+
+INSERT INTO pokemon_abilities VALUES (31,125,1);
+
+INSERT INTO pokemon_abilities VALUES (32,38,0);
+
+INSERT INTO pokemon_abilities VALUES (32,79,0);
+
+INSERT INTO pokemon_abilities VALUES (32,55,1);
+
+INSERT INTO pokemon_abilities VALUES (33,38,0);
+
+INSERT INTO pokemon_abilities VALUES (33,79,0);
+
+INSERT INTO pokemon_abilities VALUES (33,55,1);
+
+INSERT INTO pokemon_abilities VALUES (34,38,0);
+
+INSERT INTO pokemon_abilities VALUES (34,79,0);
+
+INSERT INTO pokemon_abilities VALUES (34,125,1);
+
+INSERT INTO pokemon_abilities VALUES (35,56,0);
+
+INSERT INTO pokemon_abilities VALUES (35,98,0);
+
+INSERT INTO pokemon_abilities VALUES (35,132,1);
+
+INSERT INTO pokemon_abilities VALUES (36,56,0);
+
+INSERT INTO pokemon_abilities VALUES (36,98,0);
+
+INSERT INTO pokemon_abilities VALUES (36,109,1);
+
+INSERT INTO pokemon_abilities VALUES (37,18,0);
+
+INSERT INTO pokemon_abilities VALUES (37,70,1);
+
+INSERT INTO pokemon_abilities VALUES (38,18,0);
+
+INSERT INTO pokemon_abilities VALUES (38,70,1);
+
+INSERT INTO pokemon_abilities VALUES (39,56,0);
+
+INSERT INTO pokemon_abilities VALUES (39,172,0);
+
+INSERT INTO pokemon_abilities VALUES (39,132,1);
+
+INSERT INTO pokemon_abilities VALUES (40,56,0);
+
+INSERT INTO pokemon_abilities VALUES (40,172,0);
+
+INSERT INTO pokemon_abilities VALUES (40,119,1);
+
+INSERT INTO pokemon_abilities VALUES (41,39,0);
+
+INSERT INTO pokemon_abilities VALUES (41,151,1);
+
+INSERT INTO pokemon_abilities VALUES (42,39,0);
+
+INSERT INTO pokemon_abilities VALUES (42,151,1);
+
+INSERT INTO pokemon_abilities VALUES (43,34,0);
+
+INSERT INTO pokemon_abilities VALUES (43,50,1);
+
+INSERT INTO pokemon_abilities VALUES (44,34,0);
+
+INSERT INTO pokemon_abilities VALUES (44,1,1);
+
+INSERT INTO pokemon_abilities VALUES (45,34,0);
+
+INSERT INTO pokemon_abilities VALUES (45,27,1);
+
+INSERT INTO pokemon_abilities VALUES (46,27,0);
+
+INSERT INTO pokemon_abilities VALUES (46,87,0);
+
+INSERT INTO pokemon_abilities VALUES (46,6,1);
+
+INSERT INTO pokemon_abilities VALUES (47,27,0);
+
+INSERT INTO pokemon_abilities VALUES (47,87,0);
+
+INSERT INTO pokemon_abilities VALUES (47,6,1);
+
+INSERT INTO pokemon_abilities VALUES (48,14,0);
+
+INSERT INTO pokemon_abilities VALUES (48,110,0);
+
+INSERT INTO pokemon_abilities VALUES (48,50,1);
+
+INSERT INTO pokemon_abilities VALUES (49,19,0);
+
+INSERT INTO pokemon_abilities VALUES (49,110,0);
+
+INSERT INTO pokemon_abilities VALUES (49,147,1);
+
+INSERT INTO pokemon_abilities VALUES (50,8,0);
+
+INSERT INTO pokemon_abilities VALUES (50,71,0);
+
+INSERT INTO pokemon_abilities VALUES (50,159,1);
+
+INSERT INTO pokemon_abilities VALUES (51,8,0);
+
+INSERT INTO pokemon_abilities VALUES (51,71,0);
+
+INSERT INTO pokemon_abilities VALUES (51,159,1);
+
+INSERT INTO pokemon_abilities VALUES (52,53,0);
+
+INSERT INTO pokemon_abilities VALUES (52,101,0);
+
+INSERT INTO pokemon_abilities VALUES (52,127,1);
+
+INSERT INTO pokemon_abilities VALUES (53,7,0);
+
+INSERT INTO pokemon_abilities VALUES (53,101,0);
+
+INSERT INTO pokemon_abilities VALUES (53,127,1);
+
+INSERT INTO pokemon_abilities VALUES (54,6,0);
+
+INSERT INTO pokemon_abilities VALUES (54,13,0);
+
+INSERT INTO pokemon_abilities VALUES (54,33,1);
+
+INSERT INTO pokemon_abilities VALUES (55,6,0);
+
+INSERT INTO pokemon_abilities VALUES (55,13,0);
+
+INSERT INTO pokemon_abilities VALUES (55,33,1);
+
+INSERT INTO pokemon_abilities VALUES (56,72,0);
+
+INSERT INTO pokemon_abilities VALUES (56,83,0);
+
+INSERT INTO pokemon_abilities VALUES (56,128,1);
+
+INSERT INTO pokemon_abilities VALUES (57,72,0);
+
+INSERT INTO pokemon_abilities VALUES (57,83,0);
+
+INSERT INTO pokemon_abilities VALUES (57,128,1);
+
+INSERT INTO pokemon_abilities VALUES (58,22,0);
+
+INSERT INTO pokemon_abilities VALUES (58,18,0);
+
+INSERT INTO pokemon_abilities VALUES (58,154,1);
+
+INSERT INTO pokemon_abilities VALUES (59,22,0);
+
+INSERT INTO pokemon_abilities VALUES (59,18,0);
+
+INSERT INTO pokemon_abilities VALUES (59,154,1);
+
+INSERT INTO pokemon_abilities VALUES (60,11,0);
+
+INSERT INTO pokemon_abilities VALUES (60,6,0);
+
+INSERT INTO pokemon_abilities VALUES (60,33,1);
+
+INSERT INTO pokemon_abilities VALUES (61,11,0);
+
+INSERT INTO pokemon_abilities VALUES (61,6,0);
+
+INSERT INTO pokemon_abilities VALUES (61,33,1);
+
+INSERT INTO pokemon_abilities VALUES (62,11,0);
+
+INSERT INTO pokemon_abilities VALUES (62,6,0);
+
+INSERT INTO pokemon_abilities VALUES (62,33,1);
+
+INSERT INTO pokemon_abilities VALUES (63,28,0);
+
+INSERT INTO pokemon_abilities VALUES (63,39,0);
+
+INSERT INTO pokemon_abilities VALUES (63,98,1);
+
+INSERT INTO pokemon_abilities VALUES (64,28,0);
+
+INSERT INTO pokemon_abilities VALUES (64,39,0);
+
+INSERT INTO pokemon_abilities VALUES (64,98,1);
+
+INSERT INTO pokemon_abilities VALUES (65,28,0);
+
+INSERT INTO pokemon_abilities VALUES (65,39,0);
+
+INSERT INTO pokemon_abilities VALUES (65,98,1);
+
+INSERT INTO pokemon_abilities VALUES (66,62,0);
+
+INSERT INTO pokemon_abilities VALUES (66,99,0);
+
+INSERT INTO pokemon_abilities VALUES (66,80,1);
+
+INSERT INTO pokemon_abilities VALUES (67,62,0);
+
+INSERT INTO pokemon_abilities VALUES (67,99,0);
+
+INSERT INTO pokemon_abilities VALUES (67,80,1);
+
+INSERT INTO pokemon_abilities VALUES (68,62,0);
+
+INSERT INTO pokemon_abilities VALUES (68,99,0);
+
+INSERT INTO pokemon_abilities VALUES (68,80,1);
+
+INSERT INTO pokemon_abilities VALUES (69,34,0);
+
+INSERT INTO pokemon_abilities VALUES (69,82,1);
+
+INSERT INTO pokemon_abilities VALUES (70,34,0);
+
+INSERT INTO pokemon_abilities VALUES (70,82,1);
+
+INSERT INTO pokemon_abilities VALUES (71,34,0);
+
+INSERT INTO pokemon_abilities VALUES (71,82,1);
+
+INSERT INTO pokemon_abilities VALUES (72,29,0);
+
+INSERT INTO pokemon_abilities VALUES (72,64,0);
+
+INSERT INTO pokemon_abilities VALUES (72,44,1);
+
+INSERT INTO pokemon_abilities VALUES (73,29,0);
+
+INSERT INTO pokemon_abilities VALUES (73,64,0);
+
+INSERT INTO pokemon_abilities VALUES (73,44,1);
+
+INSERT INTO pokemon_abilities VALUES (74,69,0);
+
+INSERT INTO pokemon_abilities VALUES (74,5,0);
+
+INSERT INTO pokemon_abilities VALUES (74,8,1);
+
+INSERT INTO pokemon_abilities VALUES (75,69,0);
+
+INSERT INTO pokemon_abilities VALUES (75,5,0);
+
+INSERT INTO pokemon_abilities VALUES (75,8,1);
+
+INSERT INTO pokemon_abilities VALUES (76,69,0);
+
+INSERT INTO pokemon_abilities VALUES (76,5,0);
+
+INSERT INTO pokemon_abilities VALUES (76,8,1);
+
+INSERT INTO pokemon_abilities VALUES (77,50,0);
+
+INSERT INTO pokemon_abilities VALUES (77,18,0);
+
+INSERT INTO pokemon_abilities VALUES (77,49,1);
+
+INSERT INTO pokemon_abilities VALUES (78,50,0);
+
+INSERT INTO pokemon_abilities VALUES (78,18,0);
+
+INSERT INTO pokemon_abilities VALUES (78,49,1);
+
+INSERT INTO pokemon_abilities VALUES (79,12,0);
+
+INSERT INTO pokemon_abilities VALUES (79,20,0);
+
+INSERT INTO pokemon_abilities VALUES (79,144,1);
+
+INSERT INTO pokemon_abilities VALUES (80,12,0);
+
+INSERT INTO pokemon_abilities VALUES (80,20,0);
+
+INSERT INTO pokemon_abilities VALUES (80,144,1);
+
+INSERT INTO pokemon_abilities VALUES (81,42,0);
+
+INSERT INTO pokemon_abilities VALUES (81,5,0);
+
+INSERT INTO pokemon_abilities VALUES (81,148,1);
+
+INSERT INTO pokemon_abilities VALUES (82,42,0);
+
+INSERT INTO pokemon_abilities VALUES (82,5,0);
+
+INSERT INTO pokemon_abilities VALUES (82,148,1);
+
+INSERT INTO pokemon_abilities VALUES (83,51,0);
+
+INSERT INTO pokemon_abilities VALUES (83,39,0);
+
+INSERT INTO pokemon_abilities VALUES (83,128,1);
+
+INSERT INTO pokemon_abilities VALUES (84,50,0);
+
+INSERT INTO pokemon_abilities VALUES (84,48,0);
+
+INSERT INTO pokemon_abilities VALUES (84,77,1);
+
+INSERT INTO pokemon_abilities VALUES (85,50,0);
+
+INSERT INTO pokemon_abilities VALUES (85,48,0);
+
+INSERT INTO pokemon_abilities VALUES (85,77,1);
+
+INSERT INTO pokemon_abilities VALUES (86,47,0);
+
+INSERT INTO pokemon_abilities VALUES (86,93,0);
+
+INSERT INTO pokemon_abilities VALUES (86,115,1);
+
+INSERT INTO pokemon_abilities VALUES (87,47,0);
+
+INSERT INTO pokemon_abilities VALUES (87,93,0);
+
+INSERT INTO pokemon_abilities VALUES (87,115,1);
+
+INSERT INTO pokemon_abilities VALUES (88,1,0);
+
+INSERT INTO pokemon_abilities VALUES (88,60,0);
+
+INSERT INTO pokemon_abilities VALUES (88,143,1);
+
+INSERT INTO pokemon_abilities VALUES (89,1,0);
+
+INSERT INTO pokemon_abilities VALUES (89,60,0);
+
+INSERT INTO pokemon_abilities VALUES (89,143,1);
+
+INSERT INTO pokemon_abilities VALUES (90,75,0);
+
+INSERT INTO pokemon_abilities VALUES (90,92,0);
+
+INSERT INTO pokemon_abilities VALUES (90,142,1);
+
+INSERT INTO pokemon_abilities VALUES (91,75,0);
+
+INSERT INTO pokemon_abilities VALUES (91,92,0);
+
+INSERT INTO pokemon_abilities VALUES (91,142,1);
+
+INSERT INTO pokemon_abilities VALUES (92,26,0);
+
+INSERT INTO pokemon_abilities VALUES (93,26,0);
+
+INSERT INTO pokemon_abilities VALUES (94,26,0);
+
+INSERT INTO pokemon_abilities VALUES (95,69,0);
+
+INSERT INTO pokemon_abilities VALUES (95,5,0);
+
+INSERT INTO pokemon_abilities VALUES (95,133,1);
+
+INSERT INTO pokemon_abilities VALUES (96,15,0);
+
+INSERT INTO pokemon_abilities VALUES (96,108,0);
+
+INSERT INTO pokemon_abilities VALUES (96,39,1);
+
+INSERT INTO pokemon_abilities VALUES (97,15,0);
+
+INSERT INTO pokemon_abilities VALUES (97,108,0);
+
+INSERT INTO pokemon_abilities VALUES (97,39,1);
+
+INSERT INTO pokemon_abilities VALUES (98,52,0);
+
+INSERT INTO pokemon_abilities VALUES (98,75,0);
+
+INSERT INTO pokemon_abilities VALUES (98,125,1);
+
+INSERT INTO pokemon_abilities VALUES (99,52,0);
+
+INSERT INTO pokemon_abilities VALUES (99,75,0);
+
+INSERT INTO pokemon_abilities VALUES (99,125,1);
+
+INSERT INTO pokemon_abilities VALUES (100,43,0);
+
+INSERT INTO pokemon_abilities VALUES (100,9,0);
+
+INSERT INTO pokemon_abilities VALUES (100,106,1);
+
+INSERT INTO pokemon_abilities VALUES (101,43,0);
+
+INSERT INTO pokemon_abilities VALUES (101,9,0);
+
+INSERT INTO pokemon_abilities VALUES (101,106,1);
+
+INSERT INTO pokemon_abilities VALUES (102,34,0);
+
+INSERT INTO pokemon_abilities VALUES (102,139,1);
+
+INSERT INTO pokemon_abilities VALUES (103,34,0);
+
+INSERT INTO pokemon_abilities VALUES (103,139,1);
+
+INSERT INTO pokemon_abilities VALUES (104,69,0);
+
+INSERT INTO pokemon_abilities VALUES (104,31,0);
+
+INSERT INTO pokemon_abilities VALUES (104,4,1);
+
+INSERT INTO pokemon_abilities VALUES (105,69,0);
+
+INSERT INTO pokemon_abilities VALUES (105,31,0);
+
+INSERT INTO pokemon_abilities VALUES (105,4,1);
+
+INSERT INTO pokemon_abilities VALUES (106,7,0);
+
+INSERT INTO pokemon_abilities VALUES (106,120,0);
+
+INSERT INTO pokemon_abilities VALUES (106,84,1);
+
+INSERT INTO pokemon_abilities VALUES (107,51,0);
+
+INSERT INTO pokemon_abilities VALUES (107,89,0);
+
+INSERT INTO pokemon_abilities VALUES (107,39,1);
+
+INSERT INTO pokemon_abilities VALUES (108,20,0);
+
+INSERT INTO pokemon_abilities VALUES (108,12,0);
+
+INSERT INTO pokemon_abilities VALUES (108,13,1);
+
+INSERT INTO pokemon_abilities VALUES (109,26,0);
+
+INSERT INTO pokemon_abilities VALUES (110,26,0);
+
+INSERT INTO pokemon_abilities VALUES (111,31,0);
+
+INSERT INTO pokemon_abilities VALUES (111,69,0);
+
+INSERT INTO pokemon_abilities VALUES (111,120,1);
+
+INSERT INTO pokemon_abilities VALUES (112,31,0);
+
+INSERT INTO pokemon_abilities VALUES (112,69,0);
+
+INSERT INTO pokemon_abilities VALUES (112,120,1);
+
+INSERT INTO pokemon_abilities VALUES (113,30,0);
+
+INSERT INTO pokemon_abilities VALUES (113,32,0);
+
+INSERT INTO pokemon_abilities VALUES (113,131,1);
+
+INSERT INTO pokemon_abilities VALUES (114,34,0);
+
+INSERT INTO pokemon_abilities VALUES (114,102,0);
+
+INSERT INTO pokemon_abilities VALUES (114,144,1);
+
+INSERT INTO pokemon_abilities VALUES (115,48,0);
+
+INSERT INTO pokemon_abilities VALUES (115,113,0);
+
+INSERT INTO pokemon_abilities VALUES (115,39,1);
+
+INSERT INTO pokemon_abilities VALUES (116,33,0);
+
+INSERT INTO pokemon_abilities VALUES (116,97,0);
+
+INSERT INTO pokemon_abilities VALUES (116,6,1);
+
+INSERT INTO pokemon_abilities VALUES (117,38,0);
+
+INSERT INTO pokemon_abilities VALUES (117,97,0);
+
+INSERT INTO pokemon_abilities VALUES (117,6,1);
+
+INSERT INTO pokemon_abilities VALUES (118,33,0);
+
+INSERT INTO pokemon_abilities VALUES (118,41,0);
+
+INSERT INTO pokemon_abilities VALUES (118,31,1);
+
+INSERT INTO pokemon_abilities VALUES (119,33,0);
+
+INSERT INTO pokemon_abilities VALUES (119,41,0);
+
+INSERT INTO pokemon_abilities VALUES (119,31,1);
+
+INSERT INTO pokemon_abilities VALUES (120,35,0);
+
+INSERT INTO pokemon_abilities VALUES (120,30,0);
+
+INSERT INTO pokemon_abilities VALUES (120,148,1);
+
+INSERT INTO pokemon_abilities VALUES (121,35,0);
+
+INSERT INTO pokemon_abilities VALUES (121,30,0);
+
+INSERT INTO pokemon_abilities VALUES (121,148,1);
+
+INSERT INTO pokemon_abilities VALUES (122,43,0);
+
+INSERT INTO pokemon_abilities VALUES (122,111,0);
+
+INSERT INTO pokemon_abilities VALUES (122,101,1);
+
+INSERT INTO pokemon_abilities VALUES (123,68,0);
+
+INSERT INTO pokemon_abilities VALUES (123,101,0);
+
+INSERT INTO pokemon_abilities VALUES (123,80,1);
+
+INSERT INTO pokemon_abilities VALUES (124,12,0);
+
+INSERT INTO pokemon_abilities VALUES (124,108,0);
+
+INSERT INTO pokemon_abilities VALUES (124,87,1);
+
+INSERT INTO pokemon_abilities VALUES (125,9,0);
+
+INSERT INTO pokemon_abilities VALUES (125,72,1);
+
+INSERT INTO pokemon_abilities VALUES (126,49,0);
+
+INSERT INTO pokemon_abilities VALUES (126,72,1);
+
+INSERT INTO pokemon_abilities VALUES (127,52,0);
+
+INSERT INTO pokemon_abilities VALUES (127,104,0);
+
+INSERT INTO pokemon_abilities VALUES (127,153,1);
+
+INSERT INTO pokemon_abilities VALUES (128,22,0);
+
+INSERT INTO pokemon_abilities VALUES (128,83,0);
+
+INSERT INTO pokemon_abilities VALUES (128,125,1);
+
+INSERT INTO pokemon_abilities VALUES (129,33,0);
+
+INSERT INTO pokemon_abilities VALUES (129,155,1);
+
+INSERT INTO pokemon_abilities VALUES (130,22,0);
+
+INSERT INTO pokemon_abilities VALUES (130,153,1);
+
+INSERT INTO pokemon_abilities VALUES (131,11,0);
+
+INSERT INTO pokemon_abilities VALUES (131,75,0);
+
+INSERT INTO pokemon_abilities VALUES (131,93,1);
+
+INSERT INTO pokemon_abilities VALUES (132,7,0);
+
+INSERT INTO pokemon_abilities VALUES (132,150,1);
+
+INSERT INTO pokemon_abilities VALUES (133,50,0);
+
+INSERT INTO pokemon_abilities VALUES (133,91,0);
+
+INSERT INTO pokemon_abilities VALUES (133,107,1);
+
+INSERT INTO pokemon_abilities VALUES (134,11,0);
+
+INSERT INTO pokemon_abilities VALUES (134,93,1);
+
+INSERT INTO pokemon_abilities VALUES (135,10,0);
+
+INSERT INTO pokemon_abilities VALUES (135,95,1);
+
+INSERT INTO pokemon_abilities VALUES (136,18,0);
+
+INSERT INTO pokemon_abilities VALUES (136,62,1);
+
+INSERT INTO pokemon_abilities VALUES (137,36,0);
+
+INSERT INTO pokemon_abilities VALUES (137,88,0);
+
+INSERT INTO pokemon_abilities VALUES (137,148,1);
+
+INSERT INTO pokemon_abilities VALUES (138,33,0);
+
+INSERT INTO pokemon_abilities VALUES (138,75,0);
+
+INSERT INTO pokemon_abilities VALUES (138,133,1);
+
+INSERT INTO pokemon_abilities VALUES (139,33,0);
+
+INSERT INTO pokemon_abilities VALUES (139,75,0);
+
+INSERT INTO pokemon_abilities VALUES (139,133,1);
+
+INSERT INTO pokemon_abilities VALUES (140,33,0);
+
+INSERT INTO pokemon_abilities VALUES (140,4,0);
+
+INSERT INTO pokemon_abilities VALUES (140,133,1);
+
+INSERT INTO pokemon_abilities VALUES (141,33,0);
+
+INSERT INTO pokemon_abilities VALUES (141,4,0);
+
+INSERT INTO pokemon_abilities VALUES (141,133,1);
+
+INSERT INTO pokemon_abilities VALUES (142,69,0);
+
+INSERT INTO pokemon_abilities VALUES (142,46,0);
+
+INSERT INTO pokemon_abilities VALUES (142,127,1);
+
+INSERT INTO pokemon_abilities VALUES (143,17,0);
+
+INSERT INTO pokemon_abilities VALUES (143,47,0);
+
+INSERT INTO pokemon_abilities VALUES (143,82,1);
+
+INSERT INTO pokemon_abilities VALUES (144,46,0);
+
+INSERT INTO pokemon_abilities VALUES (144,81,1);
+
+INSERT INTO pokemon_abilities VALUES (145,46,0);
+
+INSERT INTO pokemon_abilities VALUES (145,9,1);
+
+INSERT INTO pokemon_abilities VALUES (146,46,0);
+
+INSERT INTO pokemon_abilities VALUES (146,49,1);
+
+INSERT INTO pokemon_abilities VALUES (147,61,0);
+
+INSERT INTO pokemon_abilities VALUES (147,63,1);
+
+INSERT INTO pokemon_abilities VALUES (148,61,0);
+
+INSERT INTO pokemon_abilities VALUES (148,63,1);
+
+INSERT INTO pokemon_abilities VALUES (149,39,0);
+
+INSERT INTO pokemon_abilities VALUES (149,136,1);
+
+INSERT INTO pokemon_abilities VALUES (150,46,0);
+
+INSERT INTO pokemon_abilities VALUES (150,127,1);
+
+INSERT INTO pokemon_abilities VALUES (151,28,0);
+
+INSERT INTO pokemon_abilities VALUES (152,65,0);
+
+INSERT INTO pokemon_abilities VALUES (152,102,1);
+
+INSERT INTO pokemon_abilities VALUES (153,65,0);
+
+INSERT INTO pokemon_abilities VALUES (153,102,1);
+
+INSERT INTO pokemon_abilities VALUES (154,65,0);
+
+INSERT INTO pokemon_abilities VALUES (154,102,1);
+
+INSERT INTO pokemon_abilities VALUES (155,66,0);
+
+INSERT INTO pokemon_abilities VALUES (155,18,1);
+
+INSERT INTO pokemon_abilities VALUES (156,66,0);
+
+INSERT INTO pokemon_abilities VALUES (156,18,1);
+
+INSERT INTO pokemon_abilities VALUES (157,66,0);
+
+INSERT INTO pokemon_abilities VALUES (157,18,1);
+
+INSERT INTO pokemon_abilities VALUES (158,67,0);
+
+INSERT INTO pokemon_abilities VALUES (158,125,1);
+
+INSERT INTO pokemon_abilities VALUES (159,67,0);
+
+INSERT INTO pokemon_abilities VALUES (159,125,1);
+
+INSERT INTO pokemon_abilities VALUES (160,67,0);
+
+INSERT INTO pokemon_abilities VALUES (160,125,1);
+
+INSERT INTO pokemon_abilities VALUES (161,50,0);
+
+INSERT INTO pokemon_abilities VALUES (161,51,0);
+
+INSERT INTO pokemon_abilities VALUES (161,119,1);
+
+INSERT INTO pokemon_abilities VALUES (162,50,0);
+
+INSERT INTO pokemon_abilities VALUES (162,51,0);
+
+INSERT INTO pokemon_abilities VALUES (162,119,1);
+
+INSERT INTO pokemon_abilities VALUES (163,15,0);
+
+INSERT INTO pokemon_abilities VALUES (163,51,0);
+
+INSERT INTO pokemon_abilities VALUES (163,110,1);
+
+INSERT INTO pokemon_abilities VALUES (164,15,0);
+
+INSERT INTO pokemon_abilities VALUES (164,51,0);
+
+INSERT INTO pokemon_abilities VALUES (164,110,1);
+
+INSERT INTO pokemon_abilities VALUES (165,68,0);
+
+INSERT INTO pokemon_abilities VALUES (165,48,0);
+
+INSERT INTO pokemon_abilities VALUES (165,155,1);
+
+INSERT INTO pokemon_abilities VALUES (166,68,0);
+
+INSERT INTO pokemon_abilities VALUES (166,48,0);
+
+INSERT INTO pokemon_abilities VALUES (166,89,1);
+
+INSERT INTO pokemon_abilities VALUES (167,68,0);
+
+INSERT INTO pokemon_abilities VALUES (167,15,0);
+
+INSERT INTO pokemon_abilities VALUES (167,97,1);
+
+INSERT INTO pokemon_abilities VALUES (168,68,0);
+
+INSERT INTO pokemon_abilities VALUES (168,15,0);
+
+INSERT INTO pokemon_abilities VALUES (168,97,1);
+
+INSERT INTO pokemon_abilities VALUES (169,39,0);
+
+INSERT INTO pokemon_abilities VALUES (169,151,1);
+
+INSERT INTO pokemon_abilities VALUES (170,10,0);
+
+INSERT INTO pokemon_abilities VALUES (170,35,0);
+
+INSERT INTO pokemon_abilities VALUES (170,11,1);
+
+INSERT INTO pokemon_abilities VALUES (171,10,0);
+
+INSERT INTO pokemon_abilities VALUES (171,35,0);
+
+INSERT INTO pokemon_abilities VALUES (171,11,1);
+
+INSERT INTO pokemon_abilities VALUES (172,9,0);
+
+INSERT INTO pokemon_abilities VALUES (172,31,1);
+
+INSERT INTO pokemon_abilities VALUES (173,56,0);
+
+INSERT INTO pokemon_abilities VALUES (173,98,0);
+
+INSERT INTO pokemon_abilities VALUES (173,132,1);
+
+INSERT INTO pokemon_abilities VALUES (174,56,0);
+
+INSERT INTO pokemon_abilities VALUES (174,172,0);
+
+INSERT INTO pokemon_abilities VALUES (174,132,1);
+
+INSERT INTO pokemon_abilities VALUES (175,55,0);
+
+INSERT INTO pokemon_abilities VALUES (175,32,0);
+
+INSERT INTO pokemon_abilities VALUES (175,105,1);
+
+INSERT INTO pokemon_abilities VALUES (176,55,0);
+
+INSERT INTO pokemon_abilities VALUES (176,32,0);
+
+INSERT INTO pokemon_abilities VALUES (176,105,1);
+
+INSERT INTO pokemon_abilities VALUES (177,28,0);
+
+INSERT INTO pokemon_abilities VALUES (177,48,0);
+
+INSERT INTO pokemon_abilities VALUES (177,156,1);
+
+INSERT INTO pokemon_abilities VALUES (178,28,0);
+
+INSERT INTO pokemon_abilities VALUES (178,48,0);
+
+INSERT INTO pokemon_abilities VALUES (178,156,1);
+
+INSERT INTO pokemon_abilities VALUES (179,9,0);
+
+INSERT INTO pokemon_abilities VALUES (179,57,1);
+
+INSERT INTO pokemon_abilities VALUES (180,9,0);
+
+INSERT INTO pokemon_abilities VALUES (180,57,1);
+
+INSERT INTO pokemon_abilities VALUES (181,9,0);
+
+INSERT INTO pokemon_abilities VALUES (181,57,1);
+
+INSERT INTO pokemon_abilities VALUES (182,34,0);
+
+INSERT INTO pokemon_abilities VALUES (182,131,1);
+
+INSERT INTO pokemon_abilities VALUES (183,47,0);
+
+INSERT INTO pokemon_abilities VALUES (183,37,0);
+
+INSERT INTO pokemon_abilities VALUES (183,157,1);
+
+INSERT INTO pokemon_abilities VALUES (184,47,0);
+
+INSERT INTO pokemon_abilities VALUES (184,37,0);
+
+INSERT INTO pokemon_abilities VALUES (184,157,1);
+
+INSERT INTO pokemon_abilities VALUES (185,5,0);
+
+INSERT INTO pokemon_abilities VALUES (185,69,0);
+
+INSERT INTO pokemon_abilities VALUES (185,155,1);
+
+INSERT INTO pokemon_abilities VALUES (186,11,0);
+
+INSERT INTO pokemon_abilities VALUES (186,6,0);
+
+INSERT INTO pokemon_abilities VALUES (186,2,1);
+
+INSERT INTO pokemon_abilities VALUES (187,34,0);
+
+INSERT INTO pokemon_abilities VALUES (187,102,0);
+
+INSERT INTO pokemon_abilities VALUES (187,151,1);
+
+INSERT INTO pokemon_abilities VALUES (188,34,0);
+
+INSERT INTO pokemon_abilities VALUES (188,102,0);
+
+INSERT INTO pokemon_abilities VALUES (188,151,1);
+
+INSERT INTO pokemon_abilities VALUES (189,34,0);
+
+INSERT INTO pokemon_abilities VALUES (189,102,0);
+
+INSERT INTO pokemon_abilities VALUES (189,151,1);
+
+INSERT INTO pokemon_abilities VALUES (190,50,0);
+
+INSERT INTO pokemon_abilities VALUES (190,53,0);
+
+INSERT INTO pokemon_abilities VALUES (190,92,1);
+
+INSERT INTO pokemon_abilities VALUES (191,34,0);
+
+INSERT INTO pokemon_abilities VALUES (191,94,0);
+
+INSERT INTO pokemon_abilities VALUES (191,48,1);
+
+INSERT INTO pokemon_abilities VALUES (192,34,0);
+
+INSERT INTO pokemon_abilities VALUES (192,94,0);
+
+INSERT INTO pokemon_abilities VALUES (192,48,1);
+
+INSERT INTO pokemon_abilities VALUES (193,3,0);
+
+INSERT INTO pokemon_abilities VALUES (193,14,0);
+
+INSERT INTO pokemon_abilities VALUES (193,119,1);
+
+INSERT INTO pokemon_abilities VALUES (194,6,0);
+
+INSERT INTO pokemon_abilities VALUES (194,11,0);
+
+INSERT INTO pokemon_abilities VALUES (194,109,1);
+
+INSERT INTO pokemon_abilities VALUES (195,6,0);
+
+INSERT INTO pokemon_abilities VALUES (195,11,0);
+
+INSERT INTO pokemon_abilities VALUES (195,109,1);
+
+INSERT INTO pokemon_abilities VALUES (196,28,0);
+
+INSERT INTO pokemon_abilities VALUES (196,156,1);
+
+INSERT INTO pokemon_abilities VALUES (197,28,0);
+
+INSERT INTO pokemon_abilities VALUES (197,39,1);
+
+INSERT INTO pokemon_abilities VALUES (198,15,0);
+
+INSERT INTO pokemon_abilities VALUES (198,105,0);
+
+INSERT INTO pokemon_abilities VALUES (198,158,1);
+
+INSERT INTO pokemon_abilities VALUES (199,12,0);
+
+INSERT INTO pokemon_abilities VALUES (199,20,0);
+
+INSERT INTO pokemon_abilities VALUES (199,144,1);
+
+INSERT INTO pokemon_abilities VALUES (200,26,0);
+
+INSERT INTO pokemon_abilities VALUES (201,26,0);
+
+INSERT INTO pokemon_abilities VALUES (202,23,0);
+
+INSERT INTO pokemon_abilities VALUES (202,140,1);
+
+INSERT INTO pokemon_abilities VALUES (203,39,0);
+
+INSERT INTO pokemon_abilities VALUES (203,48,0);
+
+INSERT INTO pokemon_abilities VALUES (203,157,1);
+
+INSERT INTO pokemon_abilities VALUES (204,5,0);
+
+INSERT INTO pokemon_abilities VALUES (204,142,1);
+
+INSERT INTO pokemon_abilities VALUES (205,5,0);
+
+INSERT INTO pokemon_abilities VALUES (205,142,1);
+
+INSERT INTO pokemon_abilities VALUES (206,32,0);
+
+INSERT INTO pokemon_abilities VALUES (206,50,0);
+
+INSERT INTO pokemon_abilities VALUES (206,155,1);
+
+INSERT INTO pokemon_abilities VALUES (207,52,0);
+
+INSERT INTO pokemon_abilities VALUES (207,8,0);
+
+INSERT INTO pokemon_abilities VALUES (207,17,1);
+
+INSERT INTO pokemon_abilities VALUES (208,69,0);
+
+INSERT INTO pokemon_abilities VALUES (208,5,0);
+
+INSERT INTO pokemon_abilities VALUES (208,125,1);
+
+INSERT INTO pokemon_abilities VALUES (209,22,0);
+
+INSERT INTO pokemon_abilities VALUES (209,50,0);
+
+INSERT INTO pokemon_abilities VALUES (209,155,1);
+
+INSERT INTO pokemon_abilities VALUES (210,22,0);
+
+INSERT INTO pokemon_abilities VALUES (210,95,0);
+
+INSERT INTO pokemon_abilities VALUES (210,155,1);
+
+INSERT INTO pokemon_abilities VALUES (211,38,0);
+
+INSERT INTO pokemon_abilities VALUES (211,33,0);
+
+INSERT INTO pokemon_abilities VALUES (211,22,1);
+
+INSERT INTO pokemon_abilities VALUES (212,68,0);
+
+INSERT INTO pokemon_abilities VALUES (212,101,0);
+
+INSERT INTO pokemon_abilities VALUES (212,135,1);
+
+INSERT INTO pokemon_abilities VALUES (213,5,0);
+
+INSERT INTO pokemon_abilities VALUES (213,82,0);
+
+INSERT INTO pokemon_abilities VALUES (213,126,1);
+
+INSERT INTO pokemon_abilities VALUES (214,68,0);
+
+INSERT INTO pokemon_abilities VALUES (214,62,0);
+
+INSERT INTO pokemon_abilities VALUES (214,153,1);
+
+INSERT INTO pokemon_abilities VALUES (215,39,0);
+
+INSERT INTO pokemon_abilities VALUES (215,51,0);
+
+INSERT INTO pokemon_abilities VALUES (215,124,1);
+
+INSERT INTO pokemon_abilities VALUES (216,53,0);
+
+INSERT INTO pokemon_abilities VALUES (216,95,0);
+
+INSERT INTO pokemon_abilities VALUES (216,118,1);
+
+INSERT INTO pokemon_abilities VALUES (217,62,0);
+
+INSERT INTO pokemon_abilities VALUES (217,95,0);
+
+INSERT INTO pokemon_abilities VALUES (217,127,1);
+
+INSERT INTO pokemon_abilities VALUES (218,40,0);
+
+INSERT INTO pokemon_abilities VALUES (218,49,0);
+
+INSERT INTO pokemon_abilities VALUES (218,133,1);
+
+INSERT INTO pokemon_abilities VALUES (219,40,0);
+
+INSERT INTO pokemon_abilities VALUES (219,49,0);
+
+INSERT INTO pokemon_abilities VALUES (219,133,1);
+
+INSERT INTO pokemon_abilities VALUES (220,12,0);
+
+INSERT INTO pokemon_abilities VALUES (220,81,0);
+
+INSERT INTO pokemon_abilities VALUES (220,47,1);
+
+INSERT INTO pokemon_abilities VALUES (221,12,0);
+
+INSERT INTO pokemon_abilities VALUES (221,81,0);
+
+INSERT INTO pokemon_abilities VALUES (221,47,1);
+
+INSERT INTO pokemon_abilities VALUES (222,55,0);
+
+INSERT INTO pokemon_abilities VALUES (222,30,0);
+
+INSERT INTO pokemon_abilities VALUES (222,144,1);
+
+INSERT INTO pokemon_abilities VALUES (223,55,0);
+
+INSERT INTO pokemon_abilities VALUES (223,97,0);
+
+INSERT INTO pokemon_abilities VALUES (223,141,1);
+
+INSERT INTO pokemon_abilities VALUES (224,21,0);
+
+INSERT INTO pokemon_abilities VALUES (224,97,0);
+
+INSERT INTO pokemon_abilities VALUES (224,141,1);
+
+INSERT INTO pokemon_abilities VALUES (225,72,0);
+
+INSERT INTO pokemon_abilities VALUES (225,55,0);
+
+INSERT INTO pokemon_abilities VALUES (225,15,1);
+
+INSERT INTO pokemon_abilities VALUES (226,33,0);
+
+INSERT INTO pokemon_abilities VALUES (226,11,0);
+
+INSERT INTO pokemon_abilities VALUES (226,41,1);
+
+INSERT INTO pokemon_abilities VALUES (227,51,0);
+
+INSERT INTO pokemon_abilities VALUES (227,5,0);
+
+INSERT INTO pokemon_abilities VALUES (227,133,1);
+
+INSERT INTO pokemon_abilities VALUES (228,48,0);
+
+INSERT INTO pokemon_abilities VALUES (228,18,0);
+
+INSERT INTO pokemon_abilities VALUES (228,127,1);
+
+INSERT INTO pokemon_abilities VALUES (229,48,0);
+
+INSERT INTO pokemon_abilities VALUES (229,18,0);
+
+INSERT INTO pokemon_abilities VALUES (229,127,1);
+
+INSERT INTO pokemon_abilities VALUES (230,33,0);
+
+INSERT INTO pokemon_abilities VALUES (230,97,0);
+
+INSERT INTO pokemon_abilities VALUES (230,6,1);
+
+INSERT INTO pokemon_abilities VALUES (231,53,0);
+
+INSERT INTO pokemon_abilities VALUES (231,8,1);
+
+INSERT INTO pokemon_abilities VALUES (232,5,0);
+
+INSERT INTO pokemon_abilities VALUES (232,8,1);
+
+INSERT INTO pokemon_abilities VALUES (233,36,0);
+
+INSERT INTO pokemon_abilities VALUES (233,88,0);
+
+INSERT INTO pokemon_abilities VALUES (233,148,1);
+
+INSERT INTO pokemon_abilities VALUES (234,22,0);
+
+INSERT INTO pokemon_abilities VALUES (234,119,0);
+
+INSERT INTO pokemon_abilities VALUES (234,157,1);
+
+INSERT INTO pokemon_abilities VALUES (235,20,0);
+
+INSERT INTO pokemon_abilities VALUES (235,101,0);
+
+INSERT INTO pokemon_abilities VALUES (235,141,1);
+
+INSERT INTO pokemon_abilities VALUES (236,62,0);
+
+INSERT INTO pokemon_abilities VALUES (236,80,0);
+
+INSERT INTO pokemon_abilities VALUES (236,72,1);
+
+INSERT INTO pokemon_abilities VALUES (237,22,0);
+
+INSERT INTO pokemon_abilities VALUES (237,101,0);
+
+INSERT INTO pokemon_abilities VALUES (237,80,1);
+
+INSERT INTO pokemon_abilities VALUES (238,12,0);
+
+INSERT INTO pokemon_abilities VALUES (238,108,0);
+
+INSERT INTO pokemon_abilities VALUES (238,93,1);
+
+INSERT INTO pokemon_abilities VALUES (239,9,0);
+
+INSERT INTO pokemon_abilities VALUES (239,72,1);
+
+INSERT INTO pokemon_abilities VALUES (240,49,0);
+
+INSERT INTO pokemon_abilities VALUES (240,72,1);
+
+INSERT INTO pokemon_abilities VALUES (241,47,0);
+
+INSERT INTO pokemon_abilities VALUES (241,113,0);
+
+INSERT INTO pokemon_abilities VALUES (241,157,1);
+
+INSERT INTO pokemon_abilities VALUES (242,30,0);
+
+INSERT INTO pokemon_abilities VALUES (242,32,0);
+
+INSERT INTO pokemon_abilities VALUES (242,131,1);
+
+INSERT INTO pokemon_abilities VALUES (243,46,0);
+
+INSERT INTO pokemon_abilities VALUES (243,10,1);
+
+INSERT INTO pokemon_abilities VALUES (244,46,0);
+
+INSERT INTO pokemon_abilities VALUES (244,18,1);
+
+INSERT INTO pokemon_abilities VALUES (245,46,0);
+
+INSERT INTO pokemon_abilities VALUES (245,11,1);
+
+INSERT INTO pokemon_abilities VALUES (246,62,0);
+
+INSERT INTO pokemon_abilities VALUES (246,8,1);
+
+INSERT INTO pokemon_abilities VALUES (247,61,0);
+
+INSERT INTO pokemon_abilities VALUES (248,45,0);
+
+INSERT INTO pokemon_abilities VALUES (248,127,1);
+
+INSERT INTO pokemon_abilities VALUES (249,46,0);
+
+INSERT INTO pokemon_abilities VALUES (249,136,1);
+
+INSERT INTO pokemon_abilities VALUES (250,46,0);
+
+INSERT INTO pokemon_abilities VALUES (250,144,1);
+
+INSERT INTO pokemon_abilities VALUES (251,30,0);
+
+INSERT INTO pokemon_abilities VALUES (252,65,0);
+
+INSERT INTO pokemon_abilities VALUES (252,84,1);
+
+INSERT INTO pokemon_abilities VALUES (253,65,0);
+
+INSERT INTO pokemon_abilities VALUES (253,84,1);
+
+INSERT INTO pokemon_abilities VALUES (254,65,0);
+
+INSERT INTO pokemon_abilities VALUES (254,84,1);
+
+INSERT INTO pokemon_abilities VALUES (255,66,0);
+
+INSERT INTO pokemon_abilities VALUES (255,3,1);
+
+INSERT INTO pokemon_abilities VALUES (256,66,0);
+
+INSERT INTO pokemon_abilities VALUES (256,3,1);
+
+INSERT INTO pokemon_abilities VALUES (257,66,0);
+
+INSERT INTO pokemon_abilities VALUES (257,3,1);
+
+INSERT INTO pokemon_abilities VALUES (258,67,0);
+
+INSERT INTO pokemon_abilities VALUES (258,6,1);
+
+INSERT INTO pokemon_abilities VALUES (259,67,0);
+
+INSERT INTO pokemon_abilities VALUES (259,6,1);
+
+INSERT INTO pokemon_abilities VALUES (260,67,0);
+
+INSERT INTO pokemon_abilities VALUES (260,6,1);
+
+INSERT INTO pokemon_abilities VALUES (261,50,0);
+
+INSERT INTO pokemon_abilities VALUES (261,95,0);
+
+INSERT INTO pokemon_abilities VALUES (261,155,1);
+
+INSERT INTO pokemon_abilities VALUES (262,22,0);
+
+INSERT INTO pokemon_abilities VALUES (262,95,0);
+
+INSERT INTO pokemon_abilities VALUES (262,153,1);
+
+INSERT INTO pokemon_abilities VALUES (263,53,0);
+
+INSERT INTO pokemon_abilities VALUES (263,82,0);
+
+INSERT INTO pokemon_abilities VALUES (263,95,1);
+
+INSERT INTO pokemon_abilities VALUES (264,53,0);
+
+INSERT INTO pokemon_abilities VALUES (264,82,0);
+
+INSERT INTO pokemon_abilities VALUES (264,95,1);
+
+INSERT INTO pokemon_abilities VALUES (265,19,0);
+
+INSERT INTO pokemon_abilities VALUES (265,50,1);
+
+INSERT INTO pokemon_abilities VALUES (266,61,0);
+
+INSERT INTO pokemon_abilities VALUES (267,68,0);
+
+INSERT INTO pokemon_abilities VALUES (267,79,1);
+
+INSERT INTO pokemon_abilities VALUES (268,61,0);
+
+INSERT INTO pokemon_abilities VALUES (269,19,0);
+
+INSERT INTO pokemon_abilities VALUES (269,14,1);
+
+INSERT INTO pokemon_abilities VALUES (270,33,0);
+
+INSERT INTO pokemon_abilities VALUES (270,44,0);
+
+INSERT INTO pokemon_abilities VALUES (270,20,1);
+
+INSERT INTO pokemon_abilities VALUES (271,33,0);
+
+INSERT INTO pokemon_abilities VALUES (271,44,0);
+
+INSERT INTO pokemon_abilities VALUES (271,20,1);
+
+INSERT INTO pokemon_abilities VALUES (272,33,0);
+
+INSERT INTO pokemon_abilities VALUES (272,44,0);
+
+INSERT INTO pokemon_abilities VALUES (272,20,1);
+
+INSERT INTO pokemon_abilities VALUES (273,34,0);
+
+INSERT INTO pokemon_abilities VALUES (273,48,0);
+
+INSERT INTO pokemon_abilities VALUES (273,124,1);
+
+INSERT INTO pokemon_abilities VALUES (274,34,0);
+
+INSERT INTO pokemon_abilities VALUES (274,48,0);
+
+INSERT INTO pokemon_abilities VALUES (274,124,1);
+
+INSERT INTO pokemon_abilities VALUES (275,34,0);
+
+INSERT INTO pokemon_abilities VALUES (275,48,0);
+
+INSERT INTO pokemon_abilities VALUES (275,124,1);
+
+INSERT INTO pokemon_abilities VALUES (276,62,0);
+
+INSERT INTO pokemon_abilities VALUES (276,113,1);
+
+INSERT INTO pokemon_abilities VALUES (277,62,0);
+
+INSERT INTO pokemon_abilities VALUES (277,113,1);
+
+INSERT INTO pokemon_abilities VALUES (278,51,0);
+
+INSERT INTO pokemon_abilities VALUES (278,44,1);
+
+INSERT INTO pokemon_abilities VALUES (279,51,0);
+
+INSERT INTO pokemon_abilities VALUES (279,44,1);
+
+INSERT INTO pokemon_abilities VALUES (280,28,0);
+
+INSERT INTO pokemon_abilities VALUES (280,36,0);
+
+INSERT INTO pokemon_abilities VALUES (280,140,1);
+
+INSERT INTO pokemon_abilities VALUES (281,28,0);
+
+INSERT INTO pokemon_abilities VALUES (281,36,0);
+
+INSERT INTO pokemon_abilities VALUES (281,140,1);
+
+INSERT INTO pokemon_abilities VALUES (282,28,0);
+
+INSERT INTO pokemon_abilities VALUES (282,36,0);
+
+INSERT INTO pokemon_abilities VALUES (282,140,1);
+
+INSERT INTO pokemon_abilities VALUES (283,33,0);
+
+INSERT INTO pokemon_abilities VALUES (283,44,1);
+
+INSERT INTO pokemon_abilities VALUES (284,22,0);
+
+INSERT INTO pokemon_abilities VALUES (284,127,1);
+
+INSERT INTO pokemon_abilities VALUES (285,27,0);
+
+INSERT INTO pokemon_abilities VALUES (285,90,0);
+
+INSERT INTO pokemon_abilities VALUES (285,95,1);
+
+INSERT INTO pokemon_abilities VALUES (286,27,0);
+
+INSERT INTO pokemon_abilities VALUES (286,90,0);
+
+INSERT INTO pokemon_abilities VALUES (286,101,1);
+
+INSERT INTO pokemon_abilities VALUES (287,54,0);
+
+INSERT INTO pokemon_abilities VALUES (288,72,0);
+
+INSERT INTO pokemon_abilities VALUES (289,54,0);
+
+INSERT INTO pokemon_abilities VALUES (290,14,0);
+
+INSERT INTO pokemon_abilities VALUES (290,50,1);
+
+INSERT INTO pokemon_abilities VALUES (291,3,0);
+
+INSERT INTO pokemon_abilities VALUES (291,151,1);
+
+INSERT INTO pokemon_abilities VALUES (292,25,0);
+
+INSERT INTO pokemon_abilities VALUES (293,43,0);
+
+INSERT INTO pokemon_abilities VALUES (293,155,1);
+
+INSERT INTO pokemon_abilities VALUES (294,43,0);
+
+INSERT INTO pokemon_abilities VALUES (294,113,1);
+
+INSERT INTO pokemon_abilities VALUES (295,43,0);
+
+INSERT INTO pokemon_abilities VALUES (295,113,1);
+
+INSERT INTO pokemon_abilities VALUES (296,47,0);
+
+INSERT INTO pokemon_abilities VALUES (296,62,0);
+
+INSERT INTO pokemon_abilities VALUES (296,125,1);
+
+INSERT INTO pokemon_abilities VALUES (297,47,0);
+
+INSERT INTO pokemon_abilities VALUES (297,62,0);
+
+INSERT INTO pokemon_abilities VALUES (297,125,1);
+
+INSERT INTO pokemon_abilities VALUES (298,47,0);
+
+INSERT INTO pokemon_abilities VALUES (298,37,0);
+
+INSERT INTO pokemon_abilities VALUES (298,157,1);
+
+INSERT INTO pokemon_abilities VALUES (299,5,0);
+
+INSERT INTO pokemon_abilities VALUES (299,42,0);
+
+INSERT INTO pokemon_abilities VALUES (299,159,1);
+
+INSERT INTO pokemon_abilities VALUES (300,56,0);
+
+INSERT INTO pokemon_abilities VALUES (300,96,0);
+
+INSERT INTO pokemon_abilities VALUES (300,147,1);
+
+INSERT INTO pokemon_abilities VALUES (301,56,0);
+
+INSERT INTO pokemon_abilities VALUES (301,96,0);
+
+INSERT INTO pokemon_abilities VALUES (301,147,1);
+
+INSERT INTO pokemon_abilities VALUES (302,51,0);
+
+INSERT INTO pokemon_abilities VALUES (302,100,0);
+
+INSERT INTO pokemon_abilities VALUES (302,158,1);
+
+INSERT INTO pokemon_abilities VALUES (303,52,0);
+
+INSERT INTO pokemon_abilities VALUES (303,22,0);
+
+INSERT INTO pokemon_abilities VALUES (303,125,1);
+
+INSERT INTO pokemon_abilities VALUES (304,5,0);
+
+INSERT INTO pokemon_abilities VALUES (304,69,0);
+
+INSERT INTO pokemon_abilities VALUES (304,134,1);
+
+INSERT INTO pokemon_abilities VALUES (305,5,0);
+
+INSERT INTO pokemon_abilities VALUES (305,69,0);
+
+INSERT INTO pokemon_abilities VALUES (305,134,1);
+
+INSERT INTO pokemon_abilities VALUES (306,5,0);
+
+INSERT INTO pokemon_abilities VALUES (306,69,0);
+
+INSERT INTO pokemon_abilities VALUES (306,134,1);
+
+INSERT INTO pokemon_abilities VALUES (307,74,0);
+
+INSERT INTO pokemon_abilities VALUES (307,140,1);
+
+INSERT INTO pokemon_abilities VALUES (308,74,0);
+
+INSERT INTO pokemon_abilities VALUES (308,140,1);
+
+INSERT INTO pokemon_abilities VALUES (309,9,0);
+
+INSERT INTO pokemon_abilities VALUES (309,31,0);
+
+INSERT INTO pokemon_abilities VALUES (309,58,1);
+
+INSERT INTO pokemon_abilities VALUES (310,9,0);
+
+INSERT INTO pokemon_abilities VALUES (310,31,0);
+
+INSERT INTO pokemon_abilities VALUES (310,58,1);
+
+INSERT INTO pokemon_abilities VALUES (311,57,0);
+
+INSERT INTO pokemon_abilities VALUES (311,31,1);
+
+INSERT INTO pokemon_abilities VALUES (312,58,0);
+
+INSERT INTO pokemon_abilities VALUES (312,10,1);
+
+INSERT INTO pokemon_abilities VALUES (313,35,0);
+
+INSERT INTO pokemon_abilities VALUES (313,68,0);
+
+INSERT INTO pokemon_abilities VALUES (313,158,1);
+
+INSERT INTO pokemon_abilities VALUES (314,12,0);
+
+INSERT INTO pokemon_abilities VALUES (314,110,0);
+
+INSERT INTO pokemon_abilities VALUES (314,158,1);
+
+INSERT INTO pokemon_abilities VALUES (315,30,0);
+
+INSERT INTO pokemon_abilities VALUES (315,38,0);
+
+INSERT INTO pokemon_abilities VALUES (315,102,1);
+
+INSERT INTO pokemon_abilities VALUES (316,64,0);
+
+INSERT INTO pokemon_abilities VALUES (316,60,0);
+
+INSERT INTO pokemon_abilities VALUES (316,82,1);
+
+INSERT INTO pokemon_abilities VALUES (317,64,0);
+
+INSERT INTO pokemon_abilities VALUES (317,60,0);
+
+INSERT INTO pokemon_abilities VALUES (317,82,1);
+
+INSERT INTO pokemon_abilities VALUES (318,24,0);
+
+INSERT INTO pokemon_abilities VALUES (318,3,1);
+
+INSERT INTO pokemon_abilities VALUES (319,24,0);
+
+INSERT INTO pokemon_abilities VALUES (319,3,1);
+
+INSERT INTO pokemon_abilities VALUES (320,41,0);
+
+INSERT INTO pokemon_abilities VALUES (320,12,0);
+
+INSERT INTO pokemon_abilities VALUES (320,46,1);
+
+INSERT INTO pokemon_abilities VALUES (321,41,0);
+
+INSERT INTO pokemon_abilities VALUES (321,12,0);
+
+INSERT INTO pokemon_abilities VALUES (321,46,1);
+
+INSERT INTO pokemon_abilities VALUES (322,12,0);
+
+INSERT INTO pokemon_abilities VALUES (322,86,0);
+
+INSERT INTO pokemon_abilities VALUES (322,20,1);
+
+INSERT INTO pokemon_abilities VALUES (323,40,0);
+
+INSERT INTO pokemon_abilities VALUES (323,116,0);
+
+INSERT INTO pokemon_abilities VALUES (323,83,1);
+
+INSERT INTO pokemon_abilities VALUES (324,73,0);
+
+INSERT INTO pokemon_abilities VALUES (324,75,1);
+
+INSERT INTO pokemon_abilities VALUES (325,47,0);
+
+INSERT INTO pokemon_abilities VALUES (325,20,0);
+
+INSERT INTO pokemon_abilities VALUES (325,82,1);
+
+INSERT INTO pokemon_abilities VALUES (326,47,0);
+
+INSERT INTO pokemon_abilities VALUES (326,20,0);
+
+INSERT INTO pokemon_abilities VALUES (326,82,1);
+
+INSERT INTO pokemon_abilities VALUES (327,20,0);
+
+INSERT INTO pokemon_abilities VALUES (327,77,0);
+
+INSERT INTO pokemon_abilities VALUES (327,126,1);
+
+INSERT INTO pokemon_abilities VALUES (328,52,0);
+
+INSERT INTO pokemon_abilities VALUES (328,71,0);
+
+INSERT INTO pokemon_abilities VALUES (328,125,1);
+
+INSERT INTO pokemon_abilities VALUES (329,26,0);
+
+INSERT INTO pokemon_abilities VALUES (330,26,0);
+
+INSERT INTO pokemon_abilities VALUES (331,8,0);
+
+INSERT INTO pokemon_abilities VALUES (331,11,1);
+
+INSERT INTO pokemon_abilities VALUES (332,8,0);
+
+INSERT INTO pokemon_abilities VALUES (332,11,1);
+
+INSERT INTO pokemon_abilities VALUES (333,30,0);
+
+INSERT INTO pokemon_abilities VALUES (333,13,1);
+
+INSERT INTO pokemon_abilities VALUES (334,30,0);
+
+INSERT INTO pokemon_abilities VALUES (334,13,1);
+
+INSERT INTO pokemon_abilities VALUES (335,17,0);
+
+INSERT INTO pokemon_abilities VALUES (335,137,1);
+
+INSERT INTO pokemon_abilities VALUES (336,61,0);
+
+INSERT INTO pokemon_abilities VALUES (336,151,1);
+
+INSERT INTO pokemon_abilities VALUES (337,26,0);
+
+INSERT INTO pokemon_abilities VALUES (338,26,0);
+
+INSERT INTO pokemon_abilities VALUES (339,12,0);
+
+INSERT INTO pokemon_abilities VALUES (339,107,0);
+
+INSERT INTO pokemon_abilities VALUES (339,93,1);
+
+INSERT INTO pokemon_abilities VALUES (340,12,0);
+
+INSERT INTO pokemon_abilities VALUES (340,107,0);
+
+INSERT INTO pokemon_abilities VALUES (340,93,1);
+
+INSERT INTO pokemon_abilities VALUES (341,52,0);
+
+INSERT INTO pokemon_abilities VALUES (341,75,0);
+
+INSERT INTO pokemon_abilities VALUES (341,91,1);
+
+INSERT INTO pokemon_abilities VALUES (342,52,0);
+
+INSERT INTO pokemon_abilities VALUES (342,75,0);
+
+INSERT INTO pokemon_abilities VALUES (342,91,1);
+
+INSERT INTO pokemon_abilities VALUES (343,26,0);
+
+INSERT INTO pokemon_abilities VALUES (344,26,0);
+
+INSERT INTO pokemon_abilities VALUES (345,21,0);
+
+INSERT INTO pokemon_abilities VALUES (345,114,1);
+
+INSERT INTO pokemon_abilities VALUES (346,21,0);
+
+INSERT INTO pokemon_abilities VALUES (346,114,1);
+
+INSERT INTO pokemon_abilities VALUES (347,4,0);
+
+INSERT INTO pokemon_abilities VALUES (347,33,1);
+
+INSERT INTO pokemon_abilities VALUES (348,4,0);
+
+INSERT INTO pokemon_abilities VALUES (348,33,1);
+
+INSERT INTO pokemon_abilities VALUES (349,33,0);
+
+INSERT INTO pokemon_abilities VALUES (349,12,0);
+
+INSERT INTO pokemon_abilities VALUES (349,91,1);
+
+INSERT INTO pokemon_abilities VALUES (350,63,0);
+
+INSERT INTO pokemon_abilities VALUES (350,172,0);
+
+INSERT INTO pokemon_abilities VALUES (350,56,1);
+
+INSERT INTO pokemon_abilities VALUES (351,59,0);
+
+INSERT INTO pokemon_abilities VALUES (352,16,0);
+
+INSERT INTO pokemon_abilities VALUES (352,168,1);
+
+INSERT INTO pokemon_abilities VALUES (353,15,0);
+
+INSERT INTO pokemon_abilities VALUES (353,119,0);
+
+INSERT INTO pokemon_abilities VALUES (353,130,1);
+
+INSERT INTO pokemon_abilities VALUES (354,15,0);
+
+INSERT INTO pokemon_abilities VALUES (354,119,0);
+
+INSERT INTO pokemon_abilities VALUES (354,130,1);
+
+INSERT INTO pokemon_abilities VALUES (355,26,0);
+
+INSERT INTO pokemon_abilities VALUES (355,119,1);
+
+INSERT INTO pokemon_abilities VALUES (356,46,0);
+
+INSERT INTO pokemon_abilities VALUES (356,119,1);
+
+INSERT INTO pokemon_abilities VALUES (357,34,0);
+
+INSERT INTO pokemon_abilities VALUES (357,94,0);
+
+INSERT INTO pokemon_abilities VALUES (357,139,1);
+
+INSERT INTO pokemon_abilities VALUES (358,26,0);
+
+INSERT INTO pokemon_abilities VALUES (359,46,0);
+
+INSERT INTO pokemon_abilities VALUES (359,105,0);
+
+INSERT INTO pokemon_abilities VALUES (359,154,1);
+
+INSERT INTO pokemon_abilities VALUES (360,23,0);
+
+INSERT INTO pokemon_abilities VALUES (360,140,1);
+
+INSERT INTO pokemon_abilities VALUES (361,39,0);
+
+INSERT INTO pokemon_abilities VALUES (361,115,0);
+
+INSERT INTO pokemon_abilities VALUES (361,141,1);
+
+INSERT INTO pokemon_abilities VALUES (362,39,0);
+
+INSERT INTO pokemon_abilities VALUES (362,115,0);
+
+INSERT INTO pokemon_abilities VALUES (362,141,1);
+
+INSERT INTO pokemon_abilities VALUES (363,47,0);
+
+INSERT INTO pokemon_abilities VALUES (363,115,0);
+
+INSERT INTO pokemon_abilities VALUES (363,12,1);
+
+INSERT INTO pokemon_abilities VALUES (364,47,0);
+
+INSERT INTO pokemon_abilities VALUES (364,115,0);
+
+INSERT INTO pokemon_abilities VALUES (364,12,1);
+
+INSERT INTO pokemon_abilities VALUES (365,47,0);
+
+INSERT INTO pokemon_abilities VALUES (365,115,0);
+
+INSERT INTO pokemon_abilities VALUES (365,12,1);
+
+INSERT INTO pokemon_abilities VALUES (366,75,0);
+
+INSERT INTO pokemon_abilities VALUES (366,155,1);
+
+INSERT INTO pokemon_abilities VALUES (367,33,0);
+
+INSERT INTO pokemon_abilities VALUES (367,41,1);
+
+INSERT INTO pokemon_abilities VALUES (368,33,0);
+
+INSERT INTO pokemon_abilities VALUES (368,93,1);
+
+INSERT INTO pokemon_abilities VALUES (369,33,0);
+
+INSERT INTO pokemon_abilities VALUES (369,69,0);
+
+INSERT INTO pokemon_abilities VALUES (369,5,1);
+
+INSERT INTO pokemon_abilities VALUES (370,33,0);
+
+INSERT INTO pokemon_abilities VALUES (370,93,1);
+
+INSERT INTO pokemon_abilities VALUES (371,69,0);
+
+INSERT INTO pokemon_abilities VALUES (371,125,1);
+
+INSERT INTO pokemon_abilities VALUES (372,69,0);
+
+INSERT INTO pokemon_abilities VALUES (372,142,1);
+
+INSERT INTO pokemon_abilities VALUES (373,22,0);
+
+INSERT INTO pokemon_abilities VALUES (373,153,1);
+
+INSERT INTO pokemon_abilities VALUES (374,29,0);
+
+INSERT INTO pokemon_abilities VALUES (374,135,1);
+
+INSERT INTO pokemon_abilities VALUES (375,29,0);
+
+INSERT INTO pokemon_abilities VALUES (375,135,1);
+
+INSERT INTO pokemon_abilities VALUES (376,29,0);
+
+INSERT INTO pokemon_abilities VALUES (376,135,1);
+
+INSERT INTO pokemon_abilities VALUES (377,29,0);
+
+INSERT INTO pokemon_abilities VALUES (377,5,1);
+
+INSERT INTO pokemon_abilities VALUES (378,29,0);
+
+INSERT INTO pokemon_abilities VALUES (378,115,1);
+
+INSERT INTO pokemon_abilities VALUES (379,29,0);
+
+INSERT INTO pokemon_abilities VALUES (379,135,1);
+
+INSERT INTO pokemon_abilities VALUES (380,26,0);
+
+INSERT INTO pokemon_abilities VALUES (381,26,0);
+
+INSERT INTO pokemon_abilities VALUES (382,2,0);
+
+INSERT INTO pokemon_abilities VALUES (383,70,0);
+
+INSERT INTO pokemon_abilities VALUES (384,76,0);
+
+INSERT INTO pokemon_abilities VALUES (385,32,0);
+
+INSERT INTO pokemon_abilities VALUES (386,46,0);
+
+INSERT INTO pokemon_abilities VALUES (387,65,0);
+
+INSERT INTO pokemon_abilities VALUES (387,75,1);
+
+INSERT INTO pokemon_abilities VALUES (388,65,0);
+
+INSERT INTO pokemon_abilities VALUES (388,75,1);
+
+INSERT INTO pokemon_abilities VALUES (389,65,0);
+
+INSERT INTO pokemon_abilities VALUES (389,75,1);
+
+INSERT INTO pokemon_abilities VALUES (390,66,0);
+
+INSERT INTO pokemon_abilities VALUES (390,89,1);
+
+INSERT INTO pokemon_abilities VALUES (391,66,0);
+
+INSERT INTO pokemon_abilities VALUES (391,89,1);
+
+INSERT INTO pokemon_abilities VALUES (392,66,0);
+
+INSERT INTO pokemon_abilities VALUES (392,89,1);
+
+INSERT INTO pokemon_abilities VALUES (393,67,0);
+
+INSERT INTO pokemon_abilities VALUES (393,128,1);
+
+INSERT INTO pokemon_abilities VALUES (394,67,0);
+
+INSERT INTO pokemon_abilities VALUES (394,128,1);
+
+INSERT INTO pokemon_abilities VALUES (395,67,0);
+
+INSERT INTO pokemon_abilities VALUES (395,128,1);
+
+INSERT INTO pokemon_abilities VALUES (396,51,0);
+
+INSERT INTO pokemon_abilities VALUES (396,120,1);
+
+INSERT INTO pokemon_abilities VALUES (397,22,0);
+
+INSERT INTO pokemon_abilities VALUES (397,120,1);
+
+INSERT INTO pokemon_abilities VALUES (398,22,0);
+
+INSERT INTO pokemon_abilities VALUES (398,120,1);
+
+INSERT INTO pokemon_abilities VALUES (399,86,0);
+
+INSERT INTO pokemon_abilities VALUES (399,109,0);
+
+INSERT INTO pokemon_abilities VALUES (399,141,1);
+
+INSERT INTO pokemon_abilities VALUES (400,86,0);
+
+INSERT INTO pokemon_abilities VALUES (400,109,0);
+
+INSERT INTO pokemon_abilities VALUES (400,141,1);
+
+INSERT INTO pokemon_abilities VALUES (401,61,0);
+
+INSERT INTO pokemon_abilities VALUES (401,50,1);
+
+INSERT INTO pokemon_abilities VALUES (402,68,0);
+
+INSERT INTO pokemon_abilities VALUES (402,101,1);
+
+INSERT INTO pokemon_abilities VALUES (403,79,0);
+
+INSERT INTO pokemon_abilities VALUES (403,22,0);
+
+INSERT INTO pokemon_abilities VALUES (403,62,1);
+
+INSERT INTO pokemon_abilities VALUES (404,79,0);
+
+INSERT INTO pokemon_abilities VALUES (404,22,0);
+
+INSERT INTO pokemon_abilities VALUES (404,62,1);
+
+INSERT INTO pokemon_abilities VALUES (405,79,0);
+
+INSERT INTO pokemon_abilities VALUES (405,22,0);
+
+INSERT INTO pokemon_abilities VALUES (405,62,1);
+
+INSERT INTO pokemon_abilities VALUES (406,30,0);
+
+INSERT INTO pokemon_abilities VALUES (406,38,0);
+
+INSERT INTO pokemon_abilities VALUES (406,102,1);
+
+INSERT INTO pokemon_abilities VALUES (407,30,0);
+
+INSERT INTO pokemon_abilities VALUES (407,38,0);
+
+INSERT INTO pokemon_abilities VALUES (407,101,1);
+
+INSERT INTO pokemon_abilities VALUES (408,104,0);
+
+INSERT INTO pokemon_abilities VALUES (408,125,1);
+
+INSERT INTO pokemon_abilities VALUES (409,104,0);
+
+INSERT INTO pokemon_abilities VALUES (409,125,1);
+
+INSERT INTO pokemon_abilities VALUES (410,5,0);
+
+INSERT INTO pokemon_abilities VALUES (410,43,1);
+
+INSERT INTO pokemon_abilities VALUES (411,5,0);
+
+INSERT INTO pokemon_abilities VALUES (411,43,1);
+
+INSERT INTO pokemon_abilities VALUES (412,61,0);
+
+INSERT INTO pokemon_abilities VALUES (412,142,1);
+
+INSERT INTO pokemon_abilities VALUES (413,107,0);
+
+INSERT INTO pokemon_abilities VALUES (413,142,1);
+
+INSERT INTO pokemon_abilities VALUES (414,68,0);
+
+INSERT INTO pokemon_abilities VALUES (414,110,1);
+
+INSERT INTO pokemon_abilities VALUES (415,118,0);
+
+INSERT INTO pokemon_abilities VALUES (415,55,1);
+
+INSERT INTO pokemon_abilities VALUES (416,46,0);
+
+INSERT INTO pokemon_abilities VALUES (416,127,1);
+
+INSERT INTO pokemon_abilities VALUES (417,50,0);
+
+INSERT INTO pokemon_abilities VALUES (417,53,0);
+
+INSERT INTO pokemon_abilities VALUES (417,10,1);
+
+INSERT INTO pokemon_abilities VALUES (418,33,0);
+
+INSERT INTO pokemon_abilities VALUES (418,41,1);
+
+INSERT INTO pokemon_abilities VALUES (419,33,0);
+
+INSERT INTO pokemon_abilities VALUES (419,41,1);
+
+INSERT INTO pokemon_abilities VALUES (420,34,0);
+
+INSERT INTO pokemon_abilities VALUES (421,122,0);
+
+INSERT INTO pokemon_abilities VALUES (422,60,0);
+
+INSERT INTO pokemon_abilities VALUES (422,114,0);
+
+INSERT INTO pokemon_abilities VALUES (422,159,1);
+
+INSERT INTO pokemon_abilities VALUES (423,60,0);
+
+INSERT INTO pokemon_abilities VALUES (423,114,0);
+
+INSERT INTO pokemon_abilities VALUES (423,159,1);
+
+INSERT INTO pokemon_abilities VALUES (424,101,0);
+
+INSERT INTO pokemon_abilities VALUES (424,53,0);
+
+INSERT INTO pokemon_abilities VALUES (424,92,1);
+
+INSERT INTO pokemon_abilities VALUES (425,106,0);
+
+INSERT INTO pokemon_abilities VALUES (425,84,0);
+
+INSERT INTO pokemon_abilities VALUES (425,138,1);
+
+INSERT INTO pokemon_abilities VALUES (426,106,0);
+
+INSERT INTO pokemon_abilities VALUES (426,84,0);
+
+INSERT INTO pokemon_abilities VALUES (426,138,1);
+
+INSERT INTO pokemon_abilities VALUES (427,50,0);
+
+INSERT INTO pokemon_abilities VALUES (427,103,0);
+
+INSERT INTO pokemon_abilities VALUES (427,7,1);
+
+INSERT INTO pokemon_abilities VALUES (428,56,0);
+
+INSERT INTO pokemon_abilities VALUES (428,103,0);
+
+INSERT INTO pokemon_abilities VALUES (428,7,1);
+
+INSERT INTO pokemon_abilities VALUES (429,26,0);
+
+INSERT INTO pokemon_abilities VALUES (430,15,0);
+
+INSERT INTO pokemon_abilities VALUES (430,105,0);
+
+INSERT INTO pokemon_abilities VALUES (430,153,1);
+
+INSERT INTO pokemon_abilities VALUES (431,7,0);
+
+INSERT INTO pokemon_abilities VALUES (431,20,0);
+
+INSERT INTO pokemon_abilities VALUES (431,51,1);
+
+INSERT INTO pokemon_abilities VALUES (432,47,0);
+
+INSERT INTO pokemon_abilities VALUES (432,20,0);
+
+INSERT INTO pokemon_abilities VALUES (432,128,1);
+
+INSERT INTO pokemon_abilities VALUES (433,26,0);
+
+INSERT INTO pokemon_abilities VALUES (434,1,0);
+
+INSERT INTO pokemon_abilities VALUES (434,106,0);
+
+INSERT INTO pokemon_abilities VALUES (434,51,1);
+
+INSERT INTO pokemon_abilities VALUES (435,1,0);
+
+INSERT INTO pokemon_abilities VALUES (435,106,0);
+
+INSERT INTO pokemon_abilities VALUES (435,51,1);
+
+INSERT INTO pokemon_abilities VALUES (436,26,0);
+
+INSERT INTO pokemon_abilities VALUES (436,85,0);
+
+INSERT INTO pokemon_abilities VALUES (436,134,1);
+
+INSERT INTO pokemon_abilities VALUES (437,26,0);
+
+INSERT INTO pokemon_abilities VALUES (437,85,0);
+
+INSERT INTO pokemon_abilities VALUES (437,134,1);
+
+INSERT INTO pokemon_abilities VALUES (438,5,0);
+
+INSERT INTO pokemon_abilities VALUES (438,69,0);
+
+INSERT INTO pokemon_abilities VALUES (438,155,1);
+
+INSERT INTO pokemon_abilities VALUES (439,43,0);
+
+INSERT INTO pokemon_abilities VALUES (439,111,0);
+
+INSERT INTO pokemon_abilities VALUES (439,101,1);
+
+INSERT INTO pokemon_abilities VALUES (440,30,0);
+
+INSERT INTO pokemon_abilities VALUES (440,32,0);
+
+INSERT INTO pokemon_abilities VALUES (440,132,1);
+
+INSERT INTO pokemon_abilities VALUES (441,51,0);
+
+INSERT INTO pokemon_abilities VALUES (441,77,0);
+
+INSERT INTO pokemon_abilities VALUES (441,145,1);
+
+INSERT INTO pokemon_abilities VALUES (442,46,0);
+
+INSERT INTO pokemon_abilities VALUES (442,151,1);
+
+INSERT INTO pokemon_abilities VALUES (443,8,0);
+
+INSERT INTO pokemon_abilities VALUES (443,24,1);
+
+INSERT INTO pokemon_abilities VALUES (444,8,0);
+
+INSERT INTO pokemon_abilities VALUES (444,24,1);
+
+INSERT INTO pokemon_abilities VALUES (445,8,0);
+
+INSERT INTO pokemon_abilities VALUES (445,24,1);
+
+INSERT INTO pokemon_abilities VALUES (446,53,0);
+
+INSERT INTO pokemon_abilities VALUES (446,47,0);
+
+INSERT INTO pokemon_abilities VALUES (446,82,1);
+
+INSERT INTO pokemon_abilities VALUES (447,80,0);
+
+INSERT INTO pokemon_abilities VALUES (447,39,0);
+
+INSERT INTO pokemon_abilities VALUES (447,158,1);
+
+INSERT INTO pokemon_abilities VALUES (448,80,0);
+
+INSERT INTO pokemon_abilities VALUES (448,39,0);
+
+INSERT INTO pokemon_abilities VALUES (448,154,1);
+
+INSERT INTO pokemon_abilities VALUES (449,45,0);
+
+INSERT INTO pokemon_abilities VALUES (449,159,1);
+
+INSERT INTO pokemon_abilities VALUES (450,45,0);
+
+INSERT INTO pokemon_abilities VALUES (450,159,1);
+
+INSERT INTO pokemon_abilities VALUES (451,4,0);
+
+INSERT INTO pokemon_abilities VALUES (451,97,0);
+
+INSERT INTO pokemon_abilities VALUES (451,51,1);
+
+INSERT INTO pokemon_abilities VALUES (452,4,0);
+
+INSERT INTO pokemon_abilities VALUES (452,97,0);
+
+INSERT INTO pokemon_abilities VALUES (452,51,1);
+
+INSERT INTO pokemon_abilities VALUES (453,107,0);
+
+INSERT INTO pokemon_abilities VALUES (453,87,0);
+
+INSERT INTO pokemon_abilities VALUES (453,143,1);
+
+INSERT INTO pokemon_abilities VALUES (454,107,0);
+
+INSERT INTO pokemon_abilities VALUES (454,87,0);
+
+INSERT INTO pokemon_abilities VALUES (454,143,1);
+
+INSERT INTO pokemon_abilities VALUES (455,26,0);
+
+INSERT INTO pokemon_abilities VALUES (456,33,0);
+
+INSERT INTO pokemon_abilities VALUES (456,114,0);
+
+INSERT INTO pokemon_abilities VALUES (456,41,1);
+
+INSERT INTO pokemon_abilities VALUES (457,33,0);
+
+INSERT INTO pokemon_abilities VALUES (457,114,0);
+
+INSERT INTO pokemon_abilities VALUES (457,41,1);
+
+INSERT INTO pokemon_abilities VALUES (458,33,0);
+
+INSERT INTO pokemon_abilities VALUES (458,11,0);
+
+INSERT INTO pokemon_abilities VALUES (458,41,1);
+
+INSERT INTO pokemon_abilities VALUES (459,117,0);
+
+INSERT INTO pokemon_abilities VALUES (459,43,1);
+
+INSERT INTO pokemon_abilities VALUES (460,117,0);
+
+INSERT INTO pokemon_abilities VALUES (460,43,1);
+
+INSERT INTO pokemon_abilities VALUES (461,46,0);
+
+INSERT INTO pokemon_abilities VALUES (461,124,1);
+
+INSERT INTO pokemon_abilities VALUES (462,42,0);
+
+INSERT INTO pokemon_abilities VALUES (462,5,0);
+
+INSERT INTO pokemon_abilities VALUES (462,148,1);
+
+INSERT INTO pokemon_abilities VALUES (463,20,0);
+
+INSERT INTO pokemon_abilities VALUES (463,12,0);
+
+INSERT INTO pokemon_abilities VALUES (463,13,1);
+
+INSERT INTO pokemon_abilities VALUES (464,31,0);
+
+INSERT INTO pokemon_abilities VALUES (464,116,0);
+
+INSERT INTO pokemon_abilities VALUES (464,120,1);
+
+INSERT INTO pokemon_abilities VALUES (465,34,0);
+
+INSERT INTO pokemon_abilities VALUES (465,102,0);
+
+INSERT INTO pokemon_abilities VALUES (465,144,1);
+
+INSERT INTO pokemon_abilities VALUES (466,78,0);
+
+INSERT INTO pokemon_abilities VALUES (466,72,1);
+
+INSERT INTO pokemon_abilities VALUES (467,49,0);
+
+INSERT INTO pokemon_abilities VALUES (467,72,1);
+
+INSERT INTO pokemon_abilities VALUES (468,55,0);
+
+INSERT INTO pokemon_abilities VALUES (468,32,0);
+
+INSERT INTO pokemon_abilities VALUES (468,105,1);
+
+INSERT INTO pokemon_abilities VALUES (469,3,0);
+
+INSERT INTO pokemon_abilities VALUES (469,110,0);
+
+INSERT INTO pokemon_abilities VALUES (469,119,1);
+
+INSERT INTO pokemon_abilities VALUES (470,102,0);
+
+INSERT INTO pokemon_abilities VALUES (470,34,1);
+
+INSERT INTO pokemon_abilities VALUES (471,81,0);
+
+INSERT INTO pokemon_abilities VALUES (471,115,1);
+
+INSERT INTO pokemon_abilities VALUES (472,52,0);
+
+INSERT INTO pokemon_abilities VALUES (472,8,0);
+
+INSERT INTO pokemon_abilities VALUES (472,90,1);
+
+INSERT INTO pokemon_abilities VALUES (473,12,0);
+
+INSERT INTO pokemon_abilities VALUES (473,81,0);
+
+INSERT INTO pokemon_abilities VALUES (473,47,1);
+
+INSERT INTO pokemon_abilities VALUES (474,91,0);
+
+INSERT INTO pokemon_abilities VALUES (474,88,0);
+
+INSERT INTO pokemon_abilities VALUES (474,148,1);
+
+INSERT INTO pokemon_abilities VALUES (475,80,0);
+
+INSERT INTO pokemon_abilities VALUES (475,154,1);
+
+INSERT INTO pokemon_abilities VALUES (476,5,0);
+
+INSERT INTO pokemon_abilities VALUES (476,42,0);
+
+INSERT INTO pokemon_abilities VALUES (476,159,1);
+
+INSERT INTO pokemon_abilities VALUES (477,46,0);
+
+INSERT INTO pokemon_abilities VALUES (477,119,1);
+
+INSERT INTO pokemon_abilities VALUES (478,81,0);
+
+INSERT INTO pokemon_abilities VALUES (478,130,1);
+
+INSERT INTO pokemon_abilities VALUES (479,26,0);
+
+INSERT INTO pokemon_abilities VALUES (480,26,0);
+
+INSERT INTO pokemon_abilities VALUES (481,26,0);
+
+INSERT INTO pokemon_abilities VALUES (482,26,0);
+
+INSERT INTO pokemon_abilities VALUES (483,46,0);
+
+INSERT INTO pokemon_abilities VALUES (483,140,1);
+
+INSERT INTO pokemon_abilities VALUES (484,46,0);
+
+INSERT INTO pokemon_abilities VALUES (484,140,1);
+
+INSERT INTO pokemon_abilities VALUES (485,18,0);
+
+INSERT INTO pokemon_abilities VALUES (485,49,1);
+
+INSERT INTO pokemon_abilities VALUES (486,112,0);
+
+INSERT INTO pokemon_abilities VALUES (487,46,0);
+
+INSERT INTO pokemon_abilities VALUES (487,140,1);
+
+INSERT INTO pokemon_abilities VALUES (488,26,0);
+
+INSERT INTO pokemon_abilities VALUES (489,93,0);
+
+INSERT INTO pokemon_abilities VALUES (490,93,0);
+
+INSERT INTO pokemon_abilities VALUES (491,123,0);
+
+INSERT INTO pokemon_abilities VALUES (492,30,0);
+
+INSERT INTO pokemon_abilities VALUES (493,121,0);
+
+INSERT INTO pokemon_abilities VALUES (494,162,0);
+
+INSERT INTO pokemon_abilities VALUES (495,65,0);
+
+INSERT INTO pokemon_abilities VALUES (495,126,1);
+
+INSERT INTO pokemon_abilities VALUES (496,65,0);
+
+INSERT INTO pokemon_abilities VALUES (496,126,1);
+
+INSERT INTO pokemon_abilities VALUES (497,65,0);
+
+INSERT INTO pokemon_abilities VALUES (497,126,1);
+
+INSERT INTO pokemon_abilities VALUES (498,66,0);
+
+INSERT INTO pokemon_abilities VALUES (498,47,1);
+
+INSERT INTO pokemon_abilities VALUES (499,66,0);
+
+INSERT INTO pokemon_abilities VALUES (499,47,1);
+
+INSERT INTO pokemon_abilities VALUES (500,66,0);
+
+INSERT INTO pokemon_abilities VALUES (500,120,1);
+
+INSERT INTO pokemon_abilities VALUES (501,67,0);
+
+INSERT INTO pokemon_abilities VALUES (501,75,1);
+
+INSERT INTO pokemon_abilities VALUES (502,67,0);
+
+INSERT INTO pokemon_abilities VALUES (502,75,1);
+
+INSERT INTO pokemon_abilities VALUES (503,67,0);
+
+INSERT INTO pokemon_abilities VALUES (503,75,1);
+
+INSERT INTO pokemon_abilities VALUES (504,50,0);
+
+INSERT INTO pokemon_abilities VALUES (504,51,0);
+
+INSERT INTO pokemon_abilities VALUES (504,148,1);
+
+INSERT INTO pokemon_abilities VALUES (505,35,0);
+
+INSERT INTO pokemon_abilities VALUES (505,51,0);
+
+INSERT INTO pokemon_abilities VALUES (505,148,1);
+
+INSERT INTO pokemon_abilities VALUES (506,72,0);
+
+INSERT INTO pokemon_abilities VALUES (506,53,0);
+
+INSERT INTO pokemon_abilities VALUES (506,50,1);
+
+INSERT INTO pokemon_abilities VALUES (507,22,0);
+
+INSERT INTO pokemon_abilities VALUES (507,146,0);
+
+INSERT INTO pokemon_abilities VALUES (507,113,1);
+
+INSERT INTO pokemon_abilities VALUES (508,22,0);
+
+INSERT INTO pokemon_abilities VALUES (508,146,0);
+
+INSERT INTO pokemon_abilities VALUES (508,113,1);
+
+INSERT INTO pokemon_abilities VALUES (509,7,0);
+
+INSERT INTO pokemon_abilities VALUES (509,84,0);
+
+INSERT INTO pokemon_abilities VALUES (509,158,1);
+
+INSERT INTO pokemon_abilities VALUES (510,7,0);
+
+INSERT INTO pokemon_abilities VALUES (510,84,0);
+
+INSERT INTO pokemon_abilities VALUES (510,158,1);
+
+INSERT INTO pokemon_abilities VALUES (511,82,0);
+
+INSERT INTO pokemon_abilities VALUES (511,65,1);
+
+INSERT INTO pokemon_abilities VALUES (512,82,0);
+
+INSERT INTO pokemon_abilities VALUES (512,65,1);
+
+INSERT INTO pokemon_abilities VALUES (513,82,0);
+
+INSERT INTO pokemon_abilities VALUES (513,66,1);
+
+INSERT INTO pokemon_abilities VALUES (514,82,0);
+
+INSERT INTO pokemon_abilities VALUES (514,66,1);
+
+INSERT INTO pokemon_abilities VALUES (515,82,0);
+
+INSERT INTO pokemon_abilities VALUES (515,67,1);
+
+INSERT INTO pokemon_abilities VALUES (516,82,0);
+
+INSERT INTO pokemon_abilities VALUES (516,67,1);
+
+INSERT INTO pokemon_abilities VALUES (517,108,0);
+
+INSERT INTO pokemon_abilities VALUES (517,28,0);
+
+INSERT INTO pokemon_abilities VALUES (517,140,1);
+
+INSERT INTO pokemon_abilities VALUES (518,108,0);
+
+INSERT INTO pokemon_abilities VALUES (518,28,0);
+
+INSERT INTO pokemon_abilities VALUES (518,140,1);
+
+INSERT INTO pokemon_abilities VALUES (519,145,0);
+
+INSERT INTO pokemon_abilities VALUES (519,105,0);
+
+INSERT INTO pokemon_abilities VALUES (519,79,1);
+
+INSERT INTO pokemon_abilities VALUES (520,145,0);
+
+INSERT INTO pokemon_abilities VALUES (520,105,0);
+
+INSERT INTO pokemon_abilities VALUES (520,79,1);
+
+INSERT INTO pokemon_abilities VALUES (521,145,0);
+
+INSERT INTO pokemon_abilities VALUES (521,105,0);
+
+INSERT INTO pokemon_abilities VALUES (521,79,1);
+
+INSERT INTO pokemon_abilities VALUES (522,31,0);
+
+INSERT INTO pokemon_abilities VALUES (522,78,0);
+
+INSERT INTO pokemon_abilities VALUES (522,157,1);
+
+INSERT INTO pokemon_abilities VALUES (523,31,0);
+
+INSERT INTO pokemon_abilities VALUES (523,78,0);
+
+INSERT INTO pokemon_abilities VALUES (523,157,1);
+
+INSERT INTO pokemon_abilities VALUES (524,5,0);
+
+INSERT INTO pokemon_abilities VALUES (524,159,1);
+
+INSERT INTO pokemon_abilities VALUES (525,5,0);
+
+INSERT INTO pokemon_abilities VALUES (525,159,1);
+
+INSERT INTO pokemon_abilities VALUES (526,5,0);
+
+INSERT INTO pokemon_abilities VALUES (526,159,1);
+
+INSERT INTO pokemon_abilities VALUES (527,109,0);
+
+INSERT INTO pokemon_abilities VALUES (527,103,0);
+
+INSERT INTO pokemon_abilities VALUES (527,86,1);
+
+INSERT INTO pokemon_abilities VALUES (528,109,0);
+
+INSERT INTO pokemon_abilities VALUES (528,103,0);
+
+INSERT INTO pokemon_abilities VALUES (528,86,1);
+
+INSERT INTO pokemon_abilities VALUES (529,146,0);
+
+INSERT INTO pokemon_abilities VALUES (529,159,0);
+
+INSERT INTO pokemon_abilities VALUES (529,104,1);
+
+INSERT INTO pokemon_abilities VALUES (530,146,0);
+
+INSERT INTO pokemon_abilities VALUES (530,159,0);
+
+INSERT INTO pokemon_abilities VALUES (530,104,1);
+
+INSERT INTO pokemon_abilities VALUES (531,131,0);
+
+INSERT INTO pokemon_abilities VALUES (531,144,0);
+
+INSERT INTO pokemon_abilities VALUES (531,103,1);
+
+INSERT INTO pokemon_abilities VALUES (532,62,0);
+
+INSERT INTO pokemon_abilities VALUES (532,125,0);
+
+INSERT INTO pokemon_abilities VALUES (532,89,1);
+
+INSERT INTO pokemon_abilities VALUES (533,62,0);
+
+INSERT INTO pokemon_abilities VALUES (533,125,0);
+
+INSERT INTO pokemon_abilities VALUES (533,89,1);
+
+INSERT INTO pokemon_abilities VALUES (534,62,0);
+
+INSERT INTO pokemon_abilities VALUES (534,125,0);
+
+INSERT INTO pokemon_abilities VALUES (534,89,1);
+
+INSERT INTO pokemon_abilities VALUES (535,33,0);
+
+INSERT INTO pokemon_abilities VALUES (535,93,0);
+
+INSERT INTO pokemon_abilities VALUES (535,11,1);
+
+INSERT INTO pokemon_abilities VALUES (536,33,0);
+
+INSERT INTO pokemon_abilities VALUES (536,93,0);
+
+INSERT INTO pokemon_abilities VALUES (536,11,1);
+
+INSERT INTO pokemon_abilities VALUES (537,33,0);
+
+INSERT INTO pokemon_abilities VALUES (537,143,0);
+
+INSERT INTO pokemon_abilities VALUES (537,11,1);
+
+INSERT INTO pokemon_abilities VALUES (538,62,0);
+
+INSERT INTO pokemon_abilities VALUES (538,39,0);
+
+INSERT INTO pokemon_abilities VALUES (538,104,1);
+
+INSERT INTO pokemon_abilities VALUES (539,5,0);
+
+INSERT INTO pokemon_abilities VALUES (539,39,0);
+
+INSERT INTO pokemon_abilities VALUES (539,104,1);
+
+INSERT INTO pokemon_abilities VALUES (540,68,0);
+
+INSERT INTO pokemon_abilities VALUES (540,34,0);
+
+INSERT INTO pokemon_abilities VALUES (540,142,1);
+
+INSERT INTO pokemon_abilities VALUES (541,102,0);
+
+INSERT INTO pokemon_abilities VALUES (541,34,0);
+
+INSERT INTO pokemon_abilities VALUES (541,142,1);
+
+INSERT INTO pokemon_abilities VALUES (542,68,0);
+
+INSERT INTO pokemon_abilities VALUES (542,34,0);
+
+INSERT INTO pokemon_abilities VALUES (542,142,1);
+
+INSERT INTO pokemon_abilities VALUES (543,38,0);
+
+INSERT INTO pokemon_abilities VALUES (543,68,0);
+
+INSERT INTO pokemon_abilities VALUES (543,3,1);
+
+INSERT INTO pokemon_abilities VALUES (544,38,0);
+
+INSERT INTO pokemon_abilities VALUES (544,68,0);
+
+INSERT INTO pokemon_abilities VALUES (544,3,1);
+
+INSERT INTO pokemon_abilities VALUES (545,38,0);
+
+INSERT INTO pokemon_abilities VALUES (545,68,0);
+
+INSERT INTO pokemon_abilities VALUES (545,3,1);
+
+INSERT INTO pokemon_abilities VALUES (546,158,0);
+
+INSERT INTO pokemon_abilities VALUES (546,151,0);
+
+INSERT INTO pokemon_abilities VALUES (546,34,1);
+
+INSERT INTO pokemon_abilities VALUES (547,158,0);
+
+INSERT INTO pokemon_abilities VALUES (547,151,0);
+
+INSERT INTO pokemon_abilities VALUES (547,34,1);
+
+INSERT INTO pokemon_abilities VALUES (548,34,0);
+
+INSERT INTO pokemon_abilities VALUES (548,20,0);
+
+INSERT INTO pokemon_abilities VALUES (548,102,1);
+
+INSERT INTO pokemon_abilities VALUES (549,34,0);
+
+INSERT INTO pokemon_abilities VALUES (549,20,0);
+
+INSERT INTO pokemon_abilities VALUES (549,102,1);
+
+INSERT INTO pokemon_abilities VALUES (550,120,0);
+
+INSERT INTO pokemon_abilities VALUES (550,91,0);
+
+INSERT INTO pokemon_abilities VALUES (550,104,1);
+
+INSERT INTO pokemon_abilities VALUES (551,22,0);
+
+INSERT INTO pokemon_abilities VALUES (551,153,0);
+
+INSERT INTO pokemon_abilities VALUES (551,83,1);
+
+INSERT INTO pokemon_abilities VALUES (552,22,0);
+
+INSERT INTO pokemon_abilities VALUES (552,153,0);
+
+INSERT INTO pokemon_abilities VALUES (552,83,1);
+
+INSERT INTO pokemon_abilities VALUES (553,22,0);
+
+INSERT INTO pokemon_abilities VALUES (553,153,0);
+
+INSERT INTO pokemon_abilities VALUES (553,83,1);
+
+INSERT INTO pokemon_abilities VALUES (554,55,0);
+
+INSERT INTO pokemon_abilities VALUES (554,39,1);
+
+INSERT INTO pokemon_abilities VALUES (555,125,0);
+
+INSERT INTO pokemon_abilities VALUES (555,161,1);
+
+INSERT INTO pokemon_abilities VALUES (556,11,0);
+
+INSERT INTO pokemon_abilities VALUES (556,34,0);
+
+INSERT INTO pokemon_abilities VALUES (556,114,1);
+
+INSERT INTO pokemon_abilities VALUES (557,5,0);
+
+INSERT INTO pokemon_abilities VALUES (557,75,0);
+
+INSERT INTO pokemon_abilities VALUES (557,133,1);
+
+INSERT INTO pokemon_abilities VALUES (558,5,0);
+
+INSERT INTO pokemon_abilities VALUES (558,75,0);
+
+INSERT INTO pokemon_abilities VALUES (558,133,1);
+
+INSERT INTO pokemon_abilities VALUES (559,61,0);
+
+INSERT INTO pokemon_abilities VALUES (559,153,0);
+
+INSERT INTO pokemon_abilities VALUES (559,22,1);
+
+INSERT INTO pokemon_abilities VALUES (560,61,0);
+
+INSERT INTO pokemon_abilities VALUES (560,153,0);
+
+INSERT INTO pokemon_abilities VALUES (560,22,1);
+
+INSERT INTO pokemon_abilities VALUES (561,147,0);
+
+INSERT INTO pokemon_abilities VALUES (561,98,0);
+
+INSERT INTO pokemon_abilities VALUES (561,110,1);
+
+INSERT INTO pokemon_abilities VALUES (562,152,0);
+
+INSERT INTO pokemon_abilities VALUES (563,152,0);
+
+INSERT INTO pokemon_abilities VALUES (564,116,0);
+
+INSERT INTO pokemon_abilities VALUES (564,5,0);
+
+INSERT INTO pokemon_abilities VALUES (564,33,1);
+
+INSERT INTO pokemon_abilities VALUES (565,116,0);
+
+INSERT INTO pokemon_abilities VALUES (565,5,0);
+
+INSERT INTO pokemon_abilities VALUES (565,33,1);
+
+INSERT INTO pokemon_abilities VALUES (566,129,0);
+
+INSERT INTO pokemon_abilities VALUES (567,129,0);
+
+INSERT INTO pokemon_abilities VALUES (568,1,0);
+
+INSERT INTO pokemon_abilities VALUES (568,60,0);
+
+INSERT INTO pokemon_abilities VALUES (568,106,1);
+
+INSERT INTO pokemon_abilities VALUES (569,1,0);
+
+INSERT INTO pokemon_abilities VALUES (569,133,0);
+
+INSERT INTO pokemon_abilities VALUES (569,106,1);
+
+INSERT INTO pokemon_abilities VALUES (570,149,0);
+
+INSERT INTO pokemon_abilities VALUES (571,149,0);
+
+INSERT INTO pokemon_abilities VALUES (572,56,0);
+
+INSERT INTO pokemon_abilities VALUES (572,101,0);
+
+INSERT INTO pokemon_abilities VALUES (572,92,1);
+
+INSERT INTO pokemon_abilities VALUES (573,56,0);
+
+INSERT INTO pokemon_abilities VALUES (573,101,0);
+
+INSERT INTO pokemon_abilities VALUES (573,92,1);
+
+INSERT INTO pokemon_abilities VALUES (574,119,0);
+
+INSERT INTO pokemon_abilities VALUES (574,172,0);
+
+INSERT INTO pokemon_abilities VALUES (574,23,1);
+
+INSERT INTO pokemon_abilities VALUES (575,119,0);
+
+INSERT INTO pokemon_abilities VALUES (575,172,0);
+
+INSERT INTO pokemon_abilities VALUES (575,23,1);
+
+INSERT INTO pokemon_abilities VALUES (576,119,0);
+
+INSERT INTO pokemon_abilities VALUES (576,172,0);
+
+INSERT INTO pokemon_abilities VALUES (576,23,1);
+
+INSERT INTO pokemon_abilities VALUES (577,142,0);
+
+INSERT INTO pokemon_abilities VALUES (577,98,0);
+
+INSERT INTO pokemon_abilities VALUES (577,144,1);
+
+INSERT INTO pokemon_abilities VALUES (578,142,0);
+
+INSERT INTO pokemon_abilities VALUES (578,98,0);
+
+INSERT INTO pokemon_abilities VALUES (578,144,1);
+
+INSERT INTO pokemon_abilities VALUES (579,142,0);
+
+INSERT INTO pokemon_abilities VALUES (579,98,0);
+
+INSERT INTO pokemon_abilities VALUES (579,144,1);
+
+INSERT INTO pokemon_abilities VALUES (580,51,0);
+
+INSERT INTO pokemon_abilities VALUES (580,145,0);
+
+INSERT INTO pokemon_abilities VALUES (580,93,1);
+
+INSERT INTO pokemon_abilities VALUES (581,51,0);
+
+INSERT INTO pokemon_abilities VALUES (581,145,0);
+
+INSERT INTO pokemon_abilities VALUES (581,93,1);
+
+INSERT INTO pokemon_abilities VALUES (582,115,0);
+
+INSERT INTO pokemon_abilities VALUES (582,133,1);
+
+INSERT INTO pokemon_abilities VALUES (583,115,0);
+
+INSERT INTO pokemon_abilities VALUES (583,133,1);
+
+INSERT INTO pokemon_abilities VALUES (584,115,0);
+
+INSERT INTO pokemon_abilities VALUES (584,133,1);
+
+INSERT INTO pokemon_abilities VALUES (585,34,0);
+
+INSERT INTO pokemon_abilities VALUES (585,157,0);
+
+INSERT INTO pokemon_abilities VALUES (585,32,1);
+
+INSERT INTO pokemon_abilities VALUES (586,34,0);
+
+INSERT INTO pokemon_abilities VALUES (586,157,0);
+
+INSERT INTO pokemon_abilities VALUES (586,32,1);
+
+INSERT INTO pokemon_abilities VALUES (587,9,0);
+
+INSERT INTO pokemon_abilities VALUES (587,78,1);
+
+INSERT INTO pokemon_abilities VALUES (588,68,0);
+
+INSERT INTO pokemon_abilities VALUES (588,61,0);
+
+INSERT INTO pokemon_abilities VALUES (588,99,1);
+
+INSERT INTO pokemon_abilities VALUES (589,68,0);
+
+INSERT INTO pokemon_abilities VALUES (589,75,0);
+
+INSERT INTO pokemon_abilities VALUES (589,142,1);
+
+INSERT INTO pokemon_abilities VALUES (590,27,0);
+
+INSERT INTO pokemon_abilities VALUES (590,144,1);
+
+INSERT INTO pokemon_abilities VALUES (591,27,0);
+
+INSERT INTO pokemon_abilities VALUES (591,144,1);
+
+INSERT INTO pokemon_abilities VALUES (592,11,0);
+
+INSERT INTO pokemon_abilities VALUES (592,130,0);
+
+INSERT INTO pokemon_abilities VALUES (592,6,1);
+
+INSERT INTO pokemon_abilities VALUES (593,11,0);
+
+INSERT INTO pokemon_abilities VALUES (593,130,0);
+
+INSERT INTO pokemon_abilities VALUES (593,6,1);
+
+INSERT INTO pokemon_abilities VALUES (594,131,0);
+
+INSERT INTO pokemon_abilities VALUES (594,93,0);
+
+INSERT INTO pokemon_abilities VALUES (594,144,1);
+
+INSERT INTO pokemon_abilities VALUES (595,14,0);
+
+INSERT INTO pokemon_abilities VALUES (595,127,0);
+
+INSERT INTO pokemon_abilities VALUES (595,68,1);
+
+INSERT INTO pokemon_abilities VALUES (596,14,0);
+
+INSERT INTO pokemon_abilities VALUES (596,127,0);
+
+INSERT INTO pokemon_abilities VALUES (596,68,1);
+
+INSERT INTO pokemon_abilities VALUES (597,160,0);
+
+INSERT INTO pokemon_abilities VALUES (598,160,0);
+
+INSERT INTO pokemon_abilities VALUES (598,107,1);
+
+INSERT INTO pokemon_abilities VALUES (599,57,0);
+
+INSERT INTO pokemon_abilities VALUES (599,58,0);
+
+INSERT INTO pokemon_abilities VALUES (599,29,1);
+
+INSERT INTO pokemon_abilities VALUES (600,57,0);
+
+INSERT INTO pokemon_abilities VALUES (600,58,0);
+
+INSERT INTO pokemon_abilities VALUES (600,29,1);
+
+INSERT INTO pokemon_abilities VALUES (601,57,0);
+
+INSERT INTO pokemon_abilities VALUES (601,58,0);
+
+INSERT INTO pokemon_abilities VALUES (601,29,1);
+
+INSERT INTO pokemon_abilities VALUES (602,26,0);
+
+INSERT INTO pokemon_abilities VALUES (603,26,0);
+
+INSERT INTO pokemon_abilities VALUES (604,26,0);
+
+INSERT INTO pokemon_abilities VALUES (605,140,0);
+
+INSERT INTO pokemon_abilities VALUES (605,28,0);
+
+INSERT INTO pokemon_abilities VALUES (605,148,1);
+
+INSERT INTO pokemon_abilities VALUES (606,140,0);
+
+INSERT INTO pokemon_abilities VALUES (606,28,0);
+
+INSERT INTO pokemon_abilities VALUES (606,148,1);
+
+INSERT INTO pokemon_abilities VALUES (607,18,0);
+
+INSERT INTO pokemon_abilities VALUES (607,49,0);
+
+INSERT INTO pokemon_abilities VALUES (607,151,1);
+
+INSERT INTO pokemon_abilities VALUES (608,18,0);
+
+INSERT INTO pokemon_abilities VALUES (608,49,0);
+
+INSERT INTO pokemon_abilities VALUES (608,151,1);
+
+INSERT INTO pokemon_abilities VALUES (609,18,0);
+
+INSERT INTO pokemon_abilities VALUES (609,49,0);
+
+INSERT INTO pokemon_abilities VALUES (609,151,1);
+
+INSERT INTO pokemon_abilities VALUES (610,79,0);
+
+INSERT INTO pokemon_abilities VALUES (610,104,0);
+
+INSERT INTO pokemon_abilities VALUES (610,127,1);
+
+INSERT INTO pokemon_abilities VALUES (611,79,0);
+
+INSERT INTO pokemon_abilities VALUES (611,104,0);
+
+INSERT INTO pokemon_abilities VALUES (611,127,1);
+
+INSERT INTO pokemon_abilities VALUES (612,79,0);
+
+INSERT INTO pokemon_abilities VALUES (612,104,0);
+
+INSERT INTO pokemon_abilities VALUES (612,127,1);
+
+INSERT INTO pokemon_abilities VALUES (613,81,0);
+
+INSERT INTO pokemon_abilities VALUES (613,155,1);
+
+INSERT INTO pokemon_abilities VALUES (614,81,0);
+
+INSERT INTO pokemon_abilities VALUES (614,33,1);
+
+INSERT INTO pokemon_abilities VALUES (615,26,0);
+
+INSERT INTO pokemon_abilities VALUES (616,93,0);
+
+INSERT INTO pokemon_abilities VALUES (616,75,0);
+
+INSERT INTO pokemon_abilities VALUES (616,142,1);
+
+INSERT INTO pokemon_abilities VALUES (617,93,0);
+
+INSERT INTO pokemon_abilities VALUES (617,60,0);
+
+INSERT INTO pokemon_abilities VALUES (617,84,1);
+
+INSERT INTO pokemon_abilities VALUES (618,9,0);
+
+INSERT INTO pokemon_abilities VALUES (618,7,0);
+
+INSERT INTO pokemon_abilities VALUES (618,8,1);
+
+INSERT INTO pokemon_abilities VALUES (619,39,0);
+
+INSERT INTO pokemon_abilities VALUES (619,144,0);
+
+INSERT INTO pokemon_abilities VALUES (619,120,1);
+
+INSERT INTO pokemon_abilities VALUES (620,39,0);
+
+INSERT INTO pokemon_abilities VALUES (620,144,0);
+
+INSERT INTO pokemon_abilities VALUES (620,120,1);
+
+INSERT INTO pokemon_abilities VALUES (621,24,0);
+
+INSERT INTO pokemon_abilities VALUES (621,125,0);
+
+INSERT INTO pokemon_abilities VALUES (621,104,1);
+
+INSERT INTO pokemon_abilities VALUES (622,89,0);
+
+INSERT INTO pokemon_abilities VALUES (622,103,0);
+
+INSERT INTO pokemon_abilities VALUES (622,99,1);
+
+INSERT INTO pokemon_abilities VALUES (623,89,0);
+
+INSERT INTO pokemon_abilities VALUES (623,103,0);
+
+INSERT INTO pokemon_abilities VALUES (623,99,1);
+
+INSERT INTO pokemon_abilities VALUES (624,128,0);
+
+INSERT INTO pokemon_abilities VALUES (624,39,0);
+
+INSERT INTO pokemon_abilities VALUES (624,46,1);
+
+INSERT INTO pokemon_abilities VALUES (625,128,0);
+
+INSERT INTO pokemon_abilities VALUES (625,39,0);
+
+INSERT INTO pokemon_abilities VALUES (625,46,1);
+
+INSERT INTO pokemon_abilities VALUES (626,120,0);
+
+INSERT INTO pokemon_abilities VALUES (626,157,0);
+
+INSERT INTO pokemon_abilities VALUES (626,43,1);
+
+INSERT INTO pokemon_abilities VALUES (627,51,0);
+
+INSERT INTO pokemon_abilities VALUES (627,125,0);
+
+INSERT INTO pokemon_abilities VALUES (627,55,1);
+
+INSERT INTO pokemon_abilities VALUES (628,51,0);
+
+INSERT INTO pokemon_abilities VALUES (628,125,0);
+
+INSERT INTO pokemon_abilities VALUES (628,128,1);
+
+INSERT INTO pokemon_abilities VALUES (629,145,0);
+
+INSERT INTO pokemon_abilities VALUES (629,142,0);
+
+INSERT INTO pokemon_abilities VALUES (629,133,1);
+
+INSERT INTO pokemon_abilities VALUES (630,145,0);
+
+INSERT INTO pokemon_abilities VALUES (630,142,0);
+
+INSERT INTO pokemon_abilities VALUES (630,133,1);
+
+INSERT INTO pokemon_abilities VALUES (631,82,0);
+
+INSERT INTO pokemon_abilities VALUES (631,18,0);
+
+INSERT INTO pokemon_abilities VALUES (631,73,1);
+
+INSERT INTO pokemon_abilities VALUES (632,68,0);
+
+INSERT INTO pokemon_abilities VALUES (632,55,0);
+
+INSERT INTO pokemon_abilities VALUES (632,54,1);
+
+INSERT INTO pokemon_abilities VALUES (633,55,0);
+
+INSERT INTO pokemon_abilities VALUES (634,55,0);
+
+INSERT INTO pokemon_abilities VALUES (635,26,0);
+
+INSERT INTO pokemon_abilities VALUES (636,49,0);
+
+INSERT INTO pokemon_abilities VALUES (636,68,1);
+
+INSERT INTO pokemon_abilities VALUES (637,49,0);
+
+INSERT INTO pokemon_abilities VALUES (637,68,1);
+
+INSERT INTO pokemon_abilities VALUES (638,154,0);
+
+INSERT INTO pokemon_abilities VALUES (639,154,0);
+
+INSERT INTO pokemon_abilities VALUES (640,154,0);
+
+INSERT INTO pokemon_abilities VALUES (641,158,0);
+
+INSERT INTO pokemon_abilities VALUES (641,128,1);
+
+INSERT INTO pokemon_abilities VALUES (642,158,0);
+
+INSERT INTO pokemon_abilities VALUES (642,128,1);
+
+INSERT INTO pokemon_abilities VALUES (643,163,0);
+
+INSERT INTO pokemon_abilities VALUES (644,164,0);
+
+INSERT INTO pokemon_abilities VALUES (645,159,0);
+
+INSERT INTO pokemon_abilities VALUES (645,125,1);
+
+INSERT INTO pokemon_abilities VALUES (646,46,0);
+
+INSERT INTO pokemon_abilities VALUES (647,154,0);
+
+INSERT INTO pokemon_abilities VALUES (648,32,0);
+
+INSERT INTO pokemon_abilities VALUES (649,88,0);
+
+INSERT INTO pokemon_abilities VALUES (650,65,0);
+
+INSERT INTO pokemon_abilities VALUES (650,171,1);
+
+INSERT INTO pokemon_abilities VALUES (651,65,0);
+
+INSERT INTO pokemon_abilities VALUES (651,171,1);
+
+INSERT INTO pokemon_abilities VALUES (652,65,0);
+
+INSERT INTO pokemon_abilities VALUES (652,171,1);
+
+INSERT INTO pokemon_abilities VALUES (653,66,0);
+
+INSERT INTO pokemon_abilities VALUES (653,170,1);
+
+INSERT INTO pokemon_abilities VALUES (654,66,0);
+
+INSERT INTO pokemon_abilities VALUES (654,170,1);
+
+INSERT INTO pokemon_abilities VALUES (655,66,0);
+
+INSERT INTO pokemon_abilities VALUES (655,170,1);
+
+INSERT INTO pokemon_abilities VALUES (656,67,0);
+
+INSERT INTO pokemon_abilities VALUES (656,168,1);
+
+INSERT INTO pokemon_abilities VALUES (657,67,0);
+
+INSERT INTO pokemon_abilities VALUES (657,168,1);
+
+INSERT INTO pokemon_abilities VALUES (658,67,0);
+
+INSERT INTO pokemon_abilities VALUES (658,168,1);
+
+INSERT INTO pokemon_abilities VALUES (659,53,0);
+
+INSERT INTO pokemon_abilities VALUES (659,167,0);
+
+INSERT INTO pokemon_abilities VALUES (659,37,1);
+
+INSERT INTO pokemon_abilities VALUES (660,53,0);
+
+INSERT INTO pokemon_abilities VALUES (660,167,0);
+
+INSERT INTO pokemon_abilities VALUES (660,37,1);
+
+INSERT INTO pokemon_abilities VALUES (661,145,0);
+
+INSERT INTO pokemon_abilities VALUES (661,177,1);
+
+INSERT INTO pokemon_abilities VALUES (662,49,0);
+
+INSERT INTO pokemon_abilities VALUES (662,177,1);
+
+INSERT INTO pokemon_abilities VALUES (663,49,0);
+
+INSERT INTO pokemon_abilities VALUES (663,177,1);
+
+INSERT INTO pokemon_abilities VALUES (664,19,0);
+
+INSERT INTO pokemon_abilities VALUES (664,14,0);
+
+INSERT INTO pokemon_abilities VALUES (664,132,1);
+
+INSERT INTO pokemon_abilities VALUES (665,61,0);
+
+INSERT INTO pokemon_abilities VALUES (665,132,1);
+
+INSERT INTO pokemon_abilities VALUES (666,19,0);
+
+INSERT INTO pokemon_abilities VALUES (666,14,0);
+
+INSERT INTO pokemon_abilities VALUES (666,132,1);
+
+INSERT INTO pokemon_abilities VALUES (667,79,0);
+
+INSERT INTO pokemon_abilities VALUES (667,127,0);
+
+INSERT INTO pokemon_abilities VALUES (667,153,1);
+
+INSERT INTO pokemon_abilities VALUES (668,79,0);
+
+INSERT INTO pokemon_abilities VALUES (668,127,0);
+
+INSERT INTO pokemon_abilities VALUES (668,153,1);
+
+INSERT INTO pokemon_abilities VALUES (669,166,0);
+
+INSERT INTO pokemon_abilities VALUES (669,180,1);
+
+INSERT INTO pokemon_abilities VALUES (670,166,0);
+
+INSERT INTO pokemon_abilities VALUES (670,180,1);
+
+INSERT INTO pokemon_abilities VALUES (671,166,0);
+
+INSERT INTO pokemon_abilities VALUES (671,180,1);
+
+INSERT INTO pokemon_abilities VALUES (672,157,0);
+
+INSERT INTO pokemon_abilities VALUES (672,179,1);
+
+INSERT INTO pokemon_abilities VALUES (673,157,0);
+
+INSERT INTO pokemon_abilities VALUES (673,179,1);
+
+INSERT INTO pokemon_abilities VALUES (674,89,0);
+
+INSERT INTO pokemon_abilities VALUES (674,104,0);
+
+INSERT INTO pokemon_abilities VALUES (674,113,1);
+
+INSERT INTO pokemon_abilities VALUES (675,89,0);
+
+INSERT INTO pokemon_abilities VALUES (675,104,0);
+
+INSERT INTO pokemon_abilities VALUES (675,113,1);
+
+INSERT INTO pokemon_abilities VALUES (676,169,0);
+
+INSERT INTO pokemon_abilities VALUES (677,51,0);
+
+INSERT INTO pokemon_abilities VALUES (677,151,0);
+
+INSERT INTO pokemon_abilities VALUES (677,20,1);
+
+INSERT INTO pokemon_abilities VALUES (678,51,0);
+
+INSERT INTO pokemon_abilities VALUES (678,151,0);
+
+INSERT INTO pokemon_abilities VALUES (678,158,1);
+
+INSERT INTO pokemon_abilities VALUES (679,99,0);
+
+INSERT INTO pokemon_abilities VALUES (680,99,0);
+
+INSERT INTO pokemon_abilities VALUES (681,176,0);
+
+INSERT INTO pokemon_abilities VALUES (682,131,0);
+
+INSERT INTO pokemon_abilities VALUES (682,165,1);
+
+INSERT INTO pokemon_abilities VALUES (683,131,0);
+
+INSERT INTO pokemon_abilities VALUES (683,165,1);
+
+INSERT INTO pokemon_abilities VALUES (684,175,0);
+
+INSERT INTO pokemon_abilities VALUES (684,84,1);
+
+INSERT INTO pokemon_abilities VALUES (685,175,0);
+
+INSERT INTO pokemon_abilities VALUES (685,84,1);
+
+INSERT INTO pokemon_abilities VALUES (686,126,0);
+
+INSERT INTO pokemon_abilities VALUES (686,21,0);
+
+INSERT INTO pokemon_abilities VALUES (686,151,1);
+
+INSERT INTO pokemon_abilities VALUES (687,126,0);
+
+INSERT INTO pokemon_abilities VALUES (687,21,0);
+
+INSERT INTO pokemon_abilities VALUES (687,151,1);
+
+INSERT INTO pokemon_abilities VALUES (688,181,0);
+
+INSERT INTO pokemon_abilities VALUES (688,97,0);
+
+INSERT INTO pokemon_abilities VALUES (688,124,1);
+
+INSERT INTO pokemon_abilities VALUES (689,181,0);
+
+INSERT INTO pokemon_abilities VALUES (689,97,0);
+
+INSERT INTO pokemon_abilities VALUES (689,124,1);
+
+INSERT INTO pokemon_abilities VALUES (690,38,0);
+
+INSERT INTO pokemon_abilities VALUES (690,143,0);
+
+INSERT INTO pokemon_abilities VALUES (690,91,1);
+
+INSERT INTO pokemon_abilities VALUES (691,38,0);
+
+INSERT INTO pokemon_abilities VALUES (691,143,0);
+
+INSERT INTO pokemon_abilities VALUES (691,91,1);
+
+INSERT INTO pokemon_abilities VALUES (692,178,0);
+
+INSERT INTO pokemon_abilities VALUES (693,178,0);
+
+INSERT INTO pokemon_abilities VALUES (694,87,0);
+
+INSERT INTO pokemon_abilities VALUES (694,8,0);
+
+INSERT INTO pokemon_abilities VALUES (694,94,1);
+
+INSERT INTO pokemon_abilities VALUES (695,87,0);
+
+INSERT INTO pokemon_abilities VALUES (695,8,0);
+
+INSERT INTO pokemon_abilities VALUES (695,94,1);
+
+INSERT INTO pokemon_abilities VALUES (696,173,0);
+
+INSERT INTO pokemon_abilities VALUES (696,5,1);
+
+INSERT INTO pokemon_abilities VALUES (697,173,0);
+
+INSERT INTO pokemon_abilities VALUES (697,69,1);
+
+INSERT INTO pokemon_abilities VALUES (698,174,0);
+
+INSERT INTO pokemon_abilities VALUES (698,117,1);
+
+INSERT INTO pokemon_abilities VALUES (699,174,0);
+
+INSERT INTO pokemon_abilities VALUES (699,117,1);
+
+INSERT INTO pokemon_abilities VALUES (700,56,0);
+
+INSERT INTO pokemon_abilities VALUES (700,182,1);
+
+INSERT INTO pokemon_abilities VALUES (701,7,0);
+
+INSERT INTO pokemon_abilities VALUES (701,84,0);
+
+INSERT INTO pokemon_abilities VALUES (701,104,1);
+
+INSERT INTO pokemon_abilities VALUES (702,167,0);
+
+INSERT INTO pokemon_abilities VALUES (702,53,0);
+
+INSERT INTO pokemon_abilities VALUES (702,57,1);
+
+INSERT INTO pokemon_abilities VALUES (703,29,0);
+
+INSERT INTO pokemon_abilities VALUES (703,5,1);
+
+INSERT INTO pokemon_abilities VALUES (704,157,0);
+
+INSERT INTO pokemon_abilities VALUES (704,93,0);
+
+INSERT INTO pokemon_abilities VALUES (704,183,1);
+
+INSERT INTO pokemon_abilities VALUES (705,157,0);
+
+INSERT INTO pokemon_abilities VALUES (705,93,0);
+
+INSERT INTO pokemon_abilities VALUES (705,183,1);
+
+INSERT INTO pokemon_abilities VALUES (706,157,0);
+
+INSERT INTO pokemon_abilities VALUES (706,93,0);
+
+INSERT INTO pokemon_abilities VALUES (706,183,1);
+
+INSERT INTO pokemon_abilities VALUES (707,158,0);
+
+INSERT INTO pokemon_abilities VALUES (707,170,1);
+
+INSERT INTO pokemon_abilities VALUES (708,30,0);
+
+INSERT INTO pokemon_abilities VALUES (708,119,0);
+
+INSERT INTO pokemon_abilities VALUES (708,139,1);
+
+INSERT INTO pokemon_abilities VALUES (709,30,0);
+
+INSERT INTO pokemon_abilities VALUES (709,119,0);
+
+INSERT INTO pokemon_abilities VALUES (709,139,1);
+
+INSERT INTO pokemon_abilities VALUES (710,53,0);
+
+INSERT INTO pokemon_abilities VALUES (710,119,0);
+
+INSERT INTO pokemon_abilities VALUES (710,15,1);
+
+INSERT INTO pokemon_abilities VALUES (711,53,0);
+
+INSERT INTO pokemon_abilities VALUES (711,119,0);
+
+INSERT INTO pokemon_abilities VALUES (711,15,1);
+
+INSERT INTO pokemon_abilities VALUES (712,20,0);
+
+INSERT INTO pokemon_abilities VALUES (712,115,0);
+
+INSERT INTO pokemon_abilities VALUES (712,5,1);
+
+INSERT INTO pokemon_abilities VALUES (713,20,0);
+
+INSERT INTO pokemon_abilities VALUES (713,115,0);
+
+INSERT INTO pokemon_abilities VALUES (713,5,1);
+
+INSERT INTO pokemon_abilities VALUES (714,119,0);
+
+INSERT INTO pokemon_abilities VALUES (714,151,0);
+
+INSERT INTO pokemon_abilities VALUES (714,140,1);
+
+INSERT INTO pokemon_abilities VALUES (715,119,0);
+
+INSERT INTO pokemon_abilities VALUES (715,151,0);
+
+INSERT INTO pokemon_abilities VALUES (715,140,1);
+
+INSERT INTO pokemon_abilities VALUES (716,187,0);
+
+INSERT INTO pokemon_abilities VALUES (717,186,0);
+
+INSERT INTO pokemon_abilities VALUES (718,188,0);
+
+INSERT INTO pokemon_abilities VALUES (719,29,0);
+
+INSERT INTO pokemon_abilities VALUES (720,170,0);
+
+INSERT INTO pokemon_abilities VALUES (721,11,0);
+
+INSERT INTO pokemon_abilities VALUES (10001,46,0);
+
+INSERT INTO pokemon_abilities VALUES (10002,46,0);
+
+INSERT INTO pokemon_abilities VALUES (10003,46,0);
+
+INSERT INTO pokemon_abilities VALUES (10004,107,0);
+
+INSERT INTO pokemon_abilities VALUES (10004,142,1);
+
+INSERT INTO pokemon_abilities VALUES (10005,107,0);
+
+INSERT INTO pokemon_abilities VALUES (10005,142,1);
+
+INSERT INTO pokemon_abilities VALUES (10006,32,0);
+
+INSERT INTO pokemon_abilities VALUES (10007,26,0);
+
+INSERT INTO pokemon_abilities VALUES (10008,26,0);
+
+INSERT INTO pokemon_abilities VALUES (10009,26,0);
+
+INSERT INTO pokemon_abilities VALUES (10010,26,0);
+
+INSERT INTO pokemon_abilities VALUES (10011,26,0);
+
+INSERT INTO pokemon_abilities VALUES (10012,26,0);
+
+INSERT INTO pokemon_abilities VALUES (10013,59,0);
+
+INSERT INTO pokemon_abilities VALUES (10014,59,0);
+
+INSERT INTO pokemon_abilities VALUES (10015,59,0);
+
+INSERT INTO pokemon_abilities VALUES (10016,69,0);
+
+INSERT INTO pokemon_abilities VALUES (10016,91,0);
+
+INSERT INTO pokemon_abilities VALUES (10016,104,1);
+
+INSERT INTO pokemon_abilities VALUES (10017,125,0);
+
+INSERT INTO pokemon_abilities VALUES (10017,161,1);
+
+INSERT INTO pokemon_abilities VALUES (10018,32,0);
+
+INSERT INTO pokemon_abilities VALUES (10019,144,0);
+
+INSERT INTO pokemon_abilities VALUES (10020,10,0);
+
+INSERT INTO pokemon_abilities VALUES (10021,22,0);
+
+INSERT INTO pokemon_abilities VALUES (10022,164,0);
+
+INSERT INTO pokemon_abilities VALUES (10023,163,0);
+
+INSERT INTO pokemon_abilities VALUES (10024,154,0);
+
+INSERT INTO pokemon_abilities VALUES (10025,51,0);
+
+INSERT INTO pokemon_abilities VALUES (10025,151,0);
+
+INSERT INTO pokemon_abilities VALUES (10025,172,1);
+
+INSERT INTO pokemon_abilities VALUES (10026,176,0);
+
+INSERT INTO pokemon_abilities VALUES (10027,53,0);
+
+INSERT INTO pokemon_abilities VALUES (10027,119,0);
+
+INSERT INTO pokemon_abilities VALUES (10027,15,1);
+
+INSERT INTO pokemon_abilities VALUES (10028,53,0);
+
+INSERT INTO pokemon_abilities VALUES (10028,119,0);
+
+INSERT INTO pokemon_abilities VALUES (10028,15,1);
+
+INSERT INTO pokemon_abilities VALUES (10029,53,0);
+
+INSERT INTO pokemon_abilities VALUES (10029,119,0);
+
+INSERT INTO pokemon_abilities VALUES (10029,15,1);
+
+INSERT INTO pokemon_abilities VALUES (10030,53,0);
+
+INSERT INTO pokemon_abilities VALUES (10030,119,0);
+
+INSERT INTO pokemon_abilities VALUES (10030,15,1);
+
+INSERT INTO pokemon_abilities VALUES (10031,53,0);
+
+INSERT INTO pokemon_abilities VALUES (10031,119,0);
+
+INSERT INTO pokemon_abilities VALUES (10031,15,1);
+
+INSERT INTO pokemon_abilities VALUES (10032,53,0);
+
+INSERT INTO pokemon_abilities VALUES (10032,119,0);
+
+INSERT INTO pokemon_abilities VALUES (10032,15,1);
+
+INSERT INTO pokemon_abilities VALUES (10033,47,0);
+
+INSERT INTO pokemon_abilities VALUES (10034,181,0);
+
+INSERT INTO pokemon_abilities VALUES (10035,70,0);
+
+INSERT INTO pokemon_abilities VALUES (10036,178,0);
+
+INSERT INTO pokemon_abilities VALUES (10037,36,0);
+
+INSERT INTO pokemon_abilities VALUES (10038,23,0);
+
+INSERT INTO pokemon_abilities VALUES (10039,185,0);
+
+INSERT INTO pokemon_abilities VALUES (10040,184,0);
+
+INSERT INTO pokemon_abilities VALUES (10041,104,0);
+
+INSERT INTO pokemon_abilities VALUES (10042,181,0);
+
+INSERT INTO pokemon_abilities VALUES (10043,80,0);
+
+INSERT INTO pokemon_abilities VALUES (10044,15,0);
+
+INSERT INTO pokemon_abilities VALUES (10045,104,0);
+
+INSERT INTO pokemon_abilities VALUES (10046,101,0);
+
+INSERT INTO pokemon_abilities VALUES (10047,92,0);
+
+INSERT INTO pokemon_abilities VALUES (10048,94,0);
+
+INSERT INTO pokemon_abilities VALUES (10049,45,0);
+
+INSERT INTO pokemon_abilities VALUES (10050,3,0);
+
+INSERT INTO pokemon_abilities VALUES (10051,182,0);
+
+INSERT INTO pokemon_abilities VALUES (10052,37,0);
+
+INSERT INTO pokemon_abilities VALUES (10053,111,0);
+
+INSERT INTO pokemon_abilities VALUES (10054,74,0);
+
+INSERT INTO pokemon_abilities VALUES (10055,22,0);
+
+INSERT INTO pokemon_abilities VALUES (10056,158,0);
+
+INSERT INTO pokemon_abilities VALUES (10057,156,0);
+
+INSERT INTO pokemon_abilities VALUES (10058,159,0);
+
+INSERT INTO pokemon_abilities VALUES (10059,91,0);
+
+INSERT INTO pokemon_abilities VALUES (10060,117,0);
+
+INSERT INTO pokemon_abilities VALUES (10061,166,0);
+
+INSERT INTO pokemon_abilities VALUES (10061,180,1);
+
+INSERT INTO pokemon_abilities VALUES (10062,26,0);
+
+INSERT INTO pokemon_abilities VALUES (10063,26,0);
+
+INSERT INTO pokemon_abilities VALUES (10064,33,0);
+
+INSERT INTO pokemon_abilities VALUES (10065,31,0);
+
+INSERT INTO pokemon_abilities VALUES (10066,156,0);
+
+INSERT INTO pokemon_abilities VALUES (10067,182,0);
+
+INSERT INTO pokemon_abilities VALUES (10068,39,0);
+
+INSERT INTO pokemon_abilities VALUES (10069,131,0);
+
+INSERT INTO pokemon_abilities VALUES (10070,173,0);
+
+INSERT INTO pokemon_abilities VALUES (10071,75,0);
+
+INSERT INTO pokemon_abilities VALUES (10072,159,0);
+
+INSERT INTO pokemon_abilities VALUES (10073,99,0);
+
+INSERT INTO pokemon_abilities VALUES (10074,174,0);
+
+INSERT INTO pokemon_abilities VALUES (10075,156,0);
+
+INSERT INTO pokemon_abilities VALUES (10076,181,0);
+
+INSERT INTO pokemon_abilities VALUES (10077,189,0);
+
+INSERT INTO pokemon_abilities VALUES (10078,190,0);
+
+INSERT INTO pokemon_abilities VALUES (10079,191,0);
+
+INSERT INTO pokemon_abilities VALUES (10080,9,0);
+
+INSERT INTO pokemon_abilities VALUES (10080,31,1);
+
+INSERT INTO pokemon_abilities VALUES (10081,9,0);
+
+INSERT INTO pokemon_abilities VALUES (10081,31,1);
+
+INSERT INTO pokemon_abilities VALUES (10082,9,0);
+
+INSERT INTO pokemon_abilities VALUES (10082,31,1);
+
+INSERT INTO pokemon_abilities VALUES (10083,9,0);
+
+INSERT INTO pokemon_abilities VALUES (10083,31,1);
+
+INSERT INTO pokemon_abilities VALUES (10084,9,0);
+
+INSERT INTO pokemon_abilities VALUES (10084,31,1);
+
+INSERT INTO pokemon_abilities VALUES (10085,9,0);
+
+INSERT INTO pokemon_abilities VALUES (10085,31,1);
+
+INSERT INTO pokemon_abilities VALUES (10086,170,0);
+
+INSERT INTO pokemon_abilities VALUES (10087,125,0);
+
+INSERT INTO pokemon_abilities VALUES (10088,113,0);
+
+INSERT INTO pokemon_abilities VALUES (10089,184,0);
+
+DROP TABLE pokemon_evolution;
+
+CREATE TABLE pokemon_evolution (
+    id INT NOT NULL,
+    evolved_species_id INT NOT NULL,
+    evolution_trigger_id INT NOT NULL,
+    trigger_item_id INT,
+    minimum_level INT,
+    gender_id INT,
+    location_id INT,
+    held_item_id INT,
+    time_of_day VARCHAR(5) CHARACTER SET utf8,
+    known_move_id INT,
+    known_move_type_id INT,
+    minimum_happiness INT,
+    minimum_beauty INT,
+    minimum_affection INT,
+    relative_physical_stats INT,
+    party_species_id INT,
+    party_type_id INT,
+    trade_species_id INT,
+    needs_overworld_rain INT,
+    turn_upside_down INT,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO pokemon_evolution VALUES (1,2,1,NULL,16,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (2,3,1,NULL,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (3,5,1,NULL,16,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (4,6,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (5,8,1,NULL,16,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (6,9,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (7,11,1,NULL,7,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (8,12,1,NULL,10,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (9,14,1,NULL,7,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (10,15,1,NULL,10,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (11,17,1,NULL,18,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (12,18,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (13,20,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (14,22,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (15,24,1,NULL,22,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (16,25,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (17,26,3,83,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (18,28,1,NULL,22,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (19,30,1,NULL,16,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (20,31,3,81,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (21,33,1,NULL,16,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (22,34,3,81,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (23,35,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (24,36,3,81,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (25,38,3,82,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (26,39,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (27,40,3,81,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (28,42,1,NULL,22,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (29,44,1,NULL,21,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (30,45,3,85,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (31,47,1,NULL,24,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (32,49,1,NULL,31,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (33,51,1,NULL,26,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (34,53,1,NULL,28,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (35,55,1,NULL,33,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (36,57,1,NULL,28,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (37,59,3,82,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (38,61,1,NULL,25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (39,62,3,84,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (40,64,1,NULL,16,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (41,65,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (42,67,1,NULL,28,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (43,68,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (44,70,1,NULL,21,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (45,71,3,85,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (46,73,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (47,75,1,NULL,25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (48,76,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (49,78,1,NULL,40,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (50,80,1,NULL,37,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (51,82,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (52,85,1,NULL,31,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (53,87,1,NULL,34,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (54,89,1,NULL,38,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (55,91,3,84,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (56,93,1,NULL,25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (57,94,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (58,97,1,NULL,26,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (59,99,1,NULL,28,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (60,101,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (61,103,3,85,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (62,105,1,NULL,28,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (63,106,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (64,107,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,-1,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (65,110,1,NULL,35,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (66,112,1,NULL,42,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (67,113,1,NULL,NULL,NULL,NULL,110,'day',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (68,117,1,NULL,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (69,119,1,NULL,33,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (70,121,3,84,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (71,122,1,NULL,NULL,NULL,NULL,NULL,NULL,102,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (72,124,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (73,125,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (74,126,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (75,130,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (76,134,3,84,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (77,135,3,83,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (78,136,3,82,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (79,139,1,NULL,40,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (80,141,1,NULL,40,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (81,143,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (82,148,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (83,149,1,NULL,55,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (84,153,1,NULL,16,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (85,154,1,NULL,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (86,156,1,NULL,14,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (87,157,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (88,159,1,NULL,18,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (89,160,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (90,162,1,NULL,15,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (91,164,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (92,166,1,NULL,18,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (93,168,1,NULL,22,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (94,169,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (95,171,1,NULL,27,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (96,176,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (97,178,1,NULL,25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (98,180,1,NULL,15,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (99,181,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (100,182,3,80,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (101,183,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (102,184,1,NULL,18,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (103,185,1,NULL,NULL,NULL,NULL,NULL,NULL,102,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (104,186,2,NULL,NULL,NULL,NULL,198,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (105,188,1,NULL,18,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (106,189,1,NULL,27,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (107,192,3,80,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (108,195,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (109,196,1,NULL,NULL,NULL,NULL,NULL,'day',NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (110,197,1,NULL,NULL,NULL,NULL,NULL,'night',NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (111,199,2,NULL,NULL,NULL,NULL,198,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (112,202,1,NULL,15,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (113,205,1,NULL,31,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (114,208,2,NULL,NULL,NULL,NULL,210,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (115,210,1,NULL,23,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (116,212,2,NULL,NULL,NULL,NULL,210,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (117,217,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (118,219,1,NULL,38,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (119,221,1,NULL,33,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (120,224,1,NULL,25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (121,226,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,223,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (122,229,1,NULL,24,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (123,230,2,NULL,NULL,NULL,NULL,212,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (124,232,1,NULL,25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (125,233,2,NULL,NULL,NULL,NULL,229,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (126,237,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (127,242,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (128,247,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (129,248,1,NULL,55,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (130,253,1,NULL,16,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (131,254,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (132,256,1,NULL,16,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (133,257,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (134,259,1,NULL,16,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (135,260,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (136,262,1,NULL,18,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (137,264,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (138,266,1,NULL,7,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (139,267,1,NULL,10,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (140,268,1,NULL,7,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (141,269,1,NULL,10,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (142,271,1,NULL,14,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (143,272,3,84,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (144,274,1,NULL,14,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (145,275,3,85,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (146,277,1,NULL,22,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (147,279,1,NULL,25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (148,281,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (149,282,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (150,284,1,NULL,22,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (151,286,1,NULL,23,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (152,288,1,NULL,18,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (153,289,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (154,291,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (155,292,4,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (156,294,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (157,295,1,NULL,40,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (158,297,1,NULL,24,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (159,301,3,81,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (160,305,1,NULL,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (161,306,1,NULL,42,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (162,308,1,NULL,37,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (163,310,1,NULL,26,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (164,315,1,NULL,NULL,NULL,NULL,NULL,'day',NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (165,317,1,NULL,26,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (166,319,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (167,321,1,NULL,40,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (168,323,1,NULL,33,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (169,326,1,NULL,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (170,329,1,NULL,35,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (171,330,1,NULL,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (172,332,1,NULL,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (173,334,1,NULL,35,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (174,340,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (175,342,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (176,344,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (177,346,1,NULL,40,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (178,348,1,NULL,40,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (179,350,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,171,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (180,354,1,NULL,37,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (181,356,1,NULL,37,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (182,358,1,NULL,NULL,NULL,NULL,NULL,'night',NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (183,362,1,NULL,42,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (184,364,1,NULL,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (185,365,1,NULL,44,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (186,367,2,NULL,NULL,NULL,NULL,203,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (187,368,2,NULL,NULL,NULL,NULL,204,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (188,372,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (189,373,1,NULL,50,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (190,375,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (191,376,1,NULL,45,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (192,388,1,NULL,18,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (193,389,1,NULL,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (194,391,1,NULL,14,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (195,392,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (196,394,1,NULL,16,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (197,395,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (198,397,1,NULL,14,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (199,398,1,NULL,34,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (200,400,1,NULL,15,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (201,402,1,NULL,10,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (202,404,1,NULL,15,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (203,405,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (204,407,3,107,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (205,409,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (206,411,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (207,413,1,NULL,20,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (208,414,1,NULL,20,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (209,416,1,NULL,21,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (210,419,1,NULL,26,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (211,421,1,NULL,25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (212,423,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (213,424,1,NULL,NULL,NULL,NULL,NULL,NULL,458,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (214,426,1,NULL,28,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (215,428,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (216,429,3,108,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (217,430,3,108,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (218,432,1,NULL,38,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (219,435,1,NULL,34,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (220,437,1,NULL,33,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (221,444,1,NULL,24,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (222,445,1,NULL,48,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (223,448,1,NULL,NULL,NULL,NULL,NULL,'day',NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (224,450,1,NULL,34,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (225,452,1,NULL,40,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (226,454,1,NULL,37,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (227,457,1,NULL,31,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (228,460,1,NULL,40,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (229,461,1,NULL,NULL,NULL,NULL,303,'night',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (230,462,1,NULL,NULL,NULL,10,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (231,463,1,NULL,NULL,NULL,NULL,NULL,NULL,205,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (232,464,2,NULL,NULL,NULL,NULL,298,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (233,465,1,NULL,NULL,NULL,NULL,NULL,NULL,246,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (234,466,2,NULL,NULL,NULL,NULL,299,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (235,467,2,NULL,NULL,NULL,NULL,300,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (236,468,3,107,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (237,469,1,NULL,NULL,NULL,NULL,NULL,NULL,246,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (238,470,1,NULL,NULL,NULL,8,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (239,471,1,NULL,NULL,NULL,48,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (240,472,1,NULL,NULL,NULL,NULL,304,'night',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (241,473,1,NULL,NULL,NULL,NULL,NULL,NULL,246,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (242,474,2,NULL,NULL,NULL,NULL,301,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (243,475,3,109,NULL,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (244,476,1,NULL,NULL,NULL,10,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (245,477,2,NULL,NULL,NULL,NULL,302,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (246,478,3,109,NULL,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (247,496,1,NULL,17,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (248,497,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (249,499,1,NULL,17,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (250,500,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (251,502,1,NULL,17,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (252,503,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (253,505,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (254,507,1,NULL,16,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (255,508,1,NULL,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (256,510,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (257,512,3,85,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (258,514,3,82,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (259,516,3,84,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (260,518,3,81,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (261,520,1,NULL,21,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (262,521,1,NULL,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (263,523,1,NULL,27,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (264,525,1,NULL,25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (265,526,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (266,528,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (267,530,1,NULL,31,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (268,533,1,NULL,25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (269,534,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (270,536,1,NULL,25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (271,537,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (272,541,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (273,542,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,220,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (274,544,1,NULL,22,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (275,545,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (276,547,3,80,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (277,549,3,80,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (278,552,1,NULL,29,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (279,553,1,NULL,40,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (280,555,1,NULL,35,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (281,558,1,NULL,34,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (282,560,1,NULL,39,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (283,563,1,NULL,34,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (284,565,1,NULL,37,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (285,567,1,NULL,37,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (286,569,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (287,571,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (288,573,3,107,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (289,575,1,NULL,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (290,576,1,NULL,41,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (291,578,1,NULL,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (292,579,1,NULL,41,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (293,581,1,NULL,35,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (294,583,1,NULL,35,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (295,584,1,NULL,47,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (296,586,1,NULL,34,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (297,589,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,616,0,0);
+
+INSERT INTO pokemon_evolution VALUES (298,591,1,NULL,39,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (299,593,1,NULL,40,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (300,596,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (301,598,1,NULL,40,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (302,600,1,NULL,38,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (303,601,1,NULL,49,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (304,603,1,NULL,39,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (305,604,3,83,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (306,606,1,NULL,42,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (307,608,1,NULL,41,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (308,609,3,108,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (309,611,1,NULL,38,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (310,612,1,NULL,48,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (311,614,1,NULL,37,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (312,617,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,588,0,0);
+
+INSERT INTO pokemon_evolution VALUES (313,620,1,NULL,50,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (314,623,1,NULL,43,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (315,625,1,NULL,52,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (316,628,1,NULL,54,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (317,630,1,NULL,54,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (318,634,1,NULL,50,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (319,635,1,NULL,64,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (320,637,1,NULL,59,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (321,350,2,NULL,NULL,NULL,NULL,580,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (322,462,1,NULL,NULL,NULL,379,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (323,476,1,NULL,NULL,NULL,379,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (324,470,1,NULL,NULL,NULL,375,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (325,471,1,NULL,NULL,NULL,380,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (327,683,2,NULL,NULL,NULL,NULL,687,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (328,662,1,NULL,17,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (329,709,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (330,663,1,NULL,35,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (331,654,1,NULL,16,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (332,687,1,NULL,30,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,1);
+
+INSERT INTO pokemon_evolution VALUES (333,655,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (334,651,1,NULL,16,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (335,693,1,NULL,37,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (336,652,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (337,657,1,NULL,16,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (338,658,1,NULL,36,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (339,680,1,NULL,35,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (340,705,1,NULL,40,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (341,666,1,NULL,12,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (342,665,1,NULL,9,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (343,689,1,NULL,39,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (344,711,2,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (345,660,1,NULL,20,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (346,670,1,NULL,19,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (347,671,3,107,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (348,681,3,108,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (349,675,1,NULL,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,17,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (350,685,2,NULL,NULL,NULL,NULL,686,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (351,691,1,NULL,48,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (352,697,1,NULL,39,NULL,NULL,NULL,'day',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (353,699,1,NULL,39,NULL,NULL,NULL,'night',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (354,713,1,NULL,37,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (355,695,3,80,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (356,668,1,NULL,35,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (357,673,1,NULL,32,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (358,706,1,NULL,50,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,1,0);
+
+INSERT INTO pokemon_evolution VALUES (359,715,1,NULL,48,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (360,678,1,NULL,25,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (361,700,1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,18,NULL,NULL,2,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (362,462,1,NULL,NULL,NULL,629,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (363,470,1,NULL,NULL,NULL,650,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (364,471,1,NULL,NULL,NULL,640,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+INSERT INTO pokemon_evolution VALUES (365,476,1,NULL,NULL,NULL,629,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,0,0);
+
+DROP TABLE pokemon_form_generations;
+
+CREATE TABLE pokemon_form_generations (
+    pokemon_form_id INT NOT NULL,
+    generation_id INT NOT NULL,
+    PRIMARY KEY (pokemon_form_id)
+);
+
+INSERT INTO pokemon_form_generations VALUES (1,1);
+
+INSERT INTO pokemon_form_generations VALUES (2,1);
+
+INSERT INTO pokemon_form_generations VALUES (3,1);
+
+INSERT INTO pokemon_form_generations VALUES (4,1);
+
+INSERT INTO pokemon_form_generations VALUES (5,1);
+
+INSERT INTO pokemon_form_generations VALUES (6,1);
+
+INSERT INTO pokemon_form_generations VALUES (7,1);
+
+INSERT INTO pokemon_form_generations VALUES (8,1);
+
+INSERT INTO pokemon_form_generations VALUES (9,1);
+
+INSERT INTO pokemon_form_generations VALUES (10,1);
+
+INSERT INTO pokemon_form_generations VALUES (11,1);
+
+INSERT INTO pokemon_form_generations VALUES (12,1);
+
+INSERT INTO pokemon_form_generations VALUES (13,1);
+
+INSERT INTO pokemon_form_generations VALUES (14,1);
+
+INSERT INTO pokemon_form_generations VALUES (15,1);
+
+INSERT INTO pokemon_form_generations VALUES (16,1);
+
+INSERT INTO pokemon_form_generations VALUES (17,1);
+
+INSERT INTO pokemon_form_generations VALUES (18,1);
+
+INSERT INTO pokemon_form_generations VALUES (19,1);
+
+INSERT INTO pokemon_form_generations VALUES (20,1);
+
+INSERT INTO pokemon_form_generations VALUES (21,1);
+
+INSERT INTO pokemon_form_generations VALUES (22,1);
+
+INSERT INTO pokemon_form_generations VALUES (23,1);
+
+INSERT INTO pokemon_form_generations VALUES (24,1);
+
+INSERT INTO pokemon_form_generations VALUES (25,1);
+
+INSERT INTO pokemon_form_generations VALUES (26,1);
+
+INSERT INTO pokemon_form_generations VALUES (27,1);
+
+INSERT INTO pokemon_form_generations VALUES (28,1);
+
+INSERT INTO pokemon_form_generations VALUES (29,1);
+
+INSERT INTO pokemon_form_generations VALUES (30,1);
+
+INSERT INTO pokemon_form_generations VALUES (31,1);
+
+INSERT INTO pokemon_form_generations VALUES (32,1);
+
+INSERT INTO pokemon_form_generations VALUES (33,1);
+
+INSERT INTO pokemon_form_generations VALUES (34,1);
+
+INSERT INTO pokemon_form_generations VALUES (35,1);
+
+INSERT INTO pokemon_form_generations VALUES (36,1);
+
+INSERT INTO pokemon_form_generations VALUES (37,1);
+
+INSERT INTO pokemon_form_generations VALUES (38,1);
+
+INSERT INTO pokemon_form_generations VALUES (39,1);
+
+INSERT INTO pokemon_form_generations VALUES (40,1);
+
+INSERT INTO pokemon_form_generations VALUES (41,1);
+
+INSERT INTO pokemon_form_generations VALUES (42,1);
+
+INSERT INTO pokemon_form_generations VALUES (43,1);
+
+INSERT INTO pokemon_form_generations VALUES (44,1);
+
+INSERT INTO pokemon_form_generations VALUES (45,1);
+
+INSERT INTO pokemon_form_generations VALUES (46,1);
+
+INSERT INTO pokemon_form_generations VALUES (47,1);
+
+INSERT INTO pokemon_form_generations VALUES (48,1);
+
+INSERT INTO pokemon_form_generations VALUES (49,1);
+
+INSERT INTO pokemon_form_generations VALUES (50,1);
+
+INSERT INTO pokemon_form_generations VALUES (51,1);
+
+INSERT INTO pokemon_form_generations VALUES (52,1);
+
+INSERT INTO pokemon_form_generations VALUES (53,1);
+
+INSERT INTO pokemon_form_generations VALUES (54,1);
+
+INSERT INTO pokemon_form_generations VALUES (55,1);
+
+INSERT INTO pokemon_form_generations VALUES (56,1);
+
+INSERT INTO pokemon_form_generations VALUES (57,1);
+
+INSERT INTO pokemon_form_generations VALUES (58,1);
+
+INSERT INTO pokemon_form_generations VALUES (59,1);
+
+INSERT INTO pokemon_form_generations VALUES (60,1);
+
+INSERT INTO pokemon_form_generations VALUES (61,1);
+
+INSERT INTO pokemon_form_generations VALUES (62,1);
+
+INSERT INTO pokemon_form_generations VALUES (63,1);
+
+INSERT INTO pokemon_form_generations VALUES (64,1);
+
+INSERT INTO pokemon_form_generations VALUES (65,1);
+
+INSERT INTO pokemon_form_generations VALUES (66,1);
+
+INSERT INTO pokemon_form_generations VALUES (67,1);
+
+INSERT INTO pokemon_form_generations VALUES (68,1);
+
+INSERT INTO pokemon_form_generations VALUES (69,1);
+
+INSERT INTO pokemon_form_generations VALUES (70,1);
+
+INSERT INTO pokemon_form_generations VALUES (71,1);
+
+INSERT INTO pokemon_form_generations VALUES (72,1);
+
+INSERT INTO pokemon_form_generations VALUES (73,1);
+
+INSERT INTO pokemon_form_generations VALUES (74,1);
+
+INSERT INTO pokemon_form_generations VALUES (75,1);
+
+INSERT INTO pokemon_form_generations VALUES (76,1);
+
+INSERT INTO pokemon_form_generations VALUES (77,1);
+
+INSERT INTO pokemon_form_generations VALUES (78,1);
+
+INSERT INTO pokemon_form_generations VALUES (79,1);
+
+INSERT INTO pokemon_form_generations VALUES (80,1);
+
+INSERT INTO pokemon_form_generations VALUES (81,1);
+
+INSERT INTO pokemon_form_generations VALUES (82,1);
+
+INSERT INTO pokemon_form_generations VALUES (83,1);
+
+INSERT INTO pokemon_form_generations VALUES (84,1);
+
+INSERT INTO pokemon_form_generations VALUES (85,1);
+
+INSERT INTO pokemon_form_generations VALUES (86,1);
+
+INSERT INTO pokemon_form_generations VALUES (87,1);
+
+INSERT INTO pokemon_form_generations VALUES (88,1);
+
+INSERT INTO pokemon_form_generations VALUES (89,1);
+
+INSERT INTO pokemon_form_generations VALUES (90,1);
+
+INSERT INTO pokemon_form_generations VALUES (91,1);
+
+INSERT INTO pokemon_form_generations VALUES (92,1);
+
+INSERT INTO pokemon_form_generations VALUES (93,1);
+
+INSERT INTO pokemon_form_generations VALUES (94,1);
+
+INSERT INTO pokemon_form_generations VALUES (95,1);
+
+INSERT INTO pokemon_form_generations VALUES (96,1);
+
+INSERT INTO pokemon_form_generations VALUES (97,1);
+
+INSERT INTO pokemon_form_generations VALUES (98,1);
+
+INSERT INTO pokemon_form_generations VALUES (99,1);
+
+INSERT INTO pokemon_form_generations VALUES (100,1);
+
+INSERT INTO pokemon_form_generations VALUES (101,1);
+
+INSERT INTO pokemon_form_generations VALUES (102,1);
+
+INSERT INTO pokemon_form_generations VALUES (103,1);
+
+INSERT INTO pokemon_form_generations VALUES (104,1);
+
+INSERT INTO pokemon_form_generations VALUES (105,1);
+
+INSERT INTO pokemon_form_generations VALUES (106,1);
+
+INSERT INTO pokemon_form_generations VALUES (107,1);
+
+INSERT INTO pokemon_form_generations VALUES (108,1);
+
+INSERT INTO pokemon_form_generations VALUES (109,1);
+
+INSERT INTO pokemon_form_generations VALUES (110,1);
+
+INSERT INTO pokemon_form_generations VALUES (111,1);
+
+INSERT INTO pokemon_form_generations VALUES (112,1);
+
+INSERT INTO pokemon_form_generations VALUES (113,1);
+
+INSERT INTO pokemon_form_generations VALUES (114,1);
+
+INSERT INTO pokemon_form_generations VALUES (115,1);
+
+INSERT INTO pokemon_form_generations VALUES (116,1);
+
+INSERT INTO pokemon_form_generations VALUES (117,1);
+
+INSERT INTO pokemon_form_generations VALUES (118,1);
+
+INSERT INTO pokemon_form_generations VALUES (119,1);
+
+INSERT INTO pokemon_form_generations VALUES (120,1);
+
+INSERT INTO pokemon_form_generations VALUES (121,1);
+
+INSERT INTO pokemon_form_generations VALUES (122,1);
+
+INSERT INTO pokemon_form_generations VALUES (123,1);
+
+INSERT INTO pokemon_form_generations VALUES (124,1);
+
+INSERT INTO pokemon_form_generations VALUES (125,1);
+
+INSERT INTO pokemon_form_generations VALUES (126,1);
+
+INSERT INTO pokemon_form_generations VALUES (127,1);
+
+INSERT INTO pokemon_form_generations VALUES (128,1);
+
+INSERT INTO pokemon_form_generations VALUES (129,1);
+
+INSERT INTO pokemon_form_generations VALUES (130,1);
+
+INSERT INTO pokemon_form_generations VALUES (131,1);
+
+INSERT INTO pokemon_form_generations VALUES (132,1);
+
+INSERT INTO pokemon_form_generations VALUES (133,1);
+
+INSERT INTO pokemon_form_generations VALUES (134,1);
+
+INSERT INTO pokemon_form_generations VALUES (135,1);
+
+INSERT INTO pokemon_form_generations VALUES (136,1);
+
+INSERT INTO pokemon_form_generations VALUES (137,1);
+
+INSERT INTO pokemon_form_generations VALUES (138,1);
+
+INSERT INTO pokemon_form_generations VALUES (139,1);
+
+INSERT INTO pokemon_form_generations VALUES (140,1);
+
+INSERT INTO pokemon_form_generations VALUES (141,1);
+
+INSERT INTO pokemon_form_generations VALUES (142,1);
+
+INSERT INTO pokemon_form_generations VALUES (143,1);
+
+INSERT INTO pokemon_form_generations VALUES (144,1);
+
+INSERT INTO pokemon_form_generations VALUES (145,1);
+
+INSERT INTO pokemon_form_generations VALUES (146,1);
+
+INSERT INTO pokemon_form_generations VALUES (147,1);
+
+INSERT INTO pokemon_form_generations VALUES (148,1);
+
+INSERT INTO pokemon_form_generations VALUES (149,1);
+
+INSERT INTO pokemon_form_generations VALUES (150,1);
+
+INSERT INTO pokemon_form_generations VALUES (151,1);
+
+INSERT INTO pokemon_form_generations VALUES (152,2);
+
+INSERT INTO pokemon_form_generations VALUES (153,2);
+
+INSERT INTO pokemon_form_generations VALUES (154,2);
+
+INSERT INTO pokemon_form_generations VALUES (155,2);
+
+INSERT INTO pokemon_form_generations VALUES (156,2);
+
+INSERT INTO pokemon_form_generations VALUES (157,2);
+
+INSERT INTO pokemon_form_generations VALUES (158,2);
+
+INSERT INTO pokemon_form_generations VALUES (159,2);
+
+INSERT INTO pokemon_form_generations VALUES (160,2);
+
+INSERT INTO pokemon_form_generations VALUES (161,2);
+
+INSERT INTO pokemon_form_generations VALUES (162,2);
+
+INSERT INTO pokemon_form_generations VALUES (163,2);
+
+INSERT INTO pokemon_form_generations VALUES (164,2);
+
+INSERT INTO pokemon_form_generations VALUES (165,2);
+
+INSERT INTO pokemon_form_generations VALUES (166,2);
+
+INSERT INTO pokemon_form_generations VALUES (167,2);
+
+INSERT INTO pokemon_form_generations VALUES (168,2);
+
+INSERT INTO pokemon_form_generations VALUES (169,2);
+
+INSERT INTO pokemon_form_generations VALUES (170,2);
+
+INSERT INTO pokemon_form_generations VALUES (171,2);
+
+INSERT INTO pokemon_form_generations VALUES (172,2);
+
+INSERT INTO pokemon_form_generations VALUES (173,2);
+
+INSERT INTO pokemon_form_generations VALUES (174,2);
+
+INSERT INTO pokemon_form_generations VALUES (175,2);
+
+INSERT INTO pokemon_form_generations VALUES (176,2);
+
+INSERT INTO pokemon_form_generations VALUES (177,2);
+
+INSERT INTO pokemon_form_generations VALUES (178,2);
+
+INSERT INTO pokemon_form_generations VALUES (179,2);
+
+INSERT INTO pokemon_form_generations VALUES (180,2);
+
+INSERT INTO pokemon_form_generations VALUES (181,2);
+
+INSERT INTO pokemon_form_generations VALUES (182,2);
+
+INSERT INTO pokemon_form_generations VALUES (183,2);
+
+INSERT INTO pokemon_form_generations VALUES (184,2);
+
+INSERT INTO pokemon_form_generations VALUES (185,2);
+
+INSERT INTO pokemon_form_generations VALUES (186,2);
+
+INSERT INTO pokemon_form_generations VALUES (187,2);
+
+INSERT INTO pokemon_form_generations VALUES (188,2);
+
+INSERT INTO pokemon_form_generations VALUES (189,2);
+
+INSERT INTO pokemon_form_generations VALUES (190,2);
+
+INSERT INTO pokemon_form_generations VALUES (191,2);
+
+INSERT INTO pokemon_form_generations VALUES (192,2);
+
+INSERT INTO pokemon_form_generations VALUES (193,2);
+
+INSERT INTO pokemon_form_generations VALUES (194,2);
+
+INSERT INTO pokemon_form_generations VALUES (195,2);
+
+INSERT INTO pokemon_form_generations VALUES (196,2);
+
+INSERT INTO pokemon_form_generations VALUES (197,2);
+
+INSERT INTO pokemon_form_generations VALUES (198,2);
+
+INSERT INTO pokemon_form_generations VALUES (199,2);
+
+INSERT INTO pokemon_form_generations VALUES (200,2);
+
+INSERT INTO pokemon_form_generations VALUES (201,2);
+
+INSERT INTO pokemon_form_generations VALUES (202,2);
+
+INSERT INTO pokemon_form_generations VALUES (203,2);
+
+INSERT INTO pokemon_form_generations VALUES (204,2);
+
+INSERT INTO pokemon_form_generations VALUES (205,2);
+
+INSERT INTO pokemon_form_generations VALUES (206,2);
+
+INSERT INTO pokemon_form_generations VALUES (207,2);
+
+INSERT INTO pokemon_form_generations VALUES (208,2);
+
+INSERT INTO pokemon_form_generations VALUES (209,2);
+
+INSERT INTO pokemon_form_generations VALUES (210,2);
+
+INSERT INTO pokemon_form_generations VALUES (211,2);
+
+INSERT INTO pokemon_form_generations VALUES (212,2);
+
+INSERT INTO pokemon_form_generations VALUES (213,2);
+
+INSERT INTO pokemon_form_generations VALUES (214,2);
+
+INSERT INTO pokemon_form_generations VALUES (215,2);
+
+INSERT INTO pokemon_form_generations VALUES (216,2);
+
+INSERT INTO pokemon_form_generations VALUES (217,2);
+
+INSERT INTO pokemon_form_generations VALUES (218,2);
+
+INSERT INTO pokemon_form_generations VALUES (219,2);
+
+INSERT INTO pokemon_form_generations VALUES (220,2);
+
+INSERT INTO pokemon_form_generations VALUES (221,2);
+
+INSERT INTO pokemon_form_generations VALUES (222,2);
+
+INSERT INTO pokemon_form_generations VALUES (223,2);
+
+INSERT INTO pokemon_form_generations VALUES (224,2);
+
+INSERT INTO pokemon_form_generations VALUES (225,2);
+
+INSERT INTO pokemon_form_generations VALUES (226,2);
+
+INSERT INTO pokemon_form_generations VALUES (227,2);
+
+INSERT INTO pokemon_form_generations VALUES (228,2);
+
+INSERT INTO pokemon_form_generations VALUES (229,2);
+
+INSERT INTO pokemon_form_generations VALUES (230,2);
+
+INSERT INTO pokemon_form_generations VALUES (231,2);
+
+INSERT INTO pokemon_form_generations VALUES (232,2);
+
+INSERT INTO pokemon_form_generations VALUES (233,2);
+
+INSERT INTO pokemon_form_generations VALUES (234,2);
+
+INSERT INTO pokemon_form_generations VALUES (235,2);
+
+INSERT INTO pokemon_form_generations VALUES (236,2);
+
+INSERT INTO pokemon_form_generations VALUES (237,2);
+
+INSERT INTO pokemon_form_generations VALUES (238,2);
+
+INSERT INTO pokemon_form_generations VALUES (239,2);
+
+INSERT INTO pokemon_form_generations VALUES (240,2);
+
+INSERT INTO pokemon_form_generations VALUES (241,2);
+
+INSERT INTO pokemon_form_generations VALUES (242,2);
+
+INSERT INTO pokemon_form_generations VALUES (243,2);
+
+INSERT INTO pokemon_form_generations VALUES (244,2);
+
+INSERT INTO pokemon_form_generations VALUES (245,2);
+
+INSERT INTO pokemon_form_generations VALUES (246,2);
+
+INSERT INTO pokemon_form_generations VALUES (247,2);
+
+INSERT INTO pokemon_form_generations VALUES (248,2);
+
+INSERT INTO pokemon_form_generations VALUES (249,2);
+
+INSERT INTO pokemon_form_generations VALUES (250,2);
+
+INSERT INTO pokemon_form_generations VALUES (251,2);
+
+INSERT INTO pokemon_form_generations VALUES (252,3);
+
+INSERT INTO pokemon_form_generations VALUES (253,3);
+
+INSERT INTO pokemon_form_generations VALUES (254,3);
+
+INSERT INTO pokemon_form_generations VALUES (255,3);
+
+INSERT INTO pokemon_form_generations VALUES (256,3);
+
+INSERT INTO pokemon_form_generations VALUES (257,3);
+
+INSERT INTO pokemon_form_generations VALUES (258,3);
+
+INSERT INTO pokemon_form_generations VALUES (259,3);
+
+INSERT INTO pokemon_form_generations VALUES (260,3);
+
+INSERT INTO pokemon_form_generations VALUES (261,3);
+
+INSERT INTO pokemon_form_generations VALUES (262,3);
+
+INSERT INTO pokemon_form_generations VALUES (263,3);
+
+INSERT INTO pokemon_form_generations VALUES (264,3);
+
+INSERT INTO pokemon_form_generations VALUES (265,3);
+
+INSERT INTO pokemon_form_generations VALUES (266,3);
+
+INSERT INTO pokemon_form_generations VALUES (267,3);
+
+INSERT INTO pokemon_form_generations VALUES (268,3);
+
+INSERT INTO pokemon_form_generations VALUES (269,3);
+
+INSERT INTO pokemon_form_generations VALUES (270,3);
+
+INSERT INTO pokemon_form_generations VALUES (271,3);
+
+INSERT INTO pokemon_form_generations VALUES (272,3);
+
+INSERT INTO pokemon_form_generations VALUES (273,3);
+
+INSERT INTO pokemon_form_generations VALUES (274,3);
+
+INSERT INTO pokemon_form_generations VALUES (275,3);
+
+INSERT INTO pokemon_form_generations VALUES (276,3);
+
+INSERT INTO pokemon_form_generations VALUES (277,3);
+
+INSERT INTO pokemon_form_generations VALUES (278,3);
+
+INSERT INTO pokemon_form_generations VALUES (279,3);
+
+INSERT INTO pokemon_form_generations VALUES (280,3);
+
+INSERT INTO pokemon_form_generations VALUES (281,3);
+
+INSERT INTO pokemon_form_generations VALUES (282,3);
+
+INSERT INTO pokemon_form_generations VALUES (283,3);
+
+INSERT INTO pokemon_form_generations VALUES (284,3);
+
+INSERT INTO pokemon_form_generations VALUES (285,3);
+
+INSERT INTO pokemon_form_generations VALUES (286,3);
+
+INSERT INTO pokemon_form_generations VALUES (287,3);
+
+INSERT INTO pokemon_form_generations VALUES (288,3);
+
+INSERT INTO pokemon_form_generations VALUES (289,3);
+
+INSERT INTO pokemon_form_generations VALUES (290,3);
+
+INSERT INTO pokemon_form_generations VALUES (291,3);
+
+INSERT INTO pokemon_form_generations VALUES (292,3);
+
+INSERT INTO pokemon_form_generations VALUES (293,3);
+
+INSERT INTO pokemon_form_generations VALUES (294,3);
+
+INSERT INTO pokemon_form_generations VALUES (295,3);
+
+INSERT INTO pokemon_form_generations VALUES (296,3);
+
+INSERT INTO pokemon_form_generations VALUES (297,3);
+
+INSERT INTO pokemon_form_generations VALUES (298,3);
+
+INSERT INTO pokemon_form_generations VALUES (299,3);
+
+INSERT INTO pokemon_form_generations VALUES (300,3);
+
+INSERT INTO pokemon_form_generations VALUES (301,3);
+
+INSERT INTO pokemon_form_generations VALUES (302,3);
+
+INSERT INTO pokemon_form_generations VALUES (303,3);
+
+INSERT INTO pokemon_form_generations VALUES (304,3);
+
+INSERT INTO pokemon_form_generations VALUES (305,3);
+
+INSERT INTO pokemon_form_generations VALUES (306,3);
+
+INSERT INTO pokemon_form_generations VALUES (307,3);
+
+INSERT INTO pokemon_form_generations VALUES (308,3);
+
+INSERT INTO pokemon_form_generations VALUES (309,3);
+
+INSERT INTO pokemon_form_generations VALUES (310,3);
+
+INSERT INTO pokemon_form_generations VALUES (311,3);
+
+INSERT INTO pokemon_form_generations VALUES (312,3);
+
+INSERT INTO pokemon_form_generations VALUES (313,3);
+
+INSERT INTO pokemon_form_generations VALUES (314,3);
+
+INSERT INTO pokemon_form_generations VALUES (315,3);
+
+INSERT INTO pokemon_form_generations VALUES (316,3);
+
+INSERT INTO pokemon_form_generations VALUES (317,3);
+
+INSERT INTO pokemon_form_generations VALUES (318,3);
+
+INSERT INTO pokemon_form_generations VALUES (319,3);
+
+INSERT INTO pokemon_form_generations VALUES (320,3);
+
+INSERT INTO pokemon_form_generations VALUES (321,3);
+
+INSERT INTO pokemon_form_generations VALUES (322,3);
+
+INSERT INTO pokemon_form_generations VALUES (323,3);
+
+INSERT INTO pokemon_form_generations VALUES (324,3);
+
+INSERT INTO pokemon_form_generations VALUES (325,3);
+
+INSERT INTO pokemon_form_generations VALUES (326,3);
+
+INSERT INTO pokemon_form_generations VALUES (327,3);
+
+INSERT INTO pokemon_form_generations VALUES (328,3);
+
+INSERT INTO pokemon_form_generations VALUES (329,3);
+
+INSERT INTO pokemon_form_generations VALUES (330,3);
+
+INSERT INTO pokemon_form_generations VALUES (331,3);
+
+INSERT INTO pokemon_form_generations VALUES (332,3);
+
+INSERT INTO pokemon_form_generations VALUES (333,3);
+
+INSERT INTO pokemon_form_generations VALUES (334,3);
+
+INSERT INTO pokemon_form_generations VALUES (335,3);
+
+INSERT INTO pokemon_form_generations VALUES (336,3);
+
+INSERT INTO pokemon_form_generations VALUES (337,3);
+
+INSERT INTO pokemon_form_generations VALUES (338,3);
+
+INSERT INTO pokemon_form_generations VALUES (339,3);
+
+INSERT INTO pokemon_form_generations VALUES (340,3);
+
+INSERT INTO pokemon_form_generations VALUES (341,3);
+
+INSERT INTO pokemon_form_generations VALUES (342,3);
+
+INSERT INTO pokemon_form_generations VALUES (343,3);
+
+INSERT INTO pokemon_form_generations VALUES (344,3);
+
+INSERT INTO pokemon_form_generations VALUES (345,3);
+
+INSERT INTO pokemon_form_generations VALUES (346,3);
+
+INSERT INTO pokemon_form_generations VALUES (347,3);
+
+INSERT INTO pokemon_form_generations VALUES (348,3);
+
+INSERT INTO pokemon_form_generations VALUES (349,3);
+
+INSERT INTO pokemon_form_generations VALUES (350,3);
+
+INSERT INTO pokemon_form_generations VALUES (351,3);
+
+INSERT INTO pokemon_form_generations VALUES (352,3);
+
+INSERT INTO pokemon_form_generations VALUES (353,3);
+
+INSERT INTO pokemon_form_generations VALUES (354,3);
+
+INSERT INTO pokemon_form_generations VALUES (355,3);
+
+INSERT INTO pokemon_form_generations VALUES (356,3);
+
+INSERT INTO pokemon_form_generations VALUES (357,3);
+
+INSERT INTO pokemon_form_generations VALUES (358,3);
+
+INSERT INTO pokemon_form_generations VALUES (359,3);
+
+INSERT INTO pokemon_form_generations VALUES (360,3);
+
+INSERT INTO pokemon_form_generations VALUES (361,3);
+
+INSERT INTO pokemon_form_generations VALUES (362,3);
+
+INSERT INTO pokemon_form_generations VALUES (363,3);
+
+INSERT INTO pokemon_form_generations VALUES (364,3);
+
+INSERT INTO pokemon_form_generations VALUES (365,3);
+
+INSERT INTO pokemon_form_generations VALUES (366,3);
+
+INSERT INTO pokemon_form_generations VALUES (367,3);
+
+INSERT INTO pokemon_form_generations VALUES (368,3);
+
+INSERT INTO pokemon_form_generations VALUES (369,3);
+
+INSERT INTO pokemon_form_generations VALUES (370,3);
+
+INSERT INTO pokemon_form_generations VALUES (371,3);
+
+INSERT INTO pokemon_form_generations VALUES (372,3);
+
+INSERT INTO pokemon_form_generations VALUES (373,3);
+
+INSERT INTO pokemon_form_generations VALUES (374,3);
+
+INSERT INTO pokemon_form_generations VALUES (375,3);
+
+INSERT INTO pokemon_form_generations VALUES (376,3);
+
+INSERT INTO pokemon_form_generations VALUES (377,3);
+
+INSERT INTO pokemon_form_generations VALUES (378,3);
+
+INSERT INTO pokemon_form_generations VALUES (379,3);
+
+INSERT INTO pokemon_form_generations VALUES (380,3);
+
+INSERT INTO pokemon_form_generations VALUES (381,3);
+
+INSERT INTO pokemon_form_generations VALUES (382,3);
+
+INSERT INTO pokemon_form_generations VALUES (383,3);
+
+INSERT INTO pokemon_form_generations VALUES (384,3);
+
+INSERT INTO pokemon_form_generations VALUES (385,3);
+
+INSERT INTO pokemon_form_generations VALUES (386,3);
+
+INSERT INTO pokemon_form_generations VALUES (387,4);
+
+INSERT INTO pokemon_form_generations VALUES (388,4);
+
+INSERT INTO pokemon_form_generations VALUES (389,4);
+
+INSERT INTO pokemon_form_generations VALUES (390,4);
+
+INSERT INTO pokemon_form_generations VALUES (391,4);
+
+INSERT INTO pokemon_form_generations VALUES (392,4);
+
+INSERT INTO pokemon_form_generations VALUES (393,4);
+
+INSERT INTO pokemon_form_generations VALUES (394,4);
+
+INSERT INTO pokemon_form_generations VALUES (395,4);
+
+INSERT INTO pokemon_form_generations VALUES (396,4);
+
+INSERT INTO pokemon_form_generations VALUES (397,4);
+
+INSERT INTO pokemon_form_generations VALUES (398,4);
+
+INSERT INTO pokemon_form_generations VALUES (399,4);
+
+INSERT INTO pokemon_form_generations VALUES (400,4);
+
+INSERT INTO pokemon_form_generations VALUES (401,4);
+
+INSERT INTO pokemon_form_generations VALUES (402,4);
+
+INSERT INTO pokemon_form_generations VALUES (403,4);
+
+INSERT INTO pokemon_form_generations VALUES (404,4);
+
+INSERT INTO pokemon_form_generations VALUES (405,4);
+
+INSERT INTO pokemon_form_generations VALUES (406,4);
+
+INSERT INTO pokemon_form_generations VALUES (407,4);
+
+INSERT INTO pokemon_form_generations VALUES (408,4);
+
+INSERT INTO pokemon_form_generations VALUES (409,4);
+
+INSERT INTO pokemon_form_generations VALUES (410,4);
+
+INSERT INTO pokemon_form_generations VALUES (411,4);
+
+INSERT INTO pokemon_form_generations VALUES (412,4);
+
+INSERT INTO pokemon_form_generations VALUES (413,4);
+
+INSERT INTO pokemon_form_generations VALUES (414,4);
+
+INSERT INTO pokemon_form_generations VALUES (415,4);
+
+INSERT INTO pokemon_form_generations VALUES (416,4);
+
+INSERT INTO pokemon_form_generations VALUES (417,4);
+
+INSERT INTO pokemon_form_generations VALUES (418,4);
+
+INSERT INTO pokemon_form_generations VALUES (419,4);
+
+INSERT INTO pokemon_form_generations VALUES (420,4);
+
+INSERT INTO pokemon_form_generations VALUES (421,4);
+
+INSERT INTO pokemon_form_generations VALUES (422,4);
+
+INSERT INTO pokemon_form_generations VALUES (423,4);
+
+INSERT INTO pokemon_form_generations VALUES (424,4);
+
+INSERT INTO pokemon_form_generations VALUES (425,4);
+
+INSERT INTO pokemon_form_generations VALUES (426,4);
+
+INSERT INTO pokemon_form_generations VALUES (427,4);
+
+INSERT INTO pokemon_form_generations VALUES (428,4);
+
+INSERT INTO pokemon_form_generations VALUES (429,4);
+
+INSERT INTO pokemon_form_generations VALUES (430,4);
+
+INSERT INTO pokemon_form_generations VALUES (431,4);
+
+INSERT INTO pokemon_form_generations VALUES (432,4);
+
+INSERT INTO pokemon_form_generations VALUES (433,4);
+
+INSERT INTO pokemon_form_generations VALUES (434,4);
+
+INSERT INTO pokemon_form_generations VALUES (435,4);
+
+INSERT INTO pokemon_form_generations VALUES (436,4);
+
+INSERT INTO pokemon_form_generations VALUES (437,4);
+
+INSERT INTO pokemon_form_generations VALUES (438,4);
+
+INSERT INTO pokemon_form_generations VALUES (439,4);
+
+INSERT INTO pokemon_form_generations VALUES (440,4);
+
+INSERT INTO pokemon_form_generations VALUES (441,4);
+
+INSERT INTO pokemon_form_generations VALUES (442,4);
+
+INSERT INTO pokemon_form_generations VALUES (443,4);
+
+INSERT INTO pokemon_form_generations VALUES (444,4);
+
+INSERT INTO pokemon_form_generations VALUES (445,4);
+
+INSERT INTO pokemon_form_generations VALUES (446,4);
+
+INSERT INTO pokemon_form_generations VALUES (447,4);
+
+INSERT INTO pokemon_form_generations VALUES (448,4);
+
+INSERT INTO pokemon_form_generations VALUES (449,4);
+
+INSERT INTO pokemon_form_generations VALUES (450,4);
+
+INSERT INTO pokemon_form_generations VALUES (451,4);
+
+INSERT INTO pokemon_form_generations VALUES (452,4);
+
+INSERT INTO pokemon_form_generations VALUES (453,4);
+
+INSERT INTO pokemon_form_generations VALUES (454,4);
+
+INSERT INTO pokemon_form_generations VALUES (455,4);
+
+INSERT INTO pokemon_form_generations VALUES (456,4);
+
+INSERT INTO pokemon_form_generations VALUES (457,4);
+
+INSERT INTO pokemon_form_generations VALUES (458,4);
+
+INSERT INTO pokemon_form_generations VALUES (459,4);
+
+INSERT INTO pokemon_form_generations VALUES (460,4);
+
+INSERT INTO pokemon_form_generations VALUES (461,4);
+
+INSERT INTO pokemon_form_generations VALUES (462,4);
+
+INSERT INTO pokemon_form_generations VALUES (463,4);
+
+INSERT INTO pokemon_form_generations VALUES (464,4);
+
+INSERT INTO pokemon_form_generations VALUES (465,4);
+
+INSERT INTO pokemon_form_generations VALUES (466,4);
+
+INSERT INTO pokemon_form_generations VALUES (467,4);
+
+INSERT INTO pokemon_form_generations VALUES (468,4);
+
+INSERT INTO pokemon_form_generations VALUES (469,4);
+
+INSERT INTO pokemon_form_generations VALUES (470,4);
+
+INSERT INTO pokemon_form_generations VALUES (471,4);
+
+INSERT INTO pokemon_form_generations VALUES (472,4);
+
+INSERT INTO pokemon_form_generations VALUES (473,4);
+
+INSERT INTO pokemon_form_generations VALUES (474,4);
+
+INSERT INTO pokemon_form_generations VALUES (475,4);
+
+INSERT INTO pokemon_form_generations VALUES (476,4);
+
+INSERT INTO pokemon_form_generations VALUES (477,4);
+
+INSERT INTO pokemon_form_generations VALUES (478,4);
+
+INSERT INTO pokemon_form_generations VALUES (479,4);
+
+INSERT INTO pokemon_form_generations VALUES (480,4);
+
+INSERT INTO pokemon_form_generations VALUES (481,4);
+
+INSERT INTO pokemon_form_generations VALUES (482,4);
+
+INSERT INTO pokemon_form_generations VALUES (483,4);
+
+INSERT INTO pokemon_form_generations VALUES (484,4);
+
+INSERT INTO pokemon_form_generations VALUES (485,4);
+
+INSERT INTO pokemon_form_generations VALUES (486,4);
+
+INSERT INTO pokemon_form_generations VALUES (487,4);
+
+INSERT INTO pokemon_form_generations VALUES (488,4);
+
+INSERT INTO pokemon_form_generations VALUES (489,4);
+
+INSERT INTO pokemon_form_generations VALUES (490,4);
+
+INSERT INTO pokemon_form_generations VALUES (491,4);
+
+INSERT INTO pokemon_form_generations VALUES (492,4);
+
+INSERT INTO pokemon_form_generations VALUES (493,4);
+
+INSERT INTO pokemon_form_generations VALUES (494,5);
+
+INSERT INTO pokemon_form_generations VALUES (495,5);
+
+INSERT INTO pokemon_form_generations VALUES (496,5);
+
+INSERT INTO pokemon_form_generations VALUES (497,5);
+
+INSERT INTO pokemon_form_generations VALUES (498,5);
+
+INSERT INTO pokemon_form_generations VALUES (499,5);
+
+INSERT INTO pokemon_form_generations VALUES (500,5);
+
+INSERT INTO pokemon_form_generations VALUES (501,5);
+
+INSERT INTO pokemon_form_generations VALUES (502,5);
+
+INSERT INTO pokemon_form_generations VALUES (503,5);
+
+INSERT INTO pokemon_form_generations VALUES (504,5);
+
+INSERT INTO pokemon_form_generations VALUES (505,5);
+
+INSERT INTO pokemon_form_generations VALUES (506,5);
+
+INSERT INTO pokemon_form_generations VALUES (507,5);
+
+INSERT INTO pokemon_form_generations VALUES (508,5);
+
+INSERT INTO pokemon_form_generations VALUES (509,5);
+
+INSERT INTO pokemon_form_generations VALUES (510,5);
+
+INSERT INTO pokemon_form_generations VALUES (511,5);
+
+INSERT INTO pokemon_form_generations VALUES (512,5);
+
+INSERT INTO pokemon_form_generations VALUES (513,5);
+
+INSERT INTO pokemon_form_generations VALUES (514,5);
+
+INSERT INTO pokemon_form_generations VALUES (515,5);
+
+INSERT INTO pokemon_form_generations VALUES (516,5);
+
+INSERT INTO pokemon_form_generations VALUES (517,5);
+
+INSERT INTO pokemon_form_generations VALUES (518,5);
+
+INSERT INTO pokemon_form_generations VALUES (519,5);
+
+INSERT INTO pokemon_form_generations VALUES (520,5);
+
+INSERT INTO pokemon_form_generations VALUES (521,5);
+
+INSERT INTO pokemon_form_generations VALUES (522,5);
+
+INSERT INTO pokemon_form_generations VALUES (523,5);
+
+INSERT INTO pokemon_form_generations VALUES (524,5);
+
+INSERT INTO pokemon_form_generations VALUES (525,5);
+
+INSERT INTO pokemon_form_generations VALUES (526,5);
+
+INSERT INTO pokemon_form_generations VALUES (527,5);
+
+INSERT INTO pokemon_form_generations VALUES (528,5);
+
+INSERT INTO pokemon_form_generations VALUES (529,5);
+
+INSERT INTO pokemon_form_generations VALUES (530,5);
+
+INSERT INTO pokemon_form_generations VALUES (531,5);
+
+INSERT INTO pokemon_form_generations VALUES (532,5);
+
+INSERT INTO pokemon_form_generations VALUES (533,5);
+
+INSERT INTO pokemon_form_generations VALUES (534,5);
+
+INSERT INTO pokemon_form_generations VALUES (535,5);
+
+INSERT INTO pokemon_form_generations VALUES (536,5);
+
+INSERT INTO pokemon_form_generations VALUES (537,5);
+
+INSERT INTO pokemon_form_generations VALUES (538,5);
+
+INSERT INTO pokemon_form_generations VALUES (539,5);
+
+INSERT INTO pokemon_form_generations VALUES (540,5);
+
+INSERT INTO pokemon_form_generations VALUES (541,5);
+
+INSERT INTO pokemon_form_generations VALUES (542,5);
+
+INSERT INTO pokemon_form_generations VALUES (543,5);
+
+INSERT INTO pokemon_form_generations VALUES (544,5);
+
+INSERT INTO pokemon_form_generations VALUES (545,5);
+
+INSERT INTO pokemon_form_generations VALUES (546,5);
+
+INSERT INTO pokemon_form_generations VALUES (547,5);
+
+INSERT INTO pokemon_form_generations VALUES (548,5);
+
+INSERT INTO pokemon_form_generations VALUES (549,5);
+
+INSERT INTO pokemon_form_generations VALUES (550,5);
+
+INSERT INTO pokemon_form_generations VALUES (551,5);
+
+INSERT INTO pokemon_form_generations VALUES (552,5);
+
+INSERT INTO pokemon_form_generations VALUES (553,5);
+
+INSERT INTO pokemon_form_generations VALUES (554,5);
+
+INSERT INTO pokemon_form_generations VALUES (555,5);
+
+INSERT INTO pokemon_form_generations VALUES (556,5);
+
+INSERT INTO pokemon_form_generations VALUES (557,5);
+
+INSERT INTO pokemon_form_generations VALUES (558,5);
+
+INSERT INTO pokemon_form_generations VALUES (559,5);
+
+INSERT INTO pokemon_form_generations VALUES (560,5);
+
+INSERT INTO pokemon_form_generations VALUES (561,5);
+
+INSERT INTO pokemon_form_generations VALUES (562,5);
+
+INSERT INTO pokemon_form_generations VALUES (563,5);
+
+INSERT INTO pokemon_form_generations VALUES (564,5);
+
+INSERT INTO pokemon_form_generations VALUES (565,5);
+
+INSERT INTO pokemon_form_generations VALUES (566,5);
+
+INSERT INTO pokemon_form_generations VALUES (567,5);
+
+INSERT INTO pokemon_form_generations VALUES (568,5);
+
+INSERT INTO pokemon_form_generations VALUES (569,5);
+
+INSERT INTO pokemon_form_generations VALUES (570,5);
+
+INSERT INTO pokemon_form_generations VALUES (571,5);
+
+INSERT INTO pokemon_form_generations VALUES (572,5);
+
+INSERT INTO pokemon_form_generations VALUES (573,5);
+
+INSERT INTO pokemon_form_generations VALUES (574,5);
+
+INSERT INTO pokemon_form_generations VALUES (575,5);
+
+INSERT INTO pokemon_form_generations VALUES (576,5);
+
+INSERT INTO pokemon_form_generations VALUES (577,5);
+
+INSERT INTO pokemon_form_generations VALUES (578,5);
+
+INSERT INTO pokemon_form_generations VALUES (579,5);
+
+INSERT INTO pokemon_form_generations VALUES (580,5);
+
+INSERT INTO pokemon_form_generations VALUES (581,5);
+
+INSERT INTO pokemon_form_generations VALUES (582,5);
+
+INSERT INTO pokemon_form_generations VALUES (583,5);
+
+INSERT INTO pokemon_form_generations VALUES (584,5);
+
+INSERT INTO pokemon_form_generations VALUES (585,5);
+
+INSERT INTO pokemon_form_generations VALUES (586,5);
+
+INSERT INTO pokemon_form_generations VALUES (587,5);
+
+INSERT INTO pokemon_form_generations VALUES (588,5);
+
+INSERT INTO pokemon_form_generations VALUES (589,5);
+
+INSERT INTO pokemon_form_generations VALUES (590,5);
+
+INSERT INTO pokemon_form_generations VALUES (591,5);
+
+INSERT INTO pokemon_form_generations VALUES (592,5);
+
+INSERT INTO pokemon_form_generations VALUES (593,5);
+
+INSERT INTO pokemon_form_generations VALUES (594,5);
+
+INSERT INTO pokemon_form_generations VALUES (595,5);
+
+INSERT INTO pokemon_form_generations VALUES (596,5);
+
+INSERT INTO pokemon_form_generations VALUES (597,5);
+
+INSERT INTO pokemon_form_generations VALUES (598,5);
+
+INSERT INTO pokemon_form_generations VALUES (599,5);
+
+INSERT INTO pokemon_form_generations VALUES (600,5);
+
+INSERT INTO pokemon_form_generations VALUES (601,5);
+
+INSERT INTO pokemon_form_generations VALUES (602,5);
+
+INSERT INTO pokemon_form_generations VALUES (603,5);
+
+INSERT INTO pokemon_form_generations VALUES (604,5);
+
+INSERT INTO pokemon_form_generations VALUES (605,5);
+
+INSERT INTO pokemon_form_generations VALUES (606,5);
+
+INSERT INTO pokemon_form_generations VALUES (607,5);
+
+INSERT INTO pokemon_form_generations VALUES (608,5);
+
+INSERT INTO pokemon_form_generations VALUES (609,5);
+
+INSERT INTO pokemon_form_generations VALUES (610,5);
+
+INSERT INTO pokemon_form_generations VALUES (611,5);
+
+INSERT INTO pokemon_form_generations VALUES (612,5);
+
+INSERT INTO pokemon_form_generations VALUES (613,5);
+
+INSERT INTO pokemon_form_generations VALUES (614,5);
+
+INSERT INTO pokemon_form_generations VALUES (615,5);
+
+INSERT INTO pokemon_form_generations VALUES (616,5);
+
+INSERT INTO pokemon_form_generations VALUES (617,5);
+
+INSERT INTO pokemon_form_generations VALUES (618,5);
+
+INSERT INTO pokemon_form_generations VALUES (619,5);
+
+INSERT INTO pokemon_form_generations VALUES (620,5);
+
+INSERT INTO pokemon_form_generations VALUES (621,5);
+
+INSERT INTO pokemon_form_generations VALUES (622,5);
+
+INSERT INTO pokemon_form_generations VALUES (623,5);
+
+INSERT INTO pokemon_form_generations VALUES (624,5);
+
+INSERT INTO pokemon_form_generations VALUES (625,5);
+
+INSERT INTO pokemon_form_generations VALUES (626,5);
+
+INSERT INTO pokemon_form_generations VALUES (627,5);
+
+INSERT INTO pokemon_form_generations VALUES (628,5);
+
+INSERT INTO pokemon_form_generations VALUES (629,5);
+
+INSERT INTO pokemon_form_generations VALUES (630,5);
+
+INSERT INTO pokemon_form_generations VALUES (631,5);
+
+INSERT INTO pokemon_form_generations VALUES (632,5);
+
+INSERT INTO pokemon_form_generations VALUES (633,5);
+
+INSERT INTO pokemon_form_generations VALUES (634,5);
+
+INSERT INTO pokemon_form_generations VALUES (635,5);
+
+INSERT INTO pokemon_form_generations VALUES (636,5);
+
+INSERT INTO pokemon_form_generations VALUES (637,5);
+
+INSERT INTO pokemon_form_generations VALUES (638,5);
+
+INSERT INTO pokemon_form_generations VALUES (639,5);
+
+INSERT INTO pokemon_form_generations VALUES (640,5);
+
+INSERT INTO pokemon_form_generations VALUES (641,5);
+
+INSERT INTO pokemon_form_generations VALUES (642,5);
+
+INSERT INTO pokemon_form_generations VALUES (643,5);
+
+INSERT INTO pokemon_form_generations VALUES (644,5);
+
+INSERT INTO pokemon_form_generations VALUES (645,5);
+
+INSERT INTO pokemon_form_generations VALUES (646,5);
+
+INSERT INTO pokemon_form_generations VALUES (647,5);
+
+INSERT INTO pokemon_form_generations VALUES (648,5);
+
+INSERT INTO pokemon_form_generations VALUES (649,5);
+
+INSERT INTO pokemon_form_generations VALUES (650,6);
+
+INSERT INTO pokemon_form_generations VALUES (651,6);
+
+INSERT INTO pokemon_form_generations VALUES (652,6);
+
+INSERT INTO pokemon_form_generations VALUES (653,6);
+
+INSERT INTO pokemon_form_generations VALUES (654,6);
+
+INSERT INTO pokemon_form_generations VALUES (655,6);
+
+INSERT INTO pokemon_form_generations VALUES (656,6);
+
+INSERT INTO pokemon_form_generations VALUES (657,6);
+
+INSERT INTO pokemon_form_generations VALUES (658,6);
+
+INSERT INTO pokemon_form_generations VALUES (659,6);
+
+INSERT INTO pokemon_form_generations VALUES (660,6);
+
+INSERT INTO pokemon_form_generations VALUES (661,6);
+
+INSERT INTO pokemon_form_generations VALUES (662,6);
+
+INSERT INTO pokemon_form_generations VALUES (663,6);
+
+INSERT INTO pokemon_form_generations VALUES (664,6);
+
+INSERT INTO pokemon_form_generations VALUES (665,6);
+
+INSERT INTO pokemon_form_generations VALUES (666,6);
+
+INSERT INTO pokemon_form_generations VALUES (667,6);
+
+INSERT INTO pokemon_form_generations VALUES (668,6);
+
+INSERT INTO pokemon_form_generations VALUES (669,6);
+
+INSERT INTO pokemon_form_generations VALUES (670,6);
+
+INSERT INTO pokemon_form_generations VALUES (671,6);
+
+INSERT INTO pokemon_form_generations VALUES (672,6);
+
+INSERT INTO pokemon_form_generations VALUES (673,6);
+
+INSERT INTO pokemon_form_generations VALUES (674,6);
+
+INSERT INTO pokemon_form_generations VALUES (675,6);
+
+INSERT INTO pokemon_form_generations VALUES (676,6);
+
+INSERT INTO pokemon_form_generations VALUES (677,6);
+
+INSERT INTO pokemon_form_generations VALUES (678,6);
+
+INSERT INTO pokemon_form_generations VALUES (679,6);
+
+INSERT INTO pokemon_form_generations VALUES (680,6);
+
+INSERT INTO pokemon_form_generations VALUES (681,6);
+
+INSERT INTO pokemon_form_generations VALUES (682,6);
+
+INSERT INTO pokemon_form_generations VALUES (683,6);
+
+INSERT INTO pokemon_form_generations VALUES (684,6);
+
+INSERT INTO pokemon_form_generations VALUES (685,6);
+
+INSERT INTO pokemon_form_generations VALUES (686,6);
+
+INSERT INTO pokemon_form_generations VALUES (687,6);
+
+INSERT INTO pokemon_form_generations VALUES (688,6);
+
+INSERT INTO pokemon_form_generations VALUES (689,6);
+
+INSERT INTO pokemon_form_generations VALUES (690,6);
+
+INSERT INTO pokemon_form_generations VALUES (691,6);
+
+INSERT INTO pokemon_form_generations VALUES (692,6);
+
+INSERT INTO pokemon_form_generations VALUES (693,6);
+
+INSERT INTO pokemon_form_generations VALUES (694,6);
+
+INSERT INTO pokemon_form_generations VALUES (695,6);
+
+INSERT INTO pokemon_form_generations VALUES (696,6);
+
+INSERT INTO pokemon_form_generations VALUES (697,6);
+
+INSERT INTO pokemon_form_generations VALUES (698,6);
+
+INSERT INTO pokemon_form_generations VALUES (699,6);
+
+INSERT INTO pokemon_form_generations VALUES (700,6);
+
+INSERT INTO pokemon_form_generations VALUES (701,6);
+
+INSERT INTO pokemon_form_generations VALUES (702,6);
+
+INSERT INTO pokemon_form_generations VALUES (703,6);
+
+INSERT INTO pokemon_form_generations VALUES (704,6);
+
+INSERT INTO pokemon_form_generations VALUES (705,6);
+
+INSERT INTO pokemon_form_generations VALUES (706,6);
+
+INSERT INTO pokemon_form_generations VALUES (707,6);
+
+INSERT INTO pokemon_form_generations VALUES (708,6);
+
+INSERT INTO pokemon_form_generations VALUES (709,6);
+
+INSERT INTO pokemon_form_generations VALUES (710,6);
+
+INSERT INTO pokemon_form_generations VALUES (711,6);
+
+INSERT INTO pokemon_form_generations VALUES (712,6);
+
+INSERT INTO pokemon_form_generations VALUES (713,6);
+
+INSERT INTO pokemon_form_generations VALUES (714,6);
+
+INSERT INTO pokemon_form_generations VALUES (715,6);
+
+INSERT INTO pokemon_form_generations VALUES (716,6);
+
+INSERT INTO pokemon_form_generations VALUES (717,6);
+
+INSERT INTO pokemon_form_generations VALUES (718,6);
+
+DROP TABLE pokemon_moves;
+
+CREATE TABLE pokemon_moves {
+	pokemon_id INT NOT NULL,
+	move_id INT NOT NULL,
+	pokemon_move_method_id INT NOT NULL,
+	required_level INT NOT NULL
+};
+DROP TABLE pokemon_species;
+
+CREATE TABLE pokemon_species (
+    id INT NOT NULL,
+    identifier VARCHAR(11) CHARACTER SET utf8 NOT NULL,
+    generation_id INT NOT NULL,
+    evolves_from_species_id,
+    evolution_chain_id INT NOT NULL,
+    color_id INT NOT NULL,
+    shape_id INT NOT NULL,
+    habitat_id INT NOT NULL,
+    gender_rate INT NOT NULL,
+    capture_rate INT NOT NULL,
+    base_happiness INT NOT NULL,
+    is_baby INT NOT NULL,
+    hatch_counter INT NOT NULL,
+    has_gender_differences INT NOT NULL,
+    growth_rate_id INT NOT NULL
+);
+INSERT INTO pokemon_species VALUES (1,'bulbasaur',1,NULL,1,5,8,3,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (2,'ivysaur',1,1,1,5,8,3,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (3,'venusaur',1,2,1,5,8,3,1,45,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (4,'charmander',1,NULL,2,8,6,4,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (5,'charmeleon',1,4,2,8,6,4,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (6,'charizard',1,5,2,8,6,4,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (7,'squirtle',1,NULL,3,2,6,9,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (8,'wartortle',1,7,3,2,6,9,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (9,'blastoise',1,8,3,2,6,9,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (10,'caterpie',1,NULL,4,5,2,2,4,255,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (11,'metapod',1,10,4,5,2,2,4,120,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (12,'butterfree',1,11,4,9,13,2,4,45,70,0,15,1,2);
+INSERT INTO pokemon_species VALUES (13,'weedle',1,NULL,5,3,2,2,4,255,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (14,'kakuna',1,13,5,10,2,2,4,120,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (15,'beedrill',1,14,5,10,13,2,4,45,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (16,'pidgey',1,NULL,6,3,9,2,4,255,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (17,'pidgeotto',1,16,6,3,9,2,4,120,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (18,'pidgeot',1,17,6,3,9,2,4,45,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (19,'rattata',1,NULL,7,7,8,3,4,255,70,0,15,1,2);
+INSERT INTO pokemon_species VALUES (20,'raticate',1,19,7,3,8,3,4,127,70,0,15,1,2);
+INSERT INTO pokemon_species VALUES (21,'spearow',1,NULL,8,3,9,6,4,255,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (22,'fearow',1,21,8,3,9,6,4,90,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (23,'ekans',1,NULL,9,7,2,3,4,255,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (24,'arbok',1,23,9,7,2,3,4,90,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (25,'pikachu',1,172,10,10,8,2,4,190,70,0,10,1,2);
+INSERT INTO pokemon_species VALUES (26,'raichu',1,25,10,10,6,2,4,75,70,0,10,1,2);
+INSERT INTO pokemon_species VALUES (27,'sandshrew',1,NULL,11,10,6,6,4,255,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (28,'sandslash',1,27,11,10,6,6,4,90,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (29,'nidoran-f',1,NULL,12,2,8,3,8,235,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (30,'nidorina',1,29,12,2,8,3,8,120,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (31,'nidoqueen',1,30,12,2,6,3,8,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (32,'nidoran-m',1,NULL,13,7,8,3,0,235,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (33,'nidorino',1,32,13,7,8,3,0,120,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (34,'nidoking',1,33,13,7,6,3,0,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (35,'clefairy',1,173,14,6,6,4,6,150,140,0,10,0,3);
+INSERT INTO pokemon_species VALUES (36,'clefable',1,35,14,6,6,4,6,25,140,0,10,0,3);
+INSERT INTO pokemon_species VALUES (37,'vulpix',1,NULL,15,3,8,3,6,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (38,'ninetales',1,37,15,10,8,3,6,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (39,'jigglypuff',1,174,16,6,12,3,6,170,70,0,10,0,3);
+INSERT INTO pokemon_species VALUES (40,'wigglytuff',1,39,16,6,12,3,6,50,70,0,10,0,3);
+INSERT INTO pokemon_species VALUES (41,'zubat',1,NULL,17,7,9,1,4,255,70,0,15,1,2);
+INSERT INTO pokemon_species VALUES (42,'golbat',1,41,17,7,9,1,4,90,70,0,15,1,2);
+INSERT INTO pokemon_species VALUES (43,'oddish',1,NULL,18,2,7,3,4,255,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (44,'gloom',1,43,18,2,12,3,4,120,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (45,'vileplume',1,44,18,8,12,3,4,45,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (46,'paras',1,NULL,19,8,14,2,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (47,'parasect',1,46,19,8,14,2,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (48,'venonat',1,NULL,20,7,12,2,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (49,'venomoth',1,48,20,7,13,2,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (50,'diglett',1,NULL,21,3,5,1,4,255,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (51,'dugtrio',1,50,21,3,11,1,4,50,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (52,'meowth',1,NULL,22,10,8,8,4,255,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (53,'persian',1,52,22,10,8,8,4,90,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (54,'psyduck',1,NULL,23,10,6,9,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (55,'golduck',1,54,23,2,6,9,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (56,'mankey',1,NULL,24,3,6,4,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (57,'primeape',1,56,24,3,6,4,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (58,'growlithe',1,NULL,25,3,8,3,2,190,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (59,'arcanine',1,58,25,3,8,3,2,75,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (60,'poliwag',1,NULL,26,2,7,9,4,255,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (61,'poliwhirl',1,60,26,2,12,9,4,120,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (62,'poliwrath',1,61,26,2,12,9,4,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (63,'abra',1,NULL,27,3,6,8,2,200,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (64,'kadabra',1,63,27,3,6,8,2,100,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (65,'alakazam',1,64,27,3,12,8,2,50,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (66,'machop',1,NULL,28,4,6,4,2,180,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (67,'machoke',1,66,28,4,12,4,2,90,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (68,'machamp',1,67,28,4,12,4,2,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (69,'bellsprout',1,NULL,29,5,12,2,4,255,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (70,'weepinbell',1,69,29,5,5,2,4,120,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (71,'victreebel',1,70,29,5,5,2,4,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (72,'tentacool',1,NULL,30,2,10,7,4,190,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (73,'tentacruel',1,72,30,2,10,7,4,60,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (74,'geodude',1,NULL,31,3,4,4,4,255,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (75,'graveler',1,74,31,3,12,4,4,120,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (76,'golem',1,75,31,3,12,4,4,45,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (77,'ponyta',1,NULL,32,10,8,3,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (78,'rapidash',1,77,32,10,8,3,4,60,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (79,'slowpoke',1,NULL,33,6,8,9,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (80,'slowbro',1,79,33,6,6,9,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (81,'magnemite',1,NULL,34,4,4,6,-1,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (82,'magneton',1,81,34,4,11,6,-1,60,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (83,'farfetchd',1,NULL,35,3,9,3,4,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (84,'doduo',1,NULL,36,3,7,3,4,190,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (85,'dodrio',1,84,36,3,7,3,4,45,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (86,'seel',1,NULL,37,9,3,7,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (87,'dewgong',1,86,37,9,3,7,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (88,'grimer',1,NULL,38,7,4,8,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (89,'muk',1,88,38,7,4,8,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (90,'shellder',1,NULL,39,7,1,7,4,190,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (91,'cloyster',1,90,39,7,1,7,4,60,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (92,'gastly',1,NULL,40,7,1,1,4,190,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (93,'haunter',1,92,40,7,4,1,4,90,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (94,'gengar',1,93,40,7,6,1,4,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (95,'onix',1,NULL,41,4,2,1,4,45,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (96,'drowzee',1,NULL,42,10,12,3,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (97,'hypno',1,96,42,10,12,3,4,75,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (98,'krabby',1,NULL,43,8,14,9,4,225,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (99,'kingler',1,98,43,8,14,9,4,60,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (100,'voltorb',1,NULL,44,8,1,8,-1,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (101,'electrode',1,100,44,8,1,8,-1,60,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (102,'exeggcute',1,NULL,45,6,11,2,4,90,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (103,'exeggutor',1,102,45,10,7,2,4,45,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (104,'cubone',1,NULL,46,3,6,4,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (105,'marowak',1,104,46,3,6,4,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (106,'hitmonlee',1,236,47,3,12,8,0,45,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (107,'hitmonchan',1,236,47,3,12,8,0,45,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (108,'lickitung',1,NULL,48,6,6,3,4,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (109,'koffing',1,NULL,49,7,1,8,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (110,'weezing',1,109,49,7,11,8,4,60,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (111,'rhyhorn',1,NULL,50,4,8,6,4,120,70,0,20,1,1);
+INSERT INTO pokemon_species VALUES (112,'rhydon',1,111,50,4,6,6,4,60,70,0,20,1,1);
+INSERT INTO pokemon_species VALUES (113,'chansey',1,440,51,6,6,8,8,30,140,0,40,0,3);
+INSERT INTO pokemon_species VALUES (114,'tangela',1,NULL,52,2,7,3,4,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (115,'kangaskhan',1,NULL,53,3,6,3,8,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (116,'horsea',1,NULL,54,2,5,7,4,225,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (117,'seadra',1,116,54,2,5,7,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (118,'goldeen',1,NULL,55,8,3,9,4,225,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (119,'seaking',1,118,55,8,3,9,4,60,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (120,'staryu',1,NULL,56,3,5,7,-1,225,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (121,'starmie',1,120,56,7,5,7,-1,60,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (122,'mr-mime',1,439,57,6,12,8,4,45,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (123,'scyther',1,NULL,58,5,13,3,4,45,70,0,25,1,2);
+INSERT INTO pokemon_species VALUES (124,'jynx',1,238,59,8,12,8,8,45,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (125,'electabuzz',1,239,60,10,6,3,2,45,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (126,'magmar',1,240,61,8,6,4,2,45,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (127,'pinsir',1,NULL,62,3,12,2,4,45,70,0,25,0,1);
+INSERT INTO pokemon_species VALUES (128,'tauros',1,NULL,63,3,8,3,0,45,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (129,'magikarp',1,NULL,64,8,3,9,4,255,70,0,5,1,1);
+INSERT INTO pokemon_species VALUES (130,'gyarados',1,129,64,2,2,9,4,45,70,0,5,1,1);
+INSERT INTO pokemon_species VALUES (131,'lapras',1,NULL,65,2,3,7,4,45,70,0,40,0,1);
+INSERT INTO pokemon_species VALUES (132,'ditto',1,NULL,66,7,1,8,-1,35,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (133,'eevee',1,NULL,67,3,8,8,1,45,70,0,35,0,2);
+INSERT INTO pokemon_species VALUES (134,'vaporeon',1,133,67,2,8,8,1,45,70,0,35,0,2);
+INSERT INTO pokemon_species VALUES (135,'jolteon',1,133,67,10,8,8,1,45,70,0,35,0,2);
+INSERT INTO pokemon_species VALUES (136,'flareon',1,133,67,8,8,8,1,45,70,0,35,0,2);
+INSERT INTO pokemon_species VALUES (137,'porygon',1,NULL,68,6,7,8,-1,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (138,'omanyte',1,NULL,69,2,10,7,1,45,70,0,30,0,2);
+INSERT INTO pokemon_species VALUES (139,'omastar',1,138,69,2,10,7,1,45,70,0,30,0,2);
+INSERT INTO pokemon_species VALUES (140,'kabuto',1,NULL,70,3,14,7,1,45,70,0,30,0,2);
+INSERT INTO pokemon_species VALUES (141,'kabutops',1,140,70,3,6,7,1,45,70,0,30,0,2);
+INSERT INTO pokemon_species VALUES (142,'aerodactyl',1,NULL,71,7,9,4,1,45,70,0,35,0,1);
+INSERT INTO pokemon_species VALUES (143,'snorlax',1,446,72,1,12,4,1,25,70,0,40,0,1);
+INSERT INTO pokemon_species VALUES (144,'articuno',1,NULL,73,2,9,5,-1,3,35,0,80,0,1);
+INSERT INTO pokemon_species VALUES (145,'zapdos',1,NULL,74,10,9,5,-1,3,35,0,80,0,1);
+INSERT INTO pokemon_species VALUES (146,'moltres',1,NULL,75,10,9,5,-1,3,35,0,80,0,1);
+INSERT INTO pokemon_species VALUES (147,'dratini',1,NULL,76,2,2,9,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (148,'dragonair',1,147,76,2,2,9,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (149,'dragonite',1,148,76,3,6,9,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (150,'mewtwo',1,NULL,77,7,6,5,-1,3,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (151,'mew',1,NULL,78,6,6,5,-1,45,100,0,120,0,4);
+INSERT INTO pokemon_species VALUES (152,'chikorita',2,NULL,79,5,8,3,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (153,'bayleef',2,152,79,5,8,3,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (154,'meganium',2,153,79,5,8,3,1,45,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (155,'cyndaquil',2,NULL,80,10,12,3,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (156,'quilava',2,155,80,10,8,3,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (157,'typhlosion',2,156,80,10,8,3,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (158,'totodile',2,NULL,81,2,6,9,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (159,'croconaw',2,158,81,2,6,9,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (160,'feraligatr',2,159,81,2,6,9,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (161,'sentret',2,NULL,82,3,8,3,4,255,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (162,'furret',2,161,82,3,8,3,4,90,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (163,'hoothoot',2,NULL,83,3,9,2,4,255,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (164,'noctowl',2,163,83,3,9,2,4,90,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (165,'ledyba',2,NULL,84,8,9,2,4,255,70,0,15,1,3);
+INSERT INTO pokemon_species VALUES (166,'ledian',2,165,84,8,9,2,4,90,70,0,15,1,3);
+INSERT INTO pokemon_species VALUES (167,'spinarak',2,NULL,85,5,14,2,4,255,70,0,15,0,3);
+INSERT INTO pokemon_species VALUES (168,'ariados',2,167,85,8,14,2,4,90,70,0,15,0,3);
+INSERT INTO pokemon_species VALUES (169,'crobat',2,42,17,7,13,1,4,90,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (170,'chinchou',2,NULL,86,2,3,7,4,190,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (171,'lanturn',2,170,86,2,3,7,4,75,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (172,'pichu',2,NULL,10,10,8,2,4,190,70,1,10,0,2);
+INSERT INTO pokemon_species VALUES (173,'cleffa',2,NULL,14,6,6,4,6,150,140,1,10,0,3);
+INSERT INTO pokemon_species VALUES (174,'igglybuff',2,NULL,16,6,12,3,6,170,70,1,10,0,3);
+INSERT INTO pokemon_species VALUES (175,'togepi',2,NULL,87,9,12,2,1,190,70,1,10,0,3);
+INSERT INTO pokemon_species VALUES (176,'togetic',2,175,87,9,12,2,1,75,70,0,10,0,3);
+INSERT INTO pokemon_species VALUES (177,'natu',2,NULL,88,5,9,2,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (178,'xatu',2,177,88,5,9,2,4,75,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (179,'mareep',2,NULL,89,9,8,3,4,235,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (180,'flaaffy',2,179,89,6,6,3,4,120,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (181,'ampharos',2,180,89,10,6,3,4,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (182,'bellossom',2,44,18,5,12,3,4,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (183,'marill',2,298,90,2,6,9,4,190,70,0,10,0,3);
+INSERT INTO pokemon_species VALUES (184,'azumarill',2,183,90,2,6,9,4,75,70,0,10,0,3);
+INSERT INTO pokemon_species VALUES (185,'sudowoodo',2,438,91,3,12,2,4,65,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (186,'politoed',2,61,26,5,12,9,4,45,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (187,'hoppip',2,NULL,92,6,6,3,4,255,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (188,'skiploom',2,187,92,5,6,3,4,120,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (189,'jumpluff',2,188,92,2,6,3,4,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (190,'aipom',2,NULL,93,7,6,2,4,45,70,0,20,1,3);
+INSERT INTO pokemon_species VALUES (191,'sunkern',2,NULL,94,10,1,3,4,235,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (192,'sunflora',2,191,94,10,12,3,4,120,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (193,'yanma',2,NULL,95,8,13,2,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (194,'wooper',2,NULL,96,2,7,9,4,255,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (195,'quagsire',2,194,96,2,6,9,4,90,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (196,'espeon',2,133,67,7,8,8,1,45,70,0,35,0,2);
+INSERT INTO pokemon_species VALUES (197,'umbreon',2,133,67,1,8,8,1,45,35,0,35,0,2);
+INSERT INTO pokemon_species VALUES (198,'murkrow',2,NULL,97,1,9,2,4,30,35,0,20,1,4);
+INSERT INTO pokemon_species VALUES (199,'slowking',2,79,33,6,6,9,4,70,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (200,'misdreavus',2,NULL,98,4,1,1,4,45,35,0,25,0,3);
+INSERT INTO pokemon_species VALUES (201,'unown',2,NULL,99,1,1,5,-1,225,70,0,40,0,2);
+INSERT INTO pokemon_species VALUES (202,'wobbuffet',2,360,100,2,5,1,4,45,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (203,'girafarig',2,NULL,101,10,8,3,4,60,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (204,'pineco',2,NULL,102,4,1,2,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (205,'forretress',2,204,102,7,1,2,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (206,'dunsparce',2,NULL,103,10,2,1,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (207,'gligar',2,NULL,104,7,9,4,4,60,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (208,'steelix',2,95,41,4,2,1,4,25,70,0,25,1,2);
+INSERT INTO pokemon_species VALUES (209,'snubbull',2,NULL,105,6,12,8,6,190,70,0,20,0,3);
+INSERT INTO pokemon_species VALUES (210,'granbull',2,209,105,7,6,8,6,75,70,0,20,0,3);
+INSERT INTO pokemon_species VALUES (211,'qwilfish',2,NULL,106,4,3,7,4,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (212,'scizor',2,123,58,8,13,3,4,25,70,0,25,1,2);
+INSERT INTO pokemon_species VALUES (213,'shuckle',2,NULL,107,10,14,4,4,190,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (214,'heracross',2,NULL,108,2,12,2,4,45,70,0,25,1,1);
+INSERT INTO pokemon_species VALUES (215,'sneasel',2,NULL,109,1,6,2,4,60,35,0,20,1,4);
+INSERT INTO pokemon_species VALUES (216,'teddiursa',2,NULL,110,3,6,4,4,120,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (217,'ursaring',2,216,110,3,6,4,4,60,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (218,'slugma',2,NULL,111,8,2,4,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (219,'magcargo',2,218,111,8,2,4,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (220,'swinub',2,NULL,112,3,8,1,4,225,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (221,'piloswine',2,220,112,3,8,1,4,75,70,0,20,1,1);
+INSERT INTO pokemon_species VALUES (222,'corsola',2,NULL,113,6,14,7,6,60,70,0,20,0,3);
+INSERT INTO pokemon_species VALUES (223,'remoraid',2,NULL,114,4,3,7,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (224,'octillery',2,223,114,8,10,7,4,75,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (225,'delibird',2,NULL,115,8,9,4,4,45,70,0,20,0,3);
+INSERT INTO pokemon_species VALUES (226,'mantine',2,458,116,7,9,7,4,25,70,0,25,0,1);
+INSERT INTO pokemon_species VALUES (227,'skarmory',2,NULL,117,4,9,6,4,25,70,0,25,0,1);
+INSERT INTO pokemon_species VALUES (228,'houndour',2,NULL,118,1,8,6,4,120,35,0,20,0,1);
+INSERT INTO pokemon_species VALUES (229,'houndoom',2,228,118,1,8,6,4,45,35,0,20,1,1);
+INSERT INTO pokemon_species VALUES (230,'kingdra',2,117,54,2,5,7,4,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (231,'phanpy',2,NULL,119,2,8,6,4,120,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (232,'donphan',2,231,119,4,8,6,4,60,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (233,'porygon2',2,137,68,8,7,8,-1,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (234,'stantler',2,NULL,120,3,8,2,4,45,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (235,'smeargle',2,NULL,121,9,6,8,4,45,70,0,20,0,3);
+INSERT INTO pokemon_species VALUES (236,'tyrogue',2,NULL,47,7,12,8,0,75,70,1,25,0,2);
+INSERT INTO pokemon_species VALUES (237,'hitmontop',2,236,47,3,6,8,0,45,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (238,'smoochum',2,NULL,59,6,12,8,8,45,70,1,25,0,2);
+INSERT INTO pokemon_species VALUES (239,'elekid',2,NULL,60,10,12,3,2,45,70,1,25,0,2);
+INSERT INTO pokemon_species VALUES (240,'magby',2,NULL,61,8,6,4,2,45,70,1,25,0,2);
+INSERT INTO pokemon_species VALUES (241,'miltank',2,NULL,122,6,6,3,8,45,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (242,'blissey',2,113,51,6,12,8,8,30,140,0,40,0,3);
+INSERT INTO pokemon_species VALUES (243,'raikou',2,NULL,123,10,8,3,-1,3,35,0,80,0,1);
+INSERT INTO pokemon_species VALUES (244,'entei',2,NULL,124,3,8,3,-1,3,35,0,80,0,1);
+INSERT INTO pokemon_species VALUES (245,'suicune',2,NULL,125,2,8,3,-1,3,35,0,80,0,1);
+INSERT INTO pokemon_species VALUES (246,'larvitar',2,NULL,126,5,6,4,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (247,'pupitar',2,246,126,4,2,4,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (248,'tyranitar',2,247,126,5,6,4,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (249,'lugia',2,NULL,127,9,9,5,-1,3,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (250,'ho-oh',2,NULL,128,8,9,5,-1,3,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (251,'celebi',2,NULL,129,5,12,2,-1,45,100,0,120,0,4);
+INSERT INTO pokemon_species VALUES (252,'treecko',3,NULL,130,5,6,2,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (253,'grovyle',3,252,130,5,6,2,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (254,'sceptile',3,253,130,5,6,2,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (255,'torchic',3,NULL,131,8,7,3,1,45,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (256,'combusken',3,255,131,8,6,3,1,45,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (257,'blaziken',3,256,131,8,6,3,1,45,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (258,'mudkip',3,NULL,132,2,8,9,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (259,'marshtomp',3,258,132,2,6,9,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (260,'swampert',3,259,132,2,6,9,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (261,'poochyena',3,NULL,133,4,8,3,4,255,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (262,'mightyena',3,261,133,4,8,3,4,127,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (263,'zigzagoon',3,NULL,134,3,8,3,4,255,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (264,'linoone',3,263,134,9,8,3,4,90,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (265,'wurmple',3,NULL,135,8,2,2,4,255,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (266,'silcoon',3,265,135,9,1,2,4,120,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (267,'beautifly',3,266,135,10,13,2,4,45,70,0,15,1,2);
+INSERT INTO pokemon_species VALUES (268,'cascoon',3,265,135,7,1,2,4,120,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (269,'dustox',3,268,135,5,13,2,4,45,70,0,15,1,2);
+INSERT INTO pokemon_species VALUES (270,'lotad',3,NULL,136,5,14,9,4,255,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (271,'lombre',3,270,136,5,12,9,4,120,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (272,'ludicolo',3,271,136,5,12,9,4,45,70,0,15,1,4);
+INSERT INTO pokemon_species VALUES (273,'seedot',3,NULL,137,3,7,2,4,255,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (274,'nuzleaf',3,273,137,3,12,2,4,120,70,0,15,1,4);
+INSERT INTO pokemon_species VALUES (275,'shiftry',3,274,137,3,12,2,4,45,70,0,15,1,4);
+INSERT INTO pokemon_species VALUES (276,'taillow',3,NULL,138,2,9,3,4,200,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (277,'swellow',3,276,138,2,9,3,4,45,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (278,'wingull',3,NULL,139,9,9,7,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (279,'pelipper',3,278,139,10,9,7,4,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (280,'ralts',3,NULL,140,9,12,8,4,235,35,0,20,0,1);
+INSERT INTO pokemon_species VALUES (281,'kirlia',3,280,140,9,12,8,4,120,35,0,20,0,1);
+INSERT INTO pokemon_species VALUES (282,'gardevoir',3,281,140,9,12,8,4,45,35,0,20,0,1);
+INSERT INTO pokemon_species VALUES (283,'surskit',3,NULL,141,2,14,9,4,200,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (284,'masquerain',3,283,141,2,13,9,4,75,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (285,'shroomish',3,NULL,142,3,7,2,4,255,70,0,15,0,6);
+INSERT INTO pokemon_species VALUES (286,'breloom',3,285,142,5,6,2,4,90,70,0,15,0,6);
+INSERT INTO pokemon_species VALUES (287,'slakoth',3,NULL,143,3,8,2,4,255,70,0,15,0,1);
+INSERT INTO pokemon_species VALUES (288,'vigoroth',3,287,143,9,6,2,4,120,70,0,15,0,1);
+INSERT INTO pokemon_species VALUES (289,'slaking',3,288,143,3,12,2,4,45,70,0,15,0,1);
+INSERT INTO pokemon_species VALUES (290,'nincada',3,NULL,144,4,14,2,4,255,70,0,15,0,5);
+INSERT INTO pokemon_species VALUES (291,'ninjask',3,290,144,10,13,2,4,120,70,0,15,0,5);
+INSERT INTO pokemon_species VALUES (292,'shedinja',3,290,144,3,5,2,-1,45,70,0,15,0,5);
+INSERT INTO pokemon_species VALUES (293,'whismur',3,NULL,145,6,6,1,4,190,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (294,'loudred',3,293,145,2,6,1,4,120,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (295,'exploud',3,294,145,2,6,1,4,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (296,'makuhita',3,NULL,146,10,12,4,2,180,70,0,20,0,6);
+INSERT INTO pokemon_species VALUES (297,'hariyama',3,296,146,3,12,4,2,200,70,0,20,0,6);
+INSERT INTO pokemon_species VALUES (298,'azurill',3,NULL,90,2,7,9,6,150,70,1,10,0,3);
+INSERT INTO pokemon_species VALUES (299,'nosepass',3,NULL,147,4,12,1,4,255,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (300,'skitty',3,NULL,148,6,8,2,6,255,70,0,15,0,3);
+INSERT INTO pokemon_species VALUES (301,'delcatty',3,300,148,7,8,2,6,60,70,0,15,0,3);
+INSERT INTO pokemon_species VALUES (302,'sableye',3,NULL,149,7,12,1,4,45,35,0,25,0,4);
+INSERT INTO pokemon_species VALUES (303,'mawile',3,NULL,150,1,12,1,4,45,70,0,20,0,3);
+INSERT INTO pokemon_species VALUES (304,'aron',3,NULL,151,4,8,4,4,180,35,0,35,0,1);
+INSERT INTO pokemon_species VALUES (305,'lairon',3,304,151,4,8,4,4,90,35,0,35,0,1);
+INSERT INTO pokemon_species VALUES (306,'aggron',3,305,151,4,6,4,4,45,35,0,35,0,1);
+INSERT INTO pokemon_species VALUES (307,'meditite',3,NULL,152,2,12,4,4,180,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (308,'medicham',3,307,152,8,12,4,4,90,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (309,'electrike',3,NULL,153,5,8,3,4,120,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (310,'manectric',3,309,153,10,8,3,4,45,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (311,'plusle',3,NULL,154,10,6,3,4,200,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (312,'minun',3,NULL,155,10,6,3,4,200,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (313,'volbeat',3,NULL,156,4,6,2,0,150,70,0,15,0,5);
+INSERT INTO pokemon_species VALUES (314,'illumise',3,NULL,157,7,12,2,8,150,70,0,15,0,6);
+INSERT INTO pokemon_species VALUES (315,'roselia',3,406,158,5,12,3,4,150,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (316,'gulpin',3,NULL,159,5,4,3,4,225,70,0,20,1,6);
+INSERT INTO pokemon_species VALUES (317,'swalot',3,316,159,7,4,3,4,75,70,0,20,1,6);
+INSERT INTO pokemon_species VALUES (318,'carvanha',3,NULL,160,8,3,7,4,225,35,0,20,0,1);
+INSERT INTO pokemon_species VALUES (319,'sharpedo',3,318,160,2,3,7,4,60,35,0,20,0,1);
+INSERT INTO pokemon_species VALUES (320,'wailmer',3,NULL,161,2,3,7,4,125,70,0,40,0,6);
+INSERT INTO pokemon_species VALUES (321,'wailord',3,320,161,2,3,7,4,60,70,0,40,0,6);
+INSERT INTO pokemon_species VALUES (322,'numel',3,NULL,162,10,8,4,4,255,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (323,'camerupt',3,322,162,8,8,4,4,150,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (324,'torkoal',3,NULL,163,3,8,4,4,90,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (325,'spoink',3,NULL,164,1,4,4,4,255,70,0,20,0,3);
+INSERT INTO pokemon_species VALUES (326,'grumpig',3,325,164,7,6,4,4,60,70,0,20,0,3);
+INSERT INTO pokemon_species VALUES (327,'spinda',3,NULL,165,3,6,4,4,255,70,0,15,0,3);
+INSERT INTO pokemon_species VALUES (328,'trapinch',3,NULL,166,3,14,6,4,255,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (329,'vibrava',3,328,166,5,13,6,4,120,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (330,'flygon',3,329,166,5,9,6,4,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (331,'cacnea',3,NULL,167,5,12,6,4,190,35,0,20,0,4);
+INSERT INTO pokemon_species VALUES (332,'cacturne',3,331,167,5,12,6,4,60,35,0,20,1,4);
+INSERT INTO pokemon_species VALUES (333,'swablu',3,NULL,168,2,9,2,4,255,70,0,20,0,5);
+INSERT INTO pokemon_species VALUES (334,'altaria',3,333,168,2,9,2,4,45,70,0,20,0,5);
+INSERT INTO pokemon_species VALUES (335,'zangoose',3,NULL,169,9,6,3,4,90,70,0,20,0,5);
+INSERT INTO pokemon_species VALUES (336,'seviper',3,NULL,170,1,2,3,4,90,70,0,20,0,6);
+INSERT INTO pokemon_species VALUES (337,'lunatone',3,NULL,171,10,1,1,-1,45,70,0,25,0,3);
+INSERT INTO pokemon_species VALUES (338,'solrock',3,NULL,172,8,1,1,-1,45,70,0,25,0,3);
+INSERT INTO pokemon_species VALUES (339,'barboach',3,NULL,173,4,3,9,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (340,'whiscash',3,339,173,2,3,9,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (341,'corphish',3,NULL,174,8,14,9,4,205,70,0,15,0,6);
+INSERT INTO pokemon_species VALUES (342,'crawdaunt',3,341,174,8,14,9,4,155,70,0,15,0,6);
+INSERT INTO pokemon_species VALUES (343,'baltoy',3,NULL,175,3,4,6,-1,255,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (344,'claydol',3,343,175,1,4,6,-1,90,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (345,'lileep',3,NULL,176,7,5,7,1,45,70,0,30,0,5);
+INSERT INTO pokemon_species VALUES (346,'cradily',3,345,176,5,5,7,1,45,70,0,30,0,5);
+INSERT INTO pokemon_species VALUES (347,'anorith',3,NULL,177,4,14,9,1,45,70,0,30,0,5);
+INSERT INTO pokemon_species VALUES (348,'armaldo',3,347,177,4,6,9,1,45,70,0,30,0,5);
+INSERT INTO pokemon_species VALUES (349,'feebas',3,NULL,178,3,3,9,4,255,70,0,20,0,5);
+INSERT INTO pokemon_species VALUES (350,'milotic',3,349,178,6,2,9,4,60,70,0,20,1,5);
+INSERT INTO pokemon_species VALUES (351,'castform',3,NULL,179,9,1,3,4,45,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (352,'kecleon',3,NULL,180,5,6,2,4,200,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (353,'shuppet',3,NULL,181,1,1,8,4,225,35,0,25,0,3);
+INSERT INTO pokemon_species VALUES (354,'banette',3,353,181,1,6,8,4,45,35,0,25,0,3);
+INSERT INTO pokemon_species VALUES (355,'duskull',3,NULL,182,1,4,2,4,190,35,0,25,0,3);
+INSERT INTO pokemon_species VALUES (356,'dusclops',3,355,182,1,12,2,4,90,35,0,25,0,3);
+INSERT INTO pokemon_species VALUES (357,'tropius',3,NULL,183,5,8,2,4,200,70,0,25,0,1);
+INSERT INTO pokemon_species VALUES (358,'chimecho',3,433,184,2,4,3,4,45,70,0,25,0,3);
+INSERT INTO pokemon_species VALUES (359,'absol',3,NULL,185,9,8,4,4,30,35,0,25,0,4);
+INSERT INTO pokemon_species VALUES (360,'wynaut',3,NULL,100,2,6,1,4,125,70,1,20,0,2);
+INSERT INTO pokemon_species VALUES (361,'snorunt',3,NULL,186,4,12,1,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (362,'glalie',3,361,186,4,1,1,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (363,'spheal',3,NULL,187,2,3,7,4,255,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (364,'sealeo',3,363,187,2,3,7,4,120,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (365,'walrein',3,364,187,2,8,7,4,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (366,'clamperl',3,NULL,188,2,1,7,4,255,70,0,20,0,5);
+INSERT INTO pokemon_species VALUES (367,'huntail',3,366,188,2,2,7,4,60,70,0,20,0,5);
+INSERT INTO pokemon_species VALUES (368,'gorebyss',3,366,188,6,2,7,4,60,70,0,20,0,5);
+INSERT INTO pokemon_species VALUES (369,'relicanth',3,NULL,189,4,3,7,1,25,70,0,40,1,1);
+INSERT INTO pokemon_species VALUES (370,'luvdisc',3,NULL,190,6,3,7,6,225,70,0,20,0,3);
+INSERT INTO pokemon_species VALUES (371,'bagon',3,NULL,191,2,12,6,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (372,'shelgon',3,371,191,9,8,6,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (373,'salamence',3,372,191,2,8,6,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (374,'beldum',3,NULL,192,2,5,6,-1,3,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (375,'metang',3,374,192,2,4,6,-1,3,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (376,'metagross',3,375,192,2,11,6,-1,3,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (377,'regirock',3,NULL,193,3,12,1,-1,3,35,0,80,0,1);
+INSERT INTO pokemon_species VALUES (378,'regice',3,NULL,194,2,12,1,-1,3,35,0,80,0,1);
+INSERT INTO pokemon_species VALUES (379,'registeel',3,NULL,195,4,12,1,-1,3,35,0,80,0,1);
+INSERT INTO pokemon_species VALUES (380,'latias',3,NULL,196,8,9,9,8,3,90,0,120,0,1);
+INSERT INTO pokemon_species VALUES (381,'latios',3,NULL,197,2,9,9,0,3,90,0,120,0,1);
+INSERT INTO pokemon_species VALUES (382,'kyogre',3,NULL,198,2,3,7,-1,5,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (383,'groudon',3,NULL,199,8,6,6,-1,5,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (384,'rayquaza',3,NULL,200,5,2,5,-1,3,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (385,'jirachi',3,NULL,201,10,12,4,-1,3,100,0,120,0,1);
+INSERT INTO pokemon_species VALUES (386,'deoxys',3,NULL,202,8,12,5,-1,3,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (387,'turtwig',4,NULL,203,5,8,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (388,'grotle',4,387,203,5,8,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (389,'torterra',4,388,203,5,8,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (390,'chimchar',4,NULL,204,3,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (391,'monferno',4,390,204,3,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (392,'infernape',4,391,204,3,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (393,'piplup',4,NULL,205,2,12,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (394,'prinplup',4,393,205,2,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (395,'empoleon',4,394,205,2,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (396,'starly',4,NULL,206,3,9,NULL,4,255,70,0,15,1,4);
+INSERT INTO pokemon_species VALUES (397,'staravia',4,396,206,3,9,NULL,4,120,70,0,15,1,4);
+INSERT INTO pokemon_species VALUES (398,'staraptor',4,397,206,3,9,NULL,4,45,70,0,15,1,4);
+INSERT INTO pokemon_species VALUES (399,'bidoof',4,NULL,207,3,8,NULL,4,255,70,0,15,1,2);
+INSERT INTO pokemon_species VALUES (400,'bibarel',4,399,207,3,6,NULL,4,127,70,0,15,1,2);
+INSERT INTO pokemon_species VALUES (401,'kricketot',4,NULL,208,8,12,NULL,4,255,70,0,15,1,4);
+INSERT INTO pokemon_species VALUES (402,'kricketune',4,401,208,8,13,NULL,4,45,70,0,15,1,4);
+INSERT INTO pokemon_species VALUES (403,'shinx',4,NULL,209,2,8,NULL,4,235,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (404,'luxio',4,403,209,2,8,NULL,4,120,100,0,20,1,4);
+INSERT INTO pokemon_species VALUES (405,'luxray',4,404,209,2,8,NULL,4,45,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (406,'budew',4,NULL,158,5,12,NULL,4,255,70,1,20,0,4);
+INSERT INTO pokemon_species VALUES (407,'roserade',4,315,158,5,12,NULL,4,75,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (408,'cranidos',4,NULL,211,2,6,NULL,1,45,70,0,30,0,5);
+INSERT INTO pokemon_species VALUES (409,'rampardos',4,408,211,2,6,NULL,1,45,70,0,30,0,5);
+INSERT INTO pokemon_species VALUES (410,'shieldon',4,NULL,212,4,8,NULL,1,45,70,0,30,0,5);
+INSERT INTO pokemon_species VALUES (411,'bastiodon',4,410,212,4,8,NULL,1,45,70,0,30,0,5);
+INSERT INTO pokemon_species VALUES (412,'burmy',4,NULL,213,4,2,NULL,4,120,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (413,'wormadam',4,412,213,4,2,NULL,8,45,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (414,'mothim',4,412,213,10,13,NULL,0,45,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (415,'combee',4,NULL,214,10,11,NULL,1,120,70,0,15,1,4);
+INSERT INTO pokemon_species VALUES (416,'vespiquen',4,415,214,10,9,NULL,8,45,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (417,'pachirisu',4,NULL,215,9,8,NULL,4,200,100,0,10,1,2);
+INSERT INTO pokemon_species VALUES (418,'buizel',4,NULL,216,3,8,NULL,4,190,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (419,'floatzel',4,418,216,3,8,NULL,4,75,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (420,'cherubi',4,NULL,217,6,11,NULL,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (421,'cherrim',4,420,217,6,7,NULL,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (422,'shellos',4,NULL,218,7,14,NULL,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (423,'gastrodon',4,422,218,7,14,NULL,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (424,'ambipom',4,190,93,7,6,NULL,4,45,100,0,20,1,3);
+INSERT INTO pokemon_species VALUES (425,'drifloon',4,NULL,219,7,4,NULL,4,125,70,0,30,0,6);
+INSERT INTO pokemon_species VALUES (426,'drifblim',4,425,219,7,4,NULL,4,60,70,0,30,0,6);
+INSERT INTO pokemon_species VALUES (427,'buneary',4,NULL,220,3,6,NULL,4,190,0,0,20,0,2);
+INSERT INTO pokemon_species VALUES (428,'lopunny',4,427,220,3,6,NULL,4,60,140,0,20,0,2);
+INSERT INTO pokemon_species VALUES (429,'mismagius',4,200,98,7,1,NULL,4,45,35,0,25,0,3);
+INSERT INTO pokemon_species VALUES (430,'honchkrow',4,198,97,1,9,NULL,4,30,35,0,20,0,4);
+INSERT INTO pokemon_species VALUES (431,'glameow',4,NULL,221,4,8,NULL,6,190,70,0,20,0,3);
+INSERT INTO pokemon_species VALUES (432,'purugly',4,431,221,4,8,NULL,6,75,70,0,20,0,3);
+INSERT INTO pokemon_species VALUES (433,'chingling',4,NULL,184,10,12,NULL,4,120,70,1,25,0,3);
+INSERT INTO pokemon_species VALUES (434,'stunky',4,NULL,223,7,8,NULL,4,225,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (435,'skuntank',4,434,223,7,8,NULL,4,60,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (436,'bronzor',4,NULL,224,5,1,NULL,-1,255,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (437,'bronzong',4,436,224,5,4,NULL,-1,90,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (438,'bonsly',4,NULL,91,3,7,NULL,4,255,70,1,20,0,2);
+INSERT INTO pokemon_species VALUES (439,'mime-jr',4,NULL,57,6,12,NULL,4,145,70,1,25,0,2);
+INSERT INTO pokemon_species VALUES (440,'happiny',4,NULL,51,6,12,NULL,8,130,140,1,40,0,3);
+INSERT INTO pokemon_species VALUES (441,'chatot',4,NULL,228,1,9,NULL,4,30,35,0,20,0,4);
+INSERT INTO pokemon_species VALUES (442,'spiritomb',4,NULL,229,7,5,NULL,4,100,70,0,30,0,2);
+INSERT INTO pokemon_species VALUES (443,'gible',4,NULL,230,2,6,NULL,4,45,70,0,40,1,1);
+INSERT INTO pokemon_species VALUES (444,'gabite',4,443,230,2,6,NULL,4,45,70,0,40,1,1);
+INSERT INTO pokemon_species VALUES (445,'garchomp',4,444,230,2,6,NULL,4,45,70,0,40,1,1);
+INSERT INTO pokemon_species VALUES (446,'munchlax',4,NULL,72,1,12,NULL,1,50,70,1,40,0,1);
+INSERT INTO pokemon_species VALUES (447,'riolu',4,NULL,232,2,6,NULL,1,75,70,1,25,0,4);
+INSERT INTO pokemon_species VALUES (448,'lucario',4,447,232,2,6,NULL,1,45,70,0,25,0,4);
+INSERT INTO pokemon_species VALUES (449,'hippopotas',4,NULL,233,3,8,NULL,4,140,70,0,30,1,1);
+INSERT INTO pokemon_species VALUES (450,'hippowdon',4,449,233,3,8,NULL,4,60,70,0,30,1,1);
+INSERT INTO pokemon_species VALUES (451,'skorupi',4,NULL,234,7,14,NULL,4,120,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (452,'drapion',4,451,234,7,14,NULL,4,45,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (453,'croagunk',4,NULL,235,2,12,NULL,4,140,100,0,10,1,2);
+INSERT INTO pokemon_species VALUES (454,'toxicroak',4,453,235,2,12,NULL,4,75,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (455,'carnivine',4,NULL,236,5,10,NULL,4,200,70,0,25,0,1);
+INSERT INTO pokemon_species VALUES (456,'finneon',4,NULL,237,2,3,NULL,4,190,70,0,20,1,5);
+INSERT INTO pokemon_species VALUES (457,'lumineon',4,456,237,2,3,NULL,4,75,70,0,20,1,5);
+INSERT INTO pokemon_species VALUES (458,'mantyke',4,NULL,116,2,9,NULL,4,25,70,1,25,0,1);
+INSERT INTO pokemon_species VALUES (459,'snover',4,NULL,239,9,6,NULL,4,120,70,0,20,1,1);
+INSERT INTO pokemon_species VALUES (460,'abomasnow',4,459,239,9,6,NULL,4,60,70,0,20,1,1);
+INSERT INTO pokemon_species VALUES (461,'weavile',4,215,109,1,6,NULL,4,45,35,0,20,1,4);
+INSERT INTO pokemon_species VALUES (462,'magnezone',4,82,34,4,4,NULL,-1,30,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (463,'lickilicky',4,108,48,6,12,NULL,4,30,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (464,'rhyperior',4,112,50,4,6,NULL,4,30,70,0,20,1,1);
+INSERT INTO pokemon_species VALUES (465,'tangrowth',4,114,52,2,12,NULL,4,30,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (466,'electivire',4,125,60,10,6,NULL,2,30,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (467,'magmortar',4,126,61,8,6,NULL,2,30,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (468,'togekiss',4,176,87,9,9,NULL,1,30,70,0,10,0,3);
+INSERT INTO pokemon_species VALUES (469,'yanmega',4,193,95,5,13,NULL,4,30,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (470,'leafeon',4,133,67,5,8,NULL,1,45,35,0,35,0,2);
+INSERT INTO pokemon_species VALUES (471,'glaceon',4,133,67,2,8,NULL,1,45,35,0,35,0,2);
+INSERT INTO pokemon_species VALUES (472,'gliscor',4,207,104,7,9,NULL,4,30,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (473,'mamoswine',4,221,112,3,8,NULL,4,50,70,0,20,1,1);
+INSERT INTO pokemon_species VALUES (474,'porygon-z',4,233,68,8,4,NULL,-1,30,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (475,'gallade',4,281,140,9,12,NULL,0,45,35,0,20,0,1);
+INSERT INTO pokemon_species VALUES (476,'probopass',4,299,147,4,11,NULL,4,60,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (477,'dusknoir',4,356,182,1,4,NULL,4,45,35,0,25,0,3);
+INSERT INTO pokemon_species VALUES (478,'froslass',4,361,186,9,4,NULL,8,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (479,'rotom',4,NULL,240,8,1,NULL,-1,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (480,'uxie',4,NULL,241,10,6,NULL,-1,3,140,0,80,0,1);
+INSERT INTO pokemon_species VALUES (481,'mesprit',4,NULL,242,6,6,NULL,-1,3,140,0,80,0,1);
+INSERT INTO pokemon_species VALUES (482,'azelf',4,NULL,243,2,6,NULL,-1,3,140,0,80,0,1);
+INSERT INTO pokemon_species VALUES (483,'dialga',4,NULL,244,9,8,NULL,-1,30,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (484,'palkia',4,NULL,245,7,6,NULL,-1,30,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (485,'heatran',4,NULL,246,3,8,NULL,4,3,100,0,10,0,1);
+INSERT INTO pokemon_species VALUES (486,'regigigas',4,NULL,247,9,12,NULL,-1,3,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (487,'giratina',4,NULL,248,1,10,NULL,-1,3,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (488,'cresselia',4,NULL,249,10,14,NULL,8,3,100,0,120,0,1);
+INSERT INTO pokemon_species VALUES (489,'phione',4,NULL,250,2,4,NULL,-1,30,70,0,40,0,1);
+INSERT INTO pokemon_species VALUES (490,'manaphy',4,NULL,250,2,12,NULL,-1,3,70,0,10,0,1);
+INSERT INTO pokemon_species VALUES (491,'darkrai',4,NULL,252,1,12,NULL,-1,3,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (492,'shaymin',4,NULL,253,5,8,NULL,-1,45,100,0,120,0,4);
+INSERT INTO pokemon_species VALUES (493,'arceus',4,NULL,254,4,8,NULL,-1,3,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (494,'victini',5,NULL,255,10,12,NULL,-1,3,100,0,120,0,1);
+INSERT INTO pokemon_species VALUES (495,'snivy',5,NULL,256,5,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (496,'servine',5,495,256,5,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (497,'serperior',5,496,256,5,2,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (498,'tepig',5,NULL,257,8,8,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (499,'pignite',5,498,257,8,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (500,'emboar',5,499,257,8,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (501,'oshawott',5,NULL,258,2,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (502,'dewott',5,501,258,2,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (503,'samurott',5,502,258,2,8,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (504,'patrat',5,NULL,259,3,8,NULL,4,255,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (505,'watchog',5,504,259,3,6,NULL,4,255,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (506,'lillipup',5,NULL,260,3,8,NULL,4,255,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (507,'herdier',5,506,260,4,8,NULL,4,120,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (508,'stoutland',5,507,260,4,8,NULL,4,45,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (509,'purrloin',5,NULL,261,7,8,NULL,4,255,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (510,'liepard',5,509,261,7,8,NULL,4,90,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (511,'pansage',5,NULL,262,5,6,NULL,1,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (512,'simisage',5,511,262,5,6,NULL,1,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (513,'pansear',5,NULL,263,8,6,NULL,1,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (514,'simisear',5,513,263,8,6,NULL,1,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (515,'panpour',5,NULL,264,2,6,NULL,1,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (516,'simipour',5,515,264,2,6,NULL,1,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (517,'munna',5,NULL,265,6,8,NULL,4,190,70,0,10,0,3);
+INSERT INTO pokemon_species VALUES (518,'musharna',5,517,265,6,12,NULL,4,75,70,0,10,0,3);
+INSERT INTO pokemon_species VALUES (519,'pidove',5,NULL,266,4,9,NULL,4,255,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (520,'tranquill',5,519,266,4,9,NULL,4,120,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (521,'unfezant',5,520,266,4,9,NULL,4,45,70,0,15,1,4);
+INSERT INTO pokemon_species VALUES (522,'blitzle',5,NULL,267,1,8,NULL,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (523,'zebstrika',5,522,267,1,8,NULL,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (524,'roggenrola',5,NULL,268,2,7,NULL,4,255,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (525,'boldore',5,524,268,2,10,NULL,4,120,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (526,'gigalith',5,525,268,2,10,NULL,4,45,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (527,'woobat',5,NULL,269,2,9,NULL,4,190,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (528,'swoobat',5,527,269,2,9,NULL,4,45,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (529,'drilbur',5,NULL,270,4,6,NULL,4,120,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (530,'excadrill',5,529,270,4,12,NULL,4,60,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (531,'audino',5,NULL,271,6,6,NULL,4,255,70,0,20,0,3);
+INSERT INTO pokemon_species VALUES (532,'timburr',5,NULL,272,4,12,NULL,2,180,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (533,'gurdurr',5,532,272,4,12,NULL,2,90,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (534,'conkeldurr',5,533,272,3,12,NULL,2,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (535,'tympole',5,NULL,273,2,3,NULL,4,255,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (536,'palpitoad',5,535,273,2,6,NULL,4,120,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (537,'seismitoad',5,536,273,2,12,NULL,4,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (538,'throh',5,NULL,274,8,12,NULL,0,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (539,'sawk',5,NULL,275,2,12,NULL,0,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (540,'sewaddle',5,NULL,276,10,14,NULL,4,255,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (541,'swadloon',5,540,276,5,4,NULL,4,120,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (542,'leavanny',5,541,276,10,12,NULL,4,45,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (543,'venipede',5,NULL,277,8,14,NULL,4,255,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (544,'whirlipede',5,543,277,4,1,NULL,4,120,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (545,'scolipede',5,544,277,8,14,NULL,4,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (546,'cottonee',5,NULL,278,5,1,NULL,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (547,'whimsicott',5,546,278,5,12,NULL,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (548,'petilil',5,NULL,279,5,5,NULL,8,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (549,'lilligant',5,548,279,5,5,NULL,8,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (550,'basculin',5,NULL,280,5,3,NULL,4,25,70,0,40,0,2);
+INSERT INTO pokemon_species VALUES (551,'sandile',5,NULL,281,3,8,NULL,4,180,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (552,'krokorok',5,551,281,3,8,NULL,4,90,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (553,'krookodile',5,552,281,8,6,NULL,4,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (554,'darumaka',5,NULL,282,8,12,NULL,4,120,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (555,'darmanitan',5,554,282,8,8,NULL,4,60,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (556,'maractus',5,NULL,283,5,5,NULL,4,255,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (557,'dwebble',5,NULL,284,8,14,NULL,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (558,'crustle',5,557,284,8,14,NULL,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (559,'scraggy',5,NULL,285,10,6,NULL,4,180,35,0,15,0,2);
+INSERT INTO pokemon_species VALUES (560,'scrafty',5,559,285,8,6,NULL,4,90,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (561,'sigilyph',5,NULL,286,1,9,NULL,4,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (562,'yamask',5,NULL,287,1,4,NULL,4,190,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (563,'cofagrigus',5,562,287,10,5,NULL,4,90,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (564,'tirtouga',5,NULL,288,2,8,NULL,1,45,70,0,30,0,2);
+INSERT INTO pokemon_species VALUES (565,'carracosta',5,564,288,2,6,NULL,1,45,70,0,30,0,2);
+INSERT INTO pokemon_species VALUES (566,'archen',5,NULL,289,10,9,NULL,1,45,70,0,30,0,2);
+INSERT INTO pokemon_species VALUES (567,'archeops',5,566,289,10,9,NULL,1,45,70,0,30,0,2);
+INSERT INTO pokemon_species VALUES (568,'trubbish',5,NULL,290,5,12,NULL,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (569,'garbodor',5,568,290,5,12,NULL,4,60,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (570,'zorua',5,NULL,291,4,8,NULL,1,75,70,0,25,0,4);
+INSERT INTO pokemon_species VALUES (571,'zoroark',5,570,291,4,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (572,'minccino',5,NULL,292,4,8,NULL,6,255,70,0,15,0,3);
+INSERT INTO pokemon_species VALUES (573,'cinccino',5,572,292,4,8,NULL,6,60,70,0,15,0,3);
+INSERT INTO pokemon_species VALUES (574,'gothita',5,NULL,293,7,12,NULL,6,200,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (575,'gothorita',5,574,293,7,12,NULL,6,100,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (576,'gothitelle',5,575,293,7,12,NULL,6,50,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (577,'solosis',5,NULL,294,5,1,NULL,4,200,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (578,'duosion',5,577,294,5,1,NULL,4,100,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (579,'reuniclus',5,578,294,5,4,NULL,4,50,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (580,'ducklett',5,NULL,295,2,9,NULL,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (581,'swanna',5,580,295,9,9,NULL,4,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (582,'vanillite',5,NULL,296,9,5,NULL,4,255,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (583,'vanillish',5,582,296,9,5,NULL,4,120,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (584,'vanilluxe',5,583,296,9,11,NULL,4,45,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (585,'deerling',5,NULL,297,10,8,NULL,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (586,'sawsbuck',5,585,297,3,8,NULL,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (587,'emolga',5,NULL,298,9,8,NULL,4,200,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (588,'karrablast',5,NULL,299,2,12,NULL,4,200,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (589,'escavalier',5,588,299,4,4,NULL,4,75,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (590,'foongus',5,NULL,300,9,4,NULL,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (591,'amoonguss',5,590,300,9,4,NULL,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (592,'frillish',5,NULL,301,9,10,NULL,4,190,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (593,'jellicent',5,592,301,9,10,NULL,4,60,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (594,'alomomola',5,NULL,302,6,3,NULL,4,75,70,0,40,0,3);
+INSERT INTO pokemon_species VALUES (595,'joltik',5,NULL,303,10,14,NULL,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (596,'galvantula',5,595,303,10,14,NULL,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (597,'ferroseed',5,NULL,304,4,1,NULL,4,255,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (598,'ferrothorn',5,597,304,4,10,NULL,4,90,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (599,'klink',5,NULL,305,4,11,NULL,-1,130,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (600,'klang',5,599,305,4,11,NULL,-1,60,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (601,'klinklang',5,600,305,4,11,NULL,-1,30,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (602,'tynamo',5,NULL,306,9,3,NULL,4,190,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (603,'eelektrik',5,602,306,2,3,NULL,4,60,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (604,'eelektross',5,603,306,2,3,NULL,4,30,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (605,'elgyem',5,NULL,307,2,6,NULL,4,255,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (606,'beheeyem',5,605,307,3,12,NULL,4,90,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (607,'litwick',5,NULL,308,9,5,NULL,4,190,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (608,'lampent',5,607,308,1,4,NULL,4,90,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (609,'chandelure',5,608,308,1,4,NULL,4,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (610,'axew',5,NULL,309,5,6,NULL,4,75,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (611,'fraxure',5,610,309,5,6,NULL,4,60,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (612,'haxorus',5,611,309,10,6,NULL,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (613,'cubchoo',5,NULL,310,9,6,NULL,4,120,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (614,'beartic',5,613,310,9,8,NULL,4,60,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (615,'cryogonal',5,NULL,311,2,1,NULL,-1,25,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (616,'shelmet',5,NULL,312,8,1,NULL,4,200,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (617,'accelgor',5,616,312,8,4,NULL,4,75,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (618,'stunfisk',5,NULL,313,3,3,NULL,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (619,'mienfoo',5,NULL,314,10,6,NULL,4,180,70,0,25,0,4);
+INSERT INTO pokemon_species VALUES (620,'mienshao',5,619,314,7,6,NULL,4,45,70,0,25,0,4);
+INSERT INTO pokemon_species VALUES (621,'druddigon',5,NULL,315,8,6,NULL,4,45,70,0,30,0,2);
+INSERT INTO pokemon_species VALUES (622,'golett',5,NULL,316,5,12,NULL,-1,190,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (623,'golurk',5,622,316,5,12,NULL,-1,90,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (624,'pawniard',5,NULL,317,8,12,NULL,4,120,35,0,20,0,2);
+INSERT INTO pokemon_species VALUES (625,'bisharp',5,624,317,8,12,NULL,4,45,35,0,20,0,2);
+INSERT INTO pokemon_species VALUES (626,'bouffalant',5,NULL,318,3,8,NULL,4,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (627,'rufflet',5,NULL,319,9,9,NULL,0,190,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (628,'braviary',5,627,319,8,9,NULL,0,60,70,0,20,0,1);
+INSERT INTO pokemon_species VALUES (629,'vullaby',5,NULL,320,3,9,NULL,8,190,35,0,20,0,1);
+INSERT INTO pokemon_species VALUES (630,'mandibuzz',5,629,320,3,9,NULL,8,60,35,0,20,0,1);
+INSERT INTO pokemon_species VALUES (631,'heatmor',5,NULL,321,8,6,NULL,4,90,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (632,'durant',5,NULL,322,4,14,NULL,4,90,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (633,'deino',5,NULL,323,2,8,NULL,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (634,'zweilous',5,633,323,2,8,NULL,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (635,'hydreigon',5,634,323,2,6,NULL,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (636,'larvesta',5,NULL,324,9,14,NULL,4,45,70,0,40,0,1);
+INSERT INTO pokemon_species VALUES (637,'volcarona',5,636,324,9,13,NULL,4,15,70,0,40,0,1);
+INSERT INTO pokemon_species VALUES (638,'cobalion',5,NULL,325,2,8,NULL,-1,3,35,0,80,0,1);
+INSERT INTO pokemon_species VALUES (639,'terrakion',5,NULL,326,4,8,NULL,-1,3,35,0,80,0,1);
+INSERT INTO pokemon_species VALUES (640,'virizion',5,NULL,327,5,8,NULL,-1,3,35,0,80,0,1);
+INSERT INTO pokemon_species VALUES (641,'tornadus',5,NULL,328,5,4,NULL,0,3,90,0,120,0,1);
+INSERT INTO pokemon_species VALUES (642,'thundurus',5,NULL,329,2,4,NULL,0,3,90,0,120,0,1);
+INSERT INTO pokemon_species VALUES (643,'reshiram',5,NULL,330,9,9,NULL,-1,45,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (644,'zekrom',5,NULL,331,1,6,NULL,-1,45,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (645,'landorus',5,NULL,332,3,4,NULL,0,3,90,0,120,0,1);
+INSERT INTO pokemon_species VALUES (646,'kyurem',5,NULL,333,4,6,NULL,-1,3,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (647,'keldeo',5,NULL,334,10,8,NULL,-1,3,35,0,80,0,1);
+INSERT INTO pokemon_species VALUES (648,'meloetta',5,NULL,335,9,12,NULL,-1,3,100,0,120,0,1);
+INSERT INTO pokemon_species VALUES (649,'genesect',5,NULL,336,7,12,NULL,-1,3,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (650,'chespin',6,NULL,337,5,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (651,'quilladin',6,650,337,5,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (652,'chesnaught',6,651,337,5,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (653,'fennekin',6,NULL,338,8,8,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (654,'braixen',6,653,338,8,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (655,'delphox',6,654,338,8,6,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (656,'froakie',6,NULL,339,2,8,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (657,'frogadier',6,656,339,2,12,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (658,'greninja',6,657,339,2,12,NULL,1,45,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (659,'bunnelby',6,NULL,340,3,6,NULL,4,255,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (660,'diggersby',6,659,340,3,6,NULL,4,127,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (661,'fletchling',6,NULL,341,8,9,NULL,4,255,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (662,'fletchinder',6,661,341,8,9,NULL,4,120,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (663,'talonflame',6,662,341,8,9,NULL,4,45,70,0,15,0,4);
+INSERT INTO pokemon_species VALUES (664,'scatterbug',6,NULL,342,1,14,NULL,4,255,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (665,'spewpa',6,664,342,1,5,NULL,4,120,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (666,'vivillon',6,665,342,1,13,NULL,4,45,70,0,15,0,2);
+INSERT INTO pokemon_species VALUES (667,'litleo',6,NULL,343,3,8,NULL,7,220,70,0,20,0,4);
+INSERT INTO pokemon_species VALUES (668,'pyroar',6,667,343,3,8,NULL,7,65,70,0,20,1,4);
+INSERT INTO pokemon_species VALUES (669,'flabebe',6,NULL,344,9,4,NULL,8,225,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (670,'floette',6,669,344,9,4,NULL,8,120,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (671,'florges',6,670,344,9,4,NULL,8,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (672,'skiddo',6,NULL,345,3,8,NULL,4,200,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (673,'gogoat',6,672,345,3,8,NULL,4,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (674,'pancham',6,NULL,346,9,6,NULL,4,220,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (675,'pangoro',6,674,346,9,12,NULL,4,65,70,0,25,0,2);
+INSERT INTO pokemon_species VALUES (676,'furfrou',6,NULL,347,9,8,NULL,4,160,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (677,'espurr',6,NULL,348,4,6,NULL,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (678,'meowstic',6,677,348,9,6,NULL,4,75,70,0,20,1,2);
+INSERT INTO pokemon_species VALUES (679,'honedge',6,NULL,349,3,5,NULL,4,180,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (680,'doublade',6,679,349,3,11,NULL,4,90,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (681,'aegislash',6,680,349,3,5,NULL,4,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (682,'spritzee',6,NULL,350,6,4,NULL,4,200,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (683,'aromatisse',6,682,350,6,12,NULL,4,140,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (684,'swirlix',6,NULL,351,9,7,NULL,4,200,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (685,'slurpuff',6,684,351,9,12,NULL,4,140,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (686,'inkay',6,NULL,352,2,10,NULL,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (687,'malamar',6,686,352,2,5,NULL,4,80,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (688,'binacle',6,NULL,353,3,11,NULL,4,120,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (689,'barbaracle',6,688,353,3,11,NULL,4,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (690,'skrelp',6,NULL,354,3,5,NULL,4,225,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (691,'dragalge',6,690,354,3,5,NULL,4,55,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (692,'clauncher',6,NULL,355,2,14,NULL,4,225,70,0,15,0,1);
+INSERT INTO pokemon_species VALUES (693,'clawitzer',6,692,355,2,2,NULL,4,55,70,0,15,0,1);
+INSERT INTO pokemon_species VALUES (694,'helioptile',6,NULL,356,10,6,NULL,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (695,'heliolisk',6,694,356,10,6,NULL,4,75,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (696,'tyrunt',6,NULL,357,3,6,NULL,1,45,70,0,30,0,2);
+INSERT INTO pokemon_species VALUES (697,'tyrantrum',6,696,357,8,6,NULL,1,45,70,0,30,0,2);
+INSERT INTO pokemon_species VALUES (698,'amaura',6,NULL,358,2,8,NULL,1,45,70,0,30,0,2);
+INSERT INTO pokemon_species VALUES (699,'aurorus',6,698,358,2,8,NULL,1,45,70,0,30,0,2);
+INSERT INTO pokemon_species VALUES (700,'sylveon',6,133,67,6,8,NULL,1,45,70,0,35,0,2);
+INSERT INTO pokemon_species VALUES (701,'hawlucha',6,NULL,359,5,12,NULL,4,100,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (702,'dedenne',6,NULL,360,10,6,NULL,4,180,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (703,'carbink',6,NULL,361,4,1,NULL,-1,60,70,0,25,0,1);
+INSERT INTO pokemon_species VALUES (704,'goomy',6,NULL,362,7,2,NULL,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (705,'sliggoo',6,704,362,7,2,NULL,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (706,'goodra',6,705,362,7,6,NULL,4,45,35,0,40,0,1);
+INSERT INTO pokemon_species VALUES (707,'klefki',6,NULL,363,4,1,NULL,4,75,70,0,20,0,3);
+INSERT INTO pokemon_species VALUES (708,'phantump',6,NULL,364,3,4,NULL,4,120,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (709,'trevenant',6,708,364,3,10,NULL,4,60,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (710,'pumpkaboo',6,NULL,365,3,1,NULL,4,120,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (711,'gourgeist',6,710,365,3,5,NULL,4,60,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (712,'bergmite',6,NULL,366,2,8,NULL,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (713,'avalugg',6,712,366,2,8,NULL,4,55,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (714,'noibat',6,NULL,367,7,9,NULL,4,190,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (715,'noivern',6,714,367,7,9,NULL,4,45,70,0,20,0,2);
+INSERT INTO pokemon_species VALUES (716,'xerneas',6,NULL,368,2,8,NULL,-1,45,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (717,'yveltal',6,NULL,369,8,9,NULL,-1,45,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (718,'zygarde',6,NULL,370,5,2,NULL,-1,3,0,0,120,0,1);
+INSERT INTO pokemon_species VALUES (719,'diancie',6,NULL,371,6,4,NULL,-1,3,70,0,25,0,1);
+INSERT INTO pokemon_species VALUES (720,'hoopa',6,NULL,372,7,1,NULL,-1,3,100,0,120,0,1);
+DROP TABLE pokemon;
+
+CREATE TABLE pokemon (
+    id INT NOT NULL,
+    identifier VARCHAR(21) CHARACTER SET utf8 NOT NULL,
+    species_id INT NOT NULL,
+    height INT NOT NULL,
+    weight INT NOT NULL,
+    base_experience INT NOT NULL,
+    is_default INT NOT NULL,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO pokemon VALUES (1,'bulbasaur',1,7,69,64,1);
+
+INSERT INTO pokemon VALUES (2,'ivysaur',2,10,130,142,1);
+
+INSERT INTO pokemon VALUES (3,'venusaur',3,20,1000,236,1);
+
+INSERT INTO pokemon VALUES (4,'charmander',4,6,85,62,1);
+
+INSERT INTO pokemon VALUES (5,'charmeleon',5,11,190,142,1);
+
+INSERT INTO pokemon VALUES (6,'charizard',6,17,905,240,1);
+
+INSERT INTO pokemon VALUES (7,'squirtle',7,5,90,63,1);
+
+INSERT INTO pokemon VALUES (8,'wartortle',8,10,225,142,1);
+
+INSERT INTO pokemon VALUES (9,'blastoise',9,16,855,239,1);
+
+INSERT INTO pokemon VALUES (10,'caterpie',10,3,29,39,1);
+
+INSERT INTO pokemon VALUES (11,'metapod',11,7,99,72,1);
+
+INSERT INTO pokemon VALUES (12,'butterfree',12,11,320,178,1);
+
+INSERT INTO pokemon VALUES (13,'weedle',13,3,32,39,1);
+
+INSERT INTO pokemon VALUES (14,'kakuna',14,6,100,72,1);
+
+INSERT INTO pokemon VALUES (15,'beedrill',15,10,295,178,1);
+
+INSERT INTO pokemon VALUES (16,'pidgey',16,3,18,50,1);
+
+INSERT INTO pokemon VALUES (17,'pidgeotto',17,11,300,122,1);
+
+INSERT INTO pokemon VALUES (18,'pidgeot',18,15,395,216,1);
+
+INSERT INTO pokemon VALUES (19,'rattata',19,3,35,51,1);
+
+INSERT INTO pokemon VALUES (20,'raticate',20,7,185,145,1);
+
+INSERT INTO pokemon VALUES (21,'spearow',21,3,20,52,1);
+
+INSERT INTO pokemon VALUES (22,'fearow',22,12,380,155,1);
+
+INSERT INTO pokemon VALUES (23,'ekans',23,20,69,58,1);
+
+INSERT INTO pokemon VALUES (24,'arbok',24,35,650,153,1);
+
+INSERT INTO pokemon VALUES (25,'pikachu',25,4,60,112,1);
+
+INSERT INTO pokemon VALUES (26,'raichu',26,8,300,218,1);
+
+INSERT INTO pokemon VALUES (27,'sandshrew',27,6,120,60,1);
+
+INSERT INTO pokemon VALUES (28,'sandslash',28,10,295,158,1);
+
+INSERT INTO pokemon VALUES (29,'nidoran-f',29,4,70,55,1);
+
+INSERT INTO pokemon VALUES (30,'nidorina',30,8,200,128,1);
+
+INSERT INTO pokemon VALUES (31,'nidoqueen',31,13,600,227,1);
+
+INSERT INTO pokemon VALUES (32,'nidoran-m',32,5,90,55,1);
+
+INSERT INTO pokemon VALUES (33,'nidorino',33,9,195,128,1);
+
+INSERT INTO pokemon VALUES (34,'nidoking',34,14,620,227,1);
+
+INSERT INTO pokemon VALUES (35,'clefairy',35,6,75,113,1);
+
+INSERT INTO pokemon VALUES (36,'clefable',36,13,400,217,1);
+
+INSERT INTO pokemon VALUES (37,'vulpix',37,6,99,60,1);
+
+INSERT INTO pokemon VALUES (38,'ninetales',38,11,199,177,1);
+
+INSERT INTO pokemon VALUES (39,'jigglypuff',39,5,55,95,1);
+
+INSERT INTO pokemon VALUES (40,'wigglytuff',40,10,120,196,1);
+
+INSERT INTO pokemon VALUES (41,'zubat',41,8,75,49,1);
+
+INSERT INTO pokemon VALUES (42,'golbat',42,16,550,159,1);
+
+INSERT INTO pokemon VALUES (43,'oddish',43,5,54,64,1);
+
+INSERT INTO pokemon VALUES (44,'gloom',44,8,86,138,1);
+
+INSERT INTO pokemon VALUES (45,'vileplume',45,12,186,221,1);
+
+INSERT INTO pokemon VALUES (46,'paras',46,3,54,57,1);
+
+INSERT INTO pokemon VALUES (47,'parasect',47,10,295,142,1);
+
+INSERT INTO pokemon VALUES (48,'venonat',48,10,300,61,1);
+
+INSERT INTO pokemon VALUES (49,'venomoth',49,15,125,158,1);
+
+INSERT INTO pokemon VALUES (50,'diglett',50,2,8,53,1);
+
+INSERT INTO pokemon VALUES (51,'dugtrio',51,7,333,142,1);
+
+INSERT INTO pokemon VALUES (52,'meowth',52,4,42,58,1);
+
+INSERT INTO pokemon VALUES (53,'persian',53,10,320,154,1);
+
+INSERT INTO pokemon VALUES (54,'psyduck',54,8,196,64,1);
+
+INSERT INTO pokemon VALUES (55,'golduck',55,17,766,175,1);
+
+INSERT INTO pokemon VALUES (56,'mankey',56,5,280,61,1);
+
+INSERT INTO pokemon VALUES (57,'primeape',57,10,320,159,1);
+
+INSERT INTO pokemon VALUES (58,'growlithe',58,7,190,70,1);
+
+INSERT INTO pokemon VALUES (59,'arcanine',59,19,1550,194,1);
+
+INSERT INTO pokemon VALUES (60,'poliwag',60,6,124,60,1);
+
+INSERT INTO pokemon VALUES (61,'poliwhirl',61,10,200,135,1);
+
+INSERT INTO pokemon VALUES (62,'poliwrath',62,13,540,230,1);
+
+INSERT INTO pokemon VALUES (63,'abra',63,9,195,62,1);
+
+INSERT INTO pokemon VALUES (64,'kadabra',64,13,565,140,1);
+
+INSERT INTO pokemon VALUES (65,'alakazam',65,15,480,225,1);
+
+INSERT INTO pokemon VALUES (66,'machop',66,8,195,61,1);
+
+INSERT INTO pokemon VALUES (67,'machoke',67,15,705,142,1);
+
+INSERT INTO pokemon VALUES (68,'machamp',68,16,1300,227,1);
+
+INSERT INTO pokemon VALUES (69,'bellsprout',69,7,40,60,1);
+
+INSERT INTO pokemon VALUES (70,'weepinbell',70,10,64,137,1);
+
+INSERT INTO pokemon VALUES (71,'victreebel',71,17,155,221,1);
+
+INSERT INTO pokemon VALUES (72,'tentacool',72,9,455,67,1);
+
+INSERT INTO pokemon VALUES (73,'tentacruel',73,16,550,180,1);
+
+INSERT INTO pokemon VALUES (74,'geodude',74,4,200,60,1);
+
+INSERT INTO pokemon VALUES (75,'graveler',75,10,1050,137,1);
+
+INSERT INTO pokemon VALUES (76,'golem',76,14,3000,223,1);
+
+INSERT INTO pokemon VALUES (77,'ponyta',77,10,300,82,1);
+
+INSERT INTO pokemon VALUES (78,'rapidash',78,17,950,175,1);
+
+INSERT INTO pokemon VALUES (79,'slowpoke',79,12,360,63,1);
+
+INSERT INTO pokemon VALUES (80,'slowbro',80,16,785,172,1);
+
+INSERT INTO pokemon VALUES (81,'magnemite',81,3,60,65,1);
+
+INSERT INTO pokemon VALUES (82,'magneton',82,10,600,163,1);
+
+INSERT INTO pokemon VALUES (83,'farfetchd',83,8,150,123,1);
+
+INSERT INTO pokemon VALUES (84,'doduo',84,14,392,62,1);
+
+INSERT INTO pokemon VALUES (85,'dodrio',85,18,852,161,1);
+
+INSERT INTO pokemon VALUES (86,'seel',86,11,900,65,1);
+
+INSERT INTO pokemon VALUES (87,'dewgong',87,17,1200,166,1);
+
+INSERT INTO pokemon VALUES (88,'grimer',88,9,300,65,1);
+
+INSERT INTO pokemon VALUES (89,'muk',89,12,300,175,1);
+
+INSERT INTO pokemon VALUES (90,'shellder',90,3,40,61,1);
+
+INSERT INTO pokemon VALUES (91,'cloyster',91,15,1325,184,1);
+
+INSERT INTO pokemon VALUES (92,'gastly',92,13,1,62,1);
+
+INSERT INTO pokemon VALUES (93,'haunter',93,16,1,142,1);
+
+INSERT INTO pokemon VALUES (94,'gengar',94,15,405,225,1);
+
+INSERT INTO pokemon VALUES (95,'onix',95,88,2100,77,1);
+
+INSERT INTO pokemon VALUES (96,'drowzee',96,10,324,66,1);
+
+INSERT INTO pokemon VALUES (97,'hypno',97,16,756,169,1);
+
+INSERT INTO pokemon VALUES (98,'krabby',98,4,65,65,1);
+
+INSERT INTO pokemon VALUES (99,'kingler',99,13,600,166,1);
+
+INSERT INTO pokemon VALUES (100,'voltorb',100,5,104,66,1);
+
+INSERT INTO pokemon VALUES (101,'electrode',101,12,666,168,1);
+
+INSERT INTO pokemon VALUES (102,'exeggcute',102,4,25,65,1);
+
+INSERT INTO pokemon VALUES (103,'exeggutor',103,20,1200,182,1);
+
+INSERT INTO pokemon VALUES (104,'cubone',104,4,65,64,1);
+
+INSERT INTO pokemon VALUES (105,'marowak',105,10,450,149,1);
+
+INSERT INTO pokemon VALUES (106,'hitmonlee',106,15,498,159,1);
+
+INSERT INTO pokemon VALUES (107,'hitmonchan',107,14,502,159,1);
+
+INSERT INTO pokemon VALUES (108,'lickitung',108,12,655,77,1);
+
+INSERT INTO pokemon VALUES (109,'koffing',109,6,10,68,1);
+
+INSERT INTO pokemon VALUES (110,'weezing',110,12,95,172,1);
+
+INSERT INTO pokemon VALUES (111,'rhyhorn',111,10,1150,69,1);
+
+INSERT INTO pokemon VALUES (112,'rhydon',112,19,1200,170,1);
+
+INSERT INTO pokemon VALUES (113,'chansey',113,11,346,395,1);
+
+INSERT INTO pokemon VALUES (114,'tangela',114,10,350,87,1);
+
+INSERT INTO pokemon VALUES (115,'kangaskhan',115,22,800,172,1);
+
+INSERT INTO pokemon VALUES (116,'horsea',116,4,80,59,1);
+
+INSERT INTO pokemon VALUES (117,'seadra',117,12,250,154,1);
+
+INSERT INTO pokemon VALUES (118,'goldeen',118,6,150,64,1);
+
+INSERT INTO pokemon VALUES (119,'seaking',119,13,390,158,1);
+
+INSERT INTO pokemon VALUES (120,'staryu',120,8,345,68,1);
+
+INSERT INTO pokemon VALUES (121,'starmie',121,11,800,182,1);
+
+INSERT INTO pokemon VALUES (122,'mr-mime',122,13,545,161,1);
+
+INSERT INTO pokemon VALUES (123,'scyther',123,15,560,100,1);
+
+INSERT INTO pokemon VALUES (124,'jynx',124,14,406,159,1);
+
+INSERT INTO pokemon VALUES (125,'electabuzz',125,11,300,172,1);
+
+INSERT INTO pokemon VALUES (126,'magmar',126,13,445,173,1);
+
+INSERT INTO pokemon VALUES (127,'pinsir',127,15,550,175,1);
+
+INSERT INTO pokemon VALUES (128,'tauros',128,14,884,172,1);
+
+INSERT INTO pokemon VALUES (129,'magikarp',129,9,100,40,1);
+
+INSERT INTO pokemon VALUES (130,'gyarados',130,65,2350,189,1);
+
+INSERT INTO pokemon VALUES (131,'lapras',131,25,2200,187,1);
+
+INSERT INTO pokemon VALUES (132,'ditto',132,3,40,101,1);
+
+INSERT INTO pokemon VALUES (133,'eevee',133,3,65,65,1);
+
+INSERT INTO pokemon VALUES (134,'vaporeon',134,10,290,184,1);
+
+INSERT INTO pokemon VALUES (135,'jolteon',135,8,245,184,1);
+
+INSERT INTO pokemon VALUES (136,'flareon',136,9,250,184,1);
+
+INSERT INTO pokemon VALUES (137,'porygon',137,8,365,79,1);
+
+INSERT INTO pokemon VALUES (138,'omanyte',138,4,75,71,1);
+
+INSERT INTO pokemon VALUES (139,'omastar',139,10,350,173,1);
+
+INSERT INTO pokemon VALUES (140,'kabuto',140,5,115,71,1);
+
+INSERT INTO pokemon VALUES (141,'kabutops',141,13,405,173,1);
+
+INSERT INTO pokemon VALUES (142,'aerodactyl',142,18,590,180,1);
+
+INSERT INTO pokemon VALUES (143,'snorlax',143,21,4600,189,1);
+
+INSERT INTO pokemon VALUES (144,'articuno',144,17,554,261,1);
+
+INSERT INTO pokemon VALUES (145,'zapdos',145,16,526,261,1);
+
+INSERT INTO pokemon VALUES (146,'moltres',146,20,600,261,1);
+
+INSERT INTO pokemon VALUES (147,'dratini',147,18,33,60,1);
+
+INSERT INTO pokemon VALUES (148,'dragonair',148,40,165,147,1);
+
+INSERT INTO pokemon VALUES (149,'dragonite',149,22,2100,270,1);
+
+INSERT INTO pokemon VALUES (150,'mewtwo',150,20,1220,306,1);
+
+INSERT INTO pokemon VALUES (151,'mew',151,4,40,270,1);
+
+INSERT INTO pokemon VALUES (152,'chikorita',152,9,64,64,1);
+
+INSERT INTO pokemon VALUES (153,'bayleef',153,12,158,142,1);
+
+INSERT INTO pokemon VALUES (154,'meganium',154,18,1005,236,1);
+
+INSERT INTO pokemon VALUES (155,'cyndaquil',155,5,79,62,1);
+
+INSERT INTO pokemon VALUES (156,'quilava',156,9,190,142,1);
+
+INSERT INTO pokemon VALUES (157,'typhlosion',157,17,795,240,1);
+
+INSERT INTO pokemon VALUES (158,'totodile',158,6,95,63,1);
+
+INSERT INTO pokemon VALUES (159,'croconaw',159,11,250,142,1);
+
+INSERT INTO pokemon VALUES (160,'feraligatr',160,23,888,239,1);
+
+INSERT INTO pokemon VALUES (161,'sentret',161,8,60,43,1);
+
+INSERT INTO pokemon VALUES (162,'furret',162,18,325,145,1);
+
+INSERT INTO pokemon VALUES (163,'hoothoot',163,7,212,52,1);
+
+INSERT INTO pokemon VALUES (164,'noctowl',164,16,408,155,1);
+
+INSERT INTO pokemon VALUES (165,'ledyba',165,10,108,53,1);
+
+INSERT INTO pokemon VALUES (166,'ledian',166,14,356,137,1);
+
+INSERT INTO pokemon VALUES (167,'spinarak',167,5,85,50,1);
+
+INSERT INTO pokemon VALUES (168,'ariados',168,11,335,137,1);
+
+INSERT INTO pokemon VALUES (169,'crobat',169,18,750,241,1);
+
+INSERT INTO pokemon VALUES (170,'chinchou',170,5,120,66,1);
+
+INSERT INTO pokemon VALUES (171,'lanturn',171,12,225,161,1);
+
+INSERT INTO pokemon VALUES (172,'pichu',172,3,20,41,1);
+
+INSERT INTO pokemon VALUES (173,'cleffa',173,3,30,44,1);
+
+INSERT INTO pokemon VALUES (174,'igglybuff',174,3,10,42,1);
+
+INSERT INTO pokemon VALUES (175,'togepi',175,3,15,49,1);
+
+INSERT INTO pokemon VALUES (176,'togetic',176,6,32,142,1);
+
+INSERT INTO pokemon VALUES (177,'natu',177,2,20,64,1);
+
+INSERT INTO pokemon VALUES (178,'xatu',178,15,150,165,1);
+
+INSERT INTO pokemon VALUES (179,'mareep',179,6,78,56,1);
+
+INSERT INTO pokemon VALUES (180,'flaaffy',180,8,133,128,1);
+
+INSERT INTO pokemon VALUES (181,'ampharos',181,14,615,230,1);
+
+INSERT INTO pokemon VALUES (182,'bellossom',182,4,58,221,1);
+
+INSERT INTO pokemon VALUES (183,'marill',183,4,85,88,1);
+
+INSERT INTO pokemon VALUES (184,'azumarill',184,8,285,189,1);
+
+INSERT INTO pokemon VALUES (185,'sudowoodo',185,12,380,144,1);
+
+INSERT INTO pokemon VALUES (186,'politoed',186,11,339,225,1);
+
+INSERT INTO pokemon VALUES (187,'hoppip',187,4,5,50,1);
+
+INSERT INTO pokemon VALUES (188,'skiploom',188,6,10,119,1);
+
+INSERT INTO pokemon VALUES (189,'jumpluff',189,8,30,207,1);
+
+INSERT INTO pokemon VALUES (190,'aipom',190,8,115,72,1);
+
+INSERT INTO pokemon VALUES (191,'sunkern',191,3,18,36,1);
+
+INSERT INTO pokemon VALUES (192,'sunflora',192,8,85,149,1);
+
+INSERT INTO pokemon VALUES (193,'yanma',193,12,380,78,1);
+
+INSERT INTO pokemon VALUES (194,'wooper',194,4,85,42,1);
+
+INSERT INTO pokemon VALUES (195,'quagsire',195,14,750,151,1);
+
+INSERT INTO pokemon VALUES (196,'espeon',196,9,265,184,1);
+
+INSERT INTO pokemon VALUES (197,'umbreon',197,10,270,184,1);
+
+INSERT INTO pokemon VALUES (198,'murkrow',198,5,21,81,1);
+
+INSERT INTO pokemon VALUES (199,'slowking',199,20,795,172,1);
+
+INSERT INTO pokemon VALUES (200,'misdreavus',200,7,10,87,1);
+
+INSERT INTO pokemon VALUES (201,'unown',201,5,50,118,1);
+
+INSERT INTO pokemon VALUES (202,'wobbuffet',202,13,285,142,1);
+
+INSERT INTO pokemon VALUES (203,'girafarig',203,15,415,159,1);
+
+INSERT INTO pokemon VALUES (204,'pineco',204,6,72,58,1);
+
+INSERT INTO pokemon VALUES (205,'forretress',205,12,1258,163,1);
+
+INSERT INTO pokemon VALUES (206,'dunsparce',206,15,140,145,1);
+
+INSERT INTO pokemon VALUES (207,'gligar',207,11,648,86,1);
+
+INSERT INTO pokemon VALUES (208,'steelix',208,92,4000,179,1);
+
+INSERT INTO pokemon VALUES (209,'snubbull',209,6,78,60,1);
+
+INSERT INTO pokemon VALUES (210,'granbull',210,14,487,158,1);
+
+INSERT INTO pokemon VALUES (211,'qwilfish',211,5,39,86,1);
+
+INSERT INTO pokemon VALUES (212,'scizor',212,18,1180,175,1);
+
+INSERT INTO pokemon VALUES (213,'shuckle',213,6,205,177,1);
+
+INSERT INTO pokemon VALUES (214,'heracross',214,15,540,175,1);
+
+INSERT INTO pokemon VALUES (215,'sneasel',215,9,280,86,1);
+
+INSERT INTO pokemon VALUES (216,'teddiursa',216,6,88,66,1);
+
+INSERT INTO pokemon VALUES (217,'ursaring',217,18,1258,175,1);
+
+INSERT INTO pokemon VALUES (218,'slugma',218,7,350,50,1);
+
+INSERT INTO pokemon VALUES (219,'magcargo',219,8,550,144,1);
+
+INSERT INTO pokemon VALUES (220,'swinub',220,4,65,50,1);
+
+INSERT INTO pokemon VALUES (221,'piloswine',221,11,558,158,1);
+
+INSERT INTO pokemon VALUES (222,'corsola',222,6,50,133,1);
+
+INSERT INTO pokemon VALUES (223,'remoraid',223,6,120,60,1);
+
+INSERT INTO pokemon VALUES (224,'octillery',224,9,285,168,1);
+
+INSERT INTO pokemon VALUES (225,'delibird',225,9,160,116,1);
+
+INSERT INTO pokemon VALUES (226,'mantine',226,21,2200,163,1);
+
+INSERT INTO pokemon VALUES (227,'skarmory',227,17,505,163,1);
+
+INSERT INTO pokemon VALUES (228,'houndour',228,6,108,66,1);
+
+INSERT INTO pokemon VALUES (229,'houndoom',229,14,350,175,1);
+
+INSERT INTO pokemon VALUES (230,'kingdra',230,18,1520,243,1);
+
+INSERT INTO pokemon VALUES (231,'phanpy',231,5,335,66,1);
+
+INSERT INTO pokemon VALUES (232,'donphan',232,11,1200,175,1);
+
+INSERT INTO pokemon VALUES (233,'porygon2',233,6,325,180,1);
+
+INSERT INTO pokemon VALUES (234,'stantler',234,14,712,163,1);
+
+INSERT INTO pokemon VALUES (235,'smeargle',235,12,580,88,1);
+
+INSERT INTO pokemon VALUES (236,'tyrogue',236,7,210,42,1);
+
+INSERT INTO pokemon VALUES (237,'hitmontop',237,14,480,159,1);
+
+INSERT INTO pokemon VALUES (238,'smoochum',238,4,60,61,1);
+
+INSERT INTO pokemon VALUES (239,'elekid',239,6,235,72,1);
+
+INSERT INTO pokemon VALUES (240,'magby',240,7,214,73,1);
+
+INSERT INTO pokemon VALUES (241,'miltank',241,12,755,172,1);
+
+INSERT INTO pokemon VALUES (242,'blissey',242,15,468,608,1);
+
+INSERT INTO pokemon VALUES (243,'raikou',243,19,1780,261,1);
+
+INSERT INTO pokemon VALUES (244,'entei',244,21,1980,261,1);
+
+INSERT INTO pokemon VALUES (245,'suicune',245,20,1870,261,1);
+
+INSERT INTO pokemon VALUES (246,'larvitar',246,6,720,60,1);
+
+INSERT INTO pokemon VALUES (247,'pupitar',247,12,1520,144,1);
+
+INSERT INTO pokemon VALUES (248,'tyranitar',248,20,2020,270,1);
+
+INSERT INTO pokemon VALUES (249,'lugia',249,52,2160,306,1);
+
+INSERT INTO pokemon VALUES (250,'ho-oh',250,38,1990,306,1);
+
+INSERT INTO pokemon VALUES (251,'celebi',251,6,50,270,1);
+
+INSERT INTO pokemon VALUES (252,'treecko',252,5,50,62,1);
+
+INSERT INTO pokemon VALUES (253,'grovyle',253,9,216,142,1);
+
+INSERT INTO pokemon VALUES (254,'sceptile',254,17,522,239,1);
+
+INSERT INTO pokemon VALUES (255,'torchic',255,4,25,62,1);
+
+INSERT INTO pokemon VALUES (256,'combusken',256,9,195,142,1);
+
+INSERT INTO pokemon VALUES (257,'blaziken',257,19,520,239,1);
+
+INSERT INTO pokemon VALUES (258,'mudkip',258,4,76,62,1);
+
+INSERT INTO pokemon VALUES (259,'marshtomp',259,7,280,142,1);
+
+INSERT INTO pokemon VALUES (260,'swampert',260,15,819,241,1);
+
+INSERT INTO pokemon VALUES (261,'poochyena',261,5,136,44,1);
+
+INSERT INTO pokemon VALUES (262,'mightyena',262,10,370,147,1);
+
+INSERT INTO pokemon VALUES (263,'zigzagoon',263,4,175,48,1);
+
+INSERT INTO pokemon VALUES (264,'linoone',264,5,325,147,1);
+
+INSERT INTO pokemon VALUES (265,'wurmple',265,3,36,39,1);
+
+INSERT INTO pokemon VALUES (266,'silcoon',266,6,100,72,1);
+
+INSERT INTO pokemon VALUES (267,'beautifly',267,10,284,178,1);
+
+INSERT INTO pokemon VALUES (268,'cascoon',268,7,115,41,1);
+
+INSERT INTO pokemon VALUES (269,'dustox',269,12,316,135,1);
+
+INSERT INTO pokemon VALUES (270,'lotad',270,5,26,44,1);
+
+INSERT INTO pokemon VALUES (271,'lombre',271,12,325,119,1);
+
+INSERT INTO pokemon VALUES (272,'ludicolo',272,15,550,216,1);
+
+INSERT INTO pokemon VALUES (273,'seedot',273,5,40,44,1);
+
+INSERT INTO pokemon VALUES (274,'nuzleaf',274,10,280,119,1);
+
+INSERT INTO pokemon VALUES (275,'shiftry',275,13,596,216,1);
+
+INSERT INTO pokemon VALUES (276,'taillow',276,3,23,54,1);
+
+INSERT INTO pokemon VALUES (277,'swellow',277,7,198,151,1);
+
+INSERT INTO pokemon VALUES (278,'wingull',278,6,95,54,1);
+
+INSERT INTO pokemon VALUES (279,'pelipper',279,12,280,151,1);
+
+INSERT INTO pokemon VALUES (280,'ralts',280,4,66,40,1);
+
+INSERT INTO pokemon VALUES (281,'kirlia',281,8,202,97,1);
+
+INSERT INTO pokemon VALUES (282,'gardevoir',282,16,484,233,1);
+
+INSERT INTO pokemon VALUES (283,'surskit',283,5,17,54,1);
+
+INSERT INTO pokemon VALUES (284,'masquerain',284,8,36,145,1);
+
+INSERT INTO pokemon VALUES (285,'shroomish',285,4,45,59,1);
+
+INSERT INTO pokemon VALUES (286,'breloom',286,12,392,161,1);
+
+INSERT INTO pokemon VALUES (287,'slakoth',287,8,240,56,1);
+
+INSERT INTO pokemon VALUES (288,'vigoroth',288,14,465,154,1);
+
+INSERT INTO pokemon VALUES (289,'slaking',289,20,1305,252,1);
+
+INSERT INTO pokemon VALUES (290,'nincada',290,5,55,53,1);
+
+INSERT INTO pokemon VALUES (291,'ninjask',291,8,120,160,1);
+
+INSERT INTO pokemon VALUES (292,'shedinja',292,8,12,83,1);
+
+INSERT INTO pokemon VALUES (293,'whismur',293,6,163,48,1);
+
+INSERT INTO pokemon VALUES (294,'loudred',294,10,405,126,1);
+
+INSERT INTO pokemon VALUES (295,'exploud',295,15,840,221,1);
+
+INSERT INTO pokemon VALUES (296,'makuhita',296,10,864,47,1);
+
+INSERT INTO pokemon VALUES (297,'hariyama',297,23,2538,166,1);
+
+INSERT INTO pokemon VALUES (298,'azurill',298,2,20,38,1);
+
+INSERT INTO pokemon VALUES (299,'nosepass',299,10,970,75,1);
+
+INSERT INTO pokemon VALUES (300,'skitty',300,6,110,52,1);
+
+INSERT INTO pokemon VALUES (301,'delcatty',301,11,326,133,1);
+
+INSERT INTO pokemon VALUES (302,'sableye',302,5,110,133,1);
+
+INSERT INTO pokemon VALUES (303,'mawile',303,6,115,133,1);
+
+INSERT INTO pokemon VALUES (304,'aron',304,4,600,66,1);
+
+INSERT INTO pokemon VALUES (305,'lairon',305,9,1200,151,1);
+
+INSERT INTO pokemon VALUES (306,'aggron',306,21,3600,239,1);
+
+INSERT INTO pokemon VALUES (307,'meditite',307,6,112,56,1);
+
+INSERT INTO pokemon VALUES (308,'medicham',308,13,315,144,1);
+
+INSERT INTO pokemon VALUES (309,'electrike',309,6,152,59,1);
+
+INSERT INTO pokemon VALUES (310,'manectric',310,15,402,166,1);
+
+INSERT INTO pokemon VALUES (311,'plusle',311,4,42,142,1);
+
+INSERT INTO pokemon VALUES (312,'minun',312,4,42,142,1);
+
+INSERT INTO pokemon VALUES (313,'volbeat',313,7,177,140,1);
+
+INSERT INTO pokemon VALUES (314,'illumise',314,6,177,140,1);
+
+INSERT INTO pokemon VALUES (315,'roselia',315,3,20,140,1);
+
+INSERT INTO pokemon VALUES (316,'gulpin',316,4,103,60,1);
+
+INSERT INTO pokemon VALUES (317,'swalot',317,17,800,163,1);
+
+INSERT INTO pokemon VALUES (318,'carvanha',318,8,208,61,1);
+
+INSERT INTO pokemon VALUES (319,'sharpedo',319,18,888,161,1);
+
+INSERT INTO pokemon VALUES (320,'wailmer',320,20,1300,80,1);
+
+INSERT INTO pokemon VALUES (321,'wailord',321,145,3980,175,1);
+
+INSERT INTO pokemon VALUES (322,'numel',322,7,240,61,1);
+
+INSERT INTO pokemon VALUES (323,'camerupt',323,19,2200,161,1);
+
+INSERT INTO pokemon VALUES (324,'torkoal',324,5,804,165,1);
+
+INSERT INTO pokemon VALUES (325,'spoink',325,7,306,66,1);
+
+INSERT INTO pokemon VALUES (326,'grumpig',326,9,715,165,1);
+
+INSERT INTO pokemon VALUES (327,'spinda',327,11,50,126,1);
+
+INSERT INTO pokemon VALUES (328,'trapinch',328,7,150,58,1);
+
+INSERT INTO pokemon VALUES (329,'vibrava',329,11,153,119,1);
+
+INSERT INTO pokemon VALUES (330,'flygon',330,20,820,234,1);
+
+INSERT INTO pokemon VALUES (331,'cacnea',331,4,513,67,1);
+
+INSERT INTO pokemon VALUES (332,'cacturne',332,13,774,166,1);
+
+INSERT INTO pokemon VALUES (333,'swablu',333,4,12,62,1);
+
+INSERT INTO pokemon VALUES (334,'altaria',334,11,206,172,1);
+
+INSERT INTO pokemon VALUES (335,'zangoose',335,13,403,160,1);
+
+INSERT INTO pokemon VALUES (336,'seviper',336,27,525,160,1);
+
+INSERT INTO pokemon VALUES (337,'lunatone',337,10,1680,154,1);
+
+INSERT INTO pokemon VALUES (338,'solrock',338,12,1540,154,1);
+
+INSERT INTO pokemon VALUES (339,'barboach',339,4,19,58,1);
+
+INSERT INTO pokemon VALUES (340,'whiscash',340,9,236,164,1);
+
+INSERT INTO pokemon VALUES (341,'corphish',341,6,115,62,1);
+
+INSERT INTO pokemon VALUES (342,'crawdaunt',342,11,328,164,1);
+
+INSERT INTO pokemon VALUES (343,'baltoy',343,5,215,60,1);
+
+INSERT INTO pokemon VALUES (344,'claydol',344,15,1080,175,1);
+
+INSERT INTO pokemon VALUES (345,'lileep',345,10,238,71,1);
+
+INSERT INTO pokemon VALUES (346,'cradily',346,15,604,173,1);
+
+INSERT INTO pokemon VALUES (347,'anorith',347,7,125,71,1);
+
+INSERT INTO pokemon VALUES (348,'armaldo',348,15,682,173,1);
+
+INSERT INTO pokemon VALUES (349,'feebas',349,6,74,40,1);
+
+INSERT INTO pokemon VALUES (350,'milotic',350,62,1620,189,1);
+
+INSERT INTO pokemon VALUES (351,'castform',351,3,8,147,1);
+
+INSERT INTO pokemon VALUES (352,'kecleon',352,10,220,154,1);
+
+INSERT INTO pokemon VALUES (353,'shuppet',353,6,23,59,1);
+
+INSERT INTO pokemon VALUES (354,'banette',354,11,125,159,1);
+
+INSERT INTO pokemon VALUES (355,'duskull',355,8,150,59,1);
+
+INSERT INTO pokemon VALUES (356,'dusclops',356,16,306,159,1);
+
+INSERT INTO pokemon VALUES (357,'tropius',357,20,1000,161,1);
+
+INSERT INTO pokemon VALUES (358,'chimecho',358,6,10,149,1);
+
+INSERT INTO pokemon VALUES (359,'absol',359,12,470,163,1);
+
+INSERT INTO pokemon VALUES (360,'wynaut',360,6,140,52,1);
+
+INSERT INTO pokemon VALUES (361,'snorunt',361,7,168,60,1);
+
+INSERT INTO pokemon VALUES (362,'glalie',362,15,2565,168,1);
+
+INSERT INTO pokemon VALUES (363,'spheal',363,8,395,58,1);
+
+INSERT INTO pokemon VALUES (364,'sealeo',364,11,876,144,1);
+
+INSERT INTO pokemon VALUES (365,'walrein',365,14,1506,239,1);
+
+INSERT INTO pokemon VALUES (366,'clamperl',366,4,525,69,1);
+
+INSERT INTO pokemon VALUES (367,'huntail',367,17,270,170,1);
+
+INSERT INTO pokemon VALUES (368,'gorebyss',368,18,226,170,1);
+
+INSERT INTO pokemon VALUES (369,'relicanth',369,10,234,170,1);
+
+INSERT INTO pokemon VALUES (370,'luvdisc',370,6,87,116,1);
+
+INSERT INTO pokemon VALUES (371,'bagon',371,6,421,60,1);
+
+INSERT INTO pokemon VALUES (372,'shelgon',372,11,1105,147,1);
+
+INSERT INTO pokemon VALUES (373,'salamence',373,15,1026,270,1);
+
+INSERT INTO pokemon VALUES (374,'beldum',374,6,952,60,1);
+
+INSERT INTO pokemon VALUES (375,'metang',375,12,2025,147,1);
+
+INSERT INTO pokemon VALUES (376,'metagross',376,16,5500,270,1);
+
+INSERT INTO pokemon VALUES (377,'regirock',377,17,2300,261,1);
+
+INSERT INTO pokemon VALUES (378,'regice',378,18,1750,261,1);
+
+INSERT INTO pokemon VALUES (379,'registeel',379,19,2050,261,1);
+
+INSERT INTO pokemon VALUES (380,'latias',380,14,400,270,1);
+
+INSERT INTO pokemon VALUES (381,'latios',381,20,600,270,1);
+
+INSERT INTO pokemon VALUES (382,'kyogre',382,45,3520,302,1);
+
+INSERT INTO pokemon VALUES (383,'groudon',383,35,9500,302,1);
+
+INSERT INTO pokemon VALUES (384,'rayquaza',384,70,2065,306,1);
+
+INSERT INTO pokemon VALUES (385,'jirachi',385,3,11,270,1);
+
+INSERT INTO pokemon VALUES (386,'deoxys-normal',386,17,608,270,1);
+
+INSERT INTO pokemon VALUES (387,'turtwig',387,4,102,64,1);
+
+INSERT INTO pokemon VALUES (388,'grotle',388,11,970,142,1);
+
+INSERT INTO pokemon VALUES (389,'torterra',389,22,3100,236,1);
+
+INSERT INTO pokemon VALUES (390,'chimchar',390,5,62,62,1);
+
+INSERT INTO pokemon VALUES (391,'monferno',391,9,220,142,1);
+
+INSERT INTO pokemon VALUES (392,'infernape',392,12,550,240,1);
+
+INSERT INTO pokemon VALUES (393,'piplup',393,4,52,63,1);
+
+INSERT INTO pokemon VALUES (394,'prinplup',394,8,230,142,1);
+
+INSERT INTO pokemon VALUES (395,'empoleon',395,17,845,239,1);
+
+INSERT INTO pokemon VALUES (396,'starly',396,3,20,49,1);
+
+INSERT INTO pokemon VALUES (397,'staravia',397,6,155,119,1);
+
+INSERT INTO pokemon VALUES (398,'staraptor',398,12,249,218,1);
+
+INSERT INTO pokemon VALUES (399,'bidoof',399,5,200,50,1);
+
+INSERT INTO pokemon VALUES (400,'bibarel',400,10,315,144,1);
+
+INSERT INTO pokemon VALUES (401,'kricketot',401,3,22,39,1);
+
+INSERT INTO pokemon VALUES (402,'kricketune',402,10,255,134,1);
+
+INSERT INTO pokemon VALUES (403,'shinx',403,5,95,53,1);
+
+INSERT INTO pokemon VALUES (404,'luxio',404,9,305,127,1);
+
+INSERT INTO pokemon VALUES (405,'luxray',405,14,420,235,1);
+
+INSERT INTO pokemon VALUES (406,'budew',406,2,12,56,1);
+
+INSERT INTO pokemon VALUES (407,'roserade',407,9,145,232,1);
+
+INSERT INTO pokemon VALUES (408,'cranidos',408,9,315,70,1);
+
+INSERT INTO pokemon VALUES (409,'rampardos',409,16,1025,173,1);
+
+INSERT INTO pokemon VALUES (410,'shieldon',410,5,570,70,1);
+
+INSERT INTO pokemon VALUES (411,'bastiodon',411,13,1495,173,1);
+
+INSERT INTO pokemon VALUES (412,'burmy',412,2,34,45,1);
+
+INSERT INTO pokemon VALUES (413,'wormadam-plant',413,5,65,148,1);
+
+INSERT INTO pokemon VALUES (414,'mothim',414,9,233,148,1);
+
+INSERT INTO pokemon VALUES (415,'combee',415,3,55,49,1);
+
+INSERT INTO pokemon VALUES (416,'vespiquen',416,12,385,166,1);
+
+INSERT INTO pokemon VALUES (417,'pachirisu',417,4,39,142,1);
+
+INSERT INTO pokemon VALUES (418,'buizel',418,7,295,66,1);
+
+INSERT INTO pokemon VALUES (419,'floatzel',419,11,335,173,1);
+
+INSERT INTO pokemon VALUES (420,'cherubi',420,4,33,55,1);
+
+INSERT INTO pokemon VALUES (421,'cherrim',421,5,93,158,1);
+
+INSERT INTO pokemon VALUES (422,'shellos',422,3,63,65,1);
+
+INSERT INTO pokemon VALUES (423,'gastrodon',423,9,299,166,1);
+
+INSERT INTO pokemon VALUES (424,'ambipom',424,12,203,169,1);
+
+INSERT INTO pokemon VALUES (425,'drifloon',425,4,12,70,1);
+
+INSERT INTO pokemon VALUES (426,'drifblim',426,12,150,174,1);
+
+INSERT INTO pokemon VALUES (427,'buneary',427,4,55,70,1);
+
+INSERT INTO pokemon VALUES (428,'lopunny',428,12,333,168,1);
+
+INSERT INTO pokemon VALUES (429,'mismagius',429,9,44,173,1);
+
+INSERT INTO pokemon VALUES (430,'honchkrow',430,9,273,177,1);
+
+INSERT INTO pokemon VALUES (431,'glameow',431,5,39,62,1);
+
+INSERT INTO pokemon VALUES (432,'purugly',432,10,438,158,1);
+
+INSERT INTO pokemon VALUES (433,'chingling',433,2,6,57,1);
+
+INSERT INTO pokemon VALUES (434,'stunky',434,4,192,66,1);
+
+INSERT INTO pokemon VALUES (435,'skuntank',435,10,380,168,1);
+
+INSERT INTO pokemon VALUES (436,'bronzor',436,5,605,60,1);
+
+INSERT INTO pokemon VALUES (437,'bronzong',437,13,1870,175,1);
+
+INSERT INTO pokemon VALUES (438,'bonsly',438,5,150,58,1);
+
+INSERT INTO pokemon VALUES (439,'mime-jr',439,6,130,62,1);
+
+INSERT INTO pokemon VALUES (440,'happiny',440,6,244,110,1);
+
+INSERT INTO pokemon VALUES (441,'chatot',441,5,19,144,1);
+
+INSERT INTO pokemon VALUES (442,'spiritomb',442,10,1080,170,1);
+
+INSERT INTO pokemon VALUES (443,'gible',443,7,205,60,1);
+
+INSERT INTO pokemon VALUES (444,'gabite',444,14,560,144,1);
+
+INSERT INTO pokemon VALUES (445,'garchomp',445,19,950,270,1);
+
+INSERT INTO pokemon VALUES (446,'munchlax',446,6,1050,78,1);
+
+INSERT INTO pokemon VALUES (447,'riolu',447,7,202,57,1);
+
+INSERT INTO pokemon VALUES (448,'lucario',448,12,540,184,1);
+
+INSERT INTO pokemon VALUES (449,'hippopotas',449,8,495,66,1);
+
+INSERT INTO pokemon VALUES (450,'hippowdon',450,20,3000,184,1);
+
+INSERT INTO pokemon VALUES (451,'skorupi',451,8,120,66,1);
+
+INSERT INTO pokemon VALUES (452,'drapion',452,13,615,175,1);
+
+INSERT INTO pokemon VALUES (453,'croagunk',453,7,230,60,1);
+
+INSERT INTO pokemon VALUES (454,'toxicroak',454,13,444,172,1);
+
+INSERT INTO pokemon VALUES (455,'carnivine',455,14,270,159,1);
+
+INSERT INTO pokemon VALUES (456,'finneon',456,4,70,66,1);
+
+INSERT INTO pokemon VALUES (457,'lumineon',457,12,240,161,1);
+
+INSERT INTO pokemon VALUES (458,'mantyke',458,10,650,69,1);
+
+INSERT INTO pokemon VALUES (459,'snover',459,10,505,67,1);
+
+INSERT INTO pokemon VALUES (460,'abomasnow',460,22,1355,173,1);
+
+INSERT INTO pokemon VALUES (461,'weavile',461,11,340,179,1);
+
+INSERT INTO pokemon VALUES (462,'magnezone',462,12,1800,241,1);
+
+INSERT INTO pokemon VALUES (463,'lickilicky',463,17,1400,180,1);
+
+INSERT INTO pokemon VALUES (464,'rhyperior',464,24,2828,241,1);
+
+INSERT INTO pokemon VALUES (465,'tangrowth',465,20,1286,187,1);
+
+INSERT INTO pokemon VALUES (466,'electivire',466,18,1386,243,1);
+
+INSERT INTO pokemon VALUES (467,'magmortar',467,16,680,243,1);
+
+INSERT INTO pokemon VALUES (468,'togekiss',468,15,380,245,1);
+
+INSERT INTO pokemon VALUES (469,'yanmega',469,19,515,180,1);
+
+INSERT INTO pokemon VALUES (470,'leafeon',470,10,255,184,1);
+
+INSERT INTO pokemon VALUES (471,'glaceon',471,8,259,184,1);
+
+INSERT INTO pokemon VALUES (472,'gliscor',472,20,425,179,1);
+
+INSERT INTO pokemon VALUES (473,'mamoswine',473,25,2910,239,1);
+
+INSERT INTO pokemon VALUES (474,'porygon-z',474,9,340,241,1);
+
+INSERT INTO pokemon VALUES (475,'gallade',475,16,520,233,1);
+
+INSERT INTO pokemon VALUES (476,'probopass',476,14,3400,184,1);
+
+INSERT INTO pokemon VALUES (477,'dusknoir',477,22,1066,236,1);
+
+INSERT INTO pokemon VALUES (478,'froslass',478,13,266,168,1);
+
+INSERT INTO pokemon VALUES (479,'rotom',479,3,3,154,1);
+
+INSERT INTO pokemon VALUES (480,'uxie',480,3,3,261,1);
+
+INSERT INTO pokemon VALUES (481,'mesprit',481,3,3,261,1);
+
+INSERT INTO pokemon VALUES (482,'azelf',482,3,3,261,1);
+
+INSERT INTO pokemon VALUES (483,'dialga',483,54,6830,306,1);
+
+INSERT INTO pokemon VALUES (484,'palkia',484,42,3360,306,1);
+
+INSERT INTO pokemon VALUES (485,'heatran',485,17,4300,270,1);
+
+INSERT INTO pokemon VALUES (486,'regigigas',486,37,4200,302,1);
+
+INSERT INTO pokemon VALUES (487,'giratina-altered',487,45,7500,306,1);
+
+INSERT INTO pokemon VALUES (488,'cresselia',488,15,856,270,1);
+
+INSERT INTO pokemon VALUES (489,'phione',489,4,31,216,1);
+
+INSERT INTO pokemon VALUES (490,'manaphy',490,3,14,270,1);
+
+INSERT INTO pokemon VALUES (491,'darkrai',491,15,505,270,1);
+
+INSERT INTO pokemon VALUES (492,'shaymin-land',492,2,21,270,1);
+
+INSERT INTO pokemon VALUES (493,'arceus',493,32,3200,324,1);
+
+INSERT INTO pokemon VALUES (494,'victini',494,4,40,270,1);
+
+INSERT INTO pokemon VALUES (495,'snivy',495,6,81,62,1);
+
+INSERT INTO pokemon VALUES (496,'servine',496,8,160,145,1);
+
+INSERT INTO pokemon VALUES (497,'serperior',497,33,630,238,1);
+
+INSERT INTO pokemon VALUES (498,'tepig',498,5,99,62,1);
+
+INSERT INTO pokemon VALUES (499,'pignite',499,10,555,146,1);
+
+INSERT INTO pokemon VALUES (500,'emboar',500,16,1500,238,1);
+
+INSERT INTO pokemon VALUES (501,'oshawott',501,5,59,62,1);
+
+INSERT INTO pokemon VALUES (502,'dewott',502,8,245,145,1);
+
+INSERT INTO pokemon VALUES (503,'samurott',503,15,946,238,1);
+
+INSERT INTO pokemon VALUES (504,'patrat',504,5,116,51,1);
+
+INSERT INTO pokemon VALUES (505,'watchog',505,11,270,147,1);
+
+INSERT INTO pokemon VALUES (506,'lillipup',506,4,41,55,1);
+
+INSERT INTO pokemon VALUES (507,'herdier',507,9,147,130,1);
+
+INSERT INTO pokemon VALUES (508,'stoutland',508,12,610,225,1);
+
+INSERT INTO pokemon VALUES (509,'purrloin',509,4,101,56,1);
+
+INSERT INTO pokemon VALUES (510,'liepard',510,11,375,156,1);
+
+INSERT INTO pokemon VALUES (511,'pansage',511,6,105,63,1);
+
+INSERT INTO pokemon VALUES (512,'simisage',512,11,305,174,1);
+
+INSERT INTO pokemon VALUES (513,'pansear',513,6,110,63,1);
+
+INSERT INTO pokemon VALUES (514,'simisear',514,10,280,174,1);
+
+INSERT INTO pokemon VALUES (515,'panpour',515,6,135,63,1);
+
+INSERT INTO pokemon VALUES (516,'simipour',516,10,290,174,1);
+
+INSERT INTO pokemon VALUES (517,'munna',517,6,233,58,1);
+
+INSERT INTO pokemon VALUES (518,'musharna',518,11,605,170,1);
+
+INSERT INTO pokemon VALUES (519,'pidove',519,3,21,53,1);
+
+INSERT INTO pokemon VALUES (520,'tranquill',520,6,150,125,1);
+
+INSERT INTO pokemon VALUES (521,'unfezant',521,12,290,220,1);
+
+INSERT INTO pokemon VALUES (522,'blitzle',522,8,298,59,1);
+
+INSERT INTO pokemon VALUES (523,'zebstrika',523,16,795,174,1);
+
+INSERT INTO pokemon VALUES (524,'roggenrola',524,4,180,56,1);
+
+INSERT INTO pokemon VALUES (525,'boldore',525,9,1020,137,1);
+
+INSERT INTO pokemon VALUES (526,'gigalith',526,17,2600,232,1);
+
+INSERT INTO pokemon VALUES (527,'woobat',527,4,21,63,1);
+
+INSERT INTO pokemon VALUES (528,'swoobat',528,9,105,149,1);
+
+INSERT INTO pokemon VALUES (529,'drilbur',529,3,85,66,1);
+
+INSERT INTO pokemon VALUES (530,'excadrill',530,7,404,178,1);
+
+INSERT INTO pokemon VALUES (531,'audino',531,11,310,390,1);
+
+INSERT INTO pokemon VALUES (532,'timburr',532,6,125,61,1);
+
+INSERT INTO pokemon VALUES (533,'gurdurr',533,12,400,142,1);
+
+INSERT INTO pokemon VALUES (534,'conkeldurr',534,14,870,227,1);
+
+INSERT INTO pokemon VALUES (535,'tympole',535,5,45,59,1);
+
+INSERT INTO pokemon VALUES (536,'palpitoad',536,8,170,134,1);
+
+INSERT INTO pokemon VALUES (537,'seismitoad',537,15,620,229,1);
+
+INSERT INTO pokemon VALUES (538,'throh',538,13,555,163,1);
+
+INSERT INTO pokemon VALUES (539,'sawk',539,14,510,163,1);
+
+INSERT INTO pokemon VALUES (540,'sewaddle',540,3,25,62,1);
+
+INSERT INTO pokemon VALUES (541,'swadloon',541,5,73,133,1);
+
+INSERT INTO pokemon VALUES (542,'leavanny',542,12,205,225,1);
+
+INSERT INTO pokemon VALUES (543,'venipede',543,4,53,52,1);
+
+INSERT INTO pokemon VALUES (544,'whirlipede',544,12,585,126,1);
+
+INSERT INTO pokemon VALUES (545,'scolipede',545,25,2005,218,1);
+
+INSERT INTO pokemon VALUES (546,'cottonee',546,3,6,56,1);
+
+INSERT INTO pokemon VALUES (547,'whimsicott',547,7,66,168,1);
+
+INSERT INTO pokemon VALUES (548,'petilil',548,5,66,56,1);
+
+INSERT INTO pokemon VALUES (549,'lilligant',549,11,163,168,1);
+
+INSERT INTO pokemon VALUES (550,'basculin-red-striped',550,10,180,161,1);
+
+INSERT INTO pokemon VALUES (551,'sandile',551,7,152,58,1);
+
+INSERT INTO pokemon VALUES (552,'krokorok',552,10,334,123,1);
+
+INSERT INTO pokemon VALUES (553,'krookodile',553,15,963,234,1);
+
+INSERT INTO pokemon VALUES (554,'darumaka',554,6,375,63,1);
+
+INSERT INTO pokemon VALUES (555,'darmanitan-standard',555,13,929,168,1);
+
+INSERT INTO pokemon VALUES (556,'maractus',556,10,280,161,1);
+
+INSERT INTO pokemon VALUES (557,'dwebble',557,3,145,65,1);
+
+INSERT INTO pokemon VALUES (558,'crustle',558,14,2000,166,1);
+
+INSERT INTO pokemon VALUES (559,'scraggy',559,6,118,70,1);
+
+INSERT INTO pokemon VALUES (560,'scrafty',560,11,300,171,1);
+
+INSERT INTO pokemon VALUES (561,'sigilyph',561,14,140,172,1);
+
+INSERT INTO pokemon VALUES (562,'yamask',562,5,15,61,1);
+
+INSERT INTO pokemon VALUES (563,'cofagrigus',563,17,765,169,1);
+
+INSERT INTO pokemon VALUES (564,'tirtouga',564,7,165,71,1);
+
+INSERT INTO pokemon VALUES (565,'carracosta',565,12,810,173,1);
+
+INSERT INTO pokemon VALUES (566,'archen',566,5,95,71,1);
+
+INSERT INTO pokemon VALUES (567,'archeops',567,14,320,177,1);
+
+INSERT INTO pokemon VALUES (568,'trubbish',568,6,310,66,1);
+
+INSERT INTO pokemon VALUES (569,'garbodor',569,19,1073,166,1);
+
+INSERT INTO pokemon VALUES (570,'zorua',570,7,125,66,1);
+
+INSERT INTO pokemon VALUES (571,'zoroark',571,16,811,179,1);
+
+INSERT INTO pokemon VALUES (572,'minccino',572,4,58,60,1);
+
+INSERT INTO pokemon VALUES (573,'cinccino',573,5,75,165,1);
+
+INSERT INTO pokemon VALUES (574,'gothita',574,4,58,58,1);
+
+INSERT INTO pokemon VALUES (575,'gothorita',575,7,180,137,1);
+
+INSERT INTO pokemon VALUES (576,'gothitelle',576,15,440,221,1);
+
+INSERT INTO pokemon VALUES (577,'solosis',577,3,10,58,1);
+
+INSERT INTO pokemon VALUES (578,'duosion',578,6,80,130,1);
+
+INSERT INTO pokemon VALUES (579,'reuniclus',579,10,201,221,1);
+
+INSERT INTO pokemon VALUES (580,'ducklett',580,5,55,61,1);
+
+INSERT INTO pokemon VALUES (581,'swanna',581,13,242,166,1);
+
+INSERT INTO pokemon VALUES (582,'vanillite',582,4,57,61,1);
+
+INSERT INTO pokemon VALUES (583,'vanillish',583,11,410,138,1);
+
+INSERT INTO pokemon VALUES (584,'vanilluxe',584,13,575,241,1);
+
+INSERT INTO pokemon VALUES (585,'deerling',585,6,195,67,1);
+
+INSERT INTO pokemon VALUES (586,'sawsbuck',586,19,925,166,1);
+
+INSERT INTO pokemon VALUES (587,'emolga',587,4,50,150,1);
+
+INSERT INTO pokemon VALUES (588,'karrablast',588,5,59,63,1);
+
+INSERT INTO pokemon VALUES (589,'escavalier',589,10,330,173,1);
+
+INSERT INTO pokemon VALUES (590,'foongus',590,2,10,59,1);
+
+INSERT INTO pokemon VALUES (591,'amoonguss',591,6,105,162,1);
+
+INSERT INTO pokemon VALUES (592,'frillish',592,12,330,67,1);
+
+INSERT INTO pokemon VALUES (593,'jellicent',593,22,1350,168,1);
+
+INSERT INTO pokemon VALUES (594,'alomomola',594,12,316,165,1);
+
+INSERT INTO pokemon VALUES (595,'joltik',595,1,6,64,1);
+
+INSERT INTO pokemon VALUES (596,'galvantula',596,8,143,165,1);
+
+INSERT INTO pokemon VALUES (597,'ferroseed',597,6,188,61,1);
+
+INSERT INTO pokemon VALUES (598,'ferrothorn',598,10,1100,171,1);
+
+INSERT INTO pokemon VALUES (599,'klink',599,3,210,60,1);
+
+INSERT INTO pokemon VALUES (600,'klang',600,6,510,154,1);
+
+INSERT INTO pokemon VALUES (601,'klinklang',601,6,810,234,1);
+
+INSERT INTO pokemon VALUES (602,'tynamo',602,2,3,55,1);
+
+INSERT INTO pokemon VALUES (603,'eelektrik',603,12,220,142,1);
+
+INSERT INTO pokemon VALUES (604,'eelektross',604,21,805,232,1);
+
+INSERT INTO pokemon VALUES (605,'elgyem',605,5,90,67,1);
+
+INSERT INTO pokemon VALUES (606,'beheeyem',606,10,345,170,1);
+
+INSERT INTO pokemon VALUES (607,'litwick',607,3,31,55,1);
+
+INSERT INTO pokemon VALUES (608,'lampent',608,6,130,130,1);
+
+INSERT INTO pokemon VALUES (609,'chandelure',609,10,343,234,1);
+
+INSERT INTO pokemon VALUES (610,'axew',610,6,180,64,1);
+
+INSERT INTO pokemon VALUES (611,'fraxure',611,10,360,144,1);
+
+INSERT INTO pokemon VALUES (612,'haxorus',612,18,1055,243,1);
+
+INSERT INTO pokemon VALUES (613,'cubchoo',613,5,85,61,1);
+
+INSERT INTO pokemon VALUES (614,'beartic',614,26,2600,170,1);
+
+INSERT INTO pokemon VALUES (615,'cryogonal',615,11,1480,170,1);
+
+INSERT INTO pokemon VALUES (616,'shelmet',616,4,77,61,1);
+
+INSERT INTO pokemon VALUES (617,'accelgor',617,8,253,173,1);
+
+INSERT INTO pokemon VALUES (618,'stunfisk',618,7,110,165,1);
+
+INSERT INTO pokemon VALUES (619,'mienfoo',619,9,200,70,1);
+
+INSERT INTO pokemon VALUES (620,'mienshao',620,14,355,179,1);
+
+INSERT INTO pokemon VALUES (621,'druddigon',621,16,1390,170,1);
+
+INSERT INTO pokemon VALUES (622,'golett',622,10,920,61,1);
+
+INSERT INTO pokemon VALUES (623,'golurk',623,28,3300,169,1);
+
+INSERT INTO pokemon VALUES (624,'pawniard',624,5,102,68,1);
+
+INSERT INTO pokemon VALUES (625,'bisharp',625,16,700,172,1);
+
+INSERT INTO pokemon VALUES (626,'bouffalant',626,16,946,172,1);
+
+INSERT INTO pokemon VALUES (627,'rufflet',627,5,105,70,1);
+
+INSERT INTO pokemon VALUES (628,'braviary',628,15,410,179,1);
+
+INSERT INTO pokemon VALUES (629,'vullaby',629,5,90,74,1);
+
+INSERT INTO pokemon VALUES (630,'mandibuzz',630,12,395,179,1);
+
+INSERT INTO pokemon VALUES (631,'heatmor',631,14,580,169,1);
+
+INSERT INTO pokemon VALUES (632,'durant',632,3,330,169,1);
+
+INSERT INTO pokemon VALUES (633,'deino',633,8,173,60,1);
+
+INSERT INTO pokemon VALUES (634,'zweilous',634,14,500,147,1);
+
+INSERT INTO pokemon VALUES (635,'hydreigon',635,18,1600,270,1);
+
+INSERT INTO pokemon VALUES (636,'larvesta',636,11,288,72,1);
+
+INSERT INTO pokemon VALUES (637,'volcarona',637,16,460,248,1);
+
+INSERT INTO pokemon VALUES (638,'cobalion',638,21,2500,261,1);
+
+INSERT INTO pokemon VALUES (639,'terrakion',639,19,2600,261,1);
+
+INSERT INTO pokemon VALUES (640,'virizion',640,20,2000,261,1);
+
+INSERT INTO pokemon VALUES (641,'tornadus-incarnate',641,15,630,261,1);
+
+INSERT INTO pokemon VALUES (642,'thundurus-incarnate',642,15,610,261,1);
+
+INSERT INTO pokemon VALUES (643,'reshiram',643,32,3300,306,1);
+
+INSERT INTO pokemon VALUES (644,'zekrom',644,29,3450,306,1);
+
+INSERT INTO pokemon VALUES (645,'landorus-incarnate',645,15,680,270,1);
+
+INSERT INTO pokemon VALUES (646,'kyurem',646,30,3250,297,1);
+
+INSERT INTO pokemon VALUES (647,'keldeo-ordinary',647,14,485,261,1);
+
+INSERT INTO pokemon VALUES (648,'meloetta-aria',648,6,65,270,1);
+
+INSERT INTO pokemon VALUES (649,'genesect',649,15,825,270,1);
+
+INSERT INTO pokemon VALUES (650,'chespin',650,4,90,63,1);
+
+INSERT INTO pokemon VALUES (651,'quilladin',651,7,290,142,1);
+
+INSERT INTO pokemon VALUES (652,'chesnaught',652,16,900,239,1);
+
+INSERT INTO pokemon VALUES (653,'fennekin',653,4,94,61,1);
+
+INSERT INTO pokemon VALUES (654,'braixen',654,10,145,143,1);
+
+INSERT INTO pokemon VALUES (655,'delphox',655,15,390,240,1);
+
+INSERT INTO pokemon VALUES (656,'froakie',656,3,70,63,1);
+
+INSERT INTO pokemon VALUES (657,'frogadier',657,6,109,142,1);
+
+INSERT INTO pokemon VALUES (658,'greninja',658,15,400,239,1);
+
+INSERT INTO pokemon VALUES (659,'bunnelby',659,4,50,47,1);
+
+INSERT INTO pokemon VALUES (660,'diggersby',660,10,424,148,1);
+
+INSERT INTO pokemon VALUES (661,'fletchling',661,3,17,56,1);
+
+INSERT INTO pokemon VALUES (662,'fletchinder',662,7,160,134,1);
+
+INSERT INTO pokemon VALUES (663,'talonflame',663,12,245,175,1);
+
+INSERT INTO pokemon VALUES (664,'scatterbug',664,3,25,40,1);
+
+INSERT INTO pokemon VALUES (665,'spewpa',665,3,84,75,1);
+
+INSERT INTO pokemon VALUES (666,'vivillon',666,12,170,185,1);
+
+INSERT INTO pokemon VALUES (667,'litleo',667,6,135,74,1);
+
+INSERT INTO pokemon VALUES (668,'pyroar',668,15,815,177,1);
+
+INSERT INTO pokemon VALUES (669,'flabebe',669,1,1,61,1);
+
+INSERT INTO pokemon VALUES (670,'floette',670,2,9,130,1);
+
+INSERT INTO pokemon VALUES (671,'florges',671,11,100,248,1);
+
+INSERT INTO pokemon VALUES (672,'skiddo',672,9,310,70,1);
+
+INSERT INTO pokemon VALUES (673,'gogoat',673,17,910,186,1);
+
+INSERT INTO pokemon VALUES (674,'pancham',674,6,80,70,1);
+
+INSERT INTO pokemon VALUES (675,'pangoro',675,21,1360,173,1);
+
+INSERT INTO pokemon VALUES (676,'furfrou',676,12,280,165,1);
+
+INSERT INTO pokemon VALUES (677,'espurr',677,3,35,71,1);
+
+INSERT INTO pokemon VALUES (678,'meowstic-male',678,6,85,163,1);
+
+INSERT INTO pokemon VALUES (679,'honedge',679,8,20,65,1);
+
+INSERT INTO pokemon VALUES (680,'doublade',680,8,45,157,1);
+
+INSERT INTO pokemon VALUES (681,'aegislash-shield',681,17,530,234,1);
+
+INSERT INTO pokemon VALUES (682,'spritzee',682,2,5,68,1);
+
+INSERT INTO pokemon VALUES (683,'aromatisse',683,8,155,162,1);
+
+INSERT INTO pokemon VALUES (684,'swirlix',684,4,35,68,1);
+
+INSERT INTO pokemon VALUES (685,'slurpuff',685,8,50,168,1);
+
+INSERT INTO pokemon VALUES (686,'inkay',686,4,35,58,1);
+
+INSERT INTO pokemon VALUES (687,'malamar',687,15,470,169,1);
+
+INSERT INTO pokemon VALUES (688,'binacle',688,5,310,61,1);
+
+INSERT INTO pokemon VALUES (689,'barbaracle',689,13,960,175,1);
+
+INSERT INTO pokemon VALUES (690,'skrelp',690,5,73,64,1);
+
+INSERT INTO pokemon VALUES (691,'dragalge',691,18,815,173,1);
+
+INSERT INTO pokemon VALUES (692,'clauncher',692,5,83,66,1);
+
+INSERT INTO pokemon VALUES (693,'clawitzer',693,13,353,100,1);
+
+INSERT INTO pokemon VALUES (694,'helioptile',694,5,60,58,1);
+
+INSERT INTO pokemon VALUES (695,'heliolisk',695,10,210,168,1);
+
+INSERT INTO pokemon VALUES (696,'tyrunt',696,8,260,72,1);
+
+INSERT INTO pokemon VALUES (697,'tyrantrum',697,25,2700,182,1);
+
+INSERT INTO pokemon VALUES (698,'amaura',698,13,252,72,1);
+
+INSERT INTO pokemon VALUES (699,'aurorus',699,27,2250,104,1);
+
+INSERT INTO pokemon VALUES (700,'sylveon',700,10,235,184,1);
+
+INSERT INTO pokemon VALUES (701,'hawlucha',701,8,215,175,1);
+
+INSERT INTO pokemon VALUES (702,'dedenne',702,2,22,151,1);
+
+INSERT INTO pokemon VALUES (703,'carbink',703,3,57,100,1);
+
+INSERT INTO pokemon VALUES (704,'goomy',704,3,28,60,1);
+
+INSERT INTO pokemon VALUES (705,'sliggoo',705,8,175,158,1);
+
+INSERT INTO pokemon VALUES (706,'goodra',706,20,1505,270,1);
+
+INSERT INTO pokemon VALUES (707,'klefki',707,2,30,165,1);
+
+INSERT INTO pokemon VALUES (708,'phantump',708,4,70,62,1);
+
+INSERT INTO pokemon VALUES (709,'trevenant',709,15,710,166,1);
+
+INSERT INTO pokemon VALUES (710,'pumpkaboo-average',710,4,50,67,1);
+
+INSERT INTO pokemon VALUES (711,'gourgeist-average',711,9,125,173,1);
+
+INSERT INTO pokemon VALUES (712,'bergmite',712,10,995,61,1);
+
+INSERT INTO pokemon VALUES (713,'avalugg',713,20,5050,180,1);
+
+INSERT INTO pokemon VALUES (714,'noibat',714,5,80,49,1);
+
+INSERT INTO pokemon VALUES (715,'noivern',715,15,850,187,1);
+
+INSERT INTO pokemon VALUES (716,'xerneas',716,30,2150,306,1);
+
+INSERT INTO pokemon VALUES (717,'yveltal',717,58,2030,306,1);
+
+INSERT INTO pokemon VALUES (718,'zygarde',718,50,3050,270,1);
+
+INSERT INTO pokemon VALUES (719,'diancie',719,7,88,270,1);
+
+INSERT INTO pokemon VALUES (720,'hoopa',720,5,90,270,1);
+
+INSERT INTO pokemon VALUES (721,'volcanion',721,17,1950,270,1);
+
+INSERT INTO pokemon VALUES (10001,'deoxys-attack',386,17,608,270,0);
+
+INSERT INTO pokemon VALUES (10002,'deoxys-defense',386,17,608,270,0);
+
+INSERT INTO pokemon VALUES (10003,'deoxys-speed',386,17,608,270,0);
+
+INSERT INTO pokemon VALUES (10004,'wormadam-sandy',413,5,65,148,0);
+
+INSERT INTO pokemon VALUES (10005,'wormadam-trash',413,5,65,148,0);
+
+INSERT INTO pokemon VALUES (10006,'shaymin-sky',492,4,52,270,0);
+
+INSERT INTO pokemon VALUES (10007,'giratina-origin',487,69,6500,306,0);
+
+INSERT INTO pokemon VALUES (10008,'rotom-heat',479,3,3,182,0);
+
+INSERT INTO pokemon VALUES (10009,'rotom-wash',479,3,3,182,0);
+
+INSERT INTO pokemon VALUES (10010,'rotom-frost',479,3,3,182,0);
+
+INSERT INTO pokemon VALUES (10011,'rotom-fan',479,3,3,182,0);
+
+INSERT INTO pokemon VALUES (10012,'rotom-mow',479,3,3,182,0);
+
+INSERT INTO pokemon VALUES (10013,'castform-sunny',351,3,8,147,0);
+
+INSERT INTO pokemon VALUES (10014,'castform-rainy',351,3,8,147,0);
+
+INSERT INTO pokemon VALUES (10015,'castform-snowy',351,3,8,147,0);
+
+INSERT INTO pokemon VALUES (10016,'basculin-blue-striped',550,10,180,161,0);
+
+INSERT INTO pokemon VALUES (10017,'darmanitan-zen',555,13,929,189,0);
+
+INSERT INTO pokemon VALUES (10018,'meloetta-pirouette',648,6,65,270,0);
+
+INSERT INTO pokemon VALUES (10019,'tornadus-therian',641,14,630,261,0);
+
+INSERT INTO pokemon VALUES (10020,'thundurus-therian',642,30,610,261,0);
+
+INSERT INTO pokemon VALUES (10021,'landorus-therian',645,13,680,270,0);
+
+INSERT INTO pokemon VALUES (10022,'kyurem-black',646,33,3250,315,0);
+
+INSERT INTO pokemon VALUES (10023,'kyurem-white',646,36,3250,315,0);
+
+INSERT INTO pokemon VALUES (10024,'keldeo-resolute',647,14,485,261,0);
+
+INSERT INTO pokemon VALUES (10025,'meowstic-female',678,6,85,163,0);
+
+INSERT INTO pokemon VALUES (10026,'aegislash-blade',681,17,530,234,0);
+
+INSERT INTO pokemon VALUES (10027,'pumpkaboo-small',710,3,35,67,0);
+
+INSERT INTO pokemon VALUES (10028,'pumpkaboo-large',710,5,75,67,0);
+
+INSERT INTO pokemon VALUES (10029,'pumpkaboo-super',710,8,150,67,0);
+
+INSERT INTO pokemon VALUES (10030,'gourgeist-small',711,7,95,173,0);
+
+INSERT INTO pokemon VALUES (10031,'gourgeist-large',711,11,140,173,0);
+
+INSERT INTO pokemon VALUES (10032,'gourgeist-super',711,17,390,173,0);
+
+INSERT INTO pokemon VALUES (10033,'venusaur-mega',3,24,1555,281,0);
+
+INSERT INTO pokemon VALUES (10034,'charizard-mega-x',6,17,1105,285,0);
+
+INSERT INTO pokemon VALUES (10035,'charizard-mega-y',6,17,1005,285,0);
+
+INSERT INTO pokemon VALUES (10036,'blastoise-mega',9,16,1011,284,0);
+
+INSERT INTO pokemon VALUES (10037,'alakazam-mega',65,12,480,266,0);
+
+INSERT INTO pokemon VALUES (10038,'gengar-mega',94,14,405,270,0);
+
+INSERT INTO pokemon VALUES (10039,'kangaskhan-mega',115,22,1000,207,0);
+
+INSERT INTO pokemon VALUES (10040,'pinsir-mega',127,17,590,210,0);
+
+INSERT INTO pokemon VALUES (10041,'gyarados-mega',130,65,3050,224,0);
+
+INSERT INTO pokemon VALUES (10042,'aerodactyl-mega',142,21,790,215,0);
+
+INSERT INTO pokemon VALUES (10043,'mewtwo-mega-x',150,23,1270,351,0);
+
+INSERT INTO pokemon VALUES (10044,'mewtwo-mega-y',150,15,330,351,0);
+
+INSERT INTO pokemon VALUES (10045,'ampharos-mega',181,14,615,275,0);
+
+INSERT INTO pokemon VALUES (10046,'scizor-mega',212,20,1250,210,0);
+
+INSERT INTO pokemon VALUES (10047,'heracross-mega',214,17,625,210,0);
+
+INSERT INTO pokemon VALUES (10048,'houndoom-mega',229,19,495,210,0);
+
+INSERT INTO pokemon VALUES (10049,'tyranitar-mega',248,25,2550,315,0);
+
+INSERT INTO pokemon VALUES (10050,'blaziken-mega',257,19,520,284,0);
+
+INSERT INTO pokemon VALUES (10051,'gardevoir-mega',282,16,484,278,0);
+
+INSERT INTO pokemon VALUES (10052,'mawile-mega',303,10,235,168,0);
+
+INSERT INTO pokemon VALUES (10053,'aggron-mega',306,22,3950,284,0);
+
+INSERT INTO pokemon VALUES (10054,'medicham-mega',308,13,315,179,0);
+
+INSERT INTO pokemon VALUES (10055,'manectric-mega',310,18,440,201,0);
+
+INSERT INTO pokemon VALUES (10056,'banette-mega',354,12,130,194,0);
+
+INSERT INTO pokemon VALUES (10057,'absol-mega',359,12,490,198,0);
+
+INSERT INTO pokemon VALUES (10058,'garchomp-mega',445,19,950,315,0);
+
+INSERT INTO pokemon VALUES (10059,'lucario-mega',448,13,575,219,0);
+
+INSERT INTO pokemon VALUES (10060,'abomasnow-mega',460,27,1850,208,0);
+
+INSERT INTO pokemon VALUES (10061,'floette-eternal',670,2,9,243,0);
+
+INSERT INTO pokemon VALUES (10062,'latias-mega',380,18,520,315,0);
+
+INSERT INTO pokemon VALUES (10063,'latios-mega',381,23,700,315,0);
+
+INSERT INTO pokemon VALUES (10064,'swampert-mega',260,190,1020,286,0);
+
+INSERT INTO pokemon VALUES (10065,'sceptile-mega',254,190,552,284,0);
+
+INSERT INTO pokemon VALUES (10066,'sableye-mega',302,50,1610,168,0);
+
+INSERT INTO pokemon VALUES (10067,'altaria-mega',334,150,206,207,0);
+
+INSERT INTO pokemon VALUES (10068,'gallade-mega',475,160,564,278,0);
+
+INSERT INTO pokemon VALUES (10069,'audino-mega',531,150,320,425,0);
+
+INSERT INTO pokemon VALUES (10070,'sharpedo-mega',319,250,1303,196,0);
+
+INSERT INTO pokemon VALUES (10071,'slowbro-mega',80,200,1200,207,0);
+
+INSERT INTO pokemon VALUES (10072,'steelix-mega',208,1050,7400,214,0);
+
+INSERT INTO pokemon VALUES (10073,'pidgeot-mega',18,220,505,261,0);
+
+INSERT INTO pokemon VALUES (10074,'glalie-mega',362,210,3502,203,0);
+
+INSERT INTO pokemon VALUES (10075,'diancie-mega',719,110,278,315,0);
+
+INSERT INTO pokemon VALUES (10076,'metagross-mega',376,250,9429,315,0);
+
+INSERT INTO pokemon VALUES (10077,'kyogre-primal',382,980,4300,347,0);
+
+INSERT INTO pokemon VALUES (10078,'groudon-primal',383,500,9997,347,0);
+
+INSERT INTO pokemon VALUES (10079,'rayquaza-mega',384,1080,3920,351,0);
+
+INSERT INTO pokemon VALUES (10080,'pikachu-rock-star',25,40,60,112,0);
+
+INSERT INTO pokemon VALUES (10081,'pikachu-belle',25,40,60,112,0);
+
+INSERT INTO pokemon VALUES (10082,'pikachu-pop-star',25,40,60,112,0);
+
+INSERT INTO pokemon VALUES (10083,'pikachu-phd',25,40,60,112,0);
+
+INSERT INTO pokemon VALUES (10084,'pikachu-libre',25,40,60,112,0);
+
+INSERT INTO pokemon VALUES (10085,'pikachu-cosplay',25,40,60,112,0);
+
+INSERT INTO pokemon VALUES (10086,'hoopa-unbound',720,650,4900,306,0);
+
+INSERT INTO pokemon VALUES (10087,'camerupt-mega',323,250,3205,196,0);
+
+INSERT INTO pokemon VALUES (10088,'lopunny-mega',428,130,283,203,0);
+
+INSERT INTO pokemon VALUES (10089,'salamence-mega',373,180,1126,315,0);
+
+
+DROP TABLE pokemon_stats;
+
+CREATE TABLE pokemon_stats (
+    pokemon_id INT NOT NULL,
+    stat_id INT NOT NULL,
+    base_stat INT NOT NULL,
+    effort INT NOT NULL
+);
+
+INSERT INTO pokemon_stats VALUES (1,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (1,2,49,0);
+
+INSERT INTO pokemon_stats VALUES (1,3,49,0);
+
+INSERT INTO pokemon_stats VALUES (1,4,65,1);
+
+INSERT INTO pokemon_stats VALUES (1,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (1,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (2,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (2,2,62,0);
+
+INSERT INTO pokemon_stats VALUES (2,3,63,0);
+
+INSERT INTO pokemon_stats VALUES (2,4,80,1);
+
+INSERT INTO pokemon_stats VALUES (2,5,80,1);
+
+INSERT INTO pokemon_stats VALUES (2,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (3,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (3,2,82,0);
+
+INSERT INTO pokemon_stats VALUES (3,3,83,0);
+
+INSERT INTO pokemon_stats VALUES (3,4,100,2);
+
+INSERT INTO pokemon_stats VALUES (3,5,100,1);
+
+INSERT INTO pokemon_stats VALUES (3,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (4,1,39,0);
+
+INSERT INTO pokemon_stats VALUES (4,2,52,0);
+
+INSERT INTO pokemon_stats VALUES (4,3,43,0);
+
+INSERT INTO pokemon_stats VALUES (4,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (4,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (4,6,65,1);
+
+INSERT INTO pokemon_stats VALUES (5,1,58,0);
+
+INSERT INTO pokemon_stats VALUES (5,2,64,0);
+
+INSERT INTO pokemon_stats VALUES (5,3,58,0);
+
+INSERT INTO pokemon_stats VALUES (5,4,80,1);
+
+INSERT INTO pokemon_stats VALUES (5,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (5,6,80,1);
+
+INSERT INTO pokemon_stats VALUES (6,1,78,0);
+
+INSERT INTO pokemon_stats VALUES (6,2,84,0);
+
+INSERT INTO pokemon_stats VALUES (6,3,78,0);
+
+INSERT INTO pokemon_stats VALUES (6,4,109,3);
+
+INSERT INTO pokemon_stats VALUES (6,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (6,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (7,1,44,0);
+
+INSERT INTO pokemon_stats VALUES (7,2,48,0);
+
+INSERT INTO pokemon_stats VALUES (7,3,65,1);
+
+INSERT INTO pokemon_stats VALUES (7,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (7,5,64,0);
+
+INSERT INTO pokemon_stats VALUES (7,6,43,0);
+
+INSERT INTO pokemon_stats VALUES (8,1,59,0);
+
+INSERT INTO pokemon_stats VALUES (8,2,63,0);
+
+INSERT INTO pokemon_stats VALUES (8,3,80,1);
+
+INSERT INTO pokemon_stats VALUES (8,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (8,5,80,1);
+
+INSERT INTO pokemon_stats VALUES (8,6,58,0);
+
+INSERT INTO pokemon_stats VALUES (9,1,79,0);
+
+INSERT INTO pokemon_stats VALUES (9,2,83,0);
+
+INSERT INTO pokemon_stats VALUES (9,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (9,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (9,5,105,3);
+
+INSERT INTO pokemon_stats VALUES (9,6,78,0);
+
+INSERT INTO pokemon_stats VALUES (10,1,45,1);
+
+INSERT INTO pokemon_stats VALUES (10,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (10,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (10,4,20,0);
+
+INSERT INTO pokemon_stats VALUES (10,5,20,0);
+
+INSERT INTO pokemon_stats VALUES (10,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (11,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (11,2,20,0);
+
+INSERT INTO pokemon_stats VALUES (11,3,55,2);
+
+INSERT INTO pokemon_stats VALUES (11,4,25,0);
+
+INSERT INTO pokemon_stats VALUES (11,5,25,0);
+
+INSERT INTO pokemon_stats VALUES (11,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (12,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (12,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (12,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (12,4,90,2);
+
+INSERT INTO pokemon_stats VALUES (12,5,80,1);
+
+INSERT INTO pokemon_stats VALUES (12,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (13,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (13,2,35,0);
+
+INSERT INTO pokemon_stats VALUES (13,3,30,0);
+
+INSERT INTO pokemon_stats VALUES (13,4,20,0);
+
+INSERT INTO pokemon_stats VALUES (13,5,20,0);
+
+INSERT INTO pokemon_stats VALUES (13,6,50,1);
+
+INSERT INTO pokemon_stats VALUES (14,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (14,2,25,0);
+
+INSERT INTO pokemon_stats VALUES (14,3,50,2);
+
+INSERT INTO pokemon_stats VALUES (14,4,25,0);
+
+INSERT INTO pokemon_stats VALUES (14,5,25,0);
+
+INSERT INTO pokemon_stats VALUES (14,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (15,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (15,2,90,2);
+
+INSERT INTO pokemon_stats VALUES (15,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (15,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (15,5,80,1);
+
+INSERT INTO pokemon_stats VALUES (15,6,75,0);
+
+INSERT INTO pokemon_stats VALUES (16,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (16,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (16,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (16,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (16,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (16,6,56,1);
+
+INSERT INTO pokemon_stats VALUES (17,1,63,0);
+
+INSERT INTO pokemon_stats VALUES (17,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (17,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (17,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (17,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (17,6,71,2);
+
+INSERT INTO pokemon_stats VALUES (18,1,83,0);
+
+INSERT INTO pokemon_stats VALUES (18,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (18,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (18,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (18,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (18,6,101,3);
+
+INSERT INTO pokemon_stats VALUES (19,1,30,0);
+
+INSERT INTO pokemon_stats VALUES (19,2,56,0);
+
+INSERT INTO pokemon_stats VALUES (19,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (19,4,25,0);
+
+INSERT INTO pokemon_stats VALUES (19,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (19,6,72,1);
+
+INSERT INTO pokemon_stats VALUES (20,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (20,2,81,0);
+
+INSERT INTO pokemon_stats VALUES (20,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (20,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (20,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (20,6,97,2);
+
+INSERT INTO pokemon_stats VALUES (21,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (21,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (21,3,30,0);
+
+INSERT INTO pokemon_stats VALUES (21,4,31,0);
+
+INSERT INTO pokemon_stats VALUES (21,5,31,0);
+
+INSERT INTO pokemon_stats VALUES (21,6,70,1);
+
+INSERT INTO pokemon_stats VALUES (22,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (22,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (22,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (22,4,61,0);
+
+INSERT INTO pokemon_stats VALUES (22,5,61,0);
+
+INSERT INTO pokemon_stats VALUES (22,6,100,2);
+
+INSERT INTO pokemon_stats VALUES (23,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (23,2,60,1);
+
+INSERT INTO pokemon_stats VALUES (23,3,44,0);
+
+INSERT INTO pokemon_stats VALUES (23,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (23,5,54,0);
+
+INSERT INTO pokemon_stats VALUES (23,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (24,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (24,2,85,2);
+
+INSERT INTO pokemon_stats VALUES (24,3,69,0);
+
+INSERT INTO pokemon_stats VALUES (24,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (24,5,79,0);
+
+INSERT INTO pokemon_stats VALUES (24,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (25,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (25,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (25,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (25,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (25,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (25,6,90,2);
+
+INSERT INTO pokemon_stats VALUES (26,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (26,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (26,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (26,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (26,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (26,6,110,3);
+
+INSERT INTO pokemon_stats VALUES (27,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (27,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (27,3,85,1);
+
+INSERT INTO pokemon_stats VALUES (27,4,20,0);
+
+INSERT INTO pokemon_stats VALUES (27,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (27,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (28,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (28,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (28,3,110,2);
+
+INSERT INTO pokemon_stats VALUES (28,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (28,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (28,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (29,1,55,1);
+
+INSERT INTO pokemon_stats VALUES (29,2,47,0);
+
+INSERT INTO pokemon_stats VALUES (29,3,52,0);
+
+INSERT INTO pokemon_stats VALUES (29,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (29,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (29,6,41,0);
+
+INSERT INTO pokemon_stats VALUES (30,1,70,2);
+
+INSERT INTO pokemon_stats VALUES (30,2,62,0);
+
+INSERT INTO pokemon_stats VALUES (30,3,67,0);
+
+INSERT INTO pokemon_stats VALUES (30,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (30,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (30,6,56,0);
+
+INSERT INTO pokemon_stats VALUES (31,1,90,3);
+
+INSERT INTO pokemon_stats VALUES (31,2,92,0);
+
+INSERT INTO pokemon_stats VALUES (31,3,87,0);
+
+INSERT INTO pokemon_stats VALUES (31,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (31,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (31,6,76,0);
+
+INSERT INTO pokemon_stats VALUES (32,1,46,0);
+
+INSERT INTO pokemon_stats VALUES (32,2,57,1);
+
+INSERT INTO pokemon_stats VALUES (32,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (32,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (32,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (32,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (33,1,61,0);
+
+INSERT INTO pokemon_stats VALUES (33,2,72,2);
+
+INSERT INTO pokemon_stats VALUES (33,3,57,0);
+
+INSERT INTO pokemon_stats VALUES (33,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (33,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (33,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (34,1,81,0);
+
+INSERT INTO pokemon_stats VALUES (34,2,102,3);
+
+INSERT INTO pokemon_stats VALUES (34,3,77,0);
+
+INSERT INTO pokemon_stats VALUES (34,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (34,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (34,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (35,1,70,2);
+
+INSERT INTO pokemon_stats VALUES (35,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (35,3,48,0);
+
+INSERT INTO pokemon_stats VALUES (35,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (35,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (35,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (36,1,95,3);
+
+INSERT INTO pokemon_stats VALUES (36,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (36,3,73,0);
+
+INSERT INTO pokemon_stats VALUES (36,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (36,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (36,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (37,1,38,0);
+
+INSERT INTO pokemon_stats VALUES (37,2,41,0);
+
+INSERT INTO pokemon_stats VALUES (37,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (37,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (37,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (37,6,65,1);
+
+INSERT INTO pokemon_stats VALUES (38,1,73,0);
+
+INSERT INTO pokemon_stats VALUES (38,2,76,0);
+
+INSERT INTO pokemon_stats VALUES (38,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (38,4,81,0);
+
+INSERT INTO pokemon_stats VALUES (38,5,100,1);
+
+INSERT INTO pokemon_stats VALUES (38,6,100,1);
+
+INSERT INTO pokemon_stats VALUES (39,1,115,2);
+
+INSERT INTO pokemon_stats VALUES (39,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (39,3,20,0);
+
+INSERT INTO pokemon_stats VALUES (39,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (39,5,25,0);
+
+INSERT INTO pokemon_stats VALUES (39,6,20,0);
+
+INSERT INTO pokemon_stats VALUES (40,1,140,3);
+
+INSERT INTO pokemon_stats VALUES (40,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (40,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (40,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (40,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (40,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (41,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (41,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (41,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (41,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (41,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (41,6,55,1);
+
+INSERT INTO pokemon_stats VALUES (42,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (42,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (42,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (42,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (42,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (42,6,90,2);
+
+INSERT INTO pokemon_stats VALUES (43,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (43,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (43,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (43,4,75,1);
+
+INSERT INTO pokemon_stats VALUES (43,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (43,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (44,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (44,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (44,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (44,4,85,2);
+
+INSERT INTO pokemon_stats VALUES (44,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (44,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (45,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (45,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (45,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (45,4,110,3);
+
+INSERT INTO pokemon_stats VALUES (45,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (45,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (46,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (46,2,70,1);
+
+INSERT INTO pokemon_stats VALUES (46,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (46,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (46,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (46,6,25,0);
+
+INSERT INTO pokemon_stats VALUES (47,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (47,2,95,2);
+
+INSERT INTO pokemon_stats VALUES (47,3,80,1);
+
+INSERT INTO pokemon_stats VALUES (47,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (47,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (47,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (48,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (48,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (48,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (48,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (48,5,55,1);
+
+INSERT INTO pokemon_stats VALUES (48,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (49,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (49,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (49,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (49,4,90,1);
+
+INSERT INTO pokemon_stats VALUES (49,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (49,6,90,1);
+
+INSERT INTO pokemon_stats VALUES (50,1,10,0);
+
+INSERT INTO pokemon_stats VALUES (50,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (50,3,25,0);
+
+INSERT INTO pokemon_stats VALUES (50,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (50,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (50,6,95,1);
+
+INSERT INTO pokemon_stats VALUES (51,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (51,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (51,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (51,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (51,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (51,6,120,2);
+
+INSERT INTO pokemon_stats VALUES (52,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (52,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (52,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (52,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (52,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (52,6,90,1);
+
+INSERT INTO pokemon_stats VALUES (53,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (53,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (53,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (53,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (53,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (53,6,115,2);
+
+INSERT INTO pokemon_stats VALUES (54,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (54,2,52,0);
+
+INSERT INTO pokemon_stats VALUES (54,3,48,0);
+
+INSERT INTO pokemon_stats VALUES (54,4,65,1);
+
+INSERT INTO pokemon_stats VALUES (54,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (54,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (55,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (55,2,82,0);
+
+INSERT INTO pokemon_stats VALUES (55,3,78,0);
+
+INSERT INTO pokemon_stats VALUES (55,4,95,2);
+
+INSERT INTO pokemon_stats VALUES (55,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (55,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (56,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (56,2,80,1);
+
+INSERT INTO pokemon_stats VALUES (56,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (56,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (56,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (56,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (57,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (57,2,105,2);
+
+INSERT INTO pokemon_stats VALUES (57,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (57,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (57,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (57,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (58,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (58,2,70,1);
+
+INSERT INTO pokemon_stats VALUES (58,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (58,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (58,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (58,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (59,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (59,2,110,2);
+
+INSERT INTO pokemon_stats VALUES (59,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (59,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (59,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (59,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (60,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (60,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (60,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (60,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (60,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (60,6,90,1);
+
+INSERT INTO pokemon_stats VALUES (61,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (61,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (61,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (61,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (61,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (61,6,90,2);
+
+INSERT INTO pokemon_stats VALUES (62,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (62,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (62,3,95,3);
+
+INSERT INTO pokemon_stats VALUES (62,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (62,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (62,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (63,1,25,0);
+
+INSERT INTO pokemon_stats VALUES (63,2,20,0);
+
+INSERT INTO pokemon_stats VALUES (63,3,15,0);
+
+INSERT INTO pokemon_stats VALUES (63,4,105,1);
+
+INSERT INTO pokemon_stats VALUES (63,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (63,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (64,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (64,2,35,0);
+
+INSERT INTO pokemon_stats VALUES (64,3,30,0);
+
+INSERT INTO pokemon_stats VALUES (64,4,120,2);
+
+INSERT INTO pokemon_stats VALUES (64,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (64,6,105,0);
+
+INSERT INTO pokemon_stats VALUES (65,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (65,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (65,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (65,4,135,3);
+
+INSERT INTO pokemon_stats VALUES (65,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (65,6,120,0);
+
+INSERT INTO pokemon_stats VALUES (66,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (66,2,80,1);
+
+INSERT INTO pokemon_stats VALUES (66,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (66,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (66,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (66,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (67,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (67,2,100,2);
+
+INSERT INTO pokemon_stats VALUES (67,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (67,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (67,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (67,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (68,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (68,2,130,3);
+
+INSERT INTO pokemon_stats VALUES (68,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (68,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (68,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (68,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (69,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (69,2,75,1);
+
+INSERT INTO pokemon_stats VALUES (69,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (69,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (69,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (69,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (70,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (70,2,90,2);
+
+INSERT INTO pokemon_stats VALUES (70,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (70,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (70,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (70,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (71,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (71,2,105,3);
+
+INSERT INTO pokemon_stats VALUES (71,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (71,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (71,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (71,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (72,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (72,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (72,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (72,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (72,5,100,1);
+
+INSERT INTO pokemon_stats VALUES (72,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (73,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (73,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (73,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (73,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (73,5,120,2);
+
+INSERT INTO pokemon_stats VALUES (73,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (74,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (74,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (74,3,100,1);
+
+INSERT INTO pokemon_stats VALUES (74,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (74,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (74,6,20,0);
+
+INSERT INTO pokemon_stats VALUES (75,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (75,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (75,3,115,2);
+
+INSERT INTO pokemon_stats VALUES (75,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (75,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (75,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (76,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (76,2,120,0);
+
+INSERT INTO pokemon_stats VALUES (76,3,130,3);
+
+INSERT INTO pokemon_stats VALUES (76,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (76,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (76,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (77,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (77,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (77,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (77,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (77,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (77,6,90,1);
+
+INSERT INTO pokemon_stats VALUES (78,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (78,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (78,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (78,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (78,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (78,6,105,2);
+
+INSERT INTO pokemon_stats VALUES (79,1,90,1);
+
+INSERT INTO pokemon_stats VALUES (79,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (79,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (79,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (79,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (79,6,15,0);
+
+INSERT INTO pokemon_stats VALUES (80,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (80,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (80,3,110,2);
+
+INSERT INTO pokemon_stats VALUES (80,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (80,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (80,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (81,1,25,0);
+
+INSERT INTO pokemon_stats VALUES (81,2,35,0);
+
+INSERT INTO pokemon_stats VALUES (81,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (81,4,95,1);
+
+INSERT INTO pokemon_stats VALUES (81,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (81,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (82,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (82,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (82,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (82,4,120,2);
+
+INSERT INTO pokemon_stats VALUES (82,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (82,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (83,1,52,0);
+
+INSERT INTO pokemon_stats VALUES (83,2,65,1);
+
+INSERT INTO pokemon_stats VALUES (83,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (83,4,58,0);
+
+INSERT INTO pokemon_stats VALUES (83,5,62,0);
+
+INSERT INTO pokemon_stats VALUES (83,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (84,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (84,2,85,1);
+
+INSERT INTO pokemon_stats VALUES (84,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (84,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (84,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (84,6,75,0);
+
+INSERT INTO pokemon_stats VALUES (85,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (85,2,110,2);
+
+INSERT INTO pokemon_stats VALUES (85,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (85,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (85,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (85,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (86,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (86,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (86,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (86,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (86,5,70,1);
+
+INSERT INTO pokemon_stats VALUES (86,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (87,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (87,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (87,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (87,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (87,5,95,2);
+
+INSERT INTO pokemon_stats VALUES (87,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (88,1,80,1);
+
+INSERT INTO pokemon_stats VALUES (88,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (88,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (88,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (88,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (88,6,25,0);
+
+INSERT INTO pokemon_stats VALUES (89,1,105,1);
+
+INSERT INTO pokemon_stats VALUES (89,2,105,1);
+
+INSERT INTO pokemon_stats VALUES (89,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (89,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (89,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (89,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (90,1,30,0);
+
+INSERT INTO pokemon_stats VALUES (90,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (90,3,100,1);
+
+INSERT INTO pokemon_stats VALUES (90,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (90,5,25,0);
+
+INSERT INTO pokemon_stats VALUES (90,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (91,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (91,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (91,3,180,2);
+
+INSERT INTO pokemon_stats VALUES (91,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (91,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (91,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (92,1,30,0);
+
+INSERT INTO pokemon_stats VALUES (92,2,35,0);
+
+INSERT INTO pokemon_stats VALUES (92,3,30,0);
+
+INSERT INTO pokemon_stats VALUES (92,4,100,1);
+
+INSERT INTO pokemon_stats VALUES (92,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (92,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (93,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (93,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (93,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (93,4,115,2);
+
+INSERT INTO pokemon_stats VALUES (93,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (93,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (94,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (94,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (94,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (94,4,130,3);
+
+INSERT INTO pokemon_stats VALUES (94,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (94,6,110,0);
+
+INSERT INTO pokemon_stats VALUES (95,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (95,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (95,3,160,1);
+
+INSERT INTO pokemon_stats VALUES (95,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (95,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (95,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (96,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (96,2,48,0);
+
+INSERT INTO pokemon_stats VALUES (96,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (96,4,43,0);
+
+INSERT INTO pokemon_stats VALUES (96,5,90,1);
+
+INSERT INTO pokemon_stats VALUES (96,6,42,0);
+
+INSERT INTO pokemon_stats VALUES (97,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (97,2,73,0);
+
+INSERT INTO pokemon_stats VALUES (97,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (97,4,73,0);
+
+INSERT INTO pokemon_stats VALUES (97,5,115,2);
+
+INSERT INTO pokemon_stats VALUES (97,6,67,0);
+
+INSERT INTO pokemon_stats VALUES (98,1,30,0);
+
+INSERT INTO pokemon_stats VALUES (98,2,105,1);
+
+INSERT INTO pokemon_stats VALUES (98,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (98,4,25,0);
+
+INSERT INTO pokemon_stats VALUES (98,5,25,0);
+
+INSERT INTO pokemon_stats VALUES (98,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (99,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (99,2,130,2);
+
+INSERT INTO pokemon_stats VALUES (99,3,115,0);
+
+INSERT INTO pokemon_stats VALUES (99,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (99,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (99,6,75,0);
+
+INSERT INTO pokemon_stats VALUES (100,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (100,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (100,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (100,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (100,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (100,6,100,1);
+
+INSERT INTO pokemon_stats VALUES (101,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (101,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (101,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (101,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (101,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (101,6,140,2);
+
+INSERT INTO pokemon_stats VALUES (102,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (102,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (102,3,80,1);
+
+INSERT INTO pokemon_stats VALUES (102,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (102,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (102,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (103,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (103,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (103,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (103,4,125,2);
+
+INSERT INTO pokemon_stats VALUES (103,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (103,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (104,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (104,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (104,3,95,1);
+
+INSERT INTO pokemon_stats VALUES (104,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (104,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (104,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (105,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (105,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (105,3,110,2);
+
+INSERT INTO pokemon_stats VALUES (105,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (105,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (105,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (106,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (106,2,120,2);
+
+INSERT INTO pokemon_stats VALUES (106,3,53,0);
+
+INSERT INTO pokemon_stats VALUES (106,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (106,5,110,0);
+
+INSERT INTO pokemon_stats VALUES (106,6,87,0);
+
+INSERT INTO pokemon_stats VALUES (107,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (107,2,105,0);
+
+INSERT INTO pokemon_stats VALUES (107,3,79,0);
+
+INSERT INTO pokemon_stats VALUES (107,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (107,5,110,2);
+
+INSERT INTO pokemon_stats VALUES (107,6,76,0);
+
+INSERT INTO pokemon_stats VALUES (108,1,90,2);
+
+INSERT INTO pokemon_stats VALUES (108,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (108,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (108,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (108,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (108,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (109,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (109,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (109,3,95,1);
+
+INSERT INTO pokemon_stats VALUES (109,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (109,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (109,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (110,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (110,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (110,3,120,2);
+
+INSERT INTO pokemon_stats VALUES (110,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (110,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (110,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (111,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (111,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (111,3,95,1);
+
+INSERT INTO pokemon_stats VALUES (111,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (111,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (111,6,25,0);
+
+INSERT INTO pokemon_stats VALUES (112,1,105,0);
+
+INSERT INTO pokemon_stats VALUES (112,2,130,2);
+
+INSERT INTO pokemon_stats VALUES (112,3,120,0);
+
+INSERT INTO pokemon_stats VALUES (112,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (112,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (112,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (113,1,250,2);
+
+INSERT INTO pokemon_stats VALUES (113,2,5,0);
+
+INSERT INTO pokemon_stats VALUES (113,3,5,0);
+
+INSERT INTO pokemon_stats VALUES (113,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (113,5,105,0);
+
+INSERT INTO pokemon_stats VALUES (113,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (114,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (114,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (114,3,115,1);
+
+INSERT INTO pokemon_stats VALUES (114,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (114,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (114,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (115,1,105,2);
+
+INSERT INTO pokemon_stats VALUES (115,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (115,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (115,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (115,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (115,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (116,1,30,0);
+
+INSERT INTO pokemon_stats VALUES (116,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (116,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (116,4,70,1);
+
+INSERT INTO pokemon_stats VALUES (116,5,25,0);
+
+INSERT INTO pokemon_stats VALUES (116,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (117,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (117,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (117,3,95,1);
+
+INSERT INTO pokemon_stats VALUES (117,4,95,1);
+
+INSERT INTO pokemon_stats VALUES (117,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (117,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (118,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (118,2,67,1);
+
+INSERT INTO pokemon_stats VALUES (118,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (118,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (118,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (118,6,63,0);
+
+INSERT INTO pokemon_stats VALUES (119,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (119,2,92,2);
+
+INSERT INTO pokemon_stats VALUES (119,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (119,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (119,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (119,6,68,0);
+
+INSERT INTO pokemon_stats VALUES (120,1,30,0);
+
+INSERT INTO pokemon_stats VALUES (120,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (120,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (120,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (120,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (120,6,85,1);
+
+INSERT INTO pokemon_stats VALUES (121,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (121,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (121,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (121,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (121,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (121,6,115,2);
+
+INSERT INTO pokemon_stats VALUES (122,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (122,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (122,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (122,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (122,5,120,2);
+
+INSERT INTO pokemon_stats VALUES (122,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (123,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (123,2,110,1);
+
+INSERT INTO pokemon_stats VALUES (123,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (123,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (123,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (123,6,105,0);
+
+INSERT INTO pokemon_stats VALUES (124,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (124,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (124,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (124,4,115,2);
+
+INSERT INTO pokemon_stats VALUES (124,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (124,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (125,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (125,2,83,0);
+
+INSERT INTO pokemon_stats VALUES (125,3,57,0);
+
+INSERT INTO pokemon_stats VALUES (125,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (125,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (125,6,105,2);
+
+INSERT INTO pokemon_stats VALUES (126,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (126,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (126,3,57,0);
+
+INSERT INTO pokemon_stats VALUES (126,4,100,2);
+
+INSERT INTO pokemon_stats VALUES (126,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (126,6,93,0);
+
+INSERT INTO pokemon_stats VALUES (127,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (127,2,125,2);
+
+INSERT INTO pokemon_stats VALUES (127,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (127,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (127,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (127,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (128,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (128,2,100,1);
+
+INSERT INTO pokemon_stats VALUES (128,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (128,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (128,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (128,6,110,1);
+
+INSERT INTO pokemon_stats VALUES (129,1,20,0);
+
+INSERT INTO pokemon_stats VALUES (129,2,10,0);
+
+INSERT INTO pokemon_stats VALUES (129,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (129,4,15,0);
+
+INSERT INTO pokemon_stats VALUES (129,5,20,0);
+
+INSERT INTO pokemon_stats VALUES (129,6,80,1);
+
+INSERT INTO pokemon_stats VALUES (130,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (130,2,125,2);
+
+INSERT INTO pokemon_stats VALUES (130,3,79,0);
+
+INSERT INTO pokemon_stats VALUES (130,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (130,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (130,6,81,0);
+
+INSERT INTO pokemon_stats VALUES (131,1,130,2);
+
+INSERT INTO pokemon_stats VALUES (131,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (131,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (131,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (131,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (131,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (132,1,48,1);
+
+INSERT INTO pokemon_stats VALUES (132,2,48,0);
+
+INSERT INTO pokemon_stats VALUES (132,3,48,0);
+
+INSERT INTO pokemon_stats VALUES (132,4,48,0);
+
+INSERT INTO pokemon_stats VALUES (132,5,48,0);
+
+INSERT INTO pokemon_stats VALUES (132,6,48,0);
+
+INSERT INTO pokemon_stats VALUES (133,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (133,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (133,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (133,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (133,5,65,1);
+
+INSERT INTO pokemon_stats VALUES (133,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (134,1,130,2);
+
+INSERT INTO pokemon_stats VALUES (134,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (134,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (134,4,110,0);
+
+INSERT INTO pokemon_stats VALUES (134,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (134,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (135,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (135,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (135,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (135,4,110,0);
+
+INSERT INTO pokemon_stats VALUES (135,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (135,6,130,2);
+
+INSERT INTO pokemon_stats VALUES (136,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (136,2,130,2);
+
+INSERT INTO pokemon_stats VALUES (136,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (136,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (136,5,110,0);
+
+INSERT INTO pokemon_stats VALUES (136,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (137,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (137,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (137,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (137,4,85,1);
+
+INSERT INTO pokemon_stats VALUES (137,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (137,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (138,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (138,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (138,3,100,1);
+
+INSERT INTO pokemon_stats VALUES (138,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (138,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (138,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (139,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (139,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (139,3,125,2);
+
+INSERT INTO pokemon_stats VALUES (139,4,115,0);
+
+INSERT INTO pokemon_stats VALUES (139,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (139,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (140,1,30,0);
+
+INSERT INTO pokemon_stats VALUES (140,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (140,3,90,1);
+
+INSERT INTO pokemon_stats VALUES (140,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (140,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (140,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (141,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (141,2,115,2);
+
+INSERT INTO pokemon_stats VALUES (141,3,105,0);
+
+INSERT INTO pokemon_stats VALUES (141,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (141,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (141,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (142,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (142,2,105,0);
+
+INSERT INTO pokemon_stats VALUES (142,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (142,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (142,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (142,6,130,2);
+
+INSERT INTO pokemon_stats VALUES (143,1,160,2);
+
+INSERT INTO pokemon_stats VALUES (143,2,110,0);
+
+INSERT INTO pokemon_stats VALUES (143,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (143,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (143,5,110,0);
+
+INSERT INTO pokemon_stats VALUES (143,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (144,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (144,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (144,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (144,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (144,5,125,3);
+
+INSERT INTO pokemon_stats VALUES (144,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (145,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (145,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (145,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (145,4,125,3);
+
+INSERT INTO pokemon_stats VALUES (145,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (145,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (146,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (146,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (146,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (146,4,125,3);
+
+INSERT INTO pokemon_stats VALUES (146,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (146,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (147,1,41,0);
+
+INSERT INTO pokemon_stats VALUES (147,2,64,1);
+
+INSERT INTO pokemon_stats VALUES (147,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (147,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (147,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (147,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (148,1,61,0);
+
+INSERT INTO pokemon_stats VALUES (148,2,84,2);
+
+INSERT INTO pokemon_stats VALUES (148,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (148,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (148,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (148,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (149,1,91,0);
+
+INSERT INTO pokemon_stats VALUES (149,2,134,3);
+
+INSERT INTO pokemon_stats VALUES (149,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (149,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (149,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (149,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (150,1,106,0);
+
+INSERT INTO pokemon_stats VALUES (150,2,110,0);
+
+INSERT INTO pokemon_stats VALUES (150,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (150,4,154,3);
+
+INSERT INTO pokemon_stats VALUES (150,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (150,6,130,0);
+
+INSERT INTO pokemon_stats VALUES (151,1,100,3);
+
+INSERT INTO pokemon_stats VALUES (151,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (151,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (151,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (151,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (151,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (152,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (152,2,49,0);
+
+INSERT INTO pokemon_stats VALUES (152,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (152,4,49,0);
+
+INSERT INTO pokemon_stats VALUES (152,5,65,1);
+
+INSERT INTO pokemon_stats VALUES (152,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (153,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (153,2,62,0);
+
+INSERT INTO pokemon_stats VALUES (153,3,80,1);
+
+INSERT INTO pokemon_stats VALUES (153,4,63,0);
+
+INSERT INTO pokemon_stats VALUES (153,5,80,1);
+
+INSERT INTO pokemon_stats VALUES (153,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (154,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (154,2,82,0);
+
+INSERT INTO pokemon_stats VALUES (154,3,100,1);
+
+INSERT INTO pokemon_stats VALUES (154,4,83,0);
+
+INSERT INTO pokemon_stats VALUES (154,5,100,2);
+
+INSERT INTO pokemon_stats VALUES (154,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (155,1,39,0);
+
+INSERT INTO pokemon_stats VALUES (155,2,52,0);
+
+INSERT INTO pokemon_stats VALUES (155,3,43,0);
+
+INSERT INTO pokemon_stats VALUES (155,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (155,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (155,6,65,1);
+
+INSERT INTO pokemon_stats VALUES (156,1,58,0);
+
+INSERT INTO pokemon_stats VALUES (156,2,64,0);
+
+INSERT INTO pokemon_stats VALUES (156,3,58,0);
+
+INSERT INTO pokemon_stats VALUES (156,4,80,1);
+
+INSERT INTO pokemon_stats VALUES (156,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (156,6,80,1);
+
+INSERT INTO pokemon_stats VALUES (157,1,78,0);
+
+INSERT INTO pokemon_stats VALUES (157,2,84,0);
+
+INSERT INTO pokemon_stats VALUES (157,3,78,0);
+
+INSERT INTO pokemon_stats VALUES (157,4,109,3);
+
+INSERT INTO pokemon_stats VALUES (157,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (157,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (158,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (158,2,65,1);
+
+INSERT INTO pokemon_stats VALUES (158,3,64,0);
+
+INSERT INTO pokemon_stats VALUES (158,4,44,0);
+
+INSERT INTO pokemon_stats VALUES (158,5,48,0);
+
+INSERT INTO pokemon_stats VALUES (158,6,43,0);
+
+INSERT INTO pokemon_stats VALUES (159,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (159,2,80,1);
+
+INSERT INTO pokemon_stats VALUES (159,3,80,1);
+
+INSERT INTO pokemon_stats VALUES (159,4,59,0);
+
+INSERT INTO pokemon_stats VALUES (159,5,63,0);
+
+INSERT INTO pokemon_stats VALUES (159,6,58,0);
+
+INSERT INTO pokemon_stats VALUES (160,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (160,2,105,2);
+
+INSERT INTO pokemon_stats VALUES (160,3,100,1);
+
+INSERT INTO pokemon_stats VALUES (160,4,79,0);
+
+INSERT INTO pokemon_stats VALUES (160,5,83,0);
+
+INSERT INTO pokemon_stats VALUES (160,6,78,0);
+
+INSERT INTO pokemon_stats VALUES (161,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (161,2,46,1);
+
+INSERT INTO pokemon_stats VALUES (161,3,34,0);
+
+INSERT INTO pokemon_stats VALUES (161,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (161,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (161,6,20,0);
+
+INSERT INTO pokemon_stats VALUES (162,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (162,2,76,0);
+
+INSERT INTO pokemon_stats VALUES (162,3,64,0);
+
+INSERT INTO pokemon_stats VALUES (162,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (162,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (162,6,90,2);
+
+INSERT INTO pokemon_stats VALUES (163,1,60,1);
+
+INSERT INTO pokemon_stats VALUES (163,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (163,3,30,0);
+
+INSERT INTO pokemon_stats VALUES (163,4,36,0);
+
+INSERT INTO pokemon_stats VALUES (163,5,56,0);
+
+INSERT INTO pokemon_stats VALUES (163,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (164,1,100,2);
+
+INSERT INTO pokemon_stats VALUES (164,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (164,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (164,4,76,0);
+
+INSERT INTO pokemon_stats VALUES (164,5,96,0);
+
+INSERT INTO pokemon_stats VALUES (164,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (165,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (165,2,20,0);
+
+INSERT INTO pokemon_stats VALUES (165,3,30,0);
+
+INSERT INTO pokemon_stats VALUES (165,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (165,5,80,1);
+
+INSERT INTO pokemon_stats VALUES (165,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (166,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (166,2,35,0);
+
+INSERT INTO pokemon_stats VALUES (166,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (166,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (166,5,110,2);
+
+INSERT INTO pokemon_stats VALUES (166,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (167,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (167,2,60,1);
+
+INSERT INTO pokemon_stats VALUES (167,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (167,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (167,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (167,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (168,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (168,2,90,2);
+
+INSERT INTO pokemon_stats VALUES (168,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (168,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (168,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (168,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (169,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (169,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (169,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (169,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (169,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (169,6,130,3);
+
+INSERT INTO pokemon_stats VALUES (170,1,75,1);
+
+INSERT INTO pokemon_stats VALUES (170,2,38,0);
+
+INSERT INTO pokemon_stats VALUES (170,3,38,0);
+
+INSERT INTO pokemon_stats VALUES (170,4,56,0);
+
+INSERT INTO pokemon_stats VALUES (170,5,56,0);
+
+INSERT INTO pokemon_stats VALUES (170,6,67,0);
+
+INSERT INTO pokemon_stats VALUES (171,1,125,2);
+
+INSERT INTO pokemon_stats VALUES (171,2,58,0);
+
+INSERT INTO pokemon_stats VALUES (171,3,58,0);
+
+INSERT INTO pokemon_stats VALUES (171,4,76,0);
+
+INSERT INTO pokemon_stats VALUES (171,5,76,0);
+
+INSERT INTO pokemon_stats VALUES (171,6,67,0);
+
+INSERT INTO pokemon_stats VALUES (172,1,20,0);
+
+INSERT INTO pokemon_stats VALUES (172,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (172,3,15,0);
+
+INSERT INTO pokemon_stats VALUES (172,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (172,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (172,6,60,1);
+
+INSERT INTO pokemon_stats VALUES (173,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (173,2,25,0);
+
+INSERT INTO pokemon_stats VALUES (173,3,28,0);
+
+INSERT INTO pokemon_stats VALUES (173,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (173,5,55,1);
+
+INSERT INTO pokemon_stats VALUES (173,6,15,0);
+
+INSERT INTO pokemon_stats VALUES (174,1,90,1);
+
+INSERT INTO pokemon_stats VALUES (174,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (174,3,15,0);
+
+INSERT INTO pokemon_stats VALUES (174,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (174,5,20,0);
+
+INSERT INTO pokemon_stats VALUES (174,6,15,0);
+
+INSERT INTO pokemon_stats VALUES (175,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (175,2,20,0);
+
+INSERT INTO pokemon_stats VALUES (175,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (175,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (175,5,65,1);
+
+INSERT INTO pokemon_stats VALUES (175,6,20,0);
+
+INSERT INTO pokemon_stats VALUES (176,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (176,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (176,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (176,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (176,5,105,2);
+
+INSERT INTO pokemon_stats VALUES (176,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (177,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (177,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (177,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (177,4,70,1);
+
+INSERT INTO pokemon_stats VALUES (177,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (177,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (178,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (178,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (178,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (178,4,95,1);
+
+INSERT INTO pokemon_stats VALUES (178,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (178,6,95,1);
+
+INSERT INTO pokemon_stats VALUES (179,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (179,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (179,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (179,4,65,1);
+
+INSERT INTO pokemon_stats VALUES (179,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (179,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (180,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (180,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (180,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (180,4,80,2);
+
+INSERT INTO pokemon_stats VALUES (180,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (180,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (181,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (181,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (181,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (181,4,115,3);
+
+INSERT INTO pokemon_stats VALUES (181,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (181,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (182,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (182,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (182,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (182,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (182,5,100,3);
+
+INSERT INTO pokemon_stats VALUES (182,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (183,1,70,2);
+
+INSERT INTO pokemon_stats VALUES (183,2,20,0);
+
+INSERT INTO pokemon_stats VALUES (183,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (183,4,20,0);
+
+INSERT INTO pokemon_stats VALUES (183,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (183,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (184,1,100,3);
+
+INSERT INTO pokemon_stats VALUES (184,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (184,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (184,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (184,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (184,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (185,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (185,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (185,3,115,2);
+
+INSERT INTO pokemon_stats VALUES (185,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (185,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (185,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (186,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (186,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (186,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (186,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (186,5,100,3);
+
+INSERT INTO pokemon_stats VALUES (186,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (187,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (187,2,35,0);
+
+INSERT INTO pokemon_stats VALUES (187,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (187,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (187,5,55,1);
+
+INSERT INTO pokemon_stats VALUES (187,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (188,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (188,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (188,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (188,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (188,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (188,6,80,2);
+
+INSERT INTO pokemon_stats VALUES (189,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (189,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (189,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (189,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (189,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (189,6,110,3);
+
+INSERT INTO pokemon_stats VALUES (190,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (190,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (190,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (190,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (190,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (190,6,85,1);
+
+INSERT INTO pokemon_stats VALUES (191,1,30,0);
+
+INSERT INTO pokemon_stats VALUES (191,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (191,3,30,0);
+
+INSERT INTO pokemon_stats VALUES (191,4,30,1);
+
+INSERT INTO pokemon_stats VALUES (191,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (191,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (192,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (192,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (192,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (192,4,105,2);
+
+INSERT INTO pokemon_stats VALUES (192,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (192,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (193,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (193,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (193,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (193,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (193,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (193,6,95,1);
+
+INSERT INTO pokemon_stats VALUES (194,1,55,1);
+
+INSERT INTO pokemon_stats VALUES (194,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (194,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (194,4,25,0);
+
+INSERT INTO pokemon_stats VALUES (194,5,25,0);
+
+INSERT INTO pokemon_stats VALUES (194,6,15,0);
+
+INSERT INTO pokemon_stats VALUES (195,1,95,2);
+
+INSERT INTO pokemon_stats VALUES (195,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (195,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (195,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (195,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (195,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (196,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (196,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (196,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (196,4,130,2);
+
+INSERT INTO pokemon_stats VALUES (196,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (196,6,110,0);
+
+INSERT INTO pokemon_stats VALUES (197,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (197,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (197,3,110,0);
+
+INSERT INTO pokemon_stats VALUES (197,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (197,5,130,2);
+
+INSERT INTO pokemon_stats VALUES (197,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (198,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (198,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (198,3,42,0);
+
+INSERT INTO pokemon_stats VALUES (198,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (198,5,42,0);
+
+INSERT INTO pokemon_stats VALUES (198,6,91,1);
+
+INSERT INTO pokemon_stats VALUES (199,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (199,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (199,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (199,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (199,5,110,3);
+
+INSERT INTO pokemon_stats VALUES (199,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (200,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (200,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (200,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (200,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (200,5,85,1);
+
+INSERT INTO pokemon_stats VALUES (200,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (201,1,48,0);
+
+INSERT INTO pokemon_stats VALUES (201,2,72,1);
+
+INSERT INTO pokemon_stats VALUES (201,3,48,0);
+
+INSERT INTO pokemon_stats VALUES (201,4,72,1);
+
+INSERT INTO pokemon_stats VALUES (201,5,48,0);
+
+INSERT INTO pokemon_stats VALUES (201,6,48,0);
+
+INSERT INTO pokemon_stats VALUES (202,1,190,2);
+
+INSERT INTO pokemon_stats VALUES (202,2,33,0);
+
+INSERT INTO pokemon_stats VALUES (202,3,58,0);
+
+INSERT INTO pokemon_stats VALUES (202,4,33,0);
+
+INSERT INTO pokemon_stats VALUES (202,5,58,0);
+
+INSERT INTO pokemon_stats VALUES (202,6,33,0);
+
+INSERT INTO pokemon_stats VALUES (203,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (203,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (203,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (203,4,90,2);
+
+INSERT INTO pokemon_stats VALUES (203,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (203,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (204,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (204,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (204,3,90,1);
+
+INSERT INTO pokemon_stats VALUES (204,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (204,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (204,6,15,0);
+
+INSERT INTO pokemon_stats VALUES (205,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (205,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (205,3,140,2);
+
+INSERT INTO pokemon_stats VALUES (205,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (205,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (205,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (206,1,100,1);
+
+INSERT INTO pokemon_stats VALUES (206,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (206,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (206,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (206,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (206,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (207,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (207,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (207,3,105,1);
+
+INSERT INTO pokemon_stats VALUES (207,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (207,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (207,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (208,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (208,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (208,3,200,2);
+
+INSERT INTO pokemon_stats VALUES (208,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (208,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (208,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (209,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (209,2,80,1);
+
+INSERT INTO pokemon_stats VALUES (209,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (209,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (209,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (209,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (210,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (210,2,120,2);
+
+INSERT INTO pokemon_stats VALUES (210,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (210,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (210,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (210,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (211,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (211,2,95,1);
+
+INSERT INTO pokemon_stats VALUES (211,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (211,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (211,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (211,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (212,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (212,2,130,2);
+
+INSERT INTO pokemon_stats VALUES (212,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (212,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (212,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (212,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (213,1,20,0);
+
+INSERT INTO pokemon_stats VALUES (213,2,10,0);
+
+INSERT INTO pokemon_stats VALUES (213,3,230,1);
+
+INSERT INTO pokemon_stats VALUES (213,4,10,0);
+
+INSERT INTO pokemon_stats VALUES (213,5,230,1);
+
+INSERT INTO pokemon_stats VALUES (213,6,5,0);
+
+INSERT INTO pokemon_stats VALUES (214,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (214,2,125,2);
+
+INSERT INTO pokemon_stats VALUES (214,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (214,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (214,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (214,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (215,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (215,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (215,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (215,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (215,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (215,6,115,1);
+
+INSERT INTO pokemon_stats VALUES (216,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (216,2,80,1);
+
+INSERT INTO pokemon_stats VALUES (216,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (216,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (216,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (216,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (217,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (217,2,130,2);
+
+INSERT INTO pokemon_stats VALUES (217,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (217,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (217,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (217,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (218,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (218,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (218,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (218,4,70,1);
+
+INSERT INTO pokemon_stats VALUES (218,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (218,6,20,0);
+
+INSERT INTO pokemon_stats VALUES (219,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (219,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (219,3,120,2);
+
+INSERT INTO pokemon_stats VALUES (219,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (219,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (219,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (220,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (220,2,50,1);
+
+INSERT INTO pokemon_stats VALUES (220,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (220,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (220,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (220,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (221,1,100,1);
+
+INSERT INTO pokemon_stats VALUES (221,2,100,1);
+
+INSERT INTO pokemon_stats VALUES (221,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (221,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (221,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (221,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (222,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (222,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (222,3,85,1);
+
+INSERT INTO pokemon_stats VALUES (222,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (222,5,85,1);
+
+INSERT INTO pokemon_stats VALUES (222,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (223,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (223,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (223,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (223,4,65,1);
+
+INSERT INTO pokemon_stats VALUES (223,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (223,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (224,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (224,2,105,1);
+
+INSERT INTO pokemon_stats VALUES (224,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (224,4,105,1);
+
+INSERT INTO pokemon_stats VALUES (224,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (224,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (225,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (225,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (225,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (225,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (225,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (225,6,75,1);
+
+INSERT INTO pokemon_stats VALUES (226,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (226,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (226,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (226,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (226,5,140,2);
+
+INSERT INTO pokemon_stats VALUES (226,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (227,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (227,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (227,3,140,2);
+
+INSERT INTO pokemon_stats VALUES (227,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (227,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (227,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (228,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (228,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (228,3,30,0);
+
+INSERT INTO pokemon_stats VALUES (228,4,80,1);
+
+INSERT INTO pokemon_stats VALUES (228,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (228,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (229,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (229,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (229,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (229,4,110,2);
+
+INSERT INTO pokemon_stats VALUES (229,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (229,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (230,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (230,2,95,1);
+
+INSERT INTO pokemon_stats VALUES (230,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (230,4,95,1);
+
+INSERT INTO pokemon_stats VALUES (230,5,95,1);
+
+INSERT INTO pokemon_stats VALUES (230,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (231,1,90,1);
+
+INSERT INTO pokemon_stats VALUES (231,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (231,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (231,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (231,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (231,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (232,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (232,2,120,1);
+
+INSERT INTO pokemon_stats VALUES (232,3,120,1);
+
+INSERT INTO pokemon_stats VALUES (232,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (232,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (232,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (233,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (233,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (233,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (233,4,105,2);
+
+INSERT INTO pokemon_stats VALUES (233,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (233,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (234,1,73,0);
+
+INSERT INTO pokemon_stats VALUES (234,2,95,1);
+
+INSERT INTO pokemon_stats VALUES (234,3,62,0);
+
+INSERT INTO pokemon_stats VALUES (234,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (234,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (234,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (235,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (235,2,20,0);
+
+INSERT INTO pokemon_stats VALUES (235,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (235,4,20,0);
+
+INSERT INTO pokemon_stats VALUES (235,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (235,6,75,1);
+
+INSERT INTO pokemon_stats VALUES (236,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (236,2,35,1);
+
+INSERT INTO pokemon_stats VALUES (236,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (236,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (236,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (236,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (237,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (237,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (237,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (237,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (237,5,110,2);
+
+INSERT INTO pokemon_stats VALUES (237,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (238,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (238,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (238,3,15,0);
+
+INSERT INTO pokemon_stats VALUES (238,4,85,1);
+
+INSERT INTO pokemon_stats VALUES (238,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (238,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (239,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (239,2,63,0);
+
+INSERT INTO pokemon_stats VALUES (239,3,37,0);
+
+INSERT INTO pokemon_stats VALUES (239,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (239,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (239,6,95,1);
+
+INSERT INTO pokemon_stats VALUES (240,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (240,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (240,3,37,0);
+
+INSERT INTO pokemon_stats VALUES (240,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (240,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (240,6,83,1);
+
+INSERT INTO pokemon_stats VALUES (241,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (241,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (241,3,105,2);
+
+INSERT INTO pokemon_stats VALUES (241,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (241,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (241,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (242,1,255,3);
+
+INSERT INTO pokemon_stats VALUES (242,2,10,0);
+
+INSERT INTO pokemon_stats VALUES (242,3,10,0);
+
+INSERT INTO pokemon_stats VALUES (242,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (242,5,135,0);
+
+INSERT INTO pokemon_stats VALUES (242,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (243,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (243,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (243,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (243,4,115,1);
+
+INSERT INTO pokemon_stats VALUES (243,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (243,6,115,2);
+
+INSERT INTO pokemon_stats VALUES (244,1,115,1);
+
+INSERT INTO pokemon_stats VALUES (244,2,115,2);
+
+INSERT INTO pokemon_stats VALUES (244,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (244,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (244,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (244,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (245,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (245,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (245,3,115,1);
+
+INSERT INTO pokemon_stats VALUES (245,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (245,5,115,2);
+
+INSERT INTO pokemon_stats VALUES (245,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (246,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (246,2,64,1);
+
+INSERT INTO pokemon_stats VALUES (246,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (246,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (246,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (246,6,41,0);
+
+INSERT INTO pokemon_stats VALUES (247,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (247,2,84,2);
+
+INSERT INTO pokemon_stats VALUES (247,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (247,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (247,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (247,6,51,0);
+
+INSERT INTO pokemon_stats VALUES (248,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (248,2,134,3);
+
+INSERT INTO pokemon_stats VALUES (248,3,110,0);
+
+INSERT INTO pokemon_stats VALUES (248,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (248,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (248,6,61,0);
+
+INSERT INTO pokemon_stats VALUES (249,1,106,0);
+
+INSERT INTO pokemon_stats VALUES (249,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (249,3,130,0);
+
+INSERT INTO pokemon_stats VALUES (249,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (249,5,154,3);
+
+INSERT INTO pokemon_stats VALUES (249,6,110,0);
+
+INSERT INTO pokemon_stats VALUES (250,1,106,0);
+
+INSERT INTO pokemon_stats VALUES (250,2,130,0);
+
+INSERT INTO pokemon_stats VALUES (250,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (250,4,110,0);
+
+INSERT INTO pokemon_stats VALUES (250,5,154,3);
+
+INSERT INTO pokemon_stats VALUES (250,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (251,1,100,3);
+
+INSERT INTO pokemon_stats VALUES (251,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (251,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (251,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (251,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (251,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (252,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (252,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (252,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (252,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (252,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (252,6,70,1);
+
+INSERT INTO pokemon_stats VALUES (253,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (253,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (253,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (253,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (253,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (253,6,95,2);
+
+INSERT INTO pokemon_stats VALUES (254,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (254,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (254,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (254,4,105,0);
+
+INSERT INTO pokemon_stats VALUES (254,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (254,6,120,3);
+
+INSERT INTO pokemon_stats VALUES (255,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (255,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (255,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (255,4,70,1);
+
+INSERT INTO pokemon_stats VALUES (255,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (255,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (256,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (256,2,85,1);
+
+INSERT INTO pokemon_stats VALUES (256,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (256,4,85,1);
+
+INSERT INTO pokemon_stats VALUES (256,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (256,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (257,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (257,2,120,3);
+
+INSERT INTO pokemon_stats VALUES (257,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (257,4,110,0);
+
+INSERT INTO pokemon_stats VALUES (257,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (257,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (258,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (258,2,70,1);
+
+INSERT INTO pokemon_stats VALUES (258,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (258,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (258,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (258,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (259,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (259,2,85,2);
+
+INSERT INTO pokemon_stats VALUES (259,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (259,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (259,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (259,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (260,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (260,2,110,3);
+
+INSERT INTO pokemon_stats VALUES (260,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (260,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (260,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (260,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (261,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (261,2,55,1);
+
+INSERT INTO pokemon_stats VALUES (261,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (261,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (261,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (261,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (262,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (262,2,90,2);
+
+INSERT INTO pokemon_stats VALUES (262,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (262,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (262,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (262,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (263,1,38,0);
+
+INSERT INTO pokemon_stats VALUES (263,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (263,3,41,0);
+
+INSERT INTO pokemon_stats VALUES (263,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (263,5,41,0);
+
+INSERT INTO pokemon_stats VALUES (263,6,60,1);
+
+INSERT INTO pokemon_stats VALUES (264,1,78,0);
+
+INSERT INTO pokemon_stats VALUES (264,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (264,3,61,0);
+
+INSERT INTO pokemon_stats VALUES (264,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (264,5,61,0);
+
+INSERT INTO pokemon_stats VALUES (264,6,100,2);
+
+INSERT INTO pokemon_stats VALUES (265,1,45,1);
+
+INSERT INTO pokemon_stats VALUES (265,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (265,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (265,4,20,0);
+
+INSERT INTO pokemon_stats VALUES (265,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (265,6,20,0);
+
+INSERT INTO pokemon_stats VALUES (266,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (266,2,35,0);
+
+INSERT INTO pokemon_stats VALUES (266,3,55,2);
+
+INSERT INTO pokemon_stats VALUES (266,4,25,0);
+
+INSERT INTO pokemon_stats VALUES (266,5,25,0);
+
+INSERT INTO pokemon_stats VALUES (266,6,15,0);
+
+INSERT INTO pokemon_stats VALUES (267,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (267,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (267,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (267,4,100,3);
+
+INSERT INTO pokemon_stats VALUES (267,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (267,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (268,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (268,2,35,0);
+
+INSERT INTO pokemon_stats VALUES (268,3,55,2);
+
+INSERT INTO pokemon_stats VALUES (268,4,25,0);
+
+INSERT INTO pokemon_stats VALUES (268,5,25,0);
+
+INSERT INTO pokemon_stats VALUES (268,6,15,0);
+
+INSERT INTO pokemon_stats VALUES (269,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (269,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (269,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (269,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (269,5,90,3);
+
+INSERT INTO pokemon_stats VALUES (269,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (270,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (270,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (270,3,30,0);
+
+INSERT INTO pokemon_stats VALUES (270,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (270,5,50,1);
+
+INSERT INTO pokemon_stats VALUES (270,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (271,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (271,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (271,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (271,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (271,5,70,2);
+
+INSERT INTO pokemon_stats VALUES (271,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (272,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (272,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (272,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (272,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (272,5,100,3);
+
+INSERT INTO pokemon_stats VALUES (272,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (273,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (273,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (273,3,50,1);
+
+INSERT INTO pokemon_stats VALUES (273,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (273,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (273,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (274,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (274,2,70,2);
+
+INSERT INTO pokemon_stats VALUES (274,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (274,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (274,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (274,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (275,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (275,2,100,3);
+
+INSERT INTO pokemon_stats VALUES (275,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (275,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (275,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (275,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (276,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (276,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (276,3,30,0);
+
+INSERT INTO pokemon_stats VALUES (276,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (276,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (276,6,85,1);
+
+INSERT INTO pokemon_stats VALUES (277,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (277,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (277,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (277,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (277,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (277,6,125,2);
+
+INSERT INTO pokemon_stats VALUES (278,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (278,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (278,3,30,0);
+
+INSERT INTO pokemon_stats VALUES (278,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (278,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (278,6,85,1);
+
+INSERT INTO pokemon_stats VALUES (279,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (279,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (279,3,100,2);
+
+INSERT INTO pokemon_stats VALUES (279,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (279,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (279,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (280,1,28,0);
+
+INSERT INTO pokemon_stats VALUES (280,2,25,0);
+
+INSERT INTO pokemon_stats VALUES (280,3,25,0);
+
+INSERT INTO pokemon_stats VALUES (280,4,45,1);
+
+INSERT INTO pokemon_stats VALUES (280,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (280,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (281,1,38,0);
+
+INSERT INTO pokemon_stats VALUES (281,2,35,0);
+
+INSERT INTO pokemon_stats VALUES (281,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (281,4,65,2);
+
+INSERT INTO pokemon_stats VALUES (281,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (281,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (282,1,68,0);
+
+INSERT INTO pokemon_stats VALUES (282,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (282,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (282,4,125,3);
+
+INSERT INTO pokemon_stats VALUES (282,5,115,0);
+
+INSERT INTO pokemon_stats VALUES (282,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (283,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (283,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (283,3,32,0);
+
+INSERT INTO pokemon_stats VALUES (283,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (283,5,52,0);
+
+INSERT INTO pokemon_stats VALUES (283,6,65,1);
+
+INSERT INTO pokemon_stats VALUES (284,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (284,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (284,3,62,0);
+
+INSERT INTO pokemon_stats VALUES (284,4,80,1);
+
+INSERT INTO pokemon_stats VALUES (284,5,82,1);
+
+INSERT INTO pokemon_stats VALUES (284,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (285,1,60,1);
+
+INSERT INTO pokemon_stats VALUES (285,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (285,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (285,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (285,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (285,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (286,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (286,2,130,2);
+
+INSERT INTO pokemon_stats VALUES (286,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (286,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (286,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (286,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (287,1,60,1);
+
+INSERT INTO pokemon_stats VALUES (287,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (287,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (287,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (287,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (287,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (288,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (288,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (288,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (288,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (288,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (288,6,90,2);
+
+INSERT INTO pokemon_stats VALUES (289,1,150,3);
+
+INSERT INTO pokemon_stats VALUES (289,2,160,0);
+
+INSERT INTO pokemon_stats VALUES (289,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (289,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (289,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (289,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (290,1,31,0);
+
+INSERT INTO pokemon_stats VALUES (290,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (290,3,90,1);
+
+INSERT INTO pokemon_stats VALUES (290,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (290,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (290,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (291,1,61,0);
+
+INSERT INTO pokemon_stats VALUES (291,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (291,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (291,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (291,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (291,6,160,2);
+
+INSERT INTO pokemon_stats VALUES (292,1,1,2);
+
+INSERT INTO pokemon_stats VALUES (292,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (292,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (292,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (292,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (292,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (293,1,64,1);
+
+INSERT INTO pokemon_stats VALUES (293,2,51,0);
+
+INSERT INTO pokemon_stats VALUES (293,3,23,0);
+
+INSERT INTO pokemon_stats VALUES (293,4,51,0);
+
+INSERT INTO pokemon_stats VALUES (293,5,23,0);
+
+INSERT INTO pokemon_stats VALUES (293,6,28,0);
+
+INSERT INTO pokemon_stats VALUES (294,1,84,2);
+
+INSERT INTO pokemon_stats VALUES (294,2,71,0);
+
+INSERT INTO pokemon_stats VALUES (294,3,43,0);
+
+INSERT INTO pokemon_stats VALUES (294,4,71,0);
+
+INSERT INTO pokemon_stats VALUES (294,5,43,0);
+
+INSERT INTO pokemon_stats VALUES (294,6,48,0);
+
+INSERT INTO pokemon_stats VALUES (295,1,104,3);
+
+INSERT INTO pokemon_stats VALUES (295,2,91,0);
+
+INSERT INTO pokemon_stats VALUES (295,3,63,0);
+
+INSERT INTO pokemon_stats VALUES (295,4,91,0);
+
+INSERT INTO pokemon_stats VALUES (295,5,73,0);
+
+INSERT INTO pokemon_stats VALUES (295,6,68,0);
+
+INSERT INTO pokemon_stats VALUES (296,1,72,1);
+
+INSERT INTO pokemon_stats VALUES (296,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (296,3,30,0);
+
+INSERT INTO pokemon_stats VALUES (296,4,20,0);
+
+INSERT INTO pokemon_stats VALUES (296,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (296,6,25,0);
+
+INSERT INTO pokemon_stats VALUES (297,1,144,2);
+
+INSERT INTO pokemon_stats VALUES (297,2,120,0);
+
+INSERT INTO pokemon_stats VALUES (297,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (297,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (297,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (297,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (298,1,50,1);
+
+INSERT INTO pokemon_stats VALUES (298,2,20,0);
+
+INSERT INTO pokemon_stats VALUES (298,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (298,4,20,0);
+
+INSERT INTO pokemon_stats VALUES (298,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (298,6,20,0);
+
+INSERT INTO pokemon_stats VALUES (299,1,30,0);
+
+INSERT INTO pokemon_stats VALUES (299,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (299,3,135,1);
+
+INSERT INTO pokemon_stats VALUES (299,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (299,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (299,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (300,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (300,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (300,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (300,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (300,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (300,6,50,1);
+
+INSERT INTO pokemon_stats VALUES (301,1,70,1);
+
+INSERT INTO pokemon_stats VALUES (301,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (301,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (301,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (301,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (301,6,70,1);
+
+INSERT INTO pokemon_stats VALUES (302,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (302,2,75,1);
+
+INSERT INTO pokemon_stats VALUES (302,3,75,1);
+
+INSERT INTO pokemon_stats VALUES (302,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (302,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (302,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (303,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (303,2,85,1);
+
+INSERT INTO pokemon_stats VALUES (303,3,85,1);
+
+INSERT INTO pokemon_stats VALUES (303,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (303,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (303,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (304,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (304,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (304,3,100,1);
+
+INSERT INTO pokemon_stats VALUES (304,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (304,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (304,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (305,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (305,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (305,3,140,2);
+
+INSERT INTO pokemon_stats VALUES (305,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (305,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (305,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (306,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (306,2,110,0);
+
+INSERT INTO pokemon_stats VALUES (306,3,180,3);
+
+INSERT INTO pokemon_stats VALUES (306,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (306,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (306,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (307,1,30,0);
+
+INSERT INTO pokemon_stats VALUES (307,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (307,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (307,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (307,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (307,6,60,1);
+
+INSERT INTO pokemon_stats VALUES (308,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (308,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (308,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (308,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (308,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (308,6,80,2);
+
+INSERT INTO pokemon_stats VALUES (309,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (309,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (309,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (309,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (309,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (309,6,65,1);
+
+INSERT INTO pokemon_stats VALUES (310,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (310,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (310,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (310,4,105,0);
+
+INSERT INTO pokemon_stats VALUES (310,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (310,6,105,2);
+
+INSERT INTO pokemon_stats VALUES (311,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (311,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (311,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (311,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (311,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (311,6,95,1);
+
+INSERT INTO pokemon_stats VALUES (312,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (312,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (312,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (312,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (312,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (312,6,95,1);
+
+INSERT INTO pokemon_stats VALUES (313,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (313,2,73,0);
+
+INSERT INTO pokemon_stats VALUES (313,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (313,4,47,0);
+
+INSERT INTO pokemon_stats VALUES (313,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (313,6,85,1);
+
+INSERT INTO pokemon_stats VALUES (314,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (314,2,47,0);
+
+INSERT INTO pokemon_stats VALUES (314,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (314,4,73,0);
+
+INSERT INTO pokemon_stats VALUES (314,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (314,6,85,1);
+
+INSERT INTO pokemon_stats VALUES (315,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (315,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (315,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (315,4,100,2);
+
+INSERT INTO pokemon_stats VALUES (315,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (315,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (316,1,70,1);
+
+INSERT INTO pokemon_stats VALUES (316,2,43,0);
+
+INSERT INTO pokemon_stats VALUES (316,3,53,0);
+
+INSERT INTO pokemon_stats VALUES (316,4,43,0);
+
+INSERT INTO pokemon_stats VALUES (316,5,53,0);
+
+INSERT INTO pokemon_stats VALUES (316,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (317,1,100,2);
+
+INSERT INTO pokemon_stats VALUES (317,2,73,0);
+
+INSERT INTO pokemon_stats VALUES (317,3,83,0);
+
+INSERT INTO pokemon_stats VALUES (317,4,73,0);
+
+INSERT INTO pokemon_stats VALUES (317,5,83,0);
+
+INSERT INTO pokemon_stats VALUES (317,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (318,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (318,2,90,1);
+
+INSERT INTO pokemon_stats VALUES (318,3,20,0);
+
+INSERT INTO pokemon_stats VALUES (318,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (318,5,20,0);
+
+INSERT INTO pokemon_stats VALUES (318,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (319,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (319,2,120,2);
+
+INSERT INTO pokemon_stats VALUES (319,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (319,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (319,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (319,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (320,1,130,1);
+
+INSERT INTO pokemon_stats VALUES (320,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (320,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (320,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (320,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (320,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (321,1,170,2);
+
+INSERT INTO pokemon_stats VALUES (321,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (321,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (321,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (321,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (321,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (322,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (322,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (322,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (322,4,65,1);
+
+INSERT INTO pokemon_stats VALUES (322,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (322,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (323,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (323,2,100,1);
+
+INSERT INTO pokemon_stats VALUES (323,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (323,4,105,1);
+
+INSERT INTO pokemon_stats VALUES (323,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (323,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (324,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (324,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (324,3,140,2);
+
+INSERT INTO pokemon_stats VALUES (324,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (324,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (324,6,20,0);
+
+INSERT INTO pokemon_stats VALUES (325,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (325,2,25,0);
+
+INSERT INTO pokemon_stats VALUES (325,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (325,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (325,5,80,1);
+
+INSERT INTO pokemon_stats VALUES (325,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (326,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (326,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (326,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (326,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (326,5,110,2);
+
+INSERT INTO pokemon_stats VALUES (326,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (327,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (327,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (327,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (327,4,60,1);
+
+INSERT INTO pokemon_stats VALUES (327,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (327,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (328,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (328,2,100,1);
+
+INSERT INTO pokemon_stats VALUES (328,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (328,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (328,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (328,6,10,0);
+
+INSERT INTO pokemon_stats VALUES (329,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (329,2,70,1);
+
+INSERT INTO pokemon_stats VALUES (329,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (329,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (329,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (329,6,70,1);
+
+INSERT INTO pokemon_stats VALUES (330,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (330,2,100,1);
+
+INSERT INTO pokemon_stats VALUES (330,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (330,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (330,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (330,6,100,2);
+
+INSERT INTO pokemon_stats VALUES (331,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (331,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (331,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (331,4,85,1);
+
+INSERT INTO pokemon_stats VALUES (331,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (331,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (332,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (332,2,115,1);
+
+INSERT INTO pokemon_stats VALUES (332,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (332,4,115,1);
+
+INSERT INTO pokemon_stats VALUES (332,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (332,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (333,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (333,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (333,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (333,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (333,5,75,1);
+
+INSERT INTO pokemon_stats VALUES (333,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (334,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (334,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (334,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (334,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (334,5,105,2);
+
+INSERT INTO pokemon_stats VALUES (334,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (335,1,73,0);
+
+INSERT INTO pokemon_stats VALUES (335,2,115,2);
+
+INSERT INTO pokemon_stats VALUES (335,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (335,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (335,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (335,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (336,1,73,0);
+
+INSERT INTO pokemon_stats VALUES (336,2,100,1);
+
+INSERT INTO pokemon_stats VALUES (336,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (336,4,100,1);
+
+INSERT INTO pokemon_stats VALUES (336,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (336,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (337,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (337,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (337,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (337,4,95,2);
+
+INSERT INTO pokemon_stats VALUES (337,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (337,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (338,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (338,2,95,2);
+
+INSERT INTO pokemon_stats VALUES (338,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (338,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (338,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (338,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (339,1,50,1);
+
+INSERT INTO pokemon_stats VALUES (339,2,48,0);
+
+INSERT INTO pokemon_stats VALUES (339,3,43,0);
+
+INSERT INTO pokemon_stats VALUES (339,4,46,0);
+
+INSERT INTO pokemon_stats VALUES (339,5,41,0);
+
+INSERT INTO pokemon_stats VALUES (339,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (340,1,110,2);
+
+INSERT INTO pokemon_stats VALUES (340,2,78,0);
+
+INSERT INTO pokemon_stats VALUES (340,3,73,0);
+
+INSERT INTO pokemon_stats VALUES (340,4,76,0);
+
+INSERT INTO pokemon_stats VALUES (340,5,71,0);
+
+INSERT INTO pokemon_stats VALUES (340,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (341,1,43,0);
+
+INSERT INTO pokemon_stats VALUES (341,2,80,1);
+
+INSERT INTO pokemon_stats VALUES (341,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (341,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (341,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (341,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (342,1,63,0);
+
+INSERT INTO pokemon_stats VALUES (342,2,120,2);
+
+INSERT INTO pokemon_stats VALUES (342,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (342,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (342,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (342,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (343,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (343,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (343,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (343,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (343,5,70,1);
+
+INSERT INTO pokemon_stats VALUES (343,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (344,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (344,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (344,3,105,0);
+
+INSERT INTO pokemon_stats VALUES (344,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (344,5,120,2);
+
+INSERT INTO pokemon_stats VALUES (344,6,75,0);
+
+INSERT INTO pokemon_stats VALUES (345,1,66,0);
+
+INSERT INTO pokemon_stats VALUES (345,2,41,0);
+
+INSERT INTO pokemon_stats VALUES (345,3,77,0);
+
+INSERT INTO pokemon_stats VALUES (345,4,61,0);
+
+INSERT INTO pokemon_stats VALUES (345,5,87,1);
+
+INSERT INTO pokemon_stats VALUES (345,6,23,0);
+
+INSERT INTO pokemon_stats VALUES (346,1,86,0);
+
+INSERT INTO pokemon_stats VALUES (346,2,81,0);
+
+INSERT INTO pokemon_stats VALUES (346,3,97,0);
+
+INSERT INTO pokemon_stats VALUES (346,4,81,0);
+
+INSERT INTO pokemon_stats VALUES (346,5,107,2);
+
+INSERT INTO pokemon_stats VALUES (346,6,43,0);
+
+INSERT INTO pokemon_stats VALUES (347,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (347,2,95,1);
+
+INSERT INTO pokemon_stats VALUES (347,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (347,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (347,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (347,6,75,0);
+
+INSERT INTO pokemon_stats VALUES (348,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (348,2,125,2);
+
+INSERT INTO pokemon_stats VALUES (348,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (348,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (348,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (348,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (349,1,20,0);
+
+INSERT INTO pokemon_stats VALUES (349,2,15,0);
+
+INSERT INTO pokemon_stats VALUES (349,3,20,0);
+
+INSERT INTO pokemon_stats VALUES (349,4,10,0);
+
+INSERT INTO pokemon_stats VALUES (349,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (349,6,80,1);
+
+INSERT INTO pokemon_stats VALUES (350,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (350,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (350,3,79,0);
+
+INSERT INTO pokemon_stats VALUES (350,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (350,5,125,2);
+
+INSERT INTO pokemon_stats VALUES (350,6,81,0);
+
+INSERT INTO pokemon_stats VALUES (351,1,70,1);
+
+INSERT INTO pokemon_stats VALUES (351,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (351,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (351,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (351,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (351,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (352,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (352,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (352,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (352,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (352,5,120,1);
+
+INSERT INTO pokemon_stats VALUES (352,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (353,1,44,0);
+
+INSERT INTO pokemon_stats VALUES (353,2,75,1);
+
+INSERT INTO pokemon_stats VALUES (353,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (353,4,63,0);
+
+INSERT INTO pokemon_stats VALUES (353,5,33,0);
+
+INSERT INTO pokemon_stats VALUES (353,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (354,1,64,0);
+
+INSERT INTO pokemon_stats VALUES (354,2,115,2);
+
+INSERT INTO pokemon_stats VALUES (354,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (354,4,83,0);
+
+INSERT INTO pokemon_stats VALUES (354,5,63,0);
+
+INSERT INTO pokemon_stats VALUES (354,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (355,1,20,0);
+
+INSERT INTO pokemon_stats VALUES (355,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (355,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (355,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (355,5,90,1);
+
+INSERT INTO pokemon_stats VALUES (355,6,25,0);
+
+INSERT INTO pokemon_stats VALUES (356,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (356,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (356,3,130,1);
+
+INSERT INTO pokemon_stats VALUES (356,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (356,5,130,1);
+
+INSERT INTO pokemon_stats VALUES (356,6,25,0);
+
+INSERT INTO pokemon_stats VALUES (357,1,99,2);
+
+INSERT INTO pokemon_stats VALUES (357,2,68,0);
+
+INSERT INTO pokemon_stats VALUES (357,3,83,0);
+
+INSERT INTO pokemon_stats VALUES (357,4,72,0);
+
+INSERT INTO pokemon_stats VALUES (357,5,87,0);
+
+INSERT INTO pokemon_stats VALUES (357,6,51,0);
+
+INSERT INTO pokemon_stats VALUES (358,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (358,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (358,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (358,4,95,1);
+
+INSERT INTO pokemon_stats VALUES (358,5,80,1);
+
+INSERT INTO pokemon_stats VALUES (358,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (359,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (359,2,130,2);
+
+INSERT INTO pokemon_stats VALUES (359,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (359,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (359,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (359,6,75,0);
+
+INSERT INTO pokemon_stats VALUES (360,1,95,1);
+
+INSERT INTO pokemon_stats VALUES (360,2,23,0);
+
+INSERT INTO pokemon_stats VALUES (360,3,48,0);
+
+INSERT INTO pokemon_stats VALUES (360,4,23,0);
+
+INSERT INTO pokemon_stats VALUES (360,5,48,0);
+
+INSERT INTO pokemon_stats VALUES (360,6,23,0);
+
+INSERT INTO pokemon_stats VALUES (361,1,50,1);
+
+INSERT INTO pokemon_stats VALUES (361,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (361,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (361,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (361,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (361,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (362,1,80,2);
+
+INSERT INTO pokemon_stats VALUES (362,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (362,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (362,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (362,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (362,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (363,1,70,1);
+
+INSERT INTO pokemon_stats VALUES (363,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (363,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (363,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (363,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (363,6,25,0);
+
+INSERT INTO pokemon_stats VALUES (364,1,90,2);
+
+INSERT INTO pokemon_stats VALUES (364,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (364,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (364,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (364,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (364,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (365,1,110,3);
+
+INSERT INTO pokemon_stats VALUES (365,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (365,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (365,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (365,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (365,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (366,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (366,2,64,0);
+
+INSERT INTO pokemon_stats VALUES (366,3,85,1);
+
+INSERT INTO pokemon_stats VALUES (366,4,74,0);
+
+INSERT INTO pokemon_stats VALUES (366,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (366,6,32,0);
+
+INSERT INTO pokemon_stats VALUES (367,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (367,2,104,1);
+
+INSERT INTO pokemon_stats VALUES (367,3,105,1);
+
+INSERT INTO pokemon_stats VALUES (367,4,94,0);
+
+INSERT INTO pokemon_stats VALUES (367,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (367,6,52,0);
+
+INSERT INTO pokemon_stats VALUES (368,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (368,2,84,0);
+
+INSERT INTO pokemon_stats VALUES (368,3,105,0);
+
+INSERT INTO pokemon_stats VALUES (368,4,114,2);
+
+INSERT INTO pokemon_stats VALUES (368,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (368,6,52,0);
+
+INSERT INTO pokemon_stats VALUES (369,1,100,1);
+
+INSERT INTO pokemon_stats VALUES (369,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (369,3,130,1);
+
+INSERT INTO pokemon_stats VALUES (369,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (369,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (369,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (370,1,43,0);
+
+INSERT INTO pokemon_stats VALUES (370,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (370,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (370,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (370,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (370,6,97,1);
+
+INSERT INTO pokemon_stats VALUES (371,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (371,2,75,1);
+
+INSERT INTO pokemon_stats VALUES (371,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (371,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (371,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (371,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (372,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (372,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (372,3,100,2);
+
+INSERT INTO pokemon_stats VALUES (372,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (372,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (372,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (373,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (373,2,135,3);
+
+INSERT INTO pokemon_stats VALUES (373,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (373,4,110,0);
+
+INSERT INTO pokemon_stats VALUES (373,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (373,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (374,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (374,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (374,3,80,1);
+
+INSERT INTO pokemon_stats VALUES (374,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (374,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (374,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (375,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (375,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (375,3,100,2);
+
+INSERT INTO pokemon_stats VALUES (375,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (375,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (375,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (376,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (376,2,135,0);
+
+INSERT INTO pokemon_stats VALUES (376,3,130,3);
+
+INSERT INTO pokemon_stats VALUES (376,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (376,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (376,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (377,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (377,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (377,3,200,3);
+
+INSERT INTO pokemon_stats VALUES (377,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (377,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (377,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (378,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (378,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (378,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (378,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (378,5,200,3);
+
+INSERT INTO pokemon_stats VALUES (378,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (379,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (379,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (379,3,150,2);
+
+INSERT INTO pokemon_stats VALUES (379,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (379,5,150,1);
+
+INSERT INTO pokemon_stats VALUES (379,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (380,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (380,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (380,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (380,4,110,0);
+
+INSERT INTO pokemon_stats VALUES (380,5,130,3);
+
+INSERT INTO pokemon_stats VALUES (380,6,110,0);
+
+INSERT INTO pokemon_stats VALUES (381,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (381,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (381,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (381,4,130,3);
+
+INSERT INTO pokemon_stats VALUES (381,5,110,0);
+
+INSERT INTO pokemon_stats VALUES (381,6,110,0);
+
+INSERT INTO pokemon_stats VALUES (382,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (382,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (382,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (382,4,150,3);
+
+INSERT INTO pokemon_stats VALUES (382,5,140,0);
+
+INSERT INTO pokemon_stats VALUES (382,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (383,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (383,2,150,3);
+
+INSERT INTO pokemon_stats VALUES (383,3,140,0);
+
+INSERT INTO pokemon_stats VALUES (383,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (383,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (383,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (384,1,105,0);
+
+INSERT INTO pokemon_stats VALUES (384,2,150,2);
+
+INSERT INTO pokemon_stats VALUES (384,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (384,4,150,1);
+
+INSERT INTO pokemon_stats VALUES (384,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (384,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (385,1,100,3);
+
+INSERT INTO pokemon_stats VALUES (385,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (385,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (385,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (385,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (385,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (386,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (386,2,150,1);
+
+INSERT INTO pokemon_stats VALUES (386,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (386,4,150,1);
+
+INSERT INTO pokemon_stats VALUES (386,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (386,6,150,1);
+
+INSERT INTO pokemon_stats VALUES (387,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (387,2,68,1);
+
+INSERT INTO pokemon_stats VALUES (387,3,64,0);
+
+INSERT INTO pokemon_stats VALUES (387,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (387,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (387,6,31,0);
+
+INSERT INTO pokemon_stats VALUES (388,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (388,2,89,1);
+
+INSERT INTO pokemon_stats VALUES (388,3,85,1);
+
+INSERT INTO pokemon_stats VALUES (388,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (388,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (388,6,36,0);
+
+INSERT INTO pokemon_stats VALUES (389,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (389,2,109,2);
+
+INSERT INTO pokemon_stats VALUES (389,3,105,1);
+
+INSERT INTO pokemon_stats VALUES (389,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (389,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (389,6,56,0);
+
+INSERT INTO pokemon_stats VALUES (390,1,44,0);
+
+INSERT INTO pokemon_stats VALUES (390,2,58,0);
+
+INSERT INTO pokemon_stats VALUES (390,3,44,0);
+
+INSERT INTO pokemon_stats VALUES (390,4,58,0);
+
+INSERT INTO pokemon_stats VALUES (390,5,44,0);
+
+INSERT INTO pokemon_stats VALUES (390,6,61,1);
+
+INSERT INTO pokemon_stats VALUES (391,1,64,0);
+
+INSERT INTO pokemon_stats VALUES (391,2,78,0);
+
+INSERT INTO pokemon_stats VALUES (391,3,52,0);
+
+INSERT INTO pokemon_stats VALUES (391,4,78,1);
+
+INSERT INTO pokemon_stats VALUES (391,5,52,0);
+
+INSERT INTO pokemon_stats VALUES (391,6,81,1);
+
+INSERT INTO pokemon_stats VALUES (392,1,76,0);
+
+INSERT INTO pokemon_stats VALUES (392,2,104,1);
+
+INSERT INTO pokemon_stats VALUES (392,3,71,0);
+
+INSERT INTO pokemon_stats VALUES (392,4,104,1);
+
+INSERT INTO pokemon_stats VALUES (392,5,71,0);
+
+INSERT INTO pokemon_stats VALUES (392,6,108,1);
+
+INSERT INTO pokemon_stats VALUES (393,1,53,0);
+
+INSERT INTO pokemon_stats VALUES (393,2,51,0);
+
+INSERT INTO pokemon_stats VALUES (393,3,53,0);
+
+INSERT INTO pokemon_stats VALUES (393,4,61,1);
+
+INSERT INTO pokemon_stats VALUES (393,5,56,0);
+
+INSERT INTO pokemon_stats VALUES (393,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (394,1,64,0);
+
+INSERT INTO pokemon_stats VALUES (394,2,66,0);
+
+INSERT INTO pokemon_stats VALUES (394,3,68,0);
+
+INSERT INTO pokemon_stats VALUES (394,4,81,2);
+
+INSERT INTO pokemon_stats VALUES (394,5,76,0);
+
+INSERT INTO pokemon_stats VALUES (394,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (395,1,84,0);
+
+INSERT INTO pokemon_stats VALUES (395,2,86,0);
+
+INSERT INTO pokemon_stats VALUES (395,3,88,0);
+
+INSERT INTO pokemon_stats VALUES (395,4,111,3);
+
+INSERT INTO pokemon_stats VALUES (395,5,101,0);
+
+INSERT INTO pokemon_stats VALUES (395,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (396,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (396,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (396,3,30,0);
+
+INSERT INTO pokemon_stats VALUES (396,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (396,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (396,6,60,1);
+
+INSERT INTO pokemon_stats VALUES (397,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (397,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (397,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (397,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (397,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (397,6,80,2);
+
+INSERT INTO pokemon_stats VALUES (398,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (398,2,120,3);
+
+INSERT INTO pokemon_stats VALUES (398,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (398,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (398,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (398,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (399,1,59,1);
+
+INSERT INTO pokemon_stats VALUES (399,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (399,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (399,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (399,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (399,6,31,0);
+
+INSERT INTO pokemon_stats VALUES (400,1,79,0);
+
+INSERT INTO pokemon_stats VALUES (400,2,85,2);
+
+INSERT INTO pokemon_stats VALUES (400,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (400,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (400,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (400,6,71,0);
+
+INSERT INTO pokemon_stats VALUES (401,1,37,0);
+
+INSERT INTO pokemon_stats VALUES (401,2,25,0);
+
+INSERT INTO pokemon_stats VALUES (401,3,41,1);
+
+INSERT INTO pokemon_stats VALUES (401,4,25,0);
+
+INSERT INTO pokemon_stats VALUES (401,5,41,0);
+
+INSERT INTO pokemon_stats VALUES (401,6,25,0);
+
+INSERT INTO pokemon_stats VALUES (402,1,77,0);
+
+INSERT INTO pokemon_stats VALUES (402,2,85,2);
+
+INSERT INTO pokemon_stats VALUES (402,3,51,0);
+
+INSERT INTO pokemon_stats VALUES (402,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (402,5,51,0);
+
+INSERT INTO pokemon_stats VALUES (402,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (403,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (403,2,65,1);
+
+INSERT INTO pokemon_stats VALUES (403,3,34,0);
+
+INSERT INTO pokemon_stats VALUES (403,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (403,5,34,0);
+
+INSERT INTO pokemon_stats VALUES (403,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (404,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (404,2,85,2);
+
+INSERT INTO pokemon_stats VALUES (404,3,49,0);
+
+INSERT INTO pokemon_stats VALUES (404,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (404,5,49,0);
+
+INSERT INTO pokemon_stats VALUES (404,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (405,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (405,2,120,3);
+
+INSERT INTO pokemon_stats VALUES (405,3,79,0);
+
+INSERT INTO pokemon_stats VALUES (405,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (405,5,79,0);
+
+INSERT INTO pokemon_stats VALUES (405,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (406,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (406,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (406,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (406,4,50,1);
+
+INSERT INTO pokemon_stats VALUES (406,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (406,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (407,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (407,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (407,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (407,4,125,3);
+
+INSERT INTO pokemon_stats VALUES (407,5,105,0);
+
+INSERT INTO pokemon_stats VALUES (407,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (408,1,67,0);
+
+INSERT INTO pokemon_stats VALUES (408,2,125,1);
+
+INSERT INTO pokemon_stats VALUES (408,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (408,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (408,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (408,6,58,0);
+
+INSERT INTO pokemon_stats VALUES (409,1,97,0);
+
+INSERT INTO pokemon_stats VALUES (409,2,165,2);
+
+INSERT INTO pokemon_stats VALUES (409,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (409,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (409,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (409,6,58,0);
+
+INSERT INTO pokemon_stats VALUES (410,1,30,0);
+
+INSERT INTO pokemon_stats VALUES (410,2,42,0);
+
+INSERT INTO pokemon_stats VALUES (410,3,118,1);
+
+INSERT INTO pokemon_stats VALUES (410,4,42,0);
+
+INSERT INTO pokemon_stats VALUES (410,5,88,0);
+
+INSERT INTO pokemon_stats VALUES (410,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (411,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (411,2,52,0);
+
+INSERT INTO pokemon_stats VALUES (411,3,168,2);
+
+INSERT INTO pokemon_stats VALUES (411,4,47,0);
+
+INSERT INTO pokemon_stats VALUES (411,5,138,0);
+
+INSERT INTO pokemon_stats VALUES (411,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (412,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (412,2,29,0);
+
+INSERT INTO pokemon_stats VALUES (412,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (412,4,29,0);
+
+INSERT INTO pokemon_stats VALUES (412,5,45,1);
+
+INSERT INTO pokemon_stats VALUES (412,6,36,0);
+
+INSERT INTO pokemon_stats VALUES (413,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (413,2,59,0);
+
+INSERT INTO pokemon_stats VALUES (413,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (413,4,79,0);
+
+INSERT INTO pokemon_stats VALUES (413,5,105,2);
+
+INSERT INTO pokemon_stats VALUES (413,6,36,0);
+
+INSERT INTO pokemon_stats VALUES (414,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (414,2,94,1);
+
+INSERT INTO pokemon_stats VALUES (414,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (414,4,94,1);
+
+INSERT INTO pokemon_stats VALUES (414,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (414,6,66,0);
+
+INSERT INTO pokemon_stats VALUES (415,1,30,0);
+
+INSERT INTO pokemon_stats VALUES (415,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (415,3,42,0);
+
+INSERT INTO pokemon_stats VALUES (415,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (415,5,42,0);
+
+INSERT INTO pokemon_stats VALUES (415,6,70,1);
+
+INSERT INTO pokemon_stats VALUES (416,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (416,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (416,3,102,1);
+
+INSERT INTO pokemon_stats VALUES (416,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (416,5,102,1);
+
+INSERT INTO pokemon_stats VALUES (416,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (417,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (417,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (417,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (417,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (417,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (417,6,95,1);
+
+INSERT INTO pokemon_stats VALUES (418,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (418,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (418,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (418,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (418,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (418,6,85,1);
+
+INSERT INTO pokemon_stats VALUES (419,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (419,2,105,0);
+
+INSERT INTO pokemon_stats VALUES (419,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (419,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (419,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (419,6,115,2);
+
+INSERT INTO pokemon_stats VALUES (420,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (420,2,35,0);
+
+INSERT INTO pokemon_stats VALUES (420,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (420,4,62,1);
+
+INSERT INTO pokemon_stats VALUES (420,5,53,0);
+
+INSERT INTO pokemon_stats VALUES (420,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (421,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (421,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (421,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (421,4,87,2);
+
+INSERT INTO pokemon_stats VALUES (421,5,78,0);
+
+INSERT INTO pokemon_stats VALUES (421,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (422,1,76,1);
+
+INSERT INTO pokemon_stats VALUES (422,2,48,0);
+
+INSERT INTO pokemon_stats VALUES (422,3,48,0);
+
+INSERT INTO pokemon_stats VALUES (422,4,57,0);
+
+INSERT INTO pokemon_stats VALUES (422,5,62,0);
+
+INSERT INTO pokemon_stats VALUES (422,6,34,0);
+
+INSERT INTO pokemon_stats VALUES (423,1,111,2);
+
+INSERT INTO pokemon_stats VALUES (423,2,83,0);
+
+INSERT INTO pokemon_stats VALUES (423,3,68,0);
+
+INSERT INTO pokemon_stats VALUES (423,4,92,0);
+
+INSERT INTO pokemon_stats VALUES (423,5,82,0);
+
+INSERT INTO pokemon_stats VALUES (423,6,39,0);
+
+INSERT INTO pokemon_stats VALUES (424,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (424,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (424,3,66,0);
+
+INSERT INTO pokemon_stats VALUES (424,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (424,5,66,0);
+
+INSERT INTO pokemon_stats VALUES (424,6,115,2);
+
+INSERT INTO pokemon_stats VALUES (425,1,90,1);
+
+INSERT INTO pokemon_stats VALUES (425,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (425,3,34,0);
+
+INSERT INTO pokemon_stats VALUES (425,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (425,5,44,0);
+
+INSERT INTO pokemon_stats VALUES (425,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (426,1,150,2);
+
+INSERT INTO pokemon_stats VALUES (426,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (426,3,44,0);
+
+INSERT INTO pokemon_stats VALUES (426,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (426,5,54,0);
+
+INSERT INTO pokemon_stats VALUES (426,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (427,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (427,2,66,0);
+
+INSERT INTO pokemon_stats VALUES (427,3,44,0);
+
+INSERT INTO pokemon_stats VALUES (427,4,44,0);
+
+INSERT INTO pokemon_stats VALUES (427,5,56,0);
+
+INSERT INTO pokemon_stats VALUES (427,6,85,1);
+
+INSERT INTO pokemon_stats VALUES (428,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (428,2,76,0);
+
+INSERT INTO pokemon_stats VALUES (428,3,84,0);
+
+INSERT INTO pokemon_stats VALUES (428,4,54,0);
+
+INSERT INTO pokemon_stats VALUES (428,5,96,0);
+
+INSERT INTO pokemon_stats VALUES (428,6,105,2);
+
+INSERT INTO pokemon_stats VALUES (429,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (429,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (429,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (429,4,105,1);
+
+INSERT INTO pokemon_stats VALUES (429,5,105,1);
+
+INSERT INTO pokemon_stats VALUES (429,6,105,0);
+
+INSERT INTO pokemon_stats VALUES (430,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (430,2,125,2);
+
+INSERT INTO pokemon_stats VALUES (430,3,52,0);
+
+INSERT INTO pokemon_stats VALUES (430,4,105,0);
+
+INSERT INTO pokemon_stats VALUES (430,5,52,0);
+
+INSERT INTO pokemon_stats VALUES (430,6,71,0);
+
+INSERT INTO pokemon_stats VALUES (431,1,49,0);
+
+INSERT INTO pokemon_stats VALUES (431,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (431,3,42,0);
+
+INSERT INTO pokemon_stats VALUES (431,4,42,0);
+
+INSERT INTO pokemon_stats VALUES (431,5,37,0);
+
+INSERT INTO pokemon_stats VALUES (431,6,85,1);
+
+INSERT INTO pokemon_stats VALUES (432,1,71,0);
+
+INSERT INTO pokemon_stats VALUES (432,2,82,0);
+
+INSERT INTO pokemon_stats VALUES (432,3,64,0);
+
+INSERT INTO pokemon_stats VALUES (432,4,64,0);
+
+INSERT INTO pokemon_stats VALUES (432,5,59,0);
+
+INSERT INTO pokemon_stats VALUES (432,6,112,2);
+
+INSERT INTO pokemon_stats VALUES (433,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (433,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (433,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (433,4,65,1);
+
+INSERT INTO pokemon_stats VALUES (433,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (433,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (434,1,63,0);
+
+INSERT INTO pokemon_stats VALUES (434,2,63,0);
+
+INSERT INTO pokemon_stats VALUES (434,3,47,0);
+
+INSERT INTO pokemon_stats VALUES (434,4,41,0);
+
+INSERT INTO pokemon_stats VALUES (434,5,41,0);
+
+INSERT INTO pokemon_stats VALUES (434,6,74,1);
+
+INSERT INTO pokemon_stats VALUES (435,1,103,2);
+
+INSERT INTO pokemon_stats VALUES (435,2,93,0);
+
+INSERT INTO pokemon_stats VALUES (435,3,67,0);
+
+INSERT INTO pokemon_stats VALUES (435,4,71,0);
+
+INSERT INTO pokemon_stats VALUES (435,5,61,0);
+
+INSERT INTO pokemon_stats VALUES (435,6,84,0);
+
+INSERT INTO pokemon_stats VALUES (436,1,57,0);
+
+INSERT INTO pokemon_stats VALUES (436,2,24,0);
+
+INSERT INTO pokemon_stats VALUES (436,3,86,1);
+
+INSERT INTO pokemon_stats VALUES (436,4,24,0);
+
+INSERT INTO pokemon_stats VALUES (436,5,86,0);
+
+INSERT INTO pokemon_stats VALUES (436,6,23,0);
+
+INSERT INTO pokemon_stats VALUES (437,1,67,0);
+
+INSERT INTO pokemon_stats VALUES (437,2,89,0);
+
+INSERT INTO pokemon_stats VALUES (437,3,116,1);
+
+INSERT INTO pokemon_stats VALUES (437,4,79,0);
+
+INSERT INTO pokemon_stats VALUES (437,5,116,1);
+
+INSERT INTO pokemon_stats VALUES (437,6,33,0);
+
+INSERT INTO pokemon_stats VALUES (438,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (438,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (438,3,95,1);
+
+INSERT INTO pokemon_stats VALUES (438,4,10,0);
+
+INSERT INTO pokemon_stats VALUES (438,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (438,6,10,0);
+
+INSERT INTO pokemon_stats VALUES (439,1,20,0);
+
+INSERT INTO pokemon_stats VALUES (439,2,25,0);
+
+INSERT INTO pokemon_stats VALUES (439,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (439,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (439,5,90,1);
+
+INSERT INTO pokemon_stats VALUES (439,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (440,1,100,1);
+
+INSERT INTO pokemon_stats VALUES (440,2,5,0);
+
+INSERT INTO pokemon_stats VALUES (440,3,5,0);
+
+INSERT INTO pokemon_stats VALUES (440,4,15,0);
+
+INSERT INTO pokemon_stats VALUES (440,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (440,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (441,1,76,0);
+
+INSERT INTO pokemon_stats VALUES (441,2,65,1);
+
+INSERT INTO pokemon_stats VALUES (441,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (441,4,92,0);
+
+INSERT INTO pokemon_stats VALUES (441,5,42,0);
+
+INSERT INTO pokemon_stats VALUES (441,6,91,0);
+
+INSERT INTO pokemon_stats VALUES (442,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (442,2,92,0);
+
+INSERT INTO pokemon_stats VALUES (442,3,108,1);
+
+INSERT INTO pokemon_stats VALUES (442,4,92,0);
+
+INSERT INTO pokemon_stats VALUES (442,5,108,1);
+
+INSERT INTO pokemon_stats VALUES (442,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (443,1,58,0);
+
+INSERT INTO pokemon_stats VALUES (443,2,70,1);
+
+INSERT INTO pokemon_stats VALUES (443,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (443,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (443,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (443,6,42,0);
+
+INSERT INTO pokemon_stats VALUES (444,1,68,0);
+
+INSERT INTO pokemon_stats VALUES (444,2,90,2);
+
+INSERT INTO pokemon_stats VALUES (444,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (444,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (444,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (444,6,82,0);
+
+INSERT INTO pokemon_stats VALUES (445,1,108,0);
+
+INSERT INTO pokemon_stats VALUES (445,2,130,3);
+
+INSERT INTO pokemon_stats VALUES (445,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (445,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (445,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (445,6,102,0);
+
+INSERT INTO pokemon_stats VALUES (446,1,135,1);
+
+INSERT INTO pokemon_stats VALUES (446,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (446,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (446,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (446,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (446,6,5,0);
+
+INSERT INTO pokemon_stats VALUES (447,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (447,2,70,1);
+
+INSERT INTO pokemon_stats VALUES (447,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (447,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (447,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (447,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (448,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (448,2,110,1);
+
+INSERT INTO pokemon_stats VALUES (448,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (448,4,115,1);
+
+INSERT INTO pokemon_stats VALUES (448,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (448,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (449,1,68,0);
+
+INSERT INTO pokemon_stats VALUES (449,2,72,0);
+
+INSERT INTO pokemon_stats VALUES (449,3,78,1);
+
+INSERT INTO pokemon_stats VALUES (449,4,38,0);
+
+INSERT INTO pokemon_stats VALUES (449,5,42,0);
+
+INSERT INTO pokemon_stats VALUES (449,6,32,0);
+
+INSERT INTO pokemon_stats VALUES (450,1,108,0);
+
+INSERT INTO pokemon_stats VALUES (450,2,112,0);
+
+INSERT INTO pokemon_stats VALUES (450,3,118,2);
+
+INSERT INTO pokemon_stats VALUES (450,4,68,0);
+
+INSERT INTO pokemon_stats VALUES (450,5,72,0);
+
+INSERT INTO pokemon_stats VALUES (450,6,47,0);
+
+INSERT INTO pokemon_stats VALUES (451,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (451,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (451,3,90,1);
+
+INSERT INTO pokemon_stats VALUES (451,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (451,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (451,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (452,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (452,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (452,3,110,2);
+
+INSERT INTO pokemon_stats VALUES (452,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (452,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (452,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (453,1,48,0);
+
+INSERT INTO pokemon_stats VALUES (453,2,61,1);
+
+INSERT INTO pokemon_stats VALUES (453,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (453,4,61,0);
+
+INSERT INTO pokemon_stats VALUES (453,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (453,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (454,1,83,0);
+
+INSERT INTO pokemon_stats VALUES (454,2,106,2);
+
+INSERT INTO pokemon_stats VALUES (454,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (454,4,86,0);
+
+INSERT INTO pokemon_stats VALUES (454,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (454,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (455,1,74,0);
+
+INSERT INTO pokemon_stats VALUES (455,2,100,2);
+
+INSERT INTO pokemon_stats VALUES (455,3,72,0);
+
+INSERT INTO pokemon_stats VALUES (455,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (455,5,72,0);
+
+INSERT INTO pokemon_stats VALUES (455,6,46,0);
+
+INSERT INTO pokemon_stats VALUES (456,1,49,0);
+
+INSERT INTO pokemon_stats VALUES (456,2,49,0);
+
+INSERT INTO pokemon_stats VALUES (456,3,56,0);
+
+INSERT INTO pokemon_stats VALUES (456,4,49,0);
+
+INSERT INTO pokemon_stats VALUES (456,5,61,0);
+
+INSERT INTO pokemon_stats VALUES (456,6,66,1);
+
+INSERT INTO pokemon_stats VALUES (457,1,69,0);
+
+INSERT INTO pokemon_stats VALUES (457,2,69,0);
+
+INSERT INTO pokemon_stats VALUES (457,3,76,0);
+
+INSERT INTO pokemon_stats VALUES (457,4,69,0);
+
+INSERT INTO pokemon_stats VALUES (457,5,86,0);
+
+INSERT INTO pokemon_stats VALUES (457,6,91,2);
+
+INSERT INTO pokemon_stats VALUES (458,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (458,2,20,0);
+
+INSERT INTO pokemon_stats VALUES (458,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (458,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (458,5,120,1);
+
+INSERT INTO pokemon_stats VALUES (458,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (459,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (459,2,62,1);
+
+INSERT INTO pokemon_stats VALUES (459,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (459,4,62,0);
+
+INSERT INTO pokemon_stats VALUES (459,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (459,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (460,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (460,2,92,1);
+
+INSERT INTO pokemon_stats VALUES (460,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (460,4,92,1);
+
+INSERT INTO pokemon_stats VALUES (460,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (460,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (461,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (461,2,120,1);
+
+INSERT INTO pokemon_stats VALUES (461,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (461,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (461,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (461,6,125,1);
+
+INSERT INTO pokemon_stats VALUES (462,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (462,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (462,3,115,0);
+
+INSERT INTO pokemon_stats VALUES (462,4,130,3);
+
+INSERT INTO pokemon_stats VALUES (462,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (462,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (463,1,110,3);
+
+INSERT INTO pokemon_stats VALUES (463,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (463,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (463,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (463,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (463,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (464,1,115,0);
+
+INSERT INTO pokemon_stats VALUES (464,2,140,3);
+
+INSERT INTO pokemon_stats VALUES (464,3,130,0);
+
+INSERT INTO pokemon_stats VALUES (464,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (464,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (464,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (465,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (465,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (465,3,125,2);
+
+INSERT INTO pokemon_stats VALUES (465,4,110,0);
+
+INSERT INTO pokemon_stats VALUES (465,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (465,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (466,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (466,2,123,3);
+
+INSERT INTO pokemon_stats VALUES (466,3,67,0);
+
+INSERT INTO pokemon_stats VALUES (466,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (466,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (466,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (467,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (467,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (467,3,67,0);
+
+INSERT INTO pokemon_stats VALUES (467,4,125,3);
+
+INSERT INTO pokemon_stats VALUES (467,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (467,6,83,0);
+
+INSERT INTO pokemon_stats VALUES (468,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (468,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (468,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (468,4,120,2);
+
+INSERT INTO pokemon_stats VALUES (468,5,115,1);
+
+INSERT INTO pokemon_stats VALUES (468,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (469,1,86,0);
+
+INSERT INTO pokemon_stats VALUES (469,2,76,2);
+
+INSERT INTO pokemon_stats VALUES (469,3,86,0);
+
+INSERT INTO pokemon_stats VALUES (469,4,116,0);
+
+INSERT INTO pokemon_stats VALUES (469,5,56,0);
+
+INSERT INTO pokemon_stats VALUES (469,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (470,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (470,2,110,0);
+
+INSERT INTO pokemon_stats VALUES (470,3,130,2);
+
+INSERT INTO pokemon_stats VALUES (470,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (470,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (470,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (471,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (471,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (471,3,110,0);
+
+INSERT INTO pokemon_stats VALUES (471,4,130,2);
+
+INSERT INTO pokemon_stats VALUES (471,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (471,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (472,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (472,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (472,3,125,2);
+
+INSERT INTO pokemon_stats VALUES (472,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (472,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (472,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (473,1,110,0);
+
+INSERT INTO pokemon_stats VALUES (473,2,130,3);
+
+INSERT INTO pokemon_stats VALUES (473,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (473,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (473,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (473,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (474,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (474,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (474,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (474,4,135,3);
+
+INSERT INTO pokemon_stats VALUES (474,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (474,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (475,1,68,0);
+
+INSERT INTO pokemon_stats VALUES (475,2,125,3);
+
+INSERT INTO pokemon_stats VALUES (475,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (475,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (475,5,115,0);
+
+INSERT INTO pokemon_stats VALUES (475,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (476,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (476,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (476,3,145,1);
+
+INSERT INTO pokemon_stats VALUES (476,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (476,5,150,2);
+
+INSERT INTO pokemon_stats VALUES (476,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (477,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (477,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (477,3,135,1);
+
+INSERT INTO pokemon_stats VALUES (477,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (477,5,135,2);
+
+INSERT INTO pokemon_stats VALUES (477,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (478,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (478,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (478,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (478,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (478,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (478,6,110,2);
+
+INSERT INTO pokemon_stats VALUES (479,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (479,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (479,3,77,0);
+
+INSERT INTO pokemon_stats VALUES (479,4,95,1);
+
+INSERT INTO pokemon_stats VALUES (479,5,77,0);
+
+INSERT INTO pokemon_stats VALUES (479,6,91,1);
+
+INSERT INTO pokemon_stats VALUES (480,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (480,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (480,3,130,2);
+
+INSERT INTO pokemon_stats VALUES (480,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (480,5,130,1);
+
+INSERT INTO pokemon_stats VALUES (480,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (481,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (481,2,105,1);
+
+INSERT INTO pokemon_stats VALUES (481,3,105,0);
+
+INSERT INTO pokemon_stats VALUES (481,4,105,1);
+
+INSERT INTO pokemon_stats VALUES (481,5,105,1);
+
+INSERT INTO pokemon_stats VALUES (481,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (482,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (482,2,125,2);
+
+INSERT INTO pokemon_stats VALUES (482,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (482,4,125,1);
+
+INSERT INTO pokemon_stats VALUES (482,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (482,6,115,0);
+
+INSERT INTO pokemon_stats VALUES (483,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (483,2,120,0);
+
+INSERT INTO pokemon_stats VALUES (483,3,120,0);
+
+INSERT INTO pokemon_stats VALUES (483,4,150,3);
+
+INSERT INTO pokemon_stats VALUES (483,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (483,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (484,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (484,2,120,0);
+
+INSERT INTO pokemon_stats VALUES (484,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (484,4,150,3);
+
+INSERT INTO pokemon_stats VALUES (484,5,120,0);
+
+INSERT INTO pokemon_stats VALUES (484,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (485,1,91,0);
+
+INSERT INTO pokemon_stats VALUES (485,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (485,3,106,0);
+
+INSERT INTO pokemon_stats VALUES (485,4,130,3);
+
+INSERT INTO pokemon_stats VALUES (485,5,106,0);
+
+INSERT INTO pokemon_stats VALUES (485,6,77,0);
+
+INSERT INTO pokemon_stats VALUES (486,1,110,0);
+
+INSERT INTO pokemon_stats VALUES (486,2,160,3);
+
+INSERT INTO pokemon_stats VALUES (486,3,110,0);
+
+INSERT INTO pokemon_stats VALUES (486,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (486,5,110,0);
+
+INSERT INTO pokemon_stats VALUES (486,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (487,1,150,3);
+
+INSERT INTO pokemon_stats VALUES (487,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (487,3,120,0);
+
+INSERT INTO pokemon_stats VALUES (487,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (487,5,120,0);
+
+INSERT INTO pokemon_stats VALUES (487,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (488,1,120,0);
+
+INSERT INTO pokemon_stats VALUES (488,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (488,3,120,0);
+
+INSERT INTO pokemon_stats VALUES (488,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (488,5,130,3);
+
+INSERT INTO pokemon_stats VALUES (488,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (489,1,80,1);
+
+INSERT INTO pokemon_stats VALUES (489,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (489,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (489,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (489,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (489,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (490,1,100,3);
+
+INSERT INTO pokemon_stats VALUES (490,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (490,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (490,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (490,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (490,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (491,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (491,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (491,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (491,4,135,2);
+
+INSERT INTO pokemon_stats VALUES (491,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (491,6,125,1);
+
+INSERT INTO pokemon_stats VALUES (492,1,100,3);
+
+INSERT INTO pokemon_stats VALUES (492,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (492,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (492,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (492,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (492,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (493,1,120,3);
+
+INSERT INTO pokemon_stats VALUES (493,2,120,0);
+
+INSERT INTO pokemon_stats VALUES (493,3,120,0);
+
+INSERT INTO pokemon_stats VALUES (493,4,120,0);
+
+INSERT INTO pokemon_stats VALUES (493,5,120,0);
+
+INSERT INTO pokemon_stats VALUES (493,6,120,0);
+
+INSERT INTO pokemon_stats VALUES (494,1,100,3);
+
+INSERT INTO pokemon_stats VALUES (494,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (494,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (494,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (494,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (494,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (495,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (495,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (495,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (495,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (495,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (495,6,63,1);
+
+INSERT INTO pokemon_stats VALUES (496,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (496,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (496,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (496,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (496,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (496,6,83,2);
+
+INSERT INTO pokemon_stats VALUES (497,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (497,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (497,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (497,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (497,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (497,6,113,3);
+
+INSERT INTO pokemon_stats VALUES (498,1,65,1);
+
+INSERT INTO pokemon_stats VALUES (498,2,63,0);
+
+INSERT INTO pokemon_stats VALUES (498,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (498,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (498,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (498,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (499,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (499,2,93,2);
+
+INSERT INTO pokemon_stats VALUES (499,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (499,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (499,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (499,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (500,1,110,0);
+
+INSERT INTO pokemon_stats VALUES (500,2,123,3);
+
+INSERT INTO pokemon_stats VALUES (500,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (500,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (500,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (500,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (501,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (501,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (501,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (501,4,63,1);
+
+INSERT INTO pokemon_stats VALUES (501,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (501,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (502,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (502,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (502,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (502,4,83,2);
+
+INSERT INTO pokemon_stats VALUES (502,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (502,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (503,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (503,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (503,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (503,4,108,3);
+
+INSERT INTO pokemon_stats VALUES (503,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (503,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (504,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (504,2,55,1);
+
+INSERT INTO pokemon_stats VALUES (504,3,39,0);
+
+INSERT INTO pokemon_stats VALUES (504,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (504,5,39,0);
+
+INSERT INTO pokemon_stats VALUES (504,6,42,0);
+
+INSERT INTO pokemon_stats VALUES (505,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (505,2,85,2);
+
+INSERT INTO pokemon_stats VALUES (505,3,69,0);
+
+INSERT INTO pokemon_stats VALUES (505,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (505,5,69,0);
+
+INSERT INTO pokemon_stats VALUES (505,6,77,0);
+
+INSERT INTO pokemon_stats VALUES (506,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (506,2,60,1);
+
+INSERT INTO pokemon_stats VALUES (506,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (506,4,25,0);
+
+INSERT INTO pokemon_stats VALUES (506,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (506,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (507,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (507,2,80,2);
+
+INSERT INTO pokemon_stats VALUES (507,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (507,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (507,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (507,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (508,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (508,2,110,3);
+
+INSERT INTO pokemon_stats VALUES (508,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (508,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (508,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (508,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (509,1,41,0);
+
+INSERT INTO pokemon_stats VALUES (509,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (509,3,37,0);
+
+INSERT INTO pokemon_stats VALUES (509,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (509,5,37,0);
+
+INSERT INTO pokemon_stats VALUES (509,6,66,1);
+
+INSERT INTO pokemon_stats VALUES (510,1,64,0);
+
+INSERT INTO pokemon_stats VALUES (510,2,88,0);
+
+INSERT INTO pokemon_stats VALUES (510,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (510,4,88,0);
+
+INSERT INTO pokemon_stats VALUES (510,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (510,6,106,2);
+
+INSERT INTO pokemon_stats VALUES (511,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (511,2,53,0);
+
+INSERT INTO pokemon_stats VALUES (511,3,48,0);
+
+INSERT INTO pokemon_stats VALUES (511,4,53,0);
+
+INSERT INTO pokemon_stats VALUES (511,5,48,0);
+
+INSERT INTO pokemon_stats VALUES (511,6,64,1);
+
+INSERT INTO pokemon_stats VALUES (512,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (512,2,98,0);
+
+INSERT INTO pokemon_stats VALUES (512,3,63,0);
+
+INSERT INTO pokemon_stats VALUES (512,4,98,0);
+
+INSERT INTO pokemon_stats VALUES (512,5,63,0);
+
+INSERT INTO pokemon_stats VALUES (512,6,101,2);
+
+INSERT INTO pokemon_stats VALUES (513,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (513,2,53,0);
+
+INSERT INTO pokemon_stats VALUES (513,3,48,0);
+
+INSERT INTO pokemon_stats VALUES (513,4,53,0);
+
+INSERT INTO pokemon_stats VALUES (513,5,48,0);
+
+INSERT INTO pokemon_stats VALUES (513,6,64,1);
+
+INSERT INTO pokemon_stats VALUES (514,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (514,2,98,0);
+
+INSERT INTO pokemon_stats VALUES (514,3,63,0);
+
+INSERT INTO pokemon_stats VALUES (514,4,98,0);
+
+INSERT INTO pokemon_stats VALUES (514,5,63,0);
+
+INSERT INTO pokemon_stats VALUES (514,6,101,2);
+
+INSERT INTO pokemon_stats VALUES (515,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (515,2,53,0);
+
+INSERT INTO pokemon_stats VALUES (515,3,48,0);
+
+INSERT INTO pokemon_stats VALUES (515,4,53,0);
+
+INSERT INTO pokemon_stats VALUES (515,5,48,0);
+
+INSERT INTO pokemon_stats VALUES (515,6,64,1);
+
+INSERT INTO pokemon_stats VALUES (516,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (516,2,98,0);
+
+INSERT INTO pokemon_stats VALUES (516,3,63,0);
+
+INSERT INTO pokemon_stats VALUES (516,4,98,0);
+
+INSERT INTO pokemon_stats VALUES (516,5,63,0);
+
+INSERT INTO pokemon_stats VALUES (516,6,101,2);
+
+INSERT INTO pokemon_stats VALUES (517,1,76,1);
+
+INSERT INTO pokemon_stats VALUES (517,2,25,0);
+
+INSERT INTO pokemon_stats VALUES (517,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (517,4,67,0);
+
+INSERT INTO pokemon_stats VALUES (517,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (517,6,24,0);
+
+INSERT INTO pokemon_stats VALUES (518,1,116,2);
+
+INSERT INTO pokemon_stats VALUES (518,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (518,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (518,4,107,0);
+
+INSERT INTO pokemon_stats VALUES (518,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (518,6,29,0);
+
+INSERT INTO pokemon_stats VALUES (519,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (519,2,55,1);
+
+INSERT INTO pokemon_stats VALUES (519,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (519,4,36,0);
+
+INSERT INTO pokemon_stats VALUES (519,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (519,6,43,0);
+
+INSERT INTO pokemon_stats VALUES (520,1,62,0);
+
+INSERT INTO pokemon_stats VALUES (520,2,77,2);
+
+INSERT INTO pokemon_stats VALUES (520,3,62,0);
+
+INSERT INTO pokemon_stats VALUES (520,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (520,5,42,0);
+
+INSERT INTO pokemon_stats VALUES (520,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (521,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (521,2,115,3);
+
+INSERT INTO pokemon_stats VALUES (521,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (521,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (521,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (521,6,93,0);
+
+INSERT INTO pokemon_stats VALUES (522,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (522,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (522,3,32,0);
+
+INSERT INTO pokemon_stats VALUES (522,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (522,5,32,0);
+
+INSERT INTO pokemon_stats VALUES (522,6,76,1);
+
+INSERT INTO pokemon_stats VALUES (523,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (523,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (523,3,63,0);
+
+INSERT INTO pokemon_stats VALUES (523,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (523,5,63,0);
+
+INSERT INTO pokemon_stats VALUES (523,6,116,2);
+
+INSERT INTO pokemon_stats VALUES (524,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (524,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (524,3,85,1);
+
+INSERT INTO pokemon_stats VALUES (524,4,25,0);
+
+INSERT INTO pokemon_stats VALUES (524,5,25,0);
+
+INSERT INTO pokemon_stats VALUES (524,6,15,0);
+
+INSERT INTO pokemon_stats VALUES (525,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (525,2,105,1);
+
+INSERT INTO pokemon_stats VALUES (525,3,105,1);
+
+INSERT INTO pokemon_stats VALUES (525,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (525,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (525,6,20,0);
+
+INSERT INTO pokemon_stats VALUES (526,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (526,2,135,3);
+
+INSERT INTO pokemon_stats VALUES (526,3,130,0);
+
+INSERT INTO pokemon_stats VALUES (526,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (526,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (526,6,25,0);
+
+INSERT INTO pokemon_stats VALUES (527,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (527,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (527,3,43,0);
+
+INSERT INTO pokemon_stats VALUES (527,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (527,5,43,0);
+
+INSERT INTO pokemon_stats VALUES (527,6,72,1);
+
+INSERT INTO pokemon_stats VALUES (528,1,67,0);
+
+INSERT INTO pokemon_stats VALUES (528,2,57,0);
+
+INSERT INTO pokemon_stats VALUES (528,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (528,4,77,0);
+
+INSERT INTO pokemon_stats VALUES (528,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (528,6,114,2);
+
+INSERT INTO pokemon_stats VALUES (529,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (529,2,85,1);
+
+INSERT INTO pokemon_stats VALUES (529,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (529,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (529,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (529,6,68,0);
+
+INSERT INTO pokemon_stats VALUES (530,1,110,0);
+
+INSERT INTO pokemon_stats VALUES (530,2,135,2);
+
+INSERT INTO pokemon_stats VALUES (530,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (530,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (530,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (530,6,88,0);
+
+INSERT INTO pokemon_stats VALUES (531,1,103,2);
+
+INSERT INTO pokemon_stats VALUES (531,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (531,3,86,0);
+
+INSERT INTO pokemon_stats VALUES (531,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (531,5,86,0);
+
+INSERT INTO pokemon_stats VALUES (531,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (532,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (532,2,80,1);
+
+INSERT INTO pokemon_stats VALUES (532,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (532,4,25,0);
+
+INSERT INTO pokemon_stats VALUES (532,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (532,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (533,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (533,2,105,2);
+
+INSERT INTO pokemon_stats VALUES (533,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (533,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (533,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (533,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (534,1,105,0);
+
+INSERT INTO pokemon_stats VALUES (534,2,140,3);
+
+INSERT INTO pokemon_stats VALUES (534,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (534,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (534,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (534,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (535,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (535,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (535,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (535,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (535,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (535,6,64,1);
+
+INSERT INTO pokemon_stats VALUES (536,1,75,2);
+
+INSERT INTO pokemon_stats VALUES (536,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (536,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (536,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (536,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (536,6,69,0);
+
+INSERT INTO pokemon_stats VALUES (537,1,105,3);
+
+INSERT INTO pokemon_stats VALUES (537,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (537,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (537,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (537,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (537,6,74,0);
+
+INSERT INTO pokemon_stats VALUES (538,1,120,2);
+
+INSERT INTO pokemon_stats VALUES (538,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (538,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (538,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (538,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (538,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (539,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (539,2,125,2);
+
+INSERT INTO pokemon_stats VALUES (539,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (539,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (539,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (539,6,85,0);
+
+INSERT INTO pokemon_stats VALUES (540,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (540,2,53,0);
+
+INSERT INTO pokemon_stats VALUES (540,3,70,1);
+
+INSERT INTO pokemon_stats VALUES (540,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (540,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (540,6,42,0);
+
+INSERT INTO pokemon_stats VALUES (541,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (541,2,63,0);
+
+INSERT INTO pokemon_stats VALUES (541,3,90,2);
+
+INSERT INTO pokemon_stats VALUES (541,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (541,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (541,6,42,0);
+
+INSERT INTO pokemon_stats VALUES (542,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (542,2,103,3);
+
+INSERT INTO pokemon_stats VALUES (542,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (542,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (542,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (542,6,92,0);
+
+INSERT INTO pokemon_stats VALUES (543,1,30,0);
+
+INSERT INTO pokemon_stats VALUES (543,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (543,3,59,1);
+
+INSERT INTO pokemon_stats VALUES (543,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (543,5,39,0);
+
+INSERT INTO pokemon_stats VALUES (543,6,57,0);
+
+INSERT INTO pokemon_stats VALUES (544,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (544,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (544,3,99,2);
+
+INSERT INTO pokemon_stats VALUES (544,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (544,5,79,0);
+
+INSERT INTO pokemon_stats VALUES (544,6,47,0);
+
+INSERT INTO pokemon_stats VALUES (545,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (545,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (545,3,89,0);
+
+INSERT INTO pokemon_stats VALUES (545,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (545,5,69,0);
+
+INSERT INTO pokemon_stats VALUES (545,6,112,3);
+
+INSERT INTO pokemon_stats VALUES (546,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (546,2,27,0);
+
+INSERT INTO pokemon_stats VALUES (546,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (546,4,37,0);
+
+INSERT INTO pokemon_stats VALUES (546,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (546,6,66,1);
+
+INSERT INTO pokemon_stats VALUES (547,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (547,2,67,0);
+
+INSERT INTO pokemon_stats VALUES (547,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (547,4,77,0);
+
+INSERT INTO pokemon_stats VALUES (547,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (547,6,116,2);
+
+INSERT INTO pokemon_stats VALUES (548,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (548,2,35,0);
+
+INSERT INTO pokemon_stats VALUES (548,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (548,4,70,1);
+
+INSERT INTO pokemon_stats VALUES (548,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (548,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (549,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (549,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (549,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (549,4,110,2);
+
+INSERT INTO pokemon_stats VALUES (549,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (549,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (550,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (550,2,92,0);
+
+INSERT INTO pokemon_stats VALUES (550,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (550,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (550,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (550,6,98,2);
+
+INSERT INTO pokemon_stats VALUES (551,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (551,2,72,1);
+
+INSERT INTO pokemon_stats VALUES (551,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (551,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (551,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (551,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (552,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (552,2,82,2);
+
+INSERT INTO pokemon_stats VALUES (552,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (552,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (552,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (552,6,74,0);
+
+INSERT INTO pokemon_stats VALUES (553,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (553,2,117,3);
+
+INSERT INTO pokemon_stats VALUES (553,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (553,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (553,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (553,6,92,0);
+
+INSERT INTO pokemon_stats VALUES (554,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (554,2,90,1);
+
+INSERT INTO pokemon_stats VALUES (554,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (554,4,15,0);
+
+INSERT INTO pokemon_stats VALUES (554,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (554,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (555,1,105,0);
+
+INSERT INTO pokemon_stats VALUES (555,2,140,2);
+
+INSERT INTO pokemon_stats VALUES (555,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (555,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (555,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (555,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (556,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (556,2,86,0);
+
+INSERT INTO pokemon_stats VALUES (556,3,67,0);
+
+INSERT INTO pokemon_stats VALUES (556,4,106,2);
+
+INSERT INTO pokemon_stats VALUES (556,5,67,0);
+
+INSERT INTO pokemon_stats VALUES (556,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (557,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (557,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (557,3,85,1);
+
+INSERT INTO pokemon_stats VALUES (557,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (557,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (557,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (558,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (558,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (558,3,125,2);
+
+INSERT INTO pokemon_stats VALUES (558,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (558,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (558,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (559,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (559,2,75,1);
+
+INSERT INTO pokemon_stats VALUES (559,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (559,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (559,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (559,6,48,0);
+
+INSERT INTO pokemon_stats VALUES (560,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (560,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (560,3,115,1);
+
+INSERT INTO pokemon_stats VALUES (560,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (560,5,115,1);
+
+INSERT INTO pokemon_stats VALUES (560,6,58,0);
+
+INSERT INTO pokemon_stats VALUES (561,1,72,0);
+
+INSERT INTO pokemon_stats VALUES (561,2,58,0);
+
+INSERT INTO pokemon_stats VALUES (561,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (561,4,103,2);
+
+INSERT INTO pokemon_stats VALUES (561,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (561,6,97,0);
+
+INSERT INTO pokemon_stats VALUES (562,1,38,0);
+
+INSERT INTO pokemon_stats VALUES (562,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (562,3,85,1);
+
+INSERT INTO pokemon_stats VALUES (562,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (562,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (562,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (563,1,58,0);
+
+INSERT INTO pokemon_stats VALUES (563,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (563,3,145,2);
+
+INSERT INTO pokemon_stats VALUES (563,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (563,5,105,0);
+
+INSERT INTO pokemon_stats VALUES (563,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (564,1,54,0);
+
+INSERT INTO pokemon_stats VALUES (564,2,78,0);
+
+INSERT INTO pokemon_stats VALUES (564,3,103,1);
+
+INSERT INTO pokemon_stats VALUES (564,4,53,0);
+
+INSERT INTO pokemon_stats VALUES (564,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (564,6,22,0);
+
+INSERT INTO pokemon_stats VALUES (565,1,74,0);
+
+INSERT INTO pokemon_stats VALUES (565,2,108,0);
+
+INSERT INTO pokemon_stats VALUES (565,3,133,2);
+
+INSERT INTO pokemon_stats VALUES (565,4,83,0);
+
+INSERT INTO pokemon_stats VALUES (565,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (565,6,32,0);
+
+INSERT INTO pokemon_stats VALUES (566,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (566,2,112,1);
+
+INSERT INTO pokemon_stats VALUES (566,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (566,4,74,0);
+
+INSERT INTO pokemon_stats VALUES (566,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (566,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (567,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (567,2,140,2);
+
+INSERT INTO pokemon_stats VALUES (567,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (567,4,112,0);
+
+INSERT INTO pokemon_stats VALUES (567,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (567,6,110,0);
+
+INSERT INTO pokemon_stats VALUES (568,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (568,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (568,3,62,0);
+
+INSERT INTO pokemon_stats VALUES (568,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (568,5,62,0);
+
+INSERT INTO pokemon_stats VALUES (568,6,65,1);
+
+INSERT INTO pokemon_stats VALUES (569,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (569,2,95,2);
+
+INSERT INTO pokemon_stats VALUES (569,3,82,0);
+
+INSERT INTO pokemon_stats VALUES (569,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (569,5,82,0);
+
+INSERT INTO pokemon_stats VALUES (569,6,75,0);
+
+INSERT INTO pokemon_stats VALUES (570,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (570,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (570,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (570,4,80,1);
+
+INSERT INTO pokemon_stats VALUES (570,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (570,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (571,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (571,2,105,0);
+
+INSERT INTO pokemon_stats VALUES (571,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (571,4,120,2);
+
+INSERT INTO pokemon_stats VALUES (571,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (571,6,105,0);
+
+INSERT INTO pokemon_stats VALUES (572,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (572,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (572,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (572,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (572,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (572,6,75,1);
+
+INSERT INTO pokemon_stats VALUES (573,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (573,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (573,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (573,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (573,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (573,6,115,2);
+
+INSERT INTO pokemon_stats VALUES (574,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (574,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (574,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (574,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (574,5,65,1);
+
+INSERT INTO pokemon_stats VALUES (574,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (575,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (575,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (575,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (575,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (575,5,85,2);
+
+INSERT INTO pokemon_stats VALUES (575,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (576,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (576,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (576,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (576,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (576,5,110,3);
+
+INSERT INTO pokemon_stats VALUES (576,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (577,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (577,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (577,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (577,4,105,1);
+
+INSERT INTO pokemon_stats VALUES (577,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (577,6,20,0);
+
+INSERT INTO pokemon_stats VALUES (578,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (578,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (578,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (578,4,125,2);
+
+INSERT INTO pokemon_stats VALUES (578,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (578,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (579,1,110,0);
+
+INSERT INTO pokemon_stats VALUES (579,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (579,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (579,4,125,3);
+
+INSERT INTO pokemon_stats VALUES (579,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (579,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (580,1,62,1);
+
+INSERT INTO pokemon_stats VALUES (580,2,44,0);
+
+INSERT INTO pokemon_stats VALUES (580,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (580,4,44,0);
+
+INSERT INTO pokemon_stats VALUES (580,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (580,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (581,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (581,2,87,0);
+
+INSERT INTO pokemon_stats VALUES (581,3,63,0);
+
+INSERT INTO pokemon_stats VALUES (581,4,87,0);
+
+INSERT INTO pokemon_stats VALUES (581,5,63,0);
+
+INSERT INTO pokemon_stats VALUES (581,6,98,2);
+
+INSERT INTO pokemon_stats VALUES (582,1,36,0);
+
+INSERT INTO pokemon_stats VALUES (582,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (582,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (582,4,65,1);
+
+INSERT INTO pokemon_stats VALUES (582,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (582,6,44,0);
+
+INSERT INTO pokemon_stats VALUES (583,1,51,0);
+
+INSERT INTO pokemon_stats VALUES (583,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (583,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (583,4,80,2);
+
+INSERT INTO pokemon_stats VALUES (583,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (583,6,59,0);
+
+INSERT INTO pokemon_stats VALUES (584,1,71,0);
+
+INSERT INTO pokemon_stats VALUES (584,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (584,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (584,4,110,3);
+
+INSERT INTO pokemon_stats VALUES (584,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (584,6,79,0);
+
+INSERT INTO pokemon_stats VALUES (585,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (585,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (585,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (585,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (585,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (585,6,75,1);
+
+INSERT INTO pokemon_stats VALUES (586,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (586,2,100,2);
+
+INSERT INTO pokemon_stats VALUES (586,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (586,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (586,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (586,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (587,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (587,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (587,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (587,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (587,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (587,6,103,2);
+
+INSERT INTO pokemon_stats VALUES (588,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (588,2,75,1);
+
+INSERT INTO pokemon_stats VALUES (588,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (588,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (588,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (588,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (589,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (589,2,135,2);
+
+INSERT INTO pokemon_stats VALUES (589,3,105,0);
+
+INSERT INTO pokemon_stats VALUES (589,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (589,5,105,0);
+
+INSERT INTO pokemon_stats VALUES (589,6,20,0);
+
+INSERT INTO pokemon_stats VALUES (590,1,69,1);
+
+INSERT INTO pokemon_stats VALUES (590,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (590,3,45,0);
+
+INSERT INTO pokemon_stats VALUES (590,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (590,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (590,6,15,0);
+
+INSERT INTO pokemon_stats VALUES (591,1,114,2);
+
+INSERT INTO pokemon_stats VALUES (591,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (591,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (591,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (591,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (591,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (592,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (592,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (592,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (592,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (592,5,85,1);
+
+INSERT INTO pokemon_stats VALUES (592,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (593,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (593,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (593,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (593,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (593,5,105,2);
+
+INSERT INTO pokemon_stats VALUES (593,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (594,1,165,2);
+
+INSERT INTO pokemon_stats VALUES (594,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (594,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (594,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (594,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (594,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (595,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (595,2,47,0);
+
+INSERT INTO pokemon_stats VALUES (595,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (595,4,57,0);
+
+INSERT INTO pokemon_stats VALUES (595,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (595,6,65,1);
+
+INSERT INTO pokemon_stats VALUES (596,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (596,2,77,0);
+
+INSERT INTO pokemon_stats VALUES (596,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (596,4,97,0);
+
+INSERT INTO pokemon_stats VALUES (596,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (596,6,108,2);
+
+INSERT INTO pokemon_stats VALUES (597,1,44,0);
+
+INSERT INTO pokemon_stats VALUES (597,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (597,3,91,1);
+
+INSERT INTO pokemon_stats VALUES (597,4,24,0);
+
+INSERT INTO pokemon_stats VALUES (597,5,86,0);
+
+INSERT INTO pokemon_stats VALUES (597,6,10,0);
+
+INSERT INTO pokemon_stats VALUES (598,1,74,0);
+
+INSERT INTO pokemon_stats VALUES (598,2,94,0);
+
+INSERT INTO pokemon_stats VALUES (598,3,131,2);
+
+INSERT INTO pokemon_stats VALUES (598,4,54,0);
+
+INSERT INTO pokemon_stats VALUES (598,5,116,0);
+
+INSERT INTO pokemon_stats VALUES (598,6,20,0);
+
+INSERT INTO pokemon_stats VALUES (599,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (599,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (599,3,70,1);
+
+INSERT INTO pokemon_stats VALUES (599,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (599,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (599,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (600,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (600,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (600,3,95,2);
+
+INSERT INTO pokemon_stats VALUES (600,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (600,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (600,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (601,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (601,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (601,3,115,3);
+
+INSERT INTO pokemon_stats VALUES (601,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (601,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (601,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (602,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (602,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (602,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (602,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (602,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (602,6,60,1);
+
+INSERT INTO pokemon_stats VALUES (603,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (603,2,85,2);
+
+INSERT INTO pokemon_stats VALUES (603,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (603,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (603,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (603,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (604,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (604,2,115,3);
+
+INSERT INTO pokemon_stats VALUES (604,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (604,4,105,0);
+
+INSERT INTO pokemon_stats VALUES (604,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (604,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (605,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (605,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (605,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (605,4,85,1);
+
+INSERT INTO pokemon_stats VALUES (605,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (605,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (606,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (606,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (606,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (606,4,125,2);
+
+INSERT INTO pokemon_stats VALUES (606,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (606,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (607,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (607,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (607,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (607,4,65,1);
+
+INSERT INTO pokemon_stats VALUES (607,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (607,6,20,0);
+
+INSERT INTO pokemon_stats VALUES (608,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (608,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (608,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (608,4,95,2);
+
+INSERT INTO pokemon_stats VALUES (608,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (608,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (609,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (609,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (609,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (609,4,145,3);
+
+INSERT INTO pokemon_stats VALUES (609,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (609,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (610,1,46,0);
+
+INSERT INTO pokemon_stats VALUES (610,2,87,1);
+
+INSERT INTO pokemon_stats VALUES (610,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (610,4,30,0);
+
+INSERT INTO pokemon_stats VALUES (610,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (610,6,57,0);
+
+INSERT INTO pokemon_stats VALUES (611,1,66,0);
+
+INSERT INTO pokemon_stats VALUES (611,2,117,2);
+
+INSERT INTO pokemon_stats VALUES (611,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (611,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (611,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (611,6,67,0);
+
+INSERT INTO pokemon_stats VALUES (612,1,76,0);
+
+INSERT INTO pokemon_stats VALUES (612,2,147,3);
+
+INSERT INTO pokemon_stats VALUES (612,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (612,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (612,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (612,6,97,0);
+
+INSERT INTO pokemon_stats VALUES (613,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (613,2,70,1);
+
+INSERT INTO pokemon_stats VALUES (613,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (613,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (613,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (613,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (614,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (614,2,110,2);
+
+INSERT INTO pokemon_stats VALUES (614,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (614,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (614,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (614,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (615,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (615,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (615,3,30,0);
+
+INSERT INTO pokemon_stats VALUES (615,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (615,5,135,2);
+
+INSERT INTO pokemon_stats VALUES (615,6,105,0);
+
+INSERT INTO pokemon_stats VALUES (616,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (616,2,40,0);
+
+INSERT INTO pokemon_stats VALUES (616,3,85,1);
+
+INSERT INTO pokemon_stats VALUES (616,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (616,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (616,6,25,0);
+
+INSERT INTO pokemon_stats VALUES (617,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (617,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (617,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (617,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (617,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (617,6,145,2);
+
+INSERT INTO pokemon_stats VALUES (618,1,109,2);
+
+INSERT INTO pokemon_stats VALUES (618,2,66,0);
+
+INSERT INTO pokemon_stats VALUES (618,3,84,0);
+
+INSERT INTO pokemon_stats VALUES (618,4,81,0);
+
+INSERT INTO pokemon_stats VALUES (618,5,99,0);
+
+INSERT INTO pokemon_stats VALUES (618,6,32,0);
+
+INSERT INTO pokemon_stats VALUES (619,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (619,2,85,1);
+
+INSERT INTO pokemon_stats VALUES (619,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (619,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (619,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (619,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (620,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (620,2,125,2);
+
+INSERT INTO pokemon_stats VALUES (620,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (620,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (620,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (620,6,105,0);
+
+INSERT INTO pokemon_stats VALUES (621,1,77,0);
+
+INSERT INTO pokemon_stats VALUES (621,2,120,2);
+
+INSERT INTO pokemon_stats VALUES (621,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (621,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (621,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (621,6,48,0);
+
+INSERT INTO pokemon_stats VALUES (622,1,59,0);
+
+INSERT INTO pokemon_stats VALUES (622,2,74,1);
+
+INSERT INTO pokemon_stats VALUES (622,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (622,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (622,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (622,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (623,1,89,0);
+
+INSERT INTO pokemon_stats VALUES (623,2,124,2);
+
+INSERT INTO pokemon_stats VALUES (623,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (623,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (623,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (623,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (624,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (624,2,85,1);
+
+INSERT INTO pokemon_stats VALUES (624,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (624,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (624,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (624,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (625,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (625,2,125,2);
+
+INSERT INTO pokemon_stats VALUES (625,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (625,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (625,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (625,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (626,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (626,2,110,2);
+
+INSERT INTO pokemon_stats VALUES (626,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (626,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (626,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (626,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (627,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (627,2,83,1);
+
+INSERT INTO pokemon_stats VALUES (627,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (627,4,37,0);
+
+INSERT INTO pokemon_stats VALUES (627,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (627,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (628,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (628,2,123,2);
+
+INSERT INTO pokemon_stats VALUES (628,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (628,4,57,0);
+
+INSERT INTO pokemon_stats VALUES (628,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (628,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (629,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (629,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (629,3,75,1);
+
+INSERT INTO pokemon_stats VALUES (629,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (629,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (629,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (630,1,110,0);
+
+INSERT INTO pokemon_stats VALUES (630,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (630,3,105,0);
+
+INSERT INTO pokemon_stats VALUES (630,4,55,2);
+
+INSERT INTO pokemon_stats VALUES (630,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (630,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (631,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (631,2,97,0);
+
+INSERT INTO pokemon_stats VALUES (631,3,66,0);
+
+INSERT INTO pokemon_stats VALUES (631,4,105,2);
+
+INSERT INTO pokemon_stats VALUES (631,5,66,0);
+
+INSERT INTO pokemon_stats VALUES (631,6,65,0);
+
+INSERT INTO pokemon_stats VALUES (632,1,58,0);
+
+INSERT INTO pokemon_stats VALUES (632,2,109,0);
+
+INSERT INTO pokemon_stats VALUES (632,3,112,2);
+
+INSERT INTO pokemon_stats VALUES (632,4,48,0);
+
+INSERT INTO pokemon_stats VALUES (632,5,48,0);
+
+INSERT INTO pokemon_stats VALUES (632,6,109,0);
+
+INSERT INTO pokemon_stats VALUES (633,1,52,0);
+
+INSERT INTO pokemon_stats VALUES (633,2,65,1);
+
+INSERT INTO pokemon_stats VALUES (633,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (633,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (633,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (633,6,38,0);
+
+INSERT INTO pokemon_stats VALUES (634,1,72,0);
+
+INSERT INTO pokemon_stats VALUES (634,2,85,2);
+
+INSERT INTO pokemon_stats VALUES (634,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (634,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (634,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (634,6,58,0);
+
+INSERT INTO pokemon_stats VALUES (635,1,92,0);
+
+INSERT INTO pokemon_stats VALUES (635,2,105,0);
+
+INSERT INTO pokemon_stats VALUES (635,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (635,4,125,3);
+
+INSERT INTO pokemon_stats VALUES (635,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (635,6,98,0);
+
+INSERT INTO pokemon_stats VALUES (636,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (636,2,85,1);
+
+INSERT INTO pokemon_stats VALUES (636,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (636,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (636,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (636,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (637,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (637,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (637,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (637,4,135,3);
+
+INSERT INTO pokemon_stats VALUES (637,5,105,0);
+
+INSERT INTO pokemon_stats VALUES (637,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (638,1,91,0);
+
+INSERT INTO pokemon_stats VALUES (638,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (638,3,129,3);
+
+INSERT INTO pokemon_stats VALUES (638,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (638,5,72,0);
+
+INSERT INTO pokemon_stats VALUES (638,6,108,0);
+
+INSERT INTO pokemon_stats VALUES (639,1,91,0);
+
+INSERT INTO pokemon_stats VALUES (639,2,129,3);
+
+INSERT INTO pokemon_stats VALUES (639,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (639,4,72,0);
+
+INSERT INTO pokemon_stats VALUES (639,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (639,6,108,0);
+
+INSERT INTO pokemon_stats VALUES (640,1,91,0);
+
+INSERT INTO pokemon_stats VALUES (640,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (640,3,72,0);
+
+INSERT INTO pokemon_stats VALUES (640,4,90,0);
+
+INSERT INTO pokemon_stats VALUES (640,5,129,3);
+
+INSERT INTO pokemon_stats VALUES (640,6,108,0);
+
+INSERT INTO pokemon_stats VALUES (641,1,79,0);
+
+INSERT INTO pokemon_stats VALUES (641,2,115,3);
+
+INSERT INTO pokemon_stats VALUES (641,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (641,4,125,0);
+
+INSERT INTO pokemon_stats VALUES (641,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (641,6,111,0);
+
+INSERT INTO pokemon_stats VALUES (642,1,79,0);
+
+INSERT INTO pokemon_stats VALUES (642,2,115,3);
+
+INSERT INTO pokemon_stats VALUES (642,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (642,4,125,0);
+
+INSERT INTO pokemon_stats VALUES (642,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (642,6,111,0);
+
+INSERT INTO pokemon_stats VALUES (643,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (643,2,120,0);
+
+INSERT INTO pokemon_stats VALUES (643,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (643,4,150,3);
+
+INSERT INTO pokemon_stats VALUES (643,5,120,0);
+
+INSERT INTO pokemon_stats VALUES (643,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (644,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (644,2,150,3);
+
+INSERT INTO pokemon_stats VALUES (644,3,120,0);
+
+INSERT INTO pokemon_stats VALUES (644,4,120,0);
+
+INSERT INTO pokemon_stats VALUES (644,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (644,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (645,1,89,0);
+
+INSERT INTO pokemon_stats VALUES (645,2,125,0);
+
+INSERT INTO pokemon_stats VALUES (645,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (645,4,115,3);
+
+INSERT INTO pokemon_stats VALUES (645,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (645,6,101,0);
+
+INSERT INTO pokemon_stats VALUES (646,1,125,1);
+
+INSERT INTO pokemon_stats VALUES (646,2,130,1);
+
+INSERT INTO pokemon_stats VALUES (646,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (646,4,130,1);
+
+INSERT INTO pokemon_stats VALUES (646,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (646,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (647,1,91,0);
+
+INSERT INTO pokemon_stats VALUES (647,2,72,0);
+
+INSERT INTO pokemon_stats VALUES (647,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (647,4,129,3);
+
+INSERT INTO pokemon_stats VALUES (647,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (647,6,108,0);
+
+INSERT INTO pokemon_stats VALUES (648,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (648,2,77,0);
+
+INSERT INTO pokemon_stats VALUES (648,3,77,0);
+
+INSERT INTO pokemon_stats VALUES (648,4,128,1);
+
+INSERT INTO pokemon_stats VALUES (648,5,128,1);
+
+INSERT INTO pokemon_stats VALUES (648,6,90,1);
+
+INSERT INTO pokemon_stats VALUES (649,1,71,0);
+
+INSERT INTO pokemon_stats VALUES (649,2,120,1);
+
+INSERT INTO pokemon_stats VALUES (649,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (649,4,120,1);
+
+INSERT INTO pokemon_stats VALUES (649,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (649,6,99,1);
+
+INSERT INTO pokemon_stats VALUES (650,1,56,0);
+
+INSERT INTO pokemon_stats VALUES (650,2,61,0);
+
+INSERT INTO pokemon_stats VALUES (650,3,65,1);
+
+INSERT INTO pokemon_stats VALUES (650,4,48,0);
+
+INSERT INTO pokemon_stats VALUES (650,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (650,6,38,0);
+
+INSERT INTO pokemon_stats VALUES (651,1,61,0);
+
+INSERT INTO pokemon_stats VALUES (651,2,78,0);
+
+INSERT INTO pokemon_stats VALUES (651,3,95,2);
+
+INSERT INTO pokemon_stats VALUES (651,4,56,0);
+
+INSERT INTO pokemon_stats VALUES (651,5,58,0);
+
+INSERT INTO pokemon_stats VALUES (651,6,57,0);
+
+INSERT INTO pokemon_stats VALUES (652,1,88,0);
+
+INSERT INTO pokemon_stats VALUES (652,2,107,0);
+
+INSERT INTO pokemon_stats VALUES (652,3,122,3);
+
+INSERT INTO pokemon_stats VALUES (652,4,74,0);
+
+INSERT INTO pokemon_stats VALUES (652,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (652,6,64,0);
+
+INSERT INTO pokemon_stats VALUES (653,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (653,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (653,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (653,4,62,1);
+
+INSERT INTO pokemon_stats VALUES (653,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (653,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (654,1,59,0);
+
+INSERT INTO pokemon_stats VALUES (654,2,59,0);
+
+INSERT INTO pokemon_stats VALUES (654,3,58,0);
+
+INSERT INTO pokemon_stats VALUES (654,4,90,2);
+
+INSERT INTO pokemon_stats VALUES (654,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (654,6,73,0);
+
+INSERT INTO pokemon_stats VALUES (655,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (655,2,69,0);
+
+INSERT INTO pokemon_stats VALUES (655,3,72,0);
+
+INSERT INTO pokemon_stats VALUES (655,4,114,3);
+
+INSERT INTO pokemon_stats VALUES (655,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (655,6,104,0);
+
+INSERT INTO pokemon_stats VALUES (656,1,41,0);
+
+INSERT INTO pokemon_stats VALUES (656,2,56,0);
+
+INSERT INTO pokemon_stats VALUES (656,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (656,4,62,0);
+
+INSERT INTO pokemon_stats VALUES (656,5,44,0);
+
+INSERT INTO pokemon_stats VALUES (656,6,71,1);
+
+INSERT INTO pokemon_stats VALUES (657,1,54,0);
+
+INSERT INTO pokemon_stats VALUES (657,2,63,0);
+
+INSERT INTO pokemon_stats VALUES (657,3,52,0);
+
+INSERT INTO pokemon_stats VALUES (657,4,83,0);
+
+INSERT INTO pokemon_stats VALUES (657,5,56,0);
+
+INSERT INTO pokemon_stats VALUES (657,6,97,2);
+
+INSERT INTO pokemon_stats VALUES (658,1,72,0);
+
+INSERT INTO pokemon_stats VALUES (658,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (658,3,67,0);
+
+INSERT INTO pokemon_stats VALUES (658,4,103,0);
+
+INSERT INTO pokemon_stats VALUES (658,5,71,0);
+
+INSERT INTO pokemon_stats VALUES (658,6,122,3);
+
+INSERT INTO pokemon_stats VALUES (659,1,38,0);
+
+INSERT INTO pokemon_stats VALUES (659,2,36,0);
+
+INSERT INTO pokemon_stats VALUES (659,3,38,0);
+
+INSERT INTO pokemon_stats VALUES (659,4,32,0);
+
+INSERT INTO pokemon_stats VALUES (659,5,36,0);
+
+INSERT INTO pokemon_stats VALUES (659,6,57,1);
+
+INSERT INTO pokemon_stats VALUES (660,1,85,2);
+
+INSERT INTO pokemon_stats VALUES (660,2,56,0);
+
+INSERT INTO pokemon_stats VALUES (660,3,77,0);
+
+INSERT INTO pokemon_stats VALUES (660,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (660,5,77,0);
+
+INSERT INTO pokemon_stats VALUES (660,6,78,0);
+
+INSERT INTO pokemon_stats VALUES (661,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (661,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (661,3,43,0);
+
+INSERT INTO pokemon_stats VALUES (661,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (661,5,38,0);
+
+INSERT INTO pokemon_stats VALUES (661,6,62,1);
+
+INSERT INTO pokemon_stats VALUES (662,1,62,0);
+
+INSERT INTO pokemon_stats VALUES (662,2,73,0);
+
+INSERT INTO pokemon_stats VALUES (662,3,55,0);
+
+INSERT INTO pokemon_stats VALUES (662,4,56,0);
+
+INSERT INTO pokemon_stats VALUES (662,5,52,0);
+
+INSERT INTO pokemon_stats VALUES (662,6,84,2);
+
+INSERT INTO pokemon_stats VALUES (663,1,78,0);
+
+INSERT INTO pokemon_stats VALUES (663,2,81,0);
+
+INSERT INTO pokemon_stats VALUES (663,3,71,0);
+
+INSERT INTO pokemon_stats VALUES (663,4,74,0);
+
+INSERT INTO pokemon_stats VALUES (663,5,69,0);
+
+INSERT INTO pokemon_stats VALUES (663,6,126,3);
+
+INSERT INTO pokemon_stats VALUES (664,1,38,0);
+
+INSERT INTO pokemon_stats VALUES (664,2,35,0);
+
+INSERT INTO pokemon_stats VALUES (664,3,40,1);
+
+INSERT INTO pokemon_stats VALUES (664,4,27,0);
+
+INSERT INTO pokemon_stats VALUES (664,5,25,0);
+
+INSERT INTO pokemon_stats VALUES (664,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (665,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (665,2,22,0);
+
+INSERT INTO pokemon_stats VALUES (665,3,60,2);
+
+INSERT INTO pokemon_stats VALUES (665,4,27,0);
+
+INSERT INTO pokemon_stats VALUES (665,5,30,0);
+
+INSERT INTO pokemon_stats VALUES (665,6,29,0);
+
+INSERT INTO pokemon_stats VALUES (666,1,80,1);
+
+INSERT INTO pokemon_stats VALUES (666,2,52,0);
+
+INSERT INTO pokemon_stats VALUES (666,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (666,4,90,1);
+
+INSERT INTO pokemon_stats VALUES (666,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (666,6,89,1);
+
+INSERT INTO pokemon_stats VALUES (667,1,62,0);
+
+INSERT INTO pokemon_stats VALUES (667,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (667,3,58,0);
+
+INSERT INTO pokemon_stats VALUES (667,4,73,1);
+
+INSERT INTO pokemon_stats VALUES (667,5,54,0);
+
+INSERT INTO pokemon_stats VALUES (667,6,72,0);
+
+INSERT INTO pokemon_stats VALUES (668,1,86,0);
+
+INSERT INTO pokemon_stats VALUES (668,2,68,0);
+
+INSERT INTO pokemon_stats VALUES (668,3,72,0);
+
+INSERT INTO pokemon_stats VALUES (668,4,109,2);
+
+INSERT INTO pokemon_stats VALUES (668,5,66,0);
+
+INSERT INTO pokemon_stats VALUES (668,6,106,0);
+
+INSERT INTO pokemon_stats VALUES (669,1,44,0);
+
+INSERT INTO pokemon_stats VALUES (669,2,38,0);
+
+INSERT INTO pokemon_stats VALUES (669,3,39,0);
+
+INSERT INTO pokemon_stats VALUES (669,4,61,0);
+
+INSERT INTO pokemon_stats VALUES (669,5,79,1);
+
+INSERT INTO pokemon_stats VALUES (669,6,42,0);
+
+INSERT INTO pokemon_stats VALUES (670,1,54,0);
+
+INSERT INTO pokemon_stats VALUES (670,2,45,0);
+
+INSERT INTO pokemon_stats VALUES (670,3,47,0);
+
+INSERT INTO pokemon_stats VALUES (670,4,75,0);
+
+INSERT INTO pokemon_stats VALUES (670,5,98,2);
+
+INSERT INTO pokemon_stats VALUES (670,6,52,0);
+
+INSERT INTO pokemon_stats VALUES (671,1,78,0);
+
+INSERT INTO pokemon_stats VALUES (671,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (671,3,68,0);
+
+INSERT INTO pokemon_stats VALUES (671,4,112,0);
+
+INSERT INTO pokemon_stats VALUES (671,5,154,3);
+
+INSERT INTO pokemon_stats VALUES (671,6,75,0);
+
+INSERT INTO pokemon_stats VALUES (672,1,66,1);
+
+INSERT INTO pokemon_stats VALUES (672,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (672,3,48,0);
+
+INSERT INTO pokemon_stats VALUES (672,4,62,0);
+
+INSERT INTO pokemon_stats VALUES (672,5,57,0);
+
+INSERT INTO pokemon_stats VALUES (672,6,52,0);
+
+INSERT INTO pokemon_stats VALUES (673,1,123,2);
+
+INSERT INTO pokemon_stats VALUES (673,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (673,3,62,0);
+
+INSERT INTO pokemon_stats VALUES (673,4,97,0);
+
+INSERT INTO pokemon_stats VALUES (673,5,81,0);
+
+INSERT INTO pokemon_stats VALUES (673,6,68,0);
+
+INSERT INTO pokemon_stats VALUES (674,1,67,0);
+
+INSERT INTO pokemon_stats VALUES (674,2,82,1);
+
+INSERT INTO pokemon_stats VALUES (674,3,62,0);
+
+INSERT INTO pokemon_stats VALUES (674,4,46,0);
+
+INSERT INTO pokemon_stats VALUES (674,5,48,0);
+
+INSERT INTO pokemon_stats VALUES (674,6,43,0);
+
+INSERT INTO pokemon_stats VALUES (675,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (675,2,124,2);
+
+INSERT INTO pokemon_stats VALUES (675,3,78,0);
+
+INSERT INTO pokemon_stats VALUES (675,4,69,0);
+
+INSERT INTO pokemon_stats VALUES (675,5,71,0);
+
+INSERT INTO pokemon_stats VALUES (675,6,58,0);
+
+INSERT INTO pokemon_stats VALUES (676,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (676,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (676,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (676,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (676,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (676,6,102,1);
+
+INSERT INTO pokemon_stats VALUES (677,1,62,0);
+
+INSERT INTO pokemon_stats VALUES (677,2,48,0);
+
+INSERT INTO pokemon_stats VALUES (677,3,54,0);
+
+INSERT INTO pokemon_stats VALUES (677,4,63,0);
+
+INSERT INTO pokemon_stats VALUES (677,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (677,6,68,1);
+
+INSERT INTO pokemon_stats VALUES (678,1,74,0);
+
+INSERT INTO pokemon_stats VALUES (678,2,48,0);
+
+INSERT INTO pokemon_stats VALUES (678,3,76,0);
+
+INSERT INTO pokemon_stats VALUES (678,4,83,0);
+
+INSERT INTO pokemon_stats VALUES (678,5,81,0);
+
+INSERT INTO pokemon_stats VALUES (678,6,104,2);
+
+INSERT INTO pokemon_stats VALUES (679,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (679,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (679,3,100,1);
+
+INSERT INTO pokemon_stats VALUES (679,4,35,0);
+
+INSERT INTO pokemon_stats VALUES (679,5,37,0);
+
+INSERT INTO pokemon_stats VALUES (679,6,28,0);
+
+INSERT INTO pokemon_stats VALUES (680,1,59,0);
+
+INSERT INTO pokemon_stats VALUES (680,2,110,0);
+
+INSERT INTO pokemon_stats VALUES (680,3,150,2);
+
+INSERT INTO pokemon_stats VALUES (680,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (680,5,49,0);
+
+INSERT INTO pokemon_stats VALUES (680,6,35,0);
+
+INSERT INTO pokemon_stats VALUES (681,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (681,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (681,3,150,2);
+
+INSERT INTO pokemon_stats VALUES (681,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (681,5,150,1);
+
+INSERT INTO pokemon_stats VALUES (681,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (682,1,78,1);
+
+INSERT INTO pokemon_stats VALUES (682,2,52,0);
+
+INSERT INTO pokemon_stats VALUES (682,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (682,4,63,0);
+
+INSERT INTO pokemon_stats VALUES (682,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (682,6,23,0);
+
+INSERT INTO pokemon_stats VALUES (683,1,101,2);
+
+INSERT INTO pokemon_stats VALUES (683,2,72,0);
+
+INSERT INTO pokemon_stats VALUES (683,3,72,0);
+
+INSERT INTO pokemon_stats VALUES (683,4,99,0);
+
+INSERT INTO pokemon_stats VALUES (683,5,89,0);
+
+INSERT INTO pokemon_stats VALUES (683,6,29,0);
+
+INSERT INTO pokemon_stats VALUES (684,1,62,0);
+
+INSERT INTO pokemon_stats VALUES (684,2,48,0);
+
+INSERT INTO pokemon_stats VALUES (684,3,66,1);
+
+INSERT INTO pokemon_stats VALUES (684,4,59,0);
+
+INSERT INTO pokemon_stats VALUES (684,5,57,0);
+
+INSERT INTO pokemon_stats VALUES (684,6,49,0);
+
+INSERT INTO pokemon_stats VALUES (685,1,82,0);
+
+INSERT INTO pokemon_stats VALUES (685,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (685,3,86,2);
+
+INSERT INTO pokemon_stats VALUES (685,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (685,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (685,6,72,0);
+
+INSERT INTO pokemon_stats VALUES (686,1,53,0);
+
+INSERT INTO pokemon_stats VALUES (686,2,54,1);
+
+INSERT INTO pokemon_stats VALUES (686,3,53,0);
+
+INSERT INTO pokemon_stats VALUES (686,4,37,0);
+
+INSERT INTO pokemon_stats VALUES (686,5,46,0);
+
+INSERT INTO pokemon_stats VALUES (686,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (687,1,86,0);
+
+INSERT INTO pokemon_stats VALUES (687,2,92,2);
+
+INSERT INTO pokemon_stats VALUES (687,3,88,0);
+
+INSERT INTO pokemon_stats VALUES (687,4,68,0);
+
+INSERT INTO pokemon_stats VALUES (687,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (687,6,73,0);
+
+INSERT INTO pokemon_stats VALUES (688,1,42,0);
+
+INSERT INTO pokemon_stats VALUES (688,2,52,1);
+
+INSERT INTO pokemon_stats VALUES (688,3,67,0);
+
+INSERT INTO pokemon_stats VALUES (688,4,39,0);
+
+INSERT INTO pokemon_stats VALUES (688,5,56,0);
+
+INSERT INTO pokemon_stats VALUES (688,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (689,1,72,0);
+
+INSERT INTO pokemon_stats VALUES (689,2,105,2);
+
+INSERT INTO pokemon_stats VALUES (689,3,115,0);
+
+INSERT INTO pokemon_stats VALUES (689,4,54,0);
+
+INSERT INTO pokemon_stats VALUES (689,5,86,0);
+
+INSERT INTO pokemon_stats VALUES (689,6,68,0);
+
+INSERT INTO pokemon_stats VALUES (690,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (690,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (690,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (690,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (690,5,60,1);
+
+INSERT INTO pokemon_stats VALUES (690,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (691,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (691,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (691,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (691,4,97,0);
+
+INSERT INTO pokemon_stats VALUES (691,5,123,2);
+
+INSERT INTO pokemon_stats VALUES (691,6,44,0);
+
+INSERT INTO pokemon_stats VALUES (692,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (692,2,53,0);
+
+INSERT INTO pokemon_stats VALUES (692,3,62,0);
+
+INSERT INTO pokemon_stats VALUES (692,4,58,1);
+
+INSERT INTO pokemon_stats VALUES (692,5,63,0);
+
+INSERT INTO pokemon_stats VALUES (692,6,44,0);
+
+INSERT INTO pokemon_stats VALUES (693,1,71,0);
+
+INSERT INTO pokemon_stats VALUES (693,2,73,0);
+
+INSERT INTO pokemon_stats VALUES (693,3,88,0);
+
+INSERT INTO pokemon_stats VALUES (693,4,120,2);
+
+INSERT INTO pokemon_stats VALUES (693,5,89,0);
+
+INSERT INTO pokemon_stats VALUES (693,6,59,0);
+
+INSERT INTO pokemon_stats VALUES (694,1,44,0);
+
+INSERT INTO pokemon_stats VALUES (694,2,38,0);
+
+INSERT INTO pokemon_stats VALUES (694,3,33,0);
+
+INSERT INTO pokemon_stats VALUES (694,4,61,0);
+
+INSERT INTO pokemon_stats VALUES (694,5,43,0);
+
+INSERT INTO pokemon_stats VALUES (694,6,70,1);
+
+INSERT INTO pokemon_stats VALUES (695,1,62,0);
+
+INSERT INTO pokemon_stats VALUES (695,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (695,3,52,0);
+
+INSERT INTO pokemon_stats VALUES (695,4,109,1);
+
+INSERT INTO pokemon_stats VALUES (695,5,94,0);
+
+INSERT INTO pokemon_stats VALUES (695,6,109,1);
+
+INSERT INTO pokemon_stats VALUES (696,1,58,0);
+
+INSERT INTO pokemon_stats VALUES (696,2,89,1);
+
+INSERT INTO pokemon_stats VALUES (696,3,77,0);
+
+INSERT INTO pokemon_stats VALUES (696,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (696,5,45,0);
+
+INSERT INTO pokemon_stats VALUES (696,6,48,0);
+
+INSERT INTO pokemon_stats VALUES (697,1,82,0);
+
+INSERT INTO pokemon_stats VALUES (697,2,121,2);
+
+INSERT INTO pokemon_stats VALUES (697,3,119,0);
+
+INSERT INTO pokemon_stats VALUES (697,4,69,0);
+
+INSERT INTO pokemon_stats VALUES (697,5,59,0);
+
+INSERT INTO pokemon_stats VALUES (697,6,71,0);
+
+INSERT INTO pokemon_stats VALUES (698,1,77,1);
+
+INSERT INTO pokemon_stats VALUES (698,2,59,0);
+
+INSERT INTO pokemon_stats VALUES (698,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (698,4,67,0);
+
+INSERT INTO pokemon_stats VALUES (698,5,63,0);
+
+INSERT INTO pokemon_stats VALUES (698,6,46,0);
+
+INSERT INTO pokemon_stats VALUES (699,1,123,2);
+
+INSERT INTO pokemon_stats VALUES (699,2,77,0);
+
+INSERT INTO pokemon_stats VALUES (699,3,72,0);
+
+INSERT INTO pokemon_stats VALUES (699,4,99,0);
+
+INSERT INTO pokemon_stats VALUES (699,5,92,0);
+
+INSERT INTO pokemon_stats VALUES (699,6,58,0);
+
+INSERT INTO pokemon_stats VALUES (700,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (700,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (700,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (700,4,110,0);
+
+INSERT INTO pokemon_stats VALUES (700,5,130,2);
+
+INSERT INTO pokemon_stats VALUES (700,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (701,1,78,0);
+
+INSERT INTO pokemon_stats VALUES (701,2,92,2);
+
+INSERT INTO pokemon_stats VALUES (701,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (701,4,74,0);
+
+INSERT INTO pokemon_stats VALUES (701,5,63,0);
+
+INSERT INTO pokemon_stats VALUES (701,6,118,0);
+
+INSERT INTO pokemon_stats VALUES (702,1,67,0);
+
+INSERT INTO pokemon_stats VALUES (702,2,58,0);
+
+INSERT INTO pokemon_stats VALUES (702,3,57,0);
+
+INSERT INTO pokemon_stats VALUES (702,4,81,0);
+
+INSERT INTO pokemon_stats VALUES (702,5,67,0);
+
+INSERT INTO pokemon_stats VALUES (702,6,101,2);
+
+INSERT INTO pokemon_stats VALUES (703,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (703,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (703,3,150,1);
+
+INSERT INTO pokemon_stats VALUES (703,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (703,5,150,1);
+
+INSERT INTO pokemon_stats VALUES (703,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (704,1,45,0);
+
+INSERT INTO pokemon_stats VALUES (704,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (704,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (704,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (704,5,75,1);
+
+INSERT INTO pokemon_stats VALUES (704,6,40,0);
+
+INSERT INTO pokemon_stats VALUES (705,1,68,0);
+
+INSERT INTO pokemon_stats VALUES (705,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (705,3,53,0);
+
+INSERT INTO pokemon_stats VALUES (705,4,83,0);
+
+INSERT INTO pokemon_stats VALUES (705,5,113,2);
+
+INSERT INTO pokemon_stats VALUES (705,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (706,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (706,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (706,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (706,4,110,0);
+
+INSERT INTO pokemon_stats VALUES (706,5,150,3);
+
+INSERT INTO pokemon_stats VALUES (706,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (707,1,57,0);
+
+INSERT INTO pokemon_stats VALUES (707,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (707,3,91,1);
+
+INSERT INTO pokemon_stats VALUES (707,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (707,5,87,0);
+
+INSERT INTO pokemon_stats VALUES (707,6,75,0);
+
+INSERT INTO pokemon_stats VALUES (708,1,43,0);
+
+INSERT INTO pokemon_stats VALUES (708,2,70,1);
+
+INSERT INTO pokemon_stats VALUES (708,3,48,0);
+
+INSERT INTO pokemon_stats VALUES (708,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (708,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (708,6,38,0);
+
+INSERT INTO pokemon_stats VALUES (709,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (709,2,110,2);
+
+INSERT INTO pokemon_stats VALUES (709,3,76,0);
+
+INSERT INTO pokemon_stats VALUES (709,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (709,5,82,0);
+
+INSERT INTO pokemon_stats VALUES (709,6,56,0);
+
+INSERT INTO pokemon_stats VALUES (710,1,49,0);
+
+INSERT INTO pokemon_stats VALUES (710,2,66,0);
+
+INSERT INTO pokemon_stats VALUES (710,3,70,1);
+
+INSERT INTO pokemon_stats VALUES (710,4,44,0);
+
+INSERT INTO pokemon_stats VALUES (710,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (710,6,51,0);
+
+INSERT INTO pokemon_stats VALUES (711,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (711,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (711,3,122,2);
+
+INSERT INTO pokemon_stats VALUES (711,4,58,0);
+
+INSERT INTO pokemon_stats VALUES (711,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (711,6,84,0);
+
+INSERT INTO pokemon_stats VALUES (712,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (712,2,69,0);
+
+INSERT INTO pokemon_stats VALUES (712,3,85,1);
+
+INSERT INTO pokemon_stats VALUES (712,4,32,0);
+
+INSERT INTO pokemon_stats VALUES (712,5,35,0);
+
+INSERT INTO pokemon_stats VALUES (712,6,28,0);
+
+INSERT INTO pokemon_stats VALUES (713,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (713,2,117,0);
+
+INSERT INTO pokemon_stats VALUES (713,3,184,2);
+
+INSERT INTO pokemon_stats VALUES (713,4,44,0);
+
+INSERT INTO pokemon_stats VALUES (713,5,46,0);
+
+INSERT INTO pokemon_stats VALUES (713,6,28,0);
+
+INSERT INTO pokemon_stats VALUES (714,1,40,0);
+
+INSERT INTO pokemon_stats VALUES (714,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (714,3,35,0);
+
+INSERT INTO pokemon_stats VALUES (714,4,45,0);
+
+INSERT INTO pokemon_stats VALUES (714,5,40,0);
+
+INSERT INTO pokemon_stats VALUES (714,6,55,1);
+
+INSERT INTO pokemon_stats VALUES (715,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (715,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (715,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (715,4,97,0);
+
+INSERT INTO pokemon_stats VALUES (715,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (715,6,123,2);
+
+INSERT INTO pokemon_stats VALUES (716,1,126,3);
+
+INSERT INTO pokemon_stats VALUES (716,2,131,0);
+
+INSERT INTO pokemon_stats VALUES (716,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (716,4,131,0);
+
+INSERT INTO pokemon_stats VALUES (716,5,98,0);
+
+INSERT INTO pokemon_stats VALUES (716,6,99,0);
+
+INSERT INTO pokemon_stats VALUES (717,1,126,3);
+
+INSERT INTO pokemon_stats VALUES (717,2,131,0);
+
+INSERT INTO pokemon_stats VALUES (717,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (717,4,131,0);
+
+INSERT INTO pokemon_stats VALUES (717,5,98,0);
+
+INSERT INTO pokemon_stats VALUES (717,6,99,0);
+
+INSERT INTO pokemon_stats VALUES (718,1,108,3);
+
+INSERT INTO pokemon_stats VALUES (718,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (718,3,121,0);
+
+INSERT INTO pokemon_stats VALUES (718,4,81,0);
+
+INSERT INTO pokemon_stats VALUES (718,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (718,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (719,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (719,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (719,3,150,1);
+
+INSERT INTO pokemon_stats VALUES (719,4,100,0);
+
+INSERT INTO pokemon_stats VALUES (719,5,150,2);
+
+INSERT INTO pokemon_stats VALUES (719,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (720,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (720,2,110,0);
+
+INSERT INTO pokemon_stats VALUES (720,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (720,4,150,3);
+
+INSERT INTO pokemon_stats VALUES (720,5,130,0);
+
+INSERT INTO pokemon_stats VALUES (720,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (721,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (721,2,110,0);
+
+INSERT INTO pokemon_stats VALUES (721,3,120,0);
+
+INSERT INTO pokemon_stats VALUES (721,4,130,3);
+
+INSERT INTO pokemon_stats VALUES (721,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (721,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (10001,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (10001,2,180,2);
+
+INSERT INTO pokemon_stats VALUES (10001,3,20,0);
+
+INSERT INTO pokemon_stats VALUES (10001,4,180,1);
+
+INSERT INTO pokemon_stats VALUES (10001,5,20,0);
+
+INSERT INTO pokemon_stats VALUES (10001,6,150,0);
+
+INSERT INTO pokemon_stats VALUES (10002,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (10002,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (10002,3,160,2);
+
+INSERT INTO pokemon_stats VALUES (10002,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (10002,5,160,1);
+
+INSERT INTO pokemon_stats VALUES (10002,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (10003,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (10003,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (10003,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (10003,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (10003,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (10003,6,180,3);
+
+INSERT INTO pokemon_stats VALUES (10004,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (10004,2,79,0);
+
+INSERT INTO pokemon_stats VALUES (10004,3,105,2);
+
+INSERT INTO pokemon_stats VALUES (10004,4,59,0);
+
+INSERT INTO pokemon_stats VALUES (10004,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (10004,6,36,0);
+
+INSERT INTO pokemon_stats VALUES (10005,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (10005,2,69,0);
+
+INSERT INTO pokemon_stats VALUES (10005,3,95,1);
+
+INSERT INTO pokemon_stats VALUES (10005,4,69,0);
+
+INSERT INTO pokemon_stats VALUES (10005,5,95,1);
+
+INSERT INTO pokemon_stats VALUES (10005,6,36,0);
+
+INSERT INTO pokemon_stats VALUES (10006,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (10006,2,103,0);
+
+INSERT INTO pokemon_stats VALUES (10006,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (10006,4,120,0);
+
+INSERT INTO pokemon_stats VALUES (10006,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (10006,6,127,3);
+
+INSERT INTO pokemon_stats VALUES (10007,1,150,3);
+
+INSERT INTO pokemon_stats VALUES (10007,2,120,0);
+
+INSERT INTO pokemon_stats VALUES (10007,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (10007,4,120,0);
+
+INSERT INTO pokemon_stats VALUES (10007,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (10007,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (10008,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (10008,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (10008,3,107,0);
+
+INSERT INTO pokemon_stats VALUES (10008,4,105,1);
+
+INSERT INTO pokemon_stats VALUES (10008,5,107,0);
+
+INSERT INTO pokemon_stats VALUES (10008,6,86,1);
+
+INSERT INTO pokemon_stats VALUES (10009,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (10009,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (10009,3,107,0);
+
+INSERT INTO pokemon_stats VALUES (10009,4,105,1);
+
+INSERT INTO pokemon_stats VALUES (10009,5,107,0);
+
+INSERT INTO pokemon_stats VALUES (10009,6,86,1);
+
+INSERT INTO pokemon_stats VALUES (10010,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (10010,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (10010,3,107,0);
+
+INSERT INTO pokemon_stats VALUES (10010,4,105,1);
+
+INSERT INTO pokemon_stats VALUES (10010,5,107,0);
+
+INSERT INTO pokemon_stats VALUES (10010,6,86,1);
+
+INSERT INTO pokemon_stats VALUES (10011,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (10011,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (10011,3,107,0);
+
+INSERT INTO pokemon_stats VALUES (10011,4,105,1);
+
+INSERT INTO pokemon_stats VALUES (10011,5,107,0);
+
+INSERT INTO pokemon_stats VALUES (10011,6,86,1);
+
+INSERT INTO pokemon_stats VALUES (10012,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (10012,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (10012,3,107,0);
+
+INSERT INTO pokemon_stats VALUES (10012,4,105,1);
+
+INSERT INTO pokemon_stats VALUES (10012,5,107,0);
+
+INSERT INTO pokemon_stats VALUES (10012,6,86,1);
+
+INSERT INTO pokemon_stats VALUES (10013,1,70,1);
+
+INSERT INTO pokemon_stats VALUES (10013,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (10013,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (10013,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (10013,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (10013,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (10014,1,70,1);
+
+INSERT INTO pokemon_stats VALUES (10014,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (10014,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (10014,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (10014,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (10014,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (10015,1,70,1);
+
+INSERT INTO pokemon_stats VALUES (10015,2,70,0);
+
+INSERT INTO pokemon_stats VALUES (10015,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (10015,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (10015,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (10015,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (10016,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (10016,2,92,0);
+
+INSERT INTO pokemon_stats VALUES (10016,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (10016,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (10016,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (10016,6,98,2);
+
+INSERT INTO pokemon_stats VALUES (10017,1,105,0);
+
+INSERT INTO pokemon_stats VALUES (10017,2,30,0);
+
+INSERT INTO pokemon_stats VALUES (10017,3,105,0);
+
+INSERT INTO pokemon_stats VALUES (10017,4,140,2);
+
+INSERT INTO pokemon_stats VALUES (10017,5,105,0);
+
+INSERT INTO pokemon_stats VALUES (10017,6,55,0);
+
+INSERT INTO pokemon_stats VALUES (10018,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (10018,2,128,1);
+
+INSERT INTO pokemon_stats VALUES (10018,3,90,1);
+
+INSERT INTO pokemon_stats VALUES (10018,4,77,0);
+
+INSERT INTO pokemon_stats VALUES (10018,5,77,0);
+
+INSERT INTO pokemon_stats VALUES (10018,6,128,1);
+
+INSERT INTO pokemon_stats VALUES (10019,1,79,0);
+
+INSERT INTO pokemon_stats VALUES (10019,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (10019,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (10019,4,110,0);
+
+INSERT INTO pokemon_stats VALUES (10019,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (10019,6,121,3);
+
+INSERT INTO pokemon_stats VALUES (10020,1,79,0);
+
+INSERT INTO pokemon_stats VALUES (10020,2,105,0);
+
+INSERT INTO pokemon_stats VALUES (10020,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (10020,4,145,3);
+
+INSERT INTO pokemon_stats VALUES (10020,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (10020,6,101,0);
+
+INSERT INTO pokemon_stats VALUES (10021,1,89,0);
+
+INSERT INTO pokemon_stats VALUES (10021,2,145,3);
+
+INSERT INTO pokemon_stats VALUES (10021,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (10021,4,105,0);
+
+INSERT INTO pokemon_stats VALUES (10021,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (10021,6,91,0);
+
+INSERT INTO pokemon_stats VALUES (10022,1,125,0);
+
+INSERT INTO pokemon_stats VALUES (10022,2,170,3);
+
+INSERT INTO pokemon_stats VALUES (10022,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (10022,4,120,0);
+
+INSERT INTO pokemon_stats VALUES (10022,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (10022,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (10023,1,125,0);
+
+INSERT INTO pokemon_stats VALUES (10023,2,120,0);
+
+INSERT INTO pokemon_stats VALUES (10023,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (10023,4,170,3);
+
+INSERT INTO pokemon_stats VALUES (10023,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (10023,6,95,0);
+
+INSERT INTO pokemon_stats VALUES (10024,1,91,0);
+
+INSERT INTO pokemon_stats VALUES (10024,2,72,0);
+
+INSERT INTO pokemon_stats VALUES (10024,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (10024,4,129,3);
+
+INSERT INTO pokemon_stats VALUES (10024,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (10024,6,108,0);
+
+INSERT INTO pokemon_stats VALUES (10025,1,74,0);
+
+INSERT INTO pokemon_stats VALUES (10025,2,48,0);
+
+INSERT INTO pokemon_stats VALUES (10025,3,76,0);
+
+INSERT INTO pokemon_stats VALUES (10025,4,83,0);
+
+INSERT INTO pokemon_stats VALUES (10025,5,81,0);
+
+INSERT INTO pokemon_stats VALUES (10025,6,104,2);
+
+INSERT INTO pokemon_stats VALUES (10026,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (10026,2,150,2);
+
+INSERT INTO pokemon_stats VALUES (10026,3,50,0);
+
+INSERT INTO pokemon_stats VALUES (10026,4,150,1);
+
+INSERT INTO pokemon_stats VALUES (10026,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (10026,6,60,0);
+
+INSERT INTO pokemon_stats VALUES (10027,1,44,0);
+
+INSERT INTO pokemon_stats VALUES (10027,2,66,0);
+
+INSERT INTO pokemon_stats VALUES (10027,3,70,1);
+
+INSERT INTO pokemon_stats VALUES (10027,4,44,0);
+
+INSERT INTO pokemon_stats VALUES (10027,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (10027,6,56,0);
+
+INSERT INTO pokemon_stats VALUES (10028,1,54,0);
+
+INSERT INTO pokemon_stats VALUES (10028,2,66,0);
+
+INSERT INTO pokemon_stats VALUES (10028,3,70,1);
+
+INSERT INTO pokemon_stats VALUES (10028,4,44,0);
+
+INSERT INTO pokemon_stats VALUES (10028,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (10028,6,46,0);
+
+INSERT INTO pokemon_stats VALUES (10029,1,59,0);
+
+INSERT INTO pokemon_stats VALUES (10029,2,66,0);
+
+INSERT INTO pokemon_stats VALUES (10029,3,70,1);
+
+INSERT INTO pokemon_stats VALUES (10029,4,44,0);
+
+INSERT INTO pokemon_stats VALUES (10029,5,55,0);
+
+INSERT INTO pokemon_stats VALUES (10029,6,41,0);
+
+INSERT INTO pokemon_stats VALUES (10030,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (10030,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (10030,3,122,2);
+
+INSERT INTO pokemon_stats VALUES (10030,4,58,0);
+
+INSERT INTO pokemon_stats VALUES (10030,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (10030,6,99,0);
+
+INSERT INTO pokemon_stats VALUES (10031,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (10031,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (10031,3,122,2);
+
+INSERT INTO pokemon_stats VALUES (10031,4,58,0);
+
+INSERT INTO pokemon_stats VALUES (10031,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (10031,6,69,0);
+
+INSERT INTO pokemon_stats VALUES (10032,1,85,0);
+
+INSERT INTO pokemon_stats VALUES (10032,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (10032,3,122,2);
+
+INSERT INTO pokemon_stats VALUES (10032,4,58,0);
+
+INSERT INTO pokemon_stats VALUES (10032,5,75,0);
+
+INSERT INTO pokemon_stats VALUES (10032,6,54,0);
+
+INSERT INTO pokemon_stats VALUES (10033,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (10033,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (10033,3,123,0);
+
+INSERT INTO pokemon_stats VALUES (10033,4,122,2);
+
+INSERT INTO pokemon_stats VALUES (10033,5,120,1);
+
+INSERT INTO pokemon_stats VALUES (10033,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (10034,1,78,0);
+
+INSERT INTO pokemon_stats VALUES (10034,2,130,0);
+
+INSERT INTO pokemon_stats VALUES (10034,3,111,0);
+
+INSERT INTO pokemon_stats VALUES (10034,4,130,3);
+
+INSERT INTO pokemon_stats VALUES (10034,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (10034,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (10035,1,78,0);
+
+INSERT INTO pokemon_stats VALUES (10035,2,104,0);
+
+INSERT INTO pokemon_stats VALUES (10035,3,78,0);
+
+INSERT INTO pokemon_stats VALUES (10035,4,159,3);
+
+INSERT INTO pokemon_stats VALUES (10035,5,115,0);
+
+INSERT INTO pokemon_stats VALUES (10035,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (10036,1,79,0);
+
+INSERT INTO pokemon_stats VALUES (10036,2,103,0);
+
+INSERT INTO pokemon_stats VALUES (10036,3,120,0);
+
+INSERT INTO pokemon_stats VALUES (10036,4,135,0);
+
+INSERT INTO pokemon_stats VALUES (10036,5,115,3);
+
+INSERT INTO pokemon_stats VALUES (10036,6,78,0);
+
+INSERT INTO pokemon_stats VALUES (10037,1,55,0);
+
+INSERT INTO pokemon_stats VALUES (10037,2,50,0);
+
+INSERT INTO pokemon_stats VALUES (10037,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (10037,4,175,3);
+
+INSERT INTO pokemon_stats VALUES (10037,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (10037,6,150,0);
+
+INSERT INTO pokemon_stats VALUES (10038,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (10038,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (10038,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (10038,4,170,3);
+
+INSERT INTO pokemon_stats VALUES (10038,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (10038,6,130,0);
+
+INSERT INTO pokemon_stats VALUES (10039,1,105,2);
+
+INSERT INTO pokemon_stats VALUES (10039,2,125,0);
+
+INSERT INTO pokemon_stats VALUES (10039,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (10039,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (10039,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (10039,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (10040,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (10040,2,155,2);
+
+INSERT INTO pokemon_stats VALUES (10040,3,120,0);
+
+INSERT INTO pokemon_stats VALUES (10040,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (10040,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (10040,6,105,0);
+
+INSERT INTO pokemon_stats VALUES (10041,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (10041,2,155,2);
+
+INSERT INTO pokemon_stats VALUES (10041,3,109,0);
+
+INSERT INTO pokemon_stats VALUES (10041,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (10041,5,130,0);
+
+INSERT INTO pokemon_stats VALUES (10041,6,81,0);
+
+INSERT INTO pokemon_stats VALUES (10042,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (10042,2,135,0);
+
+INSERT INTO pokemon_stats VALUES (10042,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (10042,4,70,0);
+
+INSERT INTO pokemon_stats VALUES (10042,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (10042,6,150,2);
+
+INSERT INTO pokemon_stats VALUES (10043,1,106,0);
+
+INSERT INTO pokemon_stats VALUES (10043,2,190,0);
+
+INSERT INTO pokemon_stats VALUES (10043,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (10043,4,154,3);
+
+INSERT INTO pokemon_stats VALUES (10043,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (10043,6,130,0);
+
+INSERT INTO pokemon_stats VALUES (10044,1,106,0);
+
+INSERT INTO pokemon_stats VALUES (10044,2,150,0);
+
+INSERT INTO pokemon_stats VALUES (10044,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (10044,4,194,3);
+
+INSERT INTO pokemon_stats VALUES (10044,5,120,0);
+
+INSERT INTO pokemon_stats VALUES (10044,6,140,0);
+
+INSERT INTO pokemon_stats VALUES (10045,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (10045,2,95,0);
+
+INSERT INTO pokemon_stats VALUES (10045,3,105,0);
+
+INSERT INTO pokemon_stats VALUES (10045,4,165,3);
+
+INSERT INTO pokemon_stats VALUES (10045,5,110,0);
+
+INSERT INTO pokemon_stats VALUES (10045,6,45,0);
+
+INSERT INTO pokemon_stats VALUES (10046,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (10046,2,150,2);
+
+INSERT INTO pokemon_stats VALUES (10046,3,140,0);
+
+INSERT INTO pokemon_stats VALUES (10046,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (10046,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (10046,6,75,0);
+
+INSERT INTO pokemon_stats VALUES (10047,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (10047,2,185,2);
+
+INSERT INTO pokemon_stats VALUES (10047,3,115,0);
+
+INSERT INTO pokemon_stats VALUES (10047,4,40,0);
+
+INSERT INTO pokemon_stats VALUES (10047,5,105,0);
+
+INSERT INTO pokemon_stats VALUES (10047,6,75,0);
+
+INSERT INTO pokemon_stats VALUES (10048,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (10048,2,90,0);
+
+INSERT INTO pokemon_stats VALUES (10048,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (10048,4,140,2);
+
+INSERT INTO pokemon_stats VALUES (10048,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (10048,6,115,0);
+
+INSERT INTO pokemon_stats VALUES (10049,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (10049,2,164,3);
+
+INSERT INTO pokemon_stats VALUES (10049,3,150,0);
+
+INSERT INTO pokemon_stats VALUES (10049,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (10049,5,120,0);
+
+INSERT INTO pokemon_stats VALUES (10049,6,71,0);
+
+INSERT INTO pokemon_stats VALUES (10050,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (10050,2,160,3);
+
+INSERT INTO pokemon_stats VALUES (10050,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (10050,4,130,0);
+
+INSERT INTO pokemon_stats VALUES (10050,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (10050,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (10051,1,68,0);
+
+INSERT INTO pokemon_stats VALUES (10051,2,85,0);
+
+INSERT INTO pokemon_stats VALUES (10051,3,65,0);
+
+INSERT INTO pokemon_stats VALUES (10051,4,165,3);
+
+INSERT INTO pokemon_stats VALUES (10051,5,135,0);
+
+INSERT INTO pokemon_stats VALUES (10051,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (10052,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (10052,2,105,1);
+
+INSERT INTO pokemon_stats VALUES (10052,3,125,1);
+
+INSERT INTO pokemon_stats VALUES (10052,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (10052,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (10052,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (10053,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (10053,2,140,0);
+
+INSERT INTO pokemon_stats VALUES (10053,3,230,3);
+
+INSERT INTO pokemon_stats VALUES (10053,4,60,0);
+
+INSERT INTO pokemon_stats VALUES (10053,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (10053,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (10054,1,60,0);
+
+INSERT INTO pokemon_stats VALUES (10054,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (10054,3,85,0);
+
+INSERT INTO pokemon_stats VALUES (10054,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (10054,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (10054,6,100,2);
+
+INSERT INTO pokemon_stats VALUES (10055,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (10055,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (10055,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (10055,4,135,0);
+
+INSERT INTO pokemon_stats VALUES (10055,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (10055,6,135,2);
+
+INSERT INTO pokemon_stats VALUES (10056,1,64,0);
+
+INSERT INTO pokemon_stats VALUES (10056,2,165,2);
+
+INSERT INTO pokemon_stats VALUES (10056,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (10056,4,93,0);
+
+INSERT INTO pokemon_stats VALUES (10056,5,83,0);
+
+INSERT INTO pokemon_stats VALUES (10056,6,75,0);
+
+INSERT INTO pokemon_stats VALUES (10057,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (10057,2,150,2);
+
+INSERT INTO pokemon_stats VALUES (10057,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (10057,4,115,0);
+
+INSERT INTO pokemon_stats VALUES (10057,5,60,0);
+
+INSERT INTO pokemon_stats VALUES (10057,6,115,0);
+
+INSERT INTO pokemon_stats VALUES (10058,1,108,0);
+
+INSERT INTO pokemon_stats VALUES (10058,2,170,3);
+
+INSERT INTO pokemon_stats VALUES (10058,3,115,0);
+
+INSERT INTO pokemon_stats VALUES (10058,4,120,0);
+
+INSERT INTO pokemon_stats VALUES (10058,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (10058,6,92,0);
+
+INSERT INTO pokemon_stats VALUES (10059,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (10059,2,145,1);
+
+INSERT INTO pokemon_stats VALUES (10059,3,88,0);
+
+INSERT INTO pokemon_stats VALUES (10059,4,140,1);
+
+INSERT INTO pokemon_stats VALUES (10059,5,70,0);
+
+INSERT INTO pokemon_stats VALUES (10059,6,112,0);
+
+INSERT INTO pokemon_stats VALUES (10060,1,90,0);
+
+INSERT INTO pokemon_stats VALUES (10060,2,132,1);
+
+INSERT INTO pokemon_stats VALUES (10060,3,105,0);
+
+INSERT INTO pokemon_stats VALUES (10060,4,132,1);
+
+INSERT INTO pokemon_stats VALUES (10060,5,105,0);
+
+INSERT INTO pokemon_stats VALUES (10060,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (10061,1,74,0);
+
+INSERT INTO pokemon_stats VALUES (10061,2,65,0);
+
+INSERT INTO pokemon_stats VALUES (10061,3,67,0);
+
+INSERT INTO pokemon_stats VALUES (10061,4,125,0);
+
+INSERT INTO pokemon_stats VALUES (10061,5,128,2);
+
+INSERT INTO pokemon_stats VALUES (10061,6,92,0);
+
+INSERT INTO pokemon_stats VALUES (10062,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (10062,2,100,0);
+
+INSERT INTO pokemon_stats VALUES (10062,3,120,0);
+
+INSERT INTO pokemon_stats VALUES (10062,4,140,0);
+
+INSERT INTO pokemon_stats VALUES (10062,5,150,3);
+
+INSERT INTO pokemon_stats VALUES (10062,6,110,0);
+
+INSERT INTO pokemon_stats VALUES (10063,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (10063,2,130,0);
+
+INSERT INTO pokemon_stats VALUES (10063,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (10063,4,160,3);
+
+INSERT INTO pokemon_stats VALUES (10063,5,120,0);
+
+INSERT INTO pokemon_stats VALUES (10063,6,110,0);
+
+INSERT INTO pokemon_stats VALUES (10064,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (10064,2,150,3);
+
+INSERT INTO pokemon_stats VALUES (10064,3,110,0);
+
+INSERT INTO pokemon_stats VALUES (10064,4,95,0);
+
+INSERT INTO pokemon_stats VALUES (10064,5,110,0);
+
+INSERT INTO pokemon_stats VALUES (10064,6,70,0);
+
+INSERT INTO pokemon_stats VALUES (10065,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (10065,2,110,0);
+
+INSERT INTO pokemon_stats VALUES (10065,3,75,0);
+
+INSERT INTO pokemon_stats VALUES (10065,4,145,0);
+
+INSERT INTO pokemon_stats VALUES (10065,5,85,0);
+
+INSERT INTO pokemon_stats VALUES (10065,6,145,3);
+
+INSERT INTO pokemon_stats VALUES (10066,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (10066,2,85,1);
+
+INSERT INTO pokemon_stats VALUES (10066,3,125,1);
+
+INSERT INTO pokemon_stats VALUES (10066,4,85,0);
+
+INSERT INTO pokemon_stats VALUES (10066,5,115,0);
+
+INSERT INTO pokemon_stats VALUES (10066,6,20,0);
+
+INSERT INTO pokemon_stats VALUES (10067,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (10067,2,110,0);
+
+INSERT INTO pokemon_stats VALUES (10067,3,110,0);
+
+INSERT INTO pokemon_stats VALUES (10067,4,110,0);
+
+INSERT INTO pokemon_stats VALUES (10067,5,105,2);
+
+INSERT INTO pokemon_stats VALUES (10067,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (10068,1,68,0);
+
+INSERT INTO pokemon_stats VALUES (10068,2,165,3);
+
+INSERT INTO pokemon_stats VALUES (10068,3,95,0);
+
+INSERT INTO pokemon_stats VALUES (10068,4,65,0);
+
+INSERT INTO pokemon_stats VALUES (10068,5,115,0);
+
+INSERT INTO pokemon_stats VALUES (10068,6,110,0);
+
+INSERT INTO pokemon_stats VALUES (10069,1,103,2);
+
+INSERT INTO pokemon_stats VALUES (10069,2,60,0);
+
+INSERT INTO pokemon_stats VALUES (10069,3,126,0);
+
+INSERT INTO pokemon_stats VALUES (10069,4,80,0);
+
+INSERT INTO pokemon_stats VALUES (10069,5,126,0);
+
+INSERT INTO pokemon_stats VALUES (10069,6,50,0);
+
+INSERT INTO pokemon_stats VALUES (10070,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (10070,2,140,2);
+
+INSERT INTO pokemon_stats VALUES (10070,3,70,0);
+
+INSERT INTO pokemon_stats VALUES (10070,4,110,0);
+
+INSERT INTO pokemon_stats VALUES (10070,5,65,0);
+
+INSERT INTO pokemon_stats VALUES (10070,6,105,0);
+
+INSERT INTO pokemon_stats VALUES (10071,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (10071,2,75,0);
+
+INSERT INTO pokemon_stats VALUES (10071,3,180,2);
+
+INSERT INTO pokemon_stats VALUES (10071,4,130,0);
+
+INSERT INTO pokemon_stats VALUES (10071,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (10071,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (10072,1,75,0);
+
+INSERT INTO pokemon_stats VALUES (10072,2,125,0);
+
+INSERT INTO pokemon_stats VALUES (10072,3,230,2);
+
+INSERT INTO pokemon_stats VALUES (10072,4,55,0);
+
+INSERT INTO pokemon_stats VALUES (10072,5,95,0);
+
+INSERT INTO pokemon_stats VALUES (10072,6,30,0);
+
+INSERT INTO pokemon_stats VALUES (10073,1,83,0);
+
+INSERT INTO pokemon_stats VALUES (10073,2,80,0);
+
+INSERT INTO pokemon_stats VALUES (10073,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (10073,4,135,0);
+
+INSERT INTO pokemon_stats VALUES (10073,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (10073,6,121,3);
+
+INSERT INTO pokemon_stats VALUES (10074,1,80,2);
+
+INSERT INTO pokemon_stats VALUES (10074,2,120,0);
+
+INSERT INTO pokemon_stats VALUES (10074,3,80,0);
+
+INSERT INTO pokemon_stats VALUES (10074,4,120,0);
+
+INSERT INTO pokemon_stats VALUES (10074,5,80,0);
+
+INSERT INTO pokemon_stats VALUES (10074,6,100,0);
+
+INSERT INTO pokemon_stats VALUES (10075,1,50,0);
+
+INSERT INTO pokemon_stats VALUES (10075,2,160,0);
+
+INSERT INTO pokemon_stats VALUES (10075,3,110,1);
+
+INSERT INTO pokemon_stats VALUES (10075,4,160,0);
+
+INSERT INTO pokemon_stats VALUES (10075,5,110,2);
+
+INSERT INTO pokemon_stats VALUES (10075,6,110,0);
+
+INSERT INTO pokemon_stats VALUES (10076,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (10076,2,145,0);
+
+INSERT INTO pokemon_stats VALUES (10076,3,150,3);
+
+INSERT INTO pokemon_stats VALUES (10076,4,105,0);
+
+INSERT INTO pokemon_stats VALUES (10076,5,110,0);
+
+INSERT INTO pokemon_stats VALUES (10076,6,110,0);
+
+INSERT INTO pokemon_stats VALUES (10077,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (10077,2,150,0);
+
+INSERT INTO pokemon_stats VALUES (10077,3,90,0);
+
+INSERT INTO pokemon_stats VALUES (10077,4,180,3);
+
+INSERT INTO pokemon_stats VALUES (10077,5,160,0);
+
+INSERT INTO pokemon_stats VALUES (10077,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (10078,1,100,0);
+
+INSERT INTO pokemon_stats VALUES (10078,2,180,3);
+
+INSERT INTO pokemon_stats VALUES (10078,3,160,0);
+
+INSERT INTO pokemon_stats VALUES (10078,4,150,0);
+
+INSERT INTO pokemon_stats VALUES (10078,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (10078,6,90,0);
+
+INSERT INTO pokemon_stats VALUES (10079,1,105,0);
+
+INSERT INTO pokemon_stats VALUES (10079,2,180,2);
+
+INSERT INTO pokemon_stats VALUES (10079,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (10079,4,180,1);
+
+INSERT INTO pokemon_stats VALUES (10079,5,100,0);
+
+INSERT INTO pokemon_stats VALUES (10079,6,115,0);
+
+INSERT INTO pokemon_stats VALUES (10080,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (10080,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (10080,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (10080,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (10080,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (10080,6,90,2);
+
+INSERT INTO pokemon_stats VALUES (10081,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (10081,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (10081,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (10081,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (10081,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (10081,6,90,2);
+
+INSERT INTO pokemon_stats VALUES (10082,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (10082,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (10082,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (10082,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (10082,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (10082,6,90,2);
+
+INSERT INTO pokemon_stats VALUES (10083,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (10083,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (10083,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (10083,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (10083,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (10083,6,90,2);
+
+INSERT INTO pokemon_stats VALUES (10084,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (10084,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (10084,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (10084,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (10084,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (10084,6,90,2);
+
+INSERT INTO pokemon_stats VALUES (10085,1,35,0);
+
+INSERT INTO pokemon_stats VALUES (10085,2,55,0);
+
+INSERT INTO pokemon_stats VALUES (10085,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (10085,4,50,0);
+
+INSERT INTO pokemon_stats VALUES (10085,5,50,0);
+
+INSERT INTO pokemon_stats VALUES (10085,6,90,2);
+
+INSERT INTO pokemon_stats VALUES (10086,1,80,0);
+
+INSERT INTO pokemon_stats VALUES (10086,2,160,0);
+
+INSERT INTO pokemon_stats VALUES (10086,3,60,0);
+
+INSERT INTO pokemon_stats VALUES (10086,4,170,3);
+
+INSERT INTO pokemon_stats VALUES (10086,5,130,0);
+
+INSERT INTO pokemon_stats VALUES (10086,6,80,0);
+
+INSERT INTO pokemon_stats VALUES (10087,1,70,0);
+
+INSERT INTO pokemon_stats VALUES (10087,2,120,1);
+
+INSERT INTO pokemon_stats VALUES (10087,3,100,0);
+
+INSERT INTO pokemon_stats VALUES (10087,4,145,1);
+
+INSERT INTO pokemon_stats VALUES (10087,5,105,0);
+
+INSERT INTO pokemon_stats VALUES (10087,6,20,0);
+
+INSERT INTO pokemon_stats VALUES (10088,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (10088,2,136,0);
+
+INSERT INTO pokemon_stats VALUES (10088,3,94,0);
+
+INSERT INTO pokemon_stats VALUES (10088,4,54,0);
+
+INSERT INTO pokemon_stats VALUES (10088,5,96,0);
+
+INSERT INTO pokemon_stats VALUES (10088,6,135,2);
+
+INSERT INTO pokemon_stats VALUES (10089,1,95,0);
+
+INSERT INTO pokemon_stats VALUES (10089,2,145,3);
+
+INSERT INTO pokemon_stats VALUES (10089,3,130,0);
+
+INSERT INTO pokemon_stats VALUES (10089,4,120,0);
+
+INSERT INTO pokemon_stats VALUES (10089,5,90,0);
+
+INSERT INTO pokemon_stats VALUES (10089,6,120,0);
+
+INSERT INTO pokemon_stats VALUES (10090,1,65,0);
+
+INSERT INTO pokemon_stats VALUES (10090,2,150,2);
+
+INSERT INTO pokemon_stats VALUES (10090,3,40,0);
+
+INSERT INTO pokemon_stats VALUES (10090,4,15,0);
+
+INSERT INTO pokemon_stats VALUES (10090,5,80,1);
+
+INSERT INTO pokemon_stats VALUES (10090,6,145,0);
+
+DROP TABLE pokemon_types;
+
+CREATE TABLE pokemon_types (
+    pokemon_id INT NOT NULL,
+    type_id INT NOT NULL,
+    slot INT NOT NULL,
+    PRIMARY KEY (pokemon_id)
+);
+
+INSERT INTO pokemon_types VALUES (1,12,1);
+
+INSERT INTO pokemon_types VALUES (1,4,2);
+
+INSERT INTO pokemon_types VALUES (2,12,1);
+
+INSERT INTO pokemon_types VALUES (2,4,2);
+
+INSERT INTO pokemon_types VALUES (3,12,1);
+
+INSERT INTO pokemon_types VALUES (3,4,2);
+
+INSERT INTO pokemon_types VALUES (4,10,1);
+
+INSERT INTO pokemon_types VALUES (5,10,1);
+
+INSERT INTO pokemon_types VALUES (6,10,1);
+
+INSERT INTO pokemon_types VALUES (6,3,2);
+
+INSERT INTO pokemon_types VALUES (7,11,1);
+
+INSERT INTO pokemon_types VALUES (8,11,1);
+
+INSERT INTO pokemon_types VALUES (9,11,1);
+
+INSERT INTO pokemon_types VALUES (10,7,1);
+
+INSERT INTO pokemon_types VALUES (11,7,1);
+
+INSERT INTO pokemon_types VALUES (12,7,1);
+
+INSERT INTO pokemon_types VALUES (12,3,2);
+
+INSERT INTO pokemon_types VALUES (13,7,1);
+
+INSERT INTO pokemon_types VALUES (13,4,2);
+
+INSERT INTO pokemon_types VALUES (14,7,1);
+
+INSERT INTO pokemon_types VALUES (14,4,2);
+
+INSERT INTO pokemon_types VALUES (15,7,1);
+
+INSERT INTO pokemon_types VALUES (15,4,2);
+
+INSERT INTO pokemon_types VALUES (16,1,1);
+
+INSERT INTO pokemon_types VALUES (16,3,2);
+
+INSERT INTO pokemon_types VALUES (17,1,1);
+
+INSERT INTO pokemon_types VALUES (17,3,2);
+
+INSERT INTO pokemon_types VALUES (18,1,1);
+
+INSERT INTO pokemon_types VALUES (18,3,2);
+
+INSERT INTO pokemon_types VALUES (19,1,1);
+
+INSERT INTO pokemon_types VALUES (20,1,1);
+
+INSERT INTO pokemon_types VALUES (21,1,1);
+
+INSERT INTO pokemon_types VALUES (21,3,2);
+
+INSERT INTO pokemon_types VALUES (22,1,1);
+
+INSERT INTO pokemon_types VALUES (22,3,2);
+
+INSERT INTO pokemon_types VALUES (23,4,1);
+
+INSERT INTO pokemon_types VALUES (24,4,1);
+
+INSERT INTO pokemon_types VALUES (25,13,1);
+
+INSERT INTO pokemon_types VALUES (26,13,1);
+
+INSERT INTO pokemon_types VALUES (27,5,1);
+
+INSERT INTO pokemon_types VALUES (28,5,1);
+
+INSERT INTO pokemon_types VALUES (29,4,1);
+
+INSERT INTO pokemon_types VALUES (30,4,1);
+
+INSERT INTO pokemon_types VALUES (31,4,1);
+
+INSERT INTO pokemon_types VALUES (31,5,2);
+
+INSERT INTO pokemon_types VALUES (32,4,1);
+
+INSERT INTO pokemon_types VALUES (33,4,1);
+
+INSERT INTO pokemon_types VALUES (34,4,1);
+
+INSERT INTO pokemon_types VALUES (34,5,2);
+
+INSERT INTO pokemon_types VALUES (35,18,1);
+
+INSERT INTO pokemon_types VALUES (36,18,1);
+
+INSERT INTO pokemon_types VALUES (37,10,1);
+
+INSERT INTO pokemon_types VALUES (38,10,1);
+
+INSERT INTO pokemon_types VALUES (39,1,1);
+
+INSERT INTO pokemon_types VALUES (39,18,2);
+
+INSERT INTO pokemon_types VALUES (40,1,1);
+
+INSERT INTO pokemon_types VALUES (40,18,2);
+
+INSERT INTO pokemon_types VALUES (41,4,1);
+
+INSERT INTO pokemon_types VALUES (41,3,2);
+
+INSERT INTO pokemon_types VALUES (42,4,1);
+
+INSERT INTO pokemon_types VALUES (42,3,2);
+
+INSERT INTO pokemon_types VALUES (43,12,1);
+
+INSERT INTO pokemon_types VALUES (43,4,2);
+
+INSERT INTO pokemon_types VALUES (44,12,1);
+
+INSERT INTO pokemon_types VALUES (44,4,2);
+
+INSERT INTO pokemon_types VALUES (45,12,1);
+
+INSERT INTO pokemon_types VALUES (45,4,2);
+
+INSERT INTO pokemon_types VALUES (46,7,1);
+
+INSERT INTO pokemon_types VALUES (46,12,2);
+
+INSERT INTO pokemon_types VALUES (47,7,1);
+
+INSERT INTO pokemon_types VALUES (47,12,2);
+
+INSERT INTO pokemon_types VALUES (48,7,1);
+
+INSERT INTO pokemon_types VALUES (48,4,2);
+
+INSERT INTO pokemon_types VALUES (49,7,1);
+
+INSERT INTO pokemon_types VALUES (49,4,2);
+
+INSERT INTO pokemon_types VALUES (50,5,1);
+
+INSERT INTO pokemon_types VALUES (51,5,1);
+
+INSERT INTO pokemon_types VALUES (52,1,1);
+
+INSERT INTO pokemon_types VALUES (53,1,1);
+
+INSERT INTO pokemon_types VALUES (54,11,1);
+
+INSERT INTO pokemon_types VALUES (55,11,1);
+
+INSERT INTO pokemon_types VALUES (56,2,1);
+
+INSERT INTO pokemon_types VALUES (57,2,1);
+
+INSERT INTO pokemon_types VALUES (58,10,1);
+
+INSERT INTO pokemon_types VALUES (59,10,1);
+
+INSERT INTO pokemon_types VALUES (60,11,1);
+
+INSERT INTO pokemon_types VALUES (61,11,1);
+
+INSERT INTO pokemon_types VALUES (62,11,1);
+
+INSERT INTO pokemon_types VALUES (62,2,2);
+
+INSERT INTO pokemon_types VALUES (63,14,1);
+
+INSERT INTO pokemon_types VALUES (64,14,1);
+
+INSERT INTO pokemon_types VALUES (65,14,1);
+
+INSERT INTO pokemon_types VALUES (66,2,1);
+
+INSERT INTO pokemon_types VALUES (67,2,1);
+
+INSERT INTO pokemon_types VALUES (68,2,1);
+
+INSERT INTO pokemon_types VALUES (69,12,1);
+
+INSERT INTO pokemon_types VALUES (69,4,2);
+
+INSERT INTO pokemon_types VALUES (70,12,1);
+
+INSERT INTO pokemon_types VALUES (70,4,2);
+
+INSERT INTO pokemon_types VALUES (71,12,1);
+
+INSERT INTO pokemon_types VALUES (71,4,2);
+
+INSERT INTO pokemon_types VALUES (72,11,1);
+
+INSERT INTO pokemon_types VALUES (72,4,2);
+
+INSERT INTO pokemon_types VALUES (73,11,1);
+
+INSERT INTO pokemon_types VALUES (73,4,2);
+
+INSERT INTO pokemon_types VALUES (74,6,1);
+
+INSERT INTO pokemon_types VALUES (74,5,2);
+
+INSERT INTO pokemon_types VALUES (75,6,1);
+
+INSERT INTO pokemon_types VALUES (75,5,2);
+
+INSERT INTO pokemon_types VALUES (76,6,1);
+
+INSERT INTO pokemon_types VALUES (76,5,2);
+
+INSERT INTO pokemon_types VALUES (77,10,1);
+
+INSERT INTO pokemon_types VALUES (78,10,1);
+
+INSERT INTO pokemon_types VALUES (79,11,1);
+
+INSERT INTO pokemon_types VALUES (79,14,2);
+
+INSERT INTO pokemon_types VALUES (80,11,1);
+
+INSERT INTO pokemon_types VALUES (80,14,2);
+
+INSERT INTO pokemon_types VALUES (81,13,1);
+
+INSERT INTO pokemon_types VALUES (81,9,2);
+
+INSERT INTO pokemon_types VALUES (82,13,1);
+
+INSERT INTO pokemon_types VALUES (82,9,2);
+
+INSERT INTO pokemon_types VALUES (83,1,1);
+
+INSERT INTO pokemon_types VALUES (83,3,2);
+
+INSERT INTO pokemon_types VALUES (84,1,1);
+
+INSERT INTO pokemon_types VALUES (84,3,2);
+
+INSERT INTO pokemon_types VALUES (85,1,1);
+
+INSERT INTO pokemon_types VALUES (85,3,2);
+
+INSERT INTO pokemon_types VALUES (86,11,1);
+
+INSERT INTO pokemon_types VALUES (87,11,1);
+
+INSERT INTO pokemon_types VALUES (87,15,2);
+
+INSERT INTO pokemon_types VALUES (88,4,1);
+
+INSERT INTO pokemon_types VALUES (89,4,1);
+
+INSERT INTO pokemon_types VALUES (90,11,1);
+
+INSERT INTO pokemon_types VALUES (91,11,1);
+
+INSERT INTO pokemon_types VALUES (91,15,2);
+
+INSERT INTO pokemon_types VALUES (92,8,1);
+
+INSERT INTO pokemon_types VALUES (92,4,2);
+
+INSERT INTO pokemon_types VALUES (93,8,1);
+
+INSERT INTO pokemon_types VALUES (93,4,2);
+
+INSERT INTO pokemon_types VALUES (94,8,1);
+
+INSERT INTO pokemon_types VALUES (94,4,2);
+
+INSERT INTO pokemon_types VALUES (95,6,1);
+
+INSERT INTO pokemon_types VALUES (95,5,2);
+
+INSERT INTO pokemon_types VALUES (96,14,1);
+
+INSERT INTO pokemon_types VALUES (97,14,1);
+
+INSERT INTO pokemon_types VALUES (98,11,1);
+
+INSERT INTO pokemon_types VALUES (99,11,1);
+
+INSERT INTO pokemon_types VALUES (100,13,1);
+
+INSERT INTO pokemon_types VALUES (101,13,1);
+
+INSERT INTO pokemon_types VALUES (102,12,1);
+
+INSERT INTO pokemon_types VALUES (102,14,2);
+
+INSERT INTO pokemon_types VALUES (103,12,1);
+
+INSERT INTO pokemon_types VALUES (103,14,2);
+
+INSERT INTO pokemon_types VALUES (104,5,1);
+
+INSERT INTO pokemon_types VALUES (105,5,1);
+
+INSERT INTO pokemon_types VALUES (106,2,1);
+
+INSERT INTO pokemon_types VALUES (107,2,1);
+
+INSERT INTO pokemon_types VALUES (108,1,1);
+
+INSERT INTO pokemon_types VALUES (109,4,1);
+
+INSERT INTO pokemon_types VALUES (110,4,1);
+
+INSERT INTO pokemon_types VALUES (111,5,1);
+
+INSERT INTO pokemon_types VALUES (111,6,2);
+
+INSERT INTO pokemon_types VALUES (112,5,1);
+
+INSERT INTO pokemon_types VALUES (112,6,2);
+
+INSERT INTO pokemon_types VALUES (113,1,1);
+
+INSERT INTO pokemon_types VALUES (114,12,1);
+
+INSERT INTO pokemon_types VALUES (115,1,1);
+
+INSERT INTO pokemon_types VALUES (116,11,1);
+
+INSERT INTO pokemon_types VALUES (117,11,1);
+
+INSERT INTO pokemon_types VALUES (118,11,1);
+
+INSERT INTO pokemon_types VALUES (119,11,1);
+
+INSERT INTO pokemon_types VALUES (120,11,1);
+
+INSERT INTO pokemon_types VALUES (121,11,1);
+
+INSERT INTO pokemon_types VALUES (121,14,2);
+
+INSERT INTO pokemon_types VALUES (122,14,1);
+
+INSERT INTO pokemon_types VALUES (122,18,2);
+
+INSERT INTO pokemon_types VALUES (123,7,1);
+
+INSERT INTO pokemon_types VALUES (123,3,2);
+
+INSERT INTO pokemon_types VALUES (124,15,1);
+
+INSERT INTO pokemon_types VALUES (124,14,2);
+
+INSERT INTO pokemon_types VALUES (125,13,1);
+
+INSERT INTO pokemon_types VALUES (126,10,1);
+
+INSERT INTO pokemon_types VALUES (127,7,1);
+
+INSERT INTO pokemon_types VALUES (128,1,1);
+
+INSERT INTO pokemon_types VALUES (129,11,1);
+
+INSERT INTO pokemon_types VALUES (130,11,1);
+
+INSERT INTO pokemon_types VALUES (130,3,2);
+
+INSERT INTO pokemon_types VALUES (131,11,1);
+
+INSERT INTO pokemon_types VALUES (131,15,2);
+
+INSERT INTO pokemon_types VALUES (132,1,1);
+
+INSERT INTO pokemon_types VALUES (133,1,1);
+
+INSERT INTO pokemon_types VALUES (134,11,1);
+
+INSERT INTO pokemon_types VALUES (135,13,1);
+
+INSERT INTO pokemon_types VALUES (136,10,1);
+
+INSERT INTO pokemon_types VALUES (137,1,1);
+
+INSERT INTO pokemon_types VALUES (138,6,1);
+
+INSERT INTO pokemon_types VALUES (138,11,2);
+
+INSERT INTO pokemon_types VALUES (139,6,1);
+
+INSERT INTO pokemon_types VALUES (139,11,2);
+
+INSERT INTO pokemon_types VALUES (140,6,1);
+
+INSERT INTO pokemon_types VALUES (140,11,2);
+
+INSERT INTO pokemon_types VALUES (141,6,1);
+
+INSERT INTO pokemon_types VALUES (141,11,2);
+
+INSERT INTO pokemon_types VALUES (142,6,1);
+
+INSERT INTO pokemon_types VALUES (142,3,2);
+
+INSERT INTO pokemon_types VALUES (143,1,1);
+
+INSERT INTO pokemon_types VALUES (144,15,1);
+
+INSERT INTO pokemon_types VALUES (144,3,2);
+
+INSERT INTO pokemon_types VALUES (145,13,1);
+
+INSERT INTO pokemon_types VALUES (145,3,2);
+
+INSERT INTO pokemon_types VALUES (146,10,1);
+
+INSERT INTO pokemon_types VALUES (146,3,2);
+
+INSERT INTO pokemon_types VALUES (147,16,1);
+
+INSERT INTO pokemon_types VALUES (148,16,1);
+
+INSERT INTO pokemon_types VALUES (149,16,1);
+
+INSERT INTO pokemon_types VALUES (149,3,2);
+
+INSERT INTO pokemon_types VALUES (150,14,1);
+
+INSERT INTO pokemon_types VALUES (151,14,1);
+
+INSERT INTO pokemon_types VALUES (152,12,1);
+
+INSERT INTO pokemon_types VALUES (153,12,1);
+
+INSERT INTO pokemon_types VALUES (154,12,1);
+
+INSERT INTO pokemon_types VALUES (155,10,1);
+
+INSERT INTO pokemon_types VALUES (156,10,1);
+
+INSERT INTO pokemon_types VALUES (157,10,1);
+
+INSERT INTO pokemon_types VALUES (158,11,1);
+
+INSERT INTO pokemon_types VALUES (159,11,1);
+
+INSERT INTO pokemon_types VALUES (160,11,1);
+
+INSERT INTO pokemon_types VALUES (161,1,1);
+
+INSERT INTO pokemon_types VALUES (162,1,1);
+
+INSERT INTO pokemon_types VALUES (163,1,1);
+
+INSERT INTO pokemon_types VALUES (163,3,2);
+
+INSERT INTO pokemon_types VALUES (164,1,1);
+
+INSERT INTO pokemon_types VALUES (164,3,2);
+
+INSERT INTO pokemon_types VALUES (165,7,1);
+
+INSERT INTO pokemon_types VALUES (165,3,2);
+
+INSERT INTO pokemon_types VALUES (166,7,1);
+
+INSERT INTO pokemon_types VALUES (166,3,2);
+
+INSERT INTO pokemon_types VALUES (167,7,1);
+
+INSERT INTO pokemon_types VALUES (167,4,2);
+
+INSERT INTO pokemon_types VALUES (168,7,1);
+
+INSERT INTO pokemon_types VALUES (168,4,2);
+
+INSERT INTO pokemon_types VALUES (169,4,1);
+
+INSERT INTO pokemon_types VALUES (169,3,2);
+
+INSERT INTO pokemon_types VALUES (170,11,1);
+
+INSERT INTO pokemon_types VALUES (170,13,2);
+
+INSERT INTO pokemon_types VALUES (171,11,1);
+
+INSERT INTO pokemon_types VALUES (171,13,2);
+
+INSERT INTO pokemon_types VALUES (172,13,1);
+
+INSERT INTO pokemon_types VALUES (173,18,1);
+
+INSERT INTO pokemon_types VALUES (174,1,1);
+
+INSERT INTO pokemon_types VALUES (174,18,2);
+
+INSERT INTO pokemon_types VALUES (175,18,1);
+
+INSERT INTO pokemon_types VALUES (176,18,1);
+
+INSERT INTO pokemon_types VALUES (176,3,2);
+
+INSERT INTO pokemon_types VALUES (177,14,1);
+
+INSERT INTO pokemon_types VALUES (177,3,2);
+
+INSERT INTO pokemon_types VALUES (178,14,1);
+
+INSERT INTO pokemon_types VALUES (178,3,2);
+
+INSERT INTO pokemon_types VALUES (179,13,1);
+
+INSERT INTO pokemon_types VALUES (180,13,1);
+
+INSERT INTO pokemon_types VALUES (181,13,1);
+
+INSERT INTO pokemon_types VALUES (182,12,1);
+
+INSERT INTO pokemon_types VALUES (183,11,1);
+
+INSERT INTO pokemon_types VALUES (183,18,2);
+
+INSERT INTO pokemon_types VALUES (184,11,1);
+
+INSERT INTO pokemon_types VALUES (184,18,2);
+
+INSERT INTO pokemon_types VALUES (185,6,1);
+
+INSERT INTO pokemon_types VALUES (186,11,1);
+
+INSERT INTO pokemon_types VALUES (187,12,1);
+
+INSERT INTO pokemon_types VALUES (187,3,2);
+
+INSERT INTO pokemon_types VALUES (188,12,1);
+
+INSERT INTO pokemon_types VALUES (188,3,2);
+
+INSERT INTO pokemon_types VALUES (189,12,1);
+
+INSERT INTO pokemon_types VALUES (189,3,2);
+
+INSERT INTO pokemon_types VALUES (190,1,1);
+
+INSERT INTO pokemon_types VALUES (191,12,1);
+
+INSERT INTO pokemon_types VALUES (192,12,1);
+
+INSERT INTO pokemon_types VALUES (193,7,1);
+
+INSERT INTO pokemon_types VALUES (193,3,2);
+
+INSERT INTO pokemon_types VALUES (194,11,1);
+
+INSERT INTO pokemon_types VALUES (194,5,2);
+
+INSERT INTO pokemon_types VALUES (195,11,1);
+
+INSERT INTO pokemon_types VALUES (195,5,2);
+
+INSERT INTO pokemon_types VALUES (196,14,1);
+
+INSERT INTO pokemon_types VALUES (197,17,1);
+
+INSERT INTO pokemon_types VALUES (198,17,1);
+
+INSERT INTO pokemon_types VALUES (198,3,2);
+
+INSERT INTO pokemon_types VALUES (199,11,1);
+
+INSERT INTO pokemon_types VALUES (199,14,2);
+
+INSERT INTO pokemon_types VALUES (200,8,1);
+
+INSERT INTO pokemon_types VALUES (201,14,1);
+
+INSERT INTO pokemon_types VALUES (202,14,1);
+
+INSERT INTO pokemon_types VALUES (203,1,1);
+
+INSERT INTO pokemon_types VALUES (203,14,2);
+
+INSERT INTO pokemon_types VALUES (204,7,1);
+
+INSERT INTO pokemon_types VALUES (205,7,1);
+
+INSERT INTO pokemon_types VALUES (205,9,2);
+
+INSERT INTO pokemon_types VALUES (206,1,1);
+
+INSERT INTO pokemon_types VALUES (207,5,1);
+
+INSERT INTO pokemon_types VALUES (207,3,2);
+
+INSERT INTO pokemon_types VALUES (208,9,1);
+
+INSERT INTO pokemon_types VALUES (208,5,2);
+
+INSERT INTO pokemon_types VALUES (209,18,1);
+
+INSERT INTO pokemon_types VALUES (210,18,1);
+
+INSERT INTO pokemon_types VALUES (211,11,1);
+
+INSERT INTO pokemon_types VALUES (211,4,2);
+
+INSERT INTO pokemon_types VALUES (212,7,1);
+
+INSERT INTO pokemon_types VALUES (212,9,2);
+
+INSERT INTO pokemon_types VALUES (213,7,1);
+
+INSERT INTO pokemon_types VALUES (213,6,2);
+
+INSERT INTO pokemon_types VALUES (214,7,1);
+
+INSERT INTO pokemon_types VALUES (214,2,2);
+
+INSERT INTO pokemon_types VALUES (215,17,1);
+
+INSERT INTO pokemon_types VALUES (215,15,2);
+
+INSERT INTO pokemon_types VALUES (216,1,1);
+
+INSERT INTO pokemon_types VALUES (217,1,1);
+
+INSERT INTO pokemon_types VALUES (218,10,1);
+
+INSERT INTO pokemon_types VALUES (219,10,1);
+
+INSERT INTO pokemon_types VALUES (219,6,2);
+
+INSERT INTO pokemon_types VALUES (220,15,1);
+
+INSERT INTO pokemon_types VALUES (220,5,2);
+
+INSERT INTO pokemon_types VALUES (221,15,1);
+
+INSERT INTO pokemon_types VALUES (221,5,2);
+
+INSERT INTO pokemon_types VALUES (222,11,1);
+
+INSERT INTO pokemon_types VALUES (222,6,2);
+
+INSERT INTO pokemon_types VALUES (223,11,1);
+
+INSERT INTO pokemon_types VALUES (224,11,1);
+
+INSERT INTO pokemon_types VALUES (225,15,1);
+
+INSERT INTO pokemon_types VALUES (225,3,2);
+
+INSERT INTO pokemon_types VALUES (226,11,1);
+
+INSERT INTO pokemon_types VALUES (226,3,2);
+
+INSERT INTO pokemon_types VALUES (227,9,1);
+
+INSERT INTO pokemon_types VALUES (227,3,2);
+
+INSERT INTO pokemon_types VALUES (228,17,1);
+
+INSERT INTO pokemon_types VALUES (228,10,2);
+
+INSERT INTO pokemon_types VALUES (229,17,1);
+
+INSERT INTO pokemon_types VALUES (229,10,2);
+
+INSERT INTO pokemon_types VALUES (230,11,1);
+
+INSERT INTO pokemon_types VALUES (230,16,2);
+
+INSERT INTO pokemon_types VALUES (231,5,1);
+
+INSERT INTO pokemon_types VALUES (232,5,1);
+
+INSERT INTO pokemon_types VALUES (233,1,1);
+
+INSERT INTO pokemon_types VALUES (234,1,1);
+
+INSERT INTO pokemon_types VALUES (235,1,1);
+
+INSERT INTO pokemon_types VALUES (236,2,1);
+
+INSERT INTO pokemon_types VALUES (237,2,1);
+
+INSERT INTO pokemon_types VALUES (238,15,1);
+
+INSERT INTO pokemon_types VALUES (238,14,2);
+
+INSERT INTO pokemon_types VALUES (239,13,1);
+
+INSERT INTO pokemon_types VALUES (240,10,1);
+
+INSERT INTO pokemon_types VALUES (241,1,1);
+
+INSERT INTO pokemon_types VALUES (242,1,1);
+
+INSERT INTO pokemon_types VALUES (243,13,1);
+
+INSERT INTO pokemon_types VALUES (244,10,1);
+
+INSERT INTO pokemon_types VALUES (245,11,1);
+
+INSERT INTO pokemon_types VALUES (246,6,1);
+
+INSERT INTO pokemon_types VALUES (246,5,2);
+
+INSERT INTO pokemon_types VALUES (247,6,1);
+
+INSERT INTO pokemon_types VALUES (247,5,2);
+
+INSERT INTO pokemon_types VALUES (248,6,1);
+
+INSERT INTO pokemon_types VALUES (248,17,2);
+
+INSERT INTO pokemon_types VALUES (249,14,1);
+
+INSERT INTO pokemon_types VALUES (249,3,2);
+
+INSERT INTO pokemon_types VALUES (250,10,1);
+
+INSERT INTO pokemon_types VALUES (250,3,2);
+
+INSERT INTO pokemon_types VALUES (251,14,1);
+
+INSERT INTO pokemon_types VALUES (251,12,2);
+
+INSERT INTO pokemon_types VALUES (252,12,1);
+
+INSERT INTO pokemon_types VALUES (253,12,1);
+
+INSERT INTO pokemon_types VALUES (254,12,1);
+
+INSERT INTO pokemon_types VALUES (255,10,1);
+
+INSERT INTO pokemon_types VALUES (256,10,1);
+
+INSERT INTO pokemon_types VALUES (256,2,2);
+
+INSERT INTO pokemon_types VALUES (257,10,1);
+
+INSERT INTO pokemon_types VALUES (257,2,2);
+
+INSERT INTO pokemon_types VALUES (258,11,1);
+
+INSERT INTO pokemon_types VALUES (259,11,1);
+
+INSERT INTO pokemon_types VALUES (259,5,2);
+
+INSERT INTO pokemon_types VALUES (260,11,1);
+
+INSERT INTO pokemon_types VALUES (260,5,2);
+
+INSERT INTO pokemon_types VALUES (261,17,1);
+
+INSERT INTO pokemon_types VALUES (262,17,1);
+
+INSERT INTO pokemon_types VALUES (263,1,1);
+
+INSERT INTO pokemon_types VALUES (264,1,1);
+
+INSERT INTO pokemon_types VALUES (265,7,1);
+
+INSERT INTO pokemon_types VALUES (266,7,1);
+
+INSERT INTO pokemon_types VALUES (267,7,1);
+
+INSERT INTO pokemon_types VALUES (267,3,2);
+
+INSERT INTO pokemon_types VALUES (268,7,1);
+
+INSERT INTO pokemon_types VALUES (269,7,1);
+
+INSERT INTO pokemon_types VALUES (269,4,2);
+
+INSERT INTO pokemon_types VALUES (270,11,1);
+
+INSERT INTO pokemon_types VALUES (270,12,2);
+
+INSERT INTO pokemon_types VALUES (271,11,1);
+
+INSERT INTO pokemon_types VALUES (271,12,2);
+
+INSERT INTO pokemon_types VALUES (272,11,1);
+
+INSERT INTO pokemon_types VALUES (272,12,2);
+
+INSERT INTO pokemon_types VALUES (273,12,1);
+
+INSERT INTO pokemon_types VALUES (274,12,1);
+
+INSERT INTO pokemon_types VALUES (274,17,2);
+
+INSERT INTO pokemon_types VALUES (275,12,1);
+
+INSERT INTO pokemon_types VALUES (275,17,2);
+
+INSERT INTO pokemon_types VALUES (276,1,1);
+
+INSERT INTO pokemon_types VALUES (276,3,2);
+
+INSERT INTO pokemon_types VALUES (277,1,1);
+
+INSERT INTO pokemon_types VALUES (277,3,2);
+
+INSERT INTO pokemon_types VALUES (278,11,1);
+
+INSERT INTO pokemon_types VALUES (278,3,2);
+
+INSERT INTO pokemon_types VALUES (279,11,1);
+
+INSERT INTO pokemon_types VALUES (279,3,2);
+
+INSERT INTO pokemon_types VALUES (280,14,1);
+
+INSERT INTO pokemon_types VALUES (280,18,2);
+
+INSERT INTO pokemon_types VALUES (281,14,1);
+
+INSERT INTO pokemon_types VALUES (281,18,2);
+
+INSERT INTO pokemon_types VALUES (282,14,1);
+
+INSERT INTO pokemon_types VALUES (282,18,2);
+
+INSERT INTO pokemon_types VALUES (283,7,1);
+
+INSERT INTO pokemon_types VALUES (283,11,2);
+
+INSERT INTO pokemon_types VALUES (284,7,1);
+
+INSERT INTO pokemon_types VALUES (284,3,2);
+
+INSERT INTO pokemon_types VALUES (285,12,1);
+
+INSERT INTO pokemon_types VALUES (286,12,1);
+
+INSERT INTO pokemon_types VALUES (286,2,2);
+
+INSERT INTO pokemon_types VALUES (287,1,1);
+
+INSERT INTO pokemon_types VALUES (288,1,1);
+
+INSERT INTO pokemon_types VALUES (289,1,1);
+
+INSERT INTO pokemon_types VALUES (290,7,1);
+
+INSERT INTO pokemon_types VALUES (290,5,2);
+
+INSERT INTO pokemon_types VALUES (291,7,1);
+
+INSERT INTO pokemon_types VALUES (291,3,2);
+
+INSERT INTO pokemon_types VALUES (292,7,1);
+
+INSERT INTO pokemon_types VALUES (292,8,2);
+
+INSERT INTO pokemon_types VALUES (293,1,1);
+
+INSERT INTO pokemon_types VALUES (294,1,1);
+
+INSERT INTO pokemon_types VALUES (295,1,1);
+
+INSERT INTO pokemon_types VALUES (296,2,1);
+
+INSERT INTO pokemon_types VALUES (297,2,1);
+
+INSERT INTO pokemon_types VALUES (298,1,1);
+
+INSERT INTO pokemon_types VALUES (298,18,2);
+
+INSERT INTO pokemon_types VALUES (299,6,1);
+
+INSERT INTO pokemon_types VALUES (300,1,1);
+
+INSERT INTO pokemon_types VALUES (301,1,1);
+
+INSERT INTO pokemon_types VALUES (302,17,1);
+
+INSERT INTO pokemon_types VALUES (302,8,2);
+
+INSERT INTO pokemon_types VALUES (303,9,1);
+
+INSERT INTO pokemon_types VALUES (303,18,2);
+
+INSERT INTO pokemon_types VALUES (304,9,1);
+
+INSERT INTO pokemon_types VALUES (304,6,2);
+
+INSERT INTO pokemon_types VALUES (305,9,1);
+
+INSERT INTO pokemon_types VALUES (305,6,2);
+
+INSERT INTO pokemon_types VALUES (306,9,1);
+
+INSERT INTO pokemon_types VALUES (306,6,2);
+
+INSERT INTO pokemon_types VALUES (307,2,1);
+
+INSERT INTO pokemon_types VALUES (307,14,2);
+
+INSERT INTO pokemon_types VALUES (308,2,1);
+
+INSERT INTO pokemon_types VALUES (308,14,2);
+
+INSERT INTO pokemon_types VALUES (309,13,1);
+
+INSERT INTO pokemon_types VALUES (310,13,1);
+
+INSERT INTO pokemon_types VALUES (311,13,1);
+
+INSERT INTO pokemon_types VALUES (312,13,1);
+
+INSERT INTO pokemon_types VALUES (313,7,1);
+
+INSERT INTO pokemon_types VALUES (314,7,1);
+
+INSERT INTO pokemon_types VALUES (315,12,1);
+
+INSERT INTO pokemon_types VALUES (315,4,2);
+
+INSERT INTO pokemon_types VALUES (316,4,1);
+
+INSERT INTO pokemon_types VALUES (317,4,1);
+
+INSERT INTO pokemon_types VALUES (318,11,1);
+
+INSERT INTO pokemon_types VALUES (318,17,2);
+
+INSERT INTO pokemon_types VALUES (319,11,1);
+
+INSERT INTO pokemon_types VALUES (319,17,2);
+
+INSERT INTO pokemon_types VALUES (320,11,1);
+
+INSERT INTO pokemon_types VALUES (321,11,1);
+
+INSERT INTO pokemon_types VALUES (322,10,1);
+
+INSERT INTO pokemon_types VALUES (322,5,2);
+
+INSERT INTO pokemon_types VALUES (323,10,1);
+
+INSERT INTO pokemon_types VALUES (323,5,2);
+
+INSERT INTO pokemon_types VALUES (324,10,1);
+
+INSERT INTO pokemon_types VALUES (325,14,1);
+
+INSERT INTO pokemon_types VALUES (326,14,1);
+
+INSERT INTO pokemon_types VALUES (327,1,1);
+
+INSERT INTO pokemon_types VALUES (328,5,1);
+
+INSERT INTO pokemon_types VALUES (329,5,1);
+
+INSERT INTO pokemon_types VALUES (329,16,2);
+
+INSERT INTO pokemon_types VALUES (330,5,1);
+
+INSERT INTO pokemon_types VALUES (330,16,2);
+
+INSERT INTO pokemon_types VALUES (331,12,1);
+
+INSERT INTO pokemon_types VALUES (332,12,1);
+
+INSERT INTO pokemon_types VALUES (332,17,2);
+
+INSERT INTO pokemon_types VALUES (333,1,1);
+
+INSERT INTO pokemon_types VALUES (333,3,2);
+
+INSERT INTO pokemon_types VALUES (334,16,1);
+
+INSERT INTO pokemon_types VALUES (334,3,2);
+
+INSERT INTO pokemon_types VALUES (335,1,1);
+
+INSERT INTO pokemon_types VALUES (336,4,1);
+
+INSERT INTO pokemon_types VALUES (337,6,1);
+
+INSERT INTO pokemon_types VALUES (337,14,2);
+
+INSERT INTO pokemon_types VALUES (338,6,1);
+
+INSERT INTO pokemon_types VALUES (338,14,2);
+
+INSERT INTO pokemon_types VALUES (339,11,1);
+
+INSERT INTO pokemon_types VALUES (339,5,2);
+
+INSERT INTO pokemon_types VALUES (340,11,1);
+
+INSERT INTO pokemon_types VALUES (340,5,2);
+
+INSERT INTO pokemon_types VALUES (341,11,1);
+
+INSERT INTO pokemon_types VALUES (342,11,1);
+
+INSERT INTO pokemon_types VALUES (342,17,2);
+
+INSERT INTO pokemon_types VALUES (343,5,1);
+
+INSERT INTO pokemon_types VALUES (343,14,2);
+
+INSERT INTO pokemon_types VALUES (344,5,1);
+
+INSERT INTO pokemon_types VALUES (344,14,2);
+
+INSERT INTO pokemon_types VALUES (345,6,1);
+
+INSERT INTO pokemon_types VALUES (345,12,2);
+
+INSERT INTO pokemon_types VALUES (346,6,1);
+
+INSERT INTO pokemon_types VALUES (346,12,2);
+
+INSERT INTO pokemon_types VALUES (347,6,1);
+
+INSERT INTO pokemon_types VALUES (347,7,2);
+
+INSERT INTO pokemon_types VALUES (348,6,1);
+
+INSERT INTO pokemon_types VALUES (348,7,2);
+
+INSERT INTO pokemon_types VALUES (349,11,1);
+
+INSERT INTO pokemon_types VALUES (350,11,1);
+
+INSERT INTO pokemon_types VALUES (351,1,1);
+
+INSERT INTO pokemon_types VALUES (352,1,1);
+
+INSERT INTO pokemon_types VALUES (353,8,1);
+
+INSERT INTO pokemon_types VALUES (354,8,1);
+
+INSERT INTO pokemon_types VALUES (355,8,1);
+
+INSERT INTO pokemon_types VALUES (356,8,1);
+
+INSERT INTO pokemon_types VALUES (357,12,1);
+
+INSERT INTO pokemon_types VALUES (357,3,2);
+
+INSERT INTO pokemon_types VALUES (358,14,1);
+
+INSERT INTO pokemon_types VALUES (359,17,1);
+
+INSERT INTO pokemon_types VALUES (360,14,1);
+
+INSERT INTO pokemon_types VALUES (361,15,1);
+
+INSERT INTO pokemon_types VALUES (362,15,1);
+
+INSERT INTO pokemon_types VALUES (363,15,1);
+
+INSERT INTO pokemon_types VALUES (363,11,2);
+
+INSERT INTO pokemon_types VALUES (364,15,1);
+
+INSERT INTO pokemon_types VALUES (364,11,2);
+
+INSERT INTO pokemon_types VALUES (365,15,1);
+
+INSERT INTO pokemon_types VALUES (365,11,2);
+
+INSERT INTO pokemon_types VALUES (366,11,1);
+
+INSERT INTO pokemon_types VALUES (367,11,1);
+
+INSERT INTO pokemon_types VALUES (368,11,1);
+
+INSERT INTO pokemon_types VALUES (369,11,1);
+
+INSERT INTO pokemon_types VALUES (369,6,2);
+
+INSERT INTO pokemon_types VALUES (370,11,1);
+
+INSERT INTO pokemon_types VALUES (371,16,1);
+
+INSERT INTO pokemon_types VALUES (372,16,1);
+
+INSERT INTO pokemon_types VALUES (373,16,1);
+
+INSERT INTO pokemon_types VALUES (373,3,2);
+
+INSERT INTO pokemon_types VALUES (374,9,1);
+
+INSERT INTO pokemon_types VALUES (374,14,2);
+
+INSERT INTO pokemon_types VALUES (375,9,1);
+
+INSERT INTO pokemon_types VALUES (375,14,2);
+
+INSERT INTO pokemon_types VALUES (376,9,1);
+
+INSERT INTO pokemon_types VALUES (376,14,2);
+
+INSERT INTO pokemon_types VALUES (377,6,1);
+
+INSERT INTO pokemon_types VALUES (378,15,1);
+
+INSERT INTO pokemon_types VALUES (379,9,1);
+
+INSERT INTO pokemon_types VALUES (380,16,1);
+
+INSERT INTO pokemon_types VALUES (380,14,2);
+
+INSERT INTO pokemon_types VALUES (381,16,1);
+
+INSERT INTO pokemon_types VALUES (381,14,2);
+
+INSERT INTO pokemon_types VALUES (382,11,1);
+
+INSERT INTO pokemon_types VALUES (383,5,1);
+
+INSERT INTO pokemon_types VALUES (384,16,1);
+
+INSERT INTO pokemon_types VALUES (384,3,2);
+
+INSERT INTO pokemon_types VALUES (385,9,1);
+
+INSERT INTO pokemon_types VALUES (385,14,2);
+
+INSERT INTO pokemon_types VALUES (386,14,1);
+
+INSERT INTO pokemon_types VALUES (387,12,1);
+
+INSERT INTO pokemon_types VALUES (388,12,1);
+
+INSERT INTO pokemon_types VALUES (389,12,1);
+
+INSERT INTO pokemon_types VALUES (389,5,2);
+
+INSERT INTO pokemon_types VALUES (390,10,1);
+
+INSERT INTO pokemon_types VALUES (391,10,1);
+
+INSERT INTO pokemon_types VALUES (391,2,2);
+
+INSERT INTO pokemon_types VALUES (392,10,1);
+
+INSERT INTO pokemon_types VALUES (392,2,2);
+
+INSERT INTO pokemon_types VALUES (393,11,1);
+
+INSERT INTO pokemon_types VALUES (394,11,1);
+
+INSERT INTO pokemon_types VALUES (395,11,1);
+
+INSERT INTO pokemon_types VALUES (395,9,2);
+
+INSERT INTO pokemon_types VALUES (396,1,1);
+
+INSERT INTO pokemon_types VALUES (396,3,2);
+
+INSERT INTO pokemon_types VALUES (397,1,1);
+
+INSERT INTO pokemon_types VALUES (397,3,2);
+
+INSERT INTO pokemon_types VALUES (398,1,1);
+
+INSERT INTO pokemon_types VALUES (398,3,2);
+
+INSERT INTO pokemon_types VALUES (399,1,1);
+
+INSERT INTO pokemon_types VALUES (400,1,1);
+
+INSERT INTO pokemon_types VALUES (400,11,2);
+
+INSERT INTO pokemon_types VALUES (401,7,1);
+
+INSERT INTO pokemon_types VALUES (402,7,1);
+
+INSERT INTO pokemon_types VALUES (403,13,1);
+
+INSERT INTO pokemon_types VALUES (404,13,1);
+
+INSERT INTO pokemon_types VALUES (405,13,1);
+
+INSERT INTO pokemon_types VALUES (406,12,1);
+
+INSERT INTO pokemon_types VALUES (406,4,2);
+
+INSERT INTO pokemon_types VALUES (407,12,1);
+
+INSERT INTO pokemon_types VALUES (407,4,2);
+
+INSERT INTO pokemon_types VALUES (408,6,1);
+
+INSERT INTO pokemon_types VALUES (409,6,1);
+
+INSERT INTO pokemon_types VALUES (410,6,1);
+
+INSERT INTO pokemon_types VALUES (410,9,2);
+
+INSERT INTO pokemon_types VALUES (411,6,1);
+
+INSERT INTO pokemon_types VALUES (411,9,2);
+
+INSERT INTO pokemon_types VALUES (412,7,1);
+
+INSERT INTO pokemon_types VALUES (413,7,1);
+
+INSERT INTO pokemon_types VALUES (413,12,2);
+
+INSERT INTO pokemon_types VALUES (414,7,1);
+
+INSERT INTO pokemon_types VALUES (414,3,2);
+
+INSERT INTO pokemon_types VALUES (415,7,1);
+
+INSERT INTO pokemon_types VALUES (415,3,2);
+
+INSERT INTO pokemon_types VALUES (416,7,1);
+
+INSERT INTO pokemon_types VALUES (416,3,2);
+
+INSERT INTO pokemon_types VALUES (417,13,1);
+
+INSERT INTO pokemon_types VALUES (418,11,1);
+
+INSERT INTO pokemon_types VALUES (419,11,1);
+
+INSERT INTO pokemon_types VALUES (420,12,1);
+
+INSERT INTO pokemon_types VALUES (421,12,1);
+
+INSERT INTO pokemon_types VALUES (422,11,1);
+
+INSERT INTO pokemon_types VALUES (423,11,1);
+
+INSERT INTO pokemon_types VALUES (423,5,2);
+
+INSERT INTO pokemon_types VALUES (424,1,1);
+
+INSERT INTO pokemon_types VALUES (425,8,1);
+
+INSERT INTO pokemon_types VALUES (425,3,2);
+
+INSERT INTO pokemon_types VALUES (426,8,1);
+
+INSERT INTO pokemon_types VALUES (426,3,2);
+
+INSERT INTO pokemon_types VALUES (427,1,1);
+
+INSERT INTO pokemon_types VALUES (428,1,1);
+
+INSERT INTO pokemon_types VALUES (429,8,1);
+
+INSERT INTO pokemon_types VALUES (430,17,1);
+
+INSERT INTO pokemon_types VALUES (430,3,2);
+
+INSERT INTO pokemon_types VALUES (431,1,1);
+
+INSERT INTO pokemon_types VALUES (432,1,1);
+
+INSERT INTO pokemon_types VALUES (433,14,1);
+
+INSERT INTO pokemon_types VALUES (434,4,1);
+
+INSERT INTO pokemon_types VALUES (434,17,2);
+
+INSERT INTO pokemon_types VALUES (435,4,1);
+
+INSERT INTO pokemon_types VALUES (435,17,2);
+
+INSERT INTO pokemon_types VALUES (436,9,1);
+
+INSERT INTO pokemon_types VALUES (436,14,2);
+
+INSERT INTO pokemon_types VALUES (437,9,1);
+
+INSERT INTO pokemon_types VALUES (437,14,2);
+
+INSERT INTO pokemon_types VALUES (438,6,1);
+
+INSERT INTO pokemon_types VALUES (439,14,1);
+
+INSERT INTO pokemon_types VALUES (439,18,2);
+
+INSERT INTO pokemon_types VALUES (440,1,1);
+
+INSERT INTO pokemon_types VALUES (441,1,1);
+
+INSERT INTO pokemon_types VALUES (441,3,2);
+
+INSERT INTO pokemon_types VALUES (442,8,1);
+
+INSERT INTO pokemon_types VALUES (442,17,2);
+
+INSERT INTO pokemon_types VALUES (443,16,1);
+
+INSERT INTO pokemon_types VALUES (443,5,2);
+
+INSERT INTO pokemon_types VALUES (444,16,1);
+
+INSERT INTO pokemon_types VALUES (444,5,2);
+
+INSERT INTO pokemon_types VALUES (445,16,1);
+
+INSERT INTO pokemon_types VALUES (445,5,2);
+
+INSERT INTO pokemon_types VALUES (446,1,1);
+
+INSERT INTO pokemon_types VALUES (447,2,1);
+
+INSERT INTO pokemon_types VALUES (448,2,1);
+
+INSERT INTO pokemon_types VALUES (448,9,2);
+
+INSERT INTO pokemon_types VALUES (449,5,1);
+
+INSERT INTO pokemon_types VALUES (450,5,1);
+
+INSERT INTO pokemon_types VALUES (451,4,1);
+
+INSERT INTO pokemon_types VALUES (451,7,2);
+
+INSERT INTO pokemon_types VALUES (452,4,1);
+
+INSERT INTO pokemon_types VALUES (452,17,2);
+
+INSERT INTO pokemon_types VALUES (453,4,1);
+
+INSERT INTO pokemon_types VALUES (453,2,2);
+
+INSERT INTO pokemon_types VALUES (454,4,1);
+
+INSERT INTO pokemon_types VALUES (454,2,2);
+
+INSERT INTO pokemon_types VALUES (455,12,1);
+
+INSERT INTO pokemon_types VALUES (456,11,1);
+
+INSERT INTO pokemon_types VALUES (457,11,1);
+
+INSERT INTO pokemon_types VALUES (458,11,1);
+
+INSERT INTO pokemon_types VALUES (458,3,2);
+
+INSERT INTO pokemon_types VALUES (459,12,1);
+
+INSERT INTO pokemon_types VALUES (459,15,2);
+
+INSERT INTO pokemon_types VALUES (460,12,1);
+
+INSERT INTO pokemon_types VALUES (460,15,2);
+
+INSERT INTO pokemon_types VALUES (461,17,1);
+
+INSERT INTO pokemon_types VALUES (461,15,2);
+
+INSERT INTO pokemon_types VALUES (462,13,1);
+
+INSERT INTO pokemon_types VALUES (462,9,2);
+
+INSERT INTO pokemon_types VALUES (463,1,1);
+
+INSERT INTO pokemon_types VALUES (464,5,1);
+
+INSERT INTO pokemon_types VALUES (464,6,2);
+
+INSERT INTO pokemon_types VALUES (465,12,1);
+
+INSERT INTO pokemon_types VALUES (466,13,1);
+
+INSERT INTO pokemon_types VALUES (467,10,1);
+
+INSERT INTO pokemon_types VALUES (468,18,1);
+
+INSERT INTO pokemon_types VALUES (468,3,2);
+
+INSERT INTO pokemon_types VALUES (469,7,1);
+
+INSERT INTO pokemon_types VALUES (469,3,2);
+
+INSERT INTO pokemon_types VALUES (470,12,1);
+
+INSERT INTO pokemon_types VALUES (471,15,1);
+
+INSERT INTO pokemon_types VALUES (472,5,1);
+
+INSERT INTO pokemon_types VALUES (472,3,2);
+
+INSERT INTO pokemon_types VALUES (473,15,1);
+
+INSERT INTO pokemon_types VALUES (473,5,2);
+
+INSERT INTO pokemon_types VALUES (474,1,1);
+
+INSERT INTO pokemon_types VALUES (475,14,1);
+
+INSERT INTO pokemon_types VALUES (475,2,2);
+
+INSERT INTO pokemon_types VALUES (476,6,1);
+
+INSERT INTO pokemon_types VALUES (476,9,2);
+
+INSERT INTO pokemon_types VALUES (477,8,1);
+
+INSERT INTO pokemon_types VALUES (478,15,1);
+
+INSERT INTO pokemon_types VALUES (478,8,2);
+
+INSERT INTO pokemon_types VALUES (479,13,1);
+
+INSERT INTO pokemon_types VALUES (479,8,2);
+
+INSERT INTO pokemon_types VALUES (480,14,1);
+
+INSERT INTO pokemon_types VALUES (481,14,1);
+
+INSERT INTO pokemon_types VALUES (482,14,1);
+
+INSERT INTO pokemon_types VALUES (483,9,1);
+
+INSERT INTO pokemon_types VALUES (483,16,2);
+
+INSERT INTO pokemon_types VALUES (484,11,1);
+
+INSERT INTO pokemon_types VALUES (484,16,2);
+
+INSERT INTO pokemon_types VALUES (485,10,1);
+
+INSERT INTO pokemon_types VALUES (485,9,2);
+
+INSERT INTO pokemon_types VALUES (486,1,1);
+
+INSERT INTO pokemon_types VALUES (487,8,1);
+
+INSERT INTO pokemon_types VALUES (487,16,2);
+
+INSERT INTO pokemon_types VALUES (488,14,1);
+
+INSERT INTO pokemon_types VALUES (489,11,1);
+
+INSERT INTO pokemon_types VALUES (490,11,1);
+
+INSERT INTO pokemon_types VALUES (491,17,1);
+
+INSERT INTO pokemon_types VALUES (492,12,1);
+
+INSERT INTO pokemon_types VALUES (493,1,1);
+
+INSERT INTO pokemon_types VALUES (494,14,1);
+
+INSERT INTO pokemon_types VALUES (494,10,2);
+
+INSERT INTO pokemon_types VALUES (495,12,1);
+
+INSERT INTO pokemon_types VALUES (496,12,1);
+
+INSERT INTO pokemon_types VALUES (497,12,1);
+
+INSERT INTO pokemon_types VALUES (498,10,1);
+
+INSERT INTO pokemon_types VALUES (499,10,1);
+
+INSERT INTO pokemon_types VALUES (499,2,2);
+
+INSERT INTO pokemon_types VALUES (500,10,1);
+
+INSERT INTO pokemon_types VALUES (500,2,2);
+
+INSERT INTO pokemon_types VALUES (501,11,1);
+
+INSERT INTO pokemon_types VALUES (502,11,1);
+
+INSERT INTO pokemon_types VALUES (503,11,1);
+
+INSERT INTO pokemon_types VALUES (504,1,1);
+
+INSERT INTO pokemon_types VALUES (505,1,1);
+
+INSERT INTO pokemon_types VALUES (506,1,1);
+
+INSERT INTO pokemon_types VALUES (507,1,1);
+
+INSERT INTO pokemon_types VALUES (508,1,1);
+
+INSERT INTO pokemon_types VALUES (509,17,1);
+
+INSERT INTO pokemon_types VALUES (510,17,1);
+
+INSERT INTO pokemon_types VALUES (511,12,1);
+
+INSERT INTO pokemon_types VALUES (512,12,1);
+
+INSERT INTO pokemon_types VALUES (513,10,1);
+
+INSERT INTO pokemon_types VALUES (514,10,1);
+
+INSERT INTO pokemon_types VALUES (515,11,1);
+
+INSERT INTO pokemon_types VALUES (516,11,1);
+
+INSERT INTO pokemon_types VALUES (517,14,1);
+
+INSERT INTO pokemon_types VALUES (518,14,1);
+
+INSERT INTO pokemon_types VALUES (519,1,1);
+
+INSERT INTO pokemon_types VALUES (519,3,2);
+
+INSERT INTO pokemon_types VALUES (520,1,1);
+
+INSERT INTO pokemon_types VALUES (520,3,2);
+
+INSERT INTO pokemon_types VALUES (521,1,1);
+
+INSERT INTO pokemon_types VALUES (521,3,2);
+
+INSERT INTO pokemon_types VALUES (522,13,1);
+
+INSERT INTO pokemon_types VALUES (523,13,1);
+
+INSERT INTO pokemon_types VALUES (524,6,1);
+
+INSERT INTO pokemon_types VALUES (525,6,1);
+
+INSERT INTO pokemon_types VALUES (526,6,1);
+
+INSERT INTO pokemon_types VALUES (527,14,1);
+
+INSERT INTO pokemon_types VALUES (527,3,2);
+
+INSERT INTO pokemon_types VALUES (528,14,1);
+
+INSERT INTO pokemon_types VALUES (528,3,2);
+
+INSERT INTO pokemon_types VALUES (529,5,1);
+
+INSERT INTO pokemon_types VALUES (530,5,1);
+
+INSERT INTO pokemon_types VALUES (530,9,2);
+
+INSERT INTO pokemon_types VALUES (531,1,1);
+
+INSERT INTO pokemon_types VALUES (532,2,1);
+
+INSERT INTO pokemon_types VALUES (533,2,1);
+
+INSERT INTO pokemon_types VALUES (534,2,1);
+
+INSERT INTO pokemon_types VALUES (535,11,1);
+
+INSERT INTO pokemon_types VALUES (536,11,1);
+
+INSERT INTO pokemon_types VALUES (536,5,2);
+
+INSERT INTO pokemon_types VALUES (537,11,1);
+
+INSERT INTO pokemon_types VALUES (537,5,2);
+
+INSERT INTO pokemon_types VALUES (538,2,1);
+
+INSERT INTO pokemon_types VALUES (539,2,1);
+
+INSERT INTO pokemon_types VALUES (540,7,1);
+
+INSERT INTO pokemon_types VALUES (540,12,2);
+
+INSERT INTO pokemon_types VALUES (541,7,1);
+
+INSERT INTO pokemon_types VALUES (541,12,2);
+
+INSERT INTO pokemon_types VALUES (542,7,1);
+
+INSERT INTO pokemon_types VALUES (542,12,2);
+
+INSERT INTO pokemon_types VALUES (543,7,1);
+
+INSERT INTO pokemon_types VALUES (543,4,2);
+
+INSERT INTO pokemon_types VALUES (544,7,1);
+
+INSERT INTO pokemon_types VALUES (544,4,2);
+
+INSERT INTO pokemon_types VALUES (545,7,1);
+
+INSERT INTO pokemon_types VALUES (545,4,2);
+
+INSERT INTO pokemon_types VALUES (546,12,1);
+
+INSERT INTO pokemon_types VALUES (546,18,2);
+
+INSERT INTO pokemon_types VALUES (547,12,1);
+
+INSERT INTO pokemon_types VALUES (547,18,2);
+
+INSERT INTO pokemon_types VALUES (548,12,1);
+
+INSERT INTO pokemon_types VALUES (549,12,1);
+
+INSERT INTO pokemon_types VALUES (550,11,1);
+
+INSERT INTO pokemon_types VALUES (551,5,1);
+
+INSERT INTO pokemon_types VALUES (551,17,2);
+
+INSERT INTO pokemon_types VALUES (552,5,1);
+
+INSERT INTO pokemon_types VALUES (552,17,2);
+
+INSERT INTO pokemon_types VALUES (553,5,1);
+
+INSERT INTO pokemon_types VALUES (553,17,2);
+
+INSERT INTO pokemon_types VALUES (554,10,1);
+
+INSERT INTO pokemon_types VALUES (555,10,1);
+
+INSERT INTO pokemon_types VALUES (556,12,1);
+
+INSERT INTO pokemon_types VALUES (557,7,1);
+
+INSERT INTO pokemon_types VALUES (557,6,2);
+
+INSERT INTO pokemon_types VALUES (558,7,1);
+
+INSERT INTO pokemon_types VALUES (558,6,2);
+
+INSERT INTO pokemon_types VALUES (559,17,1);
+
+INSERT INTO pokemon_types VALUES (559,2,2);
+
+INSERT INTO pokemon_types VALUES (560,17,1);
+
+INSERT INTO pokemon_types VALUES (560,2,2);
+
+INSERT INTO pokemon_types VALUES (561,14,1);
+
+INSERT INTO pokemon_types VALUES (561,3,2);
+
+INSERT INTO pokemon_types VALUES (562,8,1);
+
+INSERT INTO pokemon_types VALUES (563,8,1);
+
+INSERT INTO pokemon_types VALUES (564,11,1);
+
+INSERT INTO pokemon_types VALUES (564,6,2);
+
+INSERT INTO pokemon_types VALUES (565,11,1);
+
+INSERT INTO pokemon_types VALUES (565,6,2);
+
+INSERT INTO pokemon_types VALUES (566,6,1);
+
+INSERT INTO pokemon_types VALUES (566,3,2);
+
+INSERT INTO pokemon_types VALUES (567,6,1);
+
+INSERT INTO pokemon_types VALUES (567,3,2);
+
+INSERT INTO pokemon_types VALUES (568,4,1);
+
+INSERT INTO pokemon_types VALUES (569,4,1);
+
+INSERT INTO pokemon_types VALUES (570,17,1);
+
+INSERT INTO pokemon_types VALUES (571,17,1);
+
+INSERT INTO pokemon_types VALUES (572,1,1);
+
+INSERT INTO pokemon_types VALUES (573,1,1);
+
+INSERT INTO pokemon_types VALUES (574,14,1);
+
+INSERT INTO pokemon_types VALUES (575,14,1);
+
+INSERT INTO pokemon_types VALUES (576,14,1);
+
+INSERT INTO pokemon_types VALUES (577,14,1);
+
+INSERT INTO pokemon_types VALUES (578,14,1);
+
+INSERT INTO pokemon_types VALUES (579,14,1);
+
+INSERT INTO pokemon_types VALUES (580,11,1);
+
+INSERT INTO pokemon_types VALUES (580,3,2);
+
+INSERT INTO pokemon_types VALUES (581,11,1);
+
+INSERT INTO pokemon_types VALUES (581,3,2);
+
+INSERT INTO pokemon_types VALUES (582,15,1);
+
+INSERT INTO pokemon_types VALUES (583,15,1);
+
+INSERT INTO pokemon_types VALUES (584,15,1);
+
+INSERT INTO pokemon_types VALUES (585,1,1);
+
+INSERT INTO pokemon_types VALUES (585,12,2);
+
+INSERT INTO pokemon_types VALUES (586,1,1);
+
+INSERT INTO pokemon_types VALUES (586,12,2);
+
+INSERT INTO pokemon_types VALUES (587,13,1);
+
+INSERT INTO pokemon_types VALUES (587,3,2);
+
+INSERT INTO pokemon_types VALUES (588,7,1);
+
+INSERT INTO pokemon_types VALUES (589,7,1);
+
+INSERT INTO pokemon_types VALUES (589,9,2);
+
+INSERT INTO pokemon_types VALUES (590,12,1);
+
+INSERT INTO pokemon_types VALUES (590,4,2);
+
+INSERT INTO pokemon_types VALUES (591,12,1);
+
+INSERT INTO pokemon_types VALUES (591,4,2);
+
+INSERT INTO pokemon_types VALUES (592,11,1);
+
+INSERT INTO pokemon_types VALUES (592,8,2);
+
+INSERT INTO pokemon_types VALUES (593,11,1);
+
+INSERT INTO pokemon_types VALUES (593,8,2);
+
+INSERT INTO pokemon_types VALUES (594,11,1);
+
+INSERT INTO pokemon_types VALUES (595,7,1);
+
+INSERT INTO pokemon_types VALUES (595,13,2);
+
+INSERT INTO pokemon_types VALUES (596,7,1);
+
+INSERT INTO pokemon_types VALUES (596,13,2);
+
+INSERT INTO pokemon_types VALUES (597,12,1);
+
+INSERT INTO pokemon_types VALUES (597,9,2);
+
+INSERT INTO pokemon_types VALUES (598,12,1);
+
+INSERT INTO pokemon_types VALUES (598,9,2);
+
+INSERT INTO pokemon_types VALUES (599,9,1);
+
+INSERT INTO pokemon_types VALUES (600,9,1);
+
+INSERT INTO pokemon_types VALUES (601,9,1);
+
+INSERT INTO pokemon_types VALUES (602,13,1);
+
+INSERT INTO pokemon_types VALUES (603,13,1);
+
+INSERT INTO pokemon_types VALUES (604,13,1);
+
+INSERT INTO pokemon_types VALUES (605,14,1);
+
+INSERT INTO pokemon_types VALUES (606,14,1);
+
+INSERT INTO pokemon_types VALUES (607,8,1);
+
+INSERT INTO pokemon_types VALUES (607,10,2);
+
+INSERT INTO pokemon_types VALUES (608,8,1);
+
+INSERT INTO pokemon_types VALUES (608,10,2);
+
+INSERT INTO pokemon_types VALUES (609,8,1);
+
+INSERT INTO pokemon_types VALUES (609,10,2);
+
+INSERT INTO pokemon_types VALUES (610,16,1);
+
+INSERT INTO pokemon_types VALUES (611,16,1);
+
+INSERT INTO pokemon_types VALUES (612,16,1);
+
+INSERT INTO pokemon_types VALUES (613,15,1);
+
+INSERT INTO pokemon_types VALUES (614,15,1);
+
+INSERT INTO pokemon_types VALUES (615,15,1);
+
+INSERT INTO pokemon_types VALUES (616,7,1);
+
+INSERT INTO pokemon_types VALUES (617,7,1);
+
+INSERT INTO pokemon_types VALUES (618,5,1);
+
+INSERT INTO pokemon_types VALUES (618,13,2);
+
+INSERT INTO pokemon_types VALUES (619,2,1);
+
+INSERT INTO pokemon_types VALUES (620,2,1);
+
+INSERT INTO pokemon_types VALUES (621,16,1);
+
+INSERT INTO pokemon_types VALUES (622,5,1);
+
+INSERT INTO pokemon_types VALUES (622,8,2);
+
+INSERT INTO pokemon_types VALUES (623,5,1);
+
+INSERT INTO pokemon_types VALUES (623,8,2);
+
+INSERT INTO pokemon_types VALUES (624,17,1);
+
+INSERT INTO pokemon_types VALUES (624,9,2);
+
+INSERT INTO pokemon_types VALUES (625,17,1);
+
+INSERT INTO pokemon_types VALUES (625,9,2);
+
+INSERT INTO pokemon_types VALUES (626,1,1);
+
+INSERT INTO pokemon_types VALUES (627,1,1);
+
+INSERT INTO pokemon_types VALUES (627,3,2);
+
+INSERT INTO pokemon_types VALUES (628,1,1);
+
+INSERT INTO pokemon_types VALUES (628,3,2);
+
+INSERT INTO pokemon_types VALUES (629,17,1);
+
+INSERT INTO pokemon_types VALUES (629,3,2);
+
+INSERT INTO pokemon_types VALUES (630,17,1);
+
+INSERT INTO pokemon_types VALUES (630,3,2);
+
+INSERT INTO pokemon_types VALUES (631,10,1);
+
+INSERT INTO pokemon_types VALUES (632,7,1);
+
+INSERT INTO pokemon_types VALUES (632,9,2);
+
+INSERT INTO pokemon_types VALUES (633,17,1);
+
+INSERT INTO pokemon_types VALUES (633,16,2);
+
+INSERT INTO pokemon_types VALUES (634,17,1);
+
+INSERT INTO pokemon_types VALUES (634,16,2);
+
+INSERT INTO pokemon_types VALUES (635,17,1);
+
+INSERT INTO pokemon_types VALUES (635,16,2);
+
+INSERT INTO pokemon_types VALUES (636,7,1);
+
+INSERT INTO pokemon_types VALUES (636,10,2);
+
+INSERT INTO pokemon_types VALUES (637,7,1);
+
+INSERT INTO pokemon_types VALUES (637,10,2);
+
+INSERT INTO pokemon_types VALUES (638,9,1);
+
+INSERT INTO pokemon_types VALUES (638,2,2);
+
+INSERT INTO pokemon_types VALUES (639,6,1);
+
+INSERT INTO pokemon_types VALUES (639,2,2);
+
+INSERT INTO pokemon_types VALUES (640,12,1);
+
+INSERT INTO pokemon_types VALUES (640,2,2);
+
+INSERT INTO pokemon_types VALUES (641,3,1);
+
+INSERT INTO pokemon_types VALUES (642,13,1);
+
+INSERT INTO pokemon_types VALUES (642,3,2);
+
+INSERT INTO pokemon_types VALUES (643,16,1);
+
+INSERT INTO pokemon_types VALUES (643,10,2);
+
+INSERT INTO pokemon_types VALUES (644,16,1);
+
+INSERT INTO pokemon_types VALUES (644,13,2);
+
+INSERT INTO pokemon_types VALUES (645,5,1);
+
+INSERT INTO pokemon_types VALUES (645,3,2);
+
+INSERT INTO pokemon_types VALUES (646,16,1);
+
+INSERT INTO pokemon_types VALUES (646,15,2);
+
+INSERT INTO pokemon_types VALUES (647,11,1);
+
+INSERT INTO pokemon_types VALUES (647,2,2);
+
+INSERT INTO pokemon_types VALUES (648,1,1);
+
+INSERT INTO pokemon_types VALUES (648,14,2);
+
+INSERT INTO pokemon_types VALUES (649,7,1);
+
+INSERT INTO pokemon_types VALUES (649,9,2);
+
+INSERT INTO pokemon_types VALUES (650,12,1);
+
+INSERT INTO pokemon_types VALUES (651,12,1);
+
+INSERT INTO pokemon_types VALUES (652,12,1);
+
+INSERT INTO pokemon_types VALUES (652,2,2);
+
+INSERT INTO pokemon_types VALUES (653,10,1);
+
+INSERT INTO pokemon_types VALUES (654,10,1);
+
+INSERT INTO pokemon_types VALUES (655,10,1);
+
+INSERT INTO pokemon_types VALUES (655,14,2);
+
+INSERT INTO pokemon_types VALUES (656,11,1);
+
+INSERT INTO pokemon_types VALUES (657,11,1);
+
+INSERT INTO pokemon_types VALUES (658,11,1);
+
+INSERT INTO pokemon_types VALUES (658,17,2);
+
+INSERT INTO pokemon_types VALUES (659,1,1);
+
+INSERT INTO pokemon_types VALUES (660,1,1);
+
+INSERT INTO pokemon_types VALUES (660,5,2);
+
+INSERT INTO pokemon_types VALUES (661,1,1);
+
+INSERT INTO pokemon_types VALUES (661,3,2);
+
+INSERT INTO pokemon_types VALUES (662,10,1);
+
+INSERT INTO pokemon_types VALUES (662,3,2);
+
+INSERT INTO pokemon_types VALUES (663,10,1);
+
+INSERT INTO pokemon_types VALUES (663,3,2);
+
+INSERT INTO pokemon_types VALUES (664,7,1);
+
+INSERT INTO pokemon_types VALUES (665,7,1);
+
+INSERT INTO pokemon_types VALUES (666,7,1);
+
+INSERT INTO pokemon_types VALUES (666,3,2);
+
+INSERT INTO pokemon_types VALUES (667,10,1);
+
+INSERT INTO pokemon_types VALUES (667,1,2);
+
+INSERT INTO pokemon_types VALUES (668,10,1);
+
+INSERT INTO pokemon_types VALUES (668,1,2);
+
+INSERT INTO pokemon_types VALUES (669,18,1);
+
+INSERT INTO pokemon_types VALUES (670,18,1);
+
+INSERT INTO pokemon_types VALUES (671,18,1);
+
+INSERT INTO pokemon_types VALUES (672,12,1);
+
+INSERT INTO pokemon_types VALUES (673,12,1);
+
+INSERT INTO pokemon_types VALUES (674,2,1);
+
+INSERT INTO pokemon_types VALUES (675,2,1);
+
+INSERT INTO pokemon_types VALUES (675,17,2);
+
+INSERT INTO pokemon_types VALUES (676,1,1);
+
+INSERT INTO pokemon_types VALUES (677,14,1);
+
+INSERT INTO pokemon_types VALUES (678,14,1);
+
+INSERT INTO pokemon_types VALUES (679,9,1);
+
+INSERT INTO pokemon_types VALUES (679,8,2);
+
+INSERT INTO pokemon_types VALUES (680,9,1);
+
+INSERT INTO pokemon_types VALUES (680,8,2);
+
+INSERT INTO pokemon_types VALUES (681,9,1);
+
+INSERT INTO pokemon_types VALUES (681,8,2);
+
+INSERT INTO pokemon_types VALUES (682,18,1);
+
+INSERT INTO pokemon_types VALUES (683,18,1);
+
+INSERT INTO pokemon_types VALUES (684,18,1);
+
+INSERT INTO pokemon_types VALUES (685,18,1);
+
+INSERT INTO pokemon_types VALUES (686,17,1);
+
+INSERT INTO pokemon_types VALUES (686,14,2);
+
+INSERT INTO pokemon_types VALUES (687,17,1);
+
+INSERT INTO pokemon_types VALUES (687,14,2);
+
+INSERT INTO pokemon_types VALUES (688,6,1);
+
+INSERT INTO pokemon_types VALUES (688,11,2);
+
+INSERT INTO pokemon_types VALUES (689,6,1);
+
+INSERT INTO pokemon_types VALUES (689,11,2);
+
+INSERT INTO pokemon_types VALUES (690,4,1);
+
+INSERT INTO pokemon_types VALUES (690,11,2);
+
+INSERT INTO pokemon_types VALUES (691,4,1);
+
+INSERT INTO pokemon_types VALUES (691,16,2);
+
+INSERT INTO pokemon_types VALUES (692,11,1);
+
+INSERT INTO pokemon_types VALUES (693,11,1);
+
+INSERT INTO pokemon_types VALUES (694,13,1);
+
+INSERT INTO pokemon_types VALUES (694,1,2);
+
+INSERT INTO pokemon_types VALUES (695,13,1);
+
+INSERT INTO pokemon_types VALUES (695,1,2);
+
+INSERT INTO pokemon_types VALUES (696,6,1);
+
+INSERT INTO pokemon_types VALUES (696,16,2);
+
+INSERT INTO pokemon_types VALUES (697,6,1);
+
+INSERT INTO pokemon_types VALUES (697,16,2);
+
+INSERT INTO pokemon_types VALUES (698,6,1);
+
+INSERT INTO pokemon_types VALUES (698,15,2);
+
+INSERT INTO pokemon_types VALUES (699,6,1);
+
+INSERT INTO pokemon_types VALUES (699,15,2);
+
+INSERT INTO pokemon_types VALUES (700,18,1);
+
+INSERT INTO pokemon_types VALUES (701,2,1);
+
+INSERT INTO pokemon_types VALUES (701,3,2);
+
+INSERT INTO pokemon_types VALUES (702,13,1);
+
+INSERT INTO pokemon_types VALUES (702,18,2);
+
+INSERT INTO pokemon_types VALUES (703,6,1);
+
+INSERT INTO pokemon_types VALUES (703,18,2);
+
+INSERT INTO pokemon_types VALUES (704,16,1);
+
+INSERT INTO pokemon_types VALUES (705,16,1);
+
+INSERT INTO pokemon_types VALUES (706,16,1);
+
+INSERT INTO pokemon_types VALUES (707,9,1);
+
+INSERT INTO pokemon_types VALUES (707,18,2);
+
+INSERT INTO pokemon_types VALUES (708,8,1);
+
+INSERT INTO pokemon_types VALUES (708,12,2);
+
+INSERT INTO pokemon_types VALUES (709,8,1);
+
+INSERT INTO pokemon_types VALUES (709,12,2);
+
+INSERT INTO pokemon_types VALUES (710,8,1);
+
+INSERT INTO pokemon_types VALUES (710,12,2);
+
+INSERT INTO pokemon_types VALUES (711,8,1);
+
+INSERT INTO pokemon_types VALUES (711,12,2);
+
+INSERT INTO pokemon_types VALUES (712,15,1);
+
+INSERT INTO pokemon_types VALUES (713,15,1);
+
+INSERT INTO pokemon_types VALUES (714,3,1);
+
+INSERT INTO pokemon_types VALUES (714,16,2);
+
+INSERT INTO pokemon_types VALUES (715,3,1);
+
+INSERT INTO pokemon_types VALUES (715,16,2);
+
+INSERT INTO pokemon_types VALUES (716,18,1);
+
+INSERT INTO pokemon_types VALUES (717,17,1);
+
+INSERT INTO pokemon_types VALUES (717,3,2);
+
+INSERT INTO pokemon_types VALUES (718,16,1);
+
+INSERT INTO pokemon_types VALUES (718,5,2);
+
+INSERT INTO pokemon_types VALUES (719,6,1);
+
+INSERT INTO pokemon_types VALUES (719,18,2);
+
+INSERT INTO pokemon_types VALUES (720,14,1);
+
+INSERT INTO pokemon_types VALUES (720,8,2);
+
+INSERT INTO pokemon_types VALUES (721,10,1);
+
+INSERT INTO pokemon_types VALUES (721,11,2);
+
+INSERT INTO pokemon_types VALUES (10001,14,1);
+
+INSERT INTO pokemon_types VALUES (10002,14,1);
+
+INSERT INTO pokemon_types VALUES (10003,14,1);
+
+INSERT INTO pokemon_types VALUES (10004,7,1);
+
+INSERT INTO pokemon_types VALUES (10004,5,2);
+
+INSERT INTO pokemon_types VALUES (10005,7,1);
+
+INSERT INTO pokemon_types VALUES (10005,9,2);
+
+INSERT INTO pokemon_types VALUES (10006,12,1);
+
+INSERT INTO pokemon_types VALUES (10006,3,2);
+
+INSERT INTO pokemon_types VALUES (10007,8,1);
+
+INSERT INTO pokemon_types VALUES (10007,16,2);
+
+INSERT INTO pokemon_types VALUES (10008,13,1);
+
+INSERT INTO pokemon_types VALUES (10008,10,2);
+
+INSERT INTO pokemon_types VALUES (10009,13,1);
+
+INSERT INTO pokemon_types VALUES (10009,11,2);
+
+INSERT INTO pokemon_types VALUES (10010,13,1);
+
+INSERT INTO pokemon_types VALUES (10010,15,2);
+
+INSERT INTO pokemon_types VALUES (10011,13,1);
+
+INSERT INTO pokemon_types VALUES (10011,3,2);
+
+INSERT INTO pokemon_types VALUES (10012,13,1);
+
+INSERT INTO pokemon_types VALUES (10012,12,2);
+
+INSERT INTO pokemon_types VALUES (10013,10,1);
+
+INSERT INTO pokemon_types VALUES (10014,11,1);
+
+INSERT INTO pokemon_types VALUES (10015,15,1);
+
+INSERT INTO pokemon_types VALUES (10016,11,1);
+
+INSERT INTO pokemon_types VALUES (10017,10,1);
+
+INSERT INTO pokemon_types VALUES (10017,14,2);
+
+INSERT INTO pokemon_types VALUES (10018,1,1);
+
+INSERT INTO pokemon_types VALUES (10018,2,2);
+
+INSERT INTO pokemon_types VALUES (10019,3,1);
+
+INSERT INTO pokemon_types VALUES (10020,13,1);
+
+INSERT INTO pokemon_types VALUES (10020,3,2);
+
+INSERT INTO pokemon_types VALUES (10021,5,1);
+
+INSERT INTO pokemon_types VALUES (10021,3,2);
+
+INSERT INTO pokemon_types VALUES (10022,16,1);
+
+INSERT INTO pokemon_types VALUES (10022,15,2);
+
+INSERT INTO pokemon_types VALUES (10023,16,1);
+
+INSERT INTO pokemon_types VALUES (10023,15,2);
+
+INSERT INTO pokemon_types VALUES (10024,11,1);
+
+INSERT INTO pokemon_types VALUES (10024,2,2);
+
+INSERT INTO pokemon_types VALUES (10025,14,1);
+
+INSERT INTO pokemon_types VALUES (10026,9,1);
+
+INSERT INTO pokemon_types VALUES (10026,8,2);
+
+INSERT INTO pokemon_types VALUES (10027,8,1);
+
+INSERT INTO pokemon_types VALUES (10027,12,2);
+
+INSERT INTO pokemon_types VALUES (10028,8,1);
+
+INSERT INTO pokemon_types VALUES (10028,12,2);
+
+INSERT INTO pokemon_types VALUES (10029,8,1);
+
+INSERT INTO pokemon_types VALUES (10029,12,2);
+
+INSERT INTO pokemon_types VALUES (10030,8,1);
+
+INSERT INTO pokemon_types VALUES (10030,12,2);
+
+INSERT INTO pokemon_types VALUES (10031,8,1);
+
+INSERT INTO pokemon_types VALUES (10031,12,2);
+
+INSERT INTO pokemon_types VALUES (10032,8,1);
+
+INSERT INTO pokemon_types VALUES (10032,12,2);
+
+INSERT INTO pokemon_types VALUES (10033,12,1);
+
+INSERT INTO pokemon_types VALUES (10033,4,2);
+
+INSERT INTO pokemon_types VALUES (10034,10,1);
+
+INSERT INTO pokemon_types VALUES (10034,16,2);
+
+INSERT INTO pokemon_types VALUES (10035,10,1);
+
+INSERT INTO pokemon_types VALUES (10035,3,2);
+
+INSERT INTO pokemon_types VALUES (10036,11,1);
+
+INSERT INTO pokemon_types VALUES (10037,14,1);
+
+INSERT INTO pokemon_types VALUES (10038,8,1);
+
+INSERT INTO pokemon_types VALUES (10038,4,2);
+
+INSERT INTO pokemon_types VALUES (10039,1,1);
+
+INSERT INTO pokemon_types VALUES (10040,7,1);
+
+INSERT INTO pokemon_types VALUES (10040,3,2);
+
+INSERT INTO pokemon_types VALUES (10041,11,1);
+
+INSERT INTO pokemon_types VALUES (10041,17,2);
+
+INSERT INTO pokemon_types VALUES (10042,6,1);
+
+INSERT INTO pokemon_types VALUES (10042,3,2);
+
+INSERT INTO pokemon_types VALUES (10043,14,1);
+
+INSERT INTO pokemon_types VALUES (10043,2,2);
+
+INSERT INTO pokemon_types VALUES (10044,14,1);
+
+INSERT INTO pokemon_types VALUES (10045,13,1);
+
+INSERT INTO pokemon_types VALUES (10045,16,2);
+
+INSERT INTO pokemon_types VALUES (10046,7,1);
+
+INSERT INTO pokemon_types VALUES (10046,9,2);
+
+INSERT INTO pokemon_types VALUES (10047,7,1);
+
+INSERT INTO pokemon_types VALUES (10047,2,2);
+
+INSERT INTO pokemon_types VALUES (10048,17,1);
+
+INSERT INTO pokemon_types VALUES (10048,10,2);
+
+INSERT INTO pokemon_types VALUES (10049,6,1);
+
+INSERT INTO pokemon_types VALUES (10049,17,2);
+
+INSERT INTO pokemon_types VALUES (10050,10,1);
+
+INSERT INTO pokemon_types VALUES (10050,2,2);
+
+INSERT INTO pokemon_types VALUES (10051,14,1);
+
+INSERT INTO pokemon_types VALUES (10051,18,2);
+
+INSERT INTO pokemon_types VALUES (10052,9,1);
+
+INSERT INTO pokemon_types VALUES (10052,18,2);
+
+INSERT INTO pokemon_types VALUES (10053,9,1);
+
+INSERT INTO pokemon_types VALUES (10054,2,1);
+
+INSERT INTO pokemon_types VALUES (10054,14,2);
+
+INSERT INTO pokemon_types VALUES (10055,13,1);
+
+INSERT INTO pokemon_types VALUES (10056,8,1);
+
+INSERT INTO pokemon_types VALUES (10057,17,1);
+
+INSERT INTO pokemon_types VALUES (10058,16,1);
+
+INSERT INTO pokemon_types VALUES (10058,5,2);
+
+INSERT INTO pokemon_types VALUES (10059,2,1);
+
+INSERT INTO pokemon_types VALUES (10059,9,2);
+
+INSERT INTO pokemon_types VALUES (10060,12,1);
+
+INSERT INTO pokemon_types VALUES (10060,15,2);
+
+INSERT INTO pokemon_types VALUES (10061,18,1);
+
+INSERT INTO pokemon_types VALUES (10062,16,1);
+
+INSERT INTO pokemon_types VALUES (10062,14,2);
+
+INSERT INTO pokemon_types VALUES (10063,16,1);
+
+INSERT INTO pokemon_types VALUES (10063,14,2);
+
+INSERT INTO pokemon_types VALUES (10064,11,1);
+
+INSERT INTO pokemon_types VALUES (10064,5,2);
+
+INSERT INTO pokemon_types VALUES (10065,12,1);
+
+INSERT INTO pokemon_types VALUES (10065,16,2);
+
+INSERT INTO pokemon_types VALUES (10066,17,1);
+
+INSERT INTO pokemon_types VALUES (10066,8,2);
+
+INSERT INTO pokemon_types VALUES (10067,16,1);
+
+INSERT INTO pokemon_types VALUES (10067,18,2);
+
+INSERT INTO pokemon_types VALUES (10068,14,1);
+
+INSERT INTO pokemon_types VALUES (10068,2,2);
+
+INSERT INTO pokemon_types VALUES (10069,1,1);
+
+INSERT INTO pokemon_types VALUES (10069,18,2);
+
+INSERT INTO pokemon_types VALUES (10070,11,1);
+
+INSERT INTO pokemon_types VALUES (10070,17,2);
+
+INSERT INTO pokemon_types VALUES (10071,11,1);
+
+INSERT INTO pokemon_types VALUES (10071,14,2);
+
+INSERT INTO pokemon_types VALUES (10072,9,1);
+
+INSERT INTO pokemon_types VALUES (10072,5,2);
+
+INSERT INTO pokemon_types VALUES (10073,1,1);
+
+INSERT INTO pokemon_types VALUES (10073,3,2);
+
+INSERT INTO pokemon_types VALUES (10074,15,1);
+
+INSERT INTO pokemon_types VALUES (10075,6,1);
+
+INSERT INTO pokemon_types VALUES (10075,18,2);
+
+INSERT INTO pokemon_types VALUES (10076,9,1);
+
+INSERT INTO pokemon_types VALUES (10076,14,2);
+
+INSERT INTO pokemon_types VALUES (10077,11,1);
+
+INSERT INTO pokemon_types VALUES (10078,5,1);
+
+INSERT INTO pokemon_types VALUES (10078,10,2);
+
+INSERT INTO pokemon_types VALUES (10079,16,1);
+
+INSERT INTO pokemon_types VALUES (10079,3,2);
+
+INSERT INTO pokemon_types VALUES (10080,13,1);
+
+INSERT INTO pokemon_types VALUES (10081,13,1);
+
+INSERT INTO pokemon_types VALUES (10082,13,1);
+
+INSERT INTO pokemon_types VALUES (10083,13,1);
+
+INSERT INTO pokemon_types VALUES (10084,13,1);
+
+INSERT INTO pokemon_types VALUES (10085,13,1);
+
+INSERT INTO pokemon_types VALUES (10086,14,1);
+
+INSERT INTO pokemon_types VALUES (10086,17,2);
+
+INSERT INTO pokemon_types VALUES (10087,10,1);
+
+INSERT INTO pokemon_types VALUES (10087,5,2);
+
+INSERT INTO pokemon_types VALUES (10088,1,1);
+
+INSERT INTO pokemon_types VALUES (10088,2,2);
+
+INSERT INTO pokemon_types VALUES (10089,16,1);
+
+INSERT INTO pokemon_types VALUES (10089,3,2);
+
+INSERT INTO pokemon_types VALUES (10090,7,1);
+
+INSERT INTO pokemon_types VALUES (10090,4,2);
+
+DROP TABLE types;
+
+CREATE TABLE types (
+    id INT NOT NULL,
+    identifier VARCHAR(8) CHARACTER SET utf8 NOT NULL,
+    generation_id INT NOT NULL,
+    damage_class_id INT,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO types VALUES (1,'normal',1,2);
+
+INSERT INTO types VALUES (2,'fighting',1,2);
+
+INSERT INTO types VALUES (3,'flying',1,2);
+
+INSERT INTO types VALUES (4,'poison',1,2);
+
+INSERT INTO types VALUES (5,'ground',1,2);
+
+INSERT INTO types VALUES (6,'rock',1,2);
+
+INSERT INTO types VALUES (7,'bug',1,2);
+
+INSERT INTO types VALUES (8,'ghost',1,2);
+
+INSERT INTO types VALUES (9,'steel',2,2);
+
+INSERT INTO types VALUES (10,'fire',1,3);
+
+INSERT INTO types VALUES (11,'water',1,3);
+
+INSERT INTO types VALUES (12,'grass',1,3);
+
+INSERT INTO types VALUES (13,'electric',1,3);
+
+INSERT INTO types VALUES (14,'psychic',1,3);
+
+INSERT INTO types VALUES (15,'ice',1,3);
+
+INSERT INTO types VALUES (16,'dragon',1,3);
+
+INSERT INTO types VALUES (17,'dark',2,3);
+
+INSERT INTO types VALUES (18,'fairy',6,NULL);
+
+INSERT INTO types VALUES (10001,'unknown',2,NULL);
+
+INSERT INTO types VALUES (10002,'shadow',3,NULL);
+

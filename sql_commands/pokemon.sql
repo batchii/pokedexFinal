@@ -1,3 +1,5 @@
+DROP TABLE pokemon;
+
 CREATE TABLE pokemon (
     id INT NOT NULL,
     identifier VARCHAR(21) CHARACTER SET utf8 NOT NULL,

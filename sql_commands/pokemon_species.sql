@@ -1,19 +1,21 @@
+DROP TABLE pokemon_species;
+
 CREATE TABLE pokemon_species (
-    id INT IS NOT NULL,
-    identifier VARCHAR(11) CHARACTER SET utf8 IS NOT NULL,
-    generation_id INT IS NOT NULL,
+    id INT NOT NULL,
+    identifier VARCHAR(11) CHARACTER SET utf8 NOT NULL,
+    generation_id INT NOT NULL,
     evolves_from_species_id,
-    evolution_chain_id INT IS NOT NULL,
-    color_id INT IS NOT NULL,
-    shape_id INT IS NOT NULL,
-    habitat_id INT IS NOT NULL,
-    gender_rate INT IS NOT NULL,
-    capture_rate INT IS NOT NULL,
-    base_happiness INT IS NOT NULL,
-    is_baby INT IS NOT NULL,
-    hatch_counter INT IS NOT NULL,
-    has_gender_differences INT IS NOT NULL,
-    growth_rate_id INT IS NOT NULL
+    evolution_chain_id INT NOT NULL,
+    color_id INT NOT NULL,
+    shape_id INT NOT NULL,
+    habitat_id INT NOT NULL,
+    gender_rate INT NOT NULL,
+    capture_rate INT NOT NULL,
+    base_happiness INT NOT NULL,
+    is_baby INT NOT NULL,
+    hatch_counter INT NOT NULL,
+    has_gender_differences INT NOT NULL,
+    growth_rate_id INT NOT NULL
 );
 INSERT INTO pokemon_species VALUES (1,'bulbasaur',1,NULL,1,5,8,3,1,45,70,0,20,0,4);
 INSERT INTO pokemon_species VALUES (2,'ivysaur',1,1,1,5,8,3,1,45,70,0,20,0,4);

@@ -1,8 +1,10 @@
+DROP TABLE items;
+
 CREATE TABLE items (
-    id INT IS NOT NULL,
-    identifier VARCHAR(16) CHARACTER SET utf8 IS NOT NULL,
-    category_id INT IS NOT NULL,
-    cost INT IS NOT NULL,
+    id INT  NOT NULL,
+    identifier VARCHAR(16) CHARACTER SET utf8  NOT NULL,
+    category_id INT  NOT NULL,
+    cost INT  NOT NULL,
     PRIMARY KEY (id)
 );
 INSERT INTO items VALUES (1,'master-ball',34,0);
@@ -20,7 +22,7 @@ INSERT INTO items VALUES (12,'premier-ball',33,200);
 INSERT INTO items VALUES (13,'dusk-ball',33,1000);
 INSERT INTO items VALUES (14,'heal-ball',33,300);
 INSERT INTO items VALUES (15,'quick-ball',33,1000);
-INSERT INTO items VALUES (16,'cherish-ball',33,200);
+INSERT INTO items VALUES (16,'cherh-ball',33,200);
 INSERT INTO items VALUES (17,'potion',27,300);
 INSERT INTO items VALUES (18,'antidote',30,100);
 INSERT INTO items VALUES (19,'burn-heal',30,250);
@@ -226,10 +228,10 @@ INSERT INTO items VALUES (218,'black-belt',19,100);
 INSERT INTO items VALUES (219,'magnet',19,100);
 INSERT INTO items VALUES (220,'mystic-water',19,100);
 INSERT INTO items VALUES (221,'sharp-beak',19,100);
-INSERT INTO items VALUES (222,'poison-barb',19,100);
+INSERT INTO items VALUES (222,'poon-barb',19,100);
 INSERT INTO items VALUES (223,'never-melt-ice',19,100);
 INSERT INTO items VALUES (224,'spell-tag',19,100);
-INSERT INTO items VALUES (225,'twisted-spoon',19,100);
+INSERT INTO items VALUES (225,'twted-spoon',19,100);
 INSERT INTO items VALUES (226,'charcoal',19,9800);
 INSERT INTO items VALUES (227,'dragon-fang',19,100);
 INSERT INTO items VALUES (228,'silk-scarf',19,100);
@@ -248,7 +250,7 @@ INSERT INTO items VALUES (240,'green-scarf',36,100);
 INSERT INTO items VALUES (241,'yellow-scarf',36,100);
 INSERT INTO items VALUES (242,'wide-lens',12,200);
 INSERT INTO items VALUES (243,'muscle-band',12,200);
-INSERT INTO items VALUES (244,'wise-glasses',12,200);
+INSERT INTO items VALUES (244,'we-glasses',12,200);
 INSERT INTO items VALUES (245,'expert-belt',12,200);
 INSERT INTO items VALUES (246,'light-clay',12,200);
 INSERT INTO items VALUES (247,'life-orb',12,200);
@@ -284,7 +286,7 @@ INSERT INTO items VALUES (276,'splash-plate',17,1000);
 INSERT INTO items VALUES (277,'zap-plate',17,1000);
 INSERT INTO items VALUES (278,'meadow-plate',17,1000);
 INSERT INTO items VALUES (279,'icicle-plate',17,1000);
-INSERT INTO items VALUES (280,'fist-plate',17,1000);
+INSERT INTO items VALUES (280,'ft-plate',17,1000);
 INSERT INTO items VALUES (281,'toxic-plate',17,1000);
 INSERT INTO items VALUES (282,'earth-plate',17,1000);
 INSERT INTO items VALUES (283,'sky-plate',17,1000);
@@ -305,7 +307,7 @@ INSERT INTO items VALUES (297,'pure-incense',16,9600);
 INSERT INTO items VALUES (298,'protector',10,2100);
 INSERT INTO items VALUES (299,'electirizer',10,2100);
 INSERT INTO items VALUES (300,'magmarizer',10,2100);
-INSERT INTO items VALUES (301,'dubious-disc',10,2100);
+INSERT INTO items VALUES (301,'dubious-dc',10,2100);
 INSERT INTO items VALUES (302,'reaper-cloth',10,2100);
 INSERT INTO items VALUES (303,'razor-claw',12,2100);
 INSERT INTO items VALUES (304,'razor-fang',12,2100);
@@ -446,7 +448,7 @@ INSERT INTO items VALUES (438,'coupon-2',22,0);
 INSERT INTO items VALUES (439,'coupon-3',22,0);
 INSERT INTO items VALUES (440,'storage-key',22,0);
 INSERT INTO items VALUES (441,'secret-potion',22,0);
-INSERT INTO items VALUES (442,'griseous-orb',18,10000);
+INSERT INTO items VALUES (442,'greous-orb',18,10000);
 INSERT INTO items VALUES (443,'vs-recorder',21,0);
 INSERT INTO items VALUES (444,'gracidea',20,0);
 INSERT INTO items VALUES (445,'secret-key',20,0);
@@ -584,7 +586,7 @@ INSERT INTO items VALUES (576,'bridge-mail-d',25,50);
 INSERT INTO items VALUES (577,'bridge-mail-t',25,50);
 INSERT INTO items VALUES (578,'bridge-mail-v',25,50);
 INSERT INTO items VALUES (579,'bridge-mail-m',25,50);
-INSERT INTO items VALUES (580,'prism-scale',10,500);
+INSERT INTO items VALUES (580,'prm-scale',10,500);
 INSERT INTO items VALUES (581,'eviolite',12,200);
 INSERT INTO items VALUES (582,'float-stone',12,200);
 INSERT INTO items VALUES (583,'rocky-helmet',12,200);
@@ -601,7 +603,7 @@ INSERT INTO items VALUES (593,'electric-gem',42,200);
 INSERT INTO items VALUES (594,'grass-gem',42,200);
 INSERT INTO items VALUES (595,'ice-gem',42,200);
 INSERT INTO items VALUES (596,'fighting-gem',42,200);
-INSERT INTO items VALUES (597,'poison-gem',42,200);
+INSERT INTO items VALUES (597,'poon-gem',42,200);
 INSERT INTO items VALUES (598,'ground-gem',42,200);
 INSERT INTO items VALUES (599,'flying-gem',42,200);
 INSERT INTO items VALUES (600,'psychic-gem',42,200);
@@ -612,7 +614,7 @@ INSERT INTO items VALUES (604,'dark-gem',42,200);
 INSERT INTO items VALUES (605,'steel-gem',42,200);
 INSERT INTO items VALUES (606,'health-wing',26,3000);
 INSERT INTO items VALUES (607,'muscle-wing',26,3000);
-INSERT INTO items VALUES (608,'resist-wing',26,3000);
+INSERT INTO items VALUES (608,'rest-wing',26,3000);
 INSERT INTO items VALUES (609,'genius-wing',26,3000);
 INSERT INTO items VALUES (610,'clever-wing',26,3000);
 INSERT INTO items VALUES (611,'swift-wing',26,3000);
@@ -693,7 +695,7 @@ INSERT INTO items VALUES (688,'luminous-moss',12,0);
 INSERT INTO items VALUES (689,'snowball',12,0);
 INSERT INTO items VALUES (690,'safety-goggles',12,0);
 INSERT INTO items VALUES (691,'rich-mulch',32,0);
-INSERT INTO items VALUES (692,'surprise-mulch',32,0);
+INSERT INTO items VALUES (692,'surpre-mulch',32,0);
 INSERT INTO items VALUES (693,'boost-mulch',32,0);
 INSERT INTO items VALUES (694,'amaze-mulch',32,0);
 INSERT INTO items VALUES (695,'gengarite',44,0);
@@ -701,7 +703,7 @@ INSERT INTO items VALUES (696,'gardevoirite',44,0);
 INSERT INTO items VALUES (697,'ampharosite',44,0);
 INSERT INTO items VALUES (698,'venusaurite',44,0);
 INSERT INTO items VALUES (699,'charizardite-x',44,0);
-INSERT INTO items VALUES (700,'blastoisinite',44,0);
+INSERT INTO items VALUES (700,'blastoinite',44,0);
 INSERT INTO items VALUES (701,'mewtwonite-x',44,0);
 INSERT INTO items VALUES (702,'mewtwonite-y',44,0);
 INSERT INTO items VALUES (703,'blazikenite',44,0);
@@ -727,7 +729,7 @@ INSERT INTO items VALUES (722,'garchompite',44,0);
 INSERT INTO items VALUES (723,'roseli-berry',7,0);
 INSERT INTO items VALUES (724,'kee-berry',4,0);
 INSERT INTO items VALUES (725,'maranga-berry',4,0);
-INSERT INTO items VALUES (726,'discount-coupon',10001,0);
+INSERT INTO items VALUES (726,'dcount-coupon',10001,0);
 INSERT INTO items VALUES (727,'strange-souvenir',10001,0);
 INSERT INTO items VALUES (728,'lumiose-galette',30,0);
 INSERT INTO items VALUES (729,'jaw-fossil',35,0);

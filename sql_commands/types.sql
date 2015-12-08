@@ -1,3 +1,5 @@
+DROP TABLE types;
+
 CREATE TABLE types (
     id INT NOT NULL,
     identifier VARCHAR(8) CHARACTER SET utf8 NOT NULL,
