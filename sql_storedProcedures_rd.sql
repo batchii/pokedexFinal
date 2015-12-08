@@ -118,4 +118,39 @@ delimiter ;
 +------------+-------------------+
 */
 
+/* Select all pokemon of two given types */
 
+CREATE PROCEDURE GetPokemonwithTwoTypes (IN typeOne VarChar(8), IN typeTwo VarChar(8))
+BEGIN IF EXISTS
+	(SELECT T.id FROM types T WHERE T.id = typeOne OR T.id = typeTwo) THEN
+SELECT P.id, P.identifier, T.identifier AS TypeOne, secondType.identifier AS TypeTwo
+FROM types T, pokemon_types PT, pokemon P,
+	(SELECT PT2.pokemon_id 
+	FROM types T2, pokemon_types PT2, pokemon P2 
+	WHERE T2.id = PT2.type_id 
+		AND PT2.pokemon_id = P2.id 
+		AND T2.identifier = typeTwo) AS secondType 
+WHERE T.id = PT.type_id 
+	AND PT.pokemon_id = P.id 
+	AND T.identifier = typeOne
+	AND PT.pokemon_id = secondType.pokemon_id; ELSE
+(SELECT 'Type Not Found' AS 'Error Message'; END IF;
+END//
+
+delimiter ;	
+			
+/*CALL GetPokemonwithTwoTypes("fire", "ground")*/
+/* Should show: 
++-------+----------------+---------+---------+
+| id    | identifier     | TypeOne | TypeTwo |
++-------+----------------+---------+---------+
+|   322 | numel          | ground  | fire    |
+|   323 | camerupt       | ground  | fire    |
+| 10078 | groudon-primal | ground  | fire    |
+| 10087 | camerupt-mega  | ground  | fire    |
++-------+----------------+---------+---------+
+*/
+
+/*select all pokemon with weight less than a given amount and of a given type*/
+
+CREATE PROCEDURE GetPokemonwithWeightandType (IN weight INT, IN typeOne VarChar(8))
