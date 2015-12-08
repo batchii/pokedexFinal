@@ -1,5 +1,7 @@
 import static spark.Spark.*;
 
+import com.j256.ormlite.jdbc.JdbcConnectionSource;
+import com.j256.ormlite.support.ConnectionSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,6 +22,15 @@ public class Bootstrap {
 //                    Paths.get(".").toAbsolutePath().normalize());
 //            System.exit(1);
 //        }
+
+        //3306
+
+        String databaseUrl = "jdbc:mysql://localhost:3306/pokedex";
+
+        ConnectionSource connectionSource = new JdbcConnectionSource(databaseUrl);
+        ((JdbcConnectionSource)connectionSource).setUsername("root");
+        ((JdbcConnectionSource)connectionSource).setPassword("1234");
+
         //Specify the IP address and Port at which the server should be run
         ipAddress(IP_ADDRESS);
         port(PORT);
