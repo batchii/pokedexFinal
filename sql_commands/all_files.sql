@@ -54821,11 +54821,11 @@ CREATE TABLE pokemon_species (
     id INT NOT NULL,
     identifier VARCHAR(11) CHARACTER SET utf8 NOT NULL,
     generation_id INT NOT NULL,
-    evolves_from_species_id,
-    evolution_chain_id INT NOT NULL,
+    evolves_from_species_id INT,
+    evolution_chain_id INT,
     color_id INT NOT NULL,
     shape_id INT NOT NULL,
-    habitat_id INT NOT NULL,
+    habitat_id INT ,
     gender_rate INT NOT NULL,
     capture_rate INT NOT NULL,
     base_happiness INT NOT NULL,
@@ -66934,8 +66934,7 @@ DROP TABLE pokemon_types;
 CREATE TABLE pokemon_types (
     pokemon_id INT NOT NULL,
     type_id INT NOT NULL,
-    slot INT NOT NULL,
-    PRIMARY KEY (pokemon_id)
+    slot INT NOT NULL
 );
 
 INSERT INTO pokemon_types VALUES (1,12,1);
