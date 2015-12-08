@@ -1,3 +1,6 @@
+
+DROP TABLE regions;
+
 CREATE TABLE regions (
     id INT NOT NULL,
     identifier VARCHAR(6) CHARACTER SET utf8 NOT NULL,
