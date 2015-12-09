@@ -6,7 +6,7 @@ CREATE TABLE moves (
     generation_id INT NOT NULL,
     type_id INT NOT NULL,
     strength INT,
-    pp INT NOT NULL,
+    pp INT,
     accuracy INT,
     priority INT NOT NULL,
     target_id INT NOT NULL,

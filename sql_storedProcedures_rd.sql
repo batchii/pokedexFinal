@@ -11,20 +11,20 @@ delimiter //
 
 CREATE PROCEDURE showAbilitiesByGeneration (IN ab VarChar(14))
 BEGIN IF EXISTS
-	(SELECT A.identifier FROM abilities A WHERE R.identifier = ab) THEN
+	(SELECT A.identifier FROM abilities A WHERE A.identifier = ab) THEN
 SELECT PFG.generation_id, A.identifier, count(*) AS numUnique
-FROM abilities A, pokemon_abilities PA, pokemon P, edited_pokemon_form_generations PFG
+FROM abilities A, pokemon_abilities PA, pokemon P, pokemon_form_generations PFG
 WHERE A.id = PA.ability_id 
 	AND PA.pokemon_id = P.id 
 	AND P.id = PFG.pokemon_form_id 
 	AND A.identifier = ab
 GROUP BY PFG.generation_id; ELSE
-    (SELECT 'Ability Not Found' AS 'Error Message'; END IF;
+    (SELECT 'Ability Not Found' AS 'Error Message'); END IF;
 END//
 
 delimiter ;
 
-/*CALL ShowAbilitiesbyGeneration("levitate")*/
+/*CALL showAbilitiesByGeneration("levitate")*/
 /*Should show:
 +---------------+------------+-----------+
 | generation_id | identifier | numUnique |
