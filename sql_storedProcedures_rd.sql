@@ -7,7 +7,9 @@ Stored Procedures */
 /* Given an ability, how many unique pokemon have it, grouped by generation? 
 	As example, use levitate*/
 
-CREATE PROCEDURE ShowAbilitiesbyGeneration (IN ab VarChar(14))
+delimiter //
+
+CREATE PROCEDURE showAbilitiesByGeneration (IN ab VarChar(14))
 BEGIN IF EXISTS
 	(SELECT A.identifier FROM abilities A WHERE R.identifier = ab) THEN
 SELECT PFG.generation_id, A.identifier, count(*) AS numUnique
@@ -37,32 +39,36 @@ delimiter ;
 
 /* How does a pokemon evolve, if at all? 
 IMCOMPLETE*/
-
-CREATE PROCEDURE ShowHowToEvolve (IN temppokes VarChar(21))
-BEGIN IF EXISTS
-	(SELECT P.identifier FROM pokemon P WHERE P.identifier = temppokes) THEN
-SELECT
-FROM pokemon P, pokemon_species PS, pokemon_evolution PE, evolution_triggers ET,
-	items I, genders GEN, locations L, moves MO, types T
-WHERE P.id = PS.evolves_from_species_id 
-	AND PS.id = PE.evolved_species_id
-	AND PE.evolution_trigger_id = ET.id
-	AND PE.trigger_item_id = I.id 
-	AND PE.held_item_id = I.id
-	AND PE.gender_id = GEN.id
-	AND PE.location_id = L.id
-	AND PE.known_move_id = MO.id
-	AND PE.known_move_type = T.id
-	AND PE.known_move_type = T.id
-; ELSE
-    (SELECT 'Pokemon Not Found' AS 'Error Message'; END IF;
-END//
-
-delimiter ;
+-- 
+-- delimiter //
+-- 
+-- CREATE PROCEDURE ShowHowToEvolve (IN temppokes VarChar(21))
+-- BEGIN IF EXISTS
+-- 	(SELECT P.identifier FROM pokemon P WHERE P.identifier = temppokes) THEN
+-- SELECT
+-- FROM pokemon P, pokemon_species PS, pokemon_evolution PE, evolution_triggers ET,
+-- 	items I, genders GEN, locations L, moves MO, types T
+-- WHERE P.id = PS.evolves_from_species_id 
+-- 	AND PS.id = PE.evolved_species_id
+-- 	AND PE.evolution_trigger_id = ET.id
+-- 	AND PE.trigger_item_id = I.id 
+-- 	AND PE.held_item_id = I.id
+-- 	AND PE.gender_id = GEN.id
+-- 	AND PE.location_id = L.id
+-- 	AND PE.known_move_id = MO.id
+-- 	AND PE.known_move_type = T.id
+-- 	AND PE.known_move_type = T.id
+-- ; ELSE
+--     (SELECT 'Pokemon Not Found' AS 'Error Message'; END IF;
+-- END//
+-- 
+-- delimiter ;
 
 /*CALL ShowHowToEvolve("pikachu")*/
 
 /* In which region(s) can I catch a given pokemon? */
+
+delimiter //
 
 CREATE PROCEDURE PokemonRegion (IN temppokes VarChar(21))
 BEGIN IF EXISTS
@@ -94,6 +100,8 @@ delimiter ;
 
 /* Which pokemon from a given generation has highest base stats? */
 
+delimiter //
+
 CREATE PROCEDURE BestBaseStatbyGen (IN generationWhat INT)
 BEGIN IF EXISTS
 	(SELECT PFG.generation_id FROM pokemon_form_generation PFG WHERE PFG.generation_id = generationWhat) THEN
@@ -119,6 +127,8 @@ delimiter ;
 */
 
 /* Select all pokemon of two given types */
+
+delimiter //
 
 CREATE PROCEDURE GetPokemonwithTwoTypes (IN typeOne VarChar(8), IN typeTwo VarChar(8))
 BEGIN IF EXISTS
@@ -152,5 +162,23 @@ delimiter ;
 */
 
 /*select all pokemon with weight less than a given amount and of a given type*/
+-- 
+-- CREATE PROCEDURE GetPokemonwithWeightandType (IN weight INT, IN typeOne VarChar(8))
+-- BEGIN IF EXISTS
+-- 	(SELECT T.id FROM types T WHERE T.id = typeOne) THEN
+-- SELECT P.id, P.identifier, T.identifier, P.weight
+-- FROM
+-- 
 
-CREATE PROCEDURE GetPokemonwithWeightandType (IN weight INT, IN typeOne VarChar(8))
+
+
+
+
+
+
+
+
+
+
+
+
