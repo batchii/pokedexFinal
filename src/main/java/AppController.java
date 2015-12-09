@@ -1,11 +1,13 @@
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import database.AbilitiesByGenerationDTO;
 import jdk.nashorn.internal.parser.JSONParser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Collections;
+import java.util.List;
 
 import static spark.Spark.*;
 
@@ -44,6 +46,11 @@ public class AppController {
             json.addProperty("state", gameState);
             response.status(200);
             return json;
+        }, new JsonTransformer());
+
+        get(API_CONTEXT + "/AbilitiesByGeneration/:ability_name", "application/json", (request, response) ->{
+            String abilityName = request.params("ability_name");
+            return appService.getAbilitiesByGeneration(abilityName);
         }, new JsonTransformer());
     }
 }
