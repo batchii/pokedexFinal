@@ -6,6 +6,8 @@ Stored Procedures */
 
 /* Given an ability, how many unique pokemon have it, grouped by generation? */
 
+DROP PROCEDURE IF EXISTS showAbilitiesByGeneration;
+
 delimiter //
 
 CREATE PROCEDURE showAbilitiesByGeneration (IN ab VarChar(14))
@@ -38,6 +40,8 @@ delimiter ;
 
 /* In which region(s) can I catch a given pokemon? */
 
+DROP PROCEDURE IF EXISTS pokemonRegion;
+
 delimiter //
 
 CREATE PROCEDURE pokemonRegion (IN temppokes VarChar(21))
@@ -69,6 +73,8 @@ delimiter ;
 */
 
 /* In which location(s) can I catch a given pokemon? */
+
+DROP PROCEDURE IF EXISTS pokemonLocation;
 
 delimiter //
 
@@ -104,6 +110,8 @@ Should show:
 
 
 /* What pokemon can I catch at a given location? */
+
+DROP PROCEDURE IF EXISTS whatPokemonHere;
 
 delimiter //
 
@@ -143,6 +151,8 @@ delimiter ;
 
 /* Which pokemon from a given generation has highest base stats? */
 
+DROP PROCEDURE IF EXISTS bestBaseStatByGen;
+
 delimiter //
 
 CREATE PROCEDURE bestBaseStatByGen (IN generationWhat INT)
@@ -171,9 +181,11 @@ delimiter ;
 
 /* Select all pokemon of two given types */
 
+DROP PROCEDURE IF EXISTS getPokemonWithTwoTypes;
+
 delimiter //
 
-CREATE PROCEDURE GetPokemonwithTwoTypes (IN typeOne VarChar(8), IN typeTwo VarChar(8))
+CREATE PROCEDURE getPokemonWithTwoTypes (IN typeOne VarChar(8), IN typeTwo VarChar(8))
 BEGIN IF EXISTS
 	(SELECT T.identifier FROM types T WHERE T.identifier = typeOne OR T.identifier = typeTwo) THEN
 SELECT P.id, P.identifier, T.identifier AS TypeOne, secondType.identifier AS TypeTwo
@@ -192,7 +204,7 @@ END//
 
 delimiter ;	
 			
-/*call GetPokemonwithTwoTypes("fire", "ground")*/
+/*call getPokemonWithTwoTypes("fire", "ground")*/
 /* Should show: 
 +-------+----------------+---------+---------+
 | id    | identifier     | TypeOne | TypeTwo |
@@ -206,12 +218,14 @@ delimiter ;
 
 /*Select all Pokemon that are of one given type with more than one evolution.*/
 
+DROP PROCEDURE IF EXISTS pokemonMoreThanOneEvolution;
+
 delimiter //
 
 CREATE PROCEDURE pokemonMoreThanOneEvolution (IN typeOne VarChar(8))
 BEGIN IF EXISTS
 	(SELECT T.identifier FROM types T WHERE T.identifier = typeOne) THEN
-SELECT DISTINCT(PS.identifier), T.identifier
+SELECT DISTINCT(PS.identifier) as pokemon, T.identifier as typeOne 
 FROM pokemon_species PS, pokemon_evolution PE, types T, pokemon_types PT
 WHERE PS.evolves_from_species_id is NOT NULL
 	AND PE.evolved_species_id != PS.evolves_from_species_id
@@ -252,6 +266,8 @@ delimiter ;
 
 /*select all pokemon with weight greater than a given amount and of a given type*/
 
+DROP PROCEDURE IF EXISTS getPokemonWithWeightAndType;
+
 delimiter //
 
 CREATE PROCEDURE getPokemonWithWeightAndType (IN weight INT, IN typeOne VarChar(8))
@@ -290,6 +306,8 @@ delimiter ;
 */
 
 /*select all types of pokemon who can use a given move.*/
+
+DROP PROCEDURE IF EXISTS getTypesOfPokesThatCanUseMove;
 
 delimiter //
 
@@ -339,6 +357,8 @@ should show:
 
 /*select all pokemon who can use a given move.*/
 
+DROP PROCEDURE IF EXISTS getPokesThatCanUseMove;
+
 delimiter //
 
 CREATE PROCEDURE getPokesThatCanUseMove(in move VARCHAR(16))
@@ -367,6 +387,8 @@ Should Show:
 
 /*select number of unique pokemon in a generation */
 
+DROP PROCEDURE IF EXISTS generationUniquePokemon;
+
 delimiter //
 
 CREATE PROCEDURE generationUniquePokemon(in gen INT)
@@ -392,6 +414,8 @@ delimiter ;
 
 /*Show number of unique pokemon in a given type.*/
 
+DROP PROCEDURE IF EXISTS numUniquePokemonByType;
+
 delimiter //
 
 CREATE PROCEDURE numUniquePokemonByType (IN typeOne VarChar(8))
@@ -415,14 +439,16 @@ delimiter ;
 +------------+---------------+
 */
 
-/* Select all pokemon of a given type (one type, broader) */
+/* Select all pokemon of a given type */
+
+DROP PROCEDURE IF EXISTS getPokemonWithOneType;
 
 delimiter //
 
 CREATE PROCEDURE getPokemonWithOneType (IN typeOne VarChar(8))
 BEGIN IF EXISTS
 	(SELECT T.identifier FROM types T WHERE T.identifier = typeOne) THEN
-SELECT P.id, P.identifier, T.identifier
+SELECT P.id, P.identifier as pokemon, T.identifier as typeOne
 FROM types T, pokemon_types PT, pokemon P
 WHERE T.id = PT.type_id 
 	AND PT.pokemon_id = P.id 
@@ -434,10 +460,20 @@ delimiter ;
 
 /* call getPokemonWithOneType("water");*/
 /*Should show:
++-------+--------------------+-------+
+| id    | pokemon            | type  |
++-------+--------------------+-------+
+|     7 | squirtle           | water |
+|     8 | wartortle          | water |
+|     9 | blastoise          | water |
+.........
+.........
 128 rows in set (0.02 sec)
 */
 
 /* select all pokemon that require a given held item to evolve*/
+
+DROP PROCEDURE IF EXISTS allPokemonNeedAHeldToEvolve;
 
 delimiter //
 
@@ -467,12 +503,14 @@ delimiter ;
 
 /* select all pokemon that require a given trigger item to evolve*/
 
+DROP PROCEDURE IF EXISTS allPokemonNeedATriggerToEvolve;
+
 delimiter //
 
 CREATE PROCEDURE allPokemonNeedATriggerToEvolve (IN triggerItem VarChar(16))
 BEGIN IF EXISTS
 	(SELECT I.identifier FROM items I WHERE I.identifier = triggerItem) THEN
-SELECT P.identifier as Pokemon, I.identifier as HeldItem
+SELECT P.identifier as Pokemon, I.identifier as TriggerItem
 FROM pokemon P, pokemon_species PS, pokemon_evolution PE, items I
 WHERE PE.trigger_item_id = I.id
 	AND PE.evolved_species_id = PS.id
@@ -487,7 +525,7 @@ delimiter ;
 /*Should show:
 
 +-------------------+---------------+
-| Pokemon           | HeldItem      |
+| Pokemon           | TriggerItem   |
 +-------------------+---------------+
 | pikachu           | thunder-stone |
 | eevee             | thunder-stone |
@@ -506,6 +544,8 @@ delimiter ;
 
 /*For a given pokemon, list its evolved forms / pre-evolved forms
 Basically, list its evolution chain*/
+
+DROP PROCEDURE IF EXISTS pokemonEvolutionChain;
 
 delimiter //
 
