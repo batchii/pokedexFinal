@@ -225,7 +225,7 @@ delimiter //
 CREATE PROCEDURE pokemonMoreThanOneEvolution (IN typeOne VarChar(8))
 BEGIN IF EXISTS
 	(SELECT T.identifier FROM types T WHERE T.identifier = typeOne) THEN
-SELECT DISTINCT(PS.identifier), T.identifier
+SELECT DISTINCT(PS.identifier) as pokemon, T.identifier as typeOne 
 FROM pokemon_species PS, pokemon_evolution PE, types T, pokemon_types PT
 WHERE PS.evolves_from_species_id is NOT NULL
 	AND PE.evolved_species_id != PS.evolves_from_species_id
@@ -448,7 +448,7 @@ delimiter //
 CREATE PROCEDURE getPokemonWithOneType (IN typeOne VarChar(8))
 BEGIN IF EXISTS
 	(SELECT T.identifier FROM types T WHERE T.identifier = typeOne) THEN
-SELECT P.id, P.identifier, T.identifier
+SELECT P.id, P.identifier as pokemon, T.identifier as typeOne
 FROM types T, pokemon_types PT, pokemon P
 WHERE T.id = PT.type_id 
 	AND PT.pokemon_id = P.id 
@@ -460,6 +460,14 @@ delimiter ;
 
 /* call getPokemonWithOneType("water");*/
 /*Should show:
++-------+--------------------+-------+
+| id    | pokemon            | type  |
++-------+--------------------+-------+
+|     7 | squirtle           | water |
+|     8 | wartortle          | water |
+|     9 | blastoise          | water |
+.........
+.........
 128 rows in set (0.02 sec)
 */
 
@@ -502,7 +510,7 @@ delimiter //
 CREATE PROCEDURE allPokemonNeedATriggerToEvolve (IN triggerItem VarChar(16))
 BEGIN IF EXISTS
 	(SELECT I.identifier FROM items I WHERE I.identifier = triggerItem) THEN
-SELECT P.identifier as Pokemon, I.identifier as HeldItem
+SELECT P.identifier as Pokemon, I.identifier as TriggerItem
 FROM pokemon P, pokemon_species PS, pokemon_evolution PE, items I
 WHERE PE.trigger_item_id = I.id
 	AND PE.evolved_species_id = PS.id
@@ -517,7 +525,7 @@ delimiter ;
 /*Should show:
 
 +-------------------+---------------+
-| Pokemon           | HeldItem      |
+| Pokemon           | TriggerItem   |
 +-------------------+---------------+
 | pikachu           | thunder-stone |
 | eevee             | thunder-stone |
