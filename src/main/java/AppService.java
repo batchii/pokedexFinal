@@ -2,6 +2,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import database.AbilitiesByGenerationDTO;
+import database.PokemonLocationDTO;
 import database.PokemonRegionDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -100,7 +101,7 @@ public class AppService {
         List<PokemonRegionDTO> toReturn = new LinkedList<PokemonRegionDTO>();
         try {
             stmt = conn.createStatement();
-            String sql = "Call PokemonRegion(\"" + pokemon + "\");";
+            String sql = "Call pokemonRegion(\"" + pokemon + "\");";
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
                 PokemonRegionDTO result = new PokemonRegionDTO();
@@ -132,20 +133,20 @@ public class AppService {
         return toReturn;
     }
 
-    public List<PokemonRegionDTO> pokemonLocation(String pokemon){
+    public List<PokemonLocationDTO> pokemonLocation(String pokemon){
         //STEP 4: Execute a query
         System.out.println("Creating statement...");
         Statement stmt = null;
-        List<PokemonRegionDTO> toReturn = new LinkedList<PokemonRegionDTO>();
+        List<PokemonLocationDTO> toReturn = new LinkedList<PokemonLocationDTO>();
         try {
             stmt = conn.createStatement();
-            String sql = "Call PokemonRegion(\"" + pokemon + "\");";
+            String sql = "Call pokemonLocation(\"" + pokemon + "\");";
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
-                PokemonRegionDTO result = new PokemonRegionDTO();
+                PokemonLocationDTO result = new PokemonLocationDTO();
                 //Retrieve by column name
                 result.setPokemon(rs.getString("pokemon")) ;
-                result.setRegion(rs.getString("region"));
+                result.setLocation(rs.getString("location"));
                 toReturn.add(result);
             }
             //STEP 6: Clean-up environment
@@ -170,6 +171,7 @@ public class AppService {
         }
         return toReturn;
     }
+
 
     private ResultSet callDB(String dbCall){
         Statement stmt = null;
