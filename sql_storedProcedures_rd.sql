@@ -4,8 +4,7 @@ Alec Tabatchnick
 SQL
 Stored Procedures */
 
-/* Given an ability, how many unique pokemon have it, grouped by generation? 
-	As example, use levitate*/
+/* Given an ability, how many unique pokemon have it, grouped by generation? */
 
 delimiter //
 
@@ -37,44 +36,14 @@ delimiter ;
 +---------------+------------+-----------+
 */
 
-/* How does a pokemon evolve, if at all? 
-IMCOMPLETE*/
-
--- delimiter //
--- 
--- CREATE PROCEDURE ShowHowToEvolve (IN temppokes VarChar(21))
--- BEGIN IF EXISTS
--- 	(SELECT P.identifier FROM pokemon P WHERE P.identifier = temppokes) THEN
--- SELECT *
--- FROM pokemon P, pokemon_species PS, pokemon_evolution PE, evolution_triggers ET,
--- 	items I, genders GEN, locations L, moves MO, types T
--- WHERE P.id = PS.evolves_from_species_id 
--- 	AND PS.id = PE.evolved_species_id
--- 	AND PE.evolution_trigger_id = ET.id
--- 	AND PE.trigger_item_id = I.id 
--- 	AND PE.held_item_id = I.id
--- 	AND PE.gender_id = GEN.id
--- 	AND PE.location_id = L.id
--- 	AND PE.known_move_id = MO.id
--- 	AND PE.known_move_type_id = T.id
--- 	AND PE.party_type_id = T.id
--- 	AND PE.trade_species_id = blah
--- ; ELSE
---     (SELECT 'Pokemon Not Found' AS 'Error Message'); END IF;
--- END//
--- 
--- delimiter ;
-
-/*call ShowHowToEvolve("pikachu")*/
-
 /* In which region(s) can I catch a given pokemon? */
 
 delimiter //
 
-CREATE PROCEDURE PokemonRegion (IN temppokes VarChar(21))
+CREATE PROCEDURE pokemonRegion (IN temppokes VarChar(21))
 BEGIN IF EXISTS
 	(SELECT P.identifier FROM pokemon P WHERE P.identifier = temppokes) THEN
-SELECT P.identifier, R.identifier
+SELECT P.identifier as Pokemon, R.identifier as Region
 FROM pokemon P, encounters E, locations L, regions R
 WHERE P.id = E.pokemon_id
 	AND E.location_area_id = L.id 
@@ -88,25 +57,98 @@ delimiter ;
 
 /*call PokemonRegion("tentacool")*/
 /* Should show: 
-+------------+------------+
-| identifier | identifier |
-+------------+------------+
-| tentacool  | hoenn      |
-| tentacool  | johto      |
-| tentacool  | kanto      |
-| tentacool  | sinnoh     |
-| tentacool  | unova      |
-+------------+------------+
++-----------+--------+
+| Pokemon   | Region |
++-----------+--------+
+| tentacool | hoenn  |
+| tentacool | johto  |
+| tentacool | kanto  |
+| tentacool | sinnoh |
+| tentacool | unova  |
++-----------+--------+
+*/
+
+/* In which location(s) can I catch a given pokemon? */
+
+delimiter //
+
+CREATE PROCEDURE pokemonLocation (IN temppokes VarChar(21))
+BEGIN IF EXISTS
+	(SELECT P.identifier FROM pokemon P WHERE P.identifier = temppokes) THEN
+SELECT P.identifier as Pokemon, L.identifier as Location
+FROM pokemon P, encounters E, locations L
+WHERE P.id = E.pokemon_id
+	AND E.location_area_id = L.id 
+	AND P.identifier = temppokes
+GROUP BY L.identifier; ELSE
+    (SELECT 'Pokemon Not Found' AS 'Error Message'); END IF;
+END//
+
+delimiter ;
+
+/* call pokemonLocation('pikachu');
+Should show: 
++---------+------------------+
+| Pokemon | Location         |
++---------+------------------+
+| pikachu | hoenn-route-109  |
+| pikachu | johto-route-38   |
+| pikachu | lilycove-city    |
+| pikachu | mirage-tower     |
+| pikachu | mossdeep-city    |
+| pikachu | pc-nagoya        |
+| pikachu | pokemon-event-10 |
++---------+------------------+
+7 rows in set (0.33 sec)
+*/
+
+
+/* What pokemon can I catch at a given location? */
+
+delimiter //
+
+CREATE PROCEDURE whatPokemonHere(IN loc VARCHAR(23))
+BEGIN IF EXISTS
+	(SELECT L.identifier FROM locations L WHERE L.identifier = loc) THEN
+SELECT P.id, P.identifier
+FROM locations L, encounters E, pokemon P
+WHERE L.id = E.location_area_id
+	AND E.pokemon_id = P.id
+	AND L.identifier = loc
+GROUP BY P.id; ELSE
+	(SELECT 'Location Not Found' AS 'Error Message'); END IF;
+END//
+
+delimiter ;
+
+/* call whatPokemonHere("canalave-city"); */
+/* Should show:
++-----+------------+
+| id  | identifier |
++-----+------------+
+|  72 | tentacool  |
+|  73 | tentacruel |
+| 120 | staryu     |
+| 129 | magikarp   |
+| 130 | gyarados   |
+| 278 | wingull    |
+| 279 | pelipper   |
+| 422 | shellos    |
+| 423 | gastrodon  |
+| 456 | finneon    |
+| 457 | lumineon   |
++-----+------------+
+11 rows in set (0.37 sec)
 */
 
 /* Which pokemon from a given generation has highest base stats? */
 
 delimiter //
 
-CREATE PROCEDURE BestBaseStatbyGen (IN generationWhat INT)
+CREATE PROCEDURE bestBaseStatByGen (IN generationWhat INT)
 BEGIN IF EXISTS
 	(SELECT PFG.generation_id FROM pokemon_form_generations PFG WHERE PFG.generation_id = generationWhat) THEN
-SELECT P.identifier, sum(PS.base_stat) 
+SELECT P.identifier as Pokemon, sum(PS.base_stat) as TotalBaseStat
 FROM pokemon_form_generations PFG, pokemon_stats PS, pokemon P 
 WHERE PFG.pokemon_form_id = PS.pokemon_id 
 	AND PS.pokemon_id = P.id 
@@ -118,13 +160,13 @@ END//
 
 delimiter ;
 
-/*call BestBaseStatbyGen("1")*/
+/*call bestBaseStatByGen("1")*/
 /*Should show:
-+------------+-------------------+
-| identifier | sum(PS.base_stat) |
-+------------+-------------------+
-| mewtwo     |               680 |
-+------------+-------------------+
++---------+---------------+
+| Pokemon | TotalBaseStat |
++---------+---------------+
+| mewtwo  |           680 |
++---------+---------------+
 */
 
 /* Select all pokemon of two given types */
@@ -162,8 +204,7 @@ delimiter ;
 +-------+----------------+---------+---------+
 */
 
-/* Select pokemon with more than one evolution of a given type.
-Or at least three different forms*/
+/*Select all Pokemon that are of one given type with more than one evolution.*/
 
 delimiter //
 
@@ -216,7 +257,7 @@ delimiter //
 CREATE PROCEDURE getPokemonWithWeightAndType (IN weight INT, IN typeOne VarChar(8))
 BEGIN IF EXISTS
 	(SELECT T.identifier FROM types T WHERE T.identifier = typeOne) THEN
-SELECT P.id, P.identifier, T.identifier, P.weight
+SELECT P.id, P.identifier as Pokemon, T.identifier as Type, P.weight
 FROM pokemon P, types T, pokemon_types PT
 WHERE P.id = PT.pokemon_id
 	AND PT.type_id = T.id
@@ -225,50 +266,103 @@ WHERE P.id = PT.pokemon_id
 (SELECT 'Type Not Found' AS 'Error Message'); END IF;
 END//
 
-delimiter;
+delimiter ;
 
 /*call getPokemonWithWeightAndType(1000, "fire");*/
 /* Should show:
-+-------+------------------+------------+--------+
-| id    | identifier       | identifier | weight |
-+-------+------------------+------------+--------+
-|    59 | arcanine         | fire       |   1550 |
-|   244 | entei            | fire       |   1980 |
-|   250 | ho-oh            | fire       |   1990 |
-|   323 | camerupt         | fire       |   2200 |
-|   485 | heatran          | fire       |   4300 |
-|   500 | emboar           | fire       |   1500 |
-|   643 | reshiram         | fire       |   3300 |
-|   721 | volcanion        | fire       |   1950 |
-| 10034 | charizard-mega-x | fire       |   1105 |
-| 10035 | charizard-mega-y | fire       |   1005 |
-| 10078 | groudon-primal   | fire       |   9997 |
-| 10087 | camerupt-mega    | fire       |   3205 |
-+-------+------------------+------------+--------+
++-------+------------------+------+--------+
+| id    | Pokemon          | Type | weight |
++-------+------------------+------+--------+
+|    59 | arcanine         | fire |   1550 |
+|   244 | entei            | fire |   1980 |
+|   250 | ho-oh            | fire |   1990 |
+|   323 | camerupt         | fire |   2200 |
+|   485 | heatran          | fire |   4300 |
+|   500 | emboar           | fire |   1500 |
+|   643 | reshiram         | fire |   3300 |
+|   721 | volcanion        | fire |   1950 |
+| 10034 | charizard-mega-x | fire |   1105 |
+| 10035 | charizard-mega-y | fire |   1005 |
+| 10078 | groudon-primal   | fire |   9997 |
+| 10087 | camerupt-mega    | fire |   3205 |
++-------+------------------+------+--------+
+12 rows in set (0.01 sec)
 */
 
 /*select all types of pokemon who can use a given move.*/
 
--- delimiter //
--- 
--- CREATE PROCEDURE getTypesOfPokesThatCanUseMove(in move VARCHAR(16))
--- BEGIN IF EXISTS
--- 	(SELECT MO.identifier FROM moves MO WHERE MO.identifier = move) THEN
--- SELECT P.id, P.identifier, T.identifier
--- FROM pokemon P, pokemon_types PT, pokemon_moves PM, moves MO, types T
--- WHERE MO.id = PM.move_id
--- 	AND PM.pokemon_id = PT.pokemon_id
--- 	AND PT.pokemon_id = P.id
--- 	AND PT.type_id = T.id
--- 	AND MO.identifier = move; ELSE
--- (SELECT 'Move Not Found' AS 'Error Message'); END IF;
--- END//
--- 
--- delimiter ;
+delimiter //
+
+CREATE PROCEDURE getTypesOfPokesThatCanUseMove(in move VARCHAR(16))
+BEGIN IF EXISTS
+	(SELECT MO.identifier FROM moves MO WHERE MO.identifier = move) THEN
+SELECT T.identifier
+FROM pokemon P, pokemon_types PT, pokemon_moves PM, moves MO, types T
+WHERE MO.id = PM.move_id
+	AND PM.pokemon_id = PT.pokemon_id
+	AND PT.pokemon_id = P.id
+	AND PT.type_id = T.id
+	AND MO.identifier = move
+GROUP BY T.identifier; ELSE
+(SELECT 'Move Not Found' AS 'Error Message'); END IF;
+END//
+
+delimiter ;
 
 /* call getTypesOfPokesThatCanUseMove("Tackle");*/
-/*show show: 
-3035 rows in set (3 min 33.18 sec)
+/* Result takes around 25-35 seconds
+should show: 
++------------+
+| identifier |
++------------+
+| bug        |
+| dark       |
+| dragon     |
+| electric   |
+| fairy      |
+| fighting   |
+| fire       |
+| flying     |
+| ghost      |
+| grass      |
+| ground     |
+| ice        |
+| normal     |
+| poison     |
+| psychic    |
+| rock       |
+| steel      |
+| water      |
++------------+
+18 rows in set (25.78 sec)
+*/
+
+/*select all pokemon who can use a given move.*/
+
+delimiter //
+
+CREATE PROCEDURE getPokesThatCanUseMove(in move VARCHAR(16))
+BEGIN IF EXISTS
+	(SELECT MO.identifier FROM moves MO WHERE MO.identifier = move) THEN
+SELECT P.identifier as Pokemon
+FROM pokemon P, pokemon_moves PM, moves MO
+WHERE MO.id = PM.move_id
+	AND PM.pokemon_id = P.id
+	AND MO.identifier = move
+GROUP BY P.identifier; ELSE
+(SELECT 'Move Not Found' AS 'Error Message'); END IF;
+END//
+
+delimiter ;
+
+/*call getPokesThatCanUseMove('oblivion-wing');
+Should Show:
++---------+
+| Pokemon |
++---------+
+| yveltal |
++---------+
+1 row in set (0.74 sec)
 */
 
 /*select number of unique pokemon in a generation */
@@ -295,9 +389,6 @@ delimiter ;
 |  5 | generation-v |           156 |
 +----+--------------+---------------+
 */
-
-/* List all second evolution pokemon that are of two given types.*/
-/* INC OMPLETEEE*/
 
 /*Show number of unique pokemon in a given type.*/
 
@@ -346,40 +437,106 @@ delimiter ;
 128 rows in set (0.02 sec)
 */
 
-/* select all pokemon that require a held item to evolve*/
--- 
--- delimiter //
--- 
--- CREATE PROCEDURE allPokemonNeedAHeldToEvolve (IN heldItem VarChar(16))
--- BEGIN IF EXISTS
--- 	(SELECT I.identifier FROM items I WHERE I.identifier = heldItem) THEN
--- SELECT P.identifier, I.identifier
--- FROM pokemon P, pokemon_species PS, pokemon_evolution PE, items I
--- WHERE PE.held_item_int is NOT NULL
--- 	AND PE.evolved
--- 
--- 
--- 
--- -- 	(SELECT T.identifier FROM types T WHERE T.identifier = typeOne) THEN
--- -- SELECT DISTINCT(PS.identifier), T.identifier
--- -- FROM pokemon_species PS, pokemon_evolution PE, types T, pokemon_types PT
--- -- WHERE PS.evolves_from_species_id is NOT NULL
--- -- 	AND PE.evolved_species_id != PS.evolves_from_species_id
--- -- 	AND PS.id = PT.pokemon_id
--- -- 	AND PT.type_id = T.id
--- -- 	AND T.identifier = typeOne; ELSE
--- -- (SELECT 'Type Not Found' AS 'Error Message'); END IF;
--- -- END//
--- -- 
--- -- delimiter ;
+/* select all pokemon that require a given held item to evolve*/
+
+delimiter //
+
+CREATE PROCEDURE allPokemonNeedAHeldToEvolve (IN heldItem VarChar(16))
+BEGIN IF EXISTS
+	(SELECT I.identifier FROM items I WHERE I.identifier = heldItem) THEN
+SELECT P.identifier as Pokemon, I.identifier as HeldItem
+FROM pokemon P, pokemon_species PS, pokemon_evolution PE, items I
+WHERE PE.held_item_id = I.id
+	AND PE.evolved_species_id = PS.id
+	AND PS.evolves_from_species_id = P.species_id
+	AND I.identifier = heldItem; ELSE
+(SELECT 'Item Not Found' AS 'Error Message'); END IF;
+END//
+
+delimiter ;
+
+/* call allPokemonNeedAHeldToEvolve("protector");*/
+/* Should show:
++---------+-----------+
+| Pokemon | HeldItem  |
++---------+-----------+
+| rhydon  | protector |
++---------+-----------+
+*/
 
 
+/* select all pokemon that require a given trigger item to evolve*/
 
+delimiter //
 
+CREATE PROCEDURE allPokemonNeedATriggerToEvolve (IN triggerItem VarChar(16))
+BEGIN IF EXISTS
+	(SELECT I.identifier FROM items I WHERE I.identifier = triggerItem) THEN
+SELECT P.identifier as Pokemon, I.identifier as HeldItem
+FROM pokemon P, pokemon_species PS, pokemon_evolution PE, items I
+WHERE PE.trigger_item_id = I.id
+	AND PE.evolved_species_id = PS.id
+	AND PS.evolves_from_species_id = P.species_id
+	AND I.identifier = triggerItem; ELSE
+(SELECT 'Item Not Found' AS 'Error Message'); END IF;
+END//
 
+delimiter ;
 
+/* call allPokemonNeedATriggerToEvolve("thunder-stone"); */
+/*Should show:
 
++-------------------+---------------+
+| Pokemon           | HeldItem      |
++-------------------+---------------+
+| pikachu           | thunder-stone |
+| eevee             | thunder-stone |
+| eelektrik         | thunder-stone |
+| pikachu-rock-star | thunder-stone |
+| pikachu-belle     | thunder-stone |
+| pikachu-pop-star  | thunder-stone |
+| pikachu-phd       | thunder-stone |
+| pikachu-libre     | thunder-stone |
+| pikachu-cosplay   | thunder-stone |
++-------------------+---------------+
+9 rows in set (0.00 sec)
 
+//The extra Pikachu are special "cosplay" Pikachu. They're very cute. 
+*/
 
+/*For a given pokemon, list its evolved forms / pre-evolved forms
+Basically, list its evolution chain*/
 
+delimiter //
+
+CREATE PROCEDURE pokemonEvolutionChain (IN pokemon VarChar(11))
+BEGIN IF EXISTS
+	(SELECT P.identifier FROM pokemon P WHERE P.identifier = pokemon) THEN
+SELECT DISTINCT(PS2.identifier) as Pokemon
+FROM pokemon P, pokemon_species PS, pokemon_species PS2
+WHERE PS.identifier = pokemon 
+	AND PS.evolution_chain_id = PS2.evolution_chain_id
+	AND PS.identifier = pokemon; ELSE
+(SELECT 'Pokemon Not Found' AS 'Error Message'); END IF;
+END//
+
+delimiter ;
+
+/* call pokemonEvolutionChain('eevee');
+Should show:
++----------+
+| Pokemon  |
++----------+
+| eevee    |
+| vaporeon |
+| jolteon  |
+| flareon  |
+| espeon   |
+| umbreon  |
+| leafeon  |
+| glaceon  |
+| sylveon  |
++----------+
+9 rows in set (0.18 sec)
+*/
 
