@@ -52,5 +52,10 @@ public class AppController {
             String abilityName = request.params("ability_name");
             return appService.getAbilitiesByGeneration(abilityName);
         }, new JsonTransformer());
+
+        get(API_CONTEXT + "/PokemonRegion/:pokemon_name", "application/json", (request, response) -> {
+            String pokemon = request.params("pokemon_name");
+            return appService.pokemonRegion(pokemon);
+        }, new JsonTransformer());
     }
 }

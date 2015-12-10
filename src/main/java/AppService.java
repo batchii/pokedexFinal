@@ -2,6 +2,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import database.AbilitiesByGenerationDTO;
+import database.PokemonRegionDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -58,7 +59,7 @@ public class AppService {
         try {
             stmt = conn.createStatement();
             String sql;
-            sql = "CALL showAbilitiesByGeneration(\"" + abilityName + "\") ";
+            sql = "CALL showAbilitiesByGeneration(\"" + abilityName + "\"); ";
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
                 AbilitiesByGenerationDTO result = new AbilitiesByGenerationDTO();
@@ -92,6 +93,111 @@ public class AppService {
 
     }
 
+    public List<PokemonRegionDTO> pokemonRegion(String pokemon){
+        //STEP 4: Execute a query
+        System.out.println("Creating statement...");
+        Statement stmt = null;
+        List<PokemonRegionDTO> toReturn = new LinkedList<PokemonRegionDTO>();
+        try {
+            stmt = conn.createStatement();
+            String sql = "Call PokemonRegion(\"" + pokemon + "\");";
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()) {
+                PokemonRegionDTO result = new PokemonRegionDTO();
+                //Retrieve by column name
+                result.setPokemon(rs.getString("pokemon")) ;
+                result.setRegion(rs.getString("region"));
+                toReturn.add(result);
+            }
+            //STEP 6: Clean-up environment
+            rs.close();
+            stmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            //finally block used to close resources
+            try {
+                if (stmt != null)
+                    stmt.close();
+            } catch (SQLException se2) {
+            }// nothing we can do
+            try {
+                if (conn != null)
+                    conn.close();
+            } catch (SQLException se) {
+                se.printStackTrace();
+            }//end finally try
+        }
+        return toReturn;
+    }
+
+    public List<PokemonRegionDTO> pokemonLocation(String pokemon){
+        //STEP 4: Execute a query
+        System.out.println("Creating statement...");
+        Statement stmt = null;
+        List<PokemonRegionDTO> toReturn = new LinkedList<PokemonRegionDTO>();
+        try {
+            stmt = conn.createStatement();
+            String sql = "Call PokemonRegion(\"" + pokemon + "\");";
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()) {
+                PokemonRegionDTO result = new PokemonRegionDTO();
+                //Retrieve by column name
+                result.setPokemon(rs.getString("pokemon")) ;
+                result.setRegion(rs.getString("region"));
+                toReturn.add(result);
+            }
+            //STEP 6: Clean-up environment
+            rs.close();
+            stmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            //finally block used to close resources
+            try {
+                if (stmt != null)
+                    stmt.close();
+            } catch (SQLException se2) {
+            }// nothing we can do
+            try {
+                if (conn != null)
+                    conn.close();
+            } catch (SQLException se) {
+                se.printStackTrace();
+            }//end finally try
+        }
+        return toReturn;
+    }
+
+    private ResultSet callDB(String dbCall){
+        Statement stmt = null;
+        ResultSet rs = null;
+        try {
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery(dbCall);
+            //STEP 6: Clean-up environment
+            stmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            //finally block used to close resources
+            try {
+                if (stmt != null)
+                    stmt.close();
+            } catch (SQLException se2) {
+            }// nothing we can do
+            try {
+                if (conn != null)
+                    conn.close();
+            } catch (SQLException se) {
+                se.printStackTrace();
+            }//end finally try
+        }
+        return rs;
+    }
 
     public static class AppServiceException extends Exception {
         public AppServiceException (String message, Throwable cause) {super(message, cause);};
