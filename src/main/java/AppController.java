@@ -84,5 +84,51 @@ public class AppController {
             return appService.pokemonMoreThanOneEvolution(type);
         }, new JsonTransformer());
 
+
+        get(API_CONTEXT + "/GetPokemonWithWeightAndType/:weight/:type", "application/json", (request, response) -> {
+            Integer weight = Integer.parseInt(request.params("weight"));
+            Integer type = Integer.parseInt(request.params("type"));
+            return appService.getPokemonWithWeightAndType(weight, type);
+        }, new JsonTransformer());
+
+        get(API_CONTEXT + "/GetTypesOfPokesThatCanUseMove/:move", "application/json", (request, response) -> {
+            String move = request.params("move");
+            return appService.getTypesOfPokesThatCanUseMove(move);
+        }, new JsonTransformer());
+
+        get(API_CONTEXT + "/GetPokesThatCanUseMove/:move", "application/json", (request, response) -> {
+            String move = request.params("move");
+            return appService.getPokesThatCanUseMove(move);
+        }, new JsonTransformer());
+
+        get(API_CONTEXT + "/GenerationUniquePokemon/:gen", "application/json", (request, response) -> {
+            String gen = request.params("gen");
+            return appService.generationUniquePokemon(gen);
+        }, new JsonTransformer());
+
+        get(API_CONTEXT + "/NumUniquePokemonByType/:type", "application/json", (request, response) -> {
+            String type = request.params("type");
+            return appService.numUniquePokemonByType(type);
+        }, new JsonTransformer());
+
+        get(API_CONTEXT + "/GetPokemonWithOneType/:type", "application/json", (request, response) -> {
+            String type = request.params("type");
+            return appService.getPokemonWithOneType(type);
+        }, new JsonTransformer());
+
+        get(API_CONTEXT + "/AllPokemonNeedAHeldToEvolve/:held_item", "application/json", (request, response) -> {
+            String heldItem = request.params("head_item");
+            return appService.allPokemonNeedAHeldToEvolve(heldItem);
+        }, new JsonTransformer());
+
+        get(API_CONTEXT + "/AllPokemonNeedATriggerToEvolve/:trigger_item", "application/json", (request, response) -> {
+            String triggerItem = request.params("trigger_item");
+            return appService.allPokemonNeedATriggerToEvolve(triggerItem);
+        }, new JsonTransformer());
+
+        get(API_CONTEXT + "/PokemonEvolutionChain/:pokemon", "application/json", (request, response) -> {
+            String pokemon = request.params("pokemon");
+            return appService.pokemonEvolutionChain(pokemon);
+        }, new JsonTransformer());
     }
 }

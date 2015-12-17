@@ -11,7 +11,7 @@ public class GetPokemonWithWeightAndTypeDTO {
 
     private String type;
 
-    private String weight;
+    private int weight;
 
     public int getId() {
         return id;
@@ -37,11 +37,11 @@ public class GetPokemonWithWeightAndTypeDTO {
         this.type = type;
     }
 
-    public String getWeight() {
+    public int getWeight() {
         return weight;
     }
 
-    public void setWeight(String weight) {
+    public void setWeight(int weight) {
         this.weight = weight;
     }
 }
