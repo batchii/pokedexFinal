@@ -2,19 +2,34 @@
 <html>
     <head>
         <title>
-            allPokemonofWeightType
+            getPokemonWithWeightAndType
         </title>
-         <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+         <link rel="stylesheet" href="css/main.css" media="screen">
     </head>
     
     <body>
+        <div class="container-narrow" >
+            
+            <div class="masthead">
+                <h3 class="muted">Pokedex</h3>
+                <img alt="pokeball" src="img/pokeball.png" style="width:32px;height:32px;">
+                    </div>
+            <hr>
+            <div class="jumbotron">
         <h1 align="center">List all pokemon with weight of no more than some value and of a given type.</h1>
         <form align="center", action="update.php" method="POST">
             Weight: <input type="text" name="weight" placeholder="Try '1000'"><br>
             Type: <input type="text" name="type" placeholder="Try 'fire'"><br><br>
             <input type="submit">
         </form>
-        <div name="results" id="resultsid"></div>
+            </div>
+            <hr>
+            
+            <div class="footer">
+                <p>&copy; Databases 2015</p>
+            </div>
+            
+            <div name="results" id="resultsid"></div>
         
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
