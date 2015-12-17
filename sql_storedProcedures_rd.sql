@@ -241,7 +241,7 @@ delimiter ;
 
 /*Should show:
 +------------+------------+
-| identifier | identifier |
+| pokemon    | typeOne    |
 +------------+------------+
 | haunter    | ghost      |
 | gengar     | ghost      |

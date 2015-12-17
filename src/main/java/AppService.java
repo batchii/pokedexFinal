@@ -209,7 +209,7 @@ public class AppService {
         return toReturn;
     }
 
-    public List<BestBaseStatByGenDTO> bestBaseStateByGen(int gen){
+    public List<BestBaseStatByGenDTO> bestBaseStatByGen(int gen){
         //STEP 4: Execute a query
         System.out.println("Creating statement...");
         Statement stmt = null;
@@ -247,6 +247,94 @@ public class AppService {
         }
         return toReturn;
     }
+
+    public List<GetPokemonWithTwoTypesDTO> getPokemonWithTwoTypes(String typeOne, String typeTwo){
+        //STEP 4: Execute a query
+        System.out.println("Creating statement...");
+        Statement stmt = null;
+        List<GetPokemonWithTwoTypesDTO> toReturn = new LinkedList<GetPokemonWithTwoTypesDTO>();
+        try {
+            stmt = conn.createStatement();
+            String sql = "Call getPokemonWithTwoTypes(\"" + typeOne + "\", \"" + typeTwo +"\"  );";
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()) {
+                GetPokemonWithTwoTypesDTO result = new GetPokemonWithTwoTypesDTO();
+                //Retrieve by column name
+                result.setId(rs.getInt("id"));
+                result.setTypeOne(rs.getString("TypeOne"));
+                result.setTypeTwo(rs.getString("TypeTwo"));
+                result.setIdentifier(rs.getString("identifier"));
+                toReturn.add(result);
+            }
+            //STEP 6: Clean-up environment
+            rs.close();
+            stmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            //finally block used to close resources
+            try {
+                if (stmt != null)
+                    stmt.close();
+            } catch (SQLException se2) {
+            }// nothing we can do
+            try {
+                if (conn != null)
+                    conn.close();
+            } catch (SQLException se) {
+                se.printStackTrace();
+            }//end finally try
+        }
+        return toReturn;
+    }
+
+    public List<PokemonMoreThanOneEvolutionDTO> pokemonMoreThanOneEvolution(String type){
+        //STEP 4: Execute a query
+        System.out.println("Creating statement...");
+        Statement stmt = null;
+        List<PokemonMoreThanOneEvolutionDTO> toReturn = new LinkedList<PokemonMoreThanOneEvolutionDTO>();
+        try {
+            stmt = conn.createStatement();
+            String sql = "Call getPokemonWithTwoTypes(\"" + type + "\" );";
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()) {
+                PokemonMoreThanOneEvolutionDTO result = new PokemonMoreThanOneEvolutionDTO();
+                //Retrieve by column name
+                result.setIdentifier(rs.getString("pokemon"));
+                result.setType(rs.getString("typeOne"));
+                toReturn.add(result);
+            }
+            //STEP 6: Clean-up environment
+            rs.close();
+            stmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            //finally block used to close resources
+            try {
+                if (stmt != null)
+                    stmt.close();
+            } catch (SQLException se2) {
+            }// nothing we can do
+            try {
+                if (conn != null)
+                    conn.close();
+            } catch (SQLException se) {
+                se.printStackTrace();
+            }//end finally try
+        }
+        return toReturn;
+    }
+
+
+
+
+
+
+
+
 
     private ResultSet callDB(String dbCall){
         Statement stmt = null;

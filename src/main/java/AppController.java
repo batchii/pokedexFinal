@@ -63,9 +63,26 @@ public class AppController {
             return appService.pokemonLocation(pokemon);
         }, new JsonTransformer());
 
-        get(API_CONTEXT + "/WhatPOkemonHere/:location", "application/json", (request, response) -> {
+        get(API_CONTEXT + "/WhatPokemonHere/:location", "application/json", (request, response) -> {
             String location = request.params("location");
             return appService.whatPokemonHere(location);
         }, new JsonTransformer());
+
+        get(API_CONTEXT + "/BestBaseStatByGen/:gen", "application/json", (request, response) -> {
+            Integer gen = Integer.parseInt(request.params("gen"));
+            return appService.bestBaseStatByGen(gen);
+        }, new JsonTransformer());
+
+        get(API_CONTEXT + "/GetPokemonWithTwoTypes/:typeOne/:typeTwo", "application/json", (request, response) -> {
+            String typeOne = request.params("typeOne");
+            String typeTwo = request.params("typeTwo");
+            return appService.getPokemonWithTwoTypes(typeOne, typeTwo);
+        }, new JsonTransformer());
+
+        get(API_CONTEXT + "/PokemonMoreThanOneEvolution/:type", "application/json", (request, response) -> {
+            String type = request.params("type");
+            return appService.pokemonMoreThanOneEvolution(type);
+        }, new JsonTransformer());
+
     }
 }
