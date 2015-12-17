@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            generationUniquePokemon
+            getPokesThatCanUseMove
         </title>
         <link rel="stylesheet" href="css/main.css" media="screen">
     </head>
@@ -16,9 +16,9 @@
                     </div>
             <hr>
             <div class="jumbotron">
-        <h1 align="center">How many unique new Pokemon are in a Generation?</h1>
+        <h1 align="center">List all of the Pokemon that can use a specific move.</h1>
         <form align="center", action="update.php" method="POST">
-            Generation: <input type="text" name="generation" placeholder="Try '5'"><br><br>
+            Move: <input type="text" name="move" placeholder="Try 'oblivion-wing'"><br><br>
             <input type="submit">
         </form>
             </div>
@@ -29,7 +29,6 @@
             </div>
             
         </div>
-
         <div name="results" id="resultsid"></div>
         
         <script src="http://code.jquery.com/jquery.js"></script>

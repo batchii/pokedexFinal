@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            generationUniquePokemon
+            pokemonModeThanOneEvolution
         </title>
         <link rel="stylesheet" href="css/main.css" media="screen">
     </head>
@@ -16,9 +16,10 @@
                     </div>
             <hr>
             <div class="jumbotron">
-        <h1 align="center">How many unique new Pokemon are in a Generation?</h1>
+        
+        <h1 align="center">List all Pokemon of a given type with more than one evolution.</h1>
         <form align="center", action="update.php" method="POST">
-            Generation: <input type="text" name="generation" placeholder="Try '5'"><br><br>
+            Type: <input type="text" name="type" placeholder="Try 'ghost'"><br><br>
             <input type="submit">
         </form>
             </div>
@@ -29,7 +30,7 @@
             </div>
             
         </div>
-
+        
         <div name="results" id="resultsid"></div>
         
         <script src="http://code.jquery.com/jquery.js"></script>

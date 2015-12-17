@@ -2,9 +2,9 @@
 <html>
     <head>
         <title>
-            generationUniquePokemon
+            getPokemonWithWeightAndType
         </title>
-        <link rel="stylesheet" href="css/main.css" media="screen">
+         <link rel="stylesheet" href="css/main.css" media="screen">
     </head>
     
     <body>
@@ -16,9 +16,10 @@
                     </div>
             <hr>
             <div class="jumbotron">
-        <h1 align="center">How many unique new Pokemon are in a Generation?</h1>
+        <h1 align="center">List all pokemon with weight of no more than some value and of a given type.</h1>
         <form align="center", action="update.php" method="POST">
-            Generation: <input type="text" name="generation" placeholder="Try '5'"><br><br>
+            Weight: <input type="text" name="weight" placeholder="Try '1000'"><br>
+            Type: <input type="text" name="type" placeholder="Try 'fire'"><br><br>
             <input type="submit">
         </form>
             </div>
@@ -28,9 +29,7 @@
                 <p>&copy; Databases 2015</p>
             </div>
             
-        </div>
-
-        <div name="results" id="resultsid"></div>
+            <div name="results" id="resultsid"></div>
         
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.js"></script>

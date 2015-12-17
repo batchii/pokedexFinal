@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            generationUniquePokemon
+            bestBaseStatByGen
         </title>
         <link rel="stylesheet" href="css/main.css" media="screen">
     </head>
@@ -16,20 +16,22 @@
                     </div>
             <hr>
             <div class="jumbotron">
-        <h1 align="center">How many unique new Pokemon are in a Generation?</h1>
+        <h1 align="center">Which pokemon from a Generation has the highest base stats?</h1>
         <form align="center", action="update.php" method="POST">
-            Generation: <input type="text" name="generation" placeholder="Try '5'"><br><br>
+            Generation: <input type="text" name="generation" placeholder="Try '1'"><br><br>
             <input type="submit">
         </form>
             </div>
+            
             <hr>
             
             <div class="footer">
                 <p>&copy; Databases 2015</p>
             </div>
             
-        </div>
-
+        </div> <!-- /container -->
+        
+        <!-- jquery reads json and fills the div with the result. -->
         <div name="results" id="resultsid"></div>
         
         <script src="http://code.jquery.com/jquery.js"></script>
