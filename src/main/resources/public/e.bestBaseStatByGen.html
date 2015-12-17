@@ -5,6 +5,33 @@
             bestBaseStatByGen
         </title>
         <link rel="stylesheet" href="css/main.css" media="screen">
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#submit").click(function(event){
+                    event.preventDefault();
+                    var input = $('#generation').val();
+                    console.log("bla: " + input)
+                    $.get("/pokedex/api/BestBaseStatByGen/" + input, "", null, 'json')
+                    .done(function(data){
+                          //$('#contentTable').empty();
+                        $('tr').not('thead tr').remove();
+                        console.log("data: " + data);
+                        jQuery.each(data, function(i, rowData) {
+                            $('#header').after("<tr>" +
+                                                        "<td>" + rowData.pokemon + "</td>" +
+                                                        "<td>" + rowData.totalBaseStat   + "</td>" +
+                                                      "</tr>"
+                                                        );
+                        });
+
+                    })
+                    .fail(function(jqXHR){
+                        console.log('Error ' + jqXHR.status);
+                    });
+                });                
+            });
+        </script>    
     </head>
     
     <body>
@@ -16,13 +43,19 @@
                     </div>
             <hr>
             <div class="jumbotron">
-        <h1 align="center">Which pokemon from a Generation has the highest base stats?</h1>
-        <form align="center", action="update.php" method="POST">
-            Generation: <input type="text" name="generation" placeholder="Try '1'"><br><br>
-            <input type="submit">
-        </form>
+                <h1 align="center">Which pokemon from a Generation has the highest base stats?</h1>
+                <form align="center">
+                    Generation: <input id="generation" type="text" name="generation" placeholder="Try '1'"><br><br>
+                    <input id="submit" type="submit">
+                </form>
             </div>
-            
+             <table class="table">
+                <thead id="header">
+                    <td>Pokemon</td>
+                    <td>Total Base Stat</td>
+                </thead>
+            </table>
+
             <hr>
             
             <div class="footer">
