@@ -45,9 +45,6 @@ public class AppService {
             //Handle errors for Class.forName
             e.printStackTrace();
         }
-
-
-
     }
 
     public List<AbilitiesByGenerationDTO> getAbilitiesByGeneration(String abilityName){
@@ -71,7 +68,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -81,12 +77,6 @@ public class AppService {
                     stmt.close();
             } catch (SQLException se2) {
             }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
         }
         return resultList;
 
@@ -111,7 +101,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -121,12 +110,6 @@ public class AppService {
                     stmt.close();
             } catch (SQLException se2) {
             }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
         }
         return toReturn;
     }
@@ -150,7 +133,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -160,12 +142,6 @@ public class AppService {
                     stmt.close();
             } catch (SQLException se2) {
             }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
         }
         return toReturn;
     }
@@ -189,7 +165,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -199,12 +174,6 @@ public class AppService {
                     stmt.close();
             } catch (SQLException se2) {
             }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
         }
         return toReturn;
     }
@@ -228,7 +197,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -238,12 +206,6 @@ public class AppService {
                     stmt.close();
             } catch (SQLException se2) {
             }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
         }
         return toReturn;
     }
@@ -269,7 +231,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -279,12 +240,6 @@ public class AppService {
                     stmt.close();
             } catch (SQLException se2) {
             }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
         }
         return toReturn;
     }
@@ -308,7 +263,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -318,12 +272,6 @@ public class AppService {
                     stmt.close();
             } catch (SQLException se2) {
             }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
         }
         return toReturn;
     }
@@ -349,7 +297,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -358,13 +305,7 @@ public class AppService {
                 if (stmt != null)
                     stmt.close();
             } catch (SQLException se2) {
-            }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
+            }// nothing we can doy
         }
         return toReturn;
     }
@@ -387,7 +328,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -397,12 +337,6 @@ public class AppService {
                     stmt.close();
             } catch (SQLException se2) {
             }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
         }
         return toReturn;
     }
@@ -494,7 +428,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -504,12 +437,6 @@ public class AppService {
                     stmt.close();
             } catch (SQLException se2) {
             }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
         }
         return toReturn;
     }
@@ -533,7 +460,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -543,12 +469,6 @@ public class AppService {
                     stmt.close();
             } catch (SQLException se2) {
             }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
         }
         return toReturn;
     }
@@ -573,7 +493,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -583,12 +502,6 @@ public class AppService {
                     stmt.close();
             } catch (SQLException se2) {
             }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
         }
         return toReturn;
     }
@@ -612,7 +525,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -622,12 +534,6 @@ public class AppService {
                     stmt.close();
             } catch (SQLException se2) {
             }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
         }
         return toReturn;
     }
@@ -651,7 +557,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -661,12 +566,6 @@ public class AppService {
                     stmt.close();
             } catch (SQLException se2) {
             }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
         }
         return toReturn;
     }
@@ -689,7 +588,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -699,14 +597,8 @@ public class AppService {
                     stmt.close();
             } catch (SQLException se2) {
             }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
+            return toReturn;
         }
-        return toReturn;
     }
 
 
