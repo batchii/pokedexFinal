@@ -1,9 +1,7 @@
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import database.AbilitiesByGenerationDTO;
-import database.PokemonLocationDTO;
-import database.PokemonRegionDTO;
+import database.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -172,6 +170,83 @@ public class AppService {
         return toReturn;
     }
 
+    public List<WhatPokemonHereDTO> whatPokemonHere(String location){
+        //STEP 4: Execute a query
+        System.out.println("Creating statement...");
+        Statement stmt = null;
+        List<WhatPokemonHereDTO> toReturn = new LinkedList<WhatPokemonHereDTO>();
+        try {
+            stmt = conn.createStatement();
+            String sql = "Call whatPokemonHere(\"" + location + "\");";
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()) {
+                WhatPokemonHereDTO result = new WhatPokemonHereDTO();
+                //Retrieve by column name
+                result.setId(rs.getInt("id"));
+                result.setIdentifier(rs.getString("identifier"));
+                toReturn.add(result);
+            }
+            //STEP 6: Clean-up environment
+            rs.close();
+            stmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            //finally block used to close resources
+            try {
+                if (stmt != null)
+                    stmt.close();
+            } catch (SQLException se2) {
+            }// nothing we can do
+            try {
+                if (conn != null)
+                    conn.close();
+            } catch (SQLException se) {
+                se.printStackTrace();
+            }//end finally try
+        }
+        return toReturn;
+    }
+
+    public List<BestBaseStatByGenDTO> bestBaseStateByGen(int gen){
+        //STEP 4: Execute a query
+        System.out.println("Creating statement...");
+        Statement stmt = null;
+        List<BestBaseStatByGenDTO> toReturn = new LinkedList<BestBaseStatByGenDTO>();
+        try {
+            stmt = conn.createStatement();
+            String sql = "Call bestBaseStatByGen(\"" + gen + "\");";
+            ResultSet rs = stmt.executeQuery(sql);
+            while (rs.next()) {
+                BestBaseStatByGenDTO result = new BestBaseStatByGenDTO();
+                //Retrieve by column name
+                result.setPokemon(rs.getString("Pokemon"));
+                result.setTotalBaseStat(rs.getInt("TotalBaseStat"));
+                toReturn.add(result);
+            }
+            //STEP 6: Clean-up environment
+            rs.close();
+            stmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            //finally block used to close resources
+            try {
+                if (stmt != null)
+                    stmt.close();
+            } catch (SQLException se2) {
+            }// nothing we can do
+            try {
+                if (conn != null)
+                    conn.close();
+            } catch (SQLException se) {
+                se.printStackTrace();
+            }//end finally try
+        }
+        return toReturn;
+    }
 
     private ResultSet callDB(String dbCall){
         Statement stmt = null;

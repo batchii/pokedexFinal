@@ -57,5 +57,15 @@ public class AppController {
             String pokemon = request.params("pokemon_name");
             return appService.pokemonRegion(pokemon);
         }, new JsonTransformer());
+
+        get(API_CONTEXT + "/PokemonLocation/:pokemon_name", "application/json", (request, response) -> {
+            String pokemon = request.params("pokemon_name");
+            return appService.pokemonLocation(pokemon);
+        }, new JsonTransformer());
+
+        get(API_CONTEXT + "/WhatPOkemonHere/:location", "application/json", (request, response) -> {
+            String location = request.params("location");
+            return appService.whatPokemonHere(location);
+        }, new JsonTransformer());
     }
 }
