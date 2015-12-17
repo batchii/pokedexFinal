@@ -11,7 +11,17 @@
                     console.log("bla: " + bla)
                     $.get("/pokedex/api/AbilitiesByGeneration/" + bla, "", null, 'json')
                     .done(function(data){
-                         alert("Data: " + data[1].generationID);
+                          //$('#contentTable').empty();
+                        $('tr').not('thead tr').remove();
+                        console.log("data: " + data);
+                        jQuery.each(data, function(i, rowData) {
+                            $('#header').after("<tr>" +
+                                                        "<td>" + rowData.generationID + "</td>" +
+                                                        "<td>" + rowData.identifier   + "</td>" +
+                                                        "<td>" + rowData.numUnique    + "</td>" +
+                                                      "</tr>"
+                                                        );
+                        });
 
                     })
                     .fail(function(jqXHR){
@@ -40,12 +50,11 @@
                 </form>
             </div>
             <table class="table">
-                <tr id="header">
+                <thead id="header">
                     <td>Generation ID</td>
                     <td>Identifier</td>
                     <td>Number of Unique Pokemon</td>
-                <tr>
-                <div id="contentTable"></div>
+                </thead>
             </table>
             
             <hr>
