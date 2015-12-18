@@ -3,7 +3,7 @@ package database;
 /**
  * Created by ubuntu on 12/10/15.
  */
-public class AllPokemoneNeedAHeldToEvolveDTO {
+public class AllPokemonNeedAHeldToEvolveDTO {
 
     private String pokemon;
 

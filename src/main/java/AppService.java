@@ -1,14 +1,6 @@
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import database.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
-import static spark.Spark.*;
 import java.sql.*;
 import java.util.LinkedList;
 import java.util.List;
@@ -358,7 +350,6 @@ public class AppService {
             //STEP 6: Clean-up environment
             rs.close();
             stmt.close();
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -368,12 +359,6 @@ public class AppService {
                     stmt.close();
             } catch (SQLException se2) {
             }// nothing we can do
-            try {
-                if (conn != null)
-                    conn.close();
-            } catch (SQLException se) {
-                se.printStackTrace();
-            }//end finally try
         }
         return toReturn;
     }
@@ -506,17 +491,17 @@ public class AppService {
         return toReturn;
     }
 
-    public List<AllPokemoneNeedAHeldToEvolveDTO> allPokemonNeedAHeldToEvolve(String heldItem) {
+    public List<AllPokemonNeedAHeldToEvolveDTO> allPokemonNeedAHeldToEvolve(String heldItem) {
         //STEP 4: Execute a query
         System.out.println("Creating statement...");
         Statement stmt = null;
-        List<AllPokemoneNeedAHeldToEvolveDTO> toReturn = new LinkedList<AllPokemoneNeedAHeldToEvolveDTO>();
+        List<AllPokemonNeedAHeldToEvolveDTO> toReturn = new LinkedList<AllPokemonNeedAHeldToEvolveDTO>();
         try {
             stmt = conn.createStatement();
-            String sql = "Call allPokemoneNeedAHeldToEvolveDTO(\"" + heldItem + "\" );";
+            String sql = "Call allPokemonNeedAHeldToEvolveDTO(\"" + heldItem + "\" );";
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
-                AllPokemoneNeedAHeldToEvolveDTO result = new AllPokemoneNeedAHeldToEvolveDTO();
+                AllPokemonNeedAHeldToEvolveDTO result = new AllPokemonNeedAHeldToEvolveDTO();
                 //Retrieve by column name
                 result.setPokemon(rs.getString("Pokemon"));
                 result.setHeldItem(rs.getString("HeldItem"));
@@ -545,7 +530,7 @@ public class AppService {
         List<AllPokemonNeedATriggerToEvolveDTO> toReturn = new LinkedList<AllPokemonNeedATriggerToEvolveDTO>();
         try {
             stmt = conn.createStatement();
-            String sql = "Call allPokemoneNeedATriggerToEvolveDTO(\"" + triggerItem + "\" );";
+            String sql = "Call allPokemonNeedATriggerToEvolveDTO(\"" + triggerItem + "\" );";
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
                 AllPokemonNeedATriggerToEvolveDTO result = new AllPokemonNeedATriggerToEvolveDTO();
