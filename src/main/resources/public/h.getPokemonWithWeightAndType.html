@@ -4,7 +4,34 @@
         <title>
             getPokemonWithWeightAndType
         </title>
-         <link rel="stylesheet" href="css/main.css" media="screen">
+        <link rel="stylesheet" href="css/main.css" media="screen">
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#submit").click(function(event){
+                    event.preventDefault();
+                    var input1 = $('#weight').val();
+                    var input2 = $('#type').val();
+                    $.get("/pokedex/api/GetPokemonWithWeightAndType/" + input1+"/" + input2, "", null, 'json')
+                    .done(function(data){
+                        $('tr').not('thead tr').remove();
+                        jQuery.each(data, function(i, rowData) {
+                            $('#header').after("<tr>" +
+                                                        "<td>" + rowData.id         + "</td>" +
+                                                        "<td>" + rowData.pokemon    + "</td>" +
+                                                        "<td>" + rowData.type       + "</td"  +
+                                                        "<td>" + rowData.weight     + "</td>" +
+                                                      "</tr>"
+                                                        );
+                        });
+
+                    })
+                    .fail(function(jqXHR){
+                        console.log('Error ' + jqXHR.status);
+                    });
+                });                
+            });
+        </script>    
     </head>
     
     <body>
@@ -16,20 +43,27 @@
             </div>
             <hr>
             <div class="jumbotron">
-        <h1 align="center">List all pokemon with weight of no more than some value and of a given type.</h1>
-        <form align="center", action="update.php" method="POST">
-            Weight: <input type="text" name="weight" placeholder="Try '1000'"><br>
-            Type: <input type="text" name="type" placeholder="Try 'fire'"><br><br>
-            <input type="submit">
-        </form>
+                <h1 align="center">List all pokemon with weight of no more than some value and of a given type.</h1>
+                <form align="center">
+                    Weight: <input id="weight" type="text" name="weight" placeholder="Try '1000'"><br>
+                    Type: <input id="type" type="text" name="type" placeholder="Try 'fire'"><br><br>
+                    <input id="submit" type="submit">
+                </form>
             </div>
+
+            <table class="table">
+                <thead id="header">
+                    <td>ID</td>
+                    <td>Pokemon</td>
+                    <td>Type</td>
+                    <td>Weight</td>
+                </thead>
+            </table>
             <hr>
             
             <div class="footer">
                 <p>&copy; Databases 2015</p>
             </div>
-            
-            <div name="results" id="resultsid"></div>
         
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.js"></script>

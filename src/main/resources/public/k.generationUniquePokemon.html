@@ -5,6 +5,33 @@
             generationUniquePokemon
         </title>
         <link rel="stylesheet" href="css/main.css" media="screen">
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#submit").click(function(event){
+                    event.preventDefault();
+                    var input = $('#generation').val();
+                    console.log("bla: " + input)
+                    $.get("/pokedex/api/GenerationUniquePokemon/" + input, "", null, 'json')
+                    .done(function(data){
+                          //$('#contentTable').empty();
+                        $('tr').not('thead tr').remove();
+                        jQuery.each(data, function(i, rowData) {
+                            $('#header').after("<tr>" +
+                                                        "<td>" + rowData.id             + "</td>" +
+                                                        "<td>" + rowData.identifier     + "</td>" + 
+                                                        "<td>" + rowData.uniquePokemon  + "</td>" +
+                                                      "</tr>"
+                                                        );
+                        });
+
+                    })
+                    .fail(function(jqXHR){
+                        console.log('Error ' + jqXHR.status);
+                    });
+                });                
+            });
+        </script>    
     </head>
     
     <body>
@@ -17,11 +44,18 @@
             <hr>
             <div class="jumbotron">
         <h1 align="center">How many unique new Pokemon are in a Generation?</h1>
-        <form align="center", action="update.php" method="POST">
-            Generation: <input type="text" name="generation" placeholder="Try '5'"><br><br>
-            <input type="submit">
+        <form align="center">
+            Generation: <input id="generation" type="text" name="generation" placeholder="Try '5'"><br><br>
+            <input id="submit" type="submit">
         </form>
             </div>
+            <table class="table">
+                <thead id="header">
+                    <td>id</td>
+                    <td>Identifier</td>
+                    <td>Number of Unique Pokemon</td>
+                </thead>
+            </table>
             <hr>
             
             <div class="footer">
