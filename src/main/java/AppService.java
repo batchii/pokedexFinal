@@ -536,7 +536,7 @@ public class AppService {
                 AllPokemonNeedATriggerToEvolveDTO result = new AllPokemonNeedATriggerToEvolveDTO();
                 //Retrieve by column name
                 result.setPokemon(rs.getString("Pokemon"));
-                result.setTriggerItem(rs.getString("HeldItem"));
+                result.setTriggerItem(rs.getString("TriggerItem"));
                 toReturn.add(result);
             }
             //STEP 6: Clean-up environment

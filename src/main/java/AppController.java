@@ -117,7 +117,7 @@ public class AppController {
         }, new JsonTransformer());
 
         get(API_CONTEXT + "/AllPokemonNeedAHeldToEvolve/:held_item", "application/json", (request, response) -> {
-            String heldItem = request.params("head_item");
+            String heldItem = request.params("held_item");
             return appService.allPokemonNeedAHeldToEvolve(heldItem);
         }, new JsonTransformer());
 
