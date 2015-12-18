@@ -87,7 +87,7 @@ public class AppController {
 
         get(API_CONTEXT + "/GetPokemonWithWeightAndType/:weight/:type", "application/json", (request, response) -> {
             Integer weight = Integer.parseInt(request.params("weight"));
-            Integer type = Integer.parseInt(request.params("type"));
+            String type = request.params("type");
             return appService.getPokemonWithWeightAndType(weight, type);
         }, new JsonTransformer());
 

@@ -248,7 +248,7 @@ public class AppService {
             while (rs.next()) {
                 PokemonMoreThanOneEvolutionDTO result = new PokemonMoreThanOneEvolutionDTO();
                 //Retrieve by column name
-                result.setIdentifier(rs.getString("pokemon"));
+                result.setIdentifier(rs.getString("Pokemon"));
                 result.setType(rs.getString("typeOne"));
                 toReturn.add(result);
             }
@@ -268,7 +268,7 @@ public class AppService {
         return toReturn;
     }
 
-    public List<GetPokemonWithWeightAndTypeDTO> getPokemonWithWeightAndType(Integer weight, Integer type) {
+    public List<GetPokemonWithWeightAndTypeDTO> getPokemonWithWeightAndType(Integer weight, String type) {
         //STEP 4: Execute a query
         System.out.println("Creating statement...");
         Statement stmt = null;
@@ -472,7 +472,7 @@ public class AppService {
                 //Retrieve by column name
                 result.setId(rs.getInt("id"));
                 result.setPokemon(rs.getString("pokemon"));
-                result.setTypeOne(rs.getString("type"));
+                result.setTypeOne(rs.getString("typeOne"));
                 toReturn.add(result);
             }
             //STEP 6: Clean-up environment
@@ -567,7 +567,6 @@ public class AppService {
             while (rs.next()) {
                 PokemonEvolutionChainDTO result = new PokemonEvolutionChainDTO();
                 //Retrieve by column name
-                System.out.println(rs.getString("Pokemon"));
                 result.setPokemon(rs.getString("Pokemon"));
                 toReturn.add(result);
             }

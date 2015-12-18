@@ -225,7 +225,7 @@ delimiter //
 CREATE PROCEDURE pokemonMoreThanOneEvolution (IN typeOne VarChar(8))
 BEGIN IF EXISTS
 	(SELECT T.identifier FROM types T WHERE T.identifier = typeOne) THEN
-SELECT DISTINCT(PS.identifier) as pokemon, T.identifier as typeOne 
+SELECT DISTINCT(PS.identifier) as Pokemon, T.identifier as typeOne 
 FROM pokemon_species PS, pokemon_evolution PE, types T, pokemon_types PT
 WHERE PS.evolves_from_species_id is NOT NULL
 	AND PE.evolved_species_id != PS.evolves_from_species_id
@@ -375,14 +375,7 @@ END//
 
 delimiter ;
 
-/*call getPokesThatCanUseMove('oblivion-wing');
-Should Show:
-+---------+
-| Pokemon |
-+---------+
-| yveltal |
-+---------+
-1 row in set (0.74 sec)
+/*call getPokesThatCanUseMove('flamethrower');
 */
 
 /*select number of unique pokemon in a generation */
@@ -460,12 +453,12 @@ delimiter ;
 
 /* call getPokemonWithOneType("water");*/
 /*Should show:
-+-------+--------------------+-------+
-| id    | pokemon            | type  |
-+-------+--------------------+-------+
-|     7 | squirtle           | water |
-|     8 | wartortle          | water |
-|     9 | blastoise          | water |
++-------+--------------------+----------+
+| id    | pokemon            | typeOne  |
++-------+--------------------+----------+
+|     7 | squirtle           | water    |-
+|     8 | wartortle          | water    |
+|     9 | blastoise          | water    |
 .........
 .........
 128 rows in set (0.02 sec)
