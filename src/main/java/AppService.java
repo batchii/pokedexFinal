@@ -498,7 +498,7 @@ public class AppService {
         List<AllPokemonNeedAHeldToEvolveDTO> toReturn = new LinkedList<AllPokemonNeedAHeldToEvolveDTO>();
         try {
             stmt = conn.createStatement();
-            String sql = "Call allPokemonNeedAHeldToEvolveDTO(\"" + heldItem + "\" );";
+            String sql = "Call allPokemonNeedAHeldToEvolve(\"" + heldItem + "\" );";
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
                 AllPokemonNeedAHeldToEvolveDTO result = new AllPokemonNeedAHeldToEvolveDTO();
@@ -530,7 +530,7 @@ public class AppService {
         List<AllPokemonNeedATriggerToEvolveDTO> toReturn = new LinkedList<AllPokemonNeedATriggerToEvolveDTO>();
         try {
             stmt = conn.createStatement();
-            String sql = "Call allPokemonNeedATriggerToEvolveDTO(\"" + triggerItem + "\" );";
+            String sql = "Call allPokemonNeedATriggerToEvolve(\"" + triggerItem + "\" );";
             ResultSet rs = stmt.executeQuery(sql);
             while (rs.next()) {
                 AllPokemonNeedATriggerToEvolveDTO result = new AllPokemonNeedATriggerToEvolveDTO();
@@ -567,6 +567,7 @@ public class AppService {
             while (rs.next()) {
                 PokemonEvolutionChainDTO result = new PokemonEvolutionChainDTO();
                 //Retrieve by column name
+                System.out.println(rs.getString("Pokemon"));
                 result.setPokemon(rs.getString("Pokemon"));
                 toReturn.add(result);
             }
