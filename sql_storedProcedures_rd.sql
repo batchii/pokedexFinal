@@ -188,9 +188,9 @@ delimiter //
 CREATE PROCEDURE getPokemonWithTwoTypes (IN typeOne VarChar(8), IN typeTwo VarChar(8))
 BEGIN IF EXISTS
 	(SELECT T.identifier FROM types T WHERE T.identifier = typeOne OR T.identifier = typeTwo) THEN
-SELECT P.id, P.identifier, T.identifier AS TypeOne, secondType.identifier AS TypeTwo
+SELECT P.id, P.identifier, T.identifier AS TypeOne, secondType.secondType AS TypeTwo
 FROM types T, pokemon_types PT, pokemon P,
-	(SELECT PT2.pokemon_id 
+	(SELECT PT2.pokemon_id, T2.identifier as secondType
 	FROM types T2, pokemon_types PT2, pokemon P2 
 	WHERE T2.id = PT2.type_id 
 		AND PT2.pokemon_id = P2.id 
