@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pokedex</title>
+        <link rel="stylesheet" href="css/main.css" media="screen">
+        <script src="js/jquery-2.1.4.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="navbar-header">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active">
+                    <a href="#">
+                        <img alt="brand" class="col-xs-6 col-md-6" src="img/pokeball.png" style="width:32px;height:32px;"/>
+                        PokeDex
+                    </a>
+                </li>  
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Pages <span class="caret"></span>
+                    </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="a.showAbilitiesByGeneration.html">Show Abilities By Generation</a></li>
+                    <li><a href="e.bestBaseStatByGen.html">Best Base Stats by Generation</a></li>
+                    <li><a href="k.generationUniquePokemon.html">Unique Pokemon In A Generation</a></li>
+                        <li role="separator" class="divider"></li>
+                    <li><a href="b.pokemonRegion.html">Pokemon Region</a></li>
+                    <li><a href="c.pokemonLocation.html">Pokemon Location</a></li>
+                    <li><a href="d.whatPOkemonHere.html">What Pokemon Exist Here</a></li>
+                        <li role="separator" class="divider"></li>
+                    <li><a href="f.getPokemonWithTwoTypes.html">Get Pokemon With Two Types</a></li>
+                    <li><a href="l.numUniquePokemonByType.html">Unique Pokemon By Type</a></li>
+                    <li><a href="m.getPokemonWithOneType.html">Get Pokemon With One Type</a></li>
+                    <li><a href="j.getTypesOfPOkesThatCanUseMove.html">Types of Pokemon That Can Use A Move</a></li>
+                        <li role="separator" class="divider"></li>
+                    <li><a href="g.pokemonMoreThanOneEvolution.html">Get Pokemon With More Than One Evolution</a></li>
+                    <li><a href="h.getPokemonWithWeightAndType.html">Weight and Type</a></li>
+                    <li><a href="j.getPokesThatCanUseMove.html">Pokemon That Can Use A Move</a></li>
+                        <li role="separator" class="divider"></li>
+                    <li><a href="n.allPokemonNeedAHeldToEvolve">Pokemon Who Need a Hold To Evolve</a></li>
+                    <li><a href="o.allPokemonNeedATriggerToEvolve">Pokemon Who Need A Trigger To Evolve</a></li>          
+                        <li role="separator" class="divider"></li>
+                    <li><a href="p.pokemonEvolutionChain.html">Pokemon Evolution Chains</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="container-narrow" >
+            <div class="jumbotron">
+                <h1 align="center">Welcome to Pokedex!</h1>
+                <p>You can access any of our pages from here, they will give you more info on things you can do.</p>
+            </div>
+                       
+            <div class="footer">
+                <p>&copy; Databases 2015</p>
+            </div>
+            
+        </div> <!-- /container -->
+        
+        <!-- jquery reads json and fills the div with the result. -->
+        <div name="results" id="resultsid"></div>
+
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>

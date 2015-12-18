@@ -1,7 +1,0 @@
-Pages That don't work
-PokemonMoreThanOneEvolution
-GetPokemonWithWeightAndType
-GetPokesThatCanUseMove
-GetTypesOfPokesThatCanUseMove
-getPokemonWithOneType
-pokemonEvolutionChain - undefined (my problem)
